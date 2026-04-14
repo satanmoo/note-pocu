@@ -63,68 +63,79 @@ mv ~/Library/Preferences/DOSBox-X\ 2026.03.29\ Preferences <working-directory>
 	- `MOUNT A "<.ASM 파일이 저장된 폴더의 경로>"`
 	- `MOUNT T "<MASM611 git을 클론 받은 폴더의 경로>"`
 
-## 코드 편집
+## 4. 코드 편집
 
-내 데스크톱에서 .ASM 파일을 "Visual Studio Code" "masm 익스텐션"을 사용해 편집한다.
+Clion 사용
+## 5. 어셈블 및 실행
 
-## 어셈블 및 실행
+### 5-1 DosBox-X를 실행 
 
-1. DosBox-X를 실행한다.
-2. 소스 파일이 들어있는 드라이브(`A:`) 및 폴더로 이동한다.
-	- `A:`
-	- 드라이브로 이동하고 cd 명령어로 폴더 이동하면된다.
-	- 마운트한 소스 코드 폴더로 이동하는 개념이다.
-3. 다음 명령어를 통해 프로그램을 빌드한다.
-	- `ML /W3 <SOURCE>.ASM`
-	- `/W3`은 반드시 대문자로 해주어야 한다.
-4. 어셈블 결과로 나온 .COM 이나 .EXE 파일을 실행한다.
-	- dosbox 콘솔에서 파일명을 그대로 입력하면 파일이 실행된다.
-	- 확장자 없이 이름만 입력해도 실행되고, 대소문자 구분이 없다.
+```zsh
+dosbox-x
+```
 
-## 디버깅 팁
+### 5-2 소스 파일이 들어있는 폴더로 이동
 
-1. 디버그 빌드를 따로 만든다.
-	- `ML /W3 /Zi <SOURCE>.ASM`
-	- `/Zi`를 넣으면 CodeView에서 심볼/소스 추적이 쉬워진다.
- 2. .EXE는 CodeView, .COM은 DEBUG를 우선 사용한다.
-	- EXE: `CV <SOURCE>.EXE`
-	- COM: `DEBUG <SOURCE>.COM`
-3. 시작 직후 레지스터를 먼저 확인한다.
-	- Tiny 모델(.COM)에서는 보통 `CS == DS`를 기대한다.
-	- 문자열/배열 주소는 항상 `DS:offset` 기준으로 본다.
-4. `int 21h` 호출 직전에 상태를 점검한다.
-	- 예: `AH=09h` 출력 시 `DS:DX`가 문자열 시작을 가리키는지 확인한다.
-	- 문자열 끝에 `$`(24h)가 없으면 출력이 비정상적일 수 있다.
-5. 메모리 덤프로 배열/문자열 패턴을 검증한다.
-	- `DB 20 DUP(2)`는 `02`가 20개 연속으로 보여야 한다.
-	- `DB 10 DUP(30h,20h)`는 `30 20 30 20 ...` 반복 패턴이 보여야 한다.
-6. DOSBox-X 경로/마운트 문제를 먼저 배제한다.
-	- `A:` 이동 후 `dir`로 현재 폴더의 소스/실행 파일을 확인한다.
+```shell
+# 소스코드가 저장된 폴더가 마운트된 A 드라이브로 이동
+A:
 
-- `ML`, `CV`, `DEBUG` 명령이 인식되는지 먼저 점검한다.
+# 디렉토리 이동
+cd
+```
+### 5-3 빌드
 
-## DEBUG 명령어 정체와 도움말 확인
+```dos
+ML /W3 /Zi <source>.asm
+```
+- `/W3`은 반드시 대문자
 
-[위키](https://en.wikipedia.org/wiki/Debug_(command))
+### 5-4 실행
 
-1. `DEBUG`는 MASM 명령어가 아니라 MS-DOS(또는 DOSBox-X 내 DOS 환경)의 디버거 유틸리티다.
-	- 즉 `ML`/`LINK` 같은 어셈블러/링커와는 별개 도구다.
-	- `.COM`/`.EXE`를 로드해 레지스터, 메모리, 디스어셈블 결과를 확인할 수 있다.
-2. `DEBUG` 실행 후 `?`를 입력하면 help screen이 출력된다.
-	- 예: `DEBUG MAIN.COM` 실행 후 `-` 프롬프트에서 `?` 입력
-	- 화면에 `DOS Debug ... help screen`과 함께 `R`, `D`, `U`, `S`, `G` 등 사용 가능한 명령 목록이 나온다.
-3. 도움말은 현재 DOSBox-X에 포함된 DEBUG 버전에 따라 표기가 조금 다를 수 있다.
-	- 실제 문서는 위키/블로그보다 `?` 출력 결과를 우선 기준으로 사용한다.
+```dos
+CV MAIN.COM
+```
 
+- 어셈블 결과로 나온 .COM 이나 .EXE 파일을 실행
+- `/Zi`를 넣으면 CodeView에서 심볼/소스 추적이 쉬워진다.
 
-## MASM 6.1 레퍼런스 다운로드
+## 6. 디버깅
 
-[여기](https://winworldpc.com/download/c3a9c281-7cc3-bcc2-a1c3-ac11c3a4c2ac)에서 PDF를 다운로드 받으면 된다.
+Code View 명령어 소개
 
-"Programmers's Guide"를 참고하자.
+### 6-1. `r`
 
-## DOS INT 21h 레퍼런스 다운로드
+레지스터 값 확인
 
-[여기](https://web.archive.org/web/20240113235754/http://www2.ift.ulaval.ca/~marchand/ift17583/dosints.pdf)에서 PDF를 다운로드 받으면 된다.
-[여기2](https://web.archive.org/web/20201020151502/https://0baeb308-a-62cb3a1a-s-sites.googlegroups.com/feeds/media/content/site/ee322mms/5099485914281118814)에서 PDF를 다운로드 받으면 된다.
+현재 코드 위치는 `CS:IP`
 
+### 6-2.  `u cs:ip`
+
+현재 위치부터 디스어셈블
+
+### 6-3 `g`
+
+go
+
+다음 중단점까지 실행
+
+### 6-4 `t`
+
+trace
+
+한 명령어씩 실행
+
+step into (call 안으로 들어감)
+
+### 6-5 `p`
+
+proceed
+
+step over (call 넘어감)
+
+### 6-6 dump
+
+```dos
+# d <segment>:<offset>
+d ds:0100
+```
