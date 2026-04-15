@@ -566,9 +566,9 @@ dst가 accum인 경우 **imm only**
 ```masm
 
 .DATA  
-m32 DD 87654321h, 12345678h  
-; memory layout: 21 43 65 87 78 56 34 12  
-result DD ?  
+	m32 DD 87654321h, 12345678h
+	; memory layout: 21 43 65 87 78 56 34 12  
+	result DD ?  
   
 .CODE  
 .STARTUP  
