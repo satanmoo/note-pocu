@@ -137,5 +137,5 @@ step over (call 넘어감)
 
 ```dos
 # d <segment>:<offset>
-d ds:0100
+d ds:0x0100
 ```

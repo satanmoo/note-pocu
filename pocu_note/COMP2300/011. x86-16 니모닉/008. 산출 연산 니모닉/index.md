@@ -3,6 +3,8 @@ tags:
   - COMP2300
   - COMP2300_week_9
 ---
+# 011-008. 산술 연산 니모닉
+
 ![[Pasted image 20260331013428.png]]
 
 곱셈, 나눗셈이 추가되었다.
@@ -547,3 +549,36 @@ carry out = 1
 ```
 
 carry out을 반전하면 CF가 0
+
+## `sbb`: 받아내림을 이용한 뺄셈
+
+![[Pasted image 20260415184425.png]]
+
+dst = dst - src - cf
+
+dst가 reg인 경우 src로 무엇이든 가능
+dst가 mem인 경우 src로 mem을 제외하고 가능
+- **mem - mem 불가능**
+dst가 accum인 경우 **imm only**
+
+### `sbb`를 이용한 큰 숫자 뺄셈
+
+```masm
+
+.DATA  
+m32 DD 87654321h, 12345678h  
+; memory layout: 21 43 65 87 78 56 34 12  
+result DD ?  
+  
+.CODE  
+.STARTUP  
+  
+    xor ax, ax  
+    mov ax, WORD PTR m32[0] ; ax = 4321h  
+    sub ax, WORD PTR m32[4] ; ax = 4321h - 5678h = ECA9h, carry = 1  
+    mov WORD PTR result, ax ; result layout: A9 EC ?? ?? | mov는 상태 플래그에 영향을 주지 않으므로 carry는 여전히 1  
+  
+    mov ax, WORD PTR m32[0]+2 ; ax = 8765h  
+    sbb ax, WORD PTR m32[4]+2 ; ax = 8765h - 1234h - carry(1) = 7530h, carry = 0
+    mov WORD PTR result[2], ax; result layout: A9 EC 30 75
+```
