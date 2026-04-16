@@ -582,3 +582,67 @@ dst가 accum인 경우 **imm only**
     sbb ax, WORD PTR m32[4]+2 ; ax = 8765h - 1234h - carry(1) = 7530h, carry = 0
     mov WORD PTR result[2], ax; result layout: A9 EC 30 75
 ```
+
+## `dec`: 감소
+
+![[Pasted image 20260417012749.png]]
+
+- unsigned 정수의 감소
+	- index 용도
+- 캐리 플래그에 영향 X
+- wrap around
+
+### `dec` wrap around  & 상태 플래그 확인
+
+```masm
+.DATA  
+m8 DB 00h  
+  
+.CODE  
+.STARTUP  
+	dec m8 ; m8 = 0FFh(warp around)  
+	; flags: NV, NG, NZ, NC
+```
+
+wrap around:
+- `dec m8` 실행 후 m8 덤프하면, 값이 FF인 것을 확인 가능
+
+Overflow:
+- 0
+- 0에서 -1로 변화는 비트 폭으로 표현할 수 있는 범위 안에서의 변화
+
+Sign:
+- 1
+- MSB로 판단
+
+Zero:
+- 0
+- 모든 비트가 0인지 여부
+
+Carry:
+- `dec`는 캐리 플래그에 영향을 주지 않음
+- 여러 워드에 걸친 큰 수 연산에서 루프 카운터를 dec으로 줄여도 adc/sbb가 사용할 캐리 플래그를 보존하려는 설계
+
+### `dec`과 오버플로우 플래그 변화
+
+```
+.DATA  
+m8 DB 80h  
+  
+.CODE  
+.STARTUP  
+    mov al, m8 ; AL = 80h  
+    dec al ; AL = 7Fh  
+    ; flag: OV, PL, NZ, NC
+```
+
+Overflow:
+- 1
+- -128 -1 = -129
+- 부호 있는 연산의 수학적 결과가 해당 비트 폭(1바이트)의 표현 범위를 벗어남
+- 오버플로우
+- A - B = R
+	- A 와 B의 부호가 다름
+	- A 와 R의 부호가 다름
+
+[[007. 오버플로 플래그 V]] 참고
