@@ -646,3 +646,187 @@ Overflow:
 	- A 와 R의 부호가 다름
 
 [[007. 오버플로 플래그 V]] 참고
+
+## `neg`: 2의 보수
+
+![[Pasted image 20260419042906.png]]
+
+2의 보수로 음수를 표현
+
+## `mul`: unsigned 곱셈
+
+![[Pasted image 20260419043116.png]]
+
+### `mul`과 데이터 손실
+
+`mul` 니모닉은 데이터 손실이 없음
+
+여기서 말하는 데이터 손실이란?
+- 고수준 언어에서 `int * int` 했을 때 `int`범위를 넘어서 값이 손실되는 경우
+	- 오버플로우
+
+왜 데이터 손실이 발생하지 않을까?
+- 8 비트 곱셈에서 결과는 16비트 ax에 저장
+- 16 비트 곱셈에서 결과는 상위 16비트는 dx, 하위 16비트는 ax에 저장
+
+고수준 언어에서는 왜 데이터 손실이 발생하는가?
+- `int * int` 했을 때 `int`에 저장하기 때문
+- 넘어서는 값이지만 동일한 자료형에 저장하는 것이 기본 동작인 경우가 많음
+
+### `mul`과 피연산자
+
+`mul` 니모닉 옆의 피연산자는 하나임
+
+나머지 피연산자는 8 비트 곱셈에서는 al, 16 비트 곱셈에서는 ax
+- "A * B"에서 a레지스터는 고정으로 사용된다고 생각하기
+
+명시적으로 적어주는 피연산자의 크기에 따라 암묵적으로 다음과  같은 동작이 결정됨
+- 피연산자의 크기가 8비트면, al과 곱하고, 결과는 ax에 저장
+- 피연산자의 크기가 16비트면, ax와 곱하고, 결과는 dx:ax에 저장
+
+8비트 * 16비트 같은 혼합 크기 곱셈은 없음
+
+`mul bx`의 경우 피연산자는 ax, 결과는 dx:ax 에 저장
+
+#### `mul factor` 에서 `factor`의 자료형
+
+factor의 크기는 1바이트, 2바이트만 허용
+- DB
+- DW
+
+아래와 같은 코드는 어셈블 에러 발생
+
+```masm
+TITLE Main  
+  
+.DOSSEG  
+.8086  
+.NO87  
+.MODEL TINY  
+  
+.DATA  
+factor DD 80h  
+  
+.CODE  
+.STARTUP  
+    mov ax, 0000h  
+    mul factor
+  
+exit:  
+    ; 프로그램 종료  
+    mov ah, 4Ch  
+    xor al, al ; 리턴값 0  
+    int 21h  
+  
+END
+```
+
+![[Pasted image 20260419190604.png]]
+
+이유는 `.8086`모드에서 `mul`은 바이트, 워드만 지원하기 때문
+- 80386-80486 (x86-32)부터 더블 워드 지원
+	- 당연히 이것보다 큰 쿼드 워드도 지원하지 않음
+
+> [!QUOTE] MASM 6.1 Reference [[pocu_note/COMP2300/900. 참고자료/x86-instructions/MUL/index|MUL]]
+> 
+> On the 80386–80486, if the operand is EAX, the product goes into the EDX:EAX register pair.
+
+### `mul  WORD PTR [bx]`에서 `WORD PTR`
+
+bx에 `[]`를 사용했기에 간접 피연산자
+
+따라서 아래와 같이 lea로 주소를 대입해 사용할 수 있음
+- mov + OFFSET 조합도 가능
+
+```masm
+.DATA  
+factors DW 10h, 20h, 30h, 40h, 50h  
+  
+.CODE  
+.STARTUP  
+    lea bx, factors  
+    mov ax, 0000h  
+    mul WORD PTR [bx]
+```
+
+곱셈 결과는 워드의 곱셈이라 dx:ax에 저장
+
+`WORD PTR`을 넣지 않으면, 주소에서 몇 바이트 읽어야 하는지 명시할 수 없음
+- 따라서 넣지 않고 `mul [bx]`와 같이 작성하면 어셈블 오류 발생
+
+![[Pasted image 20260419192256.png]]
+여기서도 당연히 `mul DWORD PTR [bx]`같이 8086에서 지원하지 않는 `mul`연산을 작성하면 어셈블 에러 발생
+
+![[Pasted image 20260419193240.png]]
+
+### `mul`과 오버플로우, 캐리 플래그
+
+> [!QUOTE] MASM 6.1 Reference [[pocu_note/COMP2300/900. 참고자료/x86-instructions/MUL/index|MUL]]
+> 
+> The carry and overflow flags are set if DX is not 0 for 16-bit operands or if AH is not 0 for 8-bit operands.
+
+`mul`에서는 CF = OF
+- 결과가 원래 피연산자의 크기를 넘었는지 여부로 결정
+	- 항상 둘이 값이 동일함
+- 16비트 피연산자의 경우 DX가 0이 아니면 원래 피연산자의 크기인 2바이트를 넘었기 때문에 CF, OF 모두 켜짐
+- 8비트 피연산자의 경오 AH가 0이 아니면 원래 피연산자의 크기인 1바이트를 넘었기 때문에 CF, OF 모두 켜짐
+
+x86 ISA를 설계한 Intel 엔지니어들의 설계 결정
+- 곱하기 연산에서 오버플로우나 캐리나 동일한 개념
+
+### ?로 표기된 SF, ZF
+
+말 그대로 예측 불가능
+
+따라서 `mul`연산 이후 SF, ZF를 사용하려면 clear 하는 것이 베스트 프렉티스
+### `mul`의 성능
+
+2를 곱할 때는 left shift가 훨씬 성능에 유리함
+
+## `imul`: signed 곱셈
+
+![[Pasted image 20260419221930.png]]
+
+부호를 고려한 `mul` 
+
+조심해야할 포인트는 동일함
+- 나머지 피연산자를 어디서 읽어오냐, 결과는 어디에 저장되냐
+	- 이 규칙은 명시적으로 표기한 피연산자의 크기에 따라 달라짐(바이트 or 워드)
+- OF, CF는 동일한 값으로 변함
+
+
+## `div`: unsigned 나눗셈
+
+![[Pasted image 20260419223017.png]]
+
+### `div`와 피연산자
+
+[[#`mul`과 피연산자]]와 유사하게 명시적으로 피연산자는 하나
+- 이 피연산자(src)의 크기에 따라 연산이 달라짐
+	- 8비트라면 al(dst)에 dst/src의 몫, ah에 dst/src의 나머지 저장
+	- 16비트라면 ax(dst)에 dst/src의 몫, dx에 dst/src의 나머지 저장
+
+위의 예시를 보면
+- cx의 경우 cx/ax의 몫이 ax에 저장, cx/ax의 나머지가 dx에 저장
+- dl의 경우 dl/al의 몫이 al에 저장, dl/al의 나머지가 ah에 저장
+- `BYTE PTR [bx]`의 경우 bx에 저장된 값은 주소(dst_addr)고, dst_addr에서 1바이트 읽으면 dst, dst/al의 몫이 dst_addr에 저장, dst/al의 나머지가 ah에 저장
+- fsize의 경우 8비트, 16비트 인지에 따라 달라지고, `mul`에서 봤듯이 자료형을 초과하면 어셈블 실패
+
+> [!QUOTE] MASM 6.1 Reference [[pocu_note/COMP2300/900. 참고자료/x86-instructions/DIV/index|DIV]]
+> 
+> Divides an implied destination operand by a specified source operand. Both operands are treated as unsigned numbers. If the source (divisor) is 16 bits wide, the implied destination (dividend) is the DX:AX register pair. The quotient goes into AX and the remainder into DX. If the source is 8 bits wide, the implied destination operand is AX. The quotient goes into AL and the remainder into AH.
+
+### `div`와 OF, SF, ZF, CF
+
+모두 알 수 없음
+
+`div`를 사용하고 이것들을 사용하려면 초기화 해야함
+
+## `idiv`: signed 나눗셈
+
+![[Pasted image 20260419225622.png]]
+부호를 고려한 `div`
+
+조심해야할 포인트는 동일함
+- 명시적 피연산자(src)의 크기에 따라 dst가 결정, src/dst의 몫과 나머지가 어디에 저장되는지 결정
+- OF,SF,ZF,CF 모두 알 수 없음

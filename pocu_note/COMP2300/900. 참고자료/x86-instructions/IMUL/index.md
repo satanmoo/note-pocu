@@ -1,0 +1,2 @@
+- Microsoft Macro Assembler 6.1 Manuals/Reference.pdf 87p-88p
+- [https://hjlebbink.github.io/x86doc/html/MUL.html](https://hjlebbink.github.io/x86doc/html/IMUL.html)
