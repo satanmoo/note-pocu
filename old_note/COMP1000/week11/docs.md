@@ -2,35 +2,35 @@
 
 ## 조합론
 
-![img.png](img.png)
+![img.png](old_note/COMP1000/week11/img.png)
 
 - 그룹 짓는 방법을 연구
 
 ### 조합론 예시
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP1000/week11/img_1.png)
 
 - 알고리듬의 복잡도
 - 전화번호
 - IP 주소 패턴
     - "IPv4"로 개수가 부족해서 "IPv6"
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP1000/week11/img_2.png)
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP1000/week11/img_3.png)
 
 - 비트 수에 따라 표현 가능한 수 구하기
 
 ## 경우의 수
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP1000/week11/img_4.png)
 
 - 사건(event)는 고유한 결과
     - 각 사건끼리 고유해야함
     - 주사위를 던졌을 때 1과6이 동시에 나올 수 없음
     - 동전의 옆면이 나올 수 없음
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP1000/week11/img_5.png)
 
 - 경우의 수가 있으면 확률도 구할 수 있음
 
@@ -433,48 +433,48 @@
 
 ![img_91.png](img_91.png)
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP1000/week11/img_92.png)
 
 ### 확률의 예: 특정 숫자들을 순서대로 뽑을 확률
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP1000/week11/img_93.png)
 
 ## 여사건
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP1000/week11/img_94.png)
 
 - 표본 공간의 모든 사건들이 일어날 확률을 모두 더하면 1
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP1000/week11/img_95.png)
 
 - 여집합과 유사하게 전체(1)에서 빼는 계산
 
 ### 여사건의 예: 1인 비트가 하나 이상 있을 확률
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP1000/week11/img_96.png)
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP1000/week11/img_97.png)
 
 - 모든 비트가 0인 경우의 수는 1
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP1000/week11/img_98.png)
 
 ## 합사건
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP1000/week11/img_99.png)
 
 - 포함 배제의 원리랑 유사함
 - 교집합을 빼는 개념
 
 ### 합 사건의 에: 경품 당첨 확률
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP1000/week11/img_100.png)
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP1000/week11/img_101.png)
 
 ## 확률에 기반한 사고
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP1000/week11/img_102.png)
 
 - 합리적인 사고는 확률에 기반함
 

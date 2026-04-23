@@ -5,7 +5,7 @@
 - 프로그래밍이라는 표현보다 `계획법`이라는 표현에 주목하기.
 - 테크닉이라고 생각합시다.
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week10/images/img.png)
 
 - 복잡한 문제에 특별한 속성이 존재해야지 DP로 풀 수 있다.
     - 재귀적
@@ -13,15 +13,15 @@
 
 ### 복잡한 문제의 예: 배낭 문제
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week10/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week10/images/img_2.png)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week10/images/img_3.png)
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week10/images/img_4.png)
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week10/images/img_5.png)
 
 - 이 문제를 판정 버전으로 바꾸면 "약한 NPC" 문제가 된다.
     - 최소 어떤 값어치 V만큼 넣을 수 있는가?
@@ -539,42 +539,42 @@ public class Item {
 
 ![img_91.png](images/img_91.png)
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week10/images/img_92.png)
 
 - 과제 1이 생각나네용.
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week10/images/img_93.png)
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week10/images/img_94.png)
 
 ### 그리디 알고리듬의 장점
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week10/images/img_95.png)
 
 ## 쪼갤 수 있는 배낭 문제
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week10/images/img_96.png)
 
 - 물품을 쪼개서 넣을 수 있음
     - 0 or 1 이 아니다!
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week10/images/img_97.png)
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week10/images/img_98.png)
 
 - 단위 면적 당으로 접근하면 globally optimal 구할 수 있음
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week10/images/img_99.png)
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week10/images/img_100.png)
 
 - 증명은 쉽지 않지만, 해보면 최적이 나옴!
 
 ## 그리디 알고리듬을 사용하기 적합한 경우
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week10/images/img_101.png)
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week10/images/img_102.png)
 
 - DP를 사용하지 못할 때 그리디를 사용하면 된다고 말할 수 있는게, 최적 부분구조는 두 방법이 사용되는 상황의 공통적인 속성임
 

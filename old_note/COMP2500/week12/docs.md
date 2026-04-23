@@ -2,26 +2,26 @@
 
 ## 디자인 패턴 바로 쓰지 마셈
 
-![img.png](images/img.png)
+![img.png](old_note/COMP2500/week12/images/img.png)
 
 - 일단 기본기 다지쇼
 - 내 코드가 정확히 도는지 이해할 때 까지
 - 패턴을 보는 순간 새롭지 않아야함
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP2500/week12/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP2500/week12/images/img_2.png)
 
 ## 팩토리 메서드 패턴
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP2500/week12/images/img_3.png)
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP2500/week12/images/img_4.png)
 
 - static 매서드 `createOrNull()` 을 통해서만 개체 생성 가능
     - 생성자 private
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP2500/week12/images/img_5.png)
 
 ![img_6.png](images/img_6.png)
 
@@ -370,35 +370,35 @@
 
 ![img_91.png](images/img_91.png)
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP2500/week12/images/img_92.png)
 
 - 굉장히 익숙하네요
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP2500/week12/images/img_93.png)
 
 - 필요 이상의 데이터를 반환하지 말자
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP2500/week12/images/img_94.png)
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP2500/week12/images/img_95.png)
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP2500/week12/images/img_96.png)
 
 - `toDto()` 매서드 만들어서 변환해서 반환
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP2500/week12/images/img_97.png)
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP2500/week12/images/img_98.png)
 
 ## 프록시 패턴
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP2500/week12/images/img_99.png)
 
 - 프록시
 - 캐시 메모리처럼 작동함
 
-![img_100.png](images/img_100.png)
-![img_101.png](images/img_101.png)
+![img_100.png](old_note/COMP2500/week12/images/img_100.png)
+![img_101.png](old_note/COMP2500/week12/images/img_101.png)
 
 - 클래스 구조에서 프록시를 만드는 개념
 - 값 비싼 리소스를 메모리에 올리지 않고 싶을 때
@@ -408,7 +408,7 @@
 
 ### 프록시 패턴: 이미지 로딩
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP2500/week12/images/img_102.png)
 
 - 이미지 데이터가 대표적인 값 비싼 리소스
     - 용량 큼
@@ -588,7 +588,7 @@ public class LoadingScreen extends Screen {
 
 ### 더 직관적인 방법
 
-![img.png](img.png)
+![img.png](old_note/COMP2500/week12/images/img.png)
 
 - 왜 굳이 Logger 클래스에 next 멤버 변수를 사용했을까?
 

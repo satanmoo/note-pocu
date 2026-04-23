@@ -2,23 +2,23 @@
 
 ## 논리
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week5/images/img.png)
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week5/images/img_1.png)
 
 ## 명제
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week5/images/img_2.png)
 
 - 참 또는 거짓으로 결정할 수 있는 말(문장)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week5/images/img_3.png)
 
 - 명제가 아닌 문장도 있음
 
 ## 진리표(truth table)
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week5/images/img_4.png)
 
 - 진리:
   - 참/거짓
@@ -26,7 +26,7 @@
 
 ## 합성 명제(compound proposition)
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week5/images/img_5.png)
 
 - 크게 둘로 나뉨
   - 단순 명제를 논리연산자로 결합

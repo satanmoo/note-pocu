@@ -2,11 +2,11 @@
 
 ## Trie 개요
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week7/images/img.png)
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week7/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week7/images/img_2.png)
 
 - 메모리에 캐싱
 
@@ -18,7 +18,7 @@
             - 문자열의 길이가 K라면 시간복잡도 O(K)
         - 영단어 검색 기능만 있다면 해시 테이블도 적당함
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week7/images/img_3.png)
 
 - 자동완성 기능을 만드려면 해시 테이블로 충분하지 못함
     - 길이라는 속성도 고려해야함
@@ -26,11 +26,11 @@
 
 ## 사전의 패턴
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week7/images/img_4.png)
 
 - 아스키 순서
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week7/images/img_5.png)
 
 - a로 시작하는 단어 모두 나열 후 b로 시작하는 단어 시작됨
 

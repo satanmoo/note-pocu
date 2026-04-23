@@ -2,6 +2,8 @@
 tags:
   - COMP1000
   - week1
+aliases:
+  - 2진법
 ---
 # 2진법
 

@@ -2,7 +2,7 @@
 
 ## 라이브러리
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week12/img.png)
 
 - 오브젝트 파일을 모아(패키지) 라이브러리로 만듦
     - 링킹 되지 않은 상태
@@ -18,7 +18,7 @@
 
 ### [정적 라이브러리와 링크]
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week12/img_1.png)
 
 - 정적 링킹
     - 컴파일 하는 도중에 결정
@@ -32,7 +32,7 @@
 
 ### [정적 라이브러리 사용하기]
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week12/img_2.png)
 
 - 아래 3단계를 따름
 - [1] 소스 코드들을 컴파일하여 정적 라이브러리를 만듦
@@ -51,7 +51,7 @@
 
 - [1] simple_math.c 컴파일하기
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week12/img_3.png)
 
 ```shell
 clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
@@ -69,11 +69,11 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
     - 리눅스 계열: ar
     - 이 실행 파일이 정적 라이브러리를 만듦
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week12/img_4.png)
 
 - 정적 라이브러리 파일을 만드는 명령어
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week12/img_5.png)
 
 - modifier `c`를 사용하지 않을 때
     - simple_math.lib 파일이 존재하지 않음
@@ -788,28 +788,28 @@ int main(void)
 
 - 고무줄 같은 정수형의 크기가 문제다!
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week12/img_92.png)
 
 - int8_t 이렇게 고정된 크기를 명시함
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week12/img_93.png)
 
 - 최소/최댓값도 있음
 
 ## 허수를 표현하는 자료형
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week12/img_94.png)
 
 - 이런게 있긴 있음
 
-![img_95.png](img_95.png)
-![img_96.png](img_96.png)
+![img_95.png](old_note/COMP2200/week12/img_95.png)
+![img_96.png](old_note/COMP2200/week12/img_96.png)
 
 - 시험에 안 나올듯 ㅋㅋ;
 
 ## IEEE 754 부동 소수점 지원
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week12/img_97.png)
 
 - IEEE 754는 C99에 정식으로 표준에 들어왔음
     - 사칙 연산과 제곱근의 올림이 IEEE 754에서 정의한대로 처리

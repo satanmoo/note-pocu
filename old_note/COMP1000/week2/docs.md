@@ -1,105 +1,6 @@
 # Week2
 
-## 다양한 집법과의 관계
 
-![img.png](images/img.png)
-
-- 2진수 중요하다
-
-![img_1.png](images/img_1.png)
-
-- 다른 진법은?
-
-### 16진수는 중요함
-
-![img_2.png](images/img_2.png)
-
-### 16진수는 4비트
-
-![img_3.png](images/img_3.png)
-
-- 비트가 n개면 2^n개의 값을 표현
-
-![img_4.png](images/img_4.png)
-
-- 16진수를 표현하기 위해서 4비트가 필요함
-
-![img_5.png](images/img_5.png)
-
-- 1바이트로 16진수 2자리를 표현할 수 있음
-
-![img_6.png](images/img_6.png)
-
-- 16진수는 2진수보다 읽기 편함
-- '0x7E' 표현은 1바이트
-
-### 색상 표현과 16진수
-
-![img_7.png](images/img_7.png)
-
-- 채도:
-    - 색의 강함(빛의 강함)
-    - 빨간색 빛이 없으면 0
-    - 빨간색 빛이 강하면 255
-
-- 2^8 == 1바이트 == 16진수 2자리
-
-![img_8.png](images/img_8.png)
-
-- 컴퓨터에서 저장의 최소 단위는 1바이트(8비트)
-    - 그래서 색의 값을 저장할 때도 1바이트 사용
-
-![img_9.png](images/img_9.png)
-
-![img_10.png](images/img_10.png)
-
-![img_11.png](images/img_11.png)
-
-- 2진수보다는 16진수가 읽기 쉬운 예시
-- 16진수는 가독성이 좋음!
-
-## 8진법, 32진법, 64진법
-
-### 8진법
-
-![img_12.png](images/img_12.png)
-
-- 8진수를 표현하려면 3비트 필요
-- 1바이트는 8비트인데 3비트로 나눠떨어지지 않아서 불편함
-
-![img_13.png](images/img_13.png)
-
-- 데이터 저장 및 접근 단위가 1바이트라서 8진법은 잘 사용하지 않음
-
-### base32, base64
-
-![img_14.png](images/img_14.png)
-
-- 1바이트(8비트)를 만들기 어렵기 때문에 잘 사용하지 않음
-
-![img_15.png](images/img_15.png)
-
-- 허용되지 않는 문자(예를 들어 '/')를 URL에 포함할 때
-    - 문자를 비트 패턴으로 변환하는 과정이 필요함
-    - 비트 패턴으로 '01010111....'로 2진법으로 표현하지 않고 다른 진법으로 표현하면 가독성을 올릴 수 있음
-    - 진법을 선택할 때 1글자를 표현할 때 많은 비트를 사용하는 진법은 URL 길이를 줄일 수 있음
-        - 직관적으로 생각하면 8진수 2글자(2자리)가 64진수 1글자와 동일함
-
-![img_16.png](images/img_16.png)
-
-- HTML에서 PNG(이미지)를 파일(문서)에 포함할 때 경로를 명시하면 브라우저에서 경로의 이미지 파일을 읽어와서 보여주게 됨
-    - 하드의 파일을 읽어오거나
-    - 서버에 요청을 보내 이미지를 받아오거나
-
-- 경로를 명시하는 대신 embed(HTML 파일 속에 포함하는 방식)을 사용하면 이미지 파일의 비트 패턴을 문서에 명시함
-    - 위의 예시에서는 '00010101000...' 와 같이 2진수로 표현하는 대신 base64로 표현
-    - 위의 예시에서는 이미지의 크기가 21KB라서 21000 * 8 == 168000 비트로 2진수로 표현하면 너무 길다
-    - base64를 사용하면 이 길이를 6배 줄일 수 있음
-
-- 참고로 'index.html' + 'logo.png' 용량을 합치면 22KB인데, 'index_embed.html'의 용량은 28KB
-    - 이미지 파일을 임베드 했을 때 용량이 더 커짐
-    - 이유는 base64(6비트)라서 1바이트(8비트)에 나눠 떨어지게 저장하지 못하기 때문
-    - 'logo.png'는 비트 패턴이라 1비트 단위로 1바이트에 나눠 떨어지게 저장하기 때문에 효율적으로 저장
 
 ## 정수
 
@@ -460,7 +361,7 @@ int i = 1 - i;
 - 최대값(127)을 넘어버리면 최소값(-128)부터 다시 시작하게 됨
     - 도돌이표 개념
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP1000/week2/images/img_92.png)
 
 - 10진수 값을 확인해야 됨
 - 비트패턴 만으로 확인할 수 없음
@@ -624,56 +525,56 @@ int i = 1 - i;
 
 - 문자도 컴퓨터 내부에서 정수로 저장되어 있음.
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP1000/week2/images/img_93.png)
 
 - 문자를 숫자로 표현하기 위해 문자에 번호(코드)를 부여
 - 여기서 문자와 코드의 대응을 '아스키 테이블'이라고 부른다.
 - 아스키 테이블을 컴퓨터에 미리 저장해두고, 숫자를 아스키 테이블에 따라 문자로 변환해서 화면에 보여주게 된다.
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP1000/week2/images/img_94.png)
 
 - 128개를 표현하기 위해 최소 7비트가 필요함
 - 컴퓨터의 저장 단위인 8비트에 따라 1바이트로 문자를 표현하게 됨
 
 ### 메모리에서 문자
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP1000/week2/images/img_95.png)
 
 - 메모리와 마찬가지로 디스크에도 바이너리 패턴으로 저장함
 
 ### 문자에 1을 더하면?
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP1000/week2/images/img_96.png)
 
 - 문자도 내부적으로 정수라서 1을 더할 수 있음
     - 'A' 다음 'B'
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP1000/week2/images/img_97.png)
 
 - 이유:
     - 메모리에는 모두 정수로 저장되고, 아스키 테이블에서 다음 수는 'B'
 
 ## ANSI
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP1000/week2/images/img_98.png)
 
 - 영어만 표현하려면 아스키로 충분하다
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP1000/week2/images/img_99.png)
 
 - 다른 언어를 표현하기 위해 아스키를 확장함
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP1000/week2/images/img_100.png)
 
 - 8비트를 사용해서 추가적으로 128개의 라틴문자 표시
 
 ## 그 밖의 다른 문자 인코딩
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP1000/week2/images/img_101.png)
 
 ## 멀티바이트
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP1000/week2/images/img_102.png)
 
 ![img_103.png](images/img_103.png)
 

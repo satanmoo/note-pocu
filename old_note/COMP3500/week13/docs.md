@@ -5,29 +5,29 @@
 - 최소로 뻗어 나가는
     - span
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week13/images/img.png)
 
 - 모든 노드를 연결하는 변들 찾기
 - 비용 최소
 
 ### 신장 트리
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week13/images/img_1.png)
 
 - 어떤 그래프 안에 있는 모든 노드를 연결
 - 신장 트리는 여럿 존재 가능
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week13/images/img_2.png)
 
 - MST
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week13/images/img_3.png)
 
 - MST에서 변의 개수는 고정임:
     - 노드가 N개라면
     - 변은 N-1개
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week13/images/img_4.png)
 
 - MST를 완성하는 과정에서 변의 개수가 N-1개가 성립하면 종료하면 됨
 - 사이클도 만들면 안 됨
@@ -35,7 +35,7 @@
 
 ### 순환
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week13/images/img_5.png)
 
 - 2 -> 3 -> 4 -> 1 -> 2
 
@@ -657,40 +657,40 @@ public final class Kruskal {
 - 이렇게 연결하면 신기하게도 대칭 무방향 그래프를 만들 수 있음
 - "A -> A'" 처럼 자기 자신의 고스트와 연결하는 변은 음의 가중치로
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week13/images/img_92.png)
 
 - 남은 변들 다 채워서 완전 그래프로
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week13/images/img_93.png)
 
 - 변형하고 실행
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week13/images/img_94.png)
 
 - 여기서 신기하게도 실제노드 -> 고스트노드
     - 교차로 반복됨
     - TSP 알고리듬에서 B -> B', A -> A' 이런식으로 가게 구현
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week13/images/img_95.png)
 
 - "실제노드 -> 고스트노드" 에서 B -> B' 처럼 성립하게 구현하면
 - 하나의 노드로 취급할 수 있음
     - 실제노드 + 고스트노드
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week13/images/img_96.png)
 
 - 놀랍네..
 
 ### 삼각 부등식이 성립 안 하는 TSP
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week13/images/img_97.png)
 
 - 이건 다항식 시간 안에 괜찮은 해법을 찾을 수 없음..
 - P = NP 가 성립하면 다항식 시간 안에 풀 수 있음
 
 ## 2-근사 TSP 복습 퀴즈
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week13/images/img_98.png)
 
 - 다음 중 위 TSP 그래프를 2-근사 알고리듬을 사용하여 구한 최적 경로를 모두 고르세요. 시작 노드는 A입니다.
 
@@ -715,7 +715,7 @@ public final class Kruskal {
 
 ## 흐름 네트워크(Flow Network)
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week13/images/img_99.png)
 
 - 특별한 그래프
     - 변의 가중치가 용량(capacity)를 나타냄
@@ -725,18 +725,18 @@ public final class Kruskal {
     - 처음에 도착 지점까지 흐르는 시간이 걸리지만, 도착지점에 도착하고 부터는 흐름대로 계속 이어져야함
     - 수도꼭지와 비슷하게, 처음에 물이 흐르는 시간이 걸리지만 수도꼭지에서 물이 나오기 시작하면 계속 흘러야함
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week13/images/img_100.png)
 
 - "용량"을 초과해서 보낼 수 없음
     - 단위 시간에 용량만큼 보낼 수 있음
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week13/images/img_101.png)
 
 - 단위 시간에 현재 보내는 양을 "유량"이라고 부름
 
 ## 네트워크 유량 문제(Network Flow Problem)
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week13/images/img_102.png)
 
 ## 최대 유량 문제
 

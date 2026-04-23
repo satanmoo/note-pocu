@@ -2,11 +2,11 @@
 
 ## 자료구조의 개념
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week10/img.png)
 
 - 컴퓨터에서 여러 자료들을 조직적, 체계적으로 저장하는 방법
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week10/img_1.png)
 
 - 보통 자료구조는 동일한 데이터 타입을 가진 데이터들을 어떻게 저장할 것인가?
 - 어떤 원칙에 따라서 자료를 저장하는가?
@@ -16,24 +16,24 @@
 
 ## 자료구조의 효율성
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week10/img_2.png)
 
 - 주로 시간 복잡도를 말함
 - 자료구조의 효율성을 말할 때 하드웨어 최적화는 고려하지 않음
 
 ## Big-O 표기법
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week10/img_3.png)
 
 - 자료의 수에 따라 알고리즘의 시간 복잡도를 표기하는 방법
 
 ## 자료구조의 시간 복잡도 정리
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week10/img_4.png)
 
 ## 배열
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week10/img_5.png)
 
 - 줄줄이 세워 놓은 구조
 - 색인으로 접근
@@ -837,7 +837,7 @@ void insert_sorted(node_t** phead, int n)
   - next: ???(쓰레기값)
     - 주소: 0x204
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week10/img_92.png)
 
 - *pp == NULL이면 빈 연결 리스트
 - *pp를 하면 pp의 값(어떤 주소)으로 리디렉션
@@ -851,7 +851,7 @@ void insert_sorted(node_t** phead, int n)
   - next: NULL
     - 주소: 0x204
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week10/img_93.png)
 
 - *pp를 하면 pp의 값(0x1000)으로 리디렉션
   - 0x1000에 있는 값을 0x200으로 변경
@@ -874,7 +874,7 @@ void insert_sorted(node_t** phead, int n)
 - head의 값은 새로 추가한 node
 - 연결리스트의 head가 새로 추가한 node가 됨
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week10/img_94.png)
 
 - *pp를 하면 pp의 값(0x1000)으로 리디렉션
   - *pp의 값은 0x200, 헤드 노드의 주소
@@ -896,7 +896,7 @@ void insert_sorted(node_t** phead, int n)
 - pp의 값은 값2를 가지는 노드의 next 변수의 주소
 - *pp는 next 변수의 값 == 다음 노드의 주소 == NULL
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week10/img_95.png)
 
 - *pp는 pp의값 0x204로 리디렉션
   - 0x204의 값은 NULL
@@ -917,7 +917,7 @@ void insert_sorted(node_t** phead, int n)
   - pp는 2값을 가지는 노드의 next 주소값을 가지고 있음
   - 지금까지는 2값을 가지는 노드가 마지막 노드였음, next의 값은 NULL
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week10/img_96.png)
 
 - *pp로 pp의 값 0x204로 리디렉션
   - 주소 0x204에 있는 값을 0x300으로 변경
@@ -949,7 +949,7 @@ void insert_sorted(node_t** phead, int n)
   - next: NULL
     - 주소: 0x304
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week10/img_97.png)
 
 [loop1]
 - pp: 0x1000
@@ -973,7 +973,7 @@ void insert_sorted(node_t** phead, int n)
   - 즉 다음 노드로가서 미리 값을 본다고 생각하면 좀 이해가 쉬움
 - 조건문을 만족해 break
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week10/img_98.png)
 
 - 새로 추가할 3의 값을 가지는 new_node의 next값에 *pp(5값을 가지는 노드의 주소)대입
 
@@ -983,7 +983,7 @@ void insert_sorted(node_t** phead, int n)
   - next: 0x300
     - 주소: 0x404
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP2200/week10/img_99.png)
 
 - *pp: 0x204 주소에 리디렉션
   - 2값을 가진 node의 멤버 변수 next의 값을 3값을 가진 node의 주소로 변경
@@ -1008,7 +1008,7 @@ void insert_sorted(node_t** phead, int n)
 
 ## 연결 리스트 삭제
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week10/img_100.png)
 
 ```c++
 typedef struct node {
@@ -1035,7 +1035,7 @@ void remove(node_t** phead, int n)
 
 [연결 리스트에서 첫번째 노드 삭제하기]
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week10/img_101.png)
 
 - pp: 헤드 노드의 주소값을 가짐
 - *pp: 헤드 노드의 값 == 첫번째 노드의 주소
@@ -1043,7 +1043,7 @@ void remove(node_t** phead, int n)
   - 0번째 노드인데 value는 없고, next는 첫번째 노드
 - 헤더 노드(현재 노드)에서 다음 노드(첫번째 노드)의 값을 확인했더니, 첫번째 노드가 삭제 대상
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week10/img_102.png)
 
 - 바로 삭제하면, 첫번째 노드의 next값을 알 수 없음, 즉 다음 다음 노드의 주소를 알 수 없음
 - 따라서 나중에 삭제하기 위해 임시 저장

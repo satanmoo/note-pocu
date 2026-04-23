@@ -2,33 +2,33 @@
 
 ## 집합
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week4/images/img.png)
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week4/images/img_1.png)
 
 - 키워드:
     - 특정 조건
     - 순서가 없음
         - 중복 없음
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week4/images/img_2.png)
 
 - 집합은 보통 대문자로 표기
 
 ## 원소
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week4/images/img_3.png)
 
 - 집합에 포함된 대상
 - A.K.A 요소
 
 ### 원소 나열법
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week4/images/img_4.png)
 
 ### 조건 제시법
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week4/images/img_5.png)
 
 ### 벤 다이어그램
 

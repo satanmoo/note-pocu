@@ -2,6 +2,8 @@
 tags:
   - COMP1000
   - week1
+aliases:
+  - 숫자 체계
 ---
 # 숫자 체계
 

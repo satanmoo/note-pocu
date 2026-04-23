@@ -2,12 +2,12 @@
 
 ## 과학적 사고방법
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week7/images/img.png)
 
 - '확률/비율'이 중요한 역할을 함
 - 과학과 다르게 수학은 '참/거짓'의 진리값을 도출하는게 중요함
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week7/images/img_1.png)
 
 - 과학은 여태까지 경험한 현상에 대해 설명하는 학문
     - 모든 것을 관찰하고 일반화하는 것이 현실적으로 불가능
@@ -18,15 +18,15 @@
 
 ## 귀납법/연역법
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week7/images/img_2.png)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week7/images/img_3.png)
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week7/images/img_4.png)
 
 ## 과학적 사고방법 과정
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week7/images/img_5.png)
 
 ![img_6.png](images/img_6.png)
 

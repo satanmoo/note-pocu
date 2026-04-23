@@ -2,6 +2,8 @@
 tags:
   - COMP1000
   - week1
+aliases:
+  - 8진법
 ---
 # 8진법
 

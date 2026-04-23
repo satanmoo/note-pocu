@@ -2,7 +2,7 @@
 
 ## 컴퓨터의 다양한 부품
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week9/img.png)
 
 - CPU, 메모리, 하드 디스크
 - 단점에 주목하자, 부품들 사이에 연락을 하기 위해서 bus라는 통로를 거치는데, 이 때 비효율이 발생
@@ -10,14 +10,14 @@
 
 ## 프로그램에서 주로 사용하는 부품
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week9/img_1.png)
 
 - CPU: 연산
 - 메모리: 실행 중 연산의 중간 결과 등을 저장
 
 ## 메모리의 종류
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week9/img_2.png)
 
 - 대표적으로 2개로 나눔
     - STACK
@@ -26,14 +26,14 @@
 
 ### HEAP
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week9/img_3.png)
 
 - 가장 범용적인 기본 형태
 - 메모리 더미에 왕창 쌓아두고, 필요할 때 가져오는 개념
 
 ### STACK
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week9/img_4.png)
 
 - 프로그램마다 `특별한 용도`에 사용하라고 별도로 할당된 메모리
     - 엄밀히 말하면 프로그램의 쓰레드 마다 별도로 할당
@@ -41,7 +41,7 @@
 
 ### 레지스터: CPU 내부의 메모리
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week9/img_5.png)
 
 - CPU 내부의 고속 저장 공간
 - 메모리 처럼 저장 기능을 수행하나 고속임
@@ -679,23 +679,23 @@ fclose(file);
 - 기존의 할당된 메모리(첫번째 매개변수)는 해제되지 않음
 - 따라서 실패 시 메모리 누수가 발생할 수 있음
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week9/img_92.png)
 
 - realloc()하고 nums 포인터 변수에 바로 저장함
 - 실패하면 nums에 NULL이 저장되고, 기존 nums의 메모리는 해제되지 않은 채, 잃어버리게 됨
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week9/img_93.png)
 
 - 올바르게 재할당하는 방법은 임시 변수를 사용하기
 - 메모리 누수를 막는 realloc 사용법!
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week9/img_94.png)
 
 - realloc() = malloc() + memcpy() + free()
 
 ## memcpy()
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week9/img_95.png)
 
 - dest에는 const가 없음, 따라서 변할 수 있음
 - count 바이트 만큼 복사
@@ -705,14 +705,14 @@ fclose(file);
 
 ## realloc() 대신에 malloc() + memcpy() + free() 사용?
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week9/img_96.png)
 
 - realloc()에서 메모 누수가 나는 경우 메모리가 부족하다는 것이기 때문에, 일부러 프로그램을 종료시키는 것이 더 나을 수도 있음
 - 이건 상황에 따라서 잘 판단해야함
 
 ## realloc의 특수한 경우
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week9/img_97.png)
 
 - 첫번째 인자로 NULL을 넘기면, malloc()과 같은 동작을 함
 
@@ -779,7 +779,7 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## memcmp()
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week9/img_98.png)
 
 - 두 메모리 영역을 비교
 - strcmp와 매우 비슷함
@@ -790,7 +790,7 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ### [memcmp로 구조체 2개 비교하기]
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP2200/week9/img_99.png)
 
 - 구조체는 깊은 복사가 가능하게 멤버를 구현
   - &s2, &s4 비교할 때 12349와 12340의 비트 패턴으로 비교함
@@ -799,7 +799,7 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 - 하지만 조심해야할 점이 있음, 구조체 멤버로 배열을 들고 있다면 `배열의 초기화`를 잘 해줘야함
   - 예를 들어 "LuLu" 의 경우 LuLu\0 그리고 뒤에 쓰레기값이 들어있다면, 정상적으로 비교가 안 됨
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week9/img_100.png)
 
 - 구조체가 포인터 변수를 멤버로 가질 경우 조심해야함
 - 포인터 변수를 가진 상태면, 동적 메모리 할당으로 값이 같다도, 포인터 변수의 주소값이 달라서 올바르게 비교할 수 없음
@@ -807,14 +807,14 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## 동적 메모리 할당을 이용한 깊은 복사
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week9/img_101.png)
 
 - 이 경우 문자열이라 strcpy()를 사용해도 됨
 - s2는 반드시 free 해줘야함
 
 ## 구조체 멤버 변수: 배열 vs 포인터
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week9/img_102.png)
 
 - 배열
   - 그대로 대입 가능의 의미

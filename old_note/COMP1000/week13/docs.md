@@ -2,33 +2,33 @@
 
 ## 통계에서 사용하는 그래프
 
-![img.png](img.png)
+![img.png](old_note/COMP1000/week13/img.png)
 
 - 연속 확률 분포 그래프를 가장 자주 사용함
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP1000/week13/img_1.png)
 
 - 이산적인 그래프를 공부해보자
 
 ## 도수 분포표
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP1000/week13/img_2.png)
 
 - 빈도의 분포
 
 ### 도수 분포표를 그리는 방법
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP1000/week13/img_3.png)
 
 - 성적 분표포가 대표적인 도수 분표표의 예시
 
 - 도수 분표포에서 폭을 정수로 표현하기 위해 올림하는 경우가 많음
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP1000/week13/img_4.png)
 
 - 10명의 점수가 있을 때 그려보자
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP1000/week13/img_5.png)
 
 ![img_6.png](img_6.png)
 

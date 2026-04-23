@@ -6,7 +6,7 @@
 
 ### 구조체란?
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week6/img.png)
 
 - struture: 구조물, 구조체
 - 클래스로 가기 전 중간 단계
@@ -14,19 +14,19 @@
 
 ### C 에서는 모두 값형 구조체도 값형
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week6/img_1.png)
 
 - 참조형처럼 쓰고 싶으면 주소를 전달하면 됨
 
 ### 구조체의 필요성
 
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![img_2.png](old_note/COMP2200/week6/img_2.png)
+![img_3.png](old_note/COMP2200/week6/img_3.png)
+![img_4.png](old_note/COMP2200/week6/img_4.png)
 
 - 사람은 개념을 묶어서 봄
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week6/img_5.png)
 
 - 실수를 막아준다.
 
@@ -594,7 +594,7 @@ int off_age = (char*)&info.age - (char*)&info  // 76
 
 ## 패딩 줄이기
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week6/img_92.png)
 
 - 4바이트 경계로 예쁘게 멤버의 순서를 변경
 - 컴파일러가 패딩을 없앨 수 있음
@@ -602,7 +602,7 @@ int off_age = (char*)&info.age - (char*)&info  // 76
 
 ## #pragma pack
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week6/img_93.png)
 
 - 컴파일러에 패딩 넣지 마라라고 지시
 - C 표준 X, Clang은 지원해줌
@@ -611,30 +611,30 @@ int off_age = (char*)&info.age - (char*)&info  // 76
 
 ## 구조체 베스트 프렉티스
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week6/img_94.png)
 
 - 업계에서 보통 assert로 구조체 크기 확인
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week6/img_95.png)
 
 - 명시적으로 코딩으로 패딩을 넣어도 된다.
 
 ## 코드보기: 점, 선, 직사각형 [연습]
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week6/img_96.png)
 
 - 구조체를 여러 파일에서 공유하려면 헤더파일에 선언하자
 - 사각형 만들 때 대각선의 두 점을 사용
     - 왼쪽 위, 오른쪽 아래
 - 구조체의 멤버로 다른 구조체를 사용하는 예
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week6/img_97.png)
 
 - 두 점으로 대각선에 따라 사각형을 만드는 코드
     - x좌표, y좌표 둘다 마찬가지
 - p0이 왼쪽 아래, p1은 오른쪽 아래를 보장하기 위해 검사하는 개념
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week6/img_98.png)
 
 [도우미 함수]
 
@@ -677,21 +677,21 @@ typedef struct {
 
 ```
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP2200/week6/img_99.png)
 
 - [연습] scanf로 stdin의 입력을 받아봐, 출력도 해보자
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week6/img_100.png)
 
 - 벡터의 개념
 - 방향도 포함된다.
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week6/img_101.png)
 
 - 도우미 함수 사용안하고, 멋대로 직사각형 만드는 경우
 - 가정이 깨짐..
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week6/img_102.png)
 
 - abs로 미리 처리해놔서 괜춘괜춘
 

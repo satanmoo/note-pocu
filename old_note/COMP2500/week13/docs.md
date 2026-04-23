@@ -2,29 +2,29 @@
 
 ## SOLID 설계 정신
 
-![img.png](images/img.png)
+![img.png](old_note/COMP2500/week13/images/img.png)
 
 - 포프쌤은 원칙이라고 표현 X
     - 정신 정도로 표현
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP2500/week13/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP2500/week13/images/img_2.png)
 
 - SOLID 정신의 목표
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP2500/week13/images/img_3.png)
 
 - 포프쌤은 베스트 프랙티스 정도라고 생각함
 
 ## SOLID 장점
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP2500/week13/images/img_4.png)
 
 - SOLID 정신에서 얻을 수 있는 것은 유연함
     - 추상화, 일반화, 인터페이스
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP2500/week13/images/img_5.png)
 
 - 디커플링이 중요한 프로젝트는 SOLID 도움 됨
 - 항상 직접적/구체적인 게 더 이해하기 쉽다는 사실을 잊지 말자

@@ -2,25 +2,25 @@
 
 ## 트리 속에 있는 데이터 찾기
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week9/images/img.png)
 
 - 트리에 데이터를 저장할 때 특별한 규칙이 없는 경우
     - 트리에 데이터가 없을 수도 있음
 - 어떤 순서로 방문해서 원하는 데이터를 찾을 것인가?
 - 일반화된 트리 탐색 방식
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week9/images/img_1.png)
 
 - 재귀적으로 각 노드에서 실행할 수 있는 알고리듬이 필요함
     - 트리가 재귀적인 구조이기 때문
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week9/images/img_2.png)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week9/images/img_3.png)
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week9/images/img_4.png)
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week9/images/img_5.png)
 
 - ...
 

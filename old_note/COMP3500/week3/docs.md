@@ -2,35 +2,35 @@
 
 ## 정렬 알고리듬
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week3/images/img.png)
 
 - 정렬에 사용할 데이터(입력 데이터)는 보통 배열에 저장
     - 임의 접근이 편하기 때문
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week3/images/img_1.png)
 
 ## 안정성(Stability)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week3/images/img_2.png)
 
 - 똑같은 Key 를 가진 데이터들의 순서가 바뀌지 않느냐 여부
 - 이게 왜 문제?
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week3/images/img_3.png)
 
 - 어떤 문제에서는 이게 중요함
 - 결론은 어떤 정렬 알고리듬은 안정성을 보장하지 않기 때문에 주의해야함
 
 ### 문제가 되는 경우 1
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week3/images/img_4.png)
 
 - 정렬 키와 실제 데이터(값)이 다른 경우
     - 값의 순서를 유지해야함
 
 ### 문제가 되는 경우 2
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week3/images/img_5.png)
 
 - 구조체/클래스의 일부 멤버만 정렬 키로 사용
     - 위 예시에서는 이름 순은 그대로 유지해야함
@@ -422,49 +422,49 @@ public static void insertionSort(final int[] nums) {
 
 ![img_91.png](images/img_91.png)
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week3/images/img_92.png)
 
 - 깊이 3
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week3/images/img_93.png)
 
 - 셀프 교환
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week3/images/img_94.png)
 
 - 셀프 교환
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week3/images/img_95.png)
 
 - 좌(인덱스)와 우(인덱스)가 같아짐
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week3/images/img_96.png)
 
 - 셀프 교환
 - 3 위치 고정
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week3/images/img_97.png)
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week3/images/img_98.png)
 
 - 좌(인덱스), 우(인덱스) 같은 위치라 바로 끝
 - 셀프 교환
 - 5 위치 고정
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week3/images/img_99.png)
 
 - 같으면 그대로 두죠?
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week3/images/img_100.png)
 
 - 우(인덱스) 직전까지 모두 작업했고
     - 기준값보다 작은 건 모두 좌 왼쪽, 크거나 같은건 좌 오른쪽에 있는 상태
 - 좌우교환
 - 7 위치 고정
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week3/images/img_101.png)
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week3/images/img_102.png)
 
 ![img_103.png](images/img_103.png)
 

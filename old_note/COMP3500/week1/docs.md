@@ -5,23 +5,23 @@
 - 확실한 문제 해결법
     - 어떤 문제를 해결하는 명백한 방법
 
-![img.png](images/img.png)
-![img_1.png](images/img_1.png)
+![img.png](old_note/COMP3500/week1/images/img.png)
+![img_1.png](old_note/COMP3500/week1/images/img_1.png)
 
 - 그대로 따라가기만 해면 답이 나오는 방법
 
 ## 컴퓨터 공학에서의 알고리듬 정의
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week1/images/img_2.png)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week1/images/img_3.png)
 
 - 어떤 해결하려는 문제를 정의할 수 있는가?
 - 컴퓨터로 구현 가능한가?
 - 방법이 명백한가?
 
-![img_4.png](images/img_4.png)
-![img_5.png](images/img_5.png)
+![img_4.png](old_note/COMP3500/week1/images/img_4.png)
+![img_5.png](old_note/COMP3500/week1/images/img_5.png)
 
 - 진짜 알고리듬으로 정의할 수 있음
 

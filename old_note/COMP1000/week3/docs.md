@@ -6,7 +6,7 @@
     - 아날로그에 가까움
 - 반면 컴퓨터는 디지털로 유한함
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week3/images/img.png)
 
 - 유리수/무리수 구분은 큰 의미가 없음.
 - 수학적인 개념으로 정수가 유리수에 포함됨
@@ -15,21 +15,21 @@
 
 ### 10진법 실수
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week3/images/img_1.png)
 
 - 진법의 규칙인 자리 수가 늘어나고 줄어들 때 10을 곱하고, 나누는 과정이 적용됨
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week3/images/img_2.png)
 
 ### 2진법 실수
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week3/images/img_3.png)
 
 - 마찬가지로 자리 수에 규칙 적용
 
 ## 실수의 10진수 <=> 2진수 변환
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week3/images/img_4.png)
 
 - 19를 만들기 위해 역으로 생각해서
     - 16
@@ -37,7 +37,7 @@
     - 1
     - 이렇게 생각해서 2진수 변환하는 논리를 유사하게 적용할 수 있음
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week3/images/img_5.png)
 
 - 같은 로직 적용
 
@@ -385,7 +385,7 @@
 - 0에 아주 가까운, 절대값이 엄청 작은 숫자를 표현할 수 있음
 - 슬라이드에서 파란색으로 표시된 범위
 
-![img.png](img.png)
+![img.png](old_note/COMP1000/week3/img.png)
 
 ### 지수값 128(지수비트 0xFF)
 
@@ -697,47 +697,47 @@
 - float 으로 저장했을 때(비트 패턴으로 저장) 다시 그 값을 그대로 돌려받을 수 있는가?
 - 이것이 문제다
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP1000/week3/images/img_92.png)
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP1000/week3/images/img_93.png)
 
 - 쿼드 트리
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP1000/week3/images/img_94.png)
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP1000/week3/images/img_95.png)
 
 - 유효 숫자 5자리는 아무 문제 없음
 - 원점에 가까워서 정수 자리 값이 작음
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP1000/week3/images/img_96.png)
 
 - 원점에서 먼 곳은 정수가 값이 커서 유효 숫자 자리가 늘어남
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP1000/week3/images/img_97.png)
 
 - 'Z-fighting' 현상
 - 뒷면에 그려져야할게 앞면에 그려지는 오류
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP1000/week3/images/img_98.png)
 
 - 이걸 방지하는 꼼수도 있음
 
 ### 정밀도 9의 개념
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP1000/week3/images/img_99.png)
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP1000/week3/images/img_100.png)
 
 - 32비트 (IEEE 754 Single)에서 가질 수 있는 가수:
     - 가수 비트에 23개 사용하고, 정규화 적용될 때는 정수비트 1이고, 비정규 일때는 0이니까
     - 대략 2^24
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP1000/week3/images/img_101.png)
 
 - 누군가 의문을 제기함
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP1000/week3/images/img_102.png)
 
 - 두 부동 소수점이 같은지 다른지 판단
 

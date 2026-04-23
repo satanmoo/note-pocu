@@ -2,8 +2,8 @@
 
 ## 입력
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](old_note/COMP2200/week5/img.png)
+![img_1.png](old_note/COMP2200/week5/img_1.png)
 
 - `happy path`만 존재하는게 아니다.
     - 고양이가 입력하면?
@@ -12,7 +12,7 @@
 
 ### 입력의 출처
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week5/img_2.png)
 
 - 입력의 출처는 출력할 때 이미 봤음
 - 스트림
@@ -22,7 +22,7 @@
 
 ### 입력처리 전략
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week5/img_3.png)
 
 - 입력을 처리하는 방법
     - 한 글자씩 읽기
@@ -38,8 +38,8 @@
 
 ### 한 글자씩 읽는 알고리즘: 시도 1
 
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
+![img_4.png](old_note/COMP2200/week5/img_4.png)
+![img_5.png](old_note/COMP2200/week5/img_5.png)
 ![img_6.png](img_6.png)
 
 - while TRUE로 계속 반복
@@ -630,19 +630,19 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 문자를 읽을 때 scanf()의 문제점과 해결책, clearerr()
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week5/img_92.png)
 
 - 버퍼 오버플로우 ㅠㅠ
 - 그래서 scanf도 문자열을 읽을 때 사용하지 않는 것이 좋습니다.
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week5/img_93.png)
 
 - 문자열이 아니라 다른 자료형을 읽을 때 도 scanf는 무한 루프에 빠질 위험이 크다...
 
 ### scanf 무한 루프
 
-![img_94.png](img_94.png)
-![img_95.png](img_95.png)
+![img_94.png](old_note/COMP2200/week5/img_94.png)
+![img_95.png](old_note/COMP2200/week5/img_95.png)
 
 - 입력에 5P를 입력했다?
 - 5까지 읽고, stdin 버퍼에 남아있는 P를 읽으면서 무한 루프에 빠짐
@@ -653,18 +653,18 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 무한 루프의 해결법: fgets + sscanf
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week5/img_96.png)
 
 - fgets로 한 줄을 읽어서 버퍼에 저장
     - fgets는 버퍼에 저장할 때, '\n'을 넣어줌 (gets와 차이점)
     - fgets는 버퍼에 저장할 때, 최대 읽는 글자 수 - 1만큼 읽어서 저장하고, 마지막에 '\0'을 넣어줌
     - 이렇게 하면 scanf만 사용할 때와 어떤게 다른거지? 버퍼를 stdin의 버퍼를 소모한다! scanf에서 처럼 못 읽는 문자를 stdin 버퍼에 남기는 일이 없다.
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week5/img_97.png)
 
 - 키보드에 입력이 들어옴
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week5/img_98.png)
 
 - fgets는 LINE_LENGTH - 1만큼 읽어서, 버퍼에 저장
 - 개행문자를 만나도 읽기 종료
@@ -672,26 +672,26 @@ while (fgets(line, 10, stdin) != NULL) {
 - 위 예시는 10a\n까지 읽음
 - stdin의 버퍼는 소모된다.(이게 핵심이죠!!!)
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP2200/week5/img_99.png)
 
 - line에 10a\n\0이 저장됨
 - fgets는 제대로 읽었으면 NULL이 아닌 값을 반환
 - 따라서 if문은 통과한다.
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week5/img_100.png)
 
 - sscanf는 c스타일 문자열에서 읽어오죠?
 - sscanf는 첫번째 매개변수 line을 읽어서, num에 저장
 - "%d" 한 단어 => line에서 10까지 읽고, a부터 문자니까 못읽음
 - sscanf에서 위치 표시자는 a를 가리키고 있다.
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week5/img_101.png)
 
 - num에는 10이 저장됩니다.
 - sscanf에서 1을 반환합니다. 숫자 하나를 읽는데 성공했습니다.
 - if문의 조건문을 통과했습니다.
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week5/img_102.png)
 
 - 정상적으로 더함
 - 이런식으로 반복되고, 종료하려면 EOF입력해서, fgets가 NULL을 반환하게 하면 됩니다!!!

@@ -2,25 +2,25 @@
 
 ## goto 문
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week2/img.png)
 
 - goto 뒤의 레이블을 읽고, 레이블의 콜론(:)뒤 코드를 실행한다.
 
 ### goto의 나쁜 예
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week2/img_1.png)
 
 ### 또 다른 예
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week2/img_2.png)
 
 - 어셈블리어로 확인해보자
-  ![img_3.png](img_3.png)
-  ![img_4.png](img_4.png)
+  ![img_3.png](old_note/COMP2200/week2/img_3.png)
+  ![img_4.png](old_note/COMP2200/week2/img_4.png)
 
 ### 반복문과 goto문의 관계
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week2/img_5.png)
 
 - 반복문의 본질은 goto다.
     - 어셈보면 거의 똑같죠?
@@ -673,20 +673,20 @@ arr2 = { 0, }; /* 불가능 */
 
 ## 빌드과정: 컴파일 단계
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week2/img_92.png)
 
 - 컴파일러라는 프로그램이 담당
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week2/img_93.png)
 
 - 전처리기가 만든 트랜슬레이션 유닛을 입력한다.
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week2/img_94.png)
 
 - 컴파일러가 어셈블리어로 바꿔서 출력된다.
 
-![img_95.png](img_95.png)
-![img_96.png](img_96.png)
+![img_95.png](old_note/COMP2200/week2/img_95.png)
+![img_96.png](old_note/COMP2200/week2/img_96.png)
 
 - 어셈블리어 코드는 모르는 심볼을 사용할 수 있음
 - 심볼(symbol)은 변수나 함수의 이름임
@@ -698,14 +698,14 @@ arr2 = { 0, }; /* 불가능 */
 
 ### adder.c 부터 컴파일
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week2/img_97.png)
 
 - 컴파일 플래그 -S를 사용하면 화면에 보여주는게 아니라 바로 파일로 저장됨!
     - .s 파일
     - 출력 리디렉션 피료없음
 
-![img_98.png](img_98.png)
-![img_99.png](img_99.png)
+![img_98.png](old_note/COMP2200/week2/img_98.png)
+![img_99.png](old_note/COMP2200/week2/img_99.png)
 
 - 주목할 점은 adder.s에 add함수가 있음
     - adder.c에 구현부(C코드)가 있었는데, 이게 어셈블리어로 바뀐거임
@@ -713,15 +713,15 @@ arr2 = { 0, }; /* 불가능 */
 
 ### main.c 컴파일
 
-![img_100.png](img_100.png)
-![img_101.png](img_101.png)
+![img_100.png](old_note/COMP2200/week2/img_100.png)
+![img_101.png](old_note/COMP2200/week2/img_101.png)
 
 - _add 레이블에서 함수 호출(어셈블리어: call)을 하쥬?
 - 이게 구멍을 남겨두는 거임
 
 ### 어셈블리어 레벨부터는 플랫폼에 종속적임
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week2/img_102.png)
 
 - 이때 플랫폼에 맞는 자료형 크기가 모두 결정되죠?
 

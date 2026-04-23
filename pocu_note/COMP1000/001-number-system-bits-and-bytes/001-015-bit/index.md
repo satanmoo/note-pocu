@@ -3,6 +3,8 @@ tags:
   - COMP1000
   - week1
 title:
+aliases:
+  - 비트
 ---
 # 비트
 

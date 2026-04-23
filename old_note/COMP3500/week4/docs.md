@@ -2,7 +2,7 @@
 
 ## 해시 알고리즘의 용도
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week4/images/img.png)
 
 - 해시 값이 다른 경우 두 개체가 다른것을 바로 확인할 수 있음
 - 해시 값이 같으면 반드시 두 개체가 같지는 않음
@@ -13,7 +13,7 @@
 
 ## 해시함수의 정의(필수 조건)
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week4/images/img_1.png)
 
 - 해시 함수 출력의 크기는 고정
     - 해시값
@@ -21,22 +21,22 @@
     - digest
     - 등등 다양하게 부름
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week4/images/img_2.png)
 
 - 해시 충돌은 발생할 수 있음
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week4/images/img_3.png)
 
 - 수학에서 함수의 정의를 만족하지 못함
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week4/images/img_4.png)
 
 - 결정론적 작동
     - 수학의 함수 정의를 만족한다는 말임
 
 ## 해시 알고리듬 분류
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week4/images/img_5.png)
 
 ![img_6.png](images/img_6.png)
 
@@ -689,7 +689,7 @@ public class Program {
     - 무차별 대입 공격보다 빠름
 - 요즘 브라우저에서 생성해주는 이상한 비밀번호가 이 공격을 막기에 좋죠?
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week4/images/img_92.png)
 
 - 레인보우 테이블:
     - 미리 계산해 놓은 해시값의 목록
@@ -697,14 +697,14 @@ public class Program {
         - 해시값과 평문의 대응관계 저장
     - 이거 사용하면 시간복잡도 O(1)
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week4/images/img_93.png)
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week4/images/img_94.png)
 
 - 사실 이 공격들 모두 본질적으로 알려진 해시 함수를 사용해서 발생하는 문제
 - 하지만 이 때문에 새로운 자체 해시함수를 만들어 사용하는건 비추
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week4/images/img_95.png)
 
 - 암호학 전문가의 검증받은 해시 알고리듬을 사용하자
 - 여튼 알려진 해시 알고리듬을 사용하기 때문에, 보안 업계에서는 어떤 알고리듬이 털리면 빠르게 다른 알고리듬으로 바꾸는게 중요함
@@ -712,7 +712,7 @@ public class Program {
 
 ## 보안 이야기: 비밀번호 덜 털리는 법
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week4/images/img_96.png)
 
 - 이미 대규모로 털린 비밀번호 목록은 사용하지 못하게 하자!
     - 이 목록에 대한 API도 있음 ㅋㅋ
@@ -724,33 +724,33 @@ public class Program {
     - 서비스 개발할 때 웬만하면 이렇게 하는거 강추
     - 최대한 저장하지 않으면 당연히 덜 털리고 좋죠?!
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week4/images/img_97.png)
 
 - salt 뿌리기
 - 비밀번호 저장 시 랜덤 문자열을 함께 저장
 - salt 까지 포함한 레인보우 테이블은 존재하기 쉽지 않음
 - 디비가 털리면 salt도 털리긴함
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week4/images/img_98.png)
 
 - 근데 salt는 유저 패스워드 마다 생성하니까
 - 해커 입장에서 하나의 유저 패스워드 알아내려고 열심히 연산해서 얻고, salt 값 하나 얻어봤자임
     - 다른 유저 salt도 고생하면서 알아야함
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week4/images/img_99.png)
 
 - 굉장히 시간복잡도가 증가하는...
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week4/images/img_100.png)
 
 - pepper도 추가
 - 비밀번호의 길이를 늘리는 효과
 - 디비에 저장하지 않고 웹서버 메모리에 저장
 - 사실 이렇게 다 털리는 경우는 잘 없긴함;
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week4/images/img_101.png)
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week4/images/img_102.png)
 
 - 결론 보안 관련 뉴스를 구독해서, 털린 알고리즘 있으면 빨리 바꾸자!!!
 - 어떤 웹 사이트 사용할 때 비밀번호 다 리셋을 강요하는 경우 해시 함수를 바꾼거라서 좋은 웹사이트임!!

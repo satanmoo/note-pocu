@@ -2,7 +2,7 @@
 
 ## C99 이전의 부동 소수점 연산 오류 처리
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week13/img.png)
 
 - Error Domain
 - Error Range
@@ -14,7 +14,7 @@
 
 ## C99의 부동 소수점 연산 오류 처리
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week13/img_1.png)
 
 - C99에서 세분화된 부동 소수점 전용 오류 보고 기능이 추가됨
     - 이 전용 기능을 `부동 소수점 예외`라고 부름
@@ -29,7 +29,7 @@
 
 ### 부동 소수점 연산 오류 `처리 방법` 구현 확인하기
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week13/img_2.png)
 
 - math_errhandling은 비트 플래그
     - 비트 플래그에서 & 연산을 했을 때, 두 피연산자의 비트가 모두 1일 때 연산 결과가 1임을 이용
@@ -69,7 +69,7 @@ int main() {
 
 ### 새로운 부동 소수점 예외의 구현
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week13/img_3.png)
 
 - <fenv.h> 헤더에 정의됨
 - 메크로 값은 비트 플래그로 쓸 수 있도록 `2의 승수`
@@ -81,13 +81,13 @@ int main() {
 
 ### errno와 부동 소수점 예외의 비교
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week13/img_4.png)
 
 - `부동 소수점 예외`가 세분화 된 것 확인
 
 ### 부동 소수점 예외가 났는지 확인하는 법
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week13/img_5.png)
 
 - <fenv.h> 헤더에서 제공하는 함수
 - 한 번 비트 플래그가 전역적으로 설정되면 자동으로 지워지는 것은 아니기 때문에 `feclearexcept()`를 호출해서 비트 플래그 초기화하는 함수를 제공
@@ -889,9 +889,9 @@ int main() {
 
 ### [경계 점검 함수 예시]
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week13/img_92.png)
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week13/img_93.png)
 
 - errno_t
     - 타입을 만들어서 함수의 반환값으로 사용
@@ -913,7 +913,7 @@ int main() {
 
 #### [gets()의 완전한 제거]
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week13/img_94.png)
 
 - `gets()`가 완전히 표준에서 제거됨
 - 이유는 버퍼 오버플로우
@@ -921,7 +921,7 @@ int main() {
 
 #### [gets_s()는 안전함]
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week13/img_95.png)
 
 - rsize_t 형의 버퍼의 사이즈를 매개변수로 받음
 - 동작
@@ -947,7 +947,7 @@ int main() {
 
 ### sprintf_s(), snprintf_s()
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week13/img_96.png)
 
 - sprintf_s(), snprintf_s()의 매개변수 목록은 동일함
     - bufsz 파라매터의 자료형이 rsize_t임을 통해 C11 경계 점검 함수임을 알 수 있음
@@ -965,7 +965,7 @@ int main() {
 
 ### fopen_s()
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week13/img_97.png)
 
 - "w" 또는 "a"모드로 파일을 열었을 때 배타적으로 파일 사용
     - 즉 다른 프로그램이 동시에 이 파일에 접근 불가
@@ -976,14 +976,14 @@ int main() {
     - 시험에 안 나올 듯
     - 내부적으로 호출자의 포인터를 직접 조작해서 변경할 수도 있음 (pass by reference)
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week13/img_98.png)
 
 - 오류 감지
     - 슬라이드 참고
 
 ### strnlen_s()
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP2200/week13/img_99.png)
 
 - strlen()의 문제점은 널 문자를 만나지 않으면 끝까지 읽음
 - 이를 개선해서 널 문자를 만나지 못하더라도, 버퍼 크기까지 읽어줘
@@ -1004,7 +1004,7 @@ int main() {
 
 ### strcpy_s()
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week13/img_100.png)
 
 - strcpy()와 차이점 위주로 기억
     - return 타입이 errno_t
@@ -1037,7 +1037,7 @@ strcpy_s(dest, sizeof(dest), src);
 // step2: o\0?? 복사 후 dest: Hello\0????
 ```
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week13/img_101.png)
 
 - 오류 감지
     - destsz == strlen_s(src, destsz)
@@ -1097,7 +1097,7 @@ int main() {
 
 ### strncpy_s()
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week13/img_102.png)
 
 - 동작 최대 count개의 문자를 src에서 복사 후, 널 문자 붙여줌
 - strncpy()와 차이점

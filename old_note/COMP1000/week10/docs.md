@@ -2,28 +2,28 @@
 
 ## 벡터
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week10/images/img.png)
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week10/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week10/images/img_2.png)
 
 - "프로그래밍의 벡터"는 확장된 개념
 
 ## 전통적 의미의 벡터
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week10/images/img_3.png)
 
 - 방향을 지칭하기 위해서는 "기준축"이 필요함
 - 수학에서 각도를 표현할 때 동쪽(x축)을 기준축으로 반시계 방향으로 각도를 증가
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week10/images/img_4.png)
 
 - 네비/지도는 북쪽을 기준축으로 시계 방향으로 각도를 증가
 
 ### 미완성 벡터의 정의
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week10/images/img_5.png)
 
 ![img_6.png](images/img_6.png)
 
@@ -415,7 +415,7 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ### 행렬과 행렬 더하기
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP1000/week10/images/img_92.png)
 
 - 두 행렬의 행 수/열 수 모두 같아야함
 - 성분끼리 더하는데 성분이 아에 없으면 못 더하지
@@ -425,38 +425,38 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ## 전치 행렬
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP1000/week10/images/img_93.png)
 
 - transpose
 - 행과 열을 교환
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP1000/week10/images/img_94.png)
 
 - 우하향 대각선 대칭
 
 ## 행렬 연산이 필요한 이유
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP1000/week10/images/img_95.png)
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP1000/week10/images/img_96.png)
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP1000/week10/images/img_97.png)
 
 - 가중치 별로 곱하기
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP1000/week10/images/img_98.png)
 
 - 사실 벡터의 내적임
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP1000/week10/images/img_99.png)
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP1000/week10/images/img_100.png)
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP1000/week10/images/img_101.png)
 
 - 각 성분끼리 곱하면 됨
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP1000/week10/images/img_102.png)
 
 ![img_103.png](images/img_103.png)
 

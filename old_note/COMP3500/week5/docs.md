@@ -2,27 +2,27 @@
 
 ## 암호화
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week5/images/img.png)
 
 - 평문(사람이 누구나 읽으면 이해할 수 있는 정보)
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week5/images/img_1.png)
 
 - 암호문(본다고 이해할 수 없음)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week5/images/img_2.png)
 
 - 암호화된 정보를 이해하려면 '특별한 정보'를 알아야 함
 
 ## 복호화
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week5/images/img_3.png)
 
 - 암호화에 사용한 방법을 알면 빠르게 복호화 할 수 있음
 
 ## 해시 알고리듬과 암호화
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week5/images/img_4.png)
 
 - (암호학적) 해시 알고리듬은 1-way
     - 원문 복구를 막는게 목표
@@ -41,7 +41,7 @@
 
 ## 암호화의 역사
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week5/images/img_5.png)
 
 ![img_6.png](images/img_6.png)
 
@@ -614,65 +614,65 @@ public class Program {
 
 ## RSA 키 길이와 연산 속도
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week5/images/img_92.png)
 
 - 키의 길이가 길 수록 긴 자리의 소수를 사용해 시간이 오래걸린다고 생각
 - 그래서 비트 수(길이)만 늘리면 보안 강화 가능
 
 ## RSA 키의 기초
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week5/images/img_93.png)
 
 - 비밀 키, 공개 키가 슬라이드 내용과 완전히 동치는 아님
     - 하지만 그 내용을 기반으로 함
     - 그래서 "" 표시
 - 공개 키를 인수분해 해서 비밀 키를 찾는 동작
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week5/images/img_94.png)
 
 - 슬라이드와 같은 관계를 만족하는 값을 찾고
 - 이 때문에 공개 키/비밀 키 쌍을 만드는게 쉬움
 
 ### 합동식(modular congruence)
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week5/images/img_95.png)
 
 - 합동식은 좌우 동일한 연산을 했을 때 결과가 같음을 의미함
 - a % n == b % n
 - 결과적으로 a - b 는 n의 배수
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week5/images/img_96.png)
 
 ## RSA 키 생성
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week5/images/img_97.png)
 
 ### 1. 매우 큰 두 소수 p, q 찾기
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week5/images/img_98.png)
 
 - 확률적 알고리듬은 몇 번 회차를 반복하면 이게 틀릴확률이 엄청 낮아지는 알고리듬
     - 소수가 아닐 확률이 매우 낮은 두 큰 수를 찾음
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week5/images/img_99.png)
 
 - 예시는 매우 작은 소수 사용
 
 ### 2. p와 q를 곱해 n을 만든다
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week5/images/img_100.png)
 
 - 곱하는 연산은 어렵지 않음
 
 ### 3. p,q와 특수한 관계인 e를 찾음
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week5/images/img_101.png)
 
 - 람다함수는 카마이클 수를 의미함
 - 누군가 증명을 해놨음
 - 최소 공배수(p - 1 , q - 1) 로 치환할 수 있음
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week5/images/img_102.png)
 
 ![img_103.png](images/img_103.png)
 

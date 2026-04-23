@@ -4,7 +4,7 @@
 
 ### C#은 입문자에게 적합한 최고의 주류 언어
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1500/week1/images/img.png)
 
 - 간결하다.
 - C#을 사용할 때 사용자는 실수를 하기 어렵다.
@@ -15,21 +15,21 @@
 
 ### C#을 사용할 수 있는 프레임워크가 존재
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1500/week1/images/img_1.png)
 
 - .NET 프레임워크(OLD) VS .NET Core(NEW)
 - .NET Core는 리눅스나 맥에서도 잘 돌아간다.
 
 ## C#은 어디에서 쓰이나요?
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1500/week1/images/img_2.png)
 
 - 윈도우 어플리케이션
 - 웹
 - 게임 엔진
 - 모바일 어플리케이션
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1500/week1/images/img_3.png)
 
 - Unity 엔진에서 C# 점유율이 점점 증가해서 결국 C#만 단독 지원
 
@@ -68,14 +68,14 @@ namespace HelloWorld
 
 ### 고수준이 더 좋다는 의미가 아님
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1500/week1/images/img_4.png)
 
 - 컴퓨터의 이해에 가까울수록 저수준
 - 인간의 이해에 가까울수록 고수준
 
 ### 기계어(네이티브 코드)
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1500/week1/images/img_5.png)
 
 - 네이티브 코드
 - 이진법 기반

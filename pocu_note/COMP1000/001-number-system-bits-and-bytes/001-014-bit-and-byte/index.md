@@ -2,6 +2,8 @@
 tags:
   - COMP1000
   - week1
+aliases:
+  - 비트와 바이트
 ---
 # 비트와 바이트
 

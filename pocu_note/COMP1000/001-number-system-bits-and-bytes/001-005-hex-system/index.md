@@ -2,6 +2,8 @@
 tags:
   - COMP1000
   - week1
+aliases:
+  - 16진법
 ---
 # 16진법
 

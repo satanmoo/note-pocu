@@ -2,23 +2,23 @@
 
 ## 재귀 함수
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week2/images/img.png)
 
 ## 재귀 함수의 간단한 에: 피보나치 수열
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week2/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week2/images/img_2.png)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week2/images/img_3.png)
 
 ## 재귀 함수의 장단점
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week2/images/img_4.png)
 
 - 모든 재귀함수는 반복문으로 작성할 수 있음
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week2/images/img_5.png)
 
 - 스택 오버플로
 - 함수 호출 오버헤드

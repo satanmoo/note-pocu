@@ -2,16 +2,16 @@
 
 ## printf(), scanf()의 매개변수는 특별하다
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week7/img.png)
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week7/img_1.png)
 
 - C 언어는 함수 오버로딩이 없음
 - printf()와 scanf()는 매개변수의 개수와 타입이 다양하게 변함, 무언가 마법이 있음
 
 ## 가변 인자 함수(variadic function)
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week7/img_2.png)
 
 - 가변 인자 함수는 정해지지 않는 매개변수를 허용함
     - 매개변수의 수가 정해지지 않음
@@ -26,21 +26,21 @@
 
 ## 가변 인자 함수는 언제 사용하는가?
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week7/img_3.png)
 
 - 메모리 블록을 크게 잡아놓고, 여러 가지 자료형을 저장하는 함수
 - 스택 메모리에 대한 이해도를 높일 목적으로 공부한다고 생각하면 됨
 
 ## 가변 인자 함수의 예
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week7/img_4.png)
 
 - stdarg.h 헤더 파일을 include 해야 함
 - va_list, va_start, va_arg, va_end 매크로를 사용함
 
 ## va_list
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week7/img_5.png)
 
 - 가변 인자 목록
 - 구체적인 구현은 컴파일러 제조사에서 알아서

@@ -4,7 +4,7 @@
 
 ### Drawbacks and Limitation of C99 <tgmath.h>
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week14/img.png)
 
 - 컴파일러가 구현해준 것
     - 표준에서 implementation-defined
@@ -22,7 +22,7 @@
 
 ### `_Generic` Keyword
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week14/img_1.png)
 
 - It is a method to switch the associated list(`<연관목록>`) based on the type of the controlling expression(`<제어 표현식>`).
 - In **complie time** it chooses expression
@@ -32,7 +32,7 @@
 
 ### <tgmath.h> example
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week14/img_2.png)
 
 - The _Generic replacement list works similarly to a switch-case statement
 - Depending on the type of the parameter X, a different function is called at runtime
@@ -41,7 +41,7 @@
 
 ### associated list
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week14/img_3.png)
 
 - Form of associated list
     - Data type(<자료형>): multiple can be used
@@ -62,14 +62,14 @@
 
 ### assert is programmers best practice
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week14/img_4.png)
 
 - It can check pre-condition of function
 - It helps to catch mistakes early during development
 
 ### Limitation of assert
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week14/img_5.png)
 
 ![img_6.png](img_6.png)
 
@@ -530,18 +530,18 @@ int main() {
 
 ![img_91.png](img_91.png)
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week14/img_92.png)
 
 - Programmers could use dynamic allocation to occupy memory for each thread.
 - However, in the case of static variables in the file scope, there was no way to separately occupy memory for each thread.
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week14/img_93.png)
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week14/img_94.png)
 
 - Internally, a copy of the variable is created for each thread.
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week14/img_95.png)
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week14/img_96.png)
 

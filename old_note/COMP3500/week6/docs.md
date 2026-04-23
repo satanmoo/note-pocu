@@ -2,17 +2,17 @@
 
 ## 트리
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week6/images/img.png)
 
 ### Node
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week6/images/img_1.png)
 
 - 실제로 저장하는 데이터
 
 ### Root
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week6/images/img_2.png)
 
 - 최상위에 위치한 데이터
     - 시작 노드
@@ -20,17 +20,17 @@
 
 ### Leaf
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week6/images/img_3.png)
 
 - 더 이상 가지가 없는 노드
 
 ## 부모-자식 관계
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week6/images/img_4.png)
 
 - 자식은 정확히 depth 1 차이
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week6/images/img_5.png)
 
 - 부모는 언제가 1개 노드
 
@@ -778,11 +778,11 @@ public class Node {
     - 원래의 높이는 '최대' 개념이 들어갔는데
     - 이제는 사라짐
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week6/images/img_92.png)
 
 - 블랙 노드에만 있는 제약 == 블랙 노드의 수를 이 규칙에 기준으로 사용한다는 의미
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week6/images/img_93.png)
 
 - 리프 노드는 데이터를 담지 않음
     - 다만 검은색
@@ -792,7 +792,7 @@ public class Node {
 
 ### 레드-블랙 트리의 특성으로 얻는 것
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week6/images/img_94.png)
 
 - 한쪽으로 완벽하게 쏠려서 최악의 탐색 시간 복잡도를 막을 수 있음
 - 최대 리프 깊이가 최소 리프 깊이의 2배를 넘지 못함
@@ -801,43 +801,43 @@ public class Node {
 
 - '최대 리프 깊이가 최소 리프 깊이의 2배를 넘지 못함'을 증명하자
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week6/images/img_95.png)
 
 - 블랙 높이가 x인 트리 가정
     - 루트 노드와 모든 리프 사이에 블랙 노드가 x개 있어야함
 - from 루트 to 리프 길이가 최소가 되려면 레드 노드가 없으면 됨
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week6/images/img_96.png)
 
 - 이 상태에서 레드 노드를 최대한 집어넣기
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week6/images/img_97.png)
 
 - 레드 노드의 자식은 모두 블랙이기 때문에 블랙 노드 사이에 하나씩만 넣을 수 있음
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week6/images/img_98.png)
 
 - 그래서 최대 길이는 2x개 노드
 
 ## 레드-블랙 트리의 연산
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week6/images/img_99.png)
 
 - 탐색은 BST와 동일
     - O(logn) 보장
 
 ## 레드-블랙 트리의 삽입 방법
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week6/images/img_100.png)
 
 - 패턴에서 규칙을 찾아야함
     - 어려움
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week6/images/img_101.png)
 
 - 삽입/삭제의 원리 정도는 감을 잡고
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week6/images/img_102.png)
 
 - 이것저것 해보면서 감 잡고
 

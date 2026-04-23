@@ -4,7 +4,7 @@
 
 ### 스택 메모리를 복습해봅시다.
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week3/img.png)
 
 - int my_nums[5]를 초기화
   - 스택에 저장됨
@@ -17,7 +17,7 @@
 
 ### 주소 연산자 &
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week3/img_1.png)
 
 - 변수의 주소를 알아내는 연산자
 - 지역 변수의 주소를 출력할 수 있다.
@@ -37,14 +37,14 @@ int main(void) {
 - 주소를 출력할 때 void*로 캐스팅하지 않으면 컴파일 에러가 발생한다.
 - "error: format specifies type 'void *' but the argument has type 'int *' [-Werror,-Wformat-pedantic]"
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week3/img_2.png)
 
 - 출력해보면 주소가 잘 나온다.
   - 16진수 8개로 이뤄졌으니까 2^32개의 주소를 가질 수 있다.(32bit 컴퓨터)
   - 16진수 2개면 1바이트
 
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![img_3.png](old_note/COMP2200/week3/img_3.png)
+![img_4.png](old_note/COMP2200/week3/img_4.png)
 
 - 비트 연산자는 피연산자가 2개
 - 주소 연산자는 피연산자가 1개(단항 연산자)
@@ -54,7 +54,7 @@ int main(void) {
 
 ## 주소를 저장하는 방법: 포인터
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week3/img_5.png)
 
 - 메모리 주소도 숫자니까 변수에 저장할 수 있지 않을까?
 - 4바이트 짜리 숫자? (32비트니까?)
@@ -488,7 +488,7 @@ int main(void) {
 - &nums[0] + 1은 nums[1]의 주소임
 - &nums[0]은 nums 포인터와 동일하다. 따라서 포인터 정수 연산 적용
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week3/img_92.png)
 
 - 배열의 인덱스와 포인터 연산은 같은 의미(offset)
 - nums + 3
@@ -496,8 +496,8 @@ int main(void) {
 
 ## 배열 요소에 포인터로 접근하기
 
-![img_93.png](img_93.png)
-![img_94.png](img_94.png)
+![img_93.png](old_note/COMP2200/week3/img_93.png)
+![img_94.png](old_note/COMP2200/week3/img_94.png)
 
 - 포인터에 배열의 첨자 연산자[]를 사용할 수 있다.
 ```c++
@@ -505,35 +505,35 @@ int* ptr = nums;
 printf("%d, %d, %d\n", nums[0], ptr[1], *(ptr + 2));
 ```
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week3/img_95.png)
 
 - 컴파일러에게 모두 같은 의미
 - 한 칸에 몇 바이트? 는 자료형이 결정
 
 ### 배열의 모든 요소 더하기 예시
 
-![img_96.png](img_96.png)
-![img_97.png](img_97.png)
+![img_96.png](old_note/COMP2200/week3/img_96.png)
+![img_97.png](old_note/COMP2200/week3/img_97.png)
 
 - 사실 매개변수에 배열이 들어온다고 적어주는게 좋긴함 int data[] 이렇게 말이죠..?
 
 ## 포인터의 캐스팅
 
-![img_98.png](img_98.png)
-![img_99.png](img_99.png)
+![img_98.png](old_note/COMP2200/week3/img_98.png)
+![img_99.png](old_note/COMP2200/week3/img_99.png)
 
 ### 딱 1바이트 옮기기
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week3/img_100.png)
 
 - char 포인터로 캐스팅해서 포인터 연산
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week3/img_101.png)
 
 - 캐스팅해도 메모리 주소에 들어있는 값은 변하지 않는다.
 - 단지 그 주소의 값을 읽어올 때 어떻게 해석할지만 바뀐다.
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week3/img_102.png)
 
 - int_array 배열의 첫번째 원소의 주소는 0x0096f864
   - 만약 캐스팅하지 않고, int_ptr + 1을 하면 값이 0x0096f868이 나온다.

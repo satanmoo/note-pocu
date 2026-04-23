@@ -2,16 +2,16 @@
 
 ## 메인함수
 
-![img.png](img.png)
+![img.png](old_note/COMP1500/week2/img.png)
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP1500/week2/img_1.png)
 
 - Entry Point
     - 어디부터 코드를 실행하는지 시작 포인트
 
 ### static
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP1500/week2/img_2.png)
 
 - 전역 함수가 된다.
     - 즉 프로그램에서 오직 하나만 실행된다.
@@ -20,7 +20,7 @@
 
 ### string[] args
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP1500/week2/img_3.png)
 
 - 메인 함수가 외부로 받는 데이터
     - 이것을 함수 인자(function argument/parameter)로 부른다.
@@ -29,13 +29,13 @@
 
 ### 반환형(return type)
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP1500/week2/img_4.png)
 
 - `모든 함수는 반환형이 존재한다.`
 - 하지만 실제로 값을 반환할 수도 있고, 아닐 수도 있다.
     - 값을 반환하지 않을 때 void를 사용한다.
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP1500/week2/img_5.png)
 
 - 메인 함수의 경우 정수 값을 반환하게 할 수 있다. 이럴 때는 반환형으로 `int`를 사용하고 `return`이라는 키워드를 사용한다.
     - 메인 함수에서 반환형의 역할은 exe 프로그램이 올바르게 실행됬는지 여부를 알려준다.

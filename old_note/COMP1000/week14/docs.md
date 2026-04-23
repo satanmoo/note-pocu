@@ -2,20 +2,20 @@
 
 ## 점근 표기법
 
-![img.png](img.png)
+![img.png](old_note/COMP1000/week14/img.png)
 
 - 수학적으로 이해하려면 어려움
 - 함수가 증가하는 모습을 다른 함수와 비교하는 개념
 
 ## 대표적인 표기법
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP1000/week14/img_1.png)
 
 - 주로 빅오 표기법을 학습
 
 ## 빅오 표기법
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP1000/week14/img_2.png)
 
 - 알고리듬을 분류하기 위해 사용
 - order of the function
@@ -23,17 +23,17 @@
 
 ### 구체적인 분류 방법
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP1000/week14/img_3.png)
 
 - 입력 데이터가 많아짐에 따라 얼마나 증가하는가?
 
 ## 빅오 표기법과 단항식
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP1000/week14/img_4.png)
 
 - 빅오 표기법은 미지수가 1개인 단항식으로 표현
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP1000/week14/img_5.png)
 
 - 왜 다항식은 없나요?
 

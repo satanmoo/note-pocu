@@ -4,7 +4,7 @@
 
 C89/ANSI-C 내용이 강의에서 70%정도 차지한다. 그만큼 중요하다. C99, C11과 그 이후는 나머지
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week1/img.png)
 
 이렇게 역사대로 배우는 이유는 무엇일까? 내가 코딩하는 플랫폼에 맞게 코딩을 해야하기 때문이다. 이것을 판단하는 능력도 중요하다.
 
@@ -15,17 +15,17 @@ C89/ANSI-C 내용이 강의에서 70%정도 차지한다. 그만큼 중요하다
 - 컴퓨터처럼 생각하는 방법
 - 매니지드 언어에서 작동하는 모든 마법같은 기능의 원리
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week1/img_1.png)
 
 ## 언매니지드 언어로서의 C
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week1/img_2.png)
 
 - 간접참조(indirection) 개념을 훈련할 기회
     - 사람은 직관적으로 눈 앞에 보이는 것을 잘 다룬다. 간접참조를 훈련해 눈 앞에 보이지 않더라도 믿고 따르는 능력(?)을 기를 수 있다.
     - 컴퓨터 구조상 간접참조 할 수 밖에 없는 것들이 있다.
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week1/img_3.png)
 
 ## C언어는 모든 언어의 어머니
 
@@ -33,9 +33,9 @@ C89/ANSI-C 내용이 강의에서 70%정도 차지한다. 그만큼 중요하다
 
 ## C89 표준에 대한 개요
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week1/img_4.png)
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week1/img_5.png)
 
 - 소형 하드웨어는 그것을 직접 제어하는 전용 운영체제가 있음
 
@@ -632,15 +632,15 @@ unsigned/signed를 정할 때 제약이 생긴다.
 - fall-through는 C언어의 특징이다.
     - C#에서는 break가 없으면 컴파일 에러가 발생한다.
 
-![img_92.png](img_92.png)
-![img_93.png](img_93.png)
+![img_92.png](old_note/COMP2200/week1/img_92.png)
+![img_93.png](old_note/COMP2200/week1/img_93.png)
 
 - 의도적 fall-through가 아니면 break를 써주자.
 - 코딩 표준으로 제어
 
 ### case 레이블에 사용할 수 없는 데이터형
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week1/img_94.png)
 
 - case 레이블은 반드시 상수만!
     - 컴파일 타임에 결정된다.
@@ -649,7 +649,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## for문
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week1/img_95.png)
 
 - 주의할 점: for문의 초기화 코드에 자료형을 선언할 수 없다.
     - 컴파일 오류 발생
@@ -657,33 +657,33 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## while 문
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week1/img_96.png)
 
 ### break
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week1/img_97.png)
 
 ### continue
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week1/img_98.png)
 
 - 밑에 코드 무시하고, 다음 회차 진행시켜
 
 ### 코딩표준 while 문
 
-![img_99.png](img_99.png)
+![img_99.png](old_note/COMP2200/week1/img_99.png)
 
 ## do while 문
 
-![img_100.png](img_100.png)
+![img_100.png](old_note/COMP2200/week1/img_100.png)
 
 ## 함수
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week1/img_101.png)
 
 ### C 함수 특징
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week1/img_102.png)
 
 - 클래스 사라짐
     - 프로퍼티 없음

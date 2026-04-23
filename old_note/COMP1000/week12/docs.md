@@ -7,11 +7,11 @@
 
 ### 결정적 알고리듬
 
-![img.png](img.png)
+![img.png](old_note/COMP1000/week12/img.png)
 
 - deterministic
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP1000/week12/img_1.png)
 
 - 결정적 알고리듬이 "느릴 때"
 - 휴리스틱하게 접근을 해보면?
@@ -19,11 +19,11 @@
 
 ### 확률적 알고리듬
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP1000/week12/img_2.png)
 
 - 다음 단계를 난수에 따라 결정
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP1000/week12/img_3.png)
 
 - 크게 두 부류
 - 최근에 관심이 높아지는 분야
@@ -31,12 +31,12 @@
 
 ### 확률적 알고리듬과 속도 향상
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP1000/week12/img_4.png)
 
 - 운이 좋으면 무작위로 사건 하나를 뽑는 행위(즉 시행)이 줄어들어서 속도가 빠름
     - 즉 표본 공간 전부를 안 훑고도 결과를 도출할 수 있음
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP1000/week12/img_5.png)
 
 - 입력 데이터가 똑같아도 무작위로 뽑기 때문에 입력 데이터 중 어떤 것을 먼저 뽑을지는 무작위
 

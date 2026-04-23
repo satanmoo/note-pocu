@@ -13,27 +13,27 @@
     - 데이터들을 잘 정리하는 방법
     - ..?
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week11/images/img.png)
 
 - 여기서 데이터는 무엇인가요?
     - 노드
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week11/images/img_1.png)
 
 - 노드에는 어떤 데이터를 저장하나요?
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week11/images/img_2.png)
 
 - 트리의 노드와 마찬가지로 딱히 제약은 없습니다.
 
 - 노드를 Vertex(정점)이라고 부르기도 함
     - Point(꼭지점)
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week11/images/img_3.png)
 
 - 어떻게 잘 정리하나요?
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week11/images/img_4.png)
 
 - 노드 간의 관계를 잘 정리
     - 관계를 선으로 표기함
@@ -45,7 +45,7 @@
 - 선을 edge(변)으로 부름
     - edge는 간선이라고 해석하기도 함
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week11/images/img_5.png)
 
 - 어떤 관계를 edge로 표현하나요?
 
@@ -785,14 +785,14 @@ public class Program {
 
 ### SCC 개념 정리
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week11/images/img_92.png)
 
 - 방향 그래프
 - 관계를 가지는 "최대" 그룹
 
 ### SCC의 주용도
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week11/images/img_93.png)
 
 - 최적화
     - 하나의 노드로 간주해서 문제를 단순화
@@ -801,7 +801,7 @@ public class Program {
 
 ### 송수관 변형 문제
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week11/images/img_94.png)
 
 - 그래프는 설계도라고 생각하면 됨
     - edge(송수관)은 존재하지 않음
@@ -809,38 +809,38 @@ public class Program {
     - 과정에서 최대한 효용 발생?
 - 설치 순서 결정하기
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week11/images/img_95.png)
 
 - 위상정렬?
 - DAG가 아닌데
     - 순환이 있잖아
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week11/images/img_96.png)
 
 - SCC를 순환하는 노드로 치환하면 위상정렬 할 수 있음!
 
 ### SCC 알고리듬
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week11/images/img_97.png)
 
 - 사람 이름이 들어가있으면, 수학에서 들어왔다고 보면 됨
 - 타잔 알고리듬은 보고가면 좋음
 
 ## 코사라주 알고리듬
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week11/images/img_98.png)
 
 - 시뮬레이션 해보자
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week11/images/img_99.png)
 
 - 인강 참고
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week11/images/img_100.png)
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week11/images/img_101.png)
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week11/images/img_102.png)
 
 ![img_103.png](images/img_103.png)
 

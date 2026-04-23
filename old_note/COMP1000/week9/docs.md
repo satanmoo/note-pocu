@@ -2,27 +2,27 @@
 
 ## 수학적 귀납법
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week9/images/img.png)
 
 - 원칙상 '자연수 n'에 대해 명제를 적용
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week9/images/img_1.png)
 
 - 수학적 귀납법 증명도 어렵게 느껴질 수 있음
 
 ### 수학적 귀납법의 증명
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week9/images/img_2.png)
 
 ### 수학적 귀납법의 예: 도미노 쓰러뜨리기
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week9/images/img_3.png)
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week9/images/img_4.png)
 
 - 첫번째 도미노 조각을 치는게 기본 가정을 증명하는 행위
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week9/images/img_5.png)
 
 - 나머지는 도미노 조각이 무너지는게 귀납 가정 증명
 
@@ -326,46 +326,46 @@
 
 ![img_91.png](images/img_91.png)
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP1000/week9/images/img_92.png)
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP1000/week9/images/img_93.png)
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP1000/week9/images/img_94.png)
 
 - 하드웨어의 힘을 빌려서 분할 정복
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP1000/week9/images/img_95.png)
 
 - 토너먼트처럼
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP1000/week9/images/img_96.png)
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP1000/week9/images/img_97.png)
 
 - 이 방법은 결국 모든 요소를 방문해야함
 - 정렬되어 있다면 최대값 O(1)로 찾을 수 있긴 함
 
 ## 멀티스레딩
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP1000/week9/images/img_98.png)
 
 - 코어가 하나가 아니라 여럿이라면?
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP1000/week9/images/img_99.png)
 
 - 프로그램을 돌릴 수 있는 주체가 여러개!
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP1000/week9/images/img_100.png)
 
 - 스레드 간에 코드 실행은 독립적
 - 메모리에 상태를 공유할 수 있음
 - 병렬 실행
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP1000/week9/images/img_101.png)
 
 - 코어 수에 비례한 성능 향상
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP1000/week9/images/img_102.png)
 
 - GPU도 있다
 

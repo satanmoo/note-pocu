@@ -2,16 +2,16 @@
 
 ## 의존성
 
-![img.png](images/img.png)
+![img.png](old_note/COMP2500/week11/images/img.png)
 
 - A 클래스가 B 클래스에 의존
     - B 클래스가 필요조건
 
 ### 의존성이 나쁜 것일까?
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP2500/week11/images/img_1.png)
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP2500/week11/images/img_2.png)
 
 - 의존성이 있음
     - 각 클래스의 기능이 분리됨
@@ -19,21 +19,21 @@
         - 캡슐화
         - 재사용성이 높음
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP2500/week11/images/img_3.png)
 
 - 오해
 - 결합도와 의존성은 다른 개념
 
 ## 결합도
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP2500/week11/images/img_4.png)
 
 - 상호 의존성
 - 원론적 의미
 
 ## OO의 결합도
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP2500/week11/images/img_5.png)
 
 - OO Coupling
 
@@ -616,55 +616,55 @@ public class B {
 - 이 주장을 하는 사람의 행적도 의심스러움
 - 이 주장은 오랜 시간동안 검증결과 잘못됬다고 결과적으로 결론 났다고 이해
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP2500/week11/images/img_92.png)
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP2500/week11/images/img_93.png)
 
 - 협업에서 실수를 줄이는 것이 중요함
 - 특히 코딩에서 일반적으로 만드는 시간 보다 실수를 고치는 시간을 많이 씀
 - 모든 사람이 동의하는 규칙 + 이 규칙이 실수를 줄인다면 좋다!
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP2500/week11/images/img_94.png)
 
 - 추상화, indirection 은 모두에게 어려움
     - 인간에게 그냥 어려움
 - 추상화가 적을 수록 실수가 적음
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP2500/week11/images/img_95.png)
 
 - 객관적인 정의로 인터페이스를 이해하자
 
 ## 디커플링 모범 사례: 이클립스 API
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP2500/week11/images/img_96.png)
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP2500/week11/images/img_97.png)
 
 - API 버전이 변할 때 최대한 변화가 적어야함
     - 여기서 변화는 매서드 시그니처라던가 다시 컴파일해야하는 상황을 만드는 경우
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP2500/week11/images/img_98.png)
 
 - 자체적으로 약속을 함
     - 키워드에 의미를 부여함
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP2500/week11/images/img_99.png)
 
 - 하지만 결론적으로 interface 도 변경됨
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP2500/week11/images/img_100.png)
 
 - 인터페이스에 숫자 붙이기
     - IWorkbenchPart2 는 IWorkbenchPart 인터페이스의 모든 동작을 포함함
     - 확장하는 개념
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP2500/week11/images/img_101.png)
 
 - 나중에 클라이언트가 인터페이스를 교체하면
     - 기존의 구현은 건드릴 필요없고
     - 새로 추가된 기능(추상 매서드)만 구현하면 됨
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP2500/week11/images/img_102.png)
 
 - 하지만 이런 방법도 문제가 있음
 - 애초에 모든 비즈니스 상황을 예상하고 설계할 수 없음

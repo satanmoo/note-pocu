@@ -2,11 +2,11 @@
 
 ## 너비 우선 탐색
 
-![img.png](images/img.png)
+![img.png](old_note/COMP3500/week12/images/img.png)
 
 - DFS 처럼 방문한 노드를 기억해야 무한 루프를 막을 수 있음
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP3500/week12/images/img_1.png)
 
 - discovered 변수로 발견한 노드를 관리
     - 발견하고 큐에 넣는 개념
@@ -15,7 +15,7 @@
 
 ### BFS의 시간 복잡도
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP3500/week12/images/img_2.png)
 
 - O(N + E)
     - DFS와 동일함
@@ -27,11 +27,11 @@
 
 ### 최단 경로
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP3500/week12/images/img_3.png)
 
 - from 집 to 학교에는 다양한 경로가 있음
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP3500/week12/images/img_4.png)
 
 - 경로의 개수는 무한대
     - 그래프에 순환이 있기 때문
@@ -40,7 +40,7 @@
 
 ### 최단 경로를 찾는 가장 간단한 방법
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP3500/week12/images/img_5.png)
 
 - 주먹구구식 방법
 - 시간 복잡도가 크다
@@ -710,7 +710,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 그렇다면 중간에 거치는 C에 대해서 다음이 성립함:
 
-![img_92.png](images/img_92.png)
+![img_92.png](old_note/COMP3500/week12/images/img_92.png)
 
 - from A to C도 최단 경로
 - from C to A도 최단 경로
@@ -719,30 +719,30 @@ public final class Candidate implements Comparable<Candidate> {
 
 ### 플로이드 워셜 알고리듬 시뮬레이션
 
-![img_93.png](images/img_93.png)
+![img_93.png](old_note/COMP3500/week12/images/img_93.png)
 
 - 중간에 거치는 노드는 안 지나가도 됨
     - 선택
 
 - 1 ~ k 노드에서 번호는 처음에 번호를 매길 때 결정
 
-![img_94.png](images/img_94.png)
+![img_94.png](old_note/COMP3500/week12/images/img_94.png)
 
-![img_95.png](images/img_95.png)
+![img_95.png](old_note/COMP3500/week12/images/img_95.png)
 
-![img_96.png](images/img_96.png)
+![img_96.png](old_note/COMP3500/week12/images/img_96.png)
 
 - sp(i, j, k):
     - k == 0
         - 매기지 않은 번호값이라 아무 노드로 거치지 않음을 의미함
 
-![img_97.png](images/img_97.png)
+![img_97.png](old_note/COMP3500/week12/images/img_97.png)
 
 - k == 1
     - i == k를 만족:
         - 자기 자신을 거치기 때문에 아무 노드도 거치지 않음을 의미
 
-![img_98.png](images/img_98.png)
+![img_98.png](old_note/COMP3500/week12/images/img_98.png)
 
 - k == 2
     - 2번 노드를 거침
@@ -754,7 +754,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 동적 계획법에 필요한 공식을 정의해보자
 
-![img_99.png](images/img_99.png)
+![img_99.png](old_note/COMP3500/week12/images/img_99.png)
 
 - 귀납적
 
@@ -762,7 +762,7 @@ public final class Candidate implements Comparable<Candidate> {
     - sp(i,j,k-1) 기존 경로를 고르거나
     - 추가적으로 k 노드를 지나는 경로를 고르거나
 
-![img_100.png](images/img_100.png)
+![img_100.png](old_note/COMP3500/week12/images/img_100.png)
 
 - 추가적으로 k 노드를 지나는 경로에 대한 이해:
     - 경로를 분해해보자
@@ -771,11 +771,11 @@ public final class Candidate implements Comparable<Candidate> {
     - sp(k,j,k-1):
         - from k to j 경로 비용
 
-![img_101.png](images/img_101.png)
+![img_101.png](old_note/COMP3500/week12/images/img_101.png)
 
 ### 플로이드 워셜 DP로 풀어보자
 
-![img_102.png](images/img_102.png)
+![img_102.png](old_note/COMP3500/week12/images/img_102.png)
 
 - 그리드 만들기
 

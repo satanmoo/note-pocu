@@ -2,33 +2,33 @@
 
 ## 조건 명제(implication)
 
-![img.png](images/img.png)
+![img.png](old_note/COMP1000/week6/images/img.png)
 
 - 합셩 명제의 일부분
 - 함의
 - p가 참이면 q가 참이다
 
-![img_1.png](images/img_1.png)
+![img_1.png](old_note/COMP1000/week6/images/img_1.png)
 
 - 새로운 개념
   - 전제
   - 결론
 
-![img_2.png](images/img_2.png)
+![img_2.png](old_note/COMP1000/week6/images/img_2.png)
 
 - 전제도 명제임
 
 ## 조건 명제의 진리 판단
 
-![img_3.png](images/img_3.png)
+![img_3.png](old_note/COMP1000/week6/images/img_3.png)
 
 - 조건 명제의 참/거짓을 판단하는 방법?
 
-![img_4.png](images/img_4.png)
+![img_4.png](old_note/COMP1000/week6/images/img_4.png)
 
 - 전제는 동일하고 결과가 NOT이면 거짓임
 
-![img_5.png](images/img_5.png)
+![img_5.png](old_note/COMP1000/week6/images/img_5.png)
 
 - 명제 자체에서는 NOT p 일 때 존제를 정의하지 않고 있음
 

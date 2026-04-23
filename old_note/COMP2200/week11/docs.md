@@ -2,7 +2,7 @@
 
 ## 해시 테이블의 시간 복잡도
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week11/img.png)
 
 - 평균적으로 검색/삽입/삭제가 O(1)
     - 하지만 최악은 모두 O(n)
@@ -10,21 +10,21 @@
 
 ### [검색의 시간 복잡도 O(1)을 가능하게 하는 방법]
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week11/img_1.png)
 
 - 어떤 메모리 주소에 어떤 데이터가 저장되어 있는지 `한 번에` 알 수 있어야함
 
 ### [무작위로 뽑은 수 10개를 저장하는 예시]
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week11/img_2.png)
 
 - 크기가 10인 배열에 `차례대로` 저장하면 O(N)으로 검색 가능
 - 이제 검색의 시간복잡도를 O(1)로 변경하는 방법 
 
 ### [무작위로 뽑은 수 10개를 저장하는 방법 1]
 
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![img_3.png](old_note/COMP2200/week11/img_3.png)
+![img_4.png](old_note/COMP2200/week11/img_4.png)
 
 - 방법1: 입력값의 최대값을 배열의 크기로
   - 색인의 수 == 입력값의 최대값
@@ -32,7 +32,7 @@
   - 저장 후 s_numbers[input] == 1 이면 값이 존재함을 알 수 있음
     - 시간 복잡도 O(1)
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week11/img_5.png)
 
 - 방법 1의 단점
   - 배열의 크기를 무한히 늘릴 수 없음

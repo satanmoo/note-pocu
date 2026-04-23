@@ -11,7 +11,7 @@
 
 ## 문자열과 다른 기본 자료형의 차이
 
-![img.png](img.png)
+![img.png](old_note/COMP2200/week4/img.png)
 
 - 기본 자료형에서 중요한 것은
     - 크기
@@ -20,14 +20,14 @@
     - 크기와 범위는 플랫폼마다 정해져있음
         - correspond to CPU's natively support
 
-![img_1.png](img_1.png)
+![img_1.png](old_note/COMP2200/week4/img_1.png)
 
 - 문자열이라는 자료형의 크기를 약속할 수 있을까?
 - 문자열은 범위가 있나? 숫자가 아닌데?
 
 ## 문자열의 길이는 정해져있지 않다. (후기 강조)
 
-![img_2.png](img_2.png)
+![img_2.png](old_note/COMP2200/week4/img_2.png)
 
 - 두가지 관점에서 생각
 - 사람들끼리 통일된 약속이 없다.
@@ -37,7 +37,7 @@
 
 ## 문자열을 어떻게 표현할까?
 
-![img_3.png](img_3.png)
+![img_3.png](old_note/COMP2200/week4/img_3.png)
 
 - 글자 하나를 표현한 자료형은 있다. char
 - char을 배열로 표현하면 문자열
@@ -45,7 +45,7 @@
 
 ## 배열의 길이를 저장할 수 없을까?
 
-![img_4.png](img_4.png)
+![img_4.png](old_note/COMP2200/week4/img_4.png)
 
 - C언어의 특징이다.
 - 일반적인 배열은 배열의 길이를 프로그래머가 따로 변수에 저장해야함.
@@ -53,7 +53,7 @@
 
 ## 배열 크기를 저장하는 변수를 바꾸지 않아서 발생하는 실수
 
-![img_5.png](img_5.png)
+![img_5.png](old_note/COMP2200/week4/img_5.png)
 ![img_6.png](img_6.png)
 ![img_7.png](img_7.png)
 
@@ -845,7 +845,7 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
 - 그리고 왜 배열로 선언했는지 이제 알겠죠? 이거 데이터 섹션을 참조하는 char* 넘겼다가, 수정하면 크래시 나죠?
     - mutable string!!!
 
-![img_92.png](img_92.png)
+![img_92.png](old_note/COMP2200/week4/img_92.png)
 
 - 중요 포인트
 - msg의 원본이 바뀐다.
@@ -854,7 +854,7 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
     - static! 파일 내부에서만 존재하면 되겠죠? 함수 내의 정적변수겠네요...
         - 함수를 다시 호출해도 초기화 되지 않는 성질을 기억하자!
 
-![img_93.png](img_93.png)
+![img_93.png](old_note/COMP2200/week4/img_93.png)
 
 - 알고리즘을 생각해보자
 - 토큰화 시작 주소를 저장하는 static 변수를 선언한다.
@@ -915,11 +915,11 @@ static 변수 next 선언
 
 ## 궁금하면 찾아 볼 것
 
-![img_94.png](img_94.png)
+![img_94.png](old_note/COMP2200/week4/img_94.png)
 
 ## C 문자열 함수들의 특징
 
-![img_95.png](img_95.png)
+![img_95.png](old_note/COMP2200/week4/img_95.png)
 
 - 매개변수를 보고 원본을 변경하는지, 아닌지 판단하자
 - 변경하더라도, 보통 사본을 변경하죠!!!
@@ -1001,14 +1001,14 @@ void string_tolower(char* str)
 
 ### 출력이란?
 
-![img_96.png](img_96.png)
+![img_96.png](old_note/COMP2200/week4/img_96.png)
 
 - 어떤 데이터를 프로그램 외부로 내보내는 것
 - from 프로그램 to 외부
 
 ### 서식 지정(formatted) 출력이란?
 
-![img_97.png](img_97.png)
+![img_97.png](old_note/COMP2200/week4/img_97.png)
 
 - 흔히 Formatting이라고 표현한다.
 - 3가지 종류가 있다
@@ -1020,7 +1020,7 @@ void string_tolower(char* str)
 
 ## printf의 첫 번째 매개변수
 
-![img_98.png](img_98.png)
+![img_98.png](old_note/COMP2200/week4/img_98.png)
 
 - 반드시 서식 문자열을 넣어야한다.
 - C에는 함수 오버로딩이 없다.
@@ -1028,8 +1028,8 @@ void string_tolower(char* str)
 
 ### 서식 문자열(format string)
 
-![img_99.png](img_99.png)
-![img_100.png](img_100.png)
+![img_99.png](old_note/COMP2200/week4/img_99.png)
+![img_100.png](old_note/COMP2200/week4/img_100.png)
 
 - 서식 문자열은 %로 시작한다.
 - 서식 문자열에는 하나 이상의 데이터가 들어갈 수 있다.
@@ -1040,11 +1040,11 @@ void string_tolower(char* str)
 
 ### 일반적인 서식 문자열 형식
 
-![img_101.png](img_101.png)
+![img_101.png](old_note/COMP2200/week4/img_101.png)
 
 ### 서식 지정자(format specifier)
 
-![img_102.png](img_102.png)
+![img_102.png](old_note/COMP2200/week4/img_102.png)
 ![img_103.png](img_103.png)
 ![img_104.png](img_104.png)
 
