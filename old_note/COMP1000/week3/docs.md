@@ -432,7 +432,7 @@
 
 ### 비트패턴에서 3.75 복원
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week3/images/img_59.png)
 
 - 부호:
     - 0
@@ -447,7 +447,7 @@
 
 - 1.111(2) * 2^1 == 11.11(2)를 10진수로 최종적으로 변환하면 3.75
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week3/images/img_60.png)
 
 ### 3.14 비트패턴으로 저장
 

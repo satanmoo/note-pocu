@@ -279,11 +279,11 @@
 - trend line
 - 이런 선을 그리는 공식이 있음!
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP1000/week13/img_59.png)
 
 - 최대한 많은 점(데이터)에 가깝게 그리는 직선
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP1000/week13/img_60.png)
 
 - 직선이기 때문에 직선의 방정식을 만족해야함
 

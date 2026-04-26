@@ -473,7 +473,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 비효율적인디?
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week12/images/img_59.png)
 
 - A* 알고리듬의 실제 실행 속도는 훨씬 빠름!
     - Big-O 표기법 개념으로 시간 복잡도를 측정했을 때는 별 차이가 없지만
@@ -482,7 +482,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 ### A* 알고리듬 정리
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week12/images/img_60.png)
 
 - 기본은 다익스트라
     - 쓸데없는 평가를 피하기

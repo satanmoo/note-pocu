@@ -412,9 +412,9 @@ int main() {
 
 ![img_58.png](img_58.png)
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week14/img_59.png)
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week14/img_60.png)
 
 ![img_61.png](img_61.png)
 

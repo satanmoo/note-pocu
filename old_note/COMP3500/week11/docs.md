@@ -376,7 +376,7 @@ A E C D F B C
 
 - 과연 모든 노드를 방문할 수 있나?
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week11/images/img_59.png)
 
 - 트리에서 DFS는 트리의 특수한 성질 때문에 모든 노드를 방문할 수 있었음!
     - 루트에서 시작해서 리프로 반드시 도착할 수 있음
@@ -391,7 +391,7 @@ A E C D F B C
 
 ### OOP 개념에서는 좋지 못한 방법
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week11/images/img_60.png)
 
 - 노드의 상태를 업데이트
 - 만약 그래프에서 이미 DFS했는데, 또 DFS하고 싶으면? 모든 노드의 방문상태를 false로 변경하는 작업이 필요함!

@@ -436,8 +436,8 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## bool형 개요
 
-![img_59.png](img_59.png)
-![img_60.png](img_60.png)
+![img_59.png](old_note/COMP2200/week1/img_59.png)
+![img_60.png](old_note/COMP2200/week1/img_60.png)
 
 - bool형을 안 쓰는 이유: 정수로 대신 쓸 수 있어서
     - 0: false

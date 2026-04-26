@@ -530,7 +530,7 @@ void enqueue(int n)
 
 ### 큐의 삭제
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week10/img_59.png)
 
 ```c++
 enum { MAX_NUMS = 8 };
@@ -555,7 +555,7 @@ void dequeue(int n)
 }
 ```
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week10/img_60.png)
 
 - s_front 위치의 값 저장
 

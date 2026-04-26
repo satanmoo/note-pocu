@@ -204,9 +204,9 @@
 
 - 재귀적으로 증명하기
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week9/images/img_59.png)
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week9/images/img_60.png)
 
 ![img_61.png](images/img_61.png)
 

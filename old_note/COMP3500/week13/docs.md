@@ -489,11 +489,11 @@ public final class Kruskal {
     - 현재 TSP문제에서는 완전 그래프를 가정했기에 MST를 만들 수 있음
         - 끊어진 노드가 없죠?
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week13/images/img_59.png)
 
 - MST를 한 바퀴 돎
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week13/images/img_60.png)
 
 - 중구에서 시작
 - 아무리 느려도 각 변을 2번 방문

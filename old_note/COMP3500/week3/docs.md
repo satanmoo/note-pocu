@@ -329,9 +329,9 @@ public static void insertionSort(final int[] nums) {
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week3/images/img_59.png)
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week3/images/img_60.png)
 
 - 오랫만에 pivot 보다 큰 값
     - 그대로 둠

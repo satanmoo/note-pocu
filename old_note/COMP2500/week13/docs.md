@@ -200,7 +200,7 @@
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP2500/week13/images/img_59.png)
 
 - 직사각형 자료형 변수가 정사각형 개체를 참조한다고 가정
 - 정사각형 개체에서 setWidth(), setHeight() 오버라이딩
@@ -271,7 +271,7 @@ public class LiskovViolationExample {
 }
 ```
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP2500/week13/images/img_60.png)
 
 ![img_61.png](images/img_61.png)
 

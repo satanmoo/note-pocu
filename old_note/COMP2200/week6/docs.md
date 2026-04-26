@@ -290,7 +290,7 @@ struct data {
 ### 반환값을 바로 구조체 변수에 대입할 수 있음
 
 ![img_58.png](img_58.png)
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week6/img_59.png)
 
 - 어떤 컴파일러는 memcpy로 통채로 복사함
     - 이게 최적화임
@@ -298,7 +298,7 @@ struct data {
 
 ## 구조체의 배열
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week6/img_60.png)
 
 - 기본 자료형이랑 다르지 않다고 생각하는게 편하다.
 - 구조체마다 자료 크기가 딱 정해져있으니 컴파일러가 다른 기본 자료형처럼 처리할 수 있죠

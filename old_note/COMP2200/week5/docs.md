@@ -389,7 +389,7 @@ while (fgets(line, LINE_LENGTH, stdin) != NULL) {
 
 - 반복문 블록 안의 printf 실행
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week5/img_59.png)
 
 - fgets 실행
 - fgets는 \n까지 읽음
@@ -398,7 +398,7 @@ while (fgets(line, LINE_LENGTH, stdin) != NULL) {
 - 쉽게 생각하며 읽은만큼 덮어쓴다.
 - 보통 버퍼 넉넉하게 512, 1024로 잡아놓음
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week5/img_60.png)
 
 - 성공적으로 읽었으므로 NULL이 아니라서, 반복문 실행
 

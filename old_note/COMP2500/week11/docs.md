@@ -474,12 +474,12 @@ public class B {
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP2500/week11/images/img_59.png)
 
 - collection 인터페이스의 구현은 다양함
 - 구현에 따라 중복을 어떻게 처리하는지 방식이 다름
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP2500/week11/images/img_60.png)
 
 - 구현의 모든 경우에 다 작동하게 하려면?
     - `MergeTo()` 함수의 구현에서 contains() 중복 검사를 해야함

@@ -503,14 +503,14 @@ arr2 = { 0, }; /* 불가능 */
 ## 다차원 배열
 
 ![img_58.png](img_58.png)
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week2/img_59.png)
 
 - 2차원 배열을 1차원 배열로 표현할 수 있음
     - i가 2칸씩(열 만큼) 증가하면 새로운 행으로 넘어가는 개념이죠?
 
 ### 결국 메모리에 일렬로 들어감
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week2/img_60.png)
 
 ### 다차원 배열 선언과 동시에 초기화 하기?
 

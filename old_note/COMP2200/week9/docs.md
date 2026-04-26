@@ -421,8 +421,8 @@ for (i = 0; i < NUM_LINES; i++) {
 
 - 위 예시도 총 줄 수가 고정이라는 한계가 있음
 
-![img_59.png](img_59.png)
-![img_60.png](img_60.png)
+![img_59.png](old_note/COMP2200/week9/img_59.png)
+![img_60.png](old_note/COMP2200/week9/img_60.png)
 
 ```c++
 #define INCREMENT (2)

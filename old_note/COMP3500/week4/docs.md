@@ -406,9 +406,9 @@
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week4/images/img_59.png)
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week4/images/img_60.png)
 
 ![img_61.png](images/img_61.png)
 

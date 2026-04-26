@@ -297,11 +297,11 @@ public class Node {
 
 - 리프가 아닌 노드를 지우면?
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week6/images/img_59.png)
 
 - BST 속성을 만족하지 않음
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week6/images/img_60.png)
 
 - 삭제된 노드의 자리에 새로운 노드를 넣어야함
 - 뭘 넣을까?

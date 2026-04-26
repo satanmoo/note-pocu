@@ -315,11 +315,11 @@ int main(void) {
 
 - 함수로 포인터를 반환하려는데 유효하지 않은 주소는 어떻게 반환할까?
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week3/img_59.png)
 
 - 유효한 주소가 없다는 뜻
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week3/img_60.png)
 
 - 값이 0인 상수 표현식
 - 포인터에 0을 대입해도 됨

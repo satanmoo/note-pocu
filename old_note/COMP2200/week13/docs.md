@@ -613,7 +613,7 @@ int sum(int nums[static const 8], size_t count)
 
 ### wchar_t 사용법
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week13/img_59.png)
 
 - 와이드 문자열의 경우 따옴표 앞에 'L'을 붙임
     - 안 붙이면 `컴파일 오류`
@@ -626,7 +626,7 @@ const wchar_t* w_pope = L"포프";
 - 코드에서 위 처럼 선언하면, 메모리에 플랫폼에서 사용하는 wchar_t인코딩에 맞는 비트패턴으로 저장됨
 - 즉 코드에서 리눅스/윈도우 플랫폼에 관계없이 wchar_t를 사용할 수 있음
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week13/img_60.png)
 
 - 서식 문자 "%ls"는 와이드 문자열을 `멀티바이트 문자열`로 변환한 뒤에 화면에 출력
     - 멀티바이트 문자열은 사용자 환경에 맞는 인코딩에 맞게 변환한 결과

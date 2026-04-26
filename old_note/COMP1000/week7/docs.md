@@ -231,11 +231,11 @@
 
 ### 특정 플래그를 끄는 방법
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week7/images/img_59.png)
 
 - NOT과 AND의 조합
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week7/images/img_60.png)
 
 - 다른 비트는 그대로 나와야하고, 특정 플래그는 반드시 0이되어야함
 

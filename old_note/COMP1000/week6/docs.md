@@ -346,7 +346,7 @@
 - 수학에서는 모든 것을 확인하는 것이 거의 불가능
 - 프로그래밍에서는 어떨까? 
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week6/images/img_59.png)
 
 - 32비트 정수라는 제한이 걸리면
   - 2^32개라고 유한한 수
@@ -354,7 +354,7 @@
 
 ### 동치 증명
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week6/images/img_60.png)
 
 - 쌍방 조건 명제가 항진명제면 두 명제는 논리적 동치
   - p <=> q 가 항상 참이면

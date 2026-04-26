@@ -251,9 +251,9 @@
 - x 성분 부호만 바꾸면...
 - 입사각/반사각 원리
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week10/images/img_59.png)
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week10/images/img_60.png)
 
 ## 내적
 

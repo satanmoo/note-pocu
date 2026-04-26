@@ -263,11 +263,11 @@
 
 ## 여집합의 법칙
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week4/images/img_59.png)
 
 ## 함수
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week4/images/img_60.png)
 
 - 정의역 집합은 중복이 없음
 - map에서 key의 모음을 keySet이라고 정의함

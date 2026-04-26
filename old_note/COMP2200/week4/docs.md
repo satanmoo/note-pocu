@@ -528,12 +528,12 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 - src 크기가 count보다 같거나 크다면? count만큼 복사하는데, 널 문자를 넣을 공간이 없음..
 - 그래서 널문자가 dest에 없어요!
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week4/img_59.png)
 
 - 좋은 습관: count는 dest의 크기와 동일하게 설정
 - dest의 마지막은 널문자로 변경
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week4/img_60.png)
 ![img_61.png](img_61.png)
 
 - src의 길이가 count보다 작은 경우 예시

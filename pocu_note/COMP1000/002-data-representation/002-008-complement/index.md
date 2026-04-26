@@ -19,7 +19,7 @@ aliases:
 - radix complement
 - diminished radix complement
 
-## 10의 보수
+## 10의 보수(radix complement)
 
 ![img_42.png](images/img_42.png)
 
@@ -35,7 +35,7 @@ aliases:
 - 2 + 4 => 6
 - 보수를 활용했음
 
-## 9의 보수
+## 9의 보수(diminished radix complement)
 
 ![img_44.png](images/img_44.png)
 

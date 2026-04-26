@@ -309,11 +309,11 @@
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week5/images/img_59.png)
 
 - 모든 열에 연산 적용하면 됨!
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week5/images/img_60.png)
 
 - 이 연산이 갈루아필드 곱
 - 확산 효과를 받을 수 있음

@@ -22,7 +22,7 @@ aliases:
 
 ## 16진법 덧셈
 
-![img_59.png](images/img_59.png)
+![img_59.png](pocu_note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/img_59.png)
 
 carry-over 연쇄:
 - 16^0의 자리는 다음과 같이 계산: C + 7 - 16 = 3

@@ -231,9 +231,9 @@
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP2500/week12/images/img_59.png)
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP2500/week12/images/img_60.png)
 
 - TableBuilder 추상 클래스
     - 말 그대로 테이블을 만드는 추상 매서드를 가지고 있음

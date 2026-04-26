@@ -397,14 +397,14 @@ public class Program {
 - 만약 제한된 하드웨어에서 모든 계산을 할 수 없는 경우
     - 리프까지 갈 수 없을 때
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week9/images/img_59.png)
 
 - 특정 깊이까지만 계산
     - 근사치일 수 밖에 없음
     - 휴리스틱한 평가 함수(evaluation function)
         - 참고로 머신 러닝에서도 모든 데이터를 다 훑을 수 없어서 이렇게 접근함
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week9/images/img_60.png)
 
 - 여기서 전략이 X를 놓을 때 X가 2개가 되는 경우면 이길 확률이 높아짐
 - 이를 공식화 하면

@@ -354,12 +354,12 @@
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP1000/week5/images/img_59.png)
 
 - 두 회로는 똑같은 결과를 가져옴
 - 게이트를 적게 사용하고 같은 결과를 가져오는 것이 좋음
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP1000/week5/images/img_60.png)
 
 ![img_61.png](images/img_61.png)
 

@@ -648,9 +648,9 @@ int main(void)
 - 전처리기가 소스 코드를 뒤지다가 A가 보이면 모두 (10)으로 바꿔줌
 - #define A 만 하면 A를 바꾸지 않음
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP2200/week11/img_59.png)
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP2200/week11/img_60.png)
 
 ### [#undef 식별자]
 

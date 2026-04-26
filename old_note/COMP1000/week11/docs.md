@@ -273,11 +273,11 @@
 
 ### 중복 순열 공식
 
-![img_59.png](img_59.png)
+![img_59.png](old_note/COMP1000/week11/img_59.png)
 
 ### 중복 순열의 예: 패스워드
 
-![img_60.png](img_60.png)
+![img_60.png](old_note/COMP1000/week11/img_60.png)
 
 - '52^8'
 - 대/소문자 26개씩해서 52

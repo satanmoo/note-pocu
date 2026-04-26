@@ -262,11 +262,11 @@ public static int fibonacci(int number) {
 
 ![img_58.png](images/img_58.png)
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week10/images/img_59.png)
 
 ### 패턴
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week10/images/img_60.png)
 
 - 첫 행은 그냥 넣으면 끝
 

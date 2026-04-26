@@ -378,12 +378,12 @@ public static boolean hasGreater(int[] nums, int k) {
 
 ## P vs NP 문제라는 용어에 대해서 ?
 
-![img_59.png](images/img_59.png)
+![img_59.png](old_note/COMP3500/week2/images/img_59.png)
 
 - P 또는 NP냐 구분하는게 아님
 - P와 NP가 같은지 아닌지를 논하는 문제
 
-![img_60.png](images/img_60.png)
+![img_60.png](old_note/COMP3500/week2/images/img_60.png)
 
 - 가정을 해서, 만약 어떤 NPC 문제 중 하나라도 다항식 시간 안에 풀 수 있다면?
     - 이건 P 문제인데?
