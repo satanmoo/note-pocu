@@ -30,41 +30,41 @@
 
 - 실수를 막아준다.
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week6/img_6.png)
 
 ### 컴파일러는 매개변수 중에서 같은 형의 순서를 구분할 수 없음
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week6/img_7.png)
 
 - 몽말인지 알지
 - 개체지향으로 가는 과정
 
 ### 컴파일러는 묵시적으로 변환 가능한 자료형이 실수(mistake)인지 알 수 없음
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week6/img_8.png)
 
 - money는 float형인데, 실수로 여기에 int형 exp를 넣어도, 묵시적으로 형변환이 된다.
 - 컴파일러는 이런 실수를 실수로 인식하지 못함.
 
 ### 매개변수 목록이 길어질수록 더 힘듬 ㅋㅋㅋ
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week6/img_9.png)
 
 ### 중간에 매개변수 순서를 바꿔도 문제
 
-![img_10.png](img_10.png)
-![img_11.png](img_11.png)
-![img_12.png](img_12.png)
+![img_10.png](old_note/COMP2200/week6/img_10.png)
+![img_11.png](old_note/COMP2200/week6/img_11.png)
+![img_12.png](old_note/COMP2200/week6/img_12.png)
 
 ## 실수를 막는법: atomic operation [후기 강조]
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week6/img_13.png)
 
 - 뭔가 개체지향의 setter와 닮음
 - 근데 이 방식도 빼먹을 수 있어서
 - 위 코드에서 잘못된 날짜에 컴퓨터 포멧을 알 수도...
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week6/img_14.png)
 
 - 원자성을 보장하는 연산(atomic operation)!
 - 어떤 함수를 호출했을 때 해야할 일 모두 다하고, 결과를 한 번에 돌려주는 개념이 원자성
@@ -74,11 +74,11 @@
 - 결과를 한 번에 돌려주려면 데이터를 모으는 개념이 필요함
 - 구조체
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week6/img_15.png)
 
 ### 구조체의 선언
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week6/img_16.png)
 
 ```c++
 struct data {
@@ -90,20 +90,20 @@ struct data {
 
 - 세미콜론 잊지 말 것
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week6/img_17.png)
 
 - date형이라는 새로운 형을 만든다.
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week6/img_18.png)
 
 - 3개의 멤버 변수를 가진 date형을 만든다.
 
 ### 구조체 변수 선언 및 사용하기
 
-![img_19.png](img_19.png)
-![img_20.png](img_20.png)
-![img_21.png](img_21.png)
-![img_22.png](img_22.png)
+![img_19.png](old_note/COMP2200/week6/img_19.png)
+![img_20.png](old_note/COMP2200/week6/img_20.png)
+![img_21.png](old_note/COMP2200/week6/img_21.png)
+![img_22.png](old_note/COMP2200/week6/img_22.png)
 
 - 새로운 타입처럼 사용하면 된다.
 - 멤버 변수에 접근할 때는 `.`을 사용한다.
@@ -111,26 +111,26 @@ struct data {
 
 ## 구조체를 지역 변수로 선언하면 당연히 0으로 초기화 안 됨
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week6/img_23.png)
 
 - 선언 시점에는 그 전에 스택에 위치에 있던 쓰레기값이 들어감
 - 지역변수는 반드시 직접 초기화하자!
 
 ## 구조체는 장황하다.
 
-![img_24.png](img_24.png)
-![img_25.png](img_25.png)
+![img_24.png](old_note/COMP2200/week6/img_24.png)
+![img_25.png](old_note/COMP2200/week6/img_25.png)
 
 - struct date 이렇게 쓰는게 너무 길다. ㅠㅠ
 
 ## typedef 사용법
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week6/img_26.png)
 
 - stddef.h의 size_t처럼
 - 별명 짓는겁니다.
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week6/img_27.png)
 
 - 별명을 짓기 때문에, 서로서로 호환이 됩니다!!!
 - size_t <=> unsigned int
@@ -138,60 +138,60 @@ struct data {
 
 ## 구조체에 typedef 사용하기1
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week6/img_28.png)
 
 - 와! 깔끔하다.
 - typedef struct date date_t;
 
 ## 구조체에 typedef 사용하기2, 3
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week6/img_29.png)
 
 - struct {}을 바로 typedef로 묶어버림
 - struct의 이름(date)을 생략하고 바로 date_t로 사용 가능
 
 ### 각 사용법의 차이점
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week6/img_30.png)
 
 - 사용법3으로 쓰면 struct date date; 이렇게는 못 쓰죠. 구조체 이름이 없으니깐 ㅋㅋ
 
 ## 열거형 enum도 typedef를 사용할 수 있음
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week6/img_31.png)
 
 - enum을 생략하기 위해서 ㅇㅇ
 - enum game_role로 쓰는 것보다는, game_role_t로 쓰는게 더 깔끔하다.
 
 ## 코딩 표준
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week6/img_32.png)
 
 - 다른 언어와 차이가 없게 ㅇㅅㅇ!
 
 ## 구조체 변수 초기화 하기
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week6/img_33.png)
 
 - 선언 시점에는 스택의 쓰레기 값 들어감
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week6/img_34.png)
 
 - 하드웨어에 구조체 개념은 없음
 - 언어 레벨에서 편리한 개념(컴파일러만 알죠)
 
 ## 메모리로 구조체 개념이 하드웨어에 있는지 확인해보자
 
-![img_35.png](img_35.png)
-![img_36.png](img_36.png)
+![img_35.png](old_note/COMP2200/week6/img_35.png)
+![img_36.png](old_note/COMP2200/week6/img_36.png)
 
 - mov가 대입하다는 어셈블리어임
 - 여튼 완전히 똑같음!!!
 
 ## 컴파일러 입장에서 보자
 
-![img_37.png](img_37.png)
-![img_38.png](img_38.png)
+![img_37.png](old_note/COMP2200/week6/img_37.png)
+![img_38.png](old_note/COMP2200/week6/img_38.png)
 
 - 컴파일러가 기계가 이해하는 코드로 만들 때 알아서 똑같이 만들어줌
 - 배열처럼 스택에 순차적으로 쌓이는 개념
@@ -199,22 +199,22 @@ struct data {
 
 ## 또 다른 구조체 초기화 방법
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week6/img_39.png)
 
 - 배열 초기화할 때 봤던 방법
 - 컴파일러가 이 식 보면, 알아서 memset으로 바꿔서 최적화 해줌
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week6/img_40.png)
 
 - 이거도 가능?
 
-![img_41.png](img_41.png)
-![img_42.png](img_42.png)
+![img_41.png](old_note/COMP2200/week6/img_41.png)
+![img_42.png](old_note/COMP2200/week6/img_42.png)
 
 - 가능한데, 실수하니까 쓰지말자.
 - 본래의 구조체의 목적을 생각해보삼
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week6/img_43.png)
 
 - 요소 나열법이 유용한 경우가 딱 하나 있긴한데
 - const로 선언된 구조체 멤버를 초기화할 때
@@ -222,39 +222,39 @@ struct data {
 
 ## 구조체 매개변수
 
-![img_44.png](img_44.png)
-![img_45.png](img_45.png)
+![img_44.png](old_note/COMP2200/week6/img_44.png)
+![img_45.png](old_note/COMP2200/week6/img_45.png)
 
 - 값형임 ㅋㅋ
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week6/img_46.png)
 
 - pass by value
 - 구조체 사본을 함수에 넘긴다.
 
 ## 함수 인자로 전달할 때 구조체와 그냥 기본자료형은 똑같이 작동하나요?
 
-![img_47.png](img_47.png)
-![img_48.png](img_48.png)
+![img_47.png](old_note/COMP2200/week6/img_47.png)
+![img_48.png](old_note/COMP2200/week6/img_48.png)
 
 - 예
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week6/img_49.png)
 
 - 완전히 똑같음 ㅋㅋ;
 - 사실 함수는 int형 매개변수 3개 받는거임
 
 ## 구조체의 원본을 바꾸려면? 구조체의 포인터
 
-![img_50.png](img_50.png)
-![img_51.png](img_51.png)
+![img_50.png](old_note/COMP2200/week6/img_50.png)
+![img_51.png](old_note/COMP2200/week6/img_51.png)
 
 - 괄호가 필요한 이유는?
 - 연산자 우선순위
 
 ## -> 연산자
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week6/img_52.png)
 
 - 괄호 + . 합친거 임
 
@@ -262,7 +262,7 @@ struct data {
 
 ### 매개변수에 주소를 전달할까? 값을 복사할까? 데이터 크기를 고려하라
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week6/img_53.png)
 
 - 구조체의 경우 배열처럼 데이터의 크기가 클 수 있죠?
 - 그래서 배열을 함수의 매개변수로 전달할 때 첫번째 원소의 주소를 전달했음
@@ -271,25 +271,25 @@ struct data {
     - 매개변수는 모두 스택 메모리에 올라감
 - 주소를 전달했기 때문에 원본 변경이 걱정이면? const!
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week6/img_54.png)
 
 ### 구조체 매개변수 vs 여러 개의 개별 변수
 
-![img_55.png](img_55.png)
-![img_56.png](img_56.png)
+![img_55.png](old_note/COMP2200/week6/img_55.png)
+![img_56.png](old_note/COMP2200/week6/img_56.png)
 
 - 이건 그냥 구조체를 전달하는게 좋다고 알면됨
 
 ## 함수 반환값으로서의 구조체
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week6/img_57.png)
 
 - 구조체를 반환하면, 여러 개 값을 반환하는 격
 - 복사에 의한 반환
 
 ### 반환값을 바로 구조체 변수에 대입할 수 있음
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week6/img_58.png)
 ![img_59.png](old_note/COMP2200/week6/img_59.png)
 
 - 어떤 컴파일러는 memcpy로 통채로 복사함
@@ -304,14 +304,14 @@ struct data {
 - 구조체마다 자료 크기가 딱 정해져있으니 컴파일러가 다른 기본 자료형처럼 처리할 수 있죠
 - 예시처럼 int 3개면 3 * sizeof(int)
 
-![img_61.png](img_61.png)
-![img_62.png](img_62.png)
+![img_61.png](old_note/COMP2200/week6/img_61.png)
+![img_62.png](old_note/COMP2200/week6/img_62.png)
 
 ## 배열의 각 요소의 크기를 알아볼까요?
 
 - 배열은 촘촘하게 모든 요소가 정렬됨
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week6/img_63.png)
 
 - sizeof(구조체) 해보면 됨
 - sizeof(date_t)도 됨
@@ -320,25 +320,25 @@ struct data {
     - 즉 몇 바이트 차이나는지 구할 수 있음
     - 이것이 배열의 원소의 크기를 알아내는 방법, 여기서는 배열의 원소가 구조체라 구조체 크기를 알 수 있음
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week6/img_64.png)
 
 - 실제 메모리 보면 각각 12바이트씩 잘 들어가있죵
 
 ## 퀴즈
 
-![img_65.png](img_65.png)
-![img_66.png](img_66.png)
+![img_65.png](old_note/COMP2200/week6/img_65.png)
+![img_66.png](old_note/COMP2200/week6/img_66.png)
 
 ## 얕은 복사, 깊은 복사
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week6/img_67.png)
 
 - 사고의 시작은 `포인터가 무엇을 저장하는가?`이다.
 - 구조체 변수에 구초체를 그대로 대입하면, 모든 구조체 멤버 변수를 대입한 것과 같다.
 - 각각이 포인터라서, 주소값을 가지고 있고, 이 주소값이 저장된다.
 - 실제로 문자열은 어떤 스택에 저장되있겠죠? 주소값도 마찬가지로 스택에 저장되있죠
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week6/img_68.png)
 
 - name.lastname[0] = 'N'; 이렇게 하면, 스택에 복사해온 char[]의 원소가 변경된다.
 - clone.lastname, name.lastname은 같은 주소값을 가지고 있다.
@@ -346,14 +346,14 @@ struct data {
 
 ## 얕은 복사
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week6/img_69.png)
 
 - 실제 데이터가 아니라 주소를 복사하는 것을 얕은 복사라고 함
     - 모든 데이터를 깊게 들어가 복사한게 아니다.
 
 ## 깊은 복사
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week6/img_70.png)
 
 - 구조체 변수마다 독자적인 메모리 공간을 만들어주고, 문자열 내용을 복사해야함
 
@@ -366,7 +366,7 @@ typedef struct {
 } name_t;
 ```
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week6/img_71.png)
 
 - names는 구조체의 배열
 - 구조체의 배열의 각 원소를 초기화했음
@@ -375,25 +375,25 @@ typedef struct {
 - 근데 근데 구조체의 멤버 변수가 char*임. 따라서 각 멤버 변수는 char 배열의 첫번째 원소의 주소를 값으로 가짐
     - 여기서는 문자열을 char* 형 변수에 바로 대입했기 때문에 데이터섹션의 주소값을 가짐(읽기 전용)
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week6/img_72.png)
 
 - 파일 쓰기
 - 멤버 변수의 주소값(0x009c3006)
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week6/img_73.png)
 
 - 방금 쓴 파일을 그대로 읽기
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week6/img_74.png)
 
 - 잘 읽을 수도 있고, 디버그 툴에서 예외를 발생할 수도 있음
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week6/img_75.png)
 
 - 파일에 저장된 값은, 구조체 변수의 값들이다.
 - 이 값이 포인터로 주소를 저장했음
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week6/img_76.png)
 
 - fread로 읽어올 때도 값을 정상적으로(주소를) 읽어왔습니다.
     - 멤버 변수의 주소값(0x009c3006) 동일함
@@ -402,7 +402,7 @@ typedef struct {
 
 ## 구조체의 크기를 확인해보자
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week6/img_77.png)
 
 - 8바이트네요?
 - 구조체 멤버 변수 2개, 둘다 char* 4바이트(32비트 컴퓨터의 워드 단위)니까 총 8바이트네요
@@ -424,7 +424,7 @@ typedef struct {
 
 ### 구조체로 배열을 복사하가
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week6/img_78.png)
 
 - 포인터가 아니라 배열 변수로 구조체 멤버 변수를 저장해보자
 - sizeof(name_t)로 구조체의 크기를 확인해보니까 64임
@@ -436,7 +436,7 @@ typedef struct {
 
 - C++에서 제대로 배움
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week6/img_79.png)
 
 - 이렇게 구조체의 멤버변수를 배열로 선언하면, 배열에 어떻게 값을 대입할 것인가를 고민해야한다.
 - char[]인데... 흠, 기존에는 char*였기 때문에 ""를 이용해서 C 스타일 문자열을 대입했다.
@@ -497,16 +497,16 @@ int main() {
     - 지금 예시에서는 strncpy에서 자동으로 널 문자를 넣어주기 때문에 마지막에 널문자로 바꿔주는 코드가 효과가 없지만, 좋은 습관에 따라 넣어주는게 좋다.
         - 만약 src의 길이가 NAME_LEN과 같거나 크면 dest에 널문자가 들어가지 않기 때문임
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week6/img_80.png)
 
 - 구조체의 멤버로 배열을 선언하고 배열에 값을 복사해서 파일에 쓰기
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week6/img_81.png)
 
 - 구조체에 깊은 복사를 하고 파일에 저장 후 파일을 읽어보면, 주소가 아니라 문자 배열의 각 요소값들이 잘 저장된 것을 확인할 수 있다.
 - 파일에 깊은 복사 성공
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week6/img_82.png)
 
 - 프로그램을 통해서 파일을 읽어보자
     - 여기서 sizeof(names[0])의 값은 얼마일까요?
@@ -516,34 +516,34 @@ int main() {
     - 스택 메모리 주소가 변한 것
     - 파일에서 저장된 내용을 새로운 스택 메모리의 구조체 변수에 복사했기 때문에, 주소값이 달라진 것
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week6/img_83.png)
 
 - 구조체를 만들 때 좋은 습관은, 구조체의 멤버에 포인터가 없는게 좋음
 - 구조체를 값형처럼!!! 깊은 복사해서 사용하자
 
 ## 구조체를 다른 구조체의 멤버로 사용하기, 바이트 정렬
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week6/img_84.png)
 
 - 구조체를 다른 구조체의 멤버 변수로 사용할 수 있음
 - 구조체도 데이터형이기 때문이다. 구조체는 멤버로 여러 데이터 형을 포함할 수 있음
 
 ## 구조체의 크기를 확인해보자
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week6/img_85.png)
 
 - 파일에 저장할 때는 몇 바이트일까?
 - 이 질문이 왜 중요한가?
     - 다른 플랫폼과 파일을 공유할 수 있음 따라서 파일을 읽을 때 정확하게 구조체의 크기를 알아야함
     - 파생적으로 어떻게 효율적으로 저장할지, 어떻게 읽기 편하려면 어떻게 저장해야 좋을지를 고민
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week6/img_86.png)
 
 - 실제로는 80바이트 써짐..
 - 76바이트가 아닌데?
 - sizeof해도 80바이트 나옴
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week6/img_87.png)
 
 - 각 멤버 변수에서 시작위치와 끝위치의 차이를 통해 각 멤버 변수의 크기를 알 수 있음
     - height는 short인데 4바이트를 차지함
@@ -570,17 +570,17 @@ int off_height = (char*)&info.weight - (char*)&info  // 72
 int off_age = (char*)&info.age - (char*)&info  // 76
 ```
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week6/img_88.png)
 
 - 그림으로 확인하죠
 
 ## 바이트 정렬 요구사항
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week6/img_89.png)
 
 - 바이트 정렬 요구사항 때문에 패딩(안 쓰는 공간)이 생김
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week6/img_90.png)
 
 - 4바이트를 꽉 채우면, 구멍이 생기지 않지만 2바이트는 구멍을 만든다.
 - 4바이트(워드 크기)의 경계에서 데이터를 읽는게 효율적이라서, 컴파일러가 4바이트로 정렬함
@@ -590,7 +590,7 @@ int off_age = (char*)&info.age - (char*)&info  // 76
 - 플랫폼 마다 다를 수 있음
 - 교훈은 어떤 구조체를 파일로 저장했는데, 다른 플랫폼에서 이 파일을 읽으면 바이트 수가 안 맞아서 엉뚱한 값이 읽힐 수 있다.
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week6/img_91.png)
 
 ## 패딩 줄이기
 

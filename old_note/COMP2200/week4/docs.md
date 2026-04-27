@@ -54,14 +54,14 @@
 ## 배열 크기를 저장하는 변수를 바꾸지 않아서 발생하는 실수
 
 ![img_5.png](old_note/COMP2200/week4/img_5.png)
-![img_6.png](img_6.png)
-![img_7.png](img_7.png)
+![img_6.png](old_note/COMP2200/week4/img_6.png)
+![img_7.png](old_note/COMP2200/week4/img_7.png)
 
 - 배열 크기를 변수에 저장하면 실수할 여지가 많다.
     - 값을 잘못 저장할 수도 있고
     - 배열 크기를 바꿔야 할 때, 변수를 바꿔야 하는 번거로움이 있다.
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week4/img_8.png)
 
 - 버그 유발ㅋㅋ
 - 실수를 막기 위해서 언어 자체에서 지원하는 방법을 배워보자.
@@ -70,21 +70,21 @@
 
 ## 작전1: 길이를 배열의 첫 위치에 저장 (후기 강조)
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week4/img_9.png)
 
 - 첫 메모리 위치의 문자열의 길이를 저장
 - 실제 문자열은 그 뒤를 따라온다.
 - 문자열은 unsigned char의 배열이다. 그래서 첫 메모리 위치에 저장된 값의 범위는 0~255이다.
     - 문자열의 길이가 255를 넘어가면 어떻게 할까?
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week4/img_10.png)
 
 - 그러면 길이를 저장하는 부분은 unsigned int로 바꾸고, 그 뒤는 unsigned char 배열로 저장하면?
 
 ### 작전1의 장점
 
-![img_11.png](img_11.png)
-![img_12.png](img_12.png)
+![img_11.png](old_note/COMP2200/week4/img_11.png)
+![img_12.png](old_note/COMP2200/week4/img_12.png)
 
 - 작전1은 다른 언어에서 사용하는 방법이다.
     - OOP로 프로퍼티로 저장
@@ -93,7 +93,7 @@
 
 ### 작전1의 단점
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week4/img_13.png)
 
 - 용량 낭비
     - 길이를 저장하는 변수가 4바이트이므로, 1바이트 문자열을 저장할 때 5바이트가 필요하다.
@@ -109,7 +109,7 @@
 
 ## 작전2: 문자열이 끝나는 위치를 표시
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week4/img_14.png)
 
 - 문자열이 끝나는 위치에 유효하지 않은 값을 넣는 방법
 - 배열에서 유효하지 않은 색인으로 -1을 반환하는 방법 생각나죠?
@@ -117,13 +117,13 @@
 
 ### 유효하지 않은 값으로 뭐를 쓰지?
 
-![img_15.png](img_15.png)
-![img_16.png](img_16.png)
+![img_15.png](old_note/COMP2200/week4/img_15.png)
+![img_16.png](old_note/COMP2200/week4/img_16.png)
 
 - 아스키 코드 중 화면에 보이지 않는 특별한 제어 문자가 있다.
 - 제어 문자 중 하나인 `널 문자`를 유효하지 않은 값으로 사용한다.
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week4/img_17.png)
 
 ```c
 char null_char = '0'; // 0에 해당하는 다른 아스키 코드값
@@ -137,14 +137,14 @@ char null_char = '\0';  // 널 문자의 아스키 코드값은 0
 
 ### 정의
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week4/img_18.png)
 
 - char[]
 - 마지막 요소에 null char(아스키 0)
 
 ### C 스타일 문자열 메모리 저장
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week4/img_19.png)
 
 ```c
 char str1[] = "abc";
@@ -163,7 +163,7 @@ const char* str2 = "abc";
 
 ### ""을 붙이지 않으면?
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week4/img_20.png)
 
 - 큰 따옴표 말고 배열 초기화 중괄호를 사용하면 컴파일러가 null char을 붙여주지 않는다.
 - 사진에서 str을 보면 0x00fffdbc에 첫번째 원소인 'a'가 저장되어 있다. 그리고 "abc.....로 표현했다.
@@ -174,7 +174,7 @@ const char* str2 = "abc";
 
 ### 퀴즈: 문자열
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP2200/week4/img_21.png)
 
 ```c
 str length: 5
@@ -182,7 +182,7 @@ str length: 5
 
 - 널문자 까지 포함해서 5바이트임!
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week4/img_22.png)
 
 - 언제나 배열에 널 문자도 있다는 것을 기억하자.
 - `최소한` 5라고 표현한 이유는 무엇일까?
@@ -192,7 +192,7 @@ str length: 5
 
 ## C 스타일 문자열의 장.단점
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week4/img_23.png)
 
 - 스샷에 언급한 장점 외에도
     - 고정된 크기의 배열을 선언하고, 이 때 크기를 여유롭게 정한다.
@@ -203,11 +203,11 @@ str length: 5
 
 ## 문자열 길이를 구하는 코드
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week4/img_24.png)
 
 - 기초 of 기초
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week4/img_25.png)
 
 ```c++
 size_t get_length(const char* str) {
@@ -221,16 +221,16 @@ size_t get_length(const char* str) {
 
 ### 이게 최선인가?
 
-![img_26.png](img_26.png)
-![img_27.png](img_27.png)
+![img_26.png](old_note/COMP2200/week4/img_26.png)
+![img_27.png](old_note/COMP2200/week4/img_27.png)
 
 - 반복문을 돌 때 마다, str[len]를 읽어야 한다.
     - 시작 주소 + offset로 주소를 계산해서 접근한다.
     - 이것이 좀 비효율적일 수 있다.
 - 개미 눈꼽만큼 더 효율적인 방법이 있죠?
 
-![img_28.png](img_28.png)
-![img_29.png](img_29.png)
+![img_28.png](old_note/COMP2200/week4/img_28.png)
+![img_29.png](old_note/COMP2200/week4/img_29.png)
 
 - 여기서 핵심은
     - 포인터를 자유자재로 다룰 수 있는가?
@@ -273,19 +273,19 @@ size_t get_length(const char* str) {
 
 - 널 문자는 제외하고 길이를 반환합니다!!!
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week4/img_30.png)
 
 - 문자열은 char*로 이해하자!
 
 ## 문자열 길이를 구하는 함수
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week4/img_31.png)
 
 - 우리가 구현한 것처럼 널문자를 포함하지 않은 문자의 길이를 반환함!
 
 ## 가끔 하는 실수1
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week4/img_32.png)
 
 - char 배열로 문자열 선언하고, 배열 초기화 중괄호로 char 배열을 초기화할 때 널 문자를 빼먹는 실수
 - 근데 우연히 더 뒤에 널문자가 들어가있을 수 있어서.
@@ -294,16 +294,16 @@ size_t get_length(const char* str) {
 
 ## 가끔 하는 실수2
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week4/img_33.png)
 
 - 배열의 길이 메크로 선언할 때 널문자를 빼먹고 생각함..
 - 처음부터 + 1을 해주자.
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week4/img_34.png)
 
 ## 외부에서 입력받는 문자열을 조심하자
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week4/img_35.png)
 
 - C11 strlen_s는 safe 접미사가 붙어있다. 보안상 이점이 있음. 안전함
 - strlen()은 읽어오기만 함.
@@ -315,8 +315,8 @@ size_t get_length(const char* str) {
 
 ## 두 문자열 비교
 
-![img_36.png](img_36.png)
-![img_37.png](img_37.png)
+![img_36.png](old_note/COMP2200/week4/img_36.png)
+![img_37.png](old_note/COMP2200/week4/img_37.png)
 
 - 두 문자열을 비교하는 함수
 - 두 문자열을 비교할 거라 매개변수는 char*
@@ -326,10 +326,10 @@ size_t get_length(const char* str) {
 
 ## 사전식 순서
 
-![img_38.png](img_38.png)
-![img_39.png](img_39.png)
-![img_40.png](img_40.png)
-![img_41.png](img_41.png)
+![img_38.png](old_note/COMP2200/week4/img_38.png)
+![img_39.png](old_note/COMP2200/week4/img_39.png)
+![img_40.png](old_note/COMP2200/week4/img_40.png)
+![img_41.png](old_note/COMP2200/week4/img_41.png)
 
 - 아스키 작은 값이 사전상 앞에 있음
     - 대문자가 소문자보다 아스키값이 작으니까 사전상 앞이죠?
@@ -337,7 +337,7 @@ size_t get_length(const char* str) {
 
 ## compare_string 함수의 반환값
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week4/img_42.png)
 
 - int!
     - 음수도 반환해야 하잖아요~
@@ -346,7 +346,7 @@ size_t get_length(const char* str) {
 
 ## compare_string 함수 구현
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week4/img_43.png)
 
 - 두 문자를 대소 비교
 - 같은데, 둘다 널문자면 return 0
@@ -354,7 +354,7 @@ size_t get_length(const char* str) {
 
 ## 효율적인 두 문자열 비교
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week4/img_44.png)
 
 ```c++
 int compare_string(const char* str1, const char* str2) {
@@ -388,15 +388,15 @@ int compare_string(const char* str1, const char* str2) {
 - 하나라도 먼저 끝나면 아스키값이 달라 반복문을 빠져나오게 됨
 - 둘다 널문자인 경우 반드시 반복문을 나오도록 종료 조건을 설정하자!
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week4/img_45.png)
 
 - 이 둘 중 어느것이 더 빠를까? 어셈 코드를 확인해보자.
 
 ## 중구난방 코드
 
-![img_46.png](img_46.png)
-![img_47.png](img_47.png)
-![img_48.png](img_48.png)
+![img_46.png](old_note/COMP2200/week4/img_46.png)
+![img_47.png](old_note/COMP2200/week4/img_47.png)
+![img_48.png](old_note/COMP2200/week4/img_48.png)
 
 - strlen은 O(N)
 - for문을 두 번 더 돌리게 된다.
@@ -404,11 +404,11 @@ int compare_string(const char* str1, const char* str2) {
 
 ## 문자열 비교 함수: strcmp()
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week4/img_49.png)
 
 ## 자매품: strncmp()
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week4/img_50.png)
 
 - 포프님도 업계에서 거의 써보지 않았음...ㅋㅋ
 
@@ -461,7 +461,7 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 
 ## 문자열 복사
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week4/img_51.png)
 
 - 매개변수에서 dest는 const가 아니고, src는 const네요?
     - 프로그래머의 의도가 dest `문자 값`에 변경이 생긴다는 거죠?
@@ -481,7 +481,7 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
     - 이유는 C에서 매개변수로 문자열 다룰 때 국룰
     - 함수 블록 안에서 메모리 할당, 댕글링 포인터를 만들지 말자
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week4/img_52.png)
 
 - 복사 전 0x00AFFE10 주소부터 5바이트에 'cc' 똥값이 들어가있음
 - 0x00AFFE10 주소부터 16칸 이동하면 0x00AFFE20 주소부터 5바이트가 src
@@ -489,22 +489,22 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 
 ## strcpy()
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week4/img_53.png)
 
 - 이 함수 반환값 이상함 --; 업계에서 반환값 안 쓴다고 보면 됨
 - C11에서는 strcpy_s로 대체 에러코드 반환! (나중에 배움)
 
 ## 그런데 dest가 src보다 짧으면? strcpy 대신 strncpy 사용을 습관화
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week4/img_54.png)
 
 - 예시에서는 str2에는 3개 공간뿐인데, str1은 5개의 문자(널문자 포함)를 가지고 있습니다.
 - str2의 메모리 범위를 넘어서 그 뒤 소유하지 않은 메모리도 덮어쓰게됩니다.
     - 그래서 오른쪽의 메모리뷰에서 str2는 마지막에 널문자가 없어서 Pop.... 이렇게 보여주죠
 - 이런 경우에는 어떻게 해야할까요?
 
-![img_55.png](img_55.png)
-![img_56.png](img_56.png)
+![img_55.png](old_note/COMP2200/week4/img_55.png)
+![img_56.png](old_note/COMP2200/week4/img_56.png)
 
 - src와 dest의 크기를 통제할 수 없다면 위험하다.
 - src의 크기 < dest의 크기인 경우
@@ -512,7 +512,7 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 
 ## strncpy()
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week4/img_57.png)
 
 - [docs](https://en.cppreference.com/w/c/string/byte/strncpy)
 
@@ -523,7 +523,7 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
     - dest 길이가 count 보다 긴 경우, dest[strlen(src)] = '\0'; , dest[count] = '\0'; 이렇게 널문자를 넣어줘야함
     - dest 길이가 count 보다 짧은 경우, dest[DEST_SIZE - 1] = '\0' 이렇게 널문자를 넣어줘야함
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week4/img_58.png)
 
 - src 크기가 count보다 같거나 크다면? count만큼 복사하는데, 널 문자를 넣을 공간이 없음..
 - 그래서 널문자가 dest에 없어요!
@@ -534,11 +534,11 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 - dest의 마지막은 널문자로 변경
 
 ![img_60.png](old_note/COMP2200/week4/img_60.png)
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week4/img_61.png)
 
 - src의 길이가 count보다 작은 경우 예시
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week4/img_62.png)
 
 - src의 길이가 count보다 큰 경우 예시(DEST_SIZE == 3, count == 3, strlen(src) == 5
 
@@ -556,22 +556,22 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 
 ## 정리: strcpy()와 strncpy()
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week4/img_63.png)
 
 - strcpy는 널문자를 `항상` 넣어줌!
 - strncpy는 널문자를 넣어줄 수도, 아닐 수도!
 
 ## 문자열 합치기1: strcat()
 
-![img_64.png](img_64.png)
-![img_65.png](img_65.png)
+![img_64.png](old_note/COMP2200/week4/img_64.png)
+![img_65.png](old_note/COMP2200/week4/img_65.png)
 
 - strcpy와 매우 유사하다.
 - dest의 끝을 찾아서 즉 널문자를 찾으면 되죠?
 - 널문자를 제거해! 그리고 널문자가 있던 위치부터 src의 문자를 차례차례 복사하면 됩니당
 
-![img_66.png](img_66.png)
-![img_67.png](img_67.png)
+![img_66.png](old_note/COMP2200/week4/img_66.png)
+![img_67.png](old_note/COMP2200/week4/img_67.png)
 
 - 여기서 생각해볼 점은 dest의 길이가 충분해야 하겠구나~ 라는 것 (src를 덧붙여도 충분한 공간이 필요)
 - 만약 dest의 길이가 부족하다면? 소유하지 않은 메모리에 덮어쓰게 됩니다...
@@ -587,25 +587,25 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 
 - 길이를 제한하는 안전한 함수가 다시 등장했습니다.
 
-![img_68.png](img_68.png)
-![img_69.png](img_69.png)
-![img_70.png](img_70.png)
-![img_71.png](img_71.png)
+![img_68.png](old_note/COMP2200/week4/img_68.png)
+![img_69.png](old_note/COMP2200/week4/img_69.png)
+![img_70.png](old_note/COMP2200/week4/img_70.png)
+![img_71.png](old_note/COMP2200/week4/img_71.png)
 
 - dest의 널문자가 src[0]으로 교체된다고 생각하면 편합니다.
 - count개의 문자를 복사하고 뒤에 널문자를 추가합니다.
 - 최대 count + 1 개의 문자를 덮어씁니다.
 
-![img_72.png](img_72.png)
-![img_73.png](img_73.png)
-![img_74.png](img_74.png)
+![img_72.png](old_note/COMP2200/week4/img_72.png)
+![img_73.png](old_note/COMP2200/week4/img_73.png)
+![img_74.png](old_note/COMP2200/week4/img_74.png)
 
 - 왜 `최대`라고 표현했을까요? 일부러 dest를 작게 잡아서 트롤링해보겠습니다.
 - 위 예에서는 P만 덮어쎠졌습니다. 즉 count + 1(3)만큼이 아니라 1이 덮어써짐
 - 소유하지 않은 메모리에 접근해서 정의되지 않은 결과가 발생합니다.
 - 그리고 dest의 널문자도 없어짐..
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week4/img_75.png)
 
 - 그래서 국룰은 count에 dest의 남은 공간을 넣어주는 것입니다.
     - 그래서 `조금 더` 안전한 함수라고 표현하는 것입니다. (dest를 작게 잡으면 안전하게 작동하지 않음
@@ -618,7 +618,7 @@ int string_case_insensitive_compare(const char* str0, const char* str1)
 
 ## 정리: strcat()과 strncat()
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week4/img_76.png)
 
 - 둘다 dest의 끝에 널문자 넣어줌
 
@@ -729,7 +729,7 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
 
 ## 문자열 찾기
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week4/img_77.png)
 
 - string에서 string 찾으니까, strstr
 - 일단 특이한 점은 char의 배열에서 검색한다.
@@ -744,19 +744,19 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
     - NULL을 printf로 출력하는 것은 정의되지 않은 행동인데..?
     - 그래서 어떤 컴파일러는 NULL이라고 알아서 출력해줌
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week4/img_78.png)
 
 - 코드로 NULL 인 경우 제어
 - 3항 연산자로 널 확인해서 출력하도록 변경해봤다.
 
 ### 문자열을 찾은 경우
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week4/img_79.png)
 
 - 어떤 문자열에서 시작하는 주소를 찾는다.
 - 출력하면 찾은 문자열 부터 출력.
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week4/img_80.png)
 
 - 매개변수로 넘길 문자열을 char []로 선언하고, 넘겼었는데 함수 시그니처의 매개변수는 const char* 이다.
 - 함수 시그니처를 왜 이렇게 설계 했을까?
@@ -776,12 +776,12 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
 
 ## 문자열 찾기 함수가 매개변수로 입력받은 문자열의 메모리 주소를 반환하는 이유
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week4/img_81.png)
 
 - 잠깐 여기서 생각. strstr에서 구한 부분 문자열이 시작하는 색인을 찾아볼까요?
 - 찾은 char*에서 매개변수로 넘긴 const char*를 빼면되죠? offset
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week4/img_82.png)
 
 - 왜 Substring(), IndexOf 같은 함수가 없을까?
 - 굳이 메모리 주소를 반환하는 이유는?
@@ -790,14 +790,14 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
 
 ### 함수 지역변수 스택?
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week4/img_83.png)
 
 - 이건 유요하지 않은 메모리 주소를 반환하게 되죠?
     - 댕글링 포인터
 
 ### 동적 메모리 할당 힙?
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week4/img_84.png)
 
 - 운영체제에 메모리를 부탁해야 하기 때문에 느리다.
 - 그리고 free하지 않은 실수가!!! 메모리 누수가 발생할 수 있다.
@@ -806,40 +806,40 @@ buffered_print("Is Java better? ");    /* is awesome too! Is Java better? */
 
 ### 그래서 결론은 주소를 반환할 때 어떤 방법이 실수가 가장 적을까?
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week4/img_85.png)
 
 - 원본에서 시작하는 주소를 반환하는게 가장 안전하다!!!
 - 함수 내부에서 뭔가 새로운 메모리(힙, 스택)를 잡아서 반환하는거 자체가 위험함!!!
 
 ## 문자열 토큰화
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week4/img_86.png)
 
 - 핵심은 메모리를 추가 할당 하지 않는것!
 - 우아한 방법
 
-![img_87.png](img_87.png)
-![img_88.png](img_88.png)
+![img_87.png](old_note/COMP2200/week4/img_87.png)
+![img_88.png](old_note/COMP2200/week4/img_88.png)
 
 - strtok를 사용하면 첫번째 토큰을 찾고, 구분문자를 널문자로 바꿔준다.
 - 반환값은 첫번째 토큰의 시작 주소
 - 여기서 중요한 점은 새로 추가로 메모리를 잡고 그런게 아니라, 원본 문자열을 수정한다는 것이다.
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week4/img_89.png)
 
 - 두번째 토큰을 찾을 때는 strtok에 NULL을 넣어준다.
 - 이유는 기존의 input의 문자열을 그대로 사용하기 때문이다.
 - 마찬가지로 구분문자를 널 문자로 변경
 - 이 과정을 토큰이 없을 때 까지 반복한다.
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week4/img_90.png)
 
 - 이제 토큰이 없다!
 - NULL을 반환한다.
 
 ### 정리를 해보자
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week4/img_91.png)
 
 - char msg[]는 const 붙이면 안 되죠? 배열에서 구분자 널 문자로 바꿔야하니..
 - 그리고 왜 배열로 선언했는지 이제 알겠죠? 이거 데이터 섹션을 참조하는 char* 넘겼다가, 수정하면 크래시 나죠?

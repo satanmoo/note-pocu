@@ -40,7 +40,7 @@
 
 ### 배열의 삽입
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week10/img_6.png)
 
 ```c++
 #define MAX_NUMS (8)
@@ -62,7 +62,7 @@ void insert_at(size_t index, int num) {
 }
 ```
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week10/img_7.png)
 
 ```c++
 insert_at(0, 1);
@@ -70,35 +70,35 @@ insert_at(0, 1);
 
 - 실행하고 한 줄씩 분석
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week10/img_8.png)
 
 - index <= s_num_count: 인자로 들어오는 삽입 위치의 범위 [0, s_num_count(배열의 마지막 인덱스 다음)]를 검사
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week10/img_9.png)
 
 - s_num_count < MAX_NUMS: 배열의 크기를 넘어서는 삽입을 방지
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week10/img_10.png)
 
 - 마지막 부터 넣으려고 하는 위치에 있는 요소까지 한 칸씩 뒤로 밀어냄
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week10/img_11.png)
 
 - 삽입 위치에 값을 넣음
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week10/img_12.png)
 
 - 배열에 인덱스 몇 개가 있는지 수를 증가
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week10/img_13.png)
 
 - 가장 마지막 자리에 삽입하는 경우
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week10/img_14.png)
 
 - 반복문 돌지 않고 바로 삽입
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week10/img_15.png)
 
 - 배열의 제일 뒤
 - 그 외의 경우
@@ -106,7 +106,7 @@ insert_at(0, 1);
 
 ### 배열의 삭제
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week10/img_16.png)
 
 ```c++
 #define MAX_NUMS (8)
@@ -130,16 +130,16 @@ void remove_at(size_t index) {
 - 그 외의 경우
   - O(n)의 원인
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week10/img_17.png)
 
 - 쓰레기 값은 남아있음
 - s_num_count를 줄이는 것으로 삭제 처리
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week10/img_18.png)
 
 ### 배열의 검색, 배열의 접근
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week10/img_19.png)
 
 ```c++
 #define MAX_NUMS (8)
@@ -160,14 +160,14 @@ void find_index(int n) {
 }
 ```
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week10/img_20.png)
 
 - 배열 속 요소들을 처음부터 차례대로 방문해 찾고자 하는 값이 있는지 확인
   - 있으면 해당 색인 반환
   - 없으면 -1 반환
 - O(n)의 원인
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP2200/week10/img_21.png)
 
 - 배열의 색인으로 접근
   - offset 때문
@@ -271,7 +271,7 @@ int main(void)
   - 순서가 중요하지 않은 경우
   - O(1)
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week10/img_22.png)
 
 - s_num_count가 1일 때
 - index 0을 삭제하면?
@@ -284,39 +284,39 @@ int main(void)
 
 ## 스택
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week10/img_23.png)
 
 - 자료의 삽입과 삭제에 대한 규칙이 존재
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week10/img_26.png)
 
 - LIFO(Last In First Out)
 
 ### push
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week10/img_24.png)
 
 - 스택에 데이터를 넣는 연산
 
 ### pop
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week10/img_25.png)
 
 ### 원칙상 젤 위에 있는 자료에만 접근 가능
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week10/img_27.png)
 
 - 중간에 있는 자료에 접근 불가
 
 ### 스택 메모리
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week10/img_28.png)
 
 - 스택 메모리는 주소가 큰 곳에서 작은 곳으로 쌓임
 
 ### 스택의 구현
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week10/img_29.png)
 
 - 배열로 쉽게 가능
 - 배열의 삽입과 삭제와 비교
@@ -325,7 +325,7 @@ int main(void)
 
 ### 스택의 삽입
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week10/img_30.png)
 
 ```c++
 enum { MAX_NUMS = 8 };
@@ -343,13 +343,13 @@ void push(int n)
 
 - s_num_count 위치에 값을 넣고 값을 증가
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week10/img_31.png)
 
 - O(1)
 
 ### 스택의 제거
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week10/img_32.png)
 
 ```c++
 enum { MAX_NUMS = 8 };
@@ -367,59 +367,59 @@ int pop()
 
 - 빈 스택에서 꺼낼 수 없음
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week10/img_33.png)
 
 - O(1)
 
 ### 스택의 검색
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week10/img_34.png)
 
 - 시간 복잡도 O(n)
 - 젤 위부터 찾을 때 까지 `뒤져야`함
 - 중간에 임의 접근 허용X
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week10/img_35.png)
 
 - pop()을 계속하면서 찾고
 - 다시 push()로 넣어줘야 함
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week10/img_36.png)
 
 - 원상복구
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week10/img_37.png)
 
 - 빼서 또 다른 스택에 넣고, push 할때 복구
 - 뺄 때 50, 40, 30
 - 다시 넣을 때 30, 40, 50
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week10/img_38.png)
 
 - 제거에 O(N), 복구에 O(N)
 - O(N) + O(N) = O(N)
 
 ### 스택의 용도
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week10/img_39.png)
 
 - 자료의 순서를 뒤집는데 유용
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week10/img_40.png)
 
 - 중위 표기법 해석
 - 문자열을 해석해서 숫자로 값 계산
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week10/img_41.png)
 
 - 중위 표기법을 후위 표기법으로 바꾸면 컴퓨터가 쉽게 연산할 수 있음
 - 이 때 스택을 이용
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week10/img_42.png)
 
 - 알고리즘
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week10/img_44.png)
 
 - 스택에 3,15,18 순서
 - 피연산자 /를 만나면 3, 15를 꺼냄
@@ -427,7 +427,7 @@ int pop()
 - 15 / 3 = 5
 - 5가 다시 스택에 들어감
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week10/img_45.png)
 
 - 스택에 5, 18 순서
 - 피연산자 -를 만나면 5, 18을 꺼냄
@@ -435,49 +435,49 @@ int pop()
 - 18 - 5 = 13
 - 13이 다시 스택에 들어감
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week10/img_46.png)
 
 - 글자를 읽는데 실패한 경우(널 문자 만나는 경우)
 - 스택에 pop()으로 값을 불러옴
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week10/img_43.png)
 
 - 재귀함수
 - 반복문 + 스택 자료구조 => 재귀 함수 없애기
 
 ## 큐
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week10/img_47.png)
 
 - 자료의 삽입과 삭제에 대한 규칙이 존재
 - FIFO(First In First Out)
 - 줄을 서는 개념
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week10/img_48.png)
 
 - 선입 선출
 
 ### 원칙상 임의 접근 불가
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week10/img_49.png)
 
 - 언제나 가장 앞의 자료만 제거 가능
 
 ### 비효율적인 큐 구현
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week10/img_50.png)
 
 - 배열에서 제일 뒤 삽입을 생각
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week10/img_51.png)
 
 - 배열에서 제일 앞 삭제를 생각
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week10/img_52.png)
 
 - 당기면 O(n)
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week10/img_53.png)
 
 - 내부적으로 배열을 사용하되
 - 원형 버퍼의 개념을 이용
@@ -485,7 +485,7 @@ int pop()
 
 ### 큐의 삽입
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week10/img_54.png)
 
 ```c++
 enum { MAX_NUMS = 8 };
@@ -508,22 +508,22 @@ void enqueue(int n)
 - s_back 위치(맨 뒤)에 값 넣기
 - s_back은 다음에 넣을 위치를 가리키기
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week10/img_55.png)
 
 - 마지막 위치(인덱스 7)를 가리키고 있음
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP2200/week10/img_56.png)
 
 - 인덱스 7에 삽입
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week10/img_57.png)
 
 - 도돌이표 연산으로 다음 위치 기억
 - 인덱스 0으로 돌아감
 - 이 다음에 또 집어넣으려고 하면 assert에 걸림, s_num_count == MAX_NUMS라서
 - 뭐 하나 삭제하고, 다시 0부터 넣을 수 있음
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week10/img_58.png)
 
 - 맨 뒤에 줄을 세운다
 - O(1)
@@ -559,68 +559,68 @@ void dequeue(int n)
 
 - s_front 위치의 값 저장
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week10/img_61.png)
 
 - s_front 위치를 다음 위치로 이동
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week10/img_62.png)
 
 - 맨 앞에서 하나 빼온다
 - O(1)
 
 ### 큐의 검색
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week10/img_63.png)
 
 - 하나씩 제거, 원상 복구
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week10/img_64.png)
 
 - 스택과 다르게 모두 빼야함
 - 맨 뒤에만 넣을 수 있어서 ㅠㅠ
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP2200/week10/img_65.png)
 
 - 뺄 때 다른 큐에 넣으면 됨
 - 그래서 사실 다른 큐를 바로 써도 되는... 주소는 다르지만
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week10/img_66.png)
 
 - 모두 삽입과 삭제에서 O(N) + O(N) = O(N)
 
 ### 큐의 용도
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week10/img_67.png)
 
 - 버퍼링
 - 데이터 제공자 > 데이터 소비자
 
 ## 연결 리스트
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week10/img_68.png)
 
 - 연결리스트는 메모리에서 연속된 저장 방법에 기초한 자료구조가 아님
 - 반면 배열, 스택, 큐는 연속된 저장 방법에 기초함
 
 ### 노드
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week10/img_69.png)
 
 - 요소와 노드는 다른 개념임
 - 자료들이 메모리에 산재해 있는 경우 각 자료를 `노드`라고 부름
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week10/img_70.png)
 
 - 자료가 메모리에 산재하도록 하려면 동적 메모리 할당이 필요함
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week10/img_71.png)
 
 - 노드 사이의 선후 관계를 별도로 저장함
 - 노드에 다음 노드를 가리키는 메모리 주소도 함께 저장함
 
 ### 연결 리스트의 삽입
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week10/img_72.png)
 
 - 10을 저장한 노드에서 다음 노드를 가리키는 포인터 변수 값을 20을 저장한 노드의 주소로 변경
 - 20을 저장한 노드에서 다음 노드를 가리키는 포인터 변수 값을 30을 저장한 노드의 주소로 변경(대입)
@@ -628,14 +628,14 @@ void dequeue(int n)
 
 ### 연결 리스트의 제거
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week10/img_73.png)
 
 - 삭제할 노드의 이전 노드(20을 가리키는 노드)에서 다음 노드를 가리키는 포인터 변수 값을 삭제할 노드의 다음 노드 주소로 변경
 - 삭제할 노드에서 다음 노드를 가리키는 포인터 변수 값은 지움(NULL 대입)
 
 ### 연결 리스트의 검색
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week10/img_74.png)
 
 - O(n)
 - 헤드부터 시작해서 노드를 하나씩 따라가야 함
@@ -664,7 +664,7 @@ void print_node(const node_t* head)
 - 연결 리스트는 함수로 만드는 경우가 많음
   - 배열과 다르게 크기가 고정되지 않아, 전역 변수를 쓸 일도 없고, 함수로 구현하는 것이 편함
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week10/img_75.png)
 
 - 헤드 노드가 NULL이면 연결 리스트에 노드가 없는 것
 - 헤드 노드는 연결 리스트의 첫번째 노드의 주소를 저장하는 변수
@@ -672,7 +672,7 @@ void print_node(const node_t* head)
 
 [연결 리스트의 모든 노드를 메모리 할당 해제하는 코드]
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week10/img_76.png)
 
 ```c++
 typedef struct node {
@@ -703,36 +703,36 @@ head = NULL;    // head에도 NULL 대입해 사용하지 않는다는 것을 �
   - node_t의 내부 값은 모두 변하지 않아야하는데, 메모리가 해제되면 제어할 수 없어서 상수를 보장 못하기 때문
   - [질문][후기 강조]
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week10/img_77.png)
 
 - 할당 해제 전 상황
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week10/img_78.png)
 
 - p에 대입하는 코드 실행
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week10/img_79.png)
 
 - p가 NULL이 아니기 때문에 next에 p의 다음 노드인 2를 가진 노드 주소를 대입
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week10/img_80.png)
 
 - 메모리 할당 해제
 - p, head 변수는 여전히 삭제된 노드의 주소값을 가짐
 - 이 주소는 이제 유효하지 않은 주소
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week10/img_81.png)
 
 - p는 next의 주소값을 가지게 됨 ... 반복
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week10/img_82.png)
 
 - 마지막으로 p의 값이 NULL이 되면 반복문 종료
 - 그리고 head 변수에도 NULL을 대입!
 
 ## 연결 리스트 삽입
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week10/img_83.png)
 
 ```c++
 typedef struct node {
@@ -752,22 +752,22 @@ void insert_front(node_t** phead, int n)
 - 언제나 head에 추가하는 코드
 - O(1)
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week10/img_84.png)
 
 - 함수 매개변수 phead는 연결 리스트의 헤드의 주소를 저장하는 변수
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week10/img_85.png)
 
 - 연결 리스트가 빈 경우 헤드가 없음, 따라서 phead의 값은 NULL
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week10/img_86.png)
 
 - 새로운 노드를 동적할당으로 생성하고 값 대입
 - 새로운 노드의 next에 헤드 노드의 주소 대입
   - 지금은 헤드 노드가 없기 때문에 NULL 대입
   - 헤드 노드의 주소는 phead에 저장되어 있음
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week10/img_87.png)
 
 - 헤드 노드의 주소를 새로운 노드의 주소로 변경
 - phead에 새로운 노드의 주소를 저장
@@ -775,7 +775,7 @@ void insert_front(node_t** phead, int n)
 
 [왜 함수가 이중 포인터를 받는가?]
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week10/img_88.png)
 
 - 함수 내에서 헤드 노드의 주소값을 가지는 포인터 변수의 값을 변경해야함
 - 헤드 노드의 주소값을 가지는 포인터 변수는 함수 밖에서 선언
@@ -786,7 +786,7 @@ void insert_front(node_t** phead, int n)
 
 ## 연결 리스트 오름차순으로 삽입
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week10/img_89.png)
 
 ```c++
 typedef struct node {
@@ -816,7 +816,7 @@ void insert_sorted(node_t** phead, int n)
 
 [빈 열결리스트에 처음으로 노드를 추가하기]
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week10/img_90.png)
 
 - 변수 선언 코드
 - head
@@ -826,7 +826,7 @@ void insert_sorted(node_t** phead, int n)
   - 값: 미정
   - 주소: 0x200
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week10/img_91.png)
 
 - pp에 phead의 주소값을 대입, 이후 phead를 쓰지 않아서 그림에서 phead 생략
 - pp

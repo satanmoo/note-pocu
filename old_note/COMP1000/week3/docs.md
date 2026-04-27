@@ -41,90 +41,90 @@
 
 - 같은 로직 적용
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP1000/week3/images/img_6.png)
 
 - 0.101xxx
     - xxx에 들어가는 0은 생략
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP1000/week3/images/img_7.png)
 
 - 정수 부분 먼저
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP1000/week3/images/img_8.png)
 
 - 같은 로직을 적용
 
 ### 일반화
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP1000/week3/images/img_9.png)
 
 - 양변에 2를 곱한다
     - 0.5보다 1이 계산이 편함
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP1000/week3/images/img_10.png)
 
 - 'x1'의 값은 몇이 되어야 할까?
     - 1이 되어야 함
     - x2 항부터 ... xn 항까지 아무리 더해도 1에 근사
     - 무한등비급수
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP1000/week3/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP1000/week3/images/img_12.png)
 
 - 양변에서 1을 빼서 x2가 가장 왼쪽의 항이 되도록 식을 변형
 - 위 과정을 반복해보자
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP1000/week3/images/img_13.png)
 
 - x2는 0 or 1
     - 1이 될 수 없음!!!
     - 반드시 0
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP1000/week3/images/img_14.png)
 
 - 다시 양변 2곱하고 반복
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP1000/week3/images/img_15.png)
 
 - x3이 1이되면 좌변이 0이라 종료
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP1000/week3/images/img_16.png)
 
 - 이제 x4부터는 모두 0일 수 밖에 없음
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP1000/week3/images/img_17.png)
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP1000/week3/images/img_18.png)
 
 - 풀이 프로세스
 - 2를 곱하고 정수를 따와서 비트로 변환
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP1000/week3/images/img_19.png)
 
 ### 2^n 을 활용하는 2진법의 논리
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP1000/week3/images/img_20.png)
 
 - 진법의 개념
 
 ### 무한으로 반복되는 2진법으로 나타낸 실수
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP1000/week3/images/img_21.png)
 
 - 도돌이표
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP1000/week3/images/img_22.png)
 
 - 정확히 2진수로 표현 못하는 실수가 존재함!
 - '0.1'을 2진수로 표현하면 무한히 반복되다가, 비트 수 제한으로 숫자가 누락(truncated)됨
     - 여기서 정확도, 오차의 개념이 등장
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP1000/week3/images/img_23.png)
 
 - 무한 반복되는 실수는 컴퓨터에 어떻게 저장해야하나..?
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP1000/week3/images/img_24.png)
 
 - 2종류의 방식을 배운다.
 - 고정 소수점 수
@@ -132,22 +132,22 @@
 
 ## 고정 소수점 수
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP1000/week3/images/img_25.png)
 
 - 점이 고정됨
 - N자리 숫자가 있을 때 언제나 정해진 자리에 소수점이 찍힘
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP1000/week3/images/img_26.png)
 
 - 8비트 예시
 - 언제나 3비트를 소수에 사용
 - 음수 표현해보는 연습하기
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP1000/week3/images/img_27.png)
 
 - 고정 소수점 수를 지원하는 라이브러리에서 보통 절반은 정수 나머지는 소수점에 비트 사용
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP1000/week3/images/img_28.png)
 
 - 12 34 56 7C
     - 10진수 한 자리마다 비트 패턴으로 표현
@@ -155,7 +155,7 @@
 
 ### 고정 소수점 수의 장점
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP1000/week3/images/img_29.png)
 
 - 표현할 수 있는 범위의 값은 확실히 표현 가능
     - 왜? 정수처럼 정밀도 100%
@@ -163,13 +163,13 @@
 
 ### 고정 소수점 수의 단점
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP1000/week3/images/img_30.png)
 
 - 너무 직관적이게도 표현 가능한 수의 범위가 작음
 - 정수 표현 범위가 늘면 소수점 표현 범위가 줄어듬
 - CPU에 실수 계산 전담장치는 부동 소수점만 지원해서, 고정 소수점 계산은 속도가 굉장히 느림
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP1000/week3/images/img_31.png)
 
 - 연산 결과 정밀도 손실 및 오버플로우
 - 생각해보면 직관적이다
@@ -179,26 +179,26 @@
 
 - 이 개념을 잘 배우면 디버깅에 굉장히 유리함
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP1000/week3/images/img_32.png)
 
 - 소수점의 위치가 고정이 아님
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP1000/week3/images/img_33.png)
 
 - 표현 가능한 범위가 엄청 증가
 
 ### 부동 소수점 수의 장점
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP1000/week3/images/img_34.png)
 
 - 유효숫자는 바뀌지 않는데, 소수점을 이동하면 당연히 엄청 넓겠죠?
 - CPU, GPU, 프로그래밍 언어에서 지원
 
 ### 부동 소수점 수의 단점
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP1000/week3/images/img_35.png)
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP1000/week3/images/img_36.png)
 
 - 정밀도 문제
 - 근데 생각보다 문제가 안 되는 경우가 있음
@@ -206,11 +206,11 @@
 
 ## 과학적 표기법(Scientific notation)
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP1000/week3/images/img_37.png)
 
 - 너무 크거나 작은 수를 읽기 편하게 작성
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP1000/week3/images/img_38.png)
 
 - 가수
     - 부동 소수점 수의 유효 숫자
@@ -221,32 +221,32 @@
 
 ## 유효 숫자
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP1000/week3/images/img_39.png)
 
 - 수의 정확도와 정밀도에 영향을 줌
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP1000/week3/images/img_40.png)
 
 - 위 3가지 케이스를 이해하기
 
 ## 정확도와 정밀도
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP1000/week3/images/img_41.png)
 
 - 정확도:
     - 원하는 값에 얼만큼 근접했는가
 - 정밀도:
     - 각 데이터끼리 얼마나 가까운가
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP1000/week3/images/img_42.png)
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP1000/week3/images/img_43.png)
 
 - 실수 계산에도 정확도/정밀도 개념이 적용
 
 ## 정규화한 과학적 표기법
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP1000/week3/images/img_44.png)
 
 - 어떤 대상을 일정한 규칙을 따르도록 바꾸는 것
     - 양자화와 비슷함
@@ -254,18 +254,18 @@
 
 - 가수의 제일 왼쪽에 있는 유효 숫자를 정수부의 첫 번째 자리로 이동
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP1000/week3/images/img_45.png)
 
 - 정수부에 딱 1자리만 남음
 - 2진수의 가수에서 정수부는 1이 확정
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP1000/week3/images/img_46.png)
 
 - 컴퓨터는 정규화된 과학적 표기법을 사용
 
 ## IEEE 754 Single
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP1000/week3/images/img_47.png)
 
 - 지수 비트:
     - 8비트로 2^8개 표현
@@ -273,12 +273,12 @@
     - 음의 지수도 표현하기 위해 -127을 해서 실제 지수를 구함
     - 즉 표현 범위의 수 중 절반은 음의 지수로 할당
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP1000/week3/images/img_48.png)
 
 - 정규화된 과학적 표기법이 적용되었기 때문에 가수의 정수는 반드시 1
 - 비트패턴에서 2^-1 부터 시작
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP1000/week3/images/img_49.png)
 
 - 정규화 예시
     - 부호
@@ -291,14 +291,14 @@
 
 ### 부동 소수점의 양수와 음수
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP1000/week3/images/img_50.png)
 
 - 부호절대값 방식
 - CPU에서 가산기를 활용하지 않고 별도의 부동소수점 처리 장치가 있기 때문에 2의 보수로 덧셈을 하는 연산 X
 
 ### 가수비트
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP1000/week3/images/img_51.png)
 
 - 정밀도:
     - 몇 비트로 수를 표현하느냐?
@@ -307,7 +307,7 @@
 - 명시적으로 23비트 저장하지만 가수의 정수 1자리는 반드시 1이라 24비트
 - '유효 숫자' 와 같은 말
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP1000/week3/images/img_52.png)
 
 - sign:
     - 부호 비트
@@ -320,11 +320,11 @@
         - 2진수 가수에서 소수 부분 그대로 표현함
     - 등비 수열의 합
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP1000/week3/images/img_53.png)
 
 - 가수가 표현하는 값을 10진수로 변경하기 위해 2^n 구해서 등비수열의 합 계산하면 됨
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP1000/week3/images/img_54.png)
 
 ## 지수와 지수비트
 
@@ -407,18 +407,18 @@
 
 ### 3.75 비트패턴으로 저장
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP1000/week3/images/img_55.png)
 
 - 정수 부분 소수 부분 분리해서 10진수 => 2진수 변환
     - 변환 방식은 위에서 배운 방식 ('x1 * 2^-1 + x2 * 2^-2...' 처럼 항을 이용하는 방식)
     - 3.75(10) => 11.11(2)
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP1000/week3/images/img_56.png)
 
 - 2진법으로 변환된 값을 가수로 정규화
     - 11.11(2) => 1.111 * 2^1
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP1000/week3/images/img_57.png)
 
 - 정규화 결과 지수 비트 구하기:
     - '지수 + 127' 의 결과를 비트 패턴으로 표시
@@ -428,7 +428,7 @@
     - 가수 값에서 정수는 반드시 1일 수 밖에 없기 때문에, 정수(2^0의 자리)를 제외하고 소수 부분만 비트로 저장
     - 1.111 => 1110_0000_00.... (총 23비트)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP1000/week3/images/img_58.png)
 
 ### 비트패턴에서 3.75 복원
 
@@ -451,7 +451,7 @@
 
 ### 3.14 비트패턴으로 저장
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP1000/week3/images/img_61.png)
 
 - 10진수에서 2진수 변환:
     - 정수: 3(10) => 11(2)
@@ -466,22 +466,22 @@
 
 ### 비트패턴에서 3.14
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP1000/week3/images/img_62.png)
 
 - 다시 10진수로 변환해서 얼마나 유실이 됬는지 확인할 수 있음
 - 가수에서 소수점 아래 23개까지만 원본과 동일
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP1000/week3/images/img_63.png)
 
 - 반올림 된 것 마냥 숫자가 커짐
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP1000/week3/images/img_64.png)
 
 - 0.1도 32비트 부동소수점 비트패턴으로 저장했다가, 다시 원본으로 복원하면 오차가 발생함
 
 ## 반올림 오차(rounding error)
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP1000/week3/images/img_65.png)
 
 - 가수 비트가 23개 제한이라서(정수 포함 24자리 까지 표현) 근사치
 
@@ -489,7 +489,7 @@
 
 ### 정규화 한 수
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP1000/week3/images/img_66.png)
 
 - 정규화를 이용한 공식을 적용
 
@@ -526,7 +526,7 @@
 
 ### 비정규화 한 수
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP1000/week3/images/img_67.png)
 
 - 지수는 -126으로 고정
     - 지수 비트는 모두 0
@@ -555,7 +555,7 @@
 
 ### 정규, 비정규 범위 합치기
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP1000/week3/images/img_68.png)
 
 - 정규화로 표현해서 구한 부동 소수점 범위와 비정규화로 표현해서 구한 부동 소수점 범위를 합치면 위와 같음
     - 트릭으로 딱 정규화한 수에서 절대값의 최소값이랑 비정규화 수에서 절대값의 최대와 일치하게 만듬
@@ -563,28 +563,28 @@
 
 ## IEEE 754 Single 정밀도
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP1000/week3/images/img_69.png)
 
 - 이 문장의 의미를 생각해보자
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP1000/week3/images/img_70.png)
 
 - 개념적으로 이상함
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP1000/week3/images/img_71.png)
 
 - 잘못된 표현임
 
 ### 잘못된 점 1: 유효 숫자가 빠짐
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP1000/week3/images/img_72.png)
 
 - 올바른 표현은 '유효 숫자'를 보장한다는 것
     - 즉 '가수'를 보장함
 
 ### 잘못된 점 2: 6,7,8,9개가 아님
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP1000/week3/images/img_73.png)
 
 - 6 to 9
 - 정확히 말하면 어떤 경우에는 6개까지, 어떤 경우에는 9개까지 보장
@@ -592,7 +592,7 @@
 
 ### 정밀도 6의 개념
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP1000/week3/images/img_74.png)
 
 - 10진수 실수(컴퓨터에 비트 패턴으로 저장되기 전)
 - float(IEEE 754 Single 스펙으로 비트 패턴으로 저장)
@@ -602,55 +602,55 @@
 
 - 이 때 유효숫자(가수)6자리 까지는 항상 온전하게 원본값이 나옴
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP1000/week3/images/img_75.png)
 
 - 유효숫자 6자리 원본 보장
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP1000/week3/images/img_76.png)
 
 - '123456' 6자리까지 보장되나?
     - 아닌 것 같은데
     - 사실은 이게 보장 되는거임
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP1000/week3/images/img_77.png)
 
 - 유효 숫자를 구할 때 정규화된 과학적 표기법을 사용함
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP1000/week3/images/img_78.png)
 
 - 돌아온 값의 유효 숫자가 6개가 되도록 다시 맞춰야 함
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP1000/week3/images/img_79.png)
 
 - 여기서 끊기
 - 6자리
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP1000/week3/images/img_80.png)
 
 - 나머지 자리의 수들은 어떻게 처리?
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP1000/week3/images/img_81.png)
 
 - 반올림
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP1000/week3/images/img_82.png)
 
 - 두 값이 이제 일치!
 - 이게 스펙에 정의된 비트패턴에서 원본으로 복원하는 공식
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP1000/week3/images/img_83.png)
 
 - 돌아온 값을 사람 기준으로 유효 숫자 자리를 6개로 맞추면 원래 값이 보장
 
 ### 정밀도 6 최종 정리
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP1000/week3/images/img_84.png)
 
 - 즉 유효 숫자 6개까지는 바이너리 패턴으로 변환했다가 다시 원래 10진수 실수로 변환하고 원래의 유효 숫자 개수로 반올림해서 맞출 때 원래 유효 숫자 값이 그대로 나올 수 있음
     - 정밀도 6이면 유효숫자 7자리 부터는 원래값 보장 X
     - 7자리부터는 반올림을 하기 때문이죠!
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP1000/week3/images/img_85.png)
 
 - 원본: 123.45612
 - 변환 후 돌아와서 반올림: 123.45612
@@ -658,7 +658,7 @@
     - 6개까지 반드시 보장한다는 거지, 넘는 수를 보장하지 않는다는 것은 아님!
     - 다른 8자리 유효숫자를 가지는 값은 보장이 안 될 수도
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP1000/week3/images/img_86.png)
 
 - 값에 따라 보장될 수도 안 될수도 있음
     - 로그써서 계산하는 방법이 있음
@@ -674,25 +674,25 @@
 
 ## 정밀도의 중요성
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP1000/week3/images/img_87.png)
 
 - 이렇게 판단하면 안 됨
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP1000/week3/images/img_88.png)
 
 - 유효숫자 6개까지 무엇이 안전할까?
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP1000/week3/images/img_89.png)
 
 - 유효숫자 6개 넘으면 IEEE 754 Single 스펙에 따라 비트 패턴으로 저장했다가, 다시 복원했을 때 원본을 보장하지 못함
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP1000/week3/images/img_90.png)
 
 - 정수로 변환하는 Hack
     - 센트 없애기
     - 표현 범위가 너무 줄어듬
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP1000/week3/images/img_91.png)
 
 - float 으로 저장했을 때(비트 패턴으로 저장) 다시 그 값을 그대로 돌려받을 수 있는가?
 - 이것이 문제다

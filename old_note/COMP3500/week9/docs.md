@@ -24,13 +24,13 @@
 
 - ...
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week9/images/img_6.png)
 
 - DFS
 - 한 우물부터 깊이 파는 방식
     - 리프까지 진행
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week9/images/img_7.png)
 
 - 자식 순서는 중요하지 않음
     - 지금 슬라이드는 왼쪽 자식 부터
@@ -41,19 +41,19 @@
 
 ## DFS
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week9/images/img_8.png)
 
 - 스택에 다음에 방문할 노드를 저장하기 위함
 - top을 방문
 - 방문하고, 자식들을 스택에 push
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week9/images/img_9.png)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week9/images/img_10.png)
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week9/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week9/images/img_12.png)
 
 - 자식을 순회하는 for 문 동작이 0번 인덱스 부터 동작해서
     - B,C,D 순서로 스택에 저장
@@ -61,18 +61,18 @@
 - 이 순서는 DFS랑 관계없음
     - 깊이 개념이 아니죠?
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week9/images/img_13.png)
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week9/images/img_14.png)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week9/images/img_15.png)
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week9/images/img_16.png)
 
 - ...
 - 이하 생략
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week9/images/img_17.png)
 
 - 트리에서 어떤 순서로 방문하는지 설명할 수 있어야함
 
@@ -96,40 +96,40 @@ public static void searchDepthFirstRecursive(Node node) {
 
 - 넓이가 아니라 "너비"임
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week9/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week9/images/img_19.png)
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week9/images/img_20.png)
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week9/images/img_21.png)
 
 - 최단 경로 찾기에 적합함
 - 방사형으로 검색
     - 내가 본 깊이 이상은 아직 안 봤으니까
     - 도착한다면 내가 최소 깊이겠지?
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week9/images/img_22.png)
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week9/images/img_23.png)
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week9/images/img_24.png)
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week9/images/img_25.png)
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week9/images/img_26.png)
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week9/images/img_27.png)
 
 - ...
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week9/images/img_28.png)
 
 - 큐를 이용해서 구현하면 된다.
 
 ## 깊이 우선 vs 너비 우선
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week9/images/img_29.png)
 
 - 메모리 사용량은 트리 모양에 따라 다르다고 봐야함
     - 트리의 모양이 옆으로 퍼져있냐, 좁고 깊냐?
@@ -191,7 +191,7 @@ public static void searchDepthFirstRecursive(Node node) {
 - 그래프는 일반적인 자료구조라서 연결 리스트, 트리, 배열도 그래프로 표현할 수 있다.
     - 2차원 배열에서 BFS로 최단경로 찾기
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week9/images/img_30.png)
 
 - 그래프는 연관 있는 노드의 집합
     - 연관 있는 노드끼리 변(edge)로 연결 됨
@@ -202,17 +202,17 @@ public static void searchDepthFirstRecursive(Node node) {
 - 트리는 부모-자식 관계를 요구하기 때문에 방향이 있는 그래프임
     - 추가적으로 부모는 1개라는 제약
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week9/images/img_31.png)
 
 - 지금 슬라이드에 그래프는 무방향 그래프
     - 그래서 루프로 계속 돌 수도 있음
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week9/images/img_32.png)
 
 - 이런 무방향 그래프에서 DFS-BFS를 사용하면 문제가 생길 수 있음
 - 무한 루프를 방지하기 위해서는 방문했던 노드를 기억하고 재방문을 막아야함
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week9/images/img_33.png)
 
 - 무방향 그래프를 저장하기 위해서는 "인접 행렬"이라는 개념을 사용해야함
 - 2차원 배열처럼 행렬로 from-to를 관리
@@ -279,62 +279,62 @@ public class Program {
 
 - 미니 맥스 알고리듬은 체스 ai에 사용됬음
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week9/images/img_34.png)
 
 - 틱택토를 AI로 작성해보자
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week9/images/img_35.png)
 
 - 인풋:
     - 현재 보드 구성
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week9/images/img_36.png)
 
 - 총 게임 진행 경우의 수는 `9!`이라서 브루트 포스로 구현해도 되긴함
 - 이 때 현재 상황에서 앞으로 놓을 모든 경우의 수를 보여주기 적합한 자료구조는 트리
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week9/images/img_37.png)
 
 - 이렇게 게임에 사용하는 트리를 "게임 트리"라고 부르기도 함
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week9/images/img_38.png)
 
 - 내 턴, 상대 턴 번갈아가면서 트리의 노드로 표현
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week9/images/img_39.png)
 
 - 여기서 가장 좋은 승리의 경로(파란색 노드)를 선택해야함
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week9/images/img_40.png)
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week9/images/img_41.png)
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week9/images/img_42.png)
 
 - 왼쪽에 승리 경로가 있긴한데, 상대방이 바보도 아니고
     - 어뷰징은 없다고 가정
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week9/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week9/images/img_44.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week9/images/img_46.png)
 
 - 상대방이 어뷰징이면 이렇게 선택할 것이다.
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week9/images/img_45.png)
 
 - 어뷰징은 없다고 가정해서, 무승부
 
 ## 틱태토 전략
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week9/images/img_47.png)
 
 - 상대방은 자신의 최대 이득을 위해 동작
 - 상대방의 최대 이득을 최소화 하는 전략이 틱태토의 전략
     - 이것이 "미니 맥스"
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week9/images/img_48.png)
 
 - 바꿔서 말하면, 내 최대 손실을 최소화
 - 그렇다면 여기서 문제는 손실,이득을 어떻게 평가할 것인가?
@@ -342,44 +342,44 @@ public class Program {
 
 ## 평가 함수
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week9/images/img_49.png)
 
 - 게임이 끝나는 지점(트리의 리프)에 점수를 평가 함수를 적용해 점수를 매김
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week9/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week9/images/img_51.png)
 
 - 그렇다면 리프가 아닌 노드는 어떻게 평가하지?
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week9/images/img_52.png)
 
 - 리프에서 부모 노드로 거슬러 올리면 됨
     - 여기서는 자식 노드가 하나라서 바로 가져올 수 있음
 - 그리고 상대 입장에서 이익, 나의 입장에서 손실을 고려해야함
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week9/images/img_53.png)
 
 - 자식 노드들의 평가값이 여러 개면 최소값을 구해야함
 - 깊이 2에서는 상대방의 턴이기 때문에 상대 이익의 최소값을 구하는 개념
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week9/images/img_54.png)
 
 - 깊이 1에서는 나의 턴이기 때문에 나의 이익의 최대값을 구하는 개념
 
 ## 미니 맥스 알고리듬
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week9/images/img_55.png)
 
 - 일반화하면 자기 턴에서는 최대 점수, 상대 턴에서는 최소 점수
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week9/images/img_56.png)
 
 - 번외로 AI에 대해서
     - 예전의 주류 ai 알고리듬과 머신 러닝은 다름
     - 요즘은 머신 러닝이 대세가 되서 사실 거의 동일한 용어가 됬음
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week9/images/img_57.png)
 
 - 상대방도 최적의 결정을 내린다고 가정
     - 이게 중요함
@@ -388,7 +388,7 @@ public class Program {
 
 ## 깊이 제한 미니맥스
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week9/images/img_58.png)
 
 - 틱태토 게임에서 가장 많은 경우의 수를 고려할 때는?
     - 게임을 처음 시작할 때
@@ -410,21 +410,21 @@ public class Program {
 - 이를 공식화 하면
     - 한 줄에 x가 2개, 빈 칸이 1개 있으면 +2점을 주도록 평가 함수를 고안할 수 있음
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week9/images/img_61.png)
 
 - 결국 평가함수를 정하는 건 프로그래머의 역량
     - 이 평가함수에 따라 알고리듬의 성능이 결정
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week9/images/img_62.png)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week9/images/img_63.png)
 
 - 체스에는 위와 같이 점수를 줄 수 있음
     - 말의 중요도에 따라
 
 ## 미니맥스 알고리듬의 성능
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week9/images/img_64.png)
 
 - 성능을 개선하기 위해서
     - 방문 여부를 확인해서 재방문을 막거나

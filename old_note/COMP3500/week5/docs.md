@@ -43,27 +43,27 @@
 
 ![img_5.png](old_note/COMP3500/week5/images/img_5.png)
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week5/images/img_6.png)
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week5/images/img_7.png)
 
 - 범죄 예방의 기본
     - 내정보가 옆 사이트보다 안전하면 됨
     - 도둑은 덜 안전해보이는 집을 텀
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week5/images/img_8.png)
 
 - 글자 교환 방식은 brute force로 깰 수 있음
 
 ## 정수론
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week5/images/img_9.png)
 
 - 암호 때문에 관심을 받기 시작한 학문
 
 ### 암호학에서 사용하는 정수
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week5/images/img_10.png)
 
 - 암호학에서는 매우 큰 정수를 사용한다.
     - 32비트를 훨씬 넘는다.
@@ -76,14 +76,14 @@
 
 ## 현대에 사용하는 암호화 알고리듬의 두 종류
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week5/images/img_11.png)
 
 - 대칭 키 암호화
     - 암호화/복호화에 동일한 키를 사용
     - 변환표에서 암호화 ㄴ -> ㅌ, 복호화 ㅌ -> ㄴ
     - 똑같은 키
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week5/images/img_12.png)
 
 - 비대칭 키 암호화
     - 암호화/복호화에 서로 다른 키를 사용
@@ -91,7 +91,7 @@
 
 ## 대칭 키 암호화
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week5/images/img_13.png)
 
 - 키는 송신자와 수신자간의 공유하는 비밀
     - 다른 사람이 키를 알면 곤란하쥬
@@ -99,26 +99,26 @@
 
 ### 예시
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week5/images/img_14.png)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week5/images/img_15.png)
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week5/images/img_16.png)
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week5/images/img_17.png)
 
 - xor 연산이 편한 이유
     - 두번 연산하면 원래대로 돌아옴
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week5/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week5/images/img_19.png)
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week5/images/img_20.png)
 
 - 암호화 키로 xor 연산하면 복호화
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week5/images/img_21.png)
 
 - 핵심은 암호화 키를 서로만 알아야함!!
 
@@ -126,7 +126,7 @@
 
 - 대칭키 암호화에 적용되는 개념
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week5/images/img_26.png)
 
 - 스트림 암호:
     - 한 번에 1바이트씩 암호화 진행
@@ -144,14 +144,14 @@
 
 ### WI-FI  비밀번호도 일종의 대칭 키
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week5/images/img_22.png)
 
 - 공유기에 설정하는 비밀번호와 스마트폰에서 입력하는 비밀번호가 동일함
     - 이 비밀번호의 정체가 대칭 키
 - 통신할 때 이 대칭 키로 암호화 하고 복호화
     - 하지만 엄밀하게 말하면 대칭 키는 아니다!!
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week5/images/img_23.png)
 
 - 실제로 암호화 키는 비밀번호 + 기기 식별값으로 구성됨
     - 따라서 접속자마다 다른 대칭 키를 사용하게 됨
@@ -163,9 +163,9 @@
 
 - 유명한 대칭 키 알고리듬들
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week5/images/img_24.png)
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week5/images/img_25.png)
 
 - NSA에서 승인해서 공신력 굿
     - 미국 정보국
@@ -176,7 +176,7 @@
 
 ### AES의 블록
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week5/images/img_27.png)
 
 - 128 비트
     - 16 바이트
@@ -184,7 +184,7 @@
 
 ### AES 알고리듬의 구성
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week5/images/img_28.png)
 
 - 여러 라운드 연산을 하게 됨
 - 키 길이에 따라 라운드 수 달라짐
@@ -192,7 +192,7 @@
 
 ## AES 내부 연산
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week5/images/img_29.png)
 
 - 이 예시에서 사용할 데이터
     - 총 20바이트라서 한 블럭에 모두 들어가지 못함
@@ -208,13 +208,13 @@
 
 ### 0 라운드: 라운드 키 더하기
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week5/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week5/images/img_31.png)
 
 - 더하는 것의 개념은 xor
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week5/images/img_32.png)
 
 - 원문을 아스키 비트패턴으로 바꿔서 xor
 - 이 결과 평문(원본 메시지)가 암호화 됨
@@ -223,21 +223,21 @@
 
 ### 최종 라운드 전 여러 라운드: 바이트 대체
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week5/images/img_33.png)
 
 - SubBytes
     - AES S-Box 룩업 테이블을 사용
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week5/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week5/images/img_35.png)
 
 - 행,렬 퍼즐 찾듯이 테이블에 따라 값 찾아서 바꿈
     - 룩업 테이블이 이런 개념입니다!
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week5/images/img_36.png)
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week5/images/img_37.png)
 
 - 룩업 테이블의 장점은 선형적인 변환이 아니다!!
     - 단순 사칙 또는 비트 연산으로 찾을 수 없음
@@ -245,69 +245,69 @@
 
 ### 최종 라운드 전 여러 라운드: 행 이동
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week5/images/img_38.png)
 
 - 행렬 구조에서 행 단위로 바이트 쉬프트
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week5/images/img_39.png)
 
 - 행,열 한 칸이 1바이트니까 바이트 쉬프트입니다
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week5/images/img_40.png)
 
 - 여기서 얻는 효과가 확산 효과(diffusion)
 
 ### 최종 라운드 전 여러 라운드: 열 섞기
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week5/images/img_41.png)
 
 - 한 열이 4바이트이고, 벡터 곱을 한 결과도 4바이트
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week5/images/img_42.png)
 
 - 어떤 행렬을 각 열마다 벡터 곱
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week5/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week5/images/img_44.png)
 
 - 행렬 연산에서 더하기는 xor 배타합을 사용
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week5/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week5/images/img_46.png)
 
 - 곱하기도 특별한 규칙으로 바꿈
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week5/images/img_47.png)
 
 - 어떤 수를 곱하냐에 따라 다른 연산
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week5/images/img_48.png)
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week5/images/img_49.png)
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week5/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week5/images/img_51.png)
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week5/images/img_52.png)
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week5/images/img_53.png)
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week5/images/img_54.png)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week5/images/img_55.png)
 
 - 이번에는 곱하기 2 연산할 때 최상위 비트가 0이라서 0x1B xor 연산 안 해도 됨
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week5/images/img_56.png)
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week5/images/img_57.png)
 
 - 이렇게 열 섞기 계산해서...
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week5/images/img_58.png)
 
 ![img_59.png](old_note/COMP3500/week5/images/img_59.png)
 
@@ -320,7 +320,7 @@
 
 ### 최종 라운드 전 여러 라운드: 라운드 키 더하기
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week5/images/img_61.png)
 
 - 바이트 대체 -> 행 이동 -> 열 섞기 -> 라운드 키 더하기
     - 128 비트니까 4 * 4 행렬에 더하는 연산으로 라운드키를 더함
@@ -331,7 +331,7 @@
 
 ### 최종 라운드
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week5/images/img_62.png)
 
 - 여러 라운드에서 4가지 연산 중 열 섞기를 제외한 나머지 3개 연산 수행
 - 이 결과가 최종 암호문!
@@ -473,22 +473,22 @@ public class Program {
 
 - 대칭 키 암호화보다 나중에 나옴
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week5/images/img_63.png)
 
 - 키를 배포하기 위해 탄생
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week5/images/img_64.png)
 
 - 당연히 가장 쉽게 키를 배포하는 법은 그냥 공개하는 것
 - 공개하면서 안전하게!
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week5/images/img_65.png)
 
 - 수학의 신
 - '복호화'에 사용할 키를 완전히 공개
     - 암호화에 사용하는 키는?
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week5/images/img_66.png)
 
 - 암호화와 복호화에 사용하는 키가 다르다
 - 달라도 되는 이유는 수학적인 관계 때문임
@@ -497,32 +497,32 @@ public class Program {
 - 암호화에 사용하는 키는 비밀키
     - 개인 키
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week5/images/img_67.png)
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week5/images/img_68.png)
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week5/images/img_69.png)
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week5/images/img_70.png)
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week5/images/img_71.png)
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week5/images/img_72.png)
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week5/images/img_73.png)
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week5/images/img_74.png)
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week5/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week5/images/img_76.png)
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week5/images/img_77.png)
 
 - 위 방법은 잘못된 방식
     - 공개키가 누구에게나 공개되어있으면 암호화 의미가 없죠!
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week5/images/img_78.png)
 
 - 올바른 방식에서는 공개키로 암호화
     - 누구나 암호화 가능
@@ -530,7 +530,7 @@ public class Program {
     - 공개 키로 복호화는 할 수 없음!
         - 수학적인 이유로 반드시 쌍에서 상응하는 다른 키로 복호화할 수 있음
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week5/images/img_79.png)
 
 - 이게 올바른 메시지 암호화
 
@@ -538,7 +538,7 @@ public class Program {
 
 - 처음에 언급한 잘못된 방법도 용도가 있음
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week5/images/img_80.png)
 
 - 전자 서명은 비밀키로 암호화 하는 방식
     - 메시지 송신자가 올바름을 증명
@@ -547,9 +547,9 @@ public class Program {
         - 암호화폐에서 이런 방법을 사용함
         - 전자서명, 로그인없이!
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week5/images/img_81.png)
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week5/images/img_82.png)
 
 - 내 지갑(공개 키)
 - 어머니 지갑(공개 키)
@@ -557,16 +557,16 @@ public class Program {
 
 - 이런 데이터를 내가 가진 비밀키로 암호화해 전자서명
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week5/images/img_83.png)
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week5/images/img_84.png)
 
 - 블록체인 시스템에서 송신인의 지갑 주소(공개 키)를 이용해 복호화하고, 자격이 증명됬으니 송금처리 완료!
 - 이더리움에서 로그인 없이 이런식으로 동작함!!
 
 ## 비대칭 키 암호화를 사용하는 곳
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week5/images/img_85.png)
 
 - HTTPS
 - 비밀 채팅 모드
@@ -582,35 +582,35 @@ public class Program {
 
 ## 비대칭 키 암호화 기법
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week5/images/img_86.png)
 
 - RSA
 - 많이 사용됨
 
 ## RSA와 큰 소수
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week5/images/img_87.png)
 
 - RSA의 장점:
     - 공개 키/비밀 키 쌍을 만드는게 쉽다
 - 간단한 방식
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week5/images/img_88.png)
 
 - 소수의 특징을 활용함
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week5/images/img_89.png)
 
 - 인수 분해 알고리듬은 없음
     - 사실상 brute force
 - 곱셉을 1, 2, ... 루트 N 까지 해봐야함, 그 이후 수는 곱셈 쌍으로 나오니까
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week5/images/img_90.png)
 
 - 200자리라면?
 - 우주의 나이가 10^18 초 ㅋㅋ
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week5/images/img_91.png)
 
 ## RSA 키 길이와 연산 속도
 

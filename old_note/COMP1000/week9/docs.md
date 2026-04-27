@@ -26,59 +26,59 @@
 
 - 나머지는 도미노 조각이 무너지는게 귀납 가정 증명
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP1000/week9/images/img_6.png)
 
 - 근접한 k, k+1 간의 관계에서 적용되는 규칙을 연쇄적으로 적용하는 개념
 
 ## 수학적 귀납법과 재귀 함수
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP1000/week9/images/img_7.png)
 
 - '종료 조건'이 '기본 가정'에 대응
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP1000/week9/images/img_8.png)
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP1000/week9/images/img_9.png)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP1000/week9/images/img_10.png)
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP1000/week9/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP1000/week9/images/img_12.png)
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP1000/week9/images/img_13.png)
 
 - 수학적 귀납법과 재귀 함수의 차이점을 이해하자
 
 ## 수학적 귀납법으로 코드 작성하기
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP1000/week9/images/img_14.png)
 
 - 수학적 귀납법으로 등차수열 합 공식 증명하기
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP1000/week9/images/img_15.png)
 
 - 공식에 대입해서 증명
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP1000/week9/images/img_16.png)
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP1000/week9/images/img_17.png)
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP1000/week9/images/img_18.png)
 
 - P(K)가 참이라는 가정이라 이렇게 변환할 수 있음
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP1000/week9/images/img_19.png)
 
 - 이제 테크닉이 필요함
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP1000/week9/images/img_20.png)
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP1000/week9/images/img_21.png)
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP1000/week9/images/img_22.png)
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP1000/week9/images/img_23.png)
 
 - 이미 증명된 것들은 가져다 쓰면 됨
 
@@ -86,121 +86,121 @@
 
 - 어떻게 증명할 수 있을까?
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP1000/week9/images/img_24.png)
 
 - 컴퓨터에서는 크기가 정해진 데이터를 활용할 수 있음
     - 정수형의 크기는 고정이잖아
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP1000/week9/images/img_25.png)
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP1000/week9/images/img_26.png)
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP1000/week9/images/img_27.png)
 
 - 디버깅의 기초
     - 값을 넣어보면서 귀납적으로 패턴을 찾기
     - 훌륭한 프로그래머의 자질
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP1000/week9/images/img_28.png)
 
 - 어 패턴이?
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP1000/week9/images/img_29.png)
 
 - 수학적 귀납법으로 증명이 필요함!
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP1000/week9/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP1000/week9/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP1000/week9/images/img_32.png)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP1000/week9/images/img_33.png)
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP1000/week9/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP1000/week9/images/img_35.png)
 
 - Sodd(K) == K^2 이 성립한다고 가정했었음
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP1000/week9/images/img_36.png)
 
 - 인수분해 활용
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP1000/week9/images/img_37.png)
 
 ## 멱집합의 원소수 공식
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP1000/week9/images/img_38.png)
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP1000/week9/images/img_39.png)
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP1000/week9/images/img_40.png)
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP1000/week9/images/img_41.png)
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP1000/week9/images/img_42.png)
 
 - 경우의 수와 관련이 있죠?
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP1000/week9/images/img_43.png)
 
 - 곱하기 2하는 개념
     - 합집합 연산하는데 두 집합의 교집합이 없어서
 
 ## 수학적 귀납법이 중요한 이유
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP1000/week9/images/img_44.png)
 
 - 복잡한 문제를 반복되는 간단한 규칙으로 바꾸는 사고과정
 - 과학적 사고 방법
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP1000/week9/images/img_45.png)
 
 - 과학적 사고 방법과 수학적 귀납법에서 추론하는 과정은 유사함
 - 다만 완벽하게 연역적인 수학적 귀납법과 다르게 과학적 사고 방법은 현실적으로 최대한 데이터를 모아서 사실이라고 믿는 개념
     - 과학은 언제든지 바뀔 수 있음
     - 모든것이 참이라고 증명할 수 없음
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP1000/week9/images/img_46.png)
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP1000/week9/images/img_47.png)
 
 - 수학적 귀납법은 귀납법이 아님
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP1000/week9/images/img_48.png)
 
 - 사실은 연역법의 한 종류
 
 ## 재귀와 분할 정복
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP1000/week9/images/img_49.png)
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP1000/week9/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP1000/week9/images/img_51.png)
 
 ## 피보나치 수열
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP1000/week9/images/img_52.png)
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP1000/week9/images/img_53.png)
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP1000/week9/images/img_54.png)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP1000/week9/images/img_55.png)
 
 - 배열을 썼기 때문에... 반칙
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP1000/week9/images/img_56.png)
 
 - 변수 2개로 전/전전 값을 기억하기
 
 ## 하노이의 탑
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP1000/week9/images/img_57.png)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP1000/week9/images/img_58.png)
 
 - 재귀적으로 증명하기
 
@@ -208,33 +208,33 @@
 
 ![img_60.png](old_note/COMP1000/week9/images/img_60.png)
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP1000/week9/images/img_61.png)
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP1000/week9/images/img_62.png)
 
 - n에 대해서 증명
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP1000/week9/images/img_63.png)
 
 - n-1도 해결
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP1000/week9/images/img_64.png)
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP1000/week9/images/img_65.png)
 
 - base condition
 
 ## 재귀로 풀 수 있는 다양한 문제
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP1000/week9/images/img_66.png)
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP1000/week9/images/img_67.png)
 
 - 재귀적 사고 방식으로 성능 향상
 
 ## 다중 분기 재귀
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP1000/week9/images/img_68.png)
 
 - 대중적인 용어는 아님
 - 문제의 일부만 방문해 원하는 결과를 찾을 수 있음
@@ -243,88 +243,88 @@
 
 ## 분할 정복: 배열의 요소에서 숫자 찾기
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP1000/week9/images/img_69.png)
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP1000/week9/images/img_70.png)
 
 - 데이터가 n개일 때 몇 개의 데이터를 접근하냐?
     - 시간복잡도 이슈
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP1000/week9/images/img_71.png)
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP1000/week9/images/img_72.png)
 
 - 선형적으로 요소 수에 비례해서 방문 횟수가 증가
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP1000/week9/images/img_73.png)
 
 - 시간복잡도:
     - O(N)
 
 ### 정렬된 배열에서 숫자 찾기
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP1000/week9/images/img_74.png)
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP1000/week9/images/img_75.png)
 
 - early return 가능
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP1000/week9/images/img_76.png)
 
 - 하지만 시간 복잡도는 변하지 않음
     - 시간 복잡도는 입력의 개수에 비례해서 계산하기 때문
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP1000/week9/images/img_77.png)
 
 - Big-O 표기법으로 계산하면 동일함
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP1000/week9/images/img_78.png)
 
 - 사고 방식의 전환이 필요함
 - 알고리듬을 고안해야함
 
 ## 이진 탐색
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP1000/week9/images/img_79.png)
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP1000/week9/images/img_80.png)
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP1000/week9/images/img_81.png)
 
 - 코드를 보자
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP1000/week9/images/img_82.png)
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP1000/week9/images/img_83.png)
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP1000/week9/images/img_84.png)
 
 - 계속 절반씩 나눠서 본다
 - 모든 곳을 탐색하지 않음!
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP1000/week9/images/img_85.png)
 
 - '다중 분기 재귀'라고 볼 수 있음
   - 일부만 방문하잖아
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP1000/week9/images/img_86.png)
 
 - 시간복잡도:
     - O(logn)
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP1000/week9/images/img_87.png)
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP1000/week9/images/img_88.png)
 
 - 그래프로 시각적으로 보면 엄청 빠름
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP1000/week9/images/img_89.png)
 
 ## 최댓값 구하기
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP1000/week9/images/img_90.png)
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP1000/week9/images/img_91.png)
 
 ![img_92.png](old_note/COMP1000/week9/images/img_92.png)
 

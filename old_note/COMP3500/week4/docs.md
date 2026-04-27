@@ -38,15 +38,15 @@
 
 ![img_5.png](old_note/COMP3500/week4/images/img_5.png)
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week4/images/img_6.png)
 
 ## 모든 해시 알고리듬의 속성
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week4/images/img_7.png)
 
 ## 균일성
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week4/images/img_8.png)
 
 - 출력값이 고르게 분포되는 정도
 
@@ -55,23 +55,23 @@
 
 ### 균일성의 측정
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week4/images/img_9.png)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week4/images/img_10.png)
 
 - 균일성을 직접 높일 수 있을까?
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week4/images/img_11.png)
 
 - 균일성을 높이는 방법:
     1) 버킷 수(m)을 소수로 사용
     2) 완벽한 눈사태가 나도록 해시 함수 설계
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week4/images/img_12.png)
 
 ### 완벽한 눈사태(avalanche effect)
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week4/images/img_13.png)
 
 - 눈사태 효과가 있으면 원본을 찾기 어려워짐
 
@@ -79,7 +79,7 @@
 
 - 균일성은 무조건 높아야 좋을까?
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week4/images/img_14.png)
 
 - 해시 충돌의 '최대화'를 목표로 하는 알고리듬
 - 비슷한 내용을가진 데이터(입력)끼리 해시값(출력)이 충돌(비슷)해야함
@@ -87,7 +87,7 @@
         - 모든 입력 X
     - 균일성이 낮아야함
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week4/images/img_15.png)
 
 - 용도:
     - 엄청나게 많은 데이터에서 비슷한 것들을 찾는 용도
@@ -100,7 +100,7 @@
 
 ## 효율성
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week4/images/img_16.png)
 
 - 공간을 더 낭비해도 빠른 접근 속도를 선호
     - 왜?
@@ -111,16 +111,16 @@
 
 ## 암호학적 해시 알고리듬의 추가 속성
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week4/images/img_17.png)
 
 ## 비암호학적 해시 함수
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week4/images/img_18.png)
 
 - 해시 함수를 만들었는데, 암호학적으로 사용하기에 문제가 있어서 다른 용도로 사용
 - 일반적인 경우 암호학적 해시 함수보다 효율성이 좋음
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week4/images/img_19.png)
 
 - 모든 데이터에 대해 최고의 결과를 보장하는 해시 함수는 없음
 - 따라서 입력 데이터에 따라 해시 함수를 사용하는 것이 좋겠죠?
@@ -133,15 +133,15 @@
 
 ### 비트 패킹
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week4/images/img_20.png)
 
 - 해시코드 32비트 중에서 상위 16비트는 사용하지 않기 때문에 균일성이 떨어짐
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week4/images/img_21.png)
 
 - 나이는 음수가 안 되기 때문에 최상위 비트 사용하지 않음
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week4/images/img_22.png)
 
 - order는 두번째 기준
     - 나이가 동일하다면 4비트 정도 동일한 나이를 가진 개체를 구분하기 위해 사용
@@ -154,13 +154,13 @@
 
 ## 올바른 해시 함수를 고르는 법
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week4/images/img_23.png)
 
 - 해시 함수를 잘 고르는게 더 중요하다
     - 이미 잘 만들어놓은 해시가 많음
 - 덤으로 이미 잘 만들어놓은 해시가 어떤 식으로 동작하는지 익히면 좋고
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week4/images/img_24.png)
 
 - 속도, 해시 충돌 수
     - 이 정도가 제일 중요하고 나머진...
@@ -168,9 +168,9 @@
 
 ## Lose Lose 해시
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week4/images/img_25.png)
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week4/images/img_26.png)
 
 - 가장 최악의 해시 함수
     - 실무에서 못 씀
@@ -183,7 +183,7 @@
 
 ## Murmur 해시
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week4/images/img_27.png)
 
 - 매개변수 seed 해시값의 초기값
     - fold 에서 acc 변수 생각하면 됨
@@ -209,7 +209,7 @@
 
 ## FNV-1 해시
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week4/images/img_28.png)
 
 - 큰 소수를 사용함
 - FNV_OFFSET_32 에서 해시값 초기화
@@ -219,7 +219,7 @@
 
 ## FNV-1a 해시
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week4/images/img_29.png)
 
 - 연산 순서를 바꾼게 끝
 
@@ -229,7 +229,7 @@
 
 ## 체크섬
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week4/images/img_30.png)
 
 - 길이가 긴 데이터를 전송하는 상황
     - 이 데이터가 올바르게 전송됬는지 확인하고 싶음
@@ -255,7 +255,7 @@
         - 결정론적 작동
         - 고정된 크기의 아웃풋
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week4/images/img_31.png)
 
 - 전송하는 데이터는 언제든 바뀔 수 있음
     - 전송 오류는 항상 존재함
@@ -268,26 +268,26 @@
 
 ### 체크섬 사용례
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week4/images/img_32.png)
 
 - 오 신기하네
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week4/images/img_33.png)
 
 - Luhn 알고리듬
 - 서비스 개발할 때 올바른 신용카드 검사할 때 활용할 수 있음
     - 굳이 신용카드 회사 api 때리기 싫으면, 자체적으로 검사하고 유효한거만 api 호출하고 이렇게 활용할 수 있음
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week4/images/img_34.png)
 
 ### 체크섬이 보장하는 것
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week4/images/img_35.png)
 
 - 체크섬은 간단하기 때문에 많이 사용한다
     - 시간, 공간적 자원을 많이 사용하지 않음
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week4/images/img_36.png)
 
 - 체크섬이 보장하는 것:
     - 데이터의 변경 여부
@@ -301,7 +301,7 @@
 
 ### 체크섬과 미러 사이트
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week4/images/img_37.png)
 
 - 미러 사이트에서 대신 파일을 호스팅하는 상황
     - 보통 호스팅 하는 주체는 광고달고 광고비를 범
@@ -315,7 +315,7 @@
 
 - 체크섬의 일종
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week4/images/img_38.png)
 
 - 원본 데이터에 패리티 데이터를 추가해 데이터의 단위를 구성
     - 보통 1바이트 단위로 많이 사용
@@ -330,14 +330,14 @@
 
 - 체크섬의 일종
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week4/images/img_39.png)
 
 - 다항식을 이용한 알고리듬
     - 여기서 말하는 다항식의 나머지 연산이 아래에서 계산하는 방법이라고 생각하면 됨.
     - 근본적인 연산에 대한 정의는 [GF(2)](https://en.wikipedia.org/wiki/GF(2))를 참고하자.
 - 이 다항식이 이진수 하드웨어에서 구현하기 쉽게 설계되어 있음
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week4/images/img_40.png)
 
 - 다항식의 최고차항부터 최소차항까지 계수를 이진수로 저장하는 방식
     - 각 차항의 계수는 1 아니면 0
@@ -347,22 +347,22 @@
     - CRC-3
     - 3차가 최고차항
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week4/images/img_41.png)
 
 - 1011 (총 4비트)
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week4/images/img_42.png)
 
 - 최고차항의 계수는 언제나 1이라서 생략해도 됨
 - 011 (총 3비트)
 
 ### CRC-3-GSM 계산 예
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week4/images/img_43.png)
 
 - 최종적으로 3비트 체크섬을 만든다
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week4/images/img_44.png)
 
 - 3개 만큼 0을 추가
 
@@ -370,47 +370,47 @@
     - 이 값이 CRC-3에서 숫자 3과 동일함
     - 3차 다항식에서 최고차항을 제외하면 총 3비트
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week4/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week4/images/img_46.png)
 
 - XOR 계산
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week4/images/img_47.png)
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week4/images/img_48.png)
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week4/images/img_49.png)
 
 - 1을 찾을때 까지 오른쪽으로 쉬프트
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week4/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week4/images/img_51.png)
 
 - xor 계산할 때 가장 왼쪽 비트가 모두 1이라서 결과값은 항상 0이됨
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week4/images/img_52.png)
 
 - 진행하다보면 결과값 비트가 왼쪽에서 부터 0으로 변해가는 것을 확인할 수 있음
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week4/images/img_53.png)
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week4/images/img_54.png)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week4/images/img_55.png)
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week4/images/img_56.png)
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week4/images/img_57.png)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week4/images/img_58.png)
 
 ![img_59.png](old_note/COMP3500/week4/images/img_59.png)
 
 ![img_60.png](old_note/COMP3500/week4/images/img_60.png)
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week4/images/img_61.png)
 
 - 남는 값이 체크섬
 
@@ -418,15 +418,15 @@
 
 - 받는 사람 입장
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week4/images/img_62.png)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week4/images/img_63.png)
 
 - 전송자가 보낸 체크섬을 붙임
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week4/images/img_64.png)
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week4/images/img_65.png)
 
 ## 복습 퀴즈: CRC-4-ITU
 
@@ -554,7 +554,7 @@ public class Program {
 - 전통적인 소프트웨어 공학에서 비암호학적 해시 알고리듬을 많이 사용하긴 함
 - 일반적인 프로그래머라면 이정도 알면 충분함
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week4/images/img_66.png)
 
 - 해시값에서 원본 값을 찾으려면 비용이 너무 많이 듬
     - 컴퓨팅 파워가 곧 비용
@@ -564,38 +564,38 @@ public class Program {
 - 원본 값을 찾으려면 브루트 포스
     - 어떤 암호학적 해시 함수는 이미 깨졌음
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week4/images/img_67.png)
 
 - 무결성 검사할 때 데이터 변조를 막을 수 있음
 - 디지털 서명은 당연히 원본 서명이 중요함
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week4/images/img_68.png)
 
 ### 암호학적 해시 알고리듬의 추가 속성
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week4/images/img_69.png)
 
 - 이 속성들이 강해야 암호학적으로 좋음
 
 ## 역상 저항성
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week4/images/img_70.png)
 
 - 디비에 해시값만 저장했는데, 이 해시에서 역으로 원본 비밀번호를 구할 수 있으면..?
 - 디비가 털리면 위험하죠?
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week4/images/img_71.png)
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week4/images/img_72.png)
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week4/images/img_73.png)
 
 - 역상 공격을 방지하자
 - 산사태 효과가 있는 좋은 알고리듬을 사용하면 역상 저항성이 높다
 
 ## 제 2 역상 저항성
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week4/images/img_74.png)
 
 - 해커가 어떤 사이트에 가입함
 - 이 때 자신이 설정한 비밀번호로 가입함
@@ -604,18 +604,18 @@ public class Program {
 - 이를 통해 다른 원본 데이터를 찾을 수 있음
 - 이 때 해시값이 겹치는 다른 원본 데이터를 찾기 어려워야함!!
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week4/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week4/images/img_76.png)
 
 ## 충돌 저항성
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week4/images/img_77.png)
 
 - 해커는 데이터를 전혀 가지고 있지 않음
 - 아무 값이나 입력해서 해시 충돌을 찾는 것을 막는 개념
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week4/images/img_78.png)
 
 - MD5, SHA-1 알고리듬은 이미 충돌 공격에 노출됨
 - 충돌 공격은 역상 공격보다 쉬움
@@ -623,41 +623,41 @@ public class Program {
 
 ## 생일 문제
 
-![img_79.png](images/img_79.png)
-![img_80.png](images/img_80.png)
+![img_79.png](old_note/COMP3500/week4/images/img_79.png)
+![img_80.png](old_note/COMP3500/week4/images/img_80.png)
 
 - 모든 사람의 생일이 9월 1일이 아닌 확률을 빼면 됨
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week4/images/img_81.png)
 
 - 모든 사람이 생일이 다를 확률을 빼면 됨
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week4/images/img_82.png)
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week4/images/img_83.png)
 
 - 여기서 충돌 공격이 왜 쉬운지 확률적으로 알 수 있음
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week4/images/img_84.png)
 
 - 이런 문제가 발생한 이유:
     - 출력값의 길이가 고정
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week4/images/img_85.png)
 
 - 생일 문제에서는 365일이 출력값의 길이와 대응됨
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week4/images/img_86.png)
 
 - 출력값(해시값)의 길이(범위)를 늘리면 충돌 확률을 줄일 수 있음
 
 ## 보안 이야기: 비밀번호 터는 법
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week4/images/img_87.png)
 
 - 비밀번호는 반드시 해시로 저장하자
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week4/images/img_88.png)
 
 - 해시로 디비에 저장해도, 모든 비밀번호를 시도하는 것 자체를 막을 수는 없음
     - 다만 웹 자체 기능으로 시도를 막음
@@ -665,12 +665,12 @@ public class Program {
         - 웹 페이지 갱신 속도 제약
 - 무차별 대입 공격으로 해시값을 찾을 수 있는게 역상 저항성이 높다는 거죠?
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week4/images/img_89.png)
 
 - 그렇다면 왜 해시로 저장해야하나?
 - 데이터베이스가 털렸을 때 비밀번호(원본 데이터) 노출을 막음
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week4/images/img_90.png)
 
 - 해커의 입장에서 비밀번호를 알아내는 방법?
 - 우선 디비를 해킹해서 내 컴퓨터로 데이터를 다 옮겨옴
@@ -681,7 +681,7 @@ public class Program {
     - 시간복잡도가 엄청 증가함
     - 자리수마다 경우의수 지수 함수 형태로 증가
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week4/images/img_91.png)
 
 - 사전 공격:
     - 사저에 있는 단어들을 조합

@@ -48,16 +48,16 @@
 
 ### BFS가 최단 경로를 찾는 이유
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week12/images/img_6.png)
 
 - 직관적으로 이해하는게 좋음
     - 증명 보다는..
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week12/images/img_7.png)
 
 ### BFS로 최단 경로 찾기
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week12/images/img_8.png)
 
 - 깊이 == 최단 경로의 거리
 - 깊이를 기억하는 코드가 필요함
@@ -66,21 +66,21 @@
     - 노드 내부에 저장
         - OOP 관점에서는 좋지 못함
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week12/images/img_9.png)
 
 - 위 코드는 HashMap에 "Node-거리"를 저장
 - 마지막에 못 찾는 경우 -1을 반환
     - 깊이 개념이라서 0부터 시작하기 때문
     - 음수 거리는 없죠?
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week12/images/img_10.png)
 
 - 직관적으로 거리 == 깊이를 이해
 
 - 학교 노드 입장에서 "최단 경로"를 알아야함
     - 지금은 "최단 거리"만 알고, 어떤 노드들을 방문했는지 모르는 상태
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week12/images/img_11.png)
 
 - 경로 추적을 위해 추가 정보 필요
     - 트리는 미리 규칙이 있어서 이런 정보가 필요없었는데 ㅠㅠ
@@ -92,19 +92,19 @@
 
 ## 각 변의 거리가 다른 최단 경로 찾기(가중 그래프에서 최단 경로)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week12/images/img_12.png)
 
 - 단순히 BFS로 불가능함!
 
 ## 다익스트라 알고리듬
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week12/images/img_13.png)
 
 - 성능도 괜찮음
 - 변의 가중치가 음수인 경우에는 제대로 동작하지 않음
     - 실세계에서는 이런 경우가 없어서 충분히 많이 활용 가능
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week12/images/img_14.png)
 
 - 그래프 문제는 보통 이미 있는 문제에 알고리듬을 적용하는게 어려움
     - 그래프 디자인이 어렵!
@@ -115,126 +115,126 @@
 - n의 각 이웃 노드 m으로 여행하는 거리를 계산
 - m 노드가 가지고 있는 기존 거리와 위 결과를 비교해서 가까우면 업데이트
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week12/images/img_15.png)
 
 - 직관적으로 모든 노드를 거치면서 최솟값으로 업데이트 하면서 최솟값을 취했음
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week12/images/img_16.png)
 
 - 이거 혹시 "그리디"?
 
 ### 다익스트라는 동적 계획법
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week12/images/img_17.png)
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week12/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week12/images/img_19.png)
 
 - Tabulation
 
 ### 다익스트라 구현
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week12/images/img_20.png)
 
 - 종료조건:
     - 모든 노드 방문
     - 목적지 도착
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week12/images/img_21.png)
 
 - 구현에 따라 시간 복잡도가 달라짐
 
 ### 인접 행렬을 이용한 다익스트라
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week12/images/img_22.png)
 
 - 우선 인접 행렬을 만들기
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week12/images/img_23.png)
 
 - 모든 거리를 무한으로 초기화
     - INT.MAX
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week12/images/img_24.png)
 
 - 우선 시작노드에 대한 처리
     - 노드의 거리는 0으로 초기화
     - 아직 미방문
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week12/images/img_25.png)
 
 - 미방문 목록(큐)에서 가장 거리값이 작은 노드는 시작 노드
 - 시작 노드를 뽑아서 이웃 노드에 대한 처리를 하자
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week12/images/img_26.png)
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week12/images/img_27.png)
 
 - 업데이트 해야겠지?
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week12/images/img_28.png)
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week12/images/img_29.png)
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week12/images/img_30.png)
 
 - 이제 시작노드 방문 완료
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week12/images/img_31.png)
 
 - 방문한 시작 노드는 확인할 필요 없음
 - 미방문한 3,5 노드에 대해 처리
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week12/images/img_32.png)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week12/images/img_33.png)
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week12/images/img_34.png)
 
 - 노드2, 3의 거리값이 동일해서 뭘 고르든 상관 없음
 - 이 예시에는 노드 2를 먼저 고름
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week12/images/img_35.png)
 
 - 업데이트 X
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week12/images/img_36.png)
 
 - 노드 1,2는 이미 방문해서 생략하고
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week12/images/img_37.png)
 
 - 업데이트 처리
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week12/images/img_38.png)
 
 - 노드4에서 방문할 수 있는 노드는 노드5밖에 없음
     - 노드3은 이미 방문
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week12/images/img_39.png)
 
 - 업데이트
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week12/images/img_40.png)
 
 - 마지막 남은 노드에서 방문할 수 있는 노드 없음
     - 이미 다 방문
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week12/images/img_41.png)
 
 - 누가 나를 업데이트 했는지(큐에 넣었는지) 추적하면 최단 경로 복원 가능
 
 ### 인접 행렬을 사용한 다익스트라의 문제점
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week12/images/img_42.png)
 
 - 노드에 비해 변의 수가 엄청 적을 때
 - 공간복잡도가 일단 너무 큼
     - O(N^2)
     - 시간 복잡도도 마찬가지
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week12/images/img_43.png)
 
 - 인접 리스트로 만들면 O(N + E)로 공간 복잡도를 줄일 수 있음
 
@@ -242,25 +242,25 @@
 
 - 아래 설명은 인접 리스트를 사용한다고 가정
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week12/images/img_44.png)
 
 - 모든 노드에 대해 수행
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week12/images/img_45.png)
 
 - 미방문 노드(최대 N개) 중 최소 거리 노드를 선택해야함
     - 순회해서 찾는다고 가정
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week12/images/img_46.png)
 
 - 모든 변은 한 번 이상은 지나감
     - O(k*E) 추가
 
 - 위 연산 중 빠르게 할 수 있는 것은?
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week12/images/img_47.png)
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week12/images/img_48.png)
 
 - 우선 순위큐를 사용하면!
     - min heap
@@ -268,32 +268,32 @@
 - 하지만 거리 값 업데이트가 O(1)이 되지 못함
     - 업데이트하고 heap을 heapify하는 비용이 추가적으로 발생
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week12/images/img_49.png)
 
 - 우선 순위큐 대신에 BST 사용해도 똑같음
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week12/images/img_50.png)
 
 - 참고 "피보나치 힙"
 
 ### 다익스트라와 음의 가중치
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week12/images/img_51.png)
 
 - 한 번 방문한 노드는 다시 방문 안 하기 때문에 양의 가중치만 가정했을 때 다음 거리는 언제나 이미 방문한 거리 이상
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week12/images/img_52.png)
 
 - s 노드에서 시작하고, 그 다음 노드로 거리값이 1로 가장 낮은 아래의 노드에서 진행
 - d 노드를 4로 갱신하고 종료
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week12/images/img_53.png)
 
 - 다음으로 거리값이 3으로 가장 낮은 위의 노드에서 진행
 - 기존의 아래 노드의 거리값이 음의 가중치 때문에 0이 됨
 - 이렇게 되면 그 다음으로 뽑을 노드가 0으로 최소인 아래 노드를 뽑아서 진행해야하는데, 한 번 방문한 노드를 다시 방문할 수 없는 규칙 때문에 방문할 수 없음
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week12/images/img_54.png)
 
 - 음수 가중치를 처리하려면 "벨만-포드 알고리듬"
 
@@ -456,20 +456,20 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 인공지능, 게임쪽에 정말 많이 사용된다.
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week12/images/img_55.png)
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week12/images/img_56.png)
 
 - 다익스트라 알고리듬이 얼마나 똑똑한지 확인해보자.
     - 검정색 칸은 벽을 의미함
     - 칸 사이의 거리(가중치)는 모두 1로 동일함
         - 따라서 BFS랑 동일함
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week12/images/img_57.png)
 
 - 굳이 이렇게 찾아야할까?
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week12/images/img_58.png)
 
 - 비효율적인디?
 
@@ -489,7 +489,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 - "목적지까지의 거리" 기준을 추가
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week12/images/img_61.png)
 
 - 진행 중 "목적지까지의 거리"를 확실하게 알 수 없음
 - 휴리스틱한 함수를 사용
@@ -497,17 +497,17 @@ public final class Candidate implements Comparable<Candidate> {
 
 ### A*의 노드 선택 기준
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week12/images/img_62.png)
 
 - f(n) 값은 추정치
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week12/images/img_63.png)
 
 - 빨간 화살표 크기가 h(n)
 
 - h(n) 함수는 출발점(테두리만 빨간 칸)에서 도착지까지 거리를 계산
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week12/images/img_64.png)
 
 - 거리를 계산할 때
     - 유클리드 거리
@@ -518,7 +518,7 @@ public final class Candidate implements Comparable<Candidate> {
 - h(n)에 따라 목적지까지 경로의 굵기(?)가 달라짐
     - 더 넓게 가냐 아니냐
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week12/images/img_65.png)
 
 - 'OPEN' 이라는 이름의 방문한 최단 경로 후보 노드들이 있음
 - 최소 f(n)을 통해 후보 선택
@@ -526,7 +526,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 ### A* 알고리듬 시뮬레이션
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week12/images/img_66.png)
 
 - f(n)은 g(n) + h(n)의 값으로 결정하기 때문에 g(n) 값을 먼저 최대값으로 초기화하고 대입하는 식으로 구현 가능
 - 시작 노드 초기화
@@ -539,78 +539,78 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 다익스트라와 거의 똑같은데 'OPEN'에서 f(n)이 가장 작은 노드를 찾아 제거할 때 h(n)이 어떻게 영향을 미치는가에 주목하자
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week12/images/img_67.png)
 
 - h(n)은 직선 거리로 일단 가정
     - 휴리스틱하게..
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week12/images/img_68.png)
 
 - g는 처음에 무한으로 초기화
 - h는 각 노드마다 미리 계산
 - f == g + h
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week12/images/img_69.png)
 
 - 시작 노드 초기화
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week12/images/img_70.png)
 
 - 'OPEN'에 넣었다는 표시
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week12/images/img_71.png)
 
 - f(n)이 가장 작은 노드 뽑기
     - 어차피 한 개라 시작 노드로 확정
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week12/images/img_72.png)
 
 - 각 이웃 m에 대해 g(m) 업데이트
     - f(m)도 업데이트 됨
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week12/images/img_73.png)
 
 - 두 이웃 m이 업데이트되고 'OPEN'에 들어가게 됨
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week12/images/img_74.png)
 
 - f가 작은 경찰서 노드를 골라 이웃에 대해 g 업데이트하고 'OPEN'에 넣는 과정 반복
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week12/images/img_75.png)
 
 - 다익스트라와 다르게 이미 방문했던 집 노드쪽 간선을 확인하게 됨
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week12/images/img_76.png)
 
 - 집 노드는 g를 업데이트할 필요가 없음
     - 0 < 2 + 2
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week12/images/img_77.png)
 
 - 나머지 이웃은 g를 업데이트하고 'OPEN'에 추가
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week12/images/img_78.png)
 
 - f가 최소인 학교를 뽑았는데, 목적지에 도착!
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week12/images/img_79.png)
 
 - 다익스트라 처럼 최단 경로를 100% 보장하지 않는 알고리듬임을 알 수 있음
 
 ### h(n) 함수에 대한 이해
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week12/images/img_80.png)
 
 - h'(n)은 실제 비용이라고 가정해봅시다.
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week12/images/img_81.png)
 
 - h(n)이 언제나 0인 경우를 가정
 
 - 다익스트라 알고리듬과 똑같이 동작하게 됨
     - 다익스트라는 A*의 특수한 케이스임을 확인할 수 있다.
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week12/images/img_82.png)
 
 - 모든 노드에 대해 h(n) <= h'(n) 을 만족하면 A*의 정확성이 보장됨
     - 직관적으로 당연히..
@@ -618,7 +618,7 @@ public final class Candidate implements Comparable<Candidate> {
 
 - h(n) <= h'(n) 을 만족하는 h(n)을 `admissible` 라고 표현함
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week12/images/img_83.png)
 
 - h(n) << h'(n)
     - 추정 거리가 실제 거리보다 훨씬 작은 케이스
@@ -629,14 +629,14 @@ public final class Candidate implements Comparable<Candidate> {
     - h(n)이 너무 작아지면 변별력이 사라져, 너무 많은 노드를 조사하게 될 수도 있음
     - g(n)의 영향력이 커지고, 다익스트라와 비슷해짐
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week12/images/img_84.png)
 
 - 이건 이상적인 경우
     - 현재 위치에서 목적지를 가는 거리를 정확하게 알고 있는 경우 ㅋㅋ
 
 ### A*의 중복 방문
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week12/images/img_85.png)
 
 - 다익스트라에서 새로 방문하는 노드의 실제 거리가 최소
     - g(n)만 기준으로 사용하기 때문
@@ -655,13 +655,13 @@ public final class Candidate implements Comparable<Candidate> {
     - 재방문 X
     - 이 조건을 만족하면 일관적/단조로운 휴리스틱
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week12/images/img_86.png)
 
 - 특정 조건 참고만...
 
 ### A*의 시간 복잡도
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week12/images/img_87.png)
 
 - 휴리스틱이라서 시간 복잡도가 큰 의미가 없음
     - 논해봤자 의미가 없음
@@ -686,11 +686,11 @@ public final class Candidate implements Comparable<Candidate> {
 - 임의의 두 노드(쌍)에 대해 최단 경로를 찾아보자
     - 시작점이 정해진 것이 아님
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week12/images/img_88.png)
 
 - SSSP를 모든 노드에 대해서 실행하면, APSP의 답을 구할 수 있긴 함
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week12/images/img_89.png)
 
 - 다익스트라에서는 거리 배열을 사용했지만
     - 코드에서 구현할 때는 node:거리값 맵으로 작성하긴 함
@@ -702,11 +702,11 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 다익스트라와 마찬가지로 DP
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week12/images/img_90.png)
 
 - A에서 E로 가는 경로가 최단 경로임을 알고 있는 상태
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week12/images/img_91.png)
 
 - 그렇다면 중간에 거치는 C에 대해서 다음이 성립함:
 

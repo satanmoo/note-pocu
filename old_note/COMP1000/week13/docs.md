@@ -30,74 +30,74 @@
 
 ![img_5.png](old_note/COMP1000/week13/img_5.png)
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP1000/week13/img_6.png)
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP1000/week13/img_7.png)
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP1000/week13/img_8.png)
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP1000/week13/img_9.png)
 
 - 개수(빈도)를 저장
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP1000/week13/img_10.png)
 
 - 표로만 나타내면 값의 분포를 한눈에 보기 어려움
     - 그래프가 필요하다!
 
 ## 히스토그램
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP1000/week13/img_11.png)
 
 - 도수 분포표를 그래프화하면 히스토그램
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP1000/week13/img_12.png)
 
 - 데이터가 많을 때 히스토그램의 진가가 발휘된다.
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP1000/week13/img_13.png)
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP1000/week13/img_14.png)
 
 - 가로축은 %
     - 빨간색이 100%면 R
     - 이 퍼센트 조절해서 높은 퍼센트의 빨간색 빈도를 줄이면 빨간색이 약해짐
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP1000/week13/img_15.png)
 
 - 높은 파란색에 빈도가 높음
 
 ## 데이터 비닝
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP1000/week13/img_16.png)
 
 - 도수 분포표 및 히스토그램도 데이터 비닝의 한 종류
 - 규칙에 따라 통에 넣는 개념
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP1000/week13/img_17.png)
 
 ### 범위를 특정할 수 없는 데이터의 비닝
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP1000/week13/img_18.png)
 
 - 각 문자열의 길이 및 내용은 중구난방
 - 각 문자열을 어떻게 분류해서 bin(통)에 담을 지가 문제
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP1000/week13/img_19.png)
 
 - 주먹구구식 접근방법
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP1000/week13/img_20.png)
 
 - O(N)
 
 ## 해시 함수
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP1000/week13/img_21.png)
 
 - 문자열을 어떤 통에 담을지 한방에 알 수 있는 규칙
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP1000/week13/img_22.png)
 
 - 입력값은 임의의 길이를 가짐
 - 출력값은 언제나 정해진 길이를 가짐
@@ -108,50 +108,50 @@
 
 ### 해시 함수의 예
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP1000/week13/img_23.png)
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP1000/week13/img_24.png)
 
 - 28비트의 고정된 길이의 출력값
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP1000/week13/img_25.png)
 
 - 결정론적 동작
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP1000/week13/img_26.png)
 
 - 다른 문자열을 넣어도
 - 다른 결과가 나오지만
 - 출력값의 길이는 동일함 (28비트)
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP1000/week13/img_27.png)
 
 - 입력값이 달라도 같은 결과가 나올 수 있음
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP1000/week13/img_28.png)
 
 - 해시 충돌
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP1000/week13/img_29.png)
 
 ### 해시 함수의 단방향성
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP1000/week13/img_30.png)
 
 - 왜 복원이 불가능할까?
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP1000/week13/img_31.png)
 
 - 정해진 길이의 입력에서 임의의 길이 출력으로 복원하는게 쉬울까?
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP1000/week13/img_32.png)
 
 - 만약 원본 입력보다 해시 함수의 출력의 길이가 짧다면?
     - 원본을 표현하기 위한 모든 데이터가 없을 수 있음
 
 - 이렇게 복원하지 못하는 성질 때문에 데이터베이스에 비밀번호를 해시 출력값으로 변환해서 저장함
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP1000/week13/img_33.png)
 
 - 수학적으로 생각해보면
 - 일대일 함수가 아니기 때문에 역함수를 구할 수 없다고 생각해도 됨
@@ -159,7 +159,7 @@
 
 ## 해시 함수의 종류와 예
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP1000/week13/img_34.png)
 
 - 해시 함수의 조건만 만족하면 되기 때문에 종류가 다양함
 - 종류가 다양한 만큼 해시 함수마다 특징(성격)이 다름
@@ -169,111 +169,111 @@
 
 ### 몇 가지 해시 함수의 비교
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP1000/week13/img_35.png)
 
 - 영어단어, 정수, GUID 원본 입력 데이터를 다르게 해서 실행 속도, 충돌 빈도 비교
 
 ### x65599
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP1000/week13/img_36.png)
 
 - 65599는 소수
     - 소수의 마법
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP1000/week13/img_37.png)
 
 - SDBM 해시라과 부르기도 함
 
 ### 다시 처음으로 돌아가 문자열 검색 비용
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP1000/week13/img_38.png)
 
 - 문자열을 해시 값으로 저장하더라도 32비트면 숫자값이 커서 비교할 대상이 많지 않나요?
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP1000/week13/img_40.png)
 
 - 학생은 배열의 크기가 엄청 크지 않을까 걱정한다.
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP1000/week13/img_39.png)
 
 - 해시 테이블 만들 때 적당한 크기(소수)의 배열을 선언하고 모듈러 연산으로 배열의 색인을 구해 저장함
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP1000/week13/img_41.png)
 
 ## 해시 함수의 용도
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP1000/week13/img_42.png)
 
 - 해시 테이블
 - 비밀번호 암호화
 - 비대칭 암호화(공개키 암호화)
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP1000/week13/img_43.png)
 
 - 체크섬
 
 ## 어떤 해시 함수를 사용할까?
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP1000/week13/img_44.png)
 
 - 목적에 따라 달라짐
 
 ## 해시 함수와 비밀번호 저장
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP1000/week13/img_45.png)
 
 - 웹사이트에서 비밀번호 등 몇몇 중요한 정보 빼고는 내가 입력한 데이터를 그대로 보여주는 경우가 많음
 
 - 비밀번호는 반드시 DB에 그대로 저장하는게 아니라, 원본 복원이 불가능하게 해시로 저장해야함
     - 다른 정보는 암호화(암호화는 원본 복원이 가능한 개념, 해시와 다름)해서 저장
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP1000/week13/img_46.png)
 
 - 비밀번호가 달라도 같은 해시가 나오면?
     - 해시 충돌
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP1000/week13/img_47.png)
 
 - ID도 비교하기 때문에 겹칠 확률은 거의 낮음
 
 - 그리고 비밀번호를 정말 많이 입력해서 시도하면, 웹에서 1시간 뒤 로그인, 하루 뒤 로그인 이렇게 시간을 늘려버리면 됨
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP1000/week13/img_48.png)
 
 - 이런 웹 사이트는 쓰지 말자
 - 그래서 비밀번호를 자동 생성해서 쓰면 좋음
     - 브라우저에서 만들어 줌
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP1000/week13/img_49.png)
 
 ## 근사값 구하기
 
 - 자세하게 설명하지는 않고 개념만 간단하게 설명할 예정
 - 근사값을 구하는 프로그램이 이미 많아서(대표적으로 엑셀) 활용하면 됨
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP1000/week13/img_50.png)
 
 - 머신러닝도 학습을 통해 근사공식을 구하고 새로운 입력값이 들어오면 근사공식에 대입해 답을 주는 개념
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP1000/week13/img_51.png)
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP1000/week13/img_52.png)
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP1000/week13/img_53.png)
 
 ## 최적선
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP1000/week13/img_54.png)
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP1000/week13/img_55.png)
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP1000/week13/img_56.png)
 
 - 선형 관계(정비례 관계)가 없어서 그리기 쉽지 않음
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP1000/week13/img_57.png)
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP1000/week13/img_58.png)
 
 - best-fit line
 - trend line
@@ -287,40 +287,40 @@
 
 - 직선이기 때문에 직선의 방정식을 만족해야함
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP1000/week13/img_61.png)
 
 - 실제값과 오차가 있을 수 밖에
 - 이 오차를 모두 더해서 평균 오차를 구하고, 평균 오차가 최소가 되면 최적선
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP1000/week13/img_62.png)
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP1000/week13/img_63.png)
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP1000/week13/img_64.png)
 
 - 분산 구할 때 아이디어와 동일함
 - 최소제곱법
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP1000/week13/img_65.png)
 
 - 공식 도출은 생략함
     - 미분이 들어감
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP1000/week13/img_66.png)
 
 - 직선으로 표현하기 어려우면?
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP1000/week13/img_67.png)
 
 - 애초에 직선으로 표현하기 어려운지/가능한지 판단하는 공식도 있고...
 
 ## 곡선 맞춤
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP1000/week13/img_68.png)
 
 - 개념만 알고, 이미 증명된 공식을 사용한 검증된 도구를 사용하자
 - 곡선 맞춤 프로그램이 있어요
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP1000/week13/img_69.png)
 
 - 통계학과 정도면 증명 도출도 배우긴 함

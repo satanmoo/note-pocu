@@ -34,35 +34,35 @@
 
 ### brute-force로 푸는 배낭 문제
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week10/images/img_6.png)
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week10/images/img_7.png)
 
 - O(2^n)
     - n은 물건의 개수
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week10/images/img_8.png)
 
 ### 배낭 문제의 시간복잡도
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week10/images/img_9.png)
 
 ### 피보나치 수를 동적 계획법으로 풀어보자
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week10/images/img_10.png)
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week10/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week10/images/img_12.png)
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week10/images/img_13.png)
 
 - 최적화
 - 메모이제이션
 
 ## 메모이제이션
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week10/images/img_14.png)
 
 - 처음 계산 결과를 캐시에 저장해 둔 뒤, 나중에 재사용하는 기법
     - 처음 계산할 때 만 저장!
@@ -72,13 +72,13 @@
 
 ### 메모이제이션을 사용한 피보나치 함수
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week10/images/img_15.png)
 
 - 엄밀히 말하면 동적 계획법은 아님
 
 ### 메모이제이션과 동적 계획법의 관계
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week10/images/img_16.png)
 
 - 동적 계획법을 사용할 때 메모이제이션을 활용한다고 보면 됨
 
@@ -86,7 +86,7 @@
 
 - 피보나치에 적용한 동적 계획법을 top-down 방식이라고 부른다
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week10/images/img_17.png)
 
 - 위에서 아래로
 - 필요에 따라 복잡한 문제에서 간단한 문제로
@@ -97,13 +97,13 @@
 
 ### 최적의 피보나치 평가 순서를 찾아보자
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week10/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week10/images/img_19.png)
 
 - 아래에서 위로 패턴이 있음
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week10/images/img_20.png)
 
 - 사실 배열이 필요없음
 - 변수 두개로 가능
@@ -113,7 +113,7 @@
 
 ## 타뷸레이션
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week10/images/img_21.png)
 
 - bottom-up 방식
 
@@ -132,7 +132,7 @@ public static int fibonacci(int number) {
 }
 ```
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week10/images/img_22.png)
 
 - 가장 작은 문제부터 해결
 - 순서대로 문제를 풀기 때문에 필요하지 않은 하위 문제를 평가함
@@ -146,71 +146,71 @@ public static int fibonacci(int number) {
 
 ## 메모이제이션, 타뷸레이션의 비용
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week10/images/img_23.png)
 
 - 공간을 더 차지함
 
 ## 동적 계획법으로 푸는 배낭 문제
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week10/images/img_24.png)
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week10/images/img_25.png)
 
 - 모든 동적 계획법 알고리듬은 그리드로 시작한다고 해도 과언이 아님
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week10/images/img_26.png)
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week10/images/img_27.png)
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week10/images/img_28.png)
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week10/images/img_29.png)
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week10/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week10/images/img_31.png)
 
 - 첫 행(리코더 행)은 오직 리코더만 물품에 있을 때를 고민
 - 6칸 배낭에 리코더가 이미 들어가있기 때문에 고민할 필요가 없음
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week10/images/img_32.png)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week10/images/img_33.png)
 
 - 슬라이드에 "+책"이라고 표현함
     - 책 만 고려하는게 아니라, 책을 추가하는 개념
 - 책을 추가할 때 책만 넣을 것인가? 기존의 리코더를 뺄 것인가를 고민
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week10/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week10/images/img_35.png)
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week10/images/img_36.png)
 
 - 윗 행(리코더 행)에서 4칸 배낭일 때 최대값이 0이기 때문에 최대값을 늘리기 위해서 훔치는 것이 좋음
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week10/images/img_37.png)
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week10/images/img_38.png)
 
 - 윗 행에서 훔친 것이 책보다 비싸지만, 책을 훔치면 1칸이 남고, 남은 1칸에 발생하는 이득을 계산해서 최대값을 구해야함
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week10/images/img_39.png)
 
 - 그렇다면 1칸에 발생하는 이득의 최대값은 어떻게 찾나요?
 - 지금까지 찾은 결과에서 찾아야함
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week10/images/img_40.png)
 
 - 책은 제외하고, 리코더를 훔칠 때 1칸에 발생하는 이득의 최대값은 0
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week10/images/img_41.png)
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week10/images/img_42.png)
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week10/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week10/images/img_44.png)
 
 - 리코더만 넣으면 최대값 5
 - 리코더를 빼고, 책을 넣으면 최대값 2에 5칸이 남음
@@ -218,27 +218,27 @@ public static int fibonacci(int number) {
 - 책을 넣으면 최대값 7을 얻을 수 있어서 리코더를 빼고 책을 넣는게 이득!
     - 책을 넣고 리코더도 넣게 됨
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week10/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week10/images/img_46.png)
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week10/images/img_47.png)
 
 - 10칸까지 넣을 수 없기 때문에, 기존의 것을 빼고 사슴을 추가할 지 판단할 필요도 없음
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week10/images/img_48.png)
 
 - 그래서 윗행의 결과를 취하면 됨
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week10/images/img_49.png)
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week10/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week10/images/img_51.png)
 
 - 유지하는게 좋음
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week10/images/img_52.png)
 
 - 도식화 해보자
 - 이번에 추가하는 사슴의 값 == v(사슴)
@@ -248,19 +248,19 @@ public static int fibonacci(int number) {
 - 사슴을 추가하고 남는 배낭에 넣을 수 있는 값 v(2,1)
     - 1칸 남기 때문에, 1칸이고 2개의 물건으로 구한 최대값
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week10/images/img_53.png)
 
 - 코드로 보면 max 취한 거임
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week10/images/img_54.png)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week10/images/img_55.png)
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week10/images/img_56.png)
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week10/images/img_57.png)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week10/images/img_58.png)
 
 ![img_59.png](old_note/COMP3500/week10/images/img_59.png)
 
@@ -270,13 +270,13 @@ public static int fibonacci(int number) {
 
 - 첫 행은 그냥 넣으면 끝
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week10/images/img_61.png)
 
 - 두번째 행을 채울 때는?
 - 윗 행(첫번째)행의 값과 일치하거나, 큼
     - 동작 방식에 따라 반드시 그럴 수 밖에 없음!
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week10/images/img_62.png)
 
 - 세번째 행을 채울 때는?
     - 첫번째 행은 보지 않고 두번째 행만 고려함
@@ -284,45 +284,45 @@ public static int fibonacci(int number) {
 
 ### 일반화 해보자!
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week10/images/img_63.png)
 
 - 새로 추가될 때 배낭의 칸 수(S)만큼 읽으면 됨!
     - 열 개수
 - 총 시간 복잡도는 O(NS)
     - N은 물건의 개수, 행 개수
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week10/images/img_64.png)
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week10/images/img_65.png)
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week10/images/img_67.png)
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week10/images/img_66.png)
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week10/images/img_68.png)
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week10/images/img_69.png)
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week10/images/img_70.png)
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week10/images/img_71.png)
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week10/images/img_72.png)
 
 - 잠깐 여기서 어떤 물품이 들어가 있을까?
 - 중요한가?
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week10/images/img_73.png)
 
 - 기록 안 해서 모름 ㅋㅋ
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week10/images/img_74.png)
 
 ### 동적 계획법으로 푼 배낭 문제 공식(코드)
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week10/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week10/images/img_76.png)
 
 - 메모이제이션 코드
 
@@ -405,12 +405,12 @@ public class Item {
 
 ## 동적 계획법을 적용할 수 있는 문제의 특징
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week10/images/img_77.png)
 
 - 최적 부분 구조
     - 하위 문제의 최적 해법으로부터 큰 문제의 최적 해법을 구할 수 있음
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week10/images/img_78.png)
 
 - 하위 문제의 반복
     - 똑같은 평가를 반복할 때 반복이 많으면 많을수록 유리함
@@ -418,25 +418,25 @@ public class Item {
 
 ## 분할 정복과 동적 계획법
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week10/images/img_79.png)
 
 - 반복 여부!
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week10/images/img_80.png)
 
 - 머지 소트에서 부분을 반복하지 않쥬
 
 ## 동적 계획법으로 문제를 푸는 과정
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week10/images/img_81.png)
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week10/images/img_82.png)
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week10/images/img_83.png)
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week10/images/img_84.png)
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week10/images/img_85.png)
 
 ## 코드보기: 배낭문제
 
@@ -515,9 +515,9 @@ public class Item {
 
 ## 그리디(greedy)
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week10/images/img_86.png)
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week10/images/img_87.png)
 
 - 그 순간 최적(locally optimal)의 해법을 찾는 방법
     - 미래를 생각하지 않고
@@ -527,17 +527,17 @@ public class Item {
 - 근사 알고리듬
 - 보통 성능 때문에 사용
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week10/images/img_88.png)
 
 - 기준이 여러 개!
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week10/images/img_89.png)
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week10/images/img_90.png)
 
 - 우연히 globally optimal
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week10/images/img_91.png)
 
 ![img_92.png](old_note/COMP3500/week10/images/img_92.png)
 

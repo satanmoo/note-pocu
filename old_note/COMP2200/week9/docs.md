@@ -49,13 +49,13 @@
 
 ## 스택 메모리에 대한 이해
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week9/img_6.png)
 
 - 함수 호출할 때 스택 메모리에 어떻게 쌓이는지를 이해하면 동작 원리를 이해할 수 있음
 
 ### [함수 호출 규약]
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week9/img_7.png)
 
 - 컴파일러에 따라 다를 수 있음
 - 함수 호출할 때 매개변수를 뒤에서 부터 넣는 것이 함수 호출 규약에 따른 것
@@ -64,21 +64,21 @@
 
 - 메모리처럼 휘발성 저장 공간
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week9/img_8.png)
 
 - 레지스터의 존재 이유를 위해, 메모리가 비효율적이라는 것을 알아야함
 
 ### [메모리의 비효율성]
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week9/img_9.png)
 
 - CPU가 메모리에 접근할 때, 버스를 통해 접근
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week9/img_10.png)
 
 - 버스를 자주 왔다갔다 할 수록 비효율적임
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week9/img_11.png)
 
 - DRAM은 휘발성이라, 계속 업데이트가 필요함. 따라서 비효율적
 - SRAM은 휘발성이 아니라, 계속 유지되는데, 비싸서 메모리에 많이 사용하지 않음
@@ -86,73 +86,73 @@
 
 ### [레지스터의 탄생]
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week9/img_12.png)
 
 - SRAM을 사용해서 CPU에 내장함
 
 ### [레지스터의 특징]
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week9/img_13.png)
 
 - CPU가 사용하는 저장 공간 중 가장 빠름
 - CPU가 연산할 때 보통 레지스터에 결과를 저장함
 - 원칙상 레지스터는 메모리가 아니기 때문에 `주소`의 개념이 없음
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week9/img_14.png)
 
 - ebp, esp, eax, ebx 등이 레지스터
 - 어셈블리어에서 확인 가능
 
 ### [참고] x86 아키텍쳐에서 사용하는 레지스터
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week9/img_15.png)
 
 ### [레지스터 사용 예시]
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week9/img_16.png)
 
 1. 변수의 값을 메모리 어딘가에 저장
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week9/img_17.png)
 
 2. 변수의 값을 읽어와 레지스터에 저장
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week9/img_18.png)
 
 3. 레지스터에 저장된 값(eax에 저장된 값)을 이용해 계산한 뒤 다시 eax에 저장
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week9/img_19.png)
 
 4. 그 결과를 다시 메모리에 저장
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week9/img_20.png)
 
 5. printf할 때 eax의 값을 사용하고 그 결과를 다시 eax에 저장
 
 ## register 키워드
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP2200/week9/img_21.png)
 
 - 위의 예시에서 레지스터의 값을 메모리에 저장 안 하고, 바로 사용할 수 없을까?
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week9/img_22.png)
 
 - 어셈블리어로 코드를 작성하면 가능함
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week9/img_23.png)
 
 - C언어에서는 register 키워드를 사용하면 레지스터에 저장할 수 있음
 - 하지만 최신 컴파일러는 register 키워드를 무시할 수도 있음
 - 사실 요즘은 안 쓰는 사라진 흑마법 정도로 생각하자
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week9/img_24.png)
 
 - 컴파일러에 `요청`하는 것이기 때문에, 무조건 레지스터에 저장되는 것은 아님
 - 변수 i의 경우, 1000번이나 증가 후 대입하니까, 메모리에 저장하면 느릴 것이라 예상
 
 ### [저장 유형 지정자(storage-class specifier)]
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week9/img_25.png)
 
 - register 키워드는 저장 유형 지정자 중 하나
 - register 키워드를 붙이면 제약이 생김, 변수가 메모리에 올라가지 않고 레지스터에만 저장될 수 있기 때문
@@ -162,18 +162,18 @@
 - 컴파일러에서 제약을 검
 - 위에서 설명한 대로, 레지스터와 메모리가 다르다는 개념을 반영
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week9/img_26.png)
 
 1. 변수의 주소를 구할 수 없음
     - address of register variable requested
     - 컴파일 오류 메시지에서도 `요청`이라는 표현을 사용함
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week9/img_27.png)
 
 2. 레지스터 변수로 만든 배열 변수를 포인터에 대입 불가
     - 마찬가지로 주소 개념이 없음
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week9/img_28.png)
 
 3. 블록 범위에서만 사용 가능
     - 전역 변수에 사용 불가
@@ -182,15 +182,15 @@
 
 ### [register 키워드 왜 배움?]
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week9/img_29.png)
 
 - 최신 컴파일러는 무의미함
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week9/img_30.png)
 
 - 혹시 예전 플랫폼에서 사용할 수도 있어서...
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week9/img_31.png)
 
 - 요즘 컴파일러에서는 release 모드에서 알아서 최적화함
 
@@ -198,7 +198,7 @@
 
 ### [스택 메모리의 단점]
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week9/img_32.png)
 
 1. 수명
 - 함수가 반환되면 그 안의 지역변수는 날아감
@@ -209,7 +209,7 @@
 - 그 중간점은 없나?
   - 프로그래머가 알아서 메모리의 수명을 결정하고 싶어!!
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week9/img_33.png)
 
 2. 크기
 
@@ -221,12 +221,12 @@
 
 ### [힙 메모리의 장점]
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week9/img_34.png)
 
 - 범용적인 메모리라 자유로움
 - 프로그래머가 직접 제어 가능
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week9/img_35.png)
 
 - 프로그래머가 수명을 제어
 - 프로그래머가 크기를 제어
@@ -235,15 +235,15 @@
 
 1. 메모리 누수 
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week9/img_36.png)
 
 - 빌려온 메모리는 점유가 됨
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week9/img_37.png)
 
 - 메모리를 해제하지 않으면 메모리 누수 발생
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week9/img_38.png)
 
 - C#, Java의 new 키워드가 힙 메모리를 할당하는 것
 - 가비지 컬렉터는 효율성이 떨어질 수 있음
@@ -254,7 +254,7 @@
 
 2. 할당/헤제 속도
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week9/img_39.png)
 
 - 스택의 경우 오르락 내리락 순차적으로 할당/해제 하기 때문에 빠름
   - 오프셋 개념이라 O(1) 시간 복잡도
@@ -267,7 +267,7 @@
 
 ## 정적 메모리 vs 동적 메모리
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week9/img_40.png)
 
 - 정적 메모리: 컴파일 도중 결정
   - 할당/해제가 자동으로 관리 되는 메모리
@@ -276,7 +276,7 @@
 
 ## 언매니지드 언어의 동적 메모리 사용
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week9/img_41.png)
 
 - 프로그램이 동적 메모리(힙)을 사용할 때 총 3단계를 거침
 - 언매니지드 언어에서는 1,2,3단계를 프로그래머가 직접 해야함
@@ -284,24 +284,24 @@
 
 ### [1단계: 메모리 할당]
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week9/img_42.png)
 
 - 힙 관리자는 검색해서 메모리를 반환
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week9/img_43.png)
 
 - 검색 과정임, 메모리 파편화
 - 흰색 2칸은 사용중이지 않지만, 부족해서 사용할 수 없음
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week9/img_44.png)
 
 - 흰색 말고 색이 칠해진 메모리는 사용 중
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week9/img_45.png)
 
 - `연속된` 빈 공간을 찾으면 반환
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week9/img_46.png)
 
 - 시작 주소를 반환
 - 포인터 변수에 저장할 수 있음
@@ -310,36 +310,36 @@
 
 ### [2단계: 메모리 사용]
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week9/img_47.png)
 
 - 포인터 변수를 사용하듯이 사용하면 됨
 
 ### [3단계: 메모리 해제]
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week9/img_49.png)
 
 - 할당 받은 메모리의 첫 주소 반환
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week9/img_48.png)
 
 - 힙 관리자는 반환된 메모리를 다시 관리
   - 사용하지 않는 상태로 변경(흰색)
 
 ## C의 메모리 관련 함수
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week9/img_50.png)
 
 - memset, memcpy, memcmp는 동적 메모리, 정적 메모리 모두 사용 가능
 
 ### [malloc]
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week9/img_51.png)
 
 - 매개 변수로 입력받은 size 만큼의 메모리를 할당
 - 반환값은 할당한 메모리의 첫 주소
 - 포인터형은 void*로 반환
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week9/img_52.png)
 
 - 할당된 메모리에 들어있는 값은 쓰레기 값
 - 프로그래머가 알아서 초기화 잘해야함
@@ -347,18 +347,18 @@
 
 ### [free]
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week9/img_53.png)
 
 - 할당한 메모리를 반납하는 개념
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week9/img_54.png)
 
 - 반드시 malloc을 사용하는 순간, 바로 free를 적어주자!
 - 습관이 중요하다!!!
 
 ### [malloc 예제]
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week9/img_55.png)
 
 ```c++
 #define LENGTH (10)
@@ -377,8 +377,8 @@ for (i = 0; i < LENGTH; i++) {
 free(nums); // 반납
 ```
 
-![img_56.png](img_56.png)
-![img_57.png](img_57.png)
+![img_56.png](old_note/COMP2200/week9/img_56.png)
+![img_57.png](old_note/COMP2200/week9/img_57.png)
 
 ```c++
 #define NUM_LINES (5)
@@ -417,7 +417,7 @@ for (i = 0; i < NUM_LINES; i++) {
 - 일단 최대한 많이 입력받기 위해 넉넉하게 배열을 잡다보면, 메모리 낭비가 심함
 - 동적 배열을 활용하면, 입력받은 데이터만큼만 메모리를 할당하고 사용할 수 있음
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week9/img_58.png)
 
 - 위 예시도 총 줄 수가 고정이라는 한계가 있음
 
@@ -473,7 +473,7 @@ students = NULL;
 - 동적 배열의 크기를 늘릴 때 realloc을 사용해도 됨
 - malloc + memcpy + free를 한 번에 할 수 있음
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week9/img_61.png)
 
 ```c++
 FILE* file;
@@ -496,39 +496,39 @@ fclose(file);
 
 ## 제대로된 free()에 대한 설명
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week9/img_62.png)
 
 - 메모리 할당 함수(ex: malloc)을 통해서 얻은 `메모리만` 해제 가능
 - 그 외의 주소를 매개변수로 전달하면 정의되지 않은 결과가 발생할 수 있음
 
 ## 실수: 할당받아온 주소로 포인터 연산하기
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week9/img_63.png)
 
 - 할당받은 주소를 포인터 연산으로 옮기면, 다른 위치를 가리키게됨
 - 실수할 여지 발생
 - 다른 주소를 free의 매개변수로 넘기면 결과 정의되지 않음
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week9/img_64.png)
 
 - for문이 끝나고, nums는 0x110을 가리키게 됨
   - 16바이트 증가했음
   - 4바이트(int) 4개잖아~
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP2200/week9/img_65.png)
 
 - nums 포인터 변수를 그대로 free에 넘기면, 0x110을 해제하게 됨
 - 정의되지 않은 결과 발생
 
 ## 코딩 표준: 할당받은 포인터로 연산 금지
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week9/img_66.png)
 
 - nums는 할당 받은 주소를 그대로 가지고 있고 값을 복사해서 연산할 때 사용하자
 
 ## 실수: 해제한 메모리를 또 해제
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week9/img_67.png)
 
 - free를 2번 호출하는 실수
 - 결과가 정의되지 않음
@@ -538,67 +538,67 @@ fclose(file);
 
 ## 실수: 해제한 메모리를 또 사용
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week9/img_68.png)
 
 - 당연히 해제한 메모리를 또 사용해도 문제임
 - Memory Stomp 발생
 
 ## 코딩 표준: 해제 후 널 포인터 대입
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week9/img_69.png)
 
 - free에 NULL을 넘기면 아무 일도 일어나지 않게 설계되어 있음
 
 ## 가장 심각한 문제는 할당 받은 주소를 지역 변수로 저장한 경우
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week9/img_70.png)
 
 - 함수 블록을 벗어나면 지울 방법이 아에 없어짐
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week9/img_71.png)
 
 - 반드시 malloc()을 코드에 추가하자마자 free()를 추가하자
 
 ## 힙 관리자의 동작
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week9/img_72.png)
 
 - free()의 매개변수로 할당받은 주소만 넘겨준다.
 - 힙 관리자는 이 주소만으로 할당된 메모리의 크기를 알 수 있다
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week9/img_73.png)
 
 - 힙 관리자는 할당된 메모리의 크기를 알고 있음
 - malloc(), free()에서 할당된 메모리와 추가적으로 앞부분에 `어떤 데이터`를 채움
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week9/img_74.png)
 
 - malloc()에서 메모리 주소를 반환할 때 `어떤 데이터`의 크기 만큼 오프셋을 더한 값을 반환함
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week9/img_75.png)
 
 - free()를 호출하면, `어떤 데이터`의 크기 만큼 오프셋을 뺀 주소로 이동해서 메모리를 해제함
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week9/img_76.png)
 
 - 실제로 메모리의 예시
 - `어떤 데이터`로 할당된 메모리의 크기를 확인할 수 있음
 
 ## calloc()
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week9/img_77.png)
 
 - 메모리를 할당할 때, 자료형의 수(num), 자료형의 크기(size)를 따로 지정해서 할당할 수 있음
 - 모든 바이트를 0으로 초기화함
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week9/img_78.png)
 
 - calloc() 대신 malloc() + memset()을 사용할 수 있음
   - memest()을 사용하면 0대신 다른 값으로 초기화할 수 있음
 
 ## memset()
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week9/img_79.png)
 
 - dest 시작 주소로 부터, count 바이트 만큼, ch라는 값으로 초기화
   - 초기화할 때 1바이트 단위(char)로 초기화함
@@ -609,7 +609,7 @@ fclose(file);
   - dest가 NULL일 경우 (널 포인터 역참조)
 - C11 이후에는 memset_s()를 사용하면 됨
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week9/img_80.png)
 
 - memset()의 두번째 매개변수 ch에 1000의 값을 넣어도, unsigned char로 캐스팅되어 16진수에서 오른쪽 두자리만 값으로 들어감
   - 1000은 0x03E8이므로 0xE8만 들어감
@@ -617,13 +617,13 @@ fclose(file);
   - int 크기로 읽으면 4바이트를 읽고, 비트패턴은 16진수로 E8E8E8E8
     - int값은 오버플로우가 발생해 -387389208
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week9/img_81.png)
 
 - 실제 int로 초기화하고 싶으면 for문을 사용하면 됨
 
 ## realloc()
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week9/img_82.png)
 
 - 재할당의 의미는 이미 할당된 메모리의 크기를 바꾼다는 것
 - 크기를 바꾸면서 원래 할당된 메모리가 아닌 다른 메모리를 할당할 수 있음
@@ -632,47 +632,47 @@ fclose(file);
 
 ### [크기가 커지는 경우: 새로운 메모리 주소 반환]
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week9/img_83.png)
 
 - 지금 4바이트를 할당했음, 8바이트로 2배로 늘리고 싶어서 할당받고 싶음
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week9/img_84.png)
 
 - 4바이트 바로 뒤에서 연속된 메모리로 8바이트를 할당할 수 없음, 파란색으로 칠해진 메모리가 2바이트 이미 할당됨
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week9/img_85.png)
 
 - `연속된` 메모리를 할당하기 위해서 새로운 공간에 8바이트 할당
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week9/img_86.png)
 
 - 기존 데이터 복사
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week9/img_87.png)
 
 - 기존 메모리 해제
 - 새로운 메모리 시작 주소 반환
 
 ### [크기가 커지는 경우: 기존 메모리 주소 그대로 반환]
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week9/img_88.png)
 
 - 기존 메모리 바로 뒤에 연속된 메모리 공간이 충분하다면, 기존 주소를 반환할 수 있음
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week9/img_89.png)
 
 - 기존 주소 반환
 
 ### [크기가 작아아지는 경우]
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week9/img_90.png)
 
 - 결론적으로 크기가 커지는 경우, 작아지는 경우 기존 주소를 반환할 수도 있고, 아닐 수도 있다는 것
 - 따라서 새로 주소를 반환한다 생각하고 코딩하는게 좋음
 
 ### [realloc() 반환값]
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week9/img_91.png)
 
 - realloc()이 실패할 경우 NULL을 반환함
   - 메모리가 부족하면 실패

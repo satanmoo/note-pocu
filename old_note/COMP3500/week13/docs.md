@@ -41,38 +41,38 @@
 
 ### 컷
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week13/images/img_6.png)
 
 - 그래프를 disjoint인 두 하위 집합으로 나누는 행위
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week13/images/img_7.png)
 
 - 컷 세트를 모두 제거하면 두 그래프가 둘로 분리됨
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week13/images/img_8.png)
 
 - 컷 세트에서 가중치가 가장 작은 변을 선택하면 MST에서 선택과 동일함
 - 최소 비용의 변으로 두 그래프 연결 가능
 
 ### MST 컷 세트에서 가중치가 가장 작은 변 선택하는 것이 최적인 이유
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week13/images/img_9.png)
 
 - 직관적으로 당연
 - 나머지가 동일할 때 컷 세트에서 가장 작은 변을 고르면 됨
 
 ### MST 알고리듬의 기본 원리
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week13/images/img_10.png)
 
 - 그리디
     - 당장 최적을 선택하는데, 글로벌하게 옵티멀함
 
 ## 크러스컬 알고리듬
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week13/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week13/images/img_12.png)
 
 - 각 노드마다 각 노드만 포함하는 트리를 만듦
     - N개 노드면 N개 트리로 시작
@@ -82,90 +82,90 @@
 
 ### 크러스컬 알고리듬 시뮬레이션
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week13/images/img_13.png)
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week13/images/img_14.png)
 
 - 각 노드마다 트리를 만들었다
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week13/images/img_15.png)
 
 - 가중치의 오름차순으로 변 정렬
     - 코드 작성할 때는 각 변이 어떤 트리2개를 연결하는지 따로 저장해야함
     - 데이터 클래스 정의하면 됨
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week13/images/img_16.png)
 
 - 최소 가중치의 변 찾음
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week13/images/img_17.png)
 
 - 두 트리를 연결할 수 있음
 - MST의 일부로 연결
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week13/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week13/images/img_19.png)
 
 - 반복
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week13/images/img_20.png)
 
 - 이미 하나의 트리에 포함됨
     - 두 트리를 연결하는 변이 아님
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week13/images/img_21.png)
 
 - 무시
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week13/images/img_22.png)
 
-![img_23.png](images/img_23.png)
-
-- 반복
-
-![img_24.png](images/img_24.png)
-
-![img_25.png](images/img_25.png)
+![img_23.png](old_note/COMP3500/week13/images/img_23.png)
 
 - 반복
 
-![img_26.png](images/img_26.png)
+![img_24.png](old_note/COMP3500/week13/images/img_24.png)
+
+![img_25.png](old_note/COMP3500/week13/images/img_25.png)
+
+- 반복
+
+![img_26.png](old_note/COMP3500/week13/images/img_26.png)
 
 - 9는 무시
 - 10 무시
 - 11 무시
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week13/images/img_27.png)
 
 - 13은 MST에 포함
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week13/images/img_28.png)
 
 - 최종 MST
 - 모든 노드를 연결
 - 변의 개수 N - 1개
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week13/images/img_29.png)
 
 - 참고로 MST도 여러개 가능
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week13/images/img_30.png)
 
 - 우왕 비용 줄었뗘
 
 ## disjoint set
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week13/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week13/images/img_32.png)
 
 - 서로소 집합
     - union-find 라고 말하기도 함
 
 ### disjoint set의 연산
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week13/images/img_33.png)
 
 - Find() 결과 집합이 리턴
     - 집합을 빠르게 비교하기 위해서 각 집합을 대표하는 해시값을 사용하기도 함
@@ -174,7 +174,7 @@
 
 - Union에서 인자는 element지만, element를 포함하는 두 트리를 합함
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week13/images/img_34.png)
 
 - 크러스컬 알고리듬에 disjoint set 적용하기
 - disjoint set 자료구조만 알면 쉬움
@@ -185,7 +185,7 @@
 
 ### 크러스컬 알고리듬의 시간 복잡도
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week13/images/img_35.png)
 
 - disjoint-set 연산은 O(ElogE) 보다 작음
 - 궁금하면 찾아보기...
@@ -193,7 +193,7 @@
 
 ## 프림 알고리듬
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week13/images/img_36.png)
 
 - 나중에 구현, 증명
 
@@ -201,7 +201,7 @@
 
 - 위 그래프의 올바른 최소 신장 트리는 무엇인가요? 아래에서 e(u, v)는 노드 u와 v를 연결하는 변입니다.
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week13/images/img_37.png)
 
 - 트리 [1,2] 연결
 - MST:
@@ -376,42 +376,42 @@ public final class Kruskal {
 
 ## 외판원 문제(TSP)
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week13/images/img_38.png)
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week13/images/img_39.png)
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week13/images/img_40.png)
 
 - 동선에서 같은 동네를 또 방문해서 비용이 많이 듬
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week13/images/img_41.png)
 
 - 이동 거리를 최소화!
 - 방문 순서
 - 방문한 노드는 최대한 재방문 하지 않는게 좋음
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week13/images/img_42.png)
 
 ### TSP는 접근법이 다름
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week13/images/img_43.png)
 
 - 시간복잡도가 너무 높은데?
 - 최적의 답을 빠른 시간에 구하는 문제가 없음
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week13/images/img_44.png)
 
 - NP-hard
 
 ## TSP 근사 알고리듬
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week13/images/img_45.png)
 
 - 다양한 근사 알고리듬이 존재함
     - 최근에도 논문이 계속 나옴
 - 수업에서는 "실제 최소 비용보다 최대 k배까지 허용하는 알고리듬"을 살펴본다
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week13/images/img_46.png)
 
 - TSP 다룰 때 보통 무방향 그래프
 - 완전 그래프!
@@ -422,38 +422,38 @@ public final class Kruskal {
 
 - 위의 가정이 가장 알고리듬 구현하기 쉬운 가정
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week13/images/img_47.png)
 
 - 모든 도시를 한 번씩 방문하는 경로를 찾는게 목적임
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week13/images/img_48.png)
 
 - 모든 도시를 한 번씩 방문하는 경로를 "해밀턴 경로"라고 정의
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week13/images/img_49.png)
 
 - 해밀턴 경로 중에 원래 노드로 돌아오면 "해밀턴 순환"
 
 - 참고로 어떤 그래프에서 해밀턴 경로가 있냐/없냐를 판단하는 문제도 NPC
     - 이론적으로 알고리듬을 배울 때 NPC 문제는 모두 알아놓으면 증명이 편해서 배움
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week13/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week13/images/img_51.png)
 
 - 요약하면 최소 비용 해밀턴 순환을 찾기
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week13/images/img_52.png)
 
 - 변의 가중치는 "삼각 부등식" 만족!
 
 ### 삼각 부등식
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week13/images/img_53.png)
 
 - 유클리드 기하학에서 반드시 성립
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week13/images/img_54.png)
 
 - 여기서 거리를 "유클리드 거리"라고 부름
 - 이렇게 삼각 부등식을 만족하는 상황을 "유클리드 TSP"라고 부름
@@ -464,17 +464,17 @@ public final class Kruskal {
 
 ## 2-근사 알고리듬
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week13/images/img_55.png)
 
 - k == 2
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week13/images/img_56.png)
 
 ### 시뮬레이션 해보자
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week13/images/img_57.png)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week13/images/img_58.png)
 
 - MST를 만들면 뭐가 성립함?
     - TSP 경로는 해밀턴 순환을 찾는 것이 목적
@@ -503,7 +503,7 @@ public final class Kruskal {
 - 비용의 최대가 MST의 2배
     - 따라서 비용은 MST의 2배 이하
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week13/images/img_61.png)
 
 - 최적화 해서 이미 방문한 노드를 건너뛰면
     - 스킵해도 되는 이유:
@@ -514,67 +514,67 @@ public final class Kruskal {
 
 ### MST를 한 바퀴 도는 동작에 대한 이해
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week13/images/img_62.png)
 
 - 엥 이게 된다고?
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week13/images/img_63.png)
 
 - 중구에서 시작
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week13/images/img_64.png)
 
 - 크러스컬 알고리듬으로 MST 만들기
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week13/images/img_65.png)
 
 - 보기 좋게 노드에 넘버링
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week13/images/img_66.png)
 
 - DFS 전위 순회
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week13/images/img_67.png)
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week13/images/img_68.png)
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week13/images/img_69.png)
 
 - 돌아올 때 DFS 결과에 적어줘야함
     - 모든 단계를 적어줘야함
     - Double Walk Tree
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week13/images/img_70.png)
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week13/images/img_71.png)
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week13/images/img_72.png)
 
 - 방문하는 노드를 모두 기록했음
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week13/images/img_73.png)
 
 - 총 비용 == MST의 2배
 - 해밀턴 순환의 최대 비용
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week13/images/img_74.png)
 
 - DFS의 결과(저장된 노드) + 원본 그래프(완전 그래프)
 - 처음으로 방문하는 노드로 향하는 변은 해밀턴 순환에 추가
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week13/images/img_75.png)
 
 - 처음보는 노드라 추가
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week13/images/img_76.png)
 
 - 마찬가지로 처음 보는 노드
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week13/images/img_77.png)
 
 - 이미 방문했기에 무시
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week13/images/img_78.png)
 
 - from 2 to 4 변은 MST에 없던 변임
     - 근데 이게 왜 해밀턴 경로에 속하나요?:
@@ -582,29 +582,29 @@ public final class Kruskal {
     - MST에 없던 변이라면, 실제 그래프에서도 변이 없을 수 있잖아요?
         - 완전 그래프를 가정했잖아요!
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week13/images/img_79.png)
 
 - 처음 보는 노드 3을 향하는 변 추가
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week13/images/img_80.png)
 
 - 1은 이미 방문했기에 무시
     - 의미 없지만 원래 논리상 짚고 넘어가죠
 - 그리고 원래의 목적지 1로 돌아와야하기 때문에 1로 돌아오는 변 추가
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week13/images/img_81.png)
 
 - 해밀턴 순환을 구했음
     - MST보다 작은 값
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week13/images/img_82.png)
 
 - 진짜 최선의 경로는 찾지 못함
     - 근사 알고리듬이잖아요
 
 ### 2-근사 TSP 알고리듬의 시간 복잡도
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week13/images/img_83.png)
 
 - DFS로 뽑은 노드는 최대 2N개
     - 따라서 중복 없이 방문하는 시간복잡도
@@ -613,41 +613,41 @@ public final class Kruskal {
 
 ### TSP 알고리듬의 실제 사용례
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week13/images/img_84.png)
 
 ## TSP 알고리듬의 변형
 
 ### 변형1: 완전 그래프가 아닌 경우
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week13/images/img_85.png)
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week13/images/img_86.png)
 
 - 완전 그래프로 바꾸면 됨
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week13/images/img_87.png)
 
 - 새로 추가되는 변들의 가중치를 매우 높게 설정
     - MST를 찾는 알고리듬에서 알아서 걸러짐
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week13/images/img_88.png)
 
 - TSP 알고리듬은 여러 가지라서 검색해서
 
 ### 변형2: 비대칭 TSP
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week13/images/img_89.png)
 
 - 방향 그래프임
     - 우리가 아는 알고리듬은 완전 그래프 + 무방향에서만 먹히는데?
 
 - 비대칭 TSP 전용 알고리듬도 있으니 알아서 찾아보기
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week13/images/img_90.png)
 
 - 대칭 TSP로 변환!
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week13/images/img_91.png)
 
 - 와
 - 고스트 노드 만들고

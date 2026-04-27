@@ -23,76 +23,76 @@
 
 ![img_5.png](old_note/COMP2500/week12/images/img_5.png)
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP2500/week12/images/img_6.png)
 
 - 생성자 대신 정적 팩토리 매서드를 사용하면 장점은 null 반환 가능
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP2500/week12/images/img_7.png)
 
 ### 확장 1
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP2500/week12/images/img_8.png)
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP2500/week12/images/img_9.png)
 
 - 매개변수로 처리하기보다 다형성을 이용하는게 OO 적인 사고방식
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP2500/week12/images/img_10.png)
 
 - static 매서드는 다형적으로 구현할 수 없음
     - 클래스 마다 지정되는 개념
     - 사실 전역함수를 클래스 내부에 감싸놓은게 전부
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP2500/week12/images/img_11.png)
 
 - static 매서드 `createOrNull()` 이 Cup 클래스에서 빠짐
 - Menu 추상 클래스를 새로 만듬
     - 이를 상속해서 추상 매서드 `createCupOrNull()` 을 각 나라 클래스에 맞게 오버라이딩
 - Cup 생성자가 default 접근 제어자로 같은 패키지에 있는 Menu 추상 클래스의 자식 클래스에서만 new 로 사용하도록
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP2500/week12/images/img_12.png)
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP2500/week12/images/img_13.png)
 
 - 참고로 Menu를 인터페이스가 아닌 추상 클래스로 만든 이유는, 나중에 상태를 나타내는 멤버 변수가 추가될 가능성이 높기 때문
 - 가상 생성자:
     - 추상(가상)인데 각 자식 클래스에서 이를 오버라이딩해서 각 자식 클래스를 생성하는 생성자를 구현
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP2500/week12/images/img_14.png)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP2500/week12/images/img_15.png)
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP2500/week12/images/img_16.png)
 
 ### 확장 2
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP2500/week12/images/img_17.png)
 
 - Cup 클래스도 일반화
 - 한국에서는 일회용 컵 쓰고, 미국은 종이컵 쓰고...
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP2500/week12/images/img_18.png)
 
 - Cup 클래스는 이제 추상 클래스로
     - 생성자도 자식 클래스에서 호출하도록 protected 생성자
 - 그리고 자식 클래스 PaperCup, GlassCup 의 생성자는 같은 패키지의 AmericanMenu, KoreanMenu 클래스에서 사용하도록 default 생성자
 - PaperCup 클래스는 멤버 변수로 뚜껑(Lid 클래스 개체)를 가짐
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP2500/week12/images/img_19.png)
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP2500/week12/images/img_20.png)
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP2500/week12/images/img_21.png)
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP2500/week12/images/img_22.png)
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP2500/week12/images/img_23.png)
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP2500/week12/images/img_24.png)
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP2500/week12/images/img_25.png)
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP2500/week12/images/img_26.png)
 
 - 생성 오류시 null 반환
 - 가상 생성자 패턴
@@ -100,102 +100,102 @@
 
 ## 빌더 패턴
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP2500/week12/images/img_27.png)
 
 - 벽돌을 쌓아서 완성하는 느낌
 
 ### 다형성 없는 빌더 패턴
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP2500/week12/images/img_28.png)
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP2500/week12/images/img_29.png)
 
 - 문자열 더하기 성능 문제
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP2500/week12/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP2500/week12/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP2500/week12/images/img_32.png)
 
 - 오버로딩 때문에 편함
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP2500/week12/images/img_33.png)
 
 - 내부적으로 빌더에서 충분히 미리 용량 잡아서 성능에 유리
     - OO에서 이 내부 공개 안 하는게 추상화, 캡슐화
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP2500/week12/images/img_34.png)
 
 ### 플루언트 인터페이스
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP2500/week12/images/img_35.png)
 
 - appendLine 매서드가 있으면 좋을 것 같은데..
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP2500/week12/images/img_36.png)
 
 - 요즘 새로 생긴 패턴
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP2500/week12/images/img_37.png)
 
 - 세미콜론 안 찍고 .으로 계속 호출
 - 한 줄에 처리하는 것을 명확하게 보여줄 수 있음
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP2500/week12/images/img_38.png)
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP2500/week12/images/img_39.png)
 
 - 자기 자신을 반환하기 때문에 플루언트 인터페이스 가능
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP2500/week12/images/img_40.png)
 
 - this 반환하는거 보셈
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP2500/week12/images/img_41.png)
 
 - 자기 자신을 반환하는 개념이 낯설수도 있지만...
 - 이제 플루언트 인터페이스, 매서드 체이닝이 굉장히 널리 알려져서 많이 사용함
 
 ### 잘못 사용하는 빌더 패턴
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP2500/week12/images/img_42.png)
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP2500/week12/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP2500/week12/images/img_44.png)
 
 - robert 나이가 1인데?
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP2500/week12/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP2500/week12/images/img_46.png)
 
 - 이건 컴파일러가 못잡죠
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP2500/week12/images/img_47.png)
 
 - 그래서 매서드를 빌더 패턴으로 각각 따로 만들면?
 - 매서드 명으로 실수할 여지를 줄임
 - 근데 이건 잘못된 해결법임
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP2500/week12/images/img_48.png)
 
 - StartYear 초기화는 없누
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP2500/week12/images/img_49.png)
 
 - Int 초기값인 0으로 설정
 - 개체 생성 시 개체의 상태가 유효해야 한다는 캡슐화에 문제가 생김
     - 생성자를 사용
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP2500/week12/images/img_50.png)
 
 - StringBuilder 은 올바르게 빌더 패턴을 구현함
 
 ### 빌더 패턴 실수 막기
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP2500/week12/images/img_51.png)
 
 - 매개변수를 구조체처럼 받기
     - 빼먹거나 순서 바뀌는 실수를 그나마 줄일 수 있음
@@ -204,32 +204,32 @@
       - 엥 Employee 클래스 멤버에 final 붙이면 안 되나요? 이건 이 클래스의 멤버 변수의 성격에 따라 final을 붙여야함 만약에 멤버 변수가 변할 수 있으면?
       - CreateEmployeeParams 클래스의 경우 멤버변수 값을 전달하는 용도이기 때문에 모두 final로 해도 Employee 클래스의 성격에 영향을 주지 않죠
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP2500/week12/images/img_52.png)
 
 - 완벽한 방법은 아님
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP2500/week12/images/img_53.png)
 
 - named parameter
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP2500/week12/images/img_54.png)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP2500/week12/images/img_55.png)
 
 - 코틀린에도 이거 활용하면 좋죠
     - 최근 언어는 거의 있음
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP2500/week12/images/img_56.png)
 
 - 디자인 패턴의 많은 것은 언어에서 자체 지원이 있다면 사용할 필요 없다는 명제를 보충하는 사례
 
 ### 다형적 빌더 패턴
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP2500/week12/images/img_57.png)
 
 - 다형적으로 HTML, markdown 포맷을 사용할 예정
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP2500/week12/images/img_58.png)
 
 ![img_59.png](old_note/COMP2500/week12/images/img_59.png)
 
@@ -238,21 +238,21 @@
 - TableBuilder 추상 클래스
     - 말 그대로 테이블을 만드는 추상 매서드를 가지고 있음
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP2500/week12/images/img_61.png)
 
 - builder 다형적으로 `writeTo()` 매소드에 인자로 넘김
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP2500/week12/images/img_62.png)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP2500/week12/images/img_63.png)
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP2500/week12/images/img_64.png)
 
 - `addHeadingRow()` 매소드 결과 첫줄의 토큰을 읽어서 `<th>` 나 markdown 헤더로 변경
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP2500/week12/images/img_65.png)
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP2500/week12/images/img_66.png)
 
 - 각각 builder 변수의 타입이 구체적인 클래스로 지정
 
@@ -260,37 +260,37 @@
 
 - 순서를 보여줌
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP2500/week12/images/img_67.png)
 
 - 동작을 시간의 흐름에 따라 보여줌
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP2500/week12/images/img_68.png)
 
 - 참여자 == 개체
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP2500/week12/images/img_69.png)
 
 - 개체의 삶을 보여주는 수명선
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP2500/week12/images/img_70.png)
 
 - 활성화는 함수 호출 후 실행하는 기간이라고 생각하면 편함
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP2500/week12/images/img_71.png)
 
 - 함수 호출로 이해하는게 편함
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP2500/week12/images/img_72.png)
 
 - new 로 호출할 때 사용
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP2500/week12/images/img_73.png)
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP2500/week12/images/img_74.png)
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP2500/week12/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP2500/week12/images/img_76.png)
 
 - 두 시퀀스 다이어그램을 비교하면
     - 다형성을 확인할 수 있음
@@ -300,19 +300,19 @@
 - GOF 책에서 다른 말로 어댑터 패턴
     - 업계에서는 래퍼 패턴이라고 많이 사용함
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP2500/week12/images/img_77.png)
 
 - 클래스로 감싸는 식으로 구현
 - 클래스 코드 자체를 수정하지 못하지만, 래퍼 클래스로 감싸서 커스터마이징 할 수 있음
     - 보통 남의 라이브러리 사용할 때
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP2500/week12/images/img_78.png)
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP2500/week12/images/img_79.png)
 
 - 어댑터를 씌운다고 생각해도 됨
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP2500/week12/images/img_80.png)
 
 - 이유:
     - 외부 라이브러리 사용할 때 이를 커스터마이징 하고 싶을 때
@@ -327,48 +327,48 @@
 
 ### 래퍼 패턴 예시: 그래픽 API
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP2500/week12/images/img_81.png)
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP2500/week12/images/img_82.png)
 
 - 매서드 시그니처가 각각 다르다
     - 함수 이름
     - 매개변수 목록
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP2500/week12/images/img_83.png)
 
 - 값의 유효한 범위도 자료형에 따라 다름
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP2500/week12/images/img_84.png)
 
 - 일단 원래 코드에서 OpenGL 을 사용했다고 가정해보자
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP2500/week12/images/img_85.png)
 
 - DirectX로 바꾸기로 결정하면 고칠게 많음
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP2500/week12/images/img_86.png)
 
 - 래퍼 패턴을 사용해보자
 - clear 라는 매서드를 만들고 이 매서드 시그니처만 사용하게
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP2500/week12/images/img_87.png)
 
 - 래퍼 클래스인 Graphics 클래스의 내부에서 OpenGL 개체를 사용
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP2500/week12/images/img_88.png)
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP2500/week12/images/img_89.png)
 
 - 딱 이 Graphics 클래스 내부 코드 구현만 바꾸면 됨
 - 어댑터만 수정한다고 생각해도 됨
 - 클라이언트 코드를 바꾸지 않아도 되는 것이 핵심!!!
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP2500/week12/images/img_90.png)
 
 ### 래퍼 패턴: DTO
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP2500/week12/images/img_91.png)
 
 ![img_92.png](old_note/COMP2500/week12/images/img_92.png)
 

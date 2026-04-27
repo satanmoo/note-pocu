@@ -1,115 +1,12 @@
 # Week2
 
-
-### 2의 보수의 장점
-
-![img_61.png](images/img_61.png)
-
-- 음수가 하나 더 많이 표현
-
-![img_62.png](images/img_62.png)
-
-- 0도 하나
-- 음수 처리(뺄셈)할 때 +1 할 필요없음
-
-![img_63.png](images/img_63.png)
-
-![img_64.png](images/img_64.png)
-
-- 32비트에서 2의 보수 시스템 사용한 예
-
-## 부호 있는 정수의 덧셈
-
-![img_65.png](images/img_65.png)
-
-- 8비트 범위를 벗어나도 올바른 덧셈 결과가 나옴
-    - 결국 다시 10진수로 변환해서 확인하는 과정이 필요한가?
-    - 8비트까지 결과로 10진수 변환 후 계산하면 됨
-
-![img_66.png](images/img_66.png)
-
-- 2의보수 검증할 때 비트 뒤집고 + 1해서 절대값 구하면 됨
-
-![img_67.png](images/img_67.png)
-
-### 범위를 벗어나는 경우
-
-![img_68.png](images/img_68.png)
-
-- 양수끼리 더했는데 음수가 나옴
-
-![img_69.png](images/img_69.png)
-
-- 부호 비트가 변해버림
-    - 오버플로우
-
-- 부호를 허용하는 데이터 타입이라서 오버플로우가 발생함
-    - 즉 가장 왼쪽의 비트를 부호 비트로 정했기 때문에 오버플로우가 발생
-    - 10진수로 17 + 124가 8비트 2의 보수 시스템의 범위를 벗어남을 알기 때문에 오버플로우임을 확인할 수 있음
-    - 8비트까지 결과로 10진수 값으로 다시 변환해서 계산해야함
-
-- 중요한 시사점:
-    - 데이터 타입에 따라서 오버플로우가 발생함
-    - 만약 이게 부호가 없는 정수형이었다면 오버플로우라고 부를 수 없음
-    - 즉 부호를 허용하는지, n비트인지, 2의 보수인지 1의 보수인지 시스템에 따라서 10진수 값을 계산하고 시스템에 해당하는 범위인지 확인해야함
-
-![img_70.png](images/img_70.png)
-
-- 최대값(127)을 넘어버리면 최소값(-128)부터 다시 시작하게 됨
-    - 도돌이표 개념
-
-![img_92.png](old_note/COMP1000/week2/images/img_92.png)
-
-- 10진수 값을 확인해야 됨
-- 비트패턴 만으로 확인할 수 없음
-
-![img_71.png](images/img_71.png)
-
-![img_72.png](images/img_72.png)
-
-- 시계 이미지로 기억
-
-## 부호있는 정수의 뺄셈
-
-![img_73.png](images/img_73.png)
-
-- 모두 더하기로 연산 가능
-
-### 언더플로우 발생
-
-![img_74.png](images/img_74.png)
-
-- 부호 없는 정수에서 2의 보수로 음수를 나타내는게 직관적으로 낯설지만..
-- 부호 없는 정수에서 빼기를 구현하기 위해서는 '2의 보수'를 활용하면 맨 앞 비트가 1인 음수로 바꾸고 더해야함
-
-- '부호 없는 정수'의 의미는 뺄셈의 '결과'를 '부호 없는 정수'로 해석한다는 말임
-- '계산 중간'에는 2의 보수를 사용해서 나타낼 수 있음
-
-![img_75.png](images/img_75.png)
-
-- 2진법 덧셈 결과(비트패턴)을 부호 없는 정수 or 부호 있는 정수로 해석
-- 둘다 올바른 값 표현이 아님
-    - '1110 1010'을 부호 없는 정수로 표현하면 양수인데?
-        - 원래는 '-22' 결과가 나와야하지만, '부호 없는 정수'에서 음수가 표현이 되나?
-    - '0111 1110'을 맨 앞의 1은 자르고 부호 있는 정수로 표현하면 양수인데?
-        - 원래는 '-130' 결과가 나와야하지만, '부호 있는 정수 + 8비트'라면 '-128'이 최소값인데?
-
-![img_76.png](images/img_76.png)
-
-- 부호 없는 8비트 정수에서 0이 최소값
-    - 0보다 작은 값을 구해서 언더플로우 발생
-- 부호 있는 8비트 정수에서 -127이 최소값
-    - -130은 -127보다 작기 때문에 언더플로우 발생
-
-- 결국 어떤 시스템에서 값의 범위(10진수 표현)를 이미 알고 있어야지 언더플로우 판단할 수 있음
-
 ## 언더플로우
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP1000/week2/images/img_77.png)
 
 - 정수가 표현할 수 있는 최솟값보다 더 작은 값이 나올 때
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP1000/week2/images/img_78.png)
 
 - 그림으로 이해하면 시계 반대 방향으로 해석하면 되죠
 - 부호 있는 정수:
@@ -124,7 +21,7 @@
 - 일반적인 개념은 최소와 최대를 넘어가는 개념
     - 부호 있는 정수에서는 특별하게 최소 최대가 부호와 함께 동작함
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP1000/week2/images/img_79.png)
 
 - 비트패턴을 표한하다가 생긴 현상
 
@@ -146,49 +43,49 @@
 
 ## 프로그래밍 언어에서 일반적인 정수형
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP1000/week2/images/img_80.png)
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP1000/week2/images/img_81.png)
 
 - 32비트, 64비트 정수형을 가장 많이 사용합니다
 - 'Int'는 보통 32 bit
 
 ## 2진수의 곱셈
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP1000/week2/images/img_82.png)
 
 - 2진수의 가장 쉬운 곱셈은 2의 거듭제곱
 - 자리수만 늘어남
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP1000/week2/images/img_83.png)
 
 - 'bit shift' 연산과 동일함
     - left shift
 
 ### 보편적인 2진수의 곱셈
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP1000/week2/images/img_84.png)
 
 - 10진수랑 똑같음
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP1000/week2/images/img_85.png)
 
 - 그냥 똑같음
 
 ## 2진수의 나눗셈
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP1000/week2/images/img_86.png)
 
 - right shift
 - 10진수랑 동일
 
 ## BCD(binary-coded decimal)
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP1000/week2/images/img_87.png)
 
 - 바이너리로 인코딩한 십진수
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP1000/week2/images/img_88.png)
 
 - 4비트로 0~9까지 사용하고 나머지 6개 비트는 버림
     - 2^4 해서 16개 중 10개 사용
@@ -198,13 +95,13 @@
 
 ### BCD 음수
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP1000/week2/images/img_89.png)
 
 - 1바이트에 숫자 2개 배정
 - 3자리 숫자면 1바이트에 숫자 2개 배정하고 나머지 1바이트에 숫자 1개와 부호 배정
 - 위 예에서는 '1100'이 양수, '1101'이 음수
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP1000/week2/images/img_90.png)
 
 - 딱 봐도 안 쓰는 비트가 많아서 비효율적
 - 연산자 구현이 어려움
@@ -213,7 +110,7 @@
 
 ## 정수의 정확도
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP1000/week2/images/img_91.png)
 
 - 정수는 100% 정확도
 - 오차가 없음!

@@ -46,9 +46,9 @@
 
 ## Console.WriteLien();
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP1500/week2/img_6.png)
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP1500/week2/img_7.png)
 
 - 명령 프롬프트에 한 줄을 쓴다.
 
@@ -58,14 +58,14 @@
 
 ### Using 지시어(directive)
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP1500/week2/img_8.png)
 
 - 지시문이 없으면 빌드 실패
     - 컴파일 에러
 
 ### 라이브러리(Library)
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP1500/week2/img_9.png)
 
 - 함수를 하나로 모아 놓은 집합
     - C#: namespace
@@ -75,7 +75,7 @@
 
 ## 컴파일(Compile)
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP1500/week2/img_10.png)
 
 - 컴파일 할 때, 오류(error) 또는 경고(warning)이 발생할 수 있다.
     - 컴파일 언어의 장점을 생각해야 합니다. 즉 프로그래머의 실수를 예방한다.

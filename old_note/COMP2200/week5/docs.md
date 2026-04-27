@@ -40,7 +40,7 @@
 
 ![img_4.png](old_note/COMP2200/week5/img_4.png)
 ![img_5.png](old_note/COMP2200/week5/img_5.png)
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week5/img_6.png)
 
 - while TRUE로 계속 반복
 - c = getchar()로 한 글자씩 읽기
@@ -51,44 +51,44 @@
 - a 엔터 입력
 - a 출력
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week5/img_7.png)
 
 - getchar() 실행 후 대기 중
 - 버퍼에 아무 문자가 없기 때문에 대기 중
 - 버퍼로 부터 입력을 받아야 다음으로 넘어감
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week5/img_8.png)
 
 - 키보드로 'a'를 입력 후 엔터키를 누름
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week5/img_9.png)
 
 - 버퍼에 'a' 써짐
 - 버퍼로부터 한 글자('a')를 읽어옴
 - getchar() 함수 종료, 반환해서 c에 대입
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week5/img_10.png)
 
 - putchar(c)로 'a'를 출력
 - 콘솔에서 아직 줄이 안 바뀜
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week5/img_11.png)
 
 - 버퍼에 아직 엔터('\n')가 남아있음
 - getchar()을 다시 실행
 - getchar()은 버퍼로 부터 한 글자('\n')를 읽어옴
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week5/img_12.png)
 
 - putchar(c)로 '\n'을 출력
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week5/img_13.png)
 
 - 버퍼에 문자가 없으면 키보드에서 입력 받기를 기다린다.
 
 ### getchar() 반쪽자리 설명
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week5/img_14.png)
 
 - 반환형은 int임
 
@@ -96,29 +96,29 @@
 
 ### 멈추지 않는 프로그램
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week5/img_15.png)
 
 - 이 코드는 프로그램이 끝나질 않음..
 
 ### 언제 읽는 것을 멈출까?
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week5/img_16.png)
 
 - 예를들어 특별한 키 'x'를 누르면 프로그램이 종료?
 - x는 못쓰는데...? 불편하죠
 - [후기 강조 포인트]
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week5/img_17.png)
 
 - 어디에서도 사용 가능한 "입력 끝"을 나타내는 무언가
 - getchar()의 반환값이 int와 연관됨
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week5/img_18.png)
 
 - 실패하면 EOF 반환
 - EOF는 -1
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week5/img_19.png)
 
 - C표준에 EOF는 음수
 - 그래서 getchar()은 int 반환
@@ -126,7 +126,7 @@
 
 ### 완전한 getchar() 설명
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week5/img_20.png)
 
 - 성공 시 읽은 문자의 아스키 코드 반환
 - 실패 시 EOF 반환
@@ -136,50 +136,50 @@
 
 ### 한 글자씩 읽는 알고리즘: 시도 2
 
-![img_21.png](img_21.png)
-![img_22.png](img_22.png)
+![img_21.png](old_note/COMP2200/week5/img_21.png)
+![img_22.png](old_note/COMP2200/week5/img_22.png)
 
 - 우선 반복문 밖에서 하나 읽고
 - 반복문 조건에서 검증 후
     - 출력하고
     - 다시 입력 받고
 
-![img_23.png](img_23.png)
-![img_24.png](img_24.png)
+![img_23.png](old_note/COMP2200/week5/img_23.png)
+![img_24.png](old_note/COMP2200/week5/img_24.png)
 
 - EOF는 키보드로 어떻게 입력???
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week5/img_25.png)
 
 - 유닉스: ctrl + d
 - 윈도우: ctrl + z
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week5/img_26.png)
 
 ### 이거 눈에 밟히면..?
 
-![img_27.png](img_27.png)
-![img_28.png](img_28.png)
+![img_27.png](old_note/COMP2200/week5/img_27.png)
+![img_28.png](old_note/COMP2200/week5/img_28.png)
 
 - 띠용
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week5/img_29.png)
 
 - 괄호 안 부터 실행
 
-![img_30.png](img_30.png)
-![img_31.png](img_31.png)
+![img_30.png](old_note/COMP2200/week5/img_30.png)
+![img_31.png](old_note/COMP2200/week5/img_31.png)
 
 - getchr()실행 후
 - c에 대입
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week5/img_32.png)
 
 - 이제 c에 든 값과 EOF와 비교
 
 ### c = getchar()을 괄호로 안 감싸도 됨?
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week5/img_33.png)
 
 - 괄호로 감싸지 않으면 문제가 됨.. 연산자 우선순위 때문
 - 이러면 c가 0이나 1이라서 1만 주구장창 출력하게 됨
@@ -187,11 +187,11 @@
 
 ## 한 글자씩 읽는 방법이 유용한 경우
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week5/img_34.png)
 
 - 들어오는 족족 처리하니까 메모리 절약 가능
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week5/img_35.png)
 
 - O(N) for문 한 번 돌면서 각각 처리할 때 적합함(특히 문자열)
 - 하지만 문제점: char말고 다른 데이터형으로 쓰기는 어려움
@@ -210,7 +210,7 @@
 
 ### 한 줄씩 읽는 알고리듬
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week5/img_36.png)
 
 - 한줄을 읽었는데, EOF 같은게 들어왔다. 어떻게 될까요?
     - 종료됩니다.
@@ -220,12 +220,12 @@
 
 ### 한 줄을 읽어서 어디에 저장하죠?
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week5/img_37.png)
 
 - 함수 내부에서 메모리를 할당해서 반환하기? 거의 없음
 - C언어의 기본 규칙은 외부에서 함수로 어떤 배열을 넘기고, 그 배열에 무언가를 저장하는 방식
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week5/img_38.png)
 
 - 새로운 문자열을 반환하는게 아님
 - 만약에 새로운 문자열을 메모리 할당해서 반환했다고 해보자.
@@ -233,7 +233,7 @@
     - 안전하지 않은 코드죠?
 - 메모리 누수가 발생할 위험이 있죠.
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week5/img_39.png)
 
 - c는 함수에서 메모리 새로 할당하는 경우 없다고 보면 됨.
 - 프로그래머가 미리 배열(스택 메모리)에 문자열 복사해서 함수에 인자로 전달해야함
@@ -241,8 +241,8 @@
 
 ### gets() 함수
 
-![img_40.png](img_40.png)
-![img_41.png](img_41.png)
+![img_40.png](old_note/COMP2200/week5/img_40.png)
+![img_41.png](old_note/COMP2200/week5/img_41.png)
 
 ### gets()의 매개변수
 
@@ -257,7 +257,7 @@
 
 ### gets()의 반환값
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week5/img_42.png)
 
 - 성공 시 str을 반환하므로, 의미가 없음
     - 어차피 매개변수로 넘길 때 char* 알잖아.
@@ -266,26 +266,26 @@
 
 ## 한 줄 읽기
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week5/img_43.png)
 
 - gets는 매우 위험하다.
 
 ## 왜 위험할까?
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week5/img_44.png)
 
 - 버퍼 오버플로우
 - 통제 불가
 
-![img_45.png](img_45.png)
-![img_46.png](img_46.png)
+![img_45.png](old_note/COMP2200/week5/img_45.png)
+![img_46.png](old_note/COMP2200/week5/img_46.png)
 
 - 디버거보면 10개짜리 잡았는데, 10개 이상 썼다고 알려줌
 - 그리고 실제로 출력값도 보면, "okay I have"까지가 10개인데, 그 뒤 문자도 출력됨...
 
 ## 왜 버퍼 오버플로우가 발생할까?
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week5/img_47.png)
 
 - 버퍼의 크기를 넘어서 덮어쓰다보니, 스택 프레임에서 베이스 포인터, 돌아갈 함수 주소 등 다 바꿔버림
 - 여기서 해킹도 가능 ㅇㅇ; (버퍼 오버플로우 어택) [후기 강조]
@@ -294,7 +294,7 @@
 
 ## fgets()로 안전하게 한 줄 읽기
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week5/img_48.png)
 
 - f가 붙었으니 파일 스트림에서 읽는다는 의미
 - 첫번째 매개변수: 버퍼
@@ -307,7 +307,7 @@
 
 ### 왜 \n을 넣어줄까요?
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week5/img_49.png)
 
 - 새 줄을 만나서 끝났을 때와 아닐 때를 구분하기 위함
   - gets의 경우 어차피 뉴라인까지 읽고, 버퍼에서는 뉴라인이 없으니까, 버퍼를 사용할 때 알아서 뉴라인을 넣어서 써!
@@ -321,7 +321,7 @@
 
 ## fgets의 매개변수
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week5/img_51.png)
 
 - 첫번째 매개변수: 버퍼
 - 두번째 매개변수: 최대 읽는 글자 수
@@ -331,7 +331,7 @@
 
 ## stream 자료형이 이상해요
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week5/img_50.png)
 
 - 스트림을 제어하기 위해 필요한 정보
     - 스트림에서 위치를 표시하는, 파일 위치 표시자
@@ -339,7 +339,7 @@
     - 읽기/쓰기 중에 발생한 오류를 기록하는 오류 표시자
     - 파일의 끝에 도달했음을 기록하는 EOF 지시자
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week5/img_52.png)
 
 - FILE* stream
 - 표준에서 정의하지 않는다. 따라서 플랫폼마다 다르다.
@@ -350,7 +350,7 @@
 
 ## fgets()의 반환값
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week5/img_53.png)
 
 - gets와 동일하다.
 - 성공 시, str을 반환한다.
@@ -358,7 +358,7 @@
 
 ## fgets()로 한 줄 읽기
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week5/img_54.png)
 
 ```c
 #define LINE_LENGTH (10)
@@ -370,22 +370,22 @@ while (fgets(line, LINE_LENGTH, stdin) != NULL) {
 }
 ```
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week5/img_55.png)
 
 - 엔터칠 때 까지 기다림(stdin 버퍼가 엔터칠 때 까지 기다리기 때문)
 - 12345789abcd + 엔터를 키보드로 입력
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP2200/week5/img_56.png)
 
 - 입력 스트림(stdin)에서 LINE_LENGTH - 1만큼 읽어서 str에 저장
 - str 마지막에 '\0'을 넣어줌
 - 123456789\0이 저장됨
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week5/img_57.png)
 
 - 성공적으로 읽었으므로 NULL이 아니라서, 반복문 실행
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week5/img_58.png)
 
 - 반복문 블록 안의 printf 실행
 
@@ -402,30 +402,30 @@ while (fgets(line, LINE_LENGTH, stdin) != NULL) {
 
 - 성공적으로 읽었으므로 NULL이 아니라서, 반복문 실행
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week5/img_61.png)
 
 - line을 출력
 - abcd\n이 출력된다. (C 스타일 문자열은 널문자로 문자열의 끝을 구분하죠)
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week5/img_62.png)
 
 - 다시 stdin 버퍼에서 읽기 대기
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week5/img_63.png)
 
 - EOF를 입력하고 (윈도우면 엔터도 필요), 버퍼에 EOF가 들어온다.
 - fegets()는 NULL을 반환하고, 반복문 종료
 
 ## fgets()에 쓸 버퍼는 초기화 필요 없음
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week5/img_64.png)
 
 - 어차피 처음부터 읽어서 덮어쓰니깐요.
     - 그래서 쓰레기값이 들어있던 말던, 덮어쓰죠?
 
 ## puts와 printf
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP2200/week5/img_65.png)
 
 - fgets()는 줄바꿈 문자를 제거하지 않고, 버퍼에 저장합니다.
 - printf대신에 puts를 사용하면, `puts는 문자열을 출력하고, 줄바꿈 문자를 추가하기 때문에` 두번 줄바꿈함.
@@ -450,14 +450,14 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 한 줄씩 읽는 방법이 유용한 경우
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week5/img_66.png)
 
 - 모든 프로그램의 공통사항인데, CPU 안에서 모든 것을 돌릴 때 가장 빠르다.
     - 메모리에서 읽어오면, 느려진다. 이 때 여러번 읽는 것 보다 한 번에 읽는게 빠르다.
 - CPU를 벗어나서 외부 구성요소로부터 읽어올 때 여러번 읽어올 때 과부하가 크다. 한 번에 많이 읽어오는게 빠르다!
 - 그래서 버퍼도 충분히 크게 잡죠, 버퍼 오버플로도 방지하고!
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week5/img_67.png)
 
 - 한 데이터씩 읽어올 때 한 줄씩 읽는 방법이 유용하다.
 
@@ -465,13 +465,13 @@ while (fgets(line, 10, stdin) != NULL) {
 
 - 텍스트로 들어오더라도, 정수, 실수, 한글자 등 데이터형을 지정해서 입력 받자!!
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week5/img_68.png)
 
 - prinf에 대응한다고 생각하죠!
 
 ### 3가지 버전이 있다.
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week5/img_69.png)
 
 - scanf(): stdin에서 읽어옴
 - fscanf(): 파일 스트림에서 읽어옴
@@ -479,11 +479,11 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## stdin에서 정수 읽기
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week5/img_70.png)
 
 ## scanf
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week5/img_71.png)
 
 - 키보드(stdin)에서 정수를 읽어서, num에 저장
 
@@ -493,7 +493,7 @@ while (fgets(line, 10, stdin) != NULL) {
     - 여기에 저장해줘
 - 왜 이런 방식으로 구현했을까?
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week5/img_72.png)
 
 - 주소를 넣고, 주소에 저장된 값을 바꾸자 (pass by reference)
 - 그냥 num을 넣는다고 생각하면, 값이 복사되죠? 함수 블록 안에서 지역변수는 사라집니다.ㅋㅋ 원본을 못바꿈 (pass by value)
@@ -504,11 +504,11 @@ while (fgets(line, 10, stdin) != NULL) {
 - 왜 이런 방식으로 구현했을까? [후기 강조]
 - 즉 scanf()에서 정수형을 입력받으면, 정수형으로 반환하고 싶다는 말입니다.
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week5/img_73.png)
 
 - C는 함수 오버로딩도 없기 때문에 scanf를 다양하게 만들어야합니다. ㅠㅠ
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week5/img_74.png)
 
 - 다양하게 만들 수도 없음ㅋㅋ;
 - 여러개 입력 받으면 어쩔건데? 반환값이 여러 개일 수 없죠?
@@ -516,15 +516,15 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## scanf()의 반환값
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week5/img_75.png)
 
 - 몇 개의 데이터를 읽었는지 반환
 - 첫 데이터를 읽기 전에 실패했다면 EOF 반환
 
 ## scanf()에서 서식 문자열
 
-![img_76.png](img_76.png)
-![img_77.png](img_77.png)
+![img_76.png](old_note/COMP2200/week5/img_76.png)
+![img_77.png](old_note/COMP2200/week5/img_77.png)
 
 - 서식 지정자 반드시 넣어야함!!
 - 단어 단위로 읽는 개념이다.
@@ -534,18 +534,18 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 대입 생략 문자 *
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week5/img_78.png)
 
 - 과연 쓸 일이 있을까?
 
 ## 너비
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week5/img_79.png)
 
 - 버퍼 오버플로우를 막기 위해 너비를 제한할 수 있다.
 - 하지만 더 좋은 방법이 있습니다.
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week5/img_80.png)
 
 - 왜 너비를 잘 사용하지 않는지 이유
 - 버퍼에 남아있는 애들 처리하기가 까다로움
@@ -555,24 +555,24 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 길이 수정자
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week5/img_81.png)
 
 - 시험 직전에 바르기
 
 ## scanf()의 예
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week5/img_82.png)
 
 - 123까지 숫자니까 읽고, scanf에서 하나 읽었다고 반환함 따라서 result = 1
 - 입력 스트림에서 위치 표시자는 p를 가리키고 있다.
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week5/img_83.png)
 
 - 숫자가 없음
 - result에 0반환
 - 입력스트림은 p를 가리키고 있다.
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week5/img_84.png)
 
 - 단어를 세보자. 단어 몇개고?
 - 12, 34 총 2개죠?
@@ -581,18 +581,18 @@ while (fgets(line, 10, stdin) != NULL) {
 - 공백을 읽으려면 %c로 읽어야함
 - [질문]: 공백을 무시할 때 stdin에서 공백은 사라지는 거로 이해했는데 맞나요?
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week5/img_85.png)
 
 - 단어를 세보자. 단어는 1개네요? 입력에 공백이 없잖아.
 - 12를 읽고 p는 문자라 못 읽음
 - result에 1단어 읽어서, 1이 저장됨
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week5/img_86.png)
 
 - 단어를 세보자. 단어는 2개네요?
 - 12, 34.56 각각 읽어서 대입됨
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week5/img_87.png)
 
 - 단어를 세보자. 단어는 1개네요?
 - 정수를 읽어야하는데, .에서 못읽음 따라서 1234까지 읽고 멈춤
@@ -600,7 +600,7 @@ while (fgets(line, 10, stdin) != NULL) {
 - .56을 읽고 0.56으로 저장
     - 이게 신기하네요...
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week5/img_88.png)
 
 - 단어를 세보자. 단어는 2개네요? 12, 34.56p
 - 정수 단어를 읽는다. 12까지
@@ -608,14 +608,14 @@ while (fgets(line, 10, stdin) != NULL) {
 - result에 2 반환
 - 입력 스트림의 위치 표시자는 p를 가리키고 있다.
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week5/img_89.png)
 
 - 단어를 세보자. 단어는 3개네요?
 - 각각에 맞게 읽음
 - 3반환
 - str은 애초에 배열이라서, 주소죠 ㅇㅇ;
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week5/img_90.png)
 
 - 12.34까지 읽고
 - p따로 읽음
@@ -623,7 +623,7 @@ while (fgets(line, 10, stdin) != NULL) {
     - scanf("%s", str)은 키보드 입력 끝까지 읽는다.
 - 마지막에 널문자 넣어줌
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week5/img_91.png)
 
 - 12 읽고
 - .34p 읽음

@@ -40,13 +40,13 @@
 
 ### [방법 1을 보완하는 생각]
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week11/img_6.png)
 
 - 입력값의 `개수`는 10개 뿐
 - 입력값이 클 수록, 배열의 크기를 크게 잡아야함
   - 배열에서 낭비되는 공간도 많음
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week11/img_7.png)
 
 - 만들어야하는 것을 정리해보자
   - 입력: 10개의 서로 다른 수
@@ -54,43 +54,43 @@
 - 자료(입력)를 색인(출력)으로 바꾸는 함수
 - 바꿀 때 O(1)의 시간복잡도를 가져야함
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week11/img_8.png)
 
 - 가장 간단한 방법은 `입력값 % 10`
 
 ### [무작위로 뽑은 수 10개를 저장하는 방법 2]
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week11/img_9.png)
 
 - 연산 한 번이면 끝나기 때문에 O(1)의 시간복잡도
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week11/img_10.png)
 
 - 방법 2의 문제
   - 동일한 색인이 출력
 
 ### [방법 2를 보완하는 생각]
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week11/img_11.png)
 
 - 배열의 크기를 충분히 키우면?
 
 ### [무작위로 뽑은 수 10개를 저장하는 방법 3]
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week11/img_12.png)
 
 - 배열의 크기는 충분하게 하고, 나머지 연산을 사용하는 방법
 - 겹치는 색인은 생길 수 밖에 없음
 
 ### [방법 3을 보완하는 생각]
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week11/img_13.png)
 
 - 배열의 크기는 최소 입력값 개수의 2배
 - 배열의 크기에는 소수를 사용할 것
   - 소수로 나눠서 나머지를 구해야 출력값이 겹칠 가능성이 낮음
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week11/img_14.png)
 
 - 그래도 중복 출력을 100% 막을 수 없음
 - 아 그래서 중복을 최대한 줄이고, 추가적인 방법이 필요함
@@ -98,7 +98,7 @@
 
 ### [중복 색인을 해결하는 법]
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week11/img_15.png)
 
 - 나머지 연산으로 색인을 구함
 - 배열의 색인에 이미 값이 있으면, 색인 위치 이후에 처음으로 나오는 빈 공간을 찾음
@@ -107,30 +107,30 @@
   - 만약 bool값으로 저장한다면, 검색할 때 색인값이 겹치는 경우 찾을 수 없음
   - x, y 모두 나머지가 같으면, 구분할 수 없죠?
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week11/img_16.png)
 
 - 배열에 빈 공간을 찾아야함
 
-![img_17.png](img_17.png)
-![img_18.png](img_18.png)
+![img_17.png](old_note/COMP2200/week11/img_17.png)
+![img_18.png](old_note/COMP2200/week11/img_18.png)
 
 - 배열의 빈 공간을 찾는 방법
   - 방법1: 똑같은 크기의 bool 값을 저장하는 배열을 만들기
   - 방법2: 어떤 특정한 값을 저장해서 비어있다는 사실을 표시
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week11/img_19.png)
 
 - 앞선 예시의 10개의 입력값에 이 방법을 적용하기
 
-![img_20.png](img_20.png)
-![img_21.png](img_21.png)
+![img_20.png](old_note/COMP2200/week11/img_20.png)
+![img_21.png](old_note/COMP2200/week11/img_21.png)
 
 - 여기서 주의깊게 볼 것은 724가 색인 12에 들어가있기 때문에, 219는 색인 12에 못들어가고 14에 들어갔음
   - 13에도 이미 있잖아
 
 ### [배열을 사용한 해시 테이블 코드]
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week11/img_22.png)
 
 - 빈 공간은 INT_MIN으로 표시하기 위해서, INT_MIN으로 배열을 초기화
 
@@ -223,7 +223,7 @@ int add(int value)
     - 인덱스 이동을 반복해서 case 확인 
     - 반복문 종료 조건은 배열을 한 바퀴 돌면 종료
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week11/img_23.png)
 
 - 초간단 해시 테이블
 - 색인 중복이 없으면, 읽는 것도, 쓰는 것도 모두 O(1)
@@ -232,12 +232,12 @@ int add(int value)
 
 ### [연결 리스트를 이용한 해시 테이블]
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week11/img_24.png)
 
 - 똑같이 어떤 소수로 나눠서 나머지 값으로 색인을 구함
 - 배열의 색인에 연결 리스트를 저장
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week11/img_25.png)
 
 - 색인이 겹치는 경우 연결 리스트에 삽입
 - 배열만 사용할 때보다 최악의 결과가 나올 경우의 수가 적음
@@ -246,28 +246,28 @@ int add(int value)
 
 ## 해시
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week11/img_26.png)
 
 - 어떤 데이터를 해시 함수에 넣어서 나온 출력값을 `해시`라고 정의함
 
 ### [해시 함수]
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week11/img_27.png)
 
 - 입력값의 크기는 제한이 없음
 - 출력값은 `고정 크기`의 값에 대응함
   - 크기의 단위는 비트
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week11/img_28.png)
 
 - 함수의 정의에 따라 입력값이 같으면 출력값은 언제나 같음
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week11/img_29.png)
 
 - 입력값이 달라도 출력값이 같을 수 있다.
   - 일대일 함수가 아님
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week11/img_30.png)
 
 - 이 경우를 `해시 충돌`이라고 정의함
   - 해시 충돌은 적을 수록 적음
@@ -276,20 +276,20 @@ int add(int value)
 
 ### [소수 23으로 나누는 함수는 해시 함수인가?]
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week11/img_31.png)
 
 - 반드시 그런건 아님
 
 ### [엄밀한 해시 값]
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week11/img_32.png)
 
 - 해시 값은 어떤 데이터를 대표해야함
   - ID(식별자, 정체성)
   - 즉 `형식`(타입)이 데이터를 대표해야함
     - 이 개념을 이해하기 위해서 문자열을 해시 함수에 넣어보면 됨
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week11/img_33.png)
 
 - 앞의 예는 입력값 원본 데이터 자체가 해시 값임
   - 자신을 대표할 수 있잖아
@@ -297,29 +297,29 @@ int add(int value)
 
 ## 해시 셋에 문자열 저장하기
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week11/img_34.png)
 
 - 문자열을 정수형을 변환하는 해시 함수가 필요함
   - 문자열을 대표할 수 있는 정수를 출력해야 해시값의 정의를 만족한다고 볼 수 있음
   - 길이가 정해지지 않은 문자열을 고정된 크기(4바이트)의 정수형으로 변환
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week11/img_35.png)
 
 - 아스키 코드 == 정수값
 - 아스키 코드를 활용해보자
 
 ### [잘 쓰이지 않는 해시 함수의 예시]
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week11/img_36.png)
 
 - 문자열의 아스키 코드 값을 모두 더함
   - 계속 더하다 보면, 오버플로우도 일어나고 등등 어쨌던 int면 32비트 정수임
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week11/img_37.png)
 
 - 해시 값을 고정된 배열의 크기에 저장하기 위해 나머지 연산
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week11/img_38.png)
 
 - 해시 테이블에 저장하는 add()의 예시
 - 매개변수
@@ -327,12 +327,12 @@ int add(int value)
   - 해시 함수
 - 함수 안에서 해시값 구하고, 테이블에 저장
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week11/img_39.png)
 
 - 해시 함수 내부에서 문자열 길이만큼 반복문을 돌기 때문에 시간 복잡도 O(문자열 길이)
 - O(1) 보다 느림
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week11/img_40.png)
 
 - 최적화를 해보자
 - 해시 함수를 한 번만 호출하고, 변수에 해시값 결과를 기억
@@ -341,7 +341,7 @@ int add(int value)
 
 ### [해시 세트(Hash Set)]
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week11/img_41.png)
 
 - 지금까지 구현한 것은 해시 세트
   - 해시값을 구해서 중복 없이 저장함
@@ -349,13 +349,13 @@ int add(int value)
 
 ## 해시 맵
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week11/img_42.png)
 
 - 어떤 키에 대응하는 어떤 값을 쌍으로 저장
   - key-value
   - Dictionary, HashMap
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week11/img_43.png)
 
 - Key로 그 위치에 가서 자물쇠를 열면 데이터가 나옴
 - Key는 꼭 정수일 필요가 없음
@@ -373,20 +373,20 @@ int add(int value)
 
 ### [해시 충돌의 예]
 
-![img_44.png](img_44.png)
-![img_45.png](img_45.png)
+![img_44.png](old_note/COMP2200/week11/img_44.png)
+![img_45.png](old_note/COMP2200/week11/img_45.png)
 
 - 해시 함수는 일대일 함수가 아님
 
 ### [근데 해시 충돌을 반드시 해결해야 하나요?]
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week11/img_46.png)
 
 - 색인 충돌을 해결하면서 동시에 같이 해결할 수 있음
   - 그래서 엄밀이 말하면 안 해도 됨
 - 하지만 다른 이점이 있음
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week11/img_47.png)
 
 - 키의 크기를 줄일 수 있음
 - 문자열을 키로 사용하지 않고, 해시 함수의 출력값을 키로 사용하면, 문자열을 저장할 필요가 없음
@@ -394,22 +394,22 @@ int add(int value)
 
 ## 훌륭한 해시 함수
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week11/img_48.png)
 
 - 어떤 입력이던 고정된 크기의 출력으로 변환
   - 어떤 자료형에 관계 없이
   - 데이터의 크기에 관계 없이
 - 해시 충돌이 거의 없음
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week11/img_49.png)
 
 - 사실 살면서 해시 충돌을 보기 힘듬
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week11/img_50.png)
 
 - 다양한 사례들
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week11/img_51.png)
 
 ```c++
 /* 65599를 곱해나가는 해시 함수
@@ -432,8 +432,8 @@ size_t hash_65599(const char* string, size_t len)
 - 65599 해시 함수
   - 이 정도는 외워도 됨
 
-![img_52.png](img_52.png)
-![img_53.png](img_53.png)
+![img_52.png](old_note/COMP2200/week11/img_52.png)
+![img_53.png](old_note/COMP2200/week11/img_53.png)
 
 - 완전히 충돌을 없앨 수는 없음
 - C에서는 동적 할당을 피하기 위해 문자열을 해시값으로 변환해 키로 저장하는 경우가 많음
@@ -505,7 +505,7 @@ int add_fast(size_t hash_key, const char* value)
 
 ### [문자열이 아닌 다른 자료형의 해시 맵]
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week11/img_54.png)
 
 - 어떤 자료형이던 char 배열로 표현 가능
   - 메모리에 저장된 값을 읽어올 때 1바이트씩 읽어오면 문자열임
@@ -517,7 +517,7 @@ int add_fast(size_t hash_key, const char* value)
 
 ## 자료구조 베스트 프랙티스
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week11/img_55.png)
 
 - 기본적으로 배열
 - 삽입과 삭제가 빈번하면 연결리스트
@@ -633,8 +633,8 @@ int main(void)
 
 ### [전처리기가 할 수 있는 일]
 
-![img_56.png](img_56.png)
-![img_57.png](img_57.png)
+![img_56.png](old_note/COMP2200/week11/img_56.png)
+![img_57.png](old_note/COMP2200/week11/img_57.png)
 
 - 다른 파일 인클루드
 - 매크로 대체
@@ -643,7 +643,7 @@ int main(void)
 
 ## 메크로 대체: #define
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week11/img_58.png)
 
 - 전처리기가 소스 코드를 뒤지다가 A가 보이면 모두 (10)으로 바꿔줌
 - #define A 만 하면 A를 바꾸지 않음
@@ -654,14 +654,14 @@ int main(void)
 
 ### [#undef 식별자]
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week11/img_61.png)
 
 - 이미 정의된 식별자를 없앰
   - 없앤 식별자를 사용하면 컴파일 오류 발생
 
 ### [미리 정의되어 있는 #define]
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week11/img_62.png)
 
 - 모든 C 구현이 정의하는, 미리 정의된 식별자가 있음
 
@@ -673,22 +673,22 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ## 조건부 컴파일
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week11/img_63.png)
 
 - 조건에 따라 특정 코드를 컴파일에 포함하거나 배제함
 - #if, #ifdef, #ifndef로 시작했다면, 반드시 끝에 #endif가 있어야함
 
 ### [조건부 컴파일의 예: 인클루드 가드]
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week11/img_64.png)
 
 ### [어떤 식별자가 #define 되어있는지 판단하는 예]
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP2200/week11/img_65.png)
 
 ### [조건부 컴파일에서 주의할 점]
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week11/img_66.png)
 
 - #if defined(A)는 식별자 A가 정의됬으면 참, 아니면 거짓
 - #if A는 식별자 A의 값을 봄
@@ -697,31 +697,31 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ### [조건부 컴파일: 버전 관리]
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week11/img_67.png)
 
 - OS에 따라서 컴파일을 다르게 할 때도 유용함
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week11/img_68.png)
 
 - #elif, #else를 사용하는 예
 
 ### [조건부 컴파일: 주석 처리를 편하게]
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week11/img_69.png)
 
 - #if 0, #endif의 쌍을 사용하자
 - 이거 엄청 좋네요
 
 ## 컴파일 오류 발생
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week11/img_70.png)
 
 - 컴파일 도중 강제로 오류를 발생
 - 메시지를 꼭 따옴표로 감쌀 필요는 없음
 
 ## 컴파일 중에 매크로 정의하기
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week11/img_71.png)
 
 - D하고 기본값이 1임
   - #define A 가아님
@@ -729,7 +729,7 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ### [배포용으로 컴파일 하기: -DNDEBUG]
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week11/img_72.png)
 
 - #define NDEBUG (1)
 - #if !defined(NDEBUG) 속에 디버그 모드에서만 실핼될 코드를 넣으면 됨
@@ -737,36 +737,36 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ## 매크로 함수
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week11/img_73.png)
 
 - 매개 변수 목록을 사용함
 
 ### [매크로 함수에서 하는 실수]
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week11/img_74.png)
 
 - 복붙하면 10 * 10 + 20
   - 결과 120
 - 10(10 + 20)이 원래의 의도
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week11/img_75.png)
 
 - 해결책은 소괄호로 감싸는 것
 - 코딩 표준에도 소괄호!
 
 ### [매크로 함수가 여러 줄이면?]
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week11/img_76.png)
 
 - '\'를 사용하기
 
 ### [매크로 함수의 활용: 어서트 재정의]
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week11/img_77.png)
 
 - 함수 오버로딩을 흉내낼 수 있음
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week11/img_78.png)
 
 - __asm { int 3 }은 어셈블리어 코드
   - interrupt
@@ -776,7 +776,7 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ## 전처리기 명령어: # 명령어
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week11/img_79.png)
 
 - 매개변수 자체를 `문자열`로 바꾸는 기능
 - 매개변수를 쌍따옴표로 감쌈
@@ -785,14 +785,14 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ## 전처리기 명령어: ## 명령어
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week11/img_80.png)
 
 - 대체 목록 안에 있는 두 단어를 합쳐서 새로운 텍스트로 변경
   - 단어는 매개변수일 수도, 아닐 수도
 - #define print(n) printf( "%d\n", g_id_##n)
   - 이 경우 매개변수 n이 대체 목록 안의 단어에 포함됨
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week11/img_81.png)
 
 - combine1의 경우 
   - a: student_
@@ -805,7 +805,7 @@ fprintf(stderr, "internal error: %s, line %d.\n", __FILE__, __LINE__);
 
 ### [매크로 함수의 장점과 단점]
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week11/img_82.png)
 
 - 장점은 함수 호출에 따른 과부하가 없음
   - 어샘블리어 코드 복붙

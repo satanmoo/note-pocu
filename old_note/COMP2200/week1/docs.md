@@ -47,24 +47,24 @@ C89/ANSI-C 내용이 강의에서 70%정도 차지한다. 그만큼 중요하다
 
 ## #include
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week1/img_6.png)
 
 - C#의 using 지시문(directive)와 비슷한 일을 한다. 즉 다른 파일에 구현된 변수나 함수를 가져와서 사용할 수 있게 해준다.
 - 하지만 using 지시문과 다르게 똑똑하지 않다. 뭔가 주먹구구 식으로 처리한다. 즉 처리하는 동작 방식이 다르다.
 - #include 지시문은 전처리기(preprocessor)에 의해 처리된다. 전처리기는 컴파일하기 전 텍스트를 `복붙`해주는 역할을 한다. 여기서 텍스트는 소스 코드를 말한다.
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week1/img_7.png)
 
 - <> 안의 단어는 실제 디스크 상에 존재하는 파일 이름이다.
 - 즉 파일을 찾아서 포함하는 것이다.
 
 ### #include의 동작 방법
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week1/img_8.png)
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week1/img_9.png)
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week1/img_10.png)
 
 동작 과정을 살펴보자.
 
@@ -77,32 +77,32 @@ C89/ANSI-C 내용이 강의에서 70%정도 차지한다. 그만큼 중요하다
 
 ### #include 사용법
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week1/img_11.png)
 
 - stdio.h에 한해서는 <>을 사용하자.
 
 ## C표준 라이브러리
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week1/img_12.png)
 
 stdio.h는 C표준 라이브러리의 일부이다.
 
 ### stdio.h의 역할
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week1/img_13.png)
 
 - 표준 입력과 출력을 담당하는 라이브러리
 
 ## main(void) 함수
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week1/img_14.png)
 
 - 프로그램의 entry point
 - C 코드를 빌드해서 나온 실행파일을 실행하면 main 함수가 자동으로 실행됨
     - .exe는 windows 계열
     - .out는 UNIX 계열
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week1/img_15.png)
 
 - 반드시 int형을 반환해야함
     - 0: 프로그램이 정상 종료
@@ -111,37 +111,37 @@ stdio.h는 C표준 라이브러리의 일부이다.
 
 ### 프로그램 종료코드 확인하기: 윈도우 CMD
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week1/img_16.png)
 
 화면에 에러코드를 바로 보여주지 않는다.
 
 ### 프로그램 종료코드 확인하기: 리눅스 Shell
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week1/img_17.png)
 
 ### main(void)에서 void
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week1/img_18.png)
 
 - 매개변수에 아무것도 안 받으면 명시적으로 void 쓰는 습관을 기르자.
 
 ## main() 함수와 커맨드 인자
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week1/img_19.png)
 
 ## printf()
 
-![img_20.png](img_20.png)
-![img_21.png](img_21.png)
-![img_22.png](img_22.png)
+![img_20.png](old_note/COMP2200/week1/img_20.png)
+![img_21.png](old_note/COMP2200/week1/img_21.png)
+![img_22.png](old_note/COMP2200/week1/img_22.png)
 
 ### printf로 문자열 출력하기
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week1/img_23.png)
 
 ### printf로 정수 출력하기
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week1/img_24.png)
 
 핵심은 서식문자(formatting)을 변수로 변환해서 보여준다는 것이다.
 
@@ -163,12 +163,12 @@ printf("%d + %d", num2, num1);
 
 ### printf로 둘다 출력하기
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week1/img_25.png)
 
 ## 주석(comment)
 
-![img_26.png](img_26.png)
-![img_27.png](img_27.png)
+![img_26.png](old_note/COMP2200/week1/img_26.png)
+![img_27.png](old_note/COMP2200/week1/img_27.png)
 
 /**/만 지원한다.
 
@@ -178,9 +178,9 @@ printf("%d + %d", num2, num1);
 
 ### C는 절차적 언어
 
-![img_28.png](img_28.png)
-![img_29.png](img_29.png)
-![img_30.png](img_30.png)
+![img_28.png](old_note/COMP2200/week1/img_28.png)
+![img_29.png](old_note/COMP2200/week1/img_29.png)
+![img_30.png](old_note/COMP2200/week1/img_30.png)
 
 데이터와 프로세스가 분리되는 것이 컴퓨터 구조에 일치한다. CPU에서 계산하고 메모리에 저정한다.
 
@@ -189,8 +189,8 @@ printf("%d + %d", num2, num1);
 
 ## 자료형 개요
 
-![img_31.png](img_31.png)
-![img_32.png](img_32.png)
+![img_31.png](old_note/COMP2200/week1/img_31.png)
+![img_32.png](old_note/COMP2200/week1/img_32.png)
 
 - C는 unsigned 단어를 자료형 이름 앞에 넣어줘야 한다.
 - unsigned대신 signed를 붙일 수 있다. 하지만 그냥 unsigned나 signed를 생략하면 signed이다.
@@ -200,14 +200,14 @@ printf("%d + %d", num2, num1);
 
 ### char의 크기
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week1/img_33.png)
 
 표준에서 최소 8비트라고 명시했기 때문에 컴파일러에 따라서 char의 크기가 다를 수 있다.
 그렇다면 컴파일러에서 char의 정확한 크기를 확인할 수 있는 방법은??
 
 ### char가 몇 비트인지 찾는 방법
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week1/img_34.png)
 
 1바이트를 CHAR_BIT의 크기라고 부르는 배경을 생각해보자. 다양한 하드웨어에 따라 메모리에 최소로 저장할 수 있는 단위가 달라진다.
 
@@ -216,20 +216,20 @@ printf("%d + %d", num2, num1);
 
 ### char과 ASCII 코드
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week1/img_35.png)
 
 clang에서 char의 크기는 8비트다. 따라서 1바이트로 표현할 수 있는 수는 2^8개이다.
 그리고 이를 ASCII 코드로 표현할 수 있다. 왜냐하면 아스키코드는 2^7개의 숫자를 표현할 수 있기 때문이다.
 
 ### signed/unsigned char
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week1/img_36.png)
 
 C 표준에 char가 signed인지 unsigned인지 정하지 않았기 때문에 컴파일러마다 char가 signed/unsigned가 달라진다.
 
 - clang에서는 signed char로 정의되어 있다.
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week1/img_37.png)
 
 char을 문자를 표현하기 위해 문자형으로 사용할 것인지, 정수를 표현하기 위해 정수형으로 쓸 건지에 따라
 unsigned/signed를 정할 때 제약이 생긴다.
@@ -244,7 +244,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### char의 부호 여부를 판단하는 방법
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week1/img_38.png)
 
 근데 굳이 확인할 바에는 unsinged/signed 잘 넣어주자..
 
@@ -254,7 +254,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 ### char로 표현 가능한 숫자의 범위
 
 [표준]
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week1/img_39.png)
 
 왜 -128이 아니라 -127일까? `1의 보수` 방법을 사용하고 있기 때문이다.
 아주 예전에는 1의 보수를 사용하는 기계가 있었다...
@@ -262,7 +262,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 - 주의점: C 표준에서는 1의 보수를 사용하기 때문에 signed char의 범위가 -127~127이다!
 
 [실제]
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week1/img_40.png)
 
 대부분 플랫폼에서는 이렇게 사용한다.
 
@@ -274,7 +274,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 ## short 개론
 
 [표준]
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week1/img_41.png)
 
 표준에 따르면 다음과 같다.
 
@@ -287,7 +287,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
         - 표준에서는 1의 보수를 사용한다.
 
 [실제]
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week1/img_42.png)
 
 - short의 크기: 16비트
 - 범위
@@ -299,7 +299,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 ## int 개론
 
 [표준]
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week1/img_43.png)
 
 - unsigned/signed 안 붙이면 signed로 간주
 - 최소 16 비트 && short형 크기 이상
@@ -307,7 +307,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### C 표준에서 int가 왜 16비트 이상일까요?
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week1/img_44.png)
 
 - int의 원초적 의미: integer(정수)
 - CPU에서 정수를 처리하라고 명령할 때 int 단위로 처리한다.
@@ -317,7 +317,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### 64비트 플랫폼의 등장
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week1/img_45.png)
 
 - 너무 오랜기간 int를 32비트로 사용했다.
 - 기존 코드 + 다른 언어도 그렇고 32비트로 int를 사용해서 C 표준을 어기고 유지한다.
@@ -326,7 +326,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 다시 실제 사용할 때 int에 대해서 알아보자.
 
 [실제]
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week1/img_46.png)
 
 - 포팅에 안전한 범위: short
     - 포팅에 안전하려면 엄격하게 C 표준의 최소 조건을 지키면 됨
@@ -337,7 +337,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### int 리터럴
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week1/img_47.png)
 
 - u/U는 int(signed)의 범위를 넘어서는 양수 값을 표현할 때 붙여야한다.
 - `컴파일 경고`가 나온다.
@@ -349,8 +349,8 @@ unsigned/signed를 정할 때 제약이 생긴다.
 ## long 개요
 
 [표준]
-![img_48.png](img_48.png)
-![img_49.png](img_49.png)
+![img_48.png](old_note/COMP2200/week1/img_48.png)
+![img_49.png](old_note/COMP2200/week1/img_49.png)
 
 - unsigned/signed 안 붙이면 signed로 간주
 - 최소 32비트 && int형 크기 이상
@@ -361,7 +361,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### long의 리터럴
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week1/img_50.png)
 
 - l(L)은 long을 나타내는 접미사
     - int의 범위(32비트)를 벗어나는 수(Ex: 2147483648)를 표현할 때 안 붙이면 `컴파일 경고`를 준다.
@@ -369,11 +369,11 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## float 개요
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week1/img_51.png)
 대부분 언어에서 부동 소수점 자료형은 IEEE 754 표준을 따른다. 하지만 C 언어가 동작하는 하드웨어는 IEEE 754가
 나오기 전 부터 존재했다.
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week1/img_52.png)
 [표준]
 
 - 크기는 char 이상이기만 하면 된다.
@@ -390,14 +390,14 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### float의 리터럴
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week1/img_53.png)
 
 - unsigned가 없기 때문에 u리터럴 사용하면 `컴파일 에러`
 
 ## double
 
 [표준]
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week1/img_54.png)
 
 - 표준에 따르면 CPU가 계산하는 기본 데이터 크기(질문: 이게 int에서 설명한 word와 같은건지?)
 - signed/unsigned 개념이 없이 모두 signed로 간주
@@ -405,7 +405,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 - float은 CPU가 계산하는 기본 데이터 크기가 아니라, 빠르게 연산하기 위해 만든 더 작은 부동소수점형
 
 [실제]
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week1/img_55.png)
 
 - double의 크기: 64비트
 - 범위: IEEE 754 Double
@@ -415,7 +415,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 ## long double 개요
 
 [표준]
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP2200/week1/img_56.png)
 
 - signed/unsigned 개념이 없음
     - signed/unsigned 붙이면 `컴파일 에러`
@@ -426,11 +426,11 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## C89의 기본 자료형
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week1/img_57.png)
 
 ## 교훈
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week1/img_58.png)
 
 - long이 32비트인 것만 기억하자.. long 대신 int 씁시다!
 
@@ -446,33 +446,33 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### 어셈블리 예
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week1/img_61.png)
 
 - cmp할 때 빼서 계산함. 즉 argc의 값이랑 0이랑 뺀 결과가 0인지 확인한다. 그리고 je(점프 이퀄)로 점프한다.
 
 ### while문에서 사용하기
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week1/img_62.png)
 
 - 이런 코드 나쁜 조건식임
     - 가독성이 좋지않아요
 
 ### 코딩표준: 참,거짓 반환하기
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week1/img_63.png)
 
 - 거짓일 때: 0
 - 참일 때: 1
 
 ## 열거형
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week1/img_64.png)
 
 - int -> enum 대입 가능
 - enum -> int 대입 가능
 - enum -> 또 다른 enum 대입가능
 - 따라서 실수를 막을 수 있는 장점이 사라짐 ㅠㅠ
-  ![img_65.png](img_65.png)
+  ![img_65.png](old_note/COMP2200/week1/img_65.png)
 - C#에서는 다른 enum에 대입하면 컴파일 에러가 발생했죠?
     - EDay -> EMonth 대입X
     - EMonth -> EDay 대입X
@@ -480,12 +480,12 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## 변수 선언
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week1/img_66.png)
 
 - 변수 선언은 반드시 블록 시작에서 선언하고 뒤에서 대입해야한다.. 안 그러면 `컴파일 오류`
     - 불편함점..
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week1/img_67.png)
 
 - 함수와 스택 메모리가 동작할 때 함수 내부에서 쓰는 모든 변수에 대한 메모리를 예약한다.
     - 모든 변수 선언이 블록 시작에서 되면 컴파일러가 스택 메모리에 한 번에 할당할 수 있어서 (컴파일러가) 편하다.
@@ -493,9 +493,9 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## 연산자 개요
 
-![img_68.png](img_68.png)
-![img_69.png](img_69.png)
-![img_70.png](img_70.png)
+![img_68.png](old_note/COMP2200/week1/img_68.png)
+![img_69.png](old_note/COMP2200/week1/img_69.png)
+![img_70.png](old_note/COMP2200/week1/img_70.png)
 
 - 연산자 우선순위는 `결합 순위`와 관련이 있다.
     - 우선 순위가 같으면 결합 법칙에 따라 방향이 다르게 결합된다.
@@ -504,8 +504,8 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## sizeof() 연산자
 
-![img_71.png](img_71.png)
-![img_72.png](img_72.png)
+![img_71.png](old_note/COMP2200/week1/img_71.png)
+![img_72.png](old_note/COMP2200/week1/img_72.png)
 
 - 피연산자의 크기를 바이트 단위 변환해준다.
     - 배열도 피연산자에 포함된다
@@ -515,7 +515,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## size_t
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week1/img_73.png)
 
 - size_t는 부호없는 정수형이다.
 - typedef로 정의되어 있다.
@@ -524,7 +524,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### size_t의 크기
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week1/img_74.png)
 
 - size_t의 크기는 배열의 바이트 크기를 담을 수 있어야한다. 배열의 크기는 선언을 어떻게 하냐에 따라 다르다.
 - C99 표준에서 최소 16비트를 요구했음
@@ -533,7 +533,7 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### size_t의 용도
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week1/img_75.png)
 
 - 좋은 예는 반복문이나 배열에 접근할 때 사용하는 것
     - 인덱스는 음수가 될 수 없기 때문임
@@ -541,24 +541,24 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### size_t와 -1
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week1/img_76.png)
 
 - indexOf 처럼 색인을 반환하는 함수에서 사용한다.
 - 유효하지 않은 색인값을 -1과 비트패턴이 동일한 값을 반환한다.
 - size_t는 unsigned int의 값과 동일하니까 -1 비트패턴이면 4294967295가 된다.
-  ![img_77.png](img_77.png)
+  ![img_77.png](old_note/COMP2200/week1/img_77.png)
 - 만약 최대 비트값인 4294967295개의 요소를 가지면?
     - 애초에 unsigned int라서 양수 값 개수가 거의 2배인데... 이런 걱정은 할 필요가 없다. 2배 큰게 더 실용적으로 굿
 
 ### 유효하지 않은 색인에서 예외를 던지는건 어떨까요?
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week1/img_78.png)
 
 - C언어는 예외를 던지는 기능이 없다.
 
 ## sizeof() 연산자에서 같은 배열이라도 크기가 다르게 나올 수 있다!
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week1/img_79.png)
 
 - 배열의 경우 함수 인자로 받을 경우 다른 결과가 나온다.
     - 배열의 크기는 함수 인자로 넘길 때 포인터로 변환되기 때문이다.
@@ -568,14 +568,14 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## 역참조 연산자*
 
-![img_80.png](img_80.png)
-![img_81.png](img_81.png)
+![img_80.png](old_note/COMP2200/week1/img_80.png)
+![img_81.png](old_note/COMP2200/week1/img_81.png)
 
 - 포인터형 변수에만 역참조 연산자를 사용할 수 있다.
 
 ## 주소 연산자&
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week1/img_82.png)
 
 - 비트연산자 and랑 구분하자
     - 피연산자가 2개면 비트연산자 and
@@ -584,29 +584,29 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## 구조체와 공용 멤버 접근 연산자 . ->
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week1/img_83.png)
 
 - 구조체, 포인터, 공용체 배우고 새로 정리
 
 ## 비교 연산자 논리 연산자
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week1/img_84.png)
 
 ## 조건 연산자
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week1/img_85.png)
 
 - 3항 연산자
 
 ## if 문
 
-![img_86.png](img_86.png)
-![img_87.png](img_87.png)
+![img_86.png](old_note/COMP2200/week1/img_86.png)
+![img_87.png](old_note/COMP2200/week1/img_87.png)
 
 - C의 불 표현식(비교 연산자, 조건 연산자의 반환값)
     - true 면 1, false면 0
 - 0이 아닌수를 true로 간주한다.
-  ![img_88.png](img_88.png)
+  ![img_88.png](old_note/COMP2200/week1/img_88.png)
 - 그래서 if 문의 조건식에 숫자 값을 넣어도 된다.
 - 정수형 말고, 포인터형, float형 등도 가능하다.
     - float 0.0의 비트패턴이 0이라서 false로 간주한다.
@@ -616,14 +616,14 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### case 레이블에 사용가능한 데이터형
 
-![img_89.png](img_89.png)
-![img_90.png](img_90.png)
+![img_89.png](old_note/COMP2200/week1/img_89.png)
+![img_90.png](old_note/COMP2200/week1/img_90.png)
 
 - C는 정수형만 가능하다
 
 ### fall-through
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week1/img_91.png)
 
 - break를 안 쓰면 fall-through가 발생한다.
 - switch 문을 곧바로 탈출하지 않고 그 아래 있는 코드를 계속 실행한다.

@@ -36,88 +36,88 @@
 
 ## 경우의 수 세기
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP1000/week11/img_6.png)
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP1000/week11/img_7.png)
 
 - 일(task)의 개념
 - 일은 여러 번 시도할 수 있음
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP1000/week11/img_8.png)
 
 - 일을 여러 번 시도하면 복잡해짐
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP1000/week11/img_9.png)
 
 - 모든 경우의 수를 다 확인할 수 있을까?
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP1000/week11/img_10.png)
 
 - 수학적으로 "경우의 수 세기"를 이용해 복잡하게 일이 여러 번 발생할 때 효율적으로 모든 경우의 수를 셀 수 있음
 
 ## 곱의 법칙
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP1000/week11/img_11.png)
 
 - 절차:
     - 여러 일(task)로 구성됨
     - 일은 동시에 진행되지 않음
         - 어떤 일이 끝나야 다른 일을 할 수 있음
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP1000/week11/img_12.png)
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP1000/week11/img_13.png)
 
 - 첫번째 비트를 결정하는 것이 "일"
 - 두번째 비트를 결정하는 것도 "일"
 - 절차는 첫번째 비트 결정하고 두번째 비트 결정
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP1000/week11/img_14.png)
 
 - 중요한 개념은 어떤 일을 '끝낸 후' 다른 일을 함
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP1000/week11/img_15.png)
 
 - 일의 수가 늘어나면 일반화해서 경우의 수를 곱함
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP1000/week11/img_16.png)
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP1000/week11/img_17.png)
 
 - 모든 조합을 구해보면?
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP1000/week11/img_18.png)
 
 - 대표적인 곱의 법칙
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP1000/week11/img_19.png)
 
 - '프로그래밍의 다중 중첩 for문'은 곱의 법칙
 - for문 중첩이 많을 수록 연산 수가 마구마구 증가
 
 ### 곱의 법칙 예제: 행사장 의자에 번호 붙이기
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP1000/week11/img_20.png)
 
 ### 곱의 법칙 예제: 멱집합의 원소 수
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP1000/week11/img_21.png)
 
 - 하나의 일이 "포함하냐/포함하지 않냐"
 
 ## 합의 법칙
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP1000/week11/img_22.png)
 
 - 일이 연속적으로 일어나지 않음
     - 절차가 아님
 - 각 일에서 오직 하나의 일만 발생하는 개념
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP1000/week11/img_23.png)
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP1000/week11/img_24.png)
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP1000/week11/img_25.png)
 
 - '프로그래밍의 병렬 for문'은 합의 법칙
 - O(c + s)
@@ -125,7 +125,7 @@
 
 ### 합의 법칙 예제: 두 주사위의 합
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP1000/week11/img_26.png)
 
 - 2가 되는 일
 - 3이 되는 일
@@ -136,12 +136,12 @@
 
 ### 예제: 길이가 최대 두 글자인 변수명 짓기
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP1000/week11/img_27.png)
 
 - 최대 2글자
     - 합의 법칙
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP1000/week11/img_28.png)
 
 - 변수명이 한 글자일 때 + 변수명이 두 글자일 때
 - 변수명이 두 글자일 때:
@@ -150,64 +150,64 @@
 
 ### 예제: 인터넷 주소 수 세기
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP1000/week11/img_29.png)
 
 - 참고로 "클래스 D/E" 는 특별함
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP1000/week11/img_30.png)
 
 - 모든 클래스 고통으로 "hostid"의 비트패턴은 모두 0이나 모두 1이 될 수 없음
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP1000/week11/img_31.png)
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP1000/week11/img_32.png)
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP1000/week11/img_33.png)
 
 ## 포함-배제 원리
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP1000/week11/img_34.png)
 
 - 중복된 경우의 수를 빼야함
     - 두번 카운트 한 수는 빼주자
 - 집합 더하기 생각하면 쉬움
     - 집합에서 중복 원소는 없음
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP1000/week11/img_35.png)
 
 ## 트리 이용하기
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP1000/week11/img_36.png)
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP1000/week11/img_37.png)
 
 - 모든 경우의 수를 세는 효과적인 방법
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP1000/week11/img_38.png)
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP1000/week11/img_39.png)
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP1000/week11/img_40.png)
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP1000/week11/img_41.png)
 
 - 같은 면이 두번 연속해서 나오지 않는 경우만 세보면
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP1000/week11/img_42.png)
 
 - 가지치면서 따지면 쉽게 카운팅 가능
 
 ### 가위 바위 보 삼세판
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP1000/week11/img_43.png)
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP1000/week11/img_44.png)
 
 ### 티셔츠 선택
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP1000/week11/img_45.png)
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP1000/week11/img_46.png)
 
 - "결정 트리"
 - if 분기 처리가 들어가는 개념
@@ -215,61 +215,61 @@
 
 ## 순열/조합
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP1000/week11/img_47.png)
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP1000/week11/img_48.png)
 
 - Permutation
 - Combination
 
 ## 순열
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP1000/week11/img_49.png)
 
 - 나열:
     - 순서가 중요하다는 개념이 포함된 단어
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP1000/week11/img_50.png)
 
 - 펜 색에 관계없이
 - '6P6'
 - 6!
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP1000/week11/img_51.png)
 
 ### 순열 공식
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP1000/week11/img_52.png)
 
 ### 순열의 예: 온라인 게임
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP1000/week11/img_53.png)
 
 - '16P3'
 - 1,2,3 등수가 중요하기 때문에 순서 개념을 포함하는 순열
 
 ### 순열의 예2: 수강 순서
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP1000/week11/img_54.png)
 
 - '12P12'
 - 12!
 
 ### 순열의 예3: 도우미와 함께 줄 세우기
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP1000/week11/img_55.png)
 
 - C,D를 묶어서 하나로 보면 됨
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP1000/week11/img_56.png)
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP1000/week11/img_57.png)
 
 - C,D 순서 바꾸는 것은 고려하지 않음
 
 ## 중복 순열
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP1000/week11/img_58.png)
 
 ### 중복 순열 공식
 
@@ -284,45 +284,45 @@
 
 ## 조합
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP1000/week11/img_61.png)
 
 - 햄버거 세트(콤보)
     - 참고로 미국에서는 "콤보"가 공식 용어
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP1000/week11/img_62.png)
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP1000/week11/img_63.png)
 
 - 순열로 시작하고
 - 포함-배제 원리로 순서를 고려해서 중복된 경우의 수를 빼주자
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP1000/week11/img_64.png)
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP1000/week11/img_65.png)
 
 - 뽑은 결과(2개로 이루어짐)에서 생각하기
 - 이 결과에서 2개의 펜을 나열하는(순서를 고려) 경우의 수는 2!
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP1000/week11/img_66.png)
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP1000/week11/img_67.png)
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP1000/week11/img_68.png)
 
 - 전체 경우의 수에서 뽑은 결과 마다 순서를 없애니까
 - 2!으로 나누기
 
 ### 조합 공식
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP1000/week11/img_69.png)
 
 - 순열공식에서 뽑는 개수(r) 팩토리얼로 나누기
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP1000/week11/img_70.png)
 
 ### 조합의 예: 경진대회 나갈 학생 고르기
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP1000/week11/img_71.png)
 
 - 팀을 구성하기
 - 팀에서 순서는 의미업음
@@ -331,11 +331,11 @@
 
 ### 조합의 예2: 로또 당첨 번호
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP1000/week11/img_72.png)
 
 ### 조합의 예: 32비트 정수에 1이 10개 있는 경우
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP1000/week11/img_73.png)
 
 - 1인 비트가 10개가 있는 경우를 모두 찾기
 - 나머진 0으로 채우면 됨
@@ -345,33 +345,33 @@
 
 ## 중복 조합
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP1000/week11/img_74.png)
 
 - 중복 조합 사고
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP1000/week11/img_75.png)
 
 - 순서 상관없이 구성만 다르면 됨
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP1000/week11/img_76.png)
 
 - 칸막이의 위치를 정하는 개념
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP1000/week11/img_77.png)
 
 - 공간에서 칸막이 위치를 찾는 조합 문제로 변환
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP1000/week11/img_78.png)
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP1000/week11/img_79.png)
 
 - 조합의 대칭성 적용 가능
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP1000/week11/img_80.png)
 
 ### 중복 조합 공식
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP1000/week11/img_81.png)
 
 - 공식 유도는 자연스러움
 - n-1: 칸막이 수
@@ -379,16 +379,16 @@
 
 ### 중복 조합의 에: 방정식 해법의 수
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP1000/week11/img_82.png)
 
 - x,y,z가 양의 정수라서
 - 최소 1이상으로 배정
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP1000/week11/img_83.png)
 
 - 미리 빼고 계산
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP1000/week11/img_84.png)
 
 ## 확률
 
@@ -396,7 +396,7 @@
 - 머신러닝
 - 모두 확률에 기반함
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP1000/week11/img_85.png)
 
 - 정의:
     - 어떤 사건이 일어날 가능성을 수치화
@@ -405,33 +405,33 @@
 - 실험
 - 정의 숙지하기
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP1000/week11/img_86.png)
 
 ### 무한한 표본 공간
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP1000/week11/img_87.png)
 
 - 확률이 0에 수렴해서 의미가 없음
 
 ### 유한 표본 공간
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP1000/week11/img_88.png)
 
 - 표본 공간이 유한하다고 가정하고 확률을 정의함
 
 ### 확률의 예: 연필 뽑기
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP1000/week11/img_89.png)
 
 ### 확률의 예: 로또 1등
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP1000/week11/img_90.png)
 
 - 경우의 수를 배운 이유는 표본 공간을 구하기 위함
 
 ### 확률의 예: 포커의 포카드
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP1000/week11/img_91.png)
 
 ![img_92.png](old_note/COMP1000/week11/img_92.png)
 

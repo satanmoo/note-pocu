@@ -25,7 +25,7 @@
 
 - 진짜 알고리듬으로 정의할 수 있음
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week1/images/img_6.png)
 
 - 알고리듬이라고 부르는 것들을 구분하는 기준은 없음
     - 알고리듬 책, 위키피디아에 실린 것들은 확실한 알고리듬
@@ -33,13 +33,13 @@
 
 ## 훌륭한 알고리듬이 갖춰야할 자질
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week1/images/img_7.png)
 
 - 함수 블랙박스 개념과 유사함
     - 입력, 과정, 출력이 명백
     - 사실 함수를 잘 작성하는 능력과 본질적으로 유사함
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week1/images/img_8.png)
 
 -
     4. 컴퓨터 코드를 포함하면 안됨
@@ -47,48 +47,48 @@
     - 이건 포프쌤이 동의하지 않는 부분
 - 이런 주장을 하는 이유를 확인해보자
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week1/images/img_9.png)
 
 - 포프샘은 코드 없이 알고리듬을 설명하는 것이 더 복잡하고 인간이 이해하기 어렵기 때문에 컴퓨터 코드로 표현하는 것이 좋다고 봄
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week1/images/img_10.png)
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week1/images/img_11.png)
 
 - 일단 한 눈에 보이는 것도 자연어가 복잡해 보임
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week1/images/img_12.png)
 
 - 포프쌤은 코드가 차라리 더 낫다고 봄
     - 의사 코드(pseudocode)
     - 여기서 코드는 의사 코드
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week1/images/img_13.png)
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week1/images/img_14.png)
 
 - 인간이 이해하기 어려워서 알고리듬에 코드를 포함하지 않는다 >> 반박
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week1/images/img_15.png)
 
 - 특정 언어에만 있는 기능을 사용해 알고리듬을 표현하는 것에 포프쌤은 부정적임
 - 따라서 포팅이 가능한 의사코드 작성하는 것을 권함
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week1/images/img_16.png)
 
 ## 알고리듬 공부를 해도 안 느는 프로그래머들
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week1/images/img_17.png)
 
 ## 수정된 훌륭한 알고리듬이 갖춰야할 자질
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week1/images/img_18.png)
 
 ## 효율적인 알고리즘
 
 - 같은 문제를 푸는 다양한 방법 중 가장 효율적인 방법이 휼륭한 알고리듬
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week1/images/img_19.png)
 
 - 효율성을 판단하는 기준
     - 자원:
@@ -101,11 +101,11 @@
 
 - "실제"
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week1/images/img_20.png)
 
 - 어떤 하드웨어에서 동작하냐에 따라 효율성이 달라질 수 있음
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week1/images/img_21.png)
 
 - 따라서 알고리듬을 공부할 때는 가상의 기계(추상적 기계)에서 알고리듬을 실행한다고 가정
 - Random Access Machine
@@ -114,14 +114,14 @@
     - 메모리 간접 참조 지원
     - 캐시 메모리, 가상 메모리 X
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week1/images/img_22.png)
 
 - RAM (가상 머신) 기반으로 알고리듬을 공부하고
     - 이를 기반으로 하드웨어에 맞게 알고리듬을 확장하기
 
 ## 알고리듬의 올바름 검증
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week1/images/img_23.png)
 
 - 학계에서 증명을 통해 검증
 - 실무는 버그 처리 프로세스
@@ -129,21 +129,21 @@
     - 테스트
 - 제대로 동작한 뒤 (정확도) 효율성이 의미가 있음!!!
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week1/images/img_24.png)
 
 ## 빅오 표기법
 
 ### 점근 표기법
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week1/images/img_25.png)
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week1/images/img_26.png)
 
 - 점근 표기법 중 빅오 표기법을 주로 사용
 
 ### 컴퓨터 공학에서 빅오 표기법
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week1/images/img_27.png)
 
 - O:
     - order of function
@@ -151,7 +151,7 @@
 
 ### 어떤 기준으로 분류하나요?
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week1/images/img_28.png)
 
 - 입력 데이터가 많아짐에 따라
     - 실행 시간
@@ -161,11 +161,11 @@
 
 ### 그래프보고 가시죠
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week1/images/img_29.png)
 
 ### O(1)
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week1/images/img_30.png)
 
 - 입력 데이터의 크기 N에 관계없이 일정한 시간
 - 대표적으로 배열에 인덱스 참조
@@ -175,20 +175,20 @@
 
 ### O(N)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week1/images/img_31.png)
 
 - 배열을 순회하는 동작
     - i, i + 1 번째 값의 차이중 최소값 구하기
 
 ### O(N^2)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week1/images/img_32.png)
 
 - row * col 구구단 표 작성
 
 ### O(logN)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week1/images/img_33.png)
 
 - 밑이 2
 - O(N) 보다 느리게 증가
@@ -196,38 +196,38 @@
 
 ### O(NlogN)
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week1/images/img_34.png)
 
 - 정렬 알고리듬
 
 ### 점근 표기법에서 '대략' 의 의미
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week1/images/img_35.png)
 
 - 실행시간을 다항식화
 - 최고차항, 최고차항에 붙은 계수 무시
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week1/images/img_36.png)
 
 - 대략으로 봐도 충분하다
 - 실제 데이터를 보면 확인할 수 있죵
 
 ### 빅오 표기법 성능 비교
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week1/images/img_37.png)
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week1/images/img_38.png)
 
 - 데이터 실제에 따라 최선, 평균, 최악을 고려할 수도 있음
     - 일반적으로 평균만 고려
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week1/images/img_39.png)
 
 - 보통 실무에서 O(N^2) 까지 허용함
 
 ### 다항식 시간 vs 지수 시간
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week1/images/img_40.png)
 
 - 지수 시간이 되는 (O(2^N)) 순간 부터 굉장히 느려짐
 - 다항 시간(Polynomial)에 풀 수 있냐, 풀 수 없냐로 분류하는 기준이 있음
@@ -235,7 +235,7 @@
 
 ## 배열
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week1/images/img_41.png)
 
 - 가정:
     - 배열의 원소의 순서를 바꾸지 않아야 한다는 가정
@@ -262,7 +262,7 @@
 
 ## 스택
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week1/images/img_42.png)
 
 - 삽입:
     - Top 위치에 삽입
@@ -277,7 +277,7 @@
 
 ## 큐
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week1/images/img_43.png)
 
 - 삽입:
     - Back 위치에 삽입
@@ -291,7 +291,7 @@
 
 ## 연결 리스트
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week1/images/img_44.png)
 
 - 검색:
   - 모두 순회
@@ -306,7 +306,7 @@
 
 ## 해시 테이블, 해시 맵
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week1/images/img_45.png)
 
 - 해시 함수에서 계산하는 시간은 입력(N)에 영향을 받지 않음
 - 버킷(배열)에 인덱스가 충돌하는 경우:
@@ -317,6 +317,6 @@
 - 최적의 버킷사이즈는 보통 2N + a
   - 공간복잡도 O(N)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week1/images/img_46.png)
 
 - key, value 배열을 각각 총 2개 만들고, key로 해시함수 + 인덱스 구해서 인덱스에 저장

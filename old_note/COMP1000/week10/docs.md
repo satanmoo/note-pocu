@@ -25,24 +25,24 @@
 
 ![img_5.png](old_note/COMP1000/week10/images/img_5.png)
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP1000/week10/images/img_6.png)
 
 - 달리는 상태를 어떻게 표현?
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP1000/week10/images/img_7.png)
 
 - 속력을 표시해야함
 
 ### 완성된 벡터의 정의
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP1000/week10/images/img_8.png)
 
 - 화살표의 길이로 크기를 나타내고
 - 방향도 나타내고
 
 ### 물리에서 물리량
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP1000/week10/images/img_9.png)
 
 - 스칼라:
     - 1차원 개념
@@ -53,45 +53,45 @@
 
 ## 프로그래밍에서 벡터
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP1000/week10/images/img_10.png)
 
 - 크기/방향 2개 데이터를 저장하는 클래스
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP1000/week10/images/img_11.png)
 
 - 표현 방법의 한계
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP1000/week10/images/img_12.png)
 
 - 튕겨나오는 것을 계산하려면?
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP1000/week10/images/img_13.png)
 
 - 삼각함수 연산이 필요함
     - 부동 소수점 연산
     - 정밀도가 떨어짐
     - 탄젠트는 값을 구할 수 없을 때도 많음
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP1000/week10/images/img_14.png)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP1000/week10/images/img_15.png)
 
 - 일반적인 벡터 표현
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP1000/week10/images/img_16.png)
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP1000/week10/images/img_17.png)
 
 - 좌표를 이용해볼까
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP1000/week10/images/img_18.png)
 
 - 기준점은 원점으로 설정하면
 - 좌표(x,y)로 벡터를 표현할 수 있음
 
 ### 성분 표기법
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP1000/week10/images/img_19.png)
 
 - n차원 벡터는 성분이 n개
 - 성분 == component
@@ -100,153 +100,153 @@
 
 ### 길이
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP1000/week10/images/img_20.png)
 
 - 피타고라스 정리
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP1000/week10/images/img_21.png)
 
 ### 각도
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP1000/week10/images/img_22.png)
 
 - 삼각함수 이용
     - atan 함수
 
 ### 2차원 벡터를 좌표 평면 어디든 정의할 수 있음
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP1000/week10/images/img_23.png)
 
 - 시작은 원점
 - 끝은 좌표 평면 어디든 존재할 수 있음
 
 ### n차원 벡터
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP1000/week10/images/img_24.png)
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP1000/week10/images/img_25.png)
 
 ## 벡터의 연산
 
 ### 스칼라 곱
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP1000/week10/images/img_26.png)
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP1000/week10/images/img_27.png)
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP1000/week10/images/img_28.png)
 
 - 각 성분에 2를 곱해도 결과는 동일함
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP1000/week10/images/img_29.png)
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP1000/week10/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP1000/week10/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP1000/week10/images/img_32.png)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP1000/week10/images/img_33.png)
 
 - 간단하게 증명 가능
 
 ## 단위 벡터
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP1000/week10/images/img_34.png)
 
 - 방향만 나타내고 싶으면?
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP1000/week10/images/img_35.png)
 
 - 길이를 1로 설정
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP1000/week10/images/img_36.png)
 
 ### 단위 벡터 표기법
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP1000/week10/images/img_37.png)
 
 - 모자 씌우기
 - hat
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP1000/week10/images/img_38.png)
 
 - 말 그대로 "단위"
 
 ### 스칼라 곱하기 단위 벡터
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP1000/week10/images/img_39.png)
 
 ## 임의의 벡터를 단위 벡터로 만들기
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP1000/week10/images/img_40.png)
 
 - 크기를 1로 만들기
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP1000/week10/images/img_41.png)
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP1000/week10/images/img_42.png)
 
 - 길이의 역수로 스칼라 곱
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP1000/week10/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP1000/week10/images/img_44.png)
 
 ### 단위 벡터 구하기 예시
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP1000/week10/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP1000/week10/images/img_46.png)
 
 - (x,y)
 - 성분 표기
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP1000/week10/images/img_47.png)
 
 ## 벡터의 덧셈
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP1000/week10/images/img_48.png)
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP1000/week10/images/img_49.png)
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP1000/week10/images/img_50.png)
 
 - 대각선으로 더하기
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP1000/week10/images/img_51.png)
 
 - 개념적으로 성분끼리 더함
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP1000/week10/images/img_52.png)
 
 - 평행 이동
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP1000/week10/images/img_53.png)
 
 - 평행사변형으로 더해서 대각선을 구하는 개념
 
 ## 벡터의 뺄셈
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP1000/week10/images/img_54.png)
 
 - 백터의 덧셈과 동일함
 - 다만 부호만 바꾸면 됨
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP1000/week10/images/img_55.png)
 
 - 벡터를 음수로 바꾸려먼 -1을 스칼라 곱
 - 각도 180도가 변함
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP1000/week10/images/img_56.png)
 
 - 성분끼리 더하면 끝!
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP1000/week10/images/img_57.png)
 
 ### 이전의 예시
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP1000/week10/images/img_58.png)
 
 - x 성분 부호만 바꾸면...
 - 입사각/반사각 원리
@@ -257,45 +257,45 @@
 
 ## 내적
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP1000/week10/images/img_61.png)
 
 - dot product
 - 결과는 스칼라
     - 벡터가 아님
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP1000/week10/images/img_62.png)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP1000/week10/images/img_63.png)
 
 - 각 성분끼리 곱해서 더해도 같은 값을 구할 수 있음
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP1000/week10/images/img_64.png)
 
 - 실제로 내적 공식이 성립하는지 확인을 해보자
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP1000/week10/images/img_65.png)
 
 - 우왕 똑같아
 - 컴퓨터에서는 삼각함수를 사용하지 않고 성분끼리 곱하는 연산이 간단하기 때문에 선호함
 
 ### 내적의 활용처
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP1000/week10/images/img_66.png)
 
 - 두 벡터 사이의 각도
 - 두 벡터가 단위 벡터면, 내적 값이 코사인값
     - 조명 각도 계산할 때 많이 사용함
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP1000/week10/images/img_67.png)
 
 - 단위 벡터로 내적의 값을 구하면
 - 코사인 값으로 두 벡터 사이의 각도를 구할 수 있음
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP1000/week10/images/img_68.png)
 
 - 행렬 곱에도 내적 사용
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP1000/week10/images/img_69.png)
 
 - 투영(정사영)
 - 외적
@@ -303,36 +303,36 @@
 
 ## 벡터가 프로그래밍에 필요한 이유
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP1000/week10/images/img_70.png)
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP1000/week10/images/img_71.png)
 
 - n개의 성분으로 구성된 자료구조
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP1000/week10/images/img_72.png)
 
 ## 튜플
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP1000/week10/images/img_73.png)
 
 - n개의 성분을 저장하는 자료구조를 "튜플"이라고 부르기도 함
 - 특히 머신 러닝에서 "피쳐 벡터"를 지칭
 
 ### 튜플 vs 벡터
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP1000/week10/images/img_74.png)
 
 - 컴퓨터 공학 분야에서는 잘 구분 안하긴 하는데
 - 튜플은 성분의 데이터 형이 다를 수 있음
 - 벡터는 성분듸 데이터가 통일
   - 머신 러닝 "피쳐 벡터"는 데이터 형이 다를 수 있음
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP1000/week10/images/img_75.png)
 
 - 데이터베이스 테이블에서 데이터 한 줄
     - row
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP1000/week10/images/img_76.png)
 
 ```c#
 List<int> scores = new List<int>() { 100, 80, 58 };
@@ -345,19 +345,19 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ### 집합과 비교
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP1000/week10/images/img_77.png)
 
 - 튜플/벡터는 순서가 중요하다
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP1000/week10/images/img_78.png)
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP1000/week10/images/img_79.png)
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP1000/week10/images/img_80.png)
 
 - 용어의 정의는 학문마다 다르니 알잘딱
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP1000/week10/images/img_81.png)
 
 - 벡터로 저장하면 관리하기 편하죠
 - 배열을 사용하는 이유를 생각해보자
@@ -366,26 +366,26 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ## 행렬
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP1000/week10/images/img_82.png)
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP1000/week10/images/img_83.png)
 
 - 2 * 3 행렬
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP1000/week10/images/img_84.png)
 
 - 행렬을 말할 때 행을 먼저 표현
 - 프로그래밍에서 2차원 배열의 개념
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP1000/week10/images/img_85.png)
 
 ### 벡터와 행렬
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP1000/week10/images/img_86.png)
 
 - 벡터는 행렬의 특수한 경우
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP1000/week10/images/img_87.png)
 
 - 행 벡터
 - 열 벡터
@@ -397,21 +397,21 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ### 정사각 행렬
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP1000/week10/images/img_88.png)
 
 ## 벡터 연산 행렬에 적용하기
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP1000/week10/images/img_89.png)
 
 - 벡터를 확장한 것이 행렬이라 벡터의 연산을 행렬에 적용 가능
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP1000/week10/images/img_90.png)
 
 - 하지만 완전히 모두 적용되는 것은 아님
 
 ### 행렬 스칼라 곱
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP1000/week10/images/img_91.png)
 
 ### 행렬과 행렬 더하기
 

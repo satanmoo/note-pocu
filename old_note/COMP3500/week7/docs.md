@@ -34,35 +34,35 @@
 
 - a로 시작하는 단어 모두 나열 후 b로 시작하는 단어 시작됨
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week7/images/img_6.png)
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week7/images/img_7.png)
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week7/images/img_8.png)
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week7/images/img_9.png)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week7/images/img_10.png)
 
 - 공통으로 가지는 prefix 활용
 
 ## 트라이에 단어를 저장하기
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week7/images/img_11.png)
 
 - Bold 표시는 어떤 단어가 끝남을 의미함
 - 자식 노드 입장에서 루트부터 부모를 포함한 경로의 모든 문자를 순서대로 나열하면 접두사
 
 ## 이진 트리 vs 트라이
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week7/images/img_12.png)
 
 - 이진 트리:
     - 노드 자체에 키를 저장
     - 각 노드의 연결(방식)이 키에 따라 결정
         - 구체적으로 키 값의 대소 관계에 따라 결정
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week7/images/img_13.png)
 
 - 트라이:
     - 노드 위치가 키를 결정
@@ -70,19 +70,19 @@
 
 ## Trie
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week7/images/img_14.png)
 
 - A.K.A:
     - digital tree
     - prefix tree
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week7/images/img_15.png)
 
 - 공통 접두어:
     - 가장 긴 접두어
     - 여기선 abl
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week7/images/img_16.png)
 
 - 공통 접두어:
     - ab
@@ -91,23 +91,23 @@
 
 - 이런 성질을 이용해 자동 완성
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week7/images/img_17.png)
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week7/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week7/images/img_19.png)
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week7/images/img_20.png)
 
 - 이 방식은 Depth first search 에 가까움
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week7/images/img_21.png)
 
 - 유한집합에서 특정한 키(문자열)를 찾을 때 사용
 - 노드가 키 자체를 저장하는게 아님
 - 노드 위치가 키를 결정 + 노드의 연결이 키
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week7/images/img_22.png)
 
 - 충돌이 없어서 해시 테이블을 대신해서 사용하는 경우가 있음
 - 해시 테이블은 value에 문자열의 참조를 저장하기 때문에 한 글자 한 글자를 모두 저장하는 트라이보다 공간복잡도가 낮음
@@ -116,18 +116,18 @@
 
 ## 공간분할 트리 소개
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week7/images/img_23.png)
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week7/images/img_24.png)
 
 - 배열은 1차원 공간(선)
 - 트리는 1차원 공간을 분할한 개념
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week7/images/img_25.png)
 
 - 인간의 눈은 3차원 공간을 2차원으로 투영하게 됨
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week7/images/img_26.png)
 
 - voxel
     - volume + pixel
@@ -136,26 +136,26 @@
 
 ### 2D 게임 예
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week7/images/img_27.png)
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week7/images/img_28.png)
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week7/images/img_29.png)
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week7/images/img_30.png)
 
 - 전부 그래픽 카드가 그리는건 무리
 - 현재 화면에 나올 것들만 그리기!
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week7/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week7/images/img_32.png)
 
 - 경계를 만들고, 이 경계를 기준으로 화면에 들어오는지 계산하고
 - 화면에 들어오면 계산 요청
 - 화면에 안 보여도, 경계 상자가 화면에 들어올 수 있음
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week7/images/img_33.png)
 
 - CPU에서 연산을 더하고, GPU에서 연산을 덜 하는게 목표
 - 경계(상자, 구)를 만들면 CPU에서 계산하기 쉬움
@@ -164,60 +164,60 @@
 
 ## 쿼드 트리
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week7/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week7/images/img_35.png)
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week7/images/img_36.png)
 
 - 전체 맵
     - 깊이 0
     - 2D 배열과 다를 바 없음
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week7/images/img_37.png)
 
 - 4분할
     - 깊이 1
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week7/images/img_38.png)
 
 - 재귀적으로 4분할
     - 깊이 2
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week7/images/img_39.png)
 
 ### 탐색 방법
 
 - 이진 탐색이랑 유사하네
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week7/images/img_40.png)
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week7/images/img_41.png)
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week7/images/img_42.png)
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week7/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week7/images/img_44.png)
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week7/images/img_45.png)
 
 - 애매하게 분할면 사이에 걸쳐있다면?
 
 - 얕은 뎁스에서 포함한 큰 면에서 계산하거나
 - 깊은 뎁스에서 포함하는 면 복수 이상으로 구하거나
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week7/images/img_46.png)
 
 ## 옥 트리(Oct)
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week7/images/img_47.png)
 
 - 마인크래프트
 
 ## 기타 공간분할 트리
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week7/images/img_48.png)
 
 - 필요할 때 찾아보기
 

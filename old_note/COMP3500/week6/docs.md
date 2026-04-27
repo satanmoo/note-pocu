@@ -34,98 +34,98 @@
 
 - 부모는 언제가 1개 노드
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week6/images/img_6.png)
 
 - 조부모
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week6/images/img_7.png)
 
 - 삼촌(uncle)
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week6/images/img_8.png)
 
 - 형제(sibling)
 
 ### 깊이(depth)
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week6/images/img_9.png)
 
 - 루트를 기준으로 경로 길이
 
 ### 높이(height)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week6/images/img_10.png)
 
 - 리프를 기준으로 '최대' 길이
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week6/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week6/images/img_12.png)
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week6/images/img_13.png)
 
 - 트리의 높이 == 루트에서 시작해 리프까지 가는 가장 긴 경로 == 루트 노드의 높이
 
 ### 하위 트리(subtree)
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week6/images/img_14.png)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week6/images/img_15.png)
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week6/images/img_16.png)
 
 - 재귀 구조
 
 ## 트리와 재귀
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week6/images/img_17.png)
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week6/images/img_18.png)
 
 - 나
 - 왼쪽 하위 트리 재귀로 합 구하기
 - 오른쪽 하위 트리 재귀로 합 구하기
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week6/images/img_19.png)
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week6/images/img_20.png)
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week6/images/img_21.png)
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week6/images/img_22.png)
 
 ## 트리의 저장법
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week6/images/img_23.png)
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week6/images/img_24.png)
 
 - 부모가 자식을 참조하는 직관적인 방법
     - hashset 사용해도 괜찮
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week6/images/img_26.png)
 
 - 이게 범용적인 트리의 모습
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week6/images/img_25.png)
 
 - 자식의 수에 제약이 있는 경우
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week6/images/img_27.png)
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week6/images/img_28.png)
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week6/images/img_29.png)
 
 - 굳이 컬렉션을 사용하기보다는, 변수로!
 - nullable
 - 이렇게 자식이 최대 2개인 트리를 binary tree
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week6/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week6/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week6/images/img_32.png)
 
 - 자식이 한 명이면?
 - 링크드 리스트
@@ -133,7 +133,7 @@
 
 ## 트리의 용도
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week6/images/img_33.png)
 
 - 계층적 데이터 표현
 - 효율적인 검색 알고리듬 구현 가능
@@ -143,93 +143,93 @@
 - 이진 트리의 특수한 형태
 - 거의 트리를 대표할 정도로 많이 사용함
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week6/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week6/images/img_35.png)
 
 - 양분할 때 탐색에 특화한 기준을 만들기
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week6/images/img_36.png)
 
 - 규칙:
     - 왼쪽 자식은 부모보다 작다
     - 오른쪽 자식은 부모보다 이상
     - 같은 자식은 둘 중 하나로
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week6/images/img_37.png)
 
 - 정렬된 트리
 - 재귀적으로 읽는 순서를 지키면 정렬된 순서로 읽을 수 있음
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week6/images/img_38.png)
 
 - 왼쪽으로 가야겠죠?
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week6/images/img_39.png)
 
 - 왼쪽 서브 트리 모두 방문
 - 6 방문
 - 오른쪽 서브 트리 모두 방문
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week6/images/img_40.png)
 
 - 위 방법을 중위 순회법
 - in-order traversal
 
 ## 이진 탐색 트리와 정렬된 배열
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week6/images/img_41.png)
 
 - 정렬된 배열과의 차이점을 기반으로 이해하기
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week6/images/img_42.png)
 
 - 삽입/삭제 시 정렬 상태가 유지됨
     - 시간복잡도 배열보다 빠름
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week6/images/img_43.png)
 
 - 평균적으로 배열보다 검색/삽입/삭제 모두 빠름
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week6/images/img_44.png)
 
 ## BST 탐색
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week6/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week6/images/img_46.png)
 
 - 이진 탐색과 동일한 개념
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week6/images/img_47.png)
 
 - 한 줄로 자식이 나열되면 최악의 시간 복잡도
     - 연결리스트처럼 O(N)
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week6/images/img_48.png)
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week6/images/img_49.png)
 
 - 노드를 찾는 코드
 
 ## BST 삽입
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week6/images/img_50.png)
 
 - 노드에 자식이 2개 있는지 확인해야함
     - 자식이 2개 이미 있으면 추가할 수 없음
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week6/images/img_51.png)
 
 - 값에 따라서 오른쪽 자식/왼쪽 자식이 결정되는데 이 때 결정되는 방향에 자식이 없어야함
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week6/images/img_52.png)
 
 - 같은 값을 가지는 노드는 오른쪽 서브 트리로 넣는다고 가정
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week6/images/img_53.png)
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week6/images/img_54.png)
 
 - 새로 가지를 뻗어가는 이미지
 - 새로 삽입하는 노드는 언제나 리프 노드임!
@@ -278,22 +278,22 @@ public class Node {
 
 ## BST 삭제
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week6/images/img_55.png)
 
 - 탐색
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week6/images/img_56.png)
 
 - 지우면?
 - BST 속성을 만족함
 - 왜?
     - 리프를 삭제했기 때문
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week6/images/img_57.png)
 
 - 탐색해서 못 찾으면 당연히 못 지우죠
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week6/images/img_58.png)
 
 - 리프가 아닌 노드를 지우면?
 
@@ -308,46 +308,46 @@ public class Node {
 - 힌트는 리프를 삭제했을 때 BST가 유지된다는 점
 - BST는 정렬된 배열과 개념상 같기 때문에 정렬된 배열에서 어떤 원소를 지우고 이를 정렬된 배열 상태로 유지하려면?
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week6/images/img_61.png)
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week6/images/img_62.png)
 
 - 당기던가 밀던가
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week6/images/img_63.png)
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week6/images/img_64.png)
 
 - 당기는 방법을 트리에서 in-order successor 을 사용하는 방법이라고 부름
 - 오른쪽 서브트리에서 최소값 찾기(가장 왼쪽 리프)
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week6/images/img_65.png)
 
 - 미는 방법을 트리에서 in-order predecessor 을 사용하는 방법이라고 부름
 - 왼쪽 서브트리에서 최대값 찾기(가장 오른쪽 리프)
 
 ### 삭제 전략(알고리듬)
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week6/images/img_66.png)
 
 - 검색
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week6/images/img_67.png)
 
 - in-order predecessor 찾기
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week6/images/img_68.png)
 
 - swap
 - 값 교환
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week6/images/img_69.png)
 
 - 리프 노드 삭제
 
 ### 삭제의 시간복잡도
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week6/images/img_70.png)
 
 ```java
 public class BST {
@@ -505,27 +505,27 @@ public class BST {
 
 ## 트리 순회
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week6/images/img_71.png)
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week6/images/img_72.png)
 
 - 현재 노드의 위치에따라 순회 방식이 결정
 
 ## 중위 순회
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week6/images/img_73.png)
 
 ## 전위 순회
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week6/images/img_74.png)
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week6/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week6/images/img_76.png)
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week6/images/img_77.png)
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week6/images/img_78.png)
 
 - 트리 복사에 사용됨
 - 새로운 트리를 만드는 과정에서 자연스러운 순서는
@@ -534,12 +534,12 @@ public class BST {
 - 직관적인 방식
     - 다른 순회로 할 수도 있는데 직관적이지 못함
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week6/images/img_79.png)
 
 - 중위 표기법
 - 사람에게 익숙한 수식은 중위 표기법을 사용함
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week6/images/img_80.png)
 
 - 전위 표기법
 - 연산자와 괄호의 우선순위가 사라지고 왼쪽에서 부터 읽으면 됨
@@ -557,14 +557,14 @@ public class BST {
 
 ## 후위 순회
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week6/images/img_81.png)
 
 - 위의 전위 표기법은 오른쪽에서 왼쪽 방향으로 읽음
 - 컴퓨터는 왼쪽에서 오른쪽으로 읽는게 편함
 
 ## 순회를 어떻게 선택할 것인가?
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week6/images/img_82.png)
 
 - 리프보다 루트를 먼저 봐야 한다면?
     - 전위 순회
@@ -573,11 +573,11 @@ public class BST {
 - 순서대로 봐야 한다면?
     - 중위 순회
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week6/images/img_83.png)
 
 - BST 요약!
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week6/images/img_84.png)
 
 - 힙도 이진트리에 어떤 규칙을 추가한 것!
 - 힙 정렬에 사용함
@@ -740,11 +740,11 @@ public class Node {
 
 ## 레드-블랙 트리
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week6/images/img_85.png)
 
 - 1비트 추가 정보(Red or Black)
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week6/images/img_86.png)
 
 - self-balancing
     - 높이를 최소하는게 목표
@@ -752,25 +752,25 @@ public class Node {
 
 ## 레드-블랙 트리의 특성
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week6/images/img_87.png)
 
 - 모든 노드는 레드 or 블랙
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week6/images/img_88.png)
 
 - 루트 노드는 항상 블랙
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week6/images/img_89.png)
 
 - 레드-블랙 트리에서는 널 포인터가 리프 노드임
 - 리프 노드는 언제나 블랙
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week6/images/img_90.png)
 
 - 레드의 자식은 모두 블랙
 - 레드의 자식이 레드면 안 됨!
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week6/images/img_91.png)
 
 - 어떤 노드와 리프 사이의 최대 깊이가 높이
 - 그래서 어떤 노드와 어떤 리프 사이에 있는 블랙 노드의 수를 블랙 높이라고 부름

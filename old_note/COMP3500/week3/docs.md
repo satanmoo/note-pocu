@@ -38,21 +38,21 @@
 
 ## 대표적인 정렬 알고리듬
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week3/images/img_6.png)
 
 - 버블 정렬:
     - 언제든 구현
 - 선택 정렬:
     - 사람들에게 가장 익숙한 방식
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week3/images/img_7.png)
 
 - 퀵 정렬:
     - 작성할 수 있으면 좋음
     - 설명은 완전하게 할 수 있어야함!
     - 많은 언어에서 사용하는 기본 정렬 방식
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week3/images/img_8.png)
 
 - 어차피 시험에 나와서 다 익혀야함
 
@@ -61,26 +61,26 @@
 - 가장 기초적인 발상:
     - 가장 빠를 수 있는 경우, 한계치를 생각해보기
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week3/images/img_9.png)
 
 - 모든 요소를 한 번 이상 방문할 수 밖에 없음
     - 최소 O(N)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week3/images/img_10.png)
 
 - 빠르면 O(N logN)
 - 느리면 O(N^2)
 
 ## 왜 퀵정렬을 많이 사용하나요?
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week3/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week3/images/img_12.png)
 
 - 시간 복잡도만 실제 성능에 고려하지는 않음
     - 추가적으로 고려할게 있음
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week3/images/img_13.png)
 
 - 퀵 소트는 재귀 호출을 기반으로 동작
     - 스택 메모리를 사용함
@@ -92,13 +92,13 @@
     - Big-O 표기법에서 파라매터를 나타내지 않아서 동일하지만, 실제로 파라매터가 퀵 정렬이 훨씬 작음
     - 최악에서 시간 복잡도는 힙 정렬이 빠르지만 퀵 정렬이 최악의 경우가 될 때가 거의 없음
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week3/images/img_14.png)
 
 - 안정성은 검색해서 찾아보면 됨
 
 ## 정렬 선택 가이드
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week3/images/img_15.png)
 
 - 이 정도 가이드
 
@@ -106,41 +106,41 @@
 
 ## Bubble sort
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week3/images/img_16.png)
 
 - 안정성 유지 됨
 
 ### 버블 정렬의 시간 복잡도
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week3/images/img_17.png)
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week3/images/img_18.png)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week3/images/img_19.png)
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week3/images/img_21.png)
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week3/images/img_20.png)
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week3/images/img_22.png)
 
 - 평균으로 계산하기
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week3/images/img_23.png)
 
 - 꼼수로 for 문 2번 중첩이면 O(N^2)
 
 ### 버블 정렬의 공간 복잡도
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week3/images/img_24.png)
 
 ### 버블 정렬의 안정성
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week3/images/img_25.png)
 
 - 같은 값은 바꾸질 않아서 안정적임
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week3/images/img_26.png)
 
 ### 버블 정렬의 코드
 
@@ -180,11 +180,11 @@ public static void bubbleSort(int[] nums) {
 
 ## 선택 정렬
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week3/images/img_27.png)
 
 - 최소값을 찾아 선택한다고 해서 선택 정렬
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week3/images/img_28.png)
 
 - 안정성이 보장 안 됨
 
@@ -213,52 +213,52 @@ private static int findMinIndex(final int[] nums, final int start) {
 
 ## 삽입 정렬
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week3/images/img_29.png)
 
 - 이전에 방문했던 요소들은 순서를 유지한 상태
     - 이번에 새로 뽑은(현재 위치)요소를 기존에 방문했던 요소들 사이에 넣어야 정렬이 될까?
     - 배열에 삽입하면서 요소가 밀릴 수 있음
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week3/images/img_30.png)
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week3/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week3/images/img_32.png)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week3/images/img_33.png)
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week3/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week3/images/img_35.png)
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week3/images/img_36.png)
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week3/images/img_37.png)
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week3/images/img_38.png)
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week3/images/img_39.png)
 
 - 안정성 유지
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week3/images/img_40.png)
 
 - 제 위치 찾으면 더 이상 비교할 필요 없음
 - 이번 회 끝
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week3/images/img_41.png)
 
 - ...
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week3/images/img_42.png)
 
 - 외부 반복문의 반복 횟수는 고정
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week3/images/img_43.png)
 
 - 내부 반복문의 반복 횟수는 가변적
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week3/images/img_44.png)
 
 - PPT 삽입 정렬임
     - 오타입니다..
@@ -280,54 +280,54 @@ public static void insertionSort(final int[] nums) {
 
 ## 퀵정렬
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week3/images/img_45.png)
 
 - 분할 정복 vs decrease-and-conquer
     - 모든 요소를 방문하기 때문에 분할 정복
 
 ### 시뮬레이션
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week3/images/img_46.png)
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week3/images/img_47.png)
 
 - 기준값(pivot):
     - 정렬할 범위에서 가장 오른쪽 요소가 기준값
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week3/images/img_48.png)
 
 - 좌에서 우 방향으로 모든 요소를 pivot과 비교
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week3/images/img_49.png)
 
 - 7은 6보다 크기 때문에
     - 기준값보다 큰 값은 오른쪽으로 보내야함
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week3/images/img_50.png)
 
 - 근데 그대로 둠
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week3/images/img_51.png)
 
 - 기준값보다 작은 경우
     - 좌(인덱스)의 요소와 교환
     - 좌(인덱스) 오른쪽으로 1칸 이동
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week3/images/img_52.png)
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week3/images/img_53.png)
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week3/images/img_54.png)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week3/images/img_55.png)
 
 - 결과적으로 좌(인덱스)의 왼쪽의 요소들은 모두 pivot 보다 작아지게 됨
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week3/images/img_56.png)
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week3/images/img_57.png)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week3/images/img_58.png)
 
 ![img_59.png](old_note/COMP3500/week3/images/img_59.png)
 
@@ -336,29 +336,29 @@ public static void insertionSort(final int[] nums) {
 - 오랫만에 pivot 보다 큰 값
     - 그대로 둠
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week3/images/img_61.png)
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week3/images/img_62.png)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week3/images/img_63.png)
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week3/images/img_64.png)
 
 - 안정성 보장 X
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week3/images/img_65.png)
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week3/images/img_66.png)
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week3/images/img_67.png)
 
 - 1회차 정리
     - 기준값보다 작은 값이 모여있는 구간
     - 기준값보다 큰거나 같은 값이 모여있는 구간
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week3/images/img_68.png)
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week3/images/img_69.png)
 
 - 기준값을 두 범위 사이에 넣기
     - 진짜 넣고 배열을 미는게 아니라
@@ -366,61 +366,61 @@ public static void insertionSort(final int[] nums) {
         - 이렇게 해도 괜찮은 이유:
             - 어차피 기준값 이상인 범위는 정렬된게 아니라, 자리 바꿔도 문제될 일 X
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week3/images/img_70.png)
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week3/images/img_71.png)
 
 - 결과적으로 6(기준값)은 본인의 위치를 찾게됨
     - 6 미만 값은 모두 왼쪽
     - 6 이상 값은 모두 오른쪽
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week3/images/img_72.png)
 
 - 2회차
 - 재귀
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week3/images/img_73.png)
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week3/images/img_74.png)
 
 - 호출 트리
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week3/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week3/images/img_76.png)
 
 - 좌(인덱스)와 교환
     - 자기 자신과 교환되서 위치는 바뀌질 않음
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week3/images/img_77.png)
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week3/images/img_78.png)
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week3/images/img_79.png)
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week3/images/img_80.png)
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week3/images/img_81.png)
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week3/images/img_82.png)
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week3/images/img_83.png)
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week3/images/img_84.png)
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week3/images/img_85.png)
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week3/images/img_86.png)
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week3/images/img_88.png)
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week3/images/img_87.png)
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week3/images/img_89.png)
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week3/images/img_90.png)
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week3/images/img_91.png)
 
 ![img_92.png](old_note/COMP3500/week3/images/img_92.png)
 

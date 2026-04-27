@@ -49,7 +49,7 @@
 
 - 어떤 관계를 edge로 표현하나요?
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week11/images/img_6.png)
 
 - 관계는 무엇이든 상관없이 정의하기 나름
 
@@ -57,35 +57,35 @@
 
 ### 그래프의 예
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week11/images/img_7.png)
 
 - 서울 지하철 노선표
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week11/images/img_8.png)
 
 - 선수과목 관계
 
 - 지하철 노선표와 다르게 방향이 한 방향이죠!
 - 지하철에는 변에 거리라는 개념이 포함되어 있지만, 이번에는 없음
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week11/images/img_9.png)
 
 - 전/현 직장동료
 
 - 그래프는 네트워크를 표현할 때 편리하다
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week11/images/img_10.png)
 
 - 변에 조건이 있음
     - 시간 초과여부
 - 노드로 돌아오는 루프 edge도 있음
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week11/images/img_11.png)
 
 - 스킬 트리
 - 선수과목과 유사함
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week11/images/img_12.png)
 
 - 스킬 트리는 "트리"다
 - 트리는 그래프의 특수한 케이스
@@ -96,41 +96,41 @@
 
 ### 그래프 복습 퀴즈
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week11/images/img_13.png)
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week11/images/img_14.png)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week11/images/img_15.png)
 
 - 1,2,3 중 트리인 것은 1번!
     - 유일하게 비순환
 
 ### 그래프 정리
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week11/images/img_16.png)
 
 - 정의:
     - Node와 Edge의 집합
     - 수식이 깔끔하게 표현 해줌
         - G = (N, E)
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week11/images/img_17.png)
 
 - degree(차수):
     - node에 연결된 edge의 개수
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week11/images/img_18.png)
 
 - loop:
     - 자기 자신으로 돌아오는 edge를 가진 노드
 
 ### 그래프의 종류
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week11/images/img_19.png)
 
 #### 방향 vs 무방향 그래프
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week11/images/img_20.png)
 
 - 방향을 화살표로 표기
 - 방향(꼬리 -> 머리)로만 이동 가능
@@ -142,7 +142,7 @@
 
 #### 무방향 그래프의 최대 변 개수
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week11/images/img_21.png)
 
 - 노드 수가 주어질 때 이 노드의 관계를 표현하는 edge의 최대 개수
     - nC2
@@ -150,25 +150,25 @@
 
 #### 순환 vs 비순환 그래프
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week11/images/img_22.png)
 
 - cycle 여부
 
 #### 가중 vs 비가중
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week11/images/img_23.png)
 
 - edge에 값이 있으면 가중
 
 ### DAG
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week11/images/img_24.png)
 
 - 말 그대로 방향, 비순환
 
 ### 방향 가중 그래프
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week11/images/img_25.png)
 
 - A -> C
 - C -> D
@@ -177,68 +177,68 @@
 
 ### 그래프를 사용해 풀 수 있는 문제들
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week11/images/img_26.png)
 
 ## 그래프를 표현하는 방법들
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week11/images/img_27.png)
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week11/images/img_28.png)
 
 - 그래프를 컴퓨터에 어떻게 표현하지?
     - 코드로 어떻게 옮기지
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week11/images/img_29.png)
 
 - 그래프를 표현할 때 대표적으로 3가지 정도 방법
 
 ### 원과 선
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week11/images/img_30.png)
 
 - 사람이 이해하기 편함
 - 노드, edge가 너무 많으면..?
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week11/images/img_31.png)
 
 - 노드끼리 서로서로 참조하는 경우도 생기고 복잡해짐
 
 ### 인접 행렬
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week11/images/img_32.png)
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week11/images/img_33.png)
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week11/images/img_34.png)
 
 - from-to 관계를 정리하면 됨
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week11/images/img_35.png)
 
 - from A to A 불가능
     - 갈 수 있다면 루프가 형성되어야함
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week11/images/img_36.png)
 
 - from A to B
 - from A to C
 - 모두 가능
     - true(1)
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week11/images/img_37.png)
 
 - from A to D
 - 직접 edge로 연결되지 않아 불가능
     - false(0)
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week11/images/img_38.png)
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week11/images/img_39.png)
 
 - 행렬이 대각선 기준 대칭
     - 무방향 그래프의 특징임
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week11/images/img_40.png)
 
 ```text
   A B C D
@@ -256,7 +256,7 @@ D 0 0 0 0
         - A열: 0 1 0 0
             - 노드 A를 누가 가리키는지 알 수 있음
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week11/images/img_41.png)
 
 - 인접 행렬은 2d 배열로 구현함
     - 장점:
@@ -273,23 +273,23 @@ D 0 0 0 0
 
 ### 인접 리스트
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week11/images/img_42.png)
 
 - 연결리스트의 배열
     - 2d 배열보다 공간을 아낄 수 있음
 
 - 연결리스트 대신에 다른 자료구조 사용해도 되긴함
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week11/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week11/images/img_44.png)
 
 - 여기서 연결리스트에서 B -> C의 관계를 의미하는 건 아님
     - A에 연결된 노드를 연결리스트로 표현할 뿐!
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week11/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week11/images/img_46.png)
 
 - 장점:
     - 노드 수 + edge 수 만큼 공간 차지
@@ -302,7 +302,7 @@ D 0 0 0 0
     - from-to 관계 찾을 때 O(1)으로 불가능
         - 행 or 열 정해서 O(E)로 순회해서 확인해야함
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week11/images/img_47.png)
 
 - 기타 표현법
 
@@ -310,7 +310,7 @@ D 0 0 0 0
 
 - 1번
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week11/images/img_48.png)
 
 ```text
 0 1 0 0
@@ -324,13 +324,13 @@ D 0 0 0 0
 
 ## 그래프의 DFS
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week11/images/img_49.png)
 
 - 트리에서 깊이 우선 탐색
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week11/images/img_50.png)
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week11/images/img_51.png)
 
 - 무방향 그래프의 경우 트리의 DFS 알고리듬을 사용하면 무한루프
 
@@ -338,16 +338,16 @@ D 0 0 0 0
 
 - 왜 무한루프가 발생하는지 시뮬레이션 해보자!
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week11/images/img_52.png)
 
 - 자식을 스택에 추가하는 과정을 반복하다 보면 노드를 다시 방문하는 일이 발생함
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week11/images/img_53.png)
 
 - 무한루프를 해결하려면?
     - 처리했던 노드를 기억하면 됨
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week11/images/img_54.png)
 
 - HashSet으로 방문한 노드를 검증해보자
 
@@ -359,20 +359,20 @@ A E C D F B C
 - 왜 이렇지?
     - Set에 들어가기 전에 Stack에 중복해서 들어갈 수 있음
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week11/images/img_55.png)
 
 - 스택에 중복해서 들어가는 것을 막아야함
 - 아니면 스택에서 pop해서 처리했던 노드인지 확인하기
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week11/images/img_56.png)
 
 - 스택에 넣을 시점에 동시에 Set에도 넣어서, 발견한 노드라는 개념으로 접근하기
 
 ### 방향 그래프에서 DFS
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week11/images/img_57.png)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week11/images/img_58.png)
 
 - 과연 모든 노드를 방문할 수 있나?
 
@@ -398,11 +398,11 @@ A E C D F B C
 
 ### 후위 순회 DFS
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week11/images/img_61.png)
 
 - 재귀 함수로 만들면 쉬움
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week11/images/img_62.png)
 
 - 이 그래프를 후위 순회 DFS로 출력해보자!
 
@@ -475,28 +475,28 @@ public class Program {
 - 시간 복잡도는?
     - O(N + E)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week11/images/img_63.png)
 
 - 각 변은 최대 두번 고려됨:
     - 무방향 그래프라서!
     - 노드가 서로서로 참조
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP3500/week11/images/img_64.png)
 
 - 근데 트리의 DFS의 시간복잡도에서는 Edge를 고려했었나?
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP3500/week11/images/img_65.png)
 
 - 사실은 고려했었음
     - 하지만 E = N - 1 성립해서 Big-O 표기법 때문에 없는 것으로 착각
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP3500/week11/images/img_66.png)
 
 - E = N - 1 성립은 아무 트리나 그려보면 알 수 있음
 
 ### 그래프 DFS 복습 퀴즈
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP3500/week11/images/img_67.png)
 
 - 위 그래프를 후위 순회하면 방문하는 노드들을 순서대로 적으세요. 순회를 시작하는 노드는 F입니다.
 
@@ -509,9 +509,9 @@ public class Program {
 - 위상:
     - 서로의 위치 관계
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP3500/week11/images/img_68.png)
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP3500/week11/images/img_69.png)
 
 - 노드:
     - task
@@ -519,12 +519,12 @@ public class Program {
     - 각 task의 우선 순위를 표현
     - task 선-후 관계
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP3500/week11/images/img_70.png)
 
 - 이게 왜 어려울까?
     - 인간에게 step-by-step이 가장 편하기 때문임!
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP3500/week11/images/img_71.png)
 
 - 위상 정렬을 이용해보자!
 - 우선순위(선-후 관계)는 바뀌지 않음
@@ -534,13 +534,13 @@ public class Program {
 
 - 결과는 여러개!
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP3500/week11/images/img_72.png)
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP3500/week11/images/img_73.png)
 
 - 시작점은 항상 들어오는 edge가 없는 노드!
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP3500/week11/images/img_74.png)
 
 - 위상 정렬 알고리듬에 2가지 정도 활용!
     - DFS
@@ -553,23 +553,23 @@ public class Program {
 
 ### DFS를 이용한 위상정렬
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP3500/week11/images/img_75.png)
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP3500/week11/images/img_76.png)
 
 - "물 받기" 노드에서 시작해서 DFS
 - 모든 노드에 대해서 DFS 적용하기 위해 "봉지 뜯기", "파 썰기", "수저 놓기" 에서도 DFS 적용
     - 위에서 배운 DFS 모든 노드에 적용하는 동작 그대로 사용
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP3500/week11/images/img_77.png)
 
 - 근데 문제가 있음
 - "맛있게 먹기" 노드는 항상 마지막에 처리해야하는거 아닌가요?
 - 현재 방법에서는 "물 받기"가 아니라 어떤 노드에서 시작하던 답은 나오지 않음
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP3500/week11/images/img_78.png)
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP3500/week11/images/img_79.png)
 
 - DFS 후위 순회하고, 역으로 과정을 복원하면 됨
     - Stack
@@ -577,7 +577,7 @@ public class Program {
 
 ### 위상 정렬의 용도
 
-![img_80.png](images/img_80.png)
+![img_80.png](old_note/COMP3500/week11/images/img_80.png)
 
 - 프로젝트 일정 만들기
 - CPU의 out of order scheduling
@@ -733,25 +733,25 @@ public class Program {
 
 ### 송수관 깔기 문제
 
-![img_81.png](images/img_81.png)
+![img_81.png](old_note/COMP3500/week11/images/img_81.png)
 
 - 물은 한 방향으로만 흐른다고 가정
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP3500/week11/images/img_82.png)
 
 - 진입 차수가 0인 노드가 유리함
     - 위상 정렬에서도 사용되는 논리
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP3500/week11/images/img_83.png)
 
 - 이 그래프는 진입 차수가 0인 노드가 없음!
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP3500/week11/images/img_84.png)
 
 - 순환은 어떻게 처리하지?
 - 1,2,3 노드간의 관계를 정의해보자
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP3500/week11/images/img_85.png)
 
 - 1에서 2,3에 도달 가능
 - 2에서 1,3에 도달 가능
@@ -760,26 +760,26 @@ public class Program {
 
 ### SCC 영상 퀴즈
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP3500/week11/images/img_86.png)
 
 - 위 그래프에서 또 다른 SCC를 올바르게 고른 것은?
 - 5,6,7,8,9,10,11
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP3500/week11/images/img_87.png)
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP3500/week11/images/img_88.png)
 
 - SCC는 하나의 노드로 간주해도 된다!
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP3500/week11/images/img_89.png)
 
 - 치환하면 간단해짐!
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP3500/week11/images/img_90.png)
 
 - 진입차수가 0인 c2에 송수관을 꽂으면 됨!
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP3500/week11/images/img_91.png)
 
 - 우왕
 

@@ -99,7 +99,7 @@ https://en.cppreference.com/w/c/numeric/fenv/feclearexcept
 
 ### 부동 소수점 예외 설정
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week13/img_6.png)
 
 - 이 함수를 호출하면 전역적으로 부동 소수점 예외를 설정함
 - 함수를 구현하는 사람이 부동 소수점 예외를 설정해도, 함수 호출자는 모르는 경우가 많음
@@ -146,13 +146,13 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ### 부동 소수점 연산 환경 설정
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week13/img_7.png)
 
 - 반올림 규칙 설정
 
 ### <fenv.h> 지원 여부는 불확실
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week13/img_8.png)
 
 - #pragma는 컴파일러가 별도로 지원하는 기능을 켜고/끄는 방법
 - 컴파일러마다 지원하는 부동 소수점 환경이 다름
@@ -160,7 +160,7 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ## Type-Generic 수학
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week13/img_9.png)
 
 - 컴퓨터 공학에서 generic == 범용적
     - 용도1: 모든 자료형을 표현할 수 있는 경우
@@ -173,7 +173,7 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
     - 이렇게 이름이 겹치면 안 되기 때문에 동일한 기능을 해도 따로 만들어야하는 불상사
         - add(int a, int b), add(float a, float b) 불가능
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week13/img_10.png)
 
 - 수학 함수(math.h) 및 복소수(complex.h)용 제네릭 `매크로 함수`
     - 프로그래머는 매크로 함수를 호출
@@ -182,17 +182,17 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ### 복소수와 실수를 모두 지원하는 매크로 함수
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week13/img_11.png)
 
 - 복소수가 더 큰 개념이라, 매개변수에 복소수를 넣으면 복소수용 함수가 호출됨
 
 ### 실수만 지원하는 매크로 함수
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week13/img_12.png)
 
 ### 복소수만 지원하는 매크로 함수
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week13/img_13.png)
 
 ### 매개 변수의 자료형 우선 순위
 
@@ -203,16 +203,16 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ## 가변 길이 배열
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week13/img_14.png)
 
 - 실행 중에 길이(요소수)가 결정되는 배열
 - A.K.A `VLA`
 
 ### 가변 길이 배열에 대한 비판
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week13/img_15.png)
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week13/img_16.png)
 
 - 스택 메모리의 크기는 컴파일 시점에 결정됨
 - 동적 메모리 할당이 필요할 수도...
@@ -221,7 +221,7 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ### 가변 길이 배열와 메모리
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week13/img_17.png)
 
 - 보통 가변 길이 배열은 스택에 저장
 - 새로운 개념의 등장
@@ -235,17 +235,17 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ### sizeof() 로 가변 길이 배열의 크기를 알 수 있음
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week13/img_18.png)
 
 - 실행 중 가변 길이 배열의 크기를 알 수 있음
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week13/img_19.png)
 
 - 원래 sizeof()는 컴파일 도중에 상수값으로 변환되는 키워드
 - C의 목적은 단순함인데, 복잡해지는데..?
     - 자잘한 기능이 많아지면 프로그래머가 암기할 사항이 많아짐
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week13/img_20.png)
 
 - 함수 매개변수로 사용할 때는 가변 길이 배열이랑 관계없음
 - 어차피 함수 매개변수에는 포인터로 전달
@@ -253,7 +253,7 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ### VLA 베스트 프렉티스
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP2200/week13/img_21.png)
 
 - 사용 안 하는게 베스트 프렉티스 ㅋㅋ
 
@@ -263,7 +263,7 @@ https://en.cppreference.com/w/c/numeric/fenv/feraiseexcept
 
 ### 함수에 배열 매개변수 전달하기 [한계 1]
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week13/img_22.png)
 
 - int* nums vs int nums[]
     - 배열 매개변를 int* const로 전달할 방법이 없음
@@ -301,7 +301,7 @@ int main(void)
 
 ### 함수에 배열 매개변수 전달하기 [한계 2]
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week13/img_23.png)
 
 - 포인터 변수로 캐스팅되기 때문에 함수에 전달될 배열의 요소 수를 컴파일 도중 알 수 없음
 - 컴파일 도중에 알 수 있다면, 최적화 가능!
@@ -311,7 +311,7 @@ int main(void)
 
 ### 한계 1, 한계 2를 극복하여 나온 것이 배열 색인 안의 static 키워드
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week13/img_24.png)
 
 - 함수 매개변수로 전달되는 배열에 static 키워드를 사용할 수 있음
 - static: 배열에 최소 몇 개의 요소가 있는지 컴파일러에게 알려줌
@@ -319,7 +319,7 @@ int main(void)
     - const
     - restrict
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week13/img_25.png)
 
 - 실행 중에 그 보다 작은 배열이 들어오면 정의되지 않은 결과
     - 컴파일러는 **최소** 8개가 들어온다고 가정하고 최적화하기 때
@@ -329,7 +329,7 @@ int main(void)
 
 ### const 한정자 사용 예
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week13/img_26.png)
 
 - dest는 `int* const`로 캐스팅한다고 생각하면 됨
 - src는 `const int*`로 캐스팅한다고 생각하면 됨
@@ -356,24 +356,24 @@ int sum(int nums[static const 8], size_t count)
 
 ### restrict 한정자 사용 예
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week13/img_27.png)
 
 - 포인터에 restrict 키워드 붙이는 것과 효과 동일함
 - 다른 포인터 변수와 메모리 영역이 겹치지 않음
 
 ## 복합 리터럴
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week13/img_28.png)
 
 - 쉽게 생각하면 1회용 구조체, 배열을 쓰고 버리는 방법
 
 ### 사용 방법
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week13/img_29.png)
 
 - 초기화 목록 + 타입 캐스팅
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week13/img_30.png)
 
 - 복합 리터럴로 선언하면 배열 변수명이 없기 때문에 포인로 접근해서 사용하면 됨
     - 즉 재사용 용도
@@ -381,19 +381,19 @@ int sum(int nums[static const 8], size_t count)
 - 그럴 일이 없으면 포인터에 대입하지 않아도 됨
     - 예를 들어 함수의 매개변수로 사용하는 경우
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week13/img_31.png)
 
 ### 베스트 프렉티스
 
 - 쓰지 말자 ㅋㅋ
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week13/img_32.png)
 
 ## 가변 인자 메크로
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week13/img_33.png)
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week13/img_34.png)
 
 - 일반 함수와 달리 매개변수 목록에 가변 인자만 있어도 됨
 - __VA_ARGS__ 매크로로 사용 가능
@@ -402,7 +402,7 @@ int sum(int nums[static const 8], size_t count)
 
 ### 다른 함수에 가변 인자를 전달하는 용도
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week13/img_35.png)
 
 - 일반 함수(메크로 함수가 아닌)와 달리 가변 인자 속에 있는 각 인자에 접근할 방법이 없음
     - 일반 함수의 경우 `va_list` 메크로로 접근함
@@ -411,7 +411,7 @@ int sum(int nums[static const 8], size_t count)
 
 ### # 명령어와 같이 쓰이는 경우
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week13/img_36.png)
 
 - 마찬가지로 `...`의 모든 매개변수를 복붙하되 ""사이에 복붙함
 
@@ -419,7 +419,7 @@ int sum(int nums[static const 8], size_t count)
 
 ### 유니코드 지원
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week13/img_37.png)
 
 - UCN(Universal Character Name)
     - 유니코드 코드 포인트를 소스 파일에 작성
@@ -428,7 +428,7 @@ int sum(int nums[static const 8], size_t count)
 - 소스 파일을 인코딩으로 저장하는 방식
     - `인코딩으로 저장`의 의미: 소스 파일에서 모든 char형으로 표현되는 문자는 UTF-8로 인코딩
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week13/img_38.png)
 
 - 소문자 `\u`를 사용하면 유니코드 코드 포인트를 최대 2바이트 크기로 표현 가능
 - 대문자 `\U`를 사용하면 유니코드 코드 포인트를 최대 4바이트 크기로 표현 가능
@@ -441,7 +441,7 @@ int sum(int nums[static const 8], size_t count)
 
 ### UCN 지원의 의의
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week13/img_39.png)
 
 - 아스키 인코딩으로 저장한 경우
     - 소스 코드에 아스키가 아닌 문자를 넣고 저장했을 때 로딩을 하면 깨져서 나옴
@@ -468,13 +468,13 @@ int sum(int nums[static const 8], size_t count)
 
 ### C 언어에서 인코딩을 판단할 수 없음
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week13/img_40.png)
 
 - 컴퓨터는 바이트 패턴으로만 알 고 있음
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week13/img_41.png)
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week13/img_42.png)
 
 - 한글로 인코딩이 됬으면, 2글자로 저장하고 strlen()의 값은 2여야 함
 - 하지만 바이트로 계산하기 때문에 6바이트
@@ -484,7 +484,7 @@ int sum(int nums[static const 8], size_t count)
 
 ## 멀티바이트 문자
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week13/img_43.png)
 
 - 모든 문자는 1개 이상의 바이트에 저장됨
     - 아스키: 1문자는 1바이트
@@ -510,7 +510,7 @@ int sum(int nums[static const 8], size_t count)
 
 ### 멀티바이트 문자가 제대로 동작하는 조건
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week13/img_44.png)
 
 - 한 사용자 환경에서의 입력과 출력을 가정
     - 아스키가 아닌 문자을 사용자로 부터 입력 받음
@@ -527,12 +527,12 @@ int sum(int nums[static const 8], size_t count)
     - [중요] C에서 인코딩/디코딩의 책임을 지지 않음
 - 핵심은 `멀티바이트 문자`는 시스템 환경을 따른다는 것!
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week13/img_45.png)
 
 - 대부분 인코딩에서 멀타바이트 문자열은 아스키 값을 그대로 지원
     - 즉 인코딩할 때 아스키 코드 값을 그대로 유지함
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week13/img_46.png)
 
 - 사용자 환경이 달라지는 경우
     - 데이터를 교환할 때 사용자의 환경이 달라지면 문제가 발생함
@@ -544,7 +544,7 @@ int sum(int nums[static const 8], size_t count)
 
 ## 다국어 지원
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week13/img_47.png)
 
 - C언어는 오래된 언어라 컴퓨터 사용환경이 변한 것에 많이 뒤처짐
 - C언어에서 데이터 교환에 사용할 수 있는 `공통된 표준`이 필요
@@ -553,48 +553,48 @@ int sum(int nums[static const 8], size_t count)
 
 ### 다국어 지원의 배경
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week13/img_48.png)
 
 - 사용자가 보고서를 작성함(키보드로 입력)
 - 입력된 한글은 EUC-KR 인코딩을 통해 멀티바이트 문자로 저장
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week13/img_49.png)
 
 - 저장된 멀티바이트 문자를 디코딩해서 출력하면 한글로 읽을 수 있음
 - 동일한 컴퓨터에서 입출력하기 때문에 인코딩/디코딩 방식도 동일함
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week13/img_50.png)
 
 - 동료에게 파일을 전달함
 - 동료 컴퓨터는 ISIO-2022-KR 인코딩 방식 사용
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week13/img_51.png)
 
 - EUC-KR로 인코딩된 파일을 ISIO-2022-KR로 디코딩하면 글자가 깨짐
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week13/img_52.png)
 
 - 가장 쉬운 해결법은 동료 컴퓨터의 인코딩을 바꾸는 방법
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week13/img_53.png)
 
 - 인코딩을 변경하면 동료 컴퓨터에 ISIO-2022-KR로 인코딩한 파일을 정상적으로 읽을 수 없음
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week13/img_54.png)
 
 - 문제를 정의하면 둘 사이에 공통 인코딩이 없다는 것
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week13/img_55.png)
 
 - 근본적인 해결책은 서로 다른 인코딩된 파일을 공통된 인코딩으로 변환하면 됨
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP2200/week13/img_56.png)
 
 - 공통 인코딩된 파일을 읽을 때 자신의 컴퓨터의 인코딩에 맞게 변환 과정을 거쳐서 읽으면 됨
 
 ## wchar_t
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week13/img_57.png)
 
 - wide 문자를 나타내는 자료형
 - 각 문자가 `고정된 바이트 크기`를 가짐
@@ -602,7 +602,7 @@ int sum(int nums[static const 8], size_t count)
 - 타겟 플랫폼(운영체제)에서 지원하는 모든 인코딩 중 가장 큰 문자를 담을 수 있어야 함
     - 현재 UTF-32(4바이트)
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week13/img_58.png)
 
 - 자료형이니 `컴파일 시`에 이미 `인코딩`과 `바이트 크기`가 정해짐
 - 컴파일러와 플랫폼마다 크기가 다를 수 있음
@@ -633,13 +633,13 @@ const wchar_t* w_pope = L"포프";
 
 ### wchar_T 전용 함수들(c89)
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week13/img_61.png)
 
 - C89에서는 변환하는 함수만 제공
     - 멀티바이트 문자(열) -> 와이드 문자(열)
     - 와이드 문자(열) -> 멀티바이트 문자(열)
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week13/img_62.png)
 
 ```c++
 const char* pope = "\ud3ec\ud504";
@@ -654,7 +654,7 @@ printf("%s\n", buffer);
 
 ### 문자열 길이를 구한는 함수?(c89)
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week13/img_63.png)
 
 - 별도의 문자열 길이를 구하는 함수는 없음
 - wchar_t에서 모든 문자는 고정 크기인 점을 이용하면 구현할 수 있음
@@ -663,23 +663,23 @@ printf("%s\n", buffer);
 
 ### wchar_t 저용 함수들 (C95)
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week13/img_68.png)
 
 - 시험에 안 나올 듯
 
 ## 새로운 문제점(플랫폼이 다른 경우)
 
-![img_64.png](img_64.png)
-![img_65.png](img_65.png)
+![img_64.png](old_note/COMP2200/week13/img_64.png)
+![img_65.png](old_note/COMP2200/week13/img_65.png)
 
 - 와이드 문자는 플랫폼에 종속적임
     - 이런 상황을 portable 하지 못하다라고 표현합니다
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week13/img_66.png)
 
 - 만약 모든 플랫폼에서 동일한 인코딩을 사용한다면 괜찮은데, 점유율이 50%가 넘는 윈도우즈만 다른 인코딩 사용 중
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week13/img_67.png)
 
 - C99에서 언어 레벨에서 해결 방법은 없음
     - ICU 라이브러리를 사용하기
@@ -689,22 +689,22 @@ printf("%s\n", buffer);
 
 ### 이전 방법
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week13/img_69.png)
 
 - 서로 다른 멀티바이트 문자 간 변환이 불가능
     - 멀티바이트 <-> 와이드 문자 변환만 가능
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week13/img_70.png)
 
 - 플랫폼에 종속적임
 
 ### 공통의 인코딩 방법을 사용하면 어떨까? (UTF-32, UTF-16)
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week13/img_71.png)
 
 - C11에서 허용
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week13/img_72.png)
 
 - 언어에서 UTF-16, UTF-32 인코딩을 지원
 - 문자열에 소문자 u를 붙이면 UTF-16으로 인코딩
@@ -715,21 +715,21 @@ printf("%s\n", buffer);
     - 기본적으로 char은 시스템(플랫폼)의 인코딩 방식을 따름
     - char이 멀티바이트 문자라고 생각하면 됨
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week13/img_73.png)
 
 - 리터럴 소문자 u를 붙여서 char_16t* 문자열을 만들고, 이를 char*에 대입하면 컴파일 에러
 - 문자열 사용과 똑같고, 리터럴만 다르다고 생각하자!
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week13/img_74.png)
 
 - 당연히 바로 %s 형식지정자로 출력하면 안 됨
 - %s는 시스템의 멀티바이트 문자와 호환됨
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week13/img_75.png)
 
 - 멀티바이트 문자로 변환하는 함수 제공함
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week13/img_76.png)
 
 - [mb_state_t](https://en.cppreference.com/w/c/string/multibyte/mbstate_t)
     - 멀티바이트 문자의 인코딩 규칙에서 발생할 수 있는 모든 변환 상태를 나타내는 타입
@@ -749,27 +749,27 @@ printf("%s\n", buffer);
 
 ### wchar_t의 문제(플랫폼 의존)을 극복
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week13/img_77.png)
 
 - 포팅이 가능해짐
 
 ### 여전히 wchar_t를 사용할 일이 있음
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week13/img_78.png)
 
 - wchar_t 와 멀티바이트 문자가 서로 변환이 되고, 멀티바이트 문자와 UTF-16/UTF-32 문자가 서로 변환이 되기 때문에 멀티 바이트 문자를 거쳐서 2번 변환하면 됨
 
 ### UTF-8로 대동단결 하면 안 되나요?
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week13/img_79.png)
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week13/img_80.png)
 
 - C22에 넣자고 제안된 상태임
 
 ### C에서 UTF-8로 인코딩을 하는 기능을 제공하긴 함
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week13/img_81.png)
 
 - char형에 저장은 할 수 있음
 - 하지만 UTF-8로 인코딩된 비트패턴을 시스템에 맞는 멀티바이트로 변환하는 함수가 없음
@@ -779,7 +779,7 @@ printf("%s\n", buffer);
 
 ### 기본 원칙
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week13/img_82.png)
 
 - 사용자에게 보여주지 않을 문자열은 전부 아스키로 저장
     - 시스템 내부에서 아스키로 강제합시다!
@@ -788,13 +788,13 @@ printf("%s\n", buffer);
 - 가장 편한건 `ICU 라이브러리`
     - 라이센스, 비용, 용량 문제 때문에 사용 할 수 없는 경우도 있음
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week13/img_83.png)
 
 - UTF-8로 파일을 저장한다는 가정에 여러 시나리오를 소개
 
 ### [최상의 시나리오(C89 이상)]
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week13/img_84.png)
 
 - 사용자 환경을 모두 UTF-8로
     - 여기서 사용자는 컴퓨터 외부라고 생각하면 됨
@@ -803,7 +803,7 @@ printf("%s\n", buffer);
 
 ### [차선책: wchar_t가 UTF-32를 보장하는 경우(C89 이상)]
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week13/img_85.png)
 
 - 윈도우 플랫폼에서는 UTF-32 아니라서 불가능
 - 멀티바이트 문자를 와이드 문자로 변환(C에서 제공하는 함수)
@@ -812,13 +812,13 @@ printf("%s\n", buffer);
     - UTF-32에서 코드 포인트가 그대로 4바이트에 저장됨
     - 유니코드 코드 포인트 4바이트를 UTF-8로 변환하는 것은 간단한 일(자체 제작 함수)
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week13/img_86.png)
 
 - 수학 과목 내용 참고
 
 ### [char32_t가 UTF-32인 경우(C11 이상)]
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week13/img_87.png)
 
 - 멀티바이트 문자를 char32_t로 변환
     - `c32rtomb()`(C에서 제공하는 함수)를 사용하면 됨
@@ -827,7 +827,7 @@ printf("%s\n", buffer);
 
 ### [아마도 char8_t가 UTF-8인 경우(C23 이상)]
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week13/img_88.png)
 
 - 이건 미래의 좋은 방법
 - 멀티바이트 문자를 char8_t로 변환(C에서 제공하는 함수로)
@@ -843,20 +843,20 @@ printf("%s\n", buffer);
 
 ## C11 경계 점검(bound-check) 함수
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week13/img_89.png)
 
 - 검사하다보니 성능에 문제가 생김
 - 주로 문자열 관련 함수
 - 문제가 생기면 문제에 대한 보고를 해줌(에러 헨들러)
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week13/img_90.png)
 
 - 반드시 구현해야하는 함수가 아님
 - 표준에서 강제 X
 
 ### [경계 점검 함수 사용하기]
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week13/img_91.png)
 
 - #define __STDC_LIB_EXT1__ 를 지원하는지 컴파일러 문서를 확인
     - [질문] 직접 확인하는 방법?

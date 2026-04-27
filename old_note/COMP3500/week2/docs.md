@@ -25,13 +25,13 @@
 
 ## 재귀함수는 가독성이 좋음
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP3500/week2/images/img_6.png)
 
 ## 꼬리 재귀
 
 ### 꼬리 호출
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP3500/week2/images/img_7.png)
 
 - 조건1:
     - 함수 코드 제일 마지막에서 다른 함수 호출
@@ -40,27 +40,27 @@
 
 - 2가지 조건을 만족할 때 호출자(함수)의 스택 프레임을 유지하는게 실익이 있을까?
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP3500/week2/images/img_8.png)
 
 - 스택 프레임이 존재하는 이유에 대해 고민해보자
     - 호출한 함수가 반환되면 스택 프레임이 유지되면서 저장했던 값과 이후 연산을 하기 위해 필요
 - 꼬리 호출의 경우 함수 코드 제일 마지막에서 호출한 함수를 반환하고 더 이상 연산이 없음
     - 따라서 기존 함수의 스택 프레임을 유지할 필요없음
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP3500/week2/images/img_9.png)
 
 - 컴파일러 최적화: TCO
     - 프로그래밍 언어, 컴파일러, VM에 따라 달라짐
 
 ### 꼬리 재귀는 꼬리 호출의 특수한 경우
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP3500/week2/images/img_10.png)
 
 - 꼬리 호출에 적용하는 최적화 그대로 적용 가능
 
 ### 꼬리 재귀 예시: 팩토리얼 재귀 함수
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP3500/week2/images/img_11.png)
 
 - 이 함수는 꼬리 재귀일까?
     - NO!!!
@@ -69,21 +69,21 @@
 - 근데 반환값으로 이후 연산을 해서 조건2를 만족 X
     - 즉 함수 호출이 마지막 명령어는 아니죠~
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP3500/week2/images/img_12.png)
 
 - 꼬리 재귀로 수정해보자
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP3500/week2/images/img_13.png)
 
 - 꼬리 재귀는 가독성이 안 좋음
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP3500/week2/images/img_14.png)
 
 - 꼬리 재귀로 작성하는 이유의 대부분은 TCO 최적화
     - 하지만 꼬리 재귀 최적화를 지원하지 않는 환경이라면?
     - 안 돼도 의미는 있어요. 꼬리 재귀는 반복문으로 쉽게 변경할 수 있음
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP3500/week2/images/img_15.png)
 
 ## 코드보기: 재귀 함수로 총합 구하기
 
@@ -183,40 +183,40 @@ public static void puff(int n, int a, int b) {
 
 - brute force
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP3500/week2/images/img_16.png)
 
 - 모든 가능한 경우의 수를 시도하는 알고리듬
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP3500/week2/images/img_17.png)
 
 - 효율성을 고려하지 않음
     - 어떤 문제를 해결하는 법은 주먹구구식 알고리듬밖에 없는 경우도 있음
 
 ## 완전(exhaustive) 검색
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP3500/week2/images/img_18.png)
 
 - 배열 끝까지 봐야함
     - 시간복잡도 O(N)
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP3500/week2/images/img_19.png)
 
 - 여기 알고리듬은 기본으로 1분 안에 작성할 수 있어야함
     - 시험에 나올수도..?
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP3500/week2/images/img_20.png)
 
 - 보안 분야가 주먹구구식 알고리듬의 느림에 의존함
 
 ## 주먹구구식 비밀번호 깨기
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP3500/week2/images/img_21.png)
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP3500/week2/images/img_22.png)
 
 - 자물쇠 풀기 생각해보셈
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP3500/week2/images/img_23.png)
 
 - 비밀번호 자릿수 N이 늘어나면 시간복잡도 기하급수적으로 증가
     - exponential growth
@@ -225,9 +225,9 @@ public static void puff(int n, int a, int b) {
 
 ## 외판원 문제(traveling salesman problem)
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP3500/week2/images/img_24.png)
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP3500/week2/images/img_25.png)
 
 - 모든 경우의수(순열)에 따라 시간복잡도가 결정
     - O(N!)
@@ -235,20 +235,20 @@ public static void puff(int n, int a, int b) {
 
 ## 기하급수적 증가 알고리듬의 문제점
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP3500/week2/images/img_26.png)
 
 - 너무 느려서 실무에 사용할 수 없음
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP3500/week2/images/img_27.png)
 
 - A.K.A 지수 시간
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP3500/week2/images/img_28.png)
 
 - 지수 시간 vs 다항식 시간
     - NP vs P
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP3500/week2/images/img_29.png)
 
 ## 복습 퀴즈: 지수시간 알고리듬
 
@@ -263,7 +263,7 @@ public static void puff(int n, int a, int b) {
 
 ## P 분류
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP3500/week2/images/img_45.png)
 
 - classification
 - 판정 문제:
@@ -273,7 +273,7 @@ public static void puff(int n, int a, int b) {
 
 ## 결정론적 튜링 기계
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP3500/week2/images/img_46.png)
 
 - 보통 우리가 사용하는 프로그래밍 언어는 튜링 컴플리트를 만족
     - 튜링 기계의 조건을 모두 만족하는 언어
@@ -283,7 +283,7 @@ public static void puff(int n, int a, int b) {
 
 ## NP 분류
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP3500/week2/images/img_47.png)
 
 - Not P X
 - Nondeterministic
@@ -292,20 +292,20 @@ public static void puff(int n, int a, int b) {
 
 ## 비결정론적 튜링 기계
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP3500/week2/images/img_48.png)
 
 - CPU 코어가 무한대인 경우를 상상하기
 
 ## 결정론적 튜링 기계에서 NP 문제
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP3500/week2/images/img_49.png)
 
 - 답을 검증하는 시간이 다항식 시간 안에 가능
 - 답을 모를 때 답을 찾는 과정은 지수시간이 걸릴 수 있음
 
 ## 랜덤 접근 기계 == 결정론적 튜링 기계
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP3500/week2/images/img_50.png)
 
 - NP 문제를 푸는 다른 접근법:
     - 무작위, 근사, 휴리스틱 등
@@ -328,25 +328,25 @@ public static boolean hasGreater(int[] nums, int k) {
 
 ## P 또는 NP 배타적인 관계가 아님
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP3500/week2/images/img_51.png)
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP3500/week2/images/img_53.png)
 
 - 비결정론적 튜링 기계에서 당연(?)히 다항식 시간에 풀 수 있음
     - P 이면 NP!
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP3500/week2/images/img_52.png)
 
 - 결정론적 튜링 기계에서 다항식 시간 안에 검증할 수 있음
     - 답(각 분기마다 따라야하는 가지)를 모두 알기 때문에 검증은 다항식 시간에 할 수 있음
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP3500/week2/images/img_54.png)
 
 - 포함관계
 
 ## NP 완전 (NPC)
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP3500/week2/images/img_55.png)
 
 - NP 문제의 부분 집합
     - P 문제랑 배타 관계
@@ -359,18 +359,18 @@ public static boolean hasGreater(int[] nums, int k) {
     - NP 문제의 성질 때문에 결정론적 튜링기계에서 다항식 시간 안에 답을 검증할 수 있음
 - NP 문제들을 대표하는 어려운 문제라고 이야기함
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP3500/week2/images/img_56.png)
 
 - NPC 예시
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP3500/week2/images/img_57.png)
 
 - 의사 다항식 시간 안에 풀 수 있음
     - 약한 NPC 문제
 
 ## NP 난해(NP-hard) 문제
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP3500/week2/images/img_58.png)
 
 - NPC 만큼 어려운 문제
 - 결정론적 튜링기계에서 다항식 시간 안에 답 검증조차 불가능할 수도 있음
@@ -391,34 +391,34 @@ public static boolean hasGreater(int[] nums, int k) {
     - 어 그러면 다항식 시간안에 환원해서 NPC 문제로 환원하고 다항식 시간안에 풀면?
     - P == NP
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP3500/week2/images/img_61.png)
 
 - 이거 성공하면?
     - 대박임ㅋㅋ
     - 정보처리량이 엄청~
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP3500/week2/images/img_62.png)
 
 - 만약 성공하면 왼쪽 그림처럼
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP3500/week2/images/img_63.png)
 
 - 모든 NP 문제를 다항식 시간 안에 NPC 문제로 환원할 수 있기 때문에, 하나라도 다항식 시간안에 풀면 증명 완료
 - 근데 아직 아무도 성공 못 해서..
 
 ## 탐색 알고리듬
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP3500/week2/images/img_30.png)
 
 - 광범위한 개념
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP3500/week2/images/img_31.png)
 
 - 대표적으로 배열에서 특정 요소 find
 - 해시맵에서 찾기
     - 모두 범용적인 알고리듬
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP3500/week2/images/img_32.png)
 
 - 여기서 시간복잡도는 평균
 - 해시맵에서 N보다 큰 공간복잡도는 해시 맵 최적의 버킷사이즈가 2N + A 를 만족하는 소수
@@ -429,7 +429,7 @@ public static boolean hasGreater(int[] nums, int k) {
 
 ## 데이터 성질과 알고리듬
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP3500/week2/images/img_33.png)
 
 - 특정 데이터에 특화된 알고리듬도 중요함
 
@@ -438,35 +438,35 @@ public static boolean hasGreater(int[] nums, int k) {
 - 전제 조건:
     - 정렬된 데이터
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP3500/week2/images/img_34.png)
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP3500/week2/images/img_35.png)
 
 - 정렬된 데이터에서 오른쪽은 현재 값보다 큰 값
 - 왼쪽은 현재 값보다 작은 값
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP3500/week2/images/img_36.png)
 
 - 가운데 위치 확인
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP3500/week2/images/img_37.png)
 
 - 왼쪽으로 범위 좁힘
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP3500/week2/images/img_38.png)
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP3500/week2/images/img_39.png)
 
 - ...
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP3500/week2/images/img_40.png)
 
 - 시간 복잡도:
     - O(logN)
 
 ### 이진 탐색의 시간복잡도
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP3500/week2/images/img_41.png)
 
 - 정렬된 배열에서 사용가능!
 - 분할 정복
@@ -534,18 +534,18 @@ fail!
 
 ### 이진 탐색 알고리듬
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP3500/week2/images/img_42.png)
 
 ## 정렬된 데이터와 알고리듬
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP3500/week2/images/img_43.png)
 
 - 정렬된 데이터에 사용할 수 있는 효율적인 알고리듬이 많다
     - 대표적으로 이진 탐색
 - 삽입할 때 마다 정렬하면 비효율적임
     - 이진 탐색을 위해 배열의 상태를 정렬된 상태로 유지하려고 매번 삽입하면 배보다 배꼽이 더 큼
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP3500/week2/images/img_44.png)
 
 - 배열이 바뀌는 경우 이진 탐색을 사용하려면?
     - 반드시 배열을 정렬해야함

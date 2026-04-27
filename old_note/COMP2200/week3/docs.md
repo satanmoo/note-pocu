@@ -59,26 +59,26 @@ int main(void) {
 - 메모리 주소도 숫자니까 변수에 저장할 수 있지 않을까?
 - 4바이트 짜리 숫자? (32비트니까?)
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week3/img_6.png)
 
 - 펭귄 붙여서 나온 주소값을 4바이트짜리 변수에 저장했다.
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week3/img_7.png)
 
 - 컴파일 에러가 발생했다.
 - 포인터랑 integer형이랑 호완이 되지 않는다!
 
 ### 설사 주소를 일반적인 변수에 저장하는 것도 문제임.
 
-![img_8.png](img_8.png)
-![img_9.png](img_9.png)
+![img_8.png](old_note/COMP2200/week3/img_8.png)
+![img_9.png](old_note/COMP2200/week3/img_9.png)
 
 - 주소를 저장하는 특별한 변수가 포인터
 - 이 숫자가 주소값인지 변수에 저장한 값인지 숫자만으로 알 수 없음
 
 ## 포인터의 정의
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week3/img_10.png)
 
 - 주소를 저장하기 위한 변수형
 - 변수인데 속에 담긴 값은 메모리 주소
@@ -87,9 +87,9 @@ int main(void) {
 
 ### 하드웨어(메모리)에 저장된 비트패턴은 자료형이라는 개념이 없다
 
-![img_11.png](img_11.png)
-![img_12.png](img_12.png)
-![img_13.png](img_13.png)
+![img_11.png](old_note/COMP2200/week3/img_11.png)
+![img_12.png](old_note/COMP2200/week3/img_12.png)
+![img_13.png](old_note/COMP2200/week3/img_13.png)
 
 - 하드웨어는 자료형을 신경쓰지 않음
 - 비트패턴은 그대로 저장됨, 하지만 해석이 바뀐다.
@@ -98,7 +98,7 @@ int main(void) {
 
 ### 프로그래밍 언어 입장(레이어)에서 자료형 개념이 존재한다.
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week3/img_14.png)
 
 - 프로그래밍 언어 레이어에서 비트 패턴을 해석함
 - 프로그래머가 컴파일러에게 하드웨어에 해당 주소로 부터 몇 바이트 읽어야하는지 알려줘야한다.
@@ -106,60 +106,60 @@ int main(void) {
 
 ## 포인터 변수의 선언
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week3/img_15.png)
 
 - 포인터 변수의 선언은 자료형 뒤에 *을 붙인다.
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week3/img_16.png)
 
 - 별표 왼쪽의 자료형은 그 메모리 주소로 가면 저장되어 있는 자료형
 - 하드웨어가 몇 바이트 읽어오냐에 따라 자료형이 달라진다.
 
 ## 코딩 표준: int*(인트 포인터형)
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week3/img_17.png)
 
 ## 포인터 변수를 부르는 법
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week3/img_18.png)
 
 - pointer to an int
 - int*를 만나면 `오른쪽에서 왼쪽`으로 읽자
 
 ### 포인터 변수는 어디에 저장되어 있지?
 
-![img_19.png](img_19.png)
-![img_20.png](img_20.png)
-![img_21.png](img_21.png)
+![img_19.png](old_note/COMP2200/week3/img_19.png)
+![img_20.png](old_note/COMP2200/week3/img_20.png)
+![img_21.png](old_note/COMP2200/week3/img_21.png)
 
 - 포인터 변수도 메모리에 저장되어 있음
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week3/img_22.png)
 
 - 기본 개념은 포인터는 메모리 주소를 저장하는 변수!
 
 ## 메모리의 예시
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week3/img_23.png)
 
 - 0a는 10이죠?(num에 저장된 값, 리틀 엔디언)
 
 ### 메모리에 저장된 값이 이상해요: 리틀 엔디언
 
-![img_24.png](img_24.png)
-![img_25.png](img_25.png)
+![img_24.png](old_note/COMP2200/week3/img_24.png)
+![img_25.png](old_note/COMP2200/week3/img_25.png)
 
 - 인텔 PC는 리틀 엔디언 방식으로 저장한다.
 - 왼쪽이 작은 메모리 주소임
 
 ## 포인터의 비유
 
-![img_26.png](img_26.png)
-![img_27.png](img_27.png)
+![img_26.png](old_note/COMP2200/week3/img_26.png)
+![img_27.png](old_note/COMP2200/week3/img_27.png)
 
 ## char 포인터
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week3/img_28.png)
 
 - ch_pointer의 주소는 0x007ef7cc
 - ch_pointer 주소에가서 4바이트를 차지하는 ch_pointer의 값을 읽으면? d3 f7 7e 00
@@ -173,31 +173,31 @@ int main(void) {
 
 ## short 포인터
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week3/img_29.png)
 
 ## float 포인터
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week3/img_30.png)
 
 - float은 4바이트
 
 ## double 포인터
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week3/img_31.png)
 
 - double은 8바이트
 - 논리는 모두 동일하다.
 
 ## 포인터에 저장된 주소 값도 바꿀 수 있나요?
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week3/img_32.png)
 
 - pointer에 ch1의 주소를 대하고, 출력한 뒤, ch2의 주소를 다시 대입했음
 - 포인터는 변수의 일종임, 값을 바꿀 수 있음(대입)
 
 ## 포인터와 함수 매개변수
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week3/img_33.png)
 
 - 함수의 매개변수로 포인터를 전달할 수 있다.
 - 매개변수로 받은 포인터에는 어떤 주소값이 저장되어 있다.
@@ -205,98 +205,98 @@ int main(void) {
 
 ### 주소에 저장된 값을 출력하기
 
-![img_34.png](img_34.png)
-![img_35.png](img_35.png)
+![img_34.png](old_note/COMP2200/week3/img_34.png)
+![img_35.png](old_note/COMP2200/week3/img_35.png)
 
 - *를 붙이면 그 주소에 가서 값을 가져오라는 말이다.
   - 값을 가져올 때 어떤 자료형으로 가져오지? 포인터에 자료형!
 
 ## 역 참조 연산자 *
 
-![img_36.png](img_36.png)
-![img_37.png](img_37.png)
+![img_36.png](old_note/COMP2200/week3/img_36.png)
+![img_37.png](old_note/COMP2200/week3/img_37.png)
 
 - 포인터 변수에 저장된 주소에 가서 값을 가져오는 연산자
 
 ## 참조와 역참조
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week3/img_38.png)
 
 - 포인터가 하는 일이 참조
 - 주소를 참조!
 - 역참조는 그 주소에 저장된 값에 접근
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week3/img_39.png)
 
 - indirection
 
 ## 역 참조를 통해 값을 변경해보자
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week3/img_40.png)
 
 - 역 참조로 변수의 주소로 가서, 그 주소에 저장된 값을 변경
 
-![img_41.png](img_41.png)
-![img_42.png](img_42.png)
+![img_41.png](old_note/COMP2200/week3/img_41.png)
+![img_42.png](old_note/COMP2200/week3/img_42.png)
 
 ## 포인터 변수 선언 vs 역 참조
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week3/img_43.png)
 
 - 타입이 있으면 포인터 변수 선언!
 - 별표 때문에 헷갈림 ㄴㄴ
 
 ## 포인터로 두 변수의 값 바꾸기
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week3/img_44.png)
 
 - 안 바뀌죠
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week3/img_45.png)
 
 - 참조형 vs 값형 예제였죠?
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week3/img_46.png)
 
 - ref가 포인터의 역할을 해줌
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week3/img_47.png)
 
 ## 값에 의한 전달 vs 참조에 의한 전달
 
-![img_48.png](img_48.png)
-![img_49.png](img_49.png)
-![img_50.png](img_50.png)
+![img_48.png](old_note/COMP2200/week3/img_48.png)
+![img_49.png](old_note/COMP2200/week3/img_49.png)
+![img_50.png](old_note/COMP2200/week3/img_50.png)
 
 - 엄밀히 말하면 값에 의한 전달(포인터 값을 복사하니까)
 - 결국 중요한 것은 원본이 바뀌는지 안 바뀌는지
 
 ## 포인터와 함수 반환값
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week3/img_51.png)
 
 ### 함수에서 지역 변수의 주소를 반환하는 코드는 매우 위험함
 
-![img_52.png](img_52.png)
-![img_53.png](img_53.png)
+![img_52.png](old_note/COMP2200/week3/img_52.png)
+![img_53.png](old_note/COMP2200/week3/img_53.png)
 
 - 컴파일러도 경고를 줌
   - 실행 파일이 생기긴 하죠
 
-![img_54.png](img_54.png)
-![img_55.png](img_55.png)
+![img_54.png](old_note/COMP2200/week3/img_54.png)
+![img_55.png](old_note/COMP2200/week3/img_55.png)
 
 - 함수의 호출이 끝나면 스택 프레임의 지역 변수도 사라짐
 - 스택 프레임 자체가 유효하지 않음
 
 ## 댕글링 포인터(Dangling pointer)
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP2200/week3/img_56.png)
 
 - 함수의 지역 변수의 주소를 반환하면 댕글링 포인터가 됨
 - 컴파일 경고임
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week3/img_57.png)
 
 - 포인터를 반환해도 되는 경우
 - 지역 변수가 아닌 경우: 함수 스택 프레임 안에 속하지 않는 경우
@@ -305,7 +305,7 @@ int main(void) {
   - 파일 속 static 전역 변수(extern 해서 못 쓰게 막음, extern으로 사용하려 시도하면 링킹 오류)
   - 참고로 이런 변수들은 데이터 섹션에 저장됨
 
-![img_58.png](img_58.png) 
+![img_58.png](old_note/COMP2200/week3/img_58.png) 
 
 - 도우미 함수 안에 생성한 변수를 다른 함수에서 사용하고자 할 때
   - 도우미 함수 안에 생성한 변수를 호출하는 함수에서 바로 쓰면 괜찮겠죠?
@@ -326,17 +326,17 @@ int main(void) {
 - 전용 매크로가 있음: NULL을 지우고 ((void*)0)으로 복붙
 - 하드웨어에서 주소 0은 아무것도 가리키지 않는 주소! 이건 약속임
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week3/img_61.png)
 
 - NULL은 비교 연산 가능
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week3/img_62.png)
 
 - 코딩 표준은 NULL을 사용하자!!! (0보다는 보기 좋잖아)
 
 ## NULL은 골치덩어리다!
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week3/img_63.png)
 
 - 어떤 함수의 매개변수로 포인터가 들어올 때 그 포인터가 유효하다고 믿고 싶다.
 - 함수의 선조건 문제
@@ -345,39 +345,39 @@ int main(void) {
 
 ### 코딩 표준: 널 포인터를 허용하는 매개변수
 
-![img_64.png](img_64.png)
-![img_65.png](img_65.png)
+![img_64.png](old_note/COMP2200/week3/img_64.png)
+![img_65.png](old_note/COMP2200/week3/img_65.png)
 
 - 디버그 중에 assert로 검증
 - 흘러오는 데이터 검증
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week3/img_66.png)
 
 - 함수에서 NULL을 반환하는 것도 마찬가지
 - 사용하는 곳에서 필요없는 분기문 만들 수 있음 ㅠㅠ
   - 반환값으로 NULL 확인을 해야하는...
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week3/img_67.png)
 
 ## 널 포인터의 사용처
 
 ### 1. 포인터 변수 초기화
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week3/img_68.png)
 
 - 포인터 변수를 선언하면서 NULL로 초기화
 - 초기화하지 않으면 스택의 쓰레기 값이 들어가죠?
 
 ### 2. 포인터 변수의 유효성 검사
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week3/img_69.png)
 
 - 포인터 변수가 NULL이면 유효하지 않다고 판단
 - NULL 포인터 변수를 역 참조하면 `결과가 정의되지 않음`
 - 운영체제에서 NULL 메모리에 역 참조하면 크래시를 내줌
   - Java, C#의 NULL 포인터 예외와 유사함
  
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week3/img_70.png)
 
 - 좋은습관: 역참조를 하기 전 NULL인지 검사하자!
 - 검사는 비교 연산자를 사용함
@@ -385,7 +385,7 @@ int main(void) {
 
 ### 3. 댕글링 포인터를 막기 위해
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week3/img_71.png)
 
 - free를 호출해도 ptr이라는 포인터 변수에 값이 지워지지는 않는다. 즉 더 이상 사용하지 않는 주소가 남아있음
 - 포인터 변수도 스택 메모리에 값을 저장하는데, 이 값이 쓰레기 값인거죠
@@ -395,13 +395,13 @@ int main(void) {
 
 - NULL 포인터를 검사할 때 비교 연산을 했음
 
-![img_72.png](img_72.png)
-![img_73.png](img_73.png)
+![img_72.png](old_note/COMP2200/week3/img_72.png)
+![img_73.png](old_note/COMP2200/week3/img_73.png)
 
 - 주소를 비교하기 vs 값을 비교하기
   - 주소가 달라도 값은 다를 수 있죠
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week3/img_74.png)
 
 - 포인터에 비교 연산자를 사용 할 수 있음
   - (==, >, <, >=, <=, !=)
@@ -410,7 +410,7 @@ int main(void) {
 
 ## 포인터의 크기
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week3/img_75.png)
 
 - 워드(word) CPU가 한 번에 처리할 수 있는 데이터의 크기
 - 포인터의 크기는 시스템 아키텍쳐에 따라 결정
@@ -419,13 +419,13 @@ int main(void) {
 
 ### 포인터의 크기 예
 
-![img_76.png](img_76.png)
-![img_77.png](img_77.png)
+![img_76.png](old_note/COMP2200/week3/img_76.png)
+![img_77.png](old_note/COMP2200/week3/img_77.png)
 
 ### 매개변수로 배열을 전달할 때 포인터를 전달했음 
 
-![img_78.png](img_78.png)
-![img_79.png](img_79.png)
+![img_78.png](old_note/COMP2200/week3/img_78.png)
+![img_79.png](old_note/COMP2200/week3/img_79.png)
 
 - 매개변수에는 배열 첫번째 원소의 주소를 전달
   - 배열은 스택 메모리에 줄줄이 전달
@@ -433,41 +433,41 @@ int main(void) {
 
 ## 배열과 포인터
 
-![img_80.png](img_80.png)
-![img_81.png](img_81.png)
+![img_80.png](old_note/COMP2200/week3/img_80.png)
+![img_81.png](old_note/COMP2200/week3/img_81.png)
 
 - 배열을 포인터에 대입하면?
   - 배열의 첫번째 요소의 주소가 포인터에 대입된다.
 - 배열과 포인터는 똑같음...
 
-![img_82.png](img_82.png)
-![img_83.png](img_83.png)
+![img_82.png](old_note/COMP2200/week3/img_82.png)
+![img_83.png](old_note/COMP2200/week3/img_83.png)
 
 - 첫번째 요소를 대입하면, 이건 요소니까 변수의 값임. 주소가 아니죠
 - 어떻게 수정해볼까? &nums[0]
 
-![img_84.png](img_84.png)
-![img_85.png](img_85.png)
+![img_84.png](old_note/COMP2200/week3/img_84.png)
+![img_85.png](old_note/COMP2200/week3/img_85.png)
 
 - 컴파일러에서 힌트도 주네요 ㅋㅋㅋ
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week3/img_86.png)
 
 ## 배열 속에서 각 요소의 위치
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week3/img_87.png)
 
 - 배열에서 각 요소 사이의 `바이트 간격은 일정`하다
 - 일정한 간격의 크기는 `자료형의 크기`이다
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week3/img_88.png)
 
 - 각 원소의 위치를 시작 원소의 주소만 알면 계산할 수 있다.
 - offset 개념
 - n번째 원소 - 1번째 원소의 주소값 차이 = (n - 1) * 자료형 크기
 
-![img_89.png](img_89.png)
-![img_90.png](img_90.png)
+![img_89.png](old_note/COMP2200/week3/img_89.png)
+![img_90.png](old_note/COMP2200/week3/img_90.png)
 
 - 그래서 더해봤는데...?
 - sizeof 연산자로 주소를 4만큼 더해볼까?
@@ -478,7 +478,7 @@ int main(void) {
 
 ### 포인터에 정수를 더한다는 건...?
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week3/img_91.png)
 
 - 바이트를 더하는게 아님
 - 메모리 주소를 자료형에 따라 그 다음으로 옮겨줘!!! 라는 의미임

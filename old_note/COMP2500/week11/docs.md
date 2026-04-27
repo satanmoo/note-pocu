@@ -48,22 +48,22 @@
         - B의 변경에 A가 영향 받음
         - tight coupling
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP2500/week11/images/img_6.png)
 
 ## 표현 정리
 
 ### 높은 결합도를 의미하는 표현
 
-![img_7.png](images/img_7.png)
-![img_8.png](images/img_8.png)
+![img_7.png](old_note/COMP2500/week11/images/img_7.png)
+![img_8.png](old_note/COMP2500/week11/images/img_8.png)
 
 - 위의 표현들은 높은 결합도를 의미하는 용어로 많이 쓰지만 엄밀하게 말하면 틀린 표현
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP2500/week11/images/img_9.png)
 
 - 수식어를 붙여서 의미가 위의 표현에 비해 상대적으로 명확해짐
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP2500/week11/images/img_10.png)
 
 - 결과적으로 높은 결합도는 나쁘다
     - OK
@@ -74,7 +74,7 @@
 
 ### 낮은 결합도를 의미하는 표현
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP2500/week11/images/img_11.png)
 
 - 낮은 결합도를 의미하지만 정확하지 못함
     - 낮은 결합도는 의존성은 있지만 변경에 영향받지 않는 개념
@@ -82,15 +82,15 @@
     - decoupled 는 애초에 개념이 없음
         - OO Coupling 종류는 2개
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP2500/week11/images/img_12.png)
 
 ### 결합도를 줄이는 것을 의미하는 표현
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP2500/week11/images/img_13.png)
 
 - 결합관계를 제거하는 것과 줄이는 것은 당연히 다른데... 잘못 사용함
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP2500/week11/images/img_14.png)
 
 - 의존성을 제거할 수는 없음
 
@@ -155,43 +155,43 @@ public final class Robot {
 }
 ```
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP2500/week11/images/img_15.png)
 
 - Robot 클래스 컴파일 오류 발생
     - Head 클래스의 생성자가 변경되었음
 
-![img_16.png](images/img_16.png)
-![img_17.png](images/img_17.png)
+![img_16.png](old_note/COMP2500/week11/images/img_16.png)
+![img_17.png](old_note/COMP2500/week11/images/img_17.png)
 
 - Robot 클래스의 코드를 수정해야 컴파일됨
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP2500/week11/images/img_18.png)
 
 - 일단 다른 결합도는 고려하지 말자
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP2500/week11/images/img_19.png)
 
 - 일단 원칙대로 판단하면
     - tight coupling
 
 ### 결합도를 줄이자
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP2500/week11/images/img_20.png)
 
 - WaterSpray 클래스의 생성자를 주목
     - SprayHead, SprayBottle 타입을 매개변수로 받음
     - 외부에서 넣어주는거네?!
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP2500/week11/images/img_21.png)
 
 - 미리 외부에서 Head 개체 생성해서 Robot 생성자의 인자로 전달
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP2500/week11/images/img_22.png)
 
 - 효과는 Robot 클래스가 Head 내부 구현을 몰라도 됨
 - loose coupling
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP2500/week11/images/img_23.png)
 
 ```java
 public final class Head {
@@ -235,11 +235,11 @@ public final class Main {
 
 - Head 개체 생성하는 곳의 코드는 바꿔줘야함
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP2500/week11/images/img_24.png)
 
 ## 의존성 주입
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP2500/week11/images/img_25.png)
 
 - 의존하고 있는 클래스의 개체를 외부에서 생성해서 넣어주는 기법(?)을 의존성 주입이라고 부름
 - Robot 클래스 예시에서 사용한 방법은 생성자의 매개변수로 개체를 전달했음
@@ -247,22 +247,22 @@ public final class Main {
 - setter 함수로 넣어주면
     - setter 주입
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP2500/week11/images/img_26.png)
 
 - DI Container 줄여서 DI 라고 부르기도 함
 - dependency inversion 도 DI 라고 부르기도 함
 
 ### setter 주입
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP2500/week11/images/img_27.png)
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP2500/week11/images/img_28.png)
 
 - setter 주입은 생성 시 개체의 상태를 유효하게 하는 캡슐화 원칙에 위배됨
 
 ### 의존성 주입을 통해 얻은 것과 잃은 것
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP2500/week11/images/img_29.png)
 
 - 참고로 Head 클래스를 컴파일해서 따로 배포하는 일은 예전에 사용한 방법
     - 요즘은 보통 통채로 전체를 다시 컴파일함
@@ -279,50 +279,50 @@ public final class Main {
 
 ## 상속 관계에서 결합도
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP2500/week11/images/img_30.png)
 
 - Head 클래스는 추상 클래스
     - 클래스 다이어그램에서 Italic
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP2500/week11/images/img_31.png)
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP2500/week11/images/img_32.png)
 
 - Robot 클래스는 의존성 주입으로 SimpleHead 클래스의 개체에 의존함
     - loose coupling
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP2500/week11/images/img_33.png)
 
 - 이제 모든 Robot 클래스에서 SimpleHead 클래스 대신 SmartHead 클래스에 의존하도록 하고 싶음
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP2500/week11/images/img_34.png)
 
 - 가장 단순한 접근
     - 그냥 생성자의 매개변수 수정, Robot 클래스 멤버변수 수정
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP2500/week11/images/img_35.png)
 
 - 결합도가 높은 상황
     - SimpleHead 클래스를 수정하는 것은 Robot 클래스에 영향을 주지 않음
     - SimpleHead 클래스 자체를 이제 사용 안하기 때문에 수정이 필요함
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP2500/week11/images/img_37.png)
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP2500/week11/images/img_36.png)
 
 - 바꾸는 것보다 일반화된 타입으로 생성자의 매개변수, 멤버변수로?!
     - 부모의 자료형을 사용해보자!!!
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP2500/week11/images/img_38.png)
 
 - 다형성을 사용해 결합도를 줄였음
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP2500/week11/images/img_39.png)
 
 - 의존성을 없앤게 아니다!
     - 줄인것!
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP2500/week11/images/img_40.png)
 
 - 인터페이스를 사용해도 똑같음
 - 일반적인 타입을 사용하면 편리함!
@@ -384,7 +384,7 @@ public class B {
 
 ## 디커플링이 적합한 곳들
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP2500/week11/images/img_41.png)
 
 - 단순 구조에서 디커플링의 실효성은 낮음
 - 여기서 말하는 변경이 불가능한 상황:
@@ -394,15 +394,15 @@ public class B {
 
 ### 복잡한 시스템에서 커플링은 문제가 됨
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP2500/week11/images/img_42.png)
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP2500/week11/images/img_43.png)
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP2500/week11/images/img_44.png)
 
 ### 함수 포인터도 디커플링의 좋은 예
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP2500/week11/images/img_45.png)
 
 - 인터페이스의 규약 == 함수 시그니처
     - 이 규약에 맞는 어떤 함수 구현이 허용됨
@@ -413,53 +413,53 @@ public class B {
 
 ### 디커플링하기 위해 추상화가 사용됨
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP2500/week11/images/img_46.png)
 
 - 추상화로 유연성, 재사용성을 얻지만
 - 단점도 있음
 
 ### 단점1: 직관적이지 못함
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP2500/week11/images/img_47.png)
 
 - 직관적이지 못함
 - 구체적이지 않기 때문
 
 ### 직관적이지 못한 것을 해결해보자
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP2500/week11/images/img_48.png)
 
 - `new Robot()` 생성자를 호출하는 코드에서 `Head head` 매개변수로 뭐가 넘어가는지 직접 확인하기
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP2500/week11/images/img_49.png)
 
 - Head 클래스가 일반화된 클래스기 때문에 어떤 구체적인 개체가 사용됬는지 일일히 모두 확인해야함
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP2500/week11/images/img_50.png)
 
 - 물론 위의 예처럼 프로그램 A, 프로그램 B 각각 다른 구체적인 클래스 개체를 사용하는 경우는 다형성을 잘 못 사용하고 있는 예시
     - 다형성은 하나의 프로그램에서 여러 구체적인 개체를 사용하고 싶을 때
     - 지금은 하나의 프로그램에 하나의 개체만 필요함
 - 올바른 방식은 컴파일러 플래그(스위치) 같은거로 구현체 바꾸도록 컴파일하게 하는게 옳은 방식
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP2500/week11/images/img_51.png)
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP2500/week11/images/img_52.png)
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP2500/week11/images/img_53.png)
 
 - DI 컨테이너 이용해서 `new SimpleHead()`, `new SmartHead()` 같이 직접 개체를 생성하는 코드가 없는 경우도 있음!!
 - 스프링
 
-![img_54.png](images/img_54.png)
-![img_55.png](images/img_55.png)
+![img_54.png](old_note/COMP2500/week11/images/img_54.png)
+![img_55.png](old_note/COMP2500/week11/images/img_55.png)
 
 - 게임을 생각해보자
     - 게임을 2시간 플레이해야 로봇이 생성된다면..?
 
 ### 단점2: 내부를 알아야 좋은 경우도 있다
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP2500/week11/images/img_56.png)
 
 - 결합도를 높이더라도 내부를 알아야 좋은 경우
 - DataSource:
@@ -468,11 +468,11 @@ public class B {
 - `MergeTo()` 함수를 호출하면 데이터 소스에서 모든 데이터를 읽어와 중복 없이 dataset에 넣어줌
     - dataset 은 매개변수로 전달
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP2500/week11/images/img_57.png)
 
 - [java collection interface](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP2500/week11/images/img_58.png)
 
 ![img_59.png](old_note/COMP2500/week11/images/img_59.png)
 
@@ -486,58 +486,58 @@ public class B {
     - 근데 Set 구현이면 필요없잖
 - 만약 Collection 대신 Set 이라는 더 구체적인 인터페이스를 사용하면 최적화 가능
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP2500/week11/images/img_61.png)
 
-![img_62.png](images/img_62.png)
+![img_62.png](old_note/COMP2500/week11/images/img_62.png)
 
-![img_63.png](images/img_63.png)
+![img_63.png](old_note/COMP2500/week11/images/img_63.png)
 
-![img_65.png](images/img_65.png)
+![img_65.png](old_note/COMP2500/week11/images/img_65.png)
 
-![img_64.png](images/img_64.png)
+![img_64.png](old_note/COMP2500/week11/images/img_64.png)
 
 - 실생활에서도 구현을 몰라서 비효율적인 경우가 있긴 있음
 
 ## 인터페이스에 대한 오해
 
-![img_66.png](images/img_66.png)
+![img_66.png](old_note/COMP2500/week11/images/img_66.png)
 
 - 왜?
 - 디커플링
 
-![img_67.png](images/img_67.png)
+![img_67.png](old_note/COMP2500/week11/images/img_67.png)
 
 - 언제나 디커플링이 중요한 것은 아님
 
-![img_68.png](images/img_68.png)
+![img_68.png](old_note/COMP2500/week11/images/img_68.png)
 
-![img_69.png](images/img_69.png)
+![img_69.png](old_note/COMP2500/week11/images/img_69.png)
 
-![img_70.png](images/img_70.png)
+![img_70.png](old_note/COMP2500/week11/images/img_70.png)
 
 - 모두 인터페이스로 바뀜
 - 다형적이지도 않음
 
-![img_71.png](images/img_71.png)
+![img_71.png](old_note/COMP2500/week11/images/img_71.png)
 
 - 굳이 없는 걸 대비해서 만들어야하냐?
 - 미래에 모든걸 대비해야함?
 
-![img_72.png](images/img_72.png)
+![img_72.png](old_note/COMP2500/week11/images/img_72.png)
 
 - 다형성이 필요하면 인터페이스 만드세용
 
-![img_73.png](images/img_73.png)
+![img_73.png](old_note/COMP2500/week11/images/img_73.png)
 
 - 다시 인터페이스의 정의
 
-![img_74.png](images/img_74.png)
+![img_74.png](old_note/COMP2500/week11/images/img_74.png)
 
 - 주요 사용 예
 
 ### 인터페이스에 대한 오해 1: 모든 걸 인터페이스로 만들어라
 
-![img_75.png](images/img_75.png)
+![img_75.png](old_note/COMP2500/week11/images/img_75.png)
 
 - 인터페이스라는 용어가 굉장히 다양한 의미로 사용됨
 - 인터페이스의 개념적 정의:
@@ -545,35 +545,35 @@ public class B {
 - 이 개념적 정의는 public 추상 메서드의 집합과 일맥상통함
     - 하지만 다형성을 빼고 이 개념을 잘못 받아들이면 이상해짐
 
-![img_76.png](images/img_76.png)
+![img_76.png](old_note/COMP2500/week11/images/img_76.png)
 
 - 명령의 나열에서 명령에 집중
 - 명령에서 커플링을 줄이는 것이 개체지향의 본질이라는 잘못된 해석
 
 ### GOF 디자인 패턴
 
-![img_77.png](images/img_77.png)
+![img_77.png](old_note/COMP2500/week11/images/img_77.png)
 
 - 이 책의 내용이 곡해됨
 
-![img_78.png](images/img_78.png)
+![img_78.png](old_note/COMP2500/week11/images/img_78.png)
 
 - 특히 이 문구 ㅋㅋ
 
-![img_79.png](images/img_79.png)
+![img_79.png](old_note/COMP2500/week11/images/img_79.png)
 
-![img_80.png](images/img_80.png)
-![img_81.png](images/img_81.png)
+![img_80.png](old_note/COMP2500/week11/images/img_80.png)
+![img_81.png](old_note/COMP2500/week11/images/img_81.png)
 
-![img_82.png](images/img_82.png)
+![img_82.png](old_note/COMP2500/week11/images/img_82.png)
 
 - 이 문장에서 interface 는 자바의 interface 가 아님
 
-![img_83.png](images/img_83.png)
+![img_83.png](old_note/COMP2500/week11/images/img_83.png)
 
 - 결국 다형성이 포함되어야 함
 
-![img_84.png](images/img_84.png)
+![img_84.png](old_note/COMP2500/week11/images/img_84.png)
 
 - 제대로된 상속에 대한 설명
     - 추상 클래스의 연산을 오버라이딩
@@ -582,22 +582,22 @@ public class B {
     - 추상 클래스에 없는 새로운 연산 추가
 - SOLID 배울 때 다시 배움
 
-![img_85.png](images/img_85.png)
+![img_85.png](old_note/COMP2500/week11/images/img_85.png)
 
-![img_86.png](images/img_86.png)
+![img_86.png](old_note/COMP2500/week11/images/img_86.png)
 
-![img_87.png](images/img_87.png)
+![img_87.png](old_note/COMP2500/week11/images/img_87.png)
 
 - 이 책에서 말하는 interface:
     - 부모 클래스의 다형적 매서드
 
 ### 인터페이스에 대해 프로그래밍하라는 의미
 
-![img_88.png](images/img_88.png)
+![img_88.png](old_note/COMP2500/week11/images/img_88.png)
 
 - 다형성이 있죠?
 
-![img_89.png](images/img_89.png)
+![img_89.png](old_note/COMP2500/week11/images/img_89.png)
 
 - 함수 블랙박스:
     - 함수의 시그니처로 약속
@@ -605,13 +605,13 @@ public class B {
     - 부모 클래스에서 정의한 다형적 매서드의 시그니처로 약속
     - 재사용성 향상, 다형적 호출 가능
 
-![img_90.png](images/img_90.png)
+![img_90.png](old_note/COMP2500/week11/images/img_90.png)
 
 - 결론은 다형성을 가진 일반화된 매서드 시그니처를 만드는 것!
 
 ### 인터페이스에 대한 오해 2: 디커플링이 언제나 제일 중요하다
 
-![img_91.png](images/img_91.png)
+![img_91.png](old_note/COMP2500/week11/images/img_91.png)
 
 - 이 주장을 하는 사람의 행적도 의심스러움
 - 이 주장은 오랜 시간동안 검증결과 잘못됬다고 결과적으로 결론 났다고 이해

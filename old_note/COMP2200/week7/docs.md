@@ -49,7 +49,7 @@
 
 ## va_start
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week7/img_6.png)
 
 - 메크로 함수
 - '...'(가변 인자)에 접근하기 전 반드시 호출해야 함
@@ -59,7 +59,7 @@
 
 ## va_end
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week7/img_7.png)
 
 - 메크로 함수
 - '...'(가변 인자)에 접근이 끝난 후 반드시 호출해야 함
@@ -68,13 +68,13 @@
 
 ## va_start, va_end 사용 시 중괄호를 사용해 가독성을 높이기
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week7/img_8.png)
 
 - va_start, va_end를 쌍으로 사용하자
 
 ## va_arg
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week7/img_9.png)
 
 - 메크로 함수
 - '...'(가변 인자)에서 다음 인자를 가져옴
@@ -86,26 +86,26 @@
 
 ### 구조체도 가변 인자로 넣을 수 있음
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week7/img_10.png)
 
 - va_arg의 두 번째 매개변수에 구조체를 넣어도 됨
 - 기본 자료형이 아니라서 승격은 없음
 
 ## 가변 인자 목록에서 자료를 읽는 원리: 전처리기, 매크로 함수
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week7/img_11.png)
 
 - C는 실행 중에 자동으로 자료형을 판단하는 기능이 없음
 - 컴파일 되기 전 어떤 자료형으로 읽어야하는지 알려줘야함
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week7/img_12.png)
 
 - 컴파일 전 처리하는 장치가 있음
 - 전처리기
 - 전처리기가 매크로 함수의 구현 코드로 대체함
 
-![img_13.png](img_13.png)
-![img_14.png](img_14.png)
+![img_13.png](old_note/COMP2200/week7/img_13.png)
+![img_14.png](old_note/COMP2200/week7/img_14.png)
 
 - 예상되는 구현은 아래와 같음
 - int형으로 읽고, 4바이트 만큼 포인터를 이동
@@ -114,7 +114,7 @@
 
 ### 일반적인 함수 호출 시 메모리 뷰
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week7/img_15.png)
 
 - 어떤 함수를 호출할 때 마다 매개변수를 순서대로(함수 호출 규약에 따라 가장 마지막 매개변수 부터) 스택에 넣음
 
@@ -122,17 +122,17 @@
 
 #### [가변 인자가 아닌 매개변수의 주소는 함수 호출 규약에 따라 리시버가 알 수 있음]
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week7/img_16.png)
 
 - 가변 인자 함수는 호출할 때 매번 매개변수의 개수가 바뀔 수 있음
 - 이 문제는 가변 인자 함수의 리시버에게 해당됨, 가변 인자 함수의 내부 처리를 위해 매개변수를 읽어올 수 있어야함
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week7/img_17.png)
 
 - 호출자는 매개변수를 모두 알고 있음
 - 가변 인자 함수는 호출할 때 매번 매개변수의 개수가 바뀔 수 있기 때문에, 호출자를 통해 스택 메모리에 매개변수를 모두 넣어줌
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week7/img_18.png)
 
 - 리시버는 가변 인자가 아닌 매개변수는 확실하게 알 수 있음
     - 함수 호출 규약에 따라 매개변수를 읽어올 수 있음
@@ -144,7 +144,7 @@
 
 #### [va_start: 가변 인자 목록이 시작하는 주소를 계산]
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week7/img_19.png)
 
 - va_start(<가변 인자 목록>, <가변 인자가 시작하는 직전 매개변수>)에서 가변 인자가 시작하는 직전 매개변수에 기초해 가변 인자 목록의 시작 메모리 주소 계산
 - 가변 인자가 시작하는 직전 매개변수의 주소는 함수 호출 규약에 따라 리시버가 알 고 있음
@@ -154,7 +154,7 @@
 
 #### [va_arg: 가변 인자를 자료형에 기초해 읽음]
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week7/img_20.png)
 
 - va_arg(<가변 인자 목록>, <자료형>)에서 가변 인자 목록에서 다음 인자를 읽음
 - va_arg의 두번째 매개변수인 자료형을 기반으로 다음 가변 인자의 시작 주소를 계산
@@ -164,19 +164,19 @@
 
 - 아래는 이 과정을 그림으로 나타냄
 
-![img_21.png](img_21.png)
-![img_22.png](img_22.png)
-![img_23.png](img_23.png)
+![img_21.png](old_note/COMP2200/week7/img_21.png)
+![img_22.png](old_note/COMP2200/week7/img_22.png)
+![img_23.png](old_note/COMP2200/week7/img_23.png)
 
 #### [va_list의 내부 구현에 대한 추측]
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week7/img_24.png)
 
 - va_list는 자세한 구현은 모르지만 va_arg 메크로 함수에 필요한 스택 메모리에서 위치를 가리키는 포인터를 가질 것
 
 ## 가변 인자 사용 시 규칙
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week7/img_25.png)
 
 - 가변 인자 앞에 자료형이 특정된 매개변수가 반드시 있어야 함
 - 가변 인자 뒤에 자료형이 특정된 매개변수가 있어서 안 됨
@@ -184,37 +184,37 @@
 
 ### [가변 인자의 개수를 리시버에게 알려주기]
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week7/img_26.png)
 
 - 앞의 예에서는 가변 인자의 개수를 리시버에게 자료형이 정해진 매개변수 count로 알려줌
 
 ### [가변 인자의 자료형을 리시버에게 알려주기]
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week7/img_27.png)
 
 - 가변 인자의 자료형을 리시버에게 알려주기 위해 가변 인자의 자료형을 리시버에게 알려줘야함
 - 대표적인 예시가 printf, scanf
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week7/img_28.png)
 
 - printf의 서식 문자열에서 가변 인자 함수가 어떤 자료형을 읽어야 하는지 알 수 있음, 개수도!
 
 ## printf 서식 문자열 컴파일 `경고`
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week7/img_29.png)
 
 - printf의 경우 표준 함수라서 컴파일러에서 서식 문자열과 가변 인자를 통해 서식 문자열이 적절함을 판단 가능
 - 컴파일러가 배려를 해준 것
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week7/img_30.png)
 
 - 서식 문자열의 지정자 수가 매개변수보다 많으면 컴파일 경고 발생
 - 서식 문자열의 지정자 수가 많으면 가변 인자 목록에서 허용하지 않는 메모리에 접근할 수 있음
 
 ## 가변 인자에서 데이터를 잘못된 자료형을 읽으면? 실수
 
-![img_31.png](img_31.png)
-![img_32.png](img_32.png)
+![img_31.png](old_note/COMP2200/week7/img_31.png)
+![img_32.png](old_note/COMP2200/week7/img_32.png)
 
 - int를 double로 잘 못 읽은 예시
 
@@ -375,7 +375,7 @@ void printf_simple(const char* format, ...)
 - C has no exceptions provided by the language
 - So how do you deal with problems that arise during execution?
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week7/img_33.png)
 
 - There is little relationship between exception handling and software quality
 - Humans are creatures that cannot handle exceptions perfectly
@@ -383,98 +383,98 @@ void printf_simple(const char* format, ...)
 
 ### why is the problem occuring
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week7/img_34.png)
 
 - consider only happy path
 
 ### Advantages of a language without exceptions
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week7/img_35.png)
 
 - Responds quickly to program crashes
   - imagine "blue screen" in windows
 
 ## Example of bad error handling
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week7/img_36.png)
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week7/img_37.png)
 
 - A crash occurs if NULL is entered as a function argument.
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week7/img_38.png)
 
 - Stupid thing happens that checks for NULL in all your code
 
 ### "Using the analogy of a circuit breaker."
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week7/img_39.png)
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week7/img_40.png)
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week7/img_41.png)
 
 - It is efficient to find the problem in only one place
 
 ## Difference between bugs and errors, correct error handling strategies
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week7/img_42.png)
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week7/img_43.png)
 
 - Since C99, static assertions have been introduced, allowing bugs to be detected during compilation
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week7/img_44.png)
 
 - The precondition of this function is that the deposit must be greater than 0.
 - The postcondition of this function is "before_total < after_total"
 
 ### Error handling in RUNTIME
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week7/img_45.png)
 
 - Data must be filtered at the boundaries
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week7/img_46.png)
 
 - By adding "_or_null" to the name of the function, it indicates that it can return null
   - The same goes for parameters
 - It helps you check for null when checking data at the boundaries
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week7/img_47.png)
 
 - Returning an error code from a function is also good error handling
   - try_get_student() function is boundary(FILE IO)
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week7/img_48.png)
 
 - make enum for error code
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week7/img_49.png)
 
 - this is limitation of C language
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week7/img_50.png)
 
 - the method to store at errno is not intuitive
   - You have to read the function comments or docs to find out.
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week7/img_51.png)
 
 - 시험에 나올 듯 ㅋㅋ
 
 ## What if it crashes?
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week7/img_52.png)
 
 - fix bug
 - Code needs to be fixed
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week7/img_53.png)
 
 - What if you want to deal with even expected bugs?
 - There is no way in C
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week7/img_54.png)
 
 

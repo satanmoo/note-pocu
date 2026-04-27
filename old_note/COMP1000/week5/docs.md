@@ -34,29 +34,29 @@
 
 ## 논리 부정(not, negation)
 
-![img_6.png](images/img_6.png)
+![img_6.png](old_note/COMP1000/week5/images/img_6.png)
 
 - 여집합 개념
 - 단순 명제, 합성 명제 모두 적용 가능
 
 ## 모든과 어떤의 부정
 
-![img_7.png](images/img_7.png)
+![img_7.png](old_note/COMP1000/week5/images/img_7.png)
 
 - all vs any
 - 모든 것이 이렇다 vs 어떤 것은 이렇지 않다
 
-![img_8.png](images/img_8.png)
+![img_8.png](old_note/COMP1000/week5/images/img_8.png)
 
 - 하나라도 있으면 any
 
-![img_9.png](images/img_9.png)
+![img_9.png](old_note/COMP1000/week5/images/img_9.png)
 
-![img_10.png](images/img_10.png)
+![img_10.png](old_note/COMP1000/week5/images/img_10.png)
 
-![img_11.png](images/img_11.png)
+![img_11.png](old_note/COMP1000/week5/images/img_11.png)
 
-![img_12.png](images/img_12.png)
+![img_12.png](old_note/COMP1000/week5/images/img_12.png)
 
 - '모든 것은 xx다' 라는 명제를 증명하기 어려움
   - 이 명제가 거짓인 것을 증명하기는 쉬움
@@ -66,42 +66,42 @@
 
 ## 논리곱(and)
 
-![img_13.png](images/img_13.png)
+![img_13.png](old_note/COMP1000/week5/images/img_13.png)
 
 - 합성 명제를 만드는 연산
 - 명제의 논리곱:
   - 두 명제가 모두 참이면 참
 
-![img_14.png](images/img_14.png)
+![img_14.png](old_note/COMP1000/week5/images/img_14.png)
 
 ## 논리합(or)
 
-![img_15.png](images/img_15.png)
+![img_15.png](old_note/COMP1000/week5/images/img_15.png)
 
 - 합성 명제를 만드는 연산
 - 명제의 논리합:
   - 두 명제 중 하나라도 참이면 참
 
-![img_16.png](images/img_16.png)
+![img_16.png](old_note/COMP1000/week5/images/img_16.png)
 
 ## 배타적 논리합(xor)
 
-![img_17.png](images/img_17.png)
+![img_17.png](old_note/COMP1000/week5/images/img_17.png)
 
 - 합성 명제를 만드는 연산
 - 두 명제의 진리값이 서로 다르면 참
 
-![img_18.png](images/img_18.png)
+![img_18.png](old_note/COMP1000/week5/images/img_18.png)
 
 - 하드웨어에서 많이 사용함
 
 ## 진리표 정리
 
-![img_19.png](images/img_19.png)
+![img_19.png](old_note/COMP1000/week5/images/img_19.png)
 
 ## 항진 명제: 언제나 참인 명제
 
-![img_20.png](images/img_20.png)
+![img_20.png](old_note/COMP1000/week5/images/img_20.png)
 
 - 집합에서 전체 집합
 - 합성 명제 안의 단순 명제의 진리값과 관계없이 언제나 참
@@ -110,77 +110,77 @@
 
 ## 모순 명제: 언제나 거짓인 명제
 
-![img_21.png](images/img_21.png)
+![img_21.png](old_note/COMP1000/week5/images/img_21.png)
 
 - 집합에서 공집합
 - 합셩 명제 안의 단순 명제의 진리값과 관계없이 언제나 거짓
   - 합성 명제
 - 단순 명제로는 만들 수 없음
 
-![img_22.png](images/img_22.png)
+![img_22.png](old_note/COMP1000/week5/images/img_22.png)
 
 ## 불 대수
 
 - 컴퓨터 연산의 기반
 
-![img_23.png](images/img_23.png)
+![img_23.png](old_note/COMP1000/week5/images/img_23.png)
 
 - 대수학(대신)
 
-![img_24.png](images/img_24.png)
+![img_24.png](old_note/COMP1000/week5/images/img_24.png)
 
 - bool 타입의 어원
 
-![img_25.png](images/img_25.png)
+![img_25.png](old_note/COMP1000/week5/images/img_25.png)
 
 - 디지털 회로 설계에 사용함
 - 컴퓨터의 트랜지스터는 비트(참/거짓)을 표현하기 적합함
 
-![img_26.png](images/img_26.png)
+![img_26.png](old_note/COMP1000/week5/images/img_26.png)
 
 - 조건문
 - 논리 연산
 - 2진수 연산
 
-![img_27.png](images/img_27.png)
+![img_27.png](old_note/COMP1000/week5/images/img_27.png)
 
 - 집합과 밀접한 연관
 
-![img_28.png](images/img_28.png)
+![img_28.png](old_note/COMP1000/week5/images/img_28.png)
 
 - 사실 거기서 거기임
 
-![img_29.png](images/img_29.png)
+![img_29.png](old_note/COMP1000/week5/images/img_29.png)
 
 - 기호가 다양하지만
 - 참고해서 찾아보자
 
 ### 연산 우선 순위
 
-![img_30.png](images/img_30.png)
+![img_30.png](old_note/COMP1000/week5/images/img_30.png)
 
 - 곱하기 > 더하기
 
-![img_31.png](images/img_31.png)
+![img_31.png](old_note/COMP1000/week5/images/img_31.png)
 
 - 비트 연산 > 논리 연산
 
 ### 비트 연산
 
-![img_32.png](images/img_32.png)
+![img_32.png](old_note/COMP1000/week5/images/img_32.png)
 
 - 한 비트만 보는 연산
   - 0 == false
   - 1 == true
 
-![img_33.png](images/img_33.png)
+![img_33.png](old_note/COMP1000/week5/images/img_33.png)
 
 - 각 비트별로 연산
   - 칸 마다 연산하다고 생각
 
 ## 불 대수 연산 법칙
 
-![img_34.png](images/img_34.png)
+![img_34.png](old_note/COMP1000/week5/images/img_34.png)
 
 - 0과 OR 연산하면 동일한 값
 - 1과 AND 연산하면 동일한 값
@@ -193,43 +193,43 @@
 
 ## 교환 법칙
 
-![img_35.png](images/img_35.png)
+![img_35.png](old_note/COMP1000/week5/images/img_35.png)
 
 - 진리표, 벤다이어그램 그리는 연습하기
 
 ## 결합 법칙
 
-![img_36.png](images/img_36.png)
+![img_36.png](old_note/COMP1000/week5/images/img_36.png)
 
-![img_37.png](images/img_37.png)
+![img_37.png](old_note/COMP1000/week5/images/img_37.png)
 
-![img_38.png](images/img_38.png)
+![img_38.png](old_note/COMP1000/week5/images/img_38.png)
 
 - 진리표는 아주 훌륭한 증명 방법이다
 
 ## 분배 법칙
 
-![img_39.png](images/img_39.png)
+![img_39.png](old_note/COMP1000/week5/images/img_39.png)
 
-![img_40.png](images/img_40.png)
+![img_40.png](old_note/COMP1000/week5/images/img_40.png)
 
 - 이건 산술 연산과 동일하죠?
   - 곱셈의 분배법칙
 
-![img_41.png](images/img_41.png)
+![img_41.png](old_note/COMP1000/week5/images/img_41.png)
 
 - 불 대수에서는 성립함
 - 진리표로 모든 경우의 수를 확인해서 증명
 
 ## 흡수 법칙
 
-![img_42.png](images/img_42.png)
+![img_42.png](old_note/COMP1000/week5/images/img_42.png)
 
 - 이건 벤다이어그램이 더 쉬움
 
 ## 기타 연산식
 
-![img_43.png](images/img_43.png)
+![img_43.png](old_note/COMP1000/week5/images/img_43.png)
 
 1. 인수 분해
 2. 전개
@@ -243,13 +243,13 @@
 
 ## 드 모르간 법칙
 
-![img_44.png](images/img_44.png)
+![img_44.png](old_note/COMP1000/week5/images/img_44.png)
 
 ## 논리회로
 
-![img_45.png](images/img_45.png)
+![img_45.png](old_note/COMP1000/week5/images/img_45.png)
 
-![img_46.png](images/img_46.png)
+![img_46.png](old_note/COMP1000/week5/images/img_46.png)
 
 - 논리연산:
   - 1개 이상 논리 입력 => 1개의 논리 출력
@@ -257,7 +257,7 @@
 
 ## 게이트(gate)
 
-![img_47.png](images/img_47.png)
+![img_47.png](old_note/COMP1000/week5/images/img_47.png)
 
 - 논리 회로의 기초 구성요소
 - 불 연산 하나를 구현
@@ -266,44 +266,44 @@
 
 ## 기본 게이트
 
-![img_48.png](images/img_48.png)
+![img_48.png](old_note/COMP1000/week5/images/img_48.png)
 
 - NOT 게이트는 피 연산자가 1개임
   - 단항 연산자
 
 ## NAND 게이트
 
-![img_49.png](images/img_49.png)
+![img_49.png](old_note/COMP1000/week5/images/img_49.png)
 
 - AND + NOT
   - AND 결과를 뒤집음
 
 ## NOR 게이트
 
-![img_50.png](images/img_50.png)
+![img_50.png](old_note/COMP1000/week5/images/img_50.png)
 
 ## XNOR 게이트
 
-![img_51.png](images/img_51.png)
+![img_51.png](old_note/COMP1000/week5/images/img_51.png)
 
 - 두 값이 같으면 참
 
 ## 범용 게이트
 
-![img_52.png](images/img_52.png)
+![img_52.png](old_note/COMP1000/week5/images/img_52.png)
 
 - NAND, NOR은 모두 범용게이트
   - NOT, AND, OR, XOR 등등 모두 만들 수 있음
 
 ### NAND 게이트를 이용한 NOT 구현
 
-![img_53.png](images/img_53.png)
+![img_53.png](old_note/COMP1000/week5/images/img_53.png)
 
 - 불 대수를 이용함
 
 ## 논리 회로를 이용한 비트 연산
 
-![img_54.png](images/img_54.png)
+![img_54.png](old_note/COMP1000/week5/images/img_54.png)
 
 - 비트 연산이 무엇인지 생각해보자
   - 각 비트 별로 불 대수를 적용함
@@ -314,17 +314,17 @@
 
 ### 4비트 AND 연산
 
-![img_55.png](images/img_55.png)
+![img_55.png](old_note/COMP1000/week5/images/img_55.png)
 
 - 아래 첨자는 비트의 인덱스라고 생각하면 됨
 
-![img_56.png](images/img_56.png)
+![img_56.png](old_note/COMP1000/week5/images/img_56.png)
 
 - 덧셈을 구현할 때는 비트 연산 이상의 받아 올림, 받아 내림을 구현해야해서 복잡
 
 ## 게이트의 조합
 
-![img_57.png](images/img_57.png)
+![img_57.png](old_note/COMP1000/week5/images/img_57.png)
 
 - 컴퓨터의 모든 연산은 게이트를 조합함
 
@@ -352,7 +352,7 @@
 
 ## 또 다른 게이트 조합 예시
 
-![img_58.png](images/img_58.png)
+![img_58.png](old_note/COMP1000/week5/images/img_58.png)
 
 ![img_59.png](old_note/COMP1000/week5/images/img_59.png)
 
@@ -361,7 +361,7 @@
 
 ![img_60.png](old_note/COMP1000/week5/images/img_60.png)
 
-![img_61.png](images/img_61.png)
+![img_61.png](old_note/COMP1000/week5/images/img_61.png)
 
 - 카노 맵
   - 불리언 연산을 줄이는 맵

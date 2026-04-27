@@ -82,20 +82,20 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 - modifier `c`를 사용하는 경우
     - 경고 메시지 출력 X
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP2200/week12/img_6.png)
 
 - 정적 라이브러리 파일을 저장할 경로까지 지정 가능
 
 - [3] 정적 라이브러리의 헤더 인클루드하기
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP2200/week12/img_7.png)
 
 - #include에 헤더 파일의 경로는 생략하는게 일반적임
     - 즉 #include "lib/simple_math.h" 이런식으로 사용하지 않음
 
 - [4] 정적 라이브러리와 함께 빌드하기
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP2200/week12/img_8.png)
 
 - `-I <dir>`
     - include의 `I`
@@ -111,35 +111,35 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 
 - 정적 라이브러리와 함께 빌드하기 예시는 아래와 같음
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP2200/week12/img_9.png)
 
 - `-I`로 include할 때 검색할 경로를 알려줌
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP2200/week12/img_10.png)
 
 - '-L'로 링킹할 때 정적 라이브러리 파일을 검색할 경로를 알려줌
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP2200/week12/img_11.png)
 
 - `-l`바로 뒤에 라이브러리 파일의 이름을 붙여줌
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP2200/week12/img_12.png)
 
 - 실행파일이 제대로 빌드됨
     - 이 실행파일에는 정적 라이브러리가 포함됨
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP2200/week12/img_13.png)
 
 ### [프로젝트]
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP2200/week12/img_14.png)
 
 - 비쥬얼 스튜디오 등 IDE에서 제공하는 기능
     - CMake를 이용하면 프로젝트를 만들어서 사용하면 됨
 
 ## 동적 라이브러리
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP2200/week12/img_15.png)
 
 - 동적 링킹
     - 동적 라이브러리와 링크하는 것
@@ -147,7 +147,7 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 - 실행파일을 실행할 때 실제로 링킹이 일어남
     - 링킹의 주체는 운영체제
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP2200/week12/img_16.png)
 
 - 정적 링킹에 비해
     - 실행 파일 크기가 작음
@@ -156,7 +156,7 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 
 ### [동적 라이브러리 사용하기]
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP2200/week12/img_17.png)
 
 - [1] 소스 코드들을 컴파일하여 동적 라이브러리를 만듦
     - 윈도우에서 확장자 *.dll
@@ -171,19 +171,19 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 
 ### [동적 라이브러리와 운영체제]
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP2200/week12/img_18.png)
 
 - 운영체제마다 동적 라이브러리 내부 포맷이 다름
     - 동적 라이브러리는 운영체제에 종석적
 - 동적 링커는 동적 라이브러리의 함수들을 메모리에 매핑
     - 매핑에 필요한 정보가 운영체제의 동적 라이브러리 내부 포맷에 저장되어 있음
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP2200/week12/img_19.png)
 
 - 운영체제, 컴파일러마다 동적 라이브러리를 만드는 방법이 다름
     - 심지어 같은 컴파일러라도 컴파일러 백엔드에 따라 또 달라짐
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP2200/week12/img_20.png)
 
 - 동적 라이브러리는 운영체제, 컴파일러에 종속적이다!!!
 
@@ -191,7 +191,7 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 
 ### [동적 라이브러리의 장단점]
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP2200/week12/img_21.png)
 
 - 장점
     - 실행 파일을 바꾸지 않고, 동적 라이브러리만 업데이트 가능
@@ -207,7 +207,7 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 
 ### [정적 라이브러리의 장단점]
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP2200/week12/img_22.png)
 
 - 장점
     - 해킹에 안전함
@@ -224,15 +224,15 @@ clang -std=c89 -W -Wall -pedantic-errors -c simple_math.c -o simple_math.o
 
 ### [베스트 프랙티스: 정적 라이브러리를 쓰자]
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP2200/week12/img_23.png)
 
 - 기본적으로 정적 라이브러리를 사용하는게 편함
 
 ## C99 표준
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP2200/week12/img_24.png)
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP2200/week12/img_25.png)
 
 - C99 표준으로 빌드하기
 
@@ -242,7 +242,7 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
 
 ## 인라인 함수
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP2200/week12/img_26.png)
 
 - 매크로 함수의 장점과 단점을 생각해보자
 - 장점
@@ -252,14 +252,14 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
     - 가동성도 매우 떨어짐
 - 매크로 함수의 장점만 뽑아보자!
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP2200/week12/img_27.png)
 
 - 함수 앞에 `ìnline` 키워드를 붙이면 됨
 - 컴파일러에게 최적화 해달라고 `힌트`를 주고, 요청
     - 컴파일러가 무시할 수도 있음
     - inline 키워드가 없어도 컴파일러가 알아서 최적화 해줌
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP2200/week12/img_28.png)
 
 - 복붙을 할 수 있으려면? 조건이 있음
 - 인라인 함수를 호출하는 코드를 `컴파일`할 때 그 함수의 구현을 알아야함
@@ -271,31 +271,31 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
 
 ### [참고: C++의 인라인과는 다름]
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP2200/week12/img_29.png)
 
 - C의 인라인 코드는 C++에서 제대로 동작
 
 ### [인라인 함수 제대로 사용하기]
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP2200/week12/img_30.png)
 
 - 헤더 파일에 선언과 구현이 모두 있음
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP2200/week12/img_31.png)
 
 - 전처리기에서 #include 문에 따라 simple_math.h의 코드 복붙
 - 컴파일러에서 inline 함수를 복붙으로 교체
     - 이 부분이 중요함
     - 전처리기의 매크로 복붙과 다른 복붙
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP2200/week12/img_32.png)
 
 - 전처리기는 코드를 무식하게 토씨 하나 안 틀리게 복붙
     - 매크로 함수에서 많은 실수가 연산자 우선순위 문제 따라서 매개변수 및 코드를 무조건 괄호로 감싸는 것을 권장했음
 - 인라인 함수는 컴파일러가 컴파일 중에 함수 호출을 코드로 바꿔줌
     - 융통성 있는 복붙
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP2200/week12/img_33.png)
 
 - translation unit 안에 인라인 함수의 실제 코드가 있어야함
     - 헤더 파일에 선언과 구현을 함께 포함하는 이유
@@ -303,28 +303,28 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
 
 ### [인라인 키워드가 없을 때 링킹 오류]
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP2200/week12/img_34.png)
 
 - 헤더 파일에 함수 선언부/구현부 모두 포함
 - `인라인 키워드 없음`
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP2200/week12/img_35.png)
 
 - 링킹 오류 발생
     - 동일한 함수(심볼)이 중복
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP2200/week12/img_36.png)
 
 - 이를 해결하는 방법
     - inline 키워드
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP2200/week12/img_37.png)
 
 - 컴파일러에게 호출용 함수가 아니라 코드 교체용이라 알려줌
 - 링커가 볼 수 있는 함수 심볼을 만들지 않음
     - 심볼이 중복되지 않음, 만들지 않으니까!
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP2200/week12/img_38.png)
 
 - 링커 오류는 막을 수 있음
     - 인라인 키워드를 사용하면 반드시 함수의 심볼을 만들지 않음
@@ -332,15 +332,15 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
 
 ### [인라인 키워드를 추가했을 때 링킹 오류]
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP2200/week12/img_39.png)
 
 - 컴파일러가 반드시 인라인화 한다는 보장이 없음
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP2200/week12/img_40.png)
 
 - 컴파일러가 인라인화 하지 않으면 무슨 문제가 발생하나요?
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP2200/week12/img_42.png)
 
 - 복붙 X
 - 실행 중에 함수 호출을 함
@@ -348,7 +348,7 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
 - 링킹 단계에서 링커가 함수 구현을 찾아 구멍을 메꿔줌
     - 구멍을 매꿀 수 있나?
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP2200/week12/img_41.png)
 
 - inline 키워드의 역할을 생각해보자
     - 컴파일러에게 해당 함수를 `함수`로 쓰지 말라고 알려줌
@@ -360,32 +360,32 @@ clang -std=c99 -W -Wall -pedantic-errors *.c
 
 ### [인라인 키워드를 추가했을 때 링킹 오류를 해결하기: extern 키워드]
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP2200/week12/img_43.png)
 
 - 이게 해결법?
     - 코드 중복
         - 함수 구현부가 코드 중복이 됨
     - 실수가 많아짐
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP2200/week12/img_44.png)
 
 - extern을 붙이면 링커가 찾을 수 있는 함수(심볼)을 만들어 줌
     - 인라인화가 실패할 경우를 대비해서, `반드시` 함수 심볼을 만들어줌
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP2200/week12/img_45.png)
 
 - 근데 심볼을 만들면, 인라인 키워드를 사용하지 않고 헤더파일에 선언과 구현 코드가 있을 때와 똑같이 심볼 중복 오류 발생!!
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP2200/week12/img_46.png)
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP2200/week12/img_47.png)
 
 - extern 키워드가 붙어있으면 헤더를 인클루드한 .c파일 마다 심볼이 생성됨
 - 결론적으로 프로그램 전체에서 함수의 심볼이 딱 하나만 있어야함!!!
 
 ### [올바린 해결 방법(최종)]
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP2200/week12/img_48.png)
 
 - 헤더 파일에 인라인 함수를 구현
     - 함수 선언 + 함수 구현
@@ -405,7 +405,7 @@ inline int add(int op1, int op2)
 #endif /* SIMPLE_MATH_H */
 ```
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP2200/week12/img_49.png)
 
 - 그에 대응하는 .c 파일을 만듦
 - 이 파일에서 인라인 함수가 구현된 .h파일 인클루드
@@ -420,7 +420,7 @@ inline int add(int op1, int op2)
 extern inline int add(int op1, int op2);
 ```
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP2200/week12/img_50.png)
 
 - 이러면 extern 키워드를 붙여 인라인 함수를 다시 선언한 .c파일에서만 함수 심볼이 나옴
 - 이제 컴파일 중 인라인이 되면 헤더 파일에 있는 구현을 사용
@@ -428,18 +428,18 @@ extern inline int add(int op1, int op2);
 
 ### [참고 C++의 인라인 함수]
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP2200/week12/img_51.png)
 
 - 링커가 알아서 심볼 중에 하나만 골라서 링킹함!!
 
 ### [인라인 함수 vs 매크로 함수]
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP2200/week12/img_52.png)
 
 - 베스트 프랙티스는 인라인을 쓰자!
     - 매크로 함수 X
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP2200/week12/img_53.png)
 
 - 사람들이 C89 표준을 보통 따르기 때문에 매크로 함수만 존재한다고 생각하는 사람도 있음
 
@@ -545,25 +545,25 @@ int main(void)
 
 ### [문자열 복사의 예시]
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP2200/week12/img_54.png)
 
 - dest가 src와 범위가 겹치는 경우
 - 어떻게 값이 들어가야 맞는 거지?
     - 2가지 케이스를 상상해보자
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP2200/week12/img_55.png)
 
 - 덮어 쓰인 값이 복사
     - src가 변하면, 변한 후 dest에 복사
 - 원래 문자열이 복사
     - src가 변해도, dest에 그대로 복사
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP2200/week12/img_56.png)
 
 - 이것이 `정의되지 않은 결과`
     - 알 수 없음
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP2200/week12/img_57.png)
 
 - 왜 이런 문제가 발생할까요?
 - 이런 문제의 근본적인 원인은 `함수 호출자를 100% 제어할 수 없기` 때문임
@@ -571,7 +571,7 @@ int main(void)
     - 상식적이지 않은 호출자는 막을 수 없음
 - 기술적으로는 가능하나 상식적으로 불가능함
 
-![img_58.png](img_58.png)
+![img_58.png](old_note/COMP2200/week12/img_58.png)
 
 - 이런 문제를 막기 위해 컴파일러는 방어적으로 구현되어 있음
 - C -> 어셈블리 변환 과정(어셈블러의 역할)에서 두 방식 중 하나를 택해서 구현되어 있음
@@ -598,7 +598,7 @@ int main(void)
 
 ### [restrict를 사용 안 할 경우 예시]
 
-![img_61.png](img_61.png)
+![img_61.png](old_note/COMP2200/week12/img_61.png)
 
 - x를 a에 더할 때, b에 더할 때 총 두 번 읽어오는 이유는?
     - a와 x가 동일한 주소를 가리킬 수도 있기 때문
@@ -611,7 +611,7 @@ int main(void)
         - 참고로 % prefix는 x86 어셈블리에서 레지스터임을 표시
 - 이것이 컴파일러의 방어적인 구현
 
-![img_62.png](img_62.png)
+![img_62.png](old_note/COMP2200/week12/img_62.png)
 
 - 포인터 변수에 restrict 키워드를 사용하면?
     - 두번째 movl로 시작하는 명령어가 사라지는 것을 알 수 있음
@@ -622,7 +622,7 @@ int main(void)
 
 ### [여전히 비상식적 호출자는 막을 수 없음]
 
-![img_63.png](img_63.png)
+![img_63.png](old_note/COMP2200/week12/img_63.png)
 
 - 비슷한 개념이 코딩표준에서 함수의 매개변수에 _or_null이 붙은 매개변수
 - _or_null이 붙은 매개변수에는 NULL을 넣어도 되지만, 아닌 변수에 NULL을 넣으면 함수가 비정상적으로 동작
@@ -630,49 +630,49 @@ int main(void)
 
 ### [restrict의 필요성]
 
-![img_64.png](img_64.png)
+![img_64.png](old_note/COMP2200/week12/img_64.png)
 
 - 하드웨어에 따라 메모리 범위가 겹쳐지 않아야 하는 경우가 있음
 - 특히 복사 관련은 웬만하면 넣는 것이 좋음
 
-![img_65.png](img_65.png)
+![img_65.png](old_note/COMP2200/week12/img_65.png)
 
 - restrict는 inline에 비해서 무시하면 훨씬 위험함
 - 본질적으로 함수 호출자를 100% 제어할 수 없기 때문에 발생함
 
 ## 한 줄 주석
 
-![img_66.png](img_66.png)
+![img_66.png](old_note/COMP2200/week12/img_66.png)
 
 - `//`이 가능하다!
 
 ## 변수 선언
 
-![img_67.png](img_67.png)
+![img_67.png](old_note/COMP2200/week12/img_67.png)
 
-![img_68.png](img_68.png)
+![img_68.png](old_note/COMP2200/week12/img_68.png)
 
 - 블록 중간에 변수 선언이 가능해짐!
 
 ## va_copy()
 
-![img_69.png](img_69.png)
+![img_69.png](old_note/COMP2200/week12/img_69.png)
 
-![img_70.png](img_70.png)
+![img_70.png](old_note/COMP2200/week12/img_70.png)
 
 - va_copy()
 - 가변 인자 목록을 복사하는 `매크로 함수`
     - va_arg()로 가변 인자 목록으로 부터 다음 가변 인자를 가져왔을 때, 이전 가변 인자로 돌아갈 수 없기 때문에 돌아가기 위해 복사할 때 유용하다
 - dest를 사용한 뒤 va_end()를 호출해야함
 
-![img_71.png](img_71.png)
+![img_71.png](old_note/COMP2200/week12/img_71.png)
 
 - arg_list_v에 arg_list_agv의 시작(주소)을 복사함
 - va_copy(dest, src);
     - dest == arg_list_v
     - src == arg_list_agv
 
-![img_72.png](img_72.png)
+![img_72.png](old_note/COMP2200/week12/img_72.png)
 
 - va_arg(dest)로 복사한 대상(dest) 에서 다시 가변 인자를 접근하는 코드
 - 마지막에 va_end(dest)를 호출한 것에 주목
@@ -681,13 +681,13 @@ int main(void)
 
 ## snprintf()
 
-![img_73.png](img_73.png)
+![img_73.png](old_note/COMP2200/week12/img_73.png)
 
 - sprintf()의 문제점
 - buffer의 크기를 넘어설 수 있음
 - 소유하지 않은 메모리에 쓰게됨, 매우 위험함!
 
-![img_74.png](img_74.png)
+![img_74.png](old_note/COMP2200/week12/img_74.png)
 
 - 포인터 매개변수 buffer, format에 모두 restrict 키워드가 붙음
 - bufsz로 크기를 입력
@@ -696,38 +696,38 @@ int main(void)
 
 ### [snprintf() 예시]
 
-![img_75.png](img_75.png)
+![img_75.png](old_note/COMP2200/week12/img_75.png)
 
-![img_77.png](img_77.png)
+![img_77.png](old_note/COMP2200/week12/img_77.png)
 
 - 실행 전 메모리 상태
 
-![img_76.png](img_76.png)
+![img_76.png](old_note/COMP2200/week12/img_76.png)
 
 - 실행 후 메모리 상태
 - buffer의 범위를 넘어서는 곳에 write 하지 않음을 확인할 수 있음
 - buffer의 마지막 공간에는 널문자가 들어감
 
-![img_78.png](img_78.png)
+![img_78.png](old_note/COMP2200/week12/img_78.png)
 
 - 실제로는 마지막 공간에 널문자를 넣는 코드를 많이 사용함
     - 필요는 없음...
     - 역사적인 이유가 있음
 
-![img_79.png](img_79.png)
+![img_79.png](old_note/COMP2200/week12/img_79.png)
 
 - 그리고 사용할 때 헷갈려서, 그냥 일관적으로 널문자 넣는 것이 편함
 
 ### [snprintf()가 위험할 수 있음]
 
-![img_80.png](img_80.png)
+![img_80.png](old_note/COMP2200/week12/img_80.png)
 
 - bufsz가 0인 경우
 - 아무것도 write하지 않아서, 널 문자도 안 붙여줌
 - buffer를 미리 널문자로 초기화하는 것이 좋음
     - buffer[0] = '\0'
 
-![img_81.png](img_81.png)
+![img_81.png](old_note/COMP2200/week12/img_81.png)
 
 - buffer, format이 NULL인 경우도 문제 발생
     - 호출자의 문제임
@@ -735,43 +735,43 @@ int main(void)
 
 ## 새로운 자료형 long long int
 
-![img_82.png](img_82.png)
+![img_82.png](old_note/COMP2200/week12/img_82.png)
 
 - 최소 64비트인 정수형
 
-![img_83.png](img_83.png)
+![img_83.png](old_note/COMP2200/week12/img_83.png)
 
 - 후위 리터럴 ll, LL ULL 등등
 
-![img_84.png](img_84.png)
+![img_84.png](old_note/COMP2200/week12/img_84.png)
 
 - printf 서식 문자도 있음
 
 ## 불 형
 
-![img_85.png](img_85.png)
+![img_85.png](old_note/COMP2200/week12/img_85.png)
 
 - 두가지 방법이 있음
 
-![img_86.png](img_86.png)
+![img_86.png](old_note/COMP2200/week12/img_86.png)
 
 - _Bool
     - _(언더바)가 붙으면 표준이 아닌 경우가 많은데, 불은 표준임
 - 참은 0, 거짓은 1로 표현
 
-![img_87.png](img_87.png)
+![img_87.png](old_note/COMP2200/week12/img_87.png)
 
 - #include <stdbool.h>를 해야 사용할 수 있음
 - true, false로 표현!
 
 ### [왜 _Bool이 기본이고, bool은 헤더를 인클루드 해야만 쓸 수 있나?]
 
-![img_90.png](img_90.png)
+![img_90.png](old_note/COMP2200/week12/img_90.png)
 
 - C99에 새로 표준을 고칠 때, 후방 호환성 때문
     - 이미 자체적으로 bool을 만들었었음
 
-![img_91.png](img_91.png)
+![img_91.png](old_note/COMP2200/week12/img_91.png)
 
 - 이미 자체적으로 만든 bool과 충돌나지 않게, _Bool을 만듦
 - 새로 C99로 작성하는 코드는 이제 #inclue <stdbool.h>해서 bool 사용하면 됨
@@ -779,12 +779,12 @@ int main(void)
 
 ## 고정 폭 정수형
 
-![img_88.png](img_88.png)
+![img_88.png](old_note/COMP2200/week12/img_88.png)
 
 - 기본 자료형들의 크기는 `최소` 몇 비트
     - 고정된 것이 아님
 
-![img_89.png](img_89.png)
+![img_89.png](old_note/COMP2200/week12/img_89.png)
 
 - 고무줄 같은 정수형의 크기가 문제다!
 

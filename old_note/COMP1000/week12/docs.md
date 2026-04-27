@@ -42,19 +42,19 @@
 
 ## 라스 베가스 vs 몬테 카를로
 
-![img_6.png](img_6.png)
+![img_6.png](old_note/COMP1000/week12/img_6.png)
 
 ## 몬테 카를로 알고리듬
 
 ### 판정 문제
 
-![img_7.png](img_7.png)
+![img_7.png](old_note/COMP1000/week12/img_7.png)
 
 - yes/no 답이 있는 문제
 
 ### 몬테 카를로 알고리듬과 판정 문제
 
-![img_8.png](img_8.png)
+![img_8.png](old_note/COMP1000/week12/img_8.png)
 
 - 판정 문제에 몬테 카를로 알고리듬을 적용할 수 있음
 - 검사를 정해진 수 만큼 진행
@@ -67,21 +67,21 @@
         - 운이 좋은 경우죠?
         - 찾았으니 판정 문제의 답은 YES로 결정
 
-![img_9.png](img_9.png)
+![img_9.png](old_note/COMP1000/week12/img_9.png)
 
 - 정해진 수만큼 수행해서 못 찾으면 판정 문제의 답은 NO로 결정
 - 내가 검사 하지 않은 데이터에서 판정 문제의 정답이 있을 수 있지만, 이 확률을 낮추는게 관건!
 
 ### 몬테 카를로 알고리듬의 예
 
-![img_10.png](img_10.png)
+![img_10.png](old_note/COMP1000/week12/img_10.png)
 
 - 판정 문제의 실제 정답이 NO면?
     - 어떤 수행에 대해서도 판정 문제가 YES일 수 없음!!!
     - 몬테 카를로 알고리듬에 따라 정해진 수 만큼 반복하고 판정 문제의 답을 NO로 결정
     - 실제 정답과 일치
 
-![img_11.png](img_11.png)
+![img_11.png](old_note/COMP1000/week12/img_11.png)
 
 - 판정 문제의 실제 정답이 YES면?
     - 수행을 반복하다 YES를 찾은 경우
@@ -90,147 +90,147 @@
         - 판정 문제의 답을 NO로 간주하는 것이 몬테 카를로 알고리듬
         - 실제 판정 문제의 정답이 YES라 틀릴 수 있지만, 이 틀릴 확률이 매우 낮음!
 
-![img_12.png](img_12.png)
+![img_12.png](old_note/COMP1000/week12/img_12.png)
 
 - 몬테 카를로 알고리듬을 구현할 때 틀릴 확률을 줄이는 것이 주요 목표
 
-![img_13.png](img_13.png)
+![img_13.png](old_note/COMP1000/week12/img_13.png)
 
 - 베르누이 시행과 똑같은 개념
 
-![img_14.png](img_14.png)
+![img_14.png](old_note/COMP1000/week12/img_14.png)
 
 - 모든 회차에서 "모르겠다"라고 하는 확률을 구해보면
 - 회차가 늘수록 급격하게 감소함
     - (1-p)^n
 
-![img_15.png](img_15.png)
+![img_15.png](old_note/COMP1000/week12/img_15.png)
 
-![img_16.png](img_16.png)
+![img_16.png](old_note/COMP1000/week12/img_16.png)
 
-![img_17.png](img_17.png)
+![img_17.png](old_note/COMP1000/week12/img_17.png)
 
 - 지수함수
 
 ### 몬테 카를로 알고리듬에서 얻을 수 있는 결론
 
-![img_18.png](img_18.png)
+![img_18.png](old_note/COMP1000/week12/img_18.png)
 
 - 100번정도 시도해서 다 틀리면(NO)면 YES일 가능성이 엄청 높음
 
 ### 몬테 카를로 예1: 품질 관리
 
-![img_19.png](img_19.png)
+![img_19.png](old_note/COMP1000/week12/img_19.png)
 
-![img_20.png](img_20.png)
+![img_20.png](old_note/COMP1000/week12/img_20.png)
 
-![img_21.png](img_21.png)
+![img_21.png](old_note/COMP1000/week12/img_21.png)
 
-![img_22.png](img_22.png)
+![img_22.png](old_note/COMP1000/week12/img_22.png)
 
 - 핵심은 1000개를 모두 검사하는게 비효율적이라는 것
 - 일부만 검사해서 정확도를 높일 수 없을까?
 
-![img_23.png](img_23.png)
+![img_23.png](old_note/COMP1000/week12/img_23.png)
 
 - 우선 목표를 정함
 - 여기서 "불량률"은 불량 여부를 오판할 확률
 
-![img_24.png](img_24.png)
+![img_24.png](old_note/COMP1000/week12/img_24.png)
 
 - "판정 문제"를 정의해야함
 - 불량인지 판정
     - 정답을 맞출 확률(불량인데 불량이라고 판단) p
     - 정답을 틀릴 확률(불량인데 불량이지 않다고 판단) 1 - p
 
-![img_25.png](img_25.png)
+![img_25.png](old_note/COMP1000/week12/img_25.png)
 
 - 몇 번 시행할지를 결정해야함
     - n을 구하기
 
-![img_26.png](img_26.png)
+![img_26.png](old_note/COMP1000/week12/img_26.png)
 
-![img_27.png](img_27.png)
+![img_27.png](old_note/COMP1000/week12/img_27.png)
 
 - 38개를 검사해서 모두 정답을 맞춘다면(불량인데 불량이라고 판단)
 - 불량 여부를 오판할 확률(불량률)이 2프로 미만임
 
-![img_28.png](img_28.png)
+![img_28.png](old_note/COMP1000/week12/img_28.png)
 
 - 핵심은 목표(신뢰도, 불량률)에 몇 개를 검사할 것인지를 결정하는 것
 
 ## 소수와 합성수
 
-![img_29.png](img_29.png)
+![img_29.png](old_note/COMP1000/week12/img_29.png)
 
-![img_30.png](img_30.png)
+![img_30.png](old_note/COMP1000/week12/img_30.png)
 
 - 소수는 자연 현상
 
-![img_31.png](img_31.png)
+![img_31.png](old_note/COMP1000/week12/img_31.png)
 
 - 두 소수의 곱이 두 소수의 최소 공배수
 
-![img_32.png](img_32.png)
+![img_32.png](old_note/COMP1000/week12/img_32.png)
 
-![img_33.png](img_33.png)
+![img_33.png](old_note/COMP1000/week12/img_33.png)
 
 - 왜 굳이 소수 주기에 출몰?
 
-![img_34.png](img_34.png)
+![img_34.png](old_note/COMP1000/week12/img_34.png)
 
 - 자연에서 소수 주기로 출몰
     - 신기하네
 
-![img_35.png](img_35.png)
+![img_35.png](old_note/COMP1000/week12/img_35.png)
 
 - 천적의 성장 패턴은 소수가 아닌 경우가 많나봄
 
 ### 몬테 카를로 예2: 소수 판별법
 
-![img_36.png](img_36.png)
+![img_36.png](old_note/COMP1000/week12/img_36.png)
 
 - RSA 암호화
     - 소수 활용
     - 비대칭 암호
 
-![img_37.png](img_37.png)
+![img_37.png](old_note/COMP1000/week12/img_37.png)
 
-![img_38.png](img_38.png)
+![img_38.png](old_note/COMP1000/week12/img_38.png)
 
 ### 주먹구구식 소수 판별법
 
-![img_39.png](img_39.png)
+![img_39.png](old_note/COMP1000/week12/img_39.png)
 
 - 주니어 프로그래머 면접에 매우 자주 나오는
 
-![img_40.png](img_40.png)
+![img_40.png](old_note/COMP1000/week12/img_40.png)
 
 - 수학적 개념을 이용해 조금 더 빠른 알고리듬
 - 곱에서 순서쌍(조합)이 동일함을 이용
 
-![img_41.png](img_41.png)
+![img_41.png](old_note/COMP1000/week12/img_41.png)
 
 - RSA에 사용하는 소수는 매우 큼
 - 연산이 매우 많아야함
 
 ### 연산을 줄이기 위해서 몬테 카를로 알고리듬!
 
-![img_42.png](img_42.png)
+![img_42.png](old_note/COMP1000/week12/img_42.png)
 
 - 확률을 알아야함
 
 ### 밀러 라빈 소수 판별법
 
-![img_43.png](img_43.png)
+![img_43.png](old_note/COMP1000/week12/img_43.png)
 
 - 소수인지 확률적으로 알려주는 판별법을 "밀러 라빈 소수 판별법"으로 구할 수 있음
 
-![img_44.png](img_44.png)
+![img_44.png](old_note/COMP1000/week12/img_44.png)
 
 - 밀러 라빈 소수 판별법은 합성수임을 바로 알 수 있음
 
-![img_45.png](img_45.png)
+![img_45.png](old_note/COMP1000/week12/img_45.png)
 
 - 몬테 카를로 알고리듬을 적용하기
 
@@ -251,52 +251,52 @@
         - 실제 합성수인데 소수라고 결론을 내림
         - 결정 문제의 답은 YES인데 몬테 카를로 알고리듬의 결과 NO라고 결론을 내림. 오답!
 
-![img_46.png](img_46.png)
+![img_46.png](old_note/COMP1000/week12/img_46.png)
 
 - 밀러 라빈 판별법에 따르면 n이 합성수일 때, 임의의 b를 뽑았을 때 판별법을 통과할 확률은 1/4이하
 - 밀러 라빈 판별법에 따르면 n이 소수일 때, 임의의 b에 대해서 판별법을 통과할 확률은 100%
 - 밀러 라빈 판별법은 b에 통과/탈락을 적용해 이 결과에 따라 n이 합성수인지 판단하는 방법이다. b가 소수인지 합성수인지 여부는 중요하지 않음
     - 요건 너무 수학적 내용이니까...
 
-![img_47.png](img_47.png)
+![img_47.png](old_note/COMP1000/week12/img_47.png)
 
 - "1 < b < n" 을 만족하는 b를 무작위로 반복해서 뽑는 시행
 
-![img_48.png](img_48.png)
+![img_48.png](old_note/COMP1000/week12/img_48.png)
 
 - 10번정도 무작위로 b를 뽑으면 n이 합성수이지만(판정 문제의 답이 YES) 소수라고 오답(판정 문제의 답이 NO)을 내릴 확률이 매우 낮아짐
 
-![img_49.png](img_49.png)
+![img_49.png](old_note/COMP1000/week12/img_49.png)
 
-![img_50.png](img_50.png)
+![img_50.png](old_note/COMP1000/week12/img_50.png)
 
 - 큰 홀수 하나 뽑고(n) 1과 n사이 홀수를 무작위로 10번정도 뽑아서 소수인지 아닌지 판별
 - 큰 소수 2개 찾기를 매우 효율적으로 가능!
 
 ## 확률적 알고리듬과 프로그래머
 
-![img_51.png](img_51.png)
+![img_51.png](old_note/COMP1000/week12/img_51.png)
 
 - 프로그래머는 결적적 알고리듬을 선호
 
-![img_52.png](img_52.png)
+![img_52.png](old_note/COMP1000/week12/img_52.png)
 
 - 지금까지는 확률적 알고리듬을 피해온 경향이 있음
 - 하지만 확률적 알고리듬을 사용하는 분야가 점점 증가
 
 ## 참고: 동영상 검수
 
-![img_53.png](img_53.png)
+![img_53.png](old_note/COMP1000/week12/img_53.png)
 
 - 동영상 녹화와 녹음의 sync
 
-![img_54.png](img_54.png)
+![img_54.png](old_note/COMP1000/week12/img_54.png)
 
-![img_55.png](img_55.png)
+![img_55.png](old_note/COMP1000/week12/img_55.png)
 
-![img_56.png](img_56.png)
+![img_56.png](old_note/COMP1000/week12/img_56.png)
 
-![img_57.png](img_57.png)
+![img_57.png](old_note/COMP1000/week12/img_57.png)
 
 - 10분씩 건너뛰며 5초씩만 확인해도 거의 문제 없음
     - 확률적 알고리듬
