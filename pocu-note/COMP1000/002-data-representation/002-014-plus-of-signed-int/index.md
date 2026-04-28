@@ -43,7 +43,7 @@ $1001\ 0010_2$ 라는 비트 패턴에 $0000\ 0011_2$을 더하면 됨
 - 도돌이표 개념
 - 시계 이미지
 
-![img_92.png](old_note/COMP1000/week2/images/img_92.png)
+![img_92.png](pocu-note/COMP1000/002-data-representation/002-020-ascii/images/img_92.png)
 
 10진수 값으로 변환해 자료형이 표현하는 범위인지 확인해야함
 
