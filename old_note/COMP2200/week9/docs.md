@@ -830,20 +830,20 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## 베스트 프렉티스: 정적 vs 동적 메모리
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week9/img_103.png)
 
 - 최대한 스택 메모리에서 정적으로 할당하자!
 
 ## 동적 메모리의 소유권 문제
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP2200/week9/img_104.png)
 
 - 동적 메모리의 소유주는 동적 메모리를 할당받은(생성한) 함수
 - 소유주가 반드시 메모리 해제해야함
 - 소유주가 아닌 곳에서 동적 메모리에 접근해서 사용할 수 있음, 하지만 해제하면 안 됨
 - 결론: 소유주가 할당/해제를 책임지고, 소유주가 아닌 곳에서는 사용만 하기
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week9/img_105.png)
 
 - 호출자가 함수 시그니처만으로는 내부 구현을 알 수 없음
 - 함수 내부에서 동적할당 후 해제하지 않는다면 문제가 있음
@@ -851,34 +851,34 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## C++ RAII
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week9/img_106.png)
 
 - 메모리의 소유주는 개체, 개체가 사라지면 메모리도 해제하는 개념
 - 개체 밖의 다른 곳에서 메모리를 사용하는 것은 허용됨
 
 ## C에는 개체가 없음
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week9/img_107.png)
 
 - malloc() / free()를 쌍으로 사용허는 코딩 습관으로 RAII와 유사한 개념을 적용할 수 있음
 
 ## 함수 중간에 return하는 실수
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP2200/week9/img_108.png)
 
 - free()를 호출하지 않고, early return하는 실수
 
-![img_109.png](img_109.png)
+![img_109.png](old_note/COMP2200/week9/img_109.png)
 
 - 해결법으로 goto문을 사용할 수 있음
 
 ## combine_string 함수 같은 문제: 함수 밖에서 메모리 접근이 필요한 경우
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP2200/week9/img_110.png)
 
 - 문자열에서 배운 것 처럼, 함수 외부에서 메모리를 할당해서 매개변수로 넘겨주는 방식이 좋음
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP2200/week9/img_111.png)
 
 - 두 문자열을 합친 길이를 구하고, 이를 이용해 동적 메모리 할당
 - 함수 외부에서 할당 받은 동적 메모리를 인자로 넘김
@@ -886,24 +886,24 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## 함수 내부에서 동적 메모리 할당을 피할 수 없는 경우: 코딩 표준으로 해결
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP2200/week9/img_112.png)
 
 - 주석으로 표기
 - 함수 이름에 들어나게 하기
 - 포인터 변수의 변수명에 표기
 
-![img_113.png](img_113.png)
+![img_113.png](old_note/COMP2200/week9/img_113.png)
 
 - 함수의 내부에서 동적 메모리 할당을 하는 경우 함수 명에 malloc을 붙이자
 
-![img_114.png](img_114.png)
+![img_114.png](old_note/COMP2200/week9/img_114.png)
 
 - 동적 메모리를 저장하는 변수라면 변수명에 pointer allocated를 명시
 - pa_var;
 
 ## 베스트 프랙티스 정리
 
-![img_115.png](img_115.png)
+![img_115.png](old_note/COMP2200/week9/img_115.png)
 
 - malloc() / free() 바로 쌍으로 사용
 - 동적 할당을한 메모리를 저장하는 포인터 변수와, 이를 사용하는 포인터 변수를 분리
@@ -914,35 +914,35 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## 다중 포인터
 
-![img_116.png](img_116.png)
+![img_116.png](old_note/COMP2200/week9/img_116.png)
 
 - 포인터는 주소를 저장하는 변수
 - 포인터의 주소를 저장하는 변수를 다중 포인터라고 함
 
-![img_117.png](img_117.png)
+![img_117.png](old_note/COMP2200/week9/img_117.png)
 
 - 포인터의 주소를 저장하는 변수인 다중 포인터의 자료형은?
 
-![img_118.png](img_118.png)
+![img_118.png](old_note/COMP2200/week9/img_118.png)
 
 - int*의 주소를 저장하는 변수는 int**
 - pointer to (pointer to int), 오른쪽에서 부터 읽는 포인터 읽는 방법이 그대로 적용됨
 
 ## 다중 포인터 사용 예
 
-![img_119.png](img_119.png)
+![img_119.png](old_note/COMP2200/week9/img_119.png)
 
 - pp = &p;
 - pp에 p의 주소인 0x108를 대입
 
-![img_120.png](img_120.png)
+![img_120.png](old_note/COMP2200/week9/img_120.png)
 
 - *pp = q;
 - pp에 저장된 0x108 주소값으로 가서, q의 값 대입
 - 0x108 주소에 0x104가 저장됨, 0x108은 p의 주소
 - p = 0x104가 됨
 
-![img_121.png](img_121.png)
+![img_121.png](old_note/COMP2200/week9/img_121.png)
 
 - **pp = 1024;
 - pp에 저장된 값은 0x108, 0x108 주소에 저장된 값은 0x104
@@ -950,12 +950,12 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 - p = 1x104 = q
 - *q = 1024로 num2 = 1024
 
-![img_122.png](img_122.png)
+![img_122.png](old_note/COMP2200/week9/img_122.png)
 
 - pp = &r;
 - pp에 r의 주소인 0x110를 대입
 
-![img_123.png](img_123.png)
+![img_123.png](old_note/COMP2200/week9/img_123.png)
 
 - **pp = *p * 2
 - pp에 저장된 값은 0x110, 0x110 주소에 저장된 값은 0x10C, num1의 주소
@@ -965,13 +965,13 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 ## 3중 포인터 이상은?
 
-![img_124.png](img_124.png)
+![img_124.png](old_note/COMP2200/week9/img_124.png)
 
 - 3중 포인터는 가끔 씀
 
 ## 2중 포인터 사례
 
-![img_125.png](img_125.png)
+![img_125.png](old_note/COMP2200/week9/img_125.png)
 
 - 2D 배열처럼 많이 씀
 

@@ -578,7 +578,7 @@ public class Item {
 
 - DP를 사용하지 못할 때 그리디를 사용하면 된다고 말할 수 있는게, 최적 부분구조는 두 방법이 사용되는 상황의 공통적인 속성임
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week10/images/img_103.png)
 
 - 최소/최대 문제
 - 여러 그리디 선택(앞의 예에서 3가지)이 가능하면 모든 시도 또는 반례를 통해 경우의 수를 줄여야함
@@ -586,29 +586,29 @@ public class Item {
 
 ## 동전 교환 문제
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week10/images/img_104.png)
 
 - 참고로 이게 globally optimal 함
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week10/images/img_105.png)
 
 - 가장 큰 동전이 앞에오게 내림차순 정렬
 - 큰 동전부터 주면서 잔액을 줄임
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week10/images/img_106.png)
 
 - 시간 복잡도는 O(nlogn)
     - 정렬이 가장 큰 비용
 
 ### 그리디가 최적이 아닌 경우
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week10/images/img_107.png)
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week10/images/img_108.png)
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week10/images/img_109.png)
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week10/images/img_110.png)
 
 - 동전 체계가 특별하기 때문!
 
@@ -617,42 +617,42 @@ public class Item {
 
 ## 인터벌 스케쥴링(Interval Scheduling)
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week10/images/img_111.png)
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week10/images/img_112.png)
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week10/images/img_113.png)
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP3500/week10/images/img_114.png)
 
 - 최대한 많은 곳을 터는 것이 목적
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP3500/week10/images/img_115.png)
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP3500/week10/images/img_116.png)
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP3500/week10/images/img_117.png)
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP3500/week10/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP3500/week10/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP3500/week10/images/img_120.png)
 
 - 이 반례에서 박물관 1개면 끝임
     - 그리디에 따르면
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP3500/week10/images/img_121.png)
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP3500/week10/images/img_122.png)
 
 - 이것도 안 됨
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP3500/week10/images/img_123.png)
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP3500/week10/images/img_124.png)
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP3500/week10/images/img_125.png)
 
 ![img_126.png](images/img_126.png)
 

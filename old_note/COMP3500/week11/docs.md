@@ -842,29 +842,29 @@ public class Program {
 
 ![img_102.png](old_note/COMP3500/week11/images/img_102.png)
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week11/images/img_103.png)
 
 - 하나의 SCC를 찾음
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week11/images/img_104.png)
 
 - 하나의 SCC를 찾음
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week11/images/img_105.png)
 
 - 4,5,0 은 DFS에서 처리 순서
     - 처리랑 처음 방문은 다르죠
     - 후위 순회니까
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week11/images/img_106.png)
 
 - 이런식으로 반복
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week11/images/img_107.png)
 
 ### 코사라주 알고리듬의 이해
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week11/images/img_108.png)
 
 - 실행 결과가 올바른 선후 관계를 보장
     - 12345 순서대로 DFS:
@@ -873,11 +873,11 @@ public class Program {
         - 2345 1
     - 역순 결과는 올바른 선후 관계를 보장함
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week11/images/img_109.png)
 
 - 일반화해서 DFS의 결과는 올바른 선후 관계를 보장함
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week11/images/img_110.png)
 
 - 전치 그래프에서도 SCC 관계는 변하지 않음
     - SCC끼리 순서는 변함(전치)
@@ -885,7 +885,7 @@ public class Program {
     - SCC 내부에서 edge 방향(순서)도 변함
         - 전치 그래프니까..
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week11/images/img_111.png)
 
 - 세 번째 단계에서 첫 번째 단계(DFS 후위 순회 + 역순)한 결과
 - 역순으로 시작하기 때문에 u부터 시작
@@ -898,7 +898,7 @@ public class Program {
 
 ### SCC의 용도
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week11/images/img_112.png)
 
 - 여전히 진입이 가능하게 보장하면서 일방 통행로 봉쇄
     - SCC로 묶어서 간접적으로는 SCC 안에서는 통행할 수 있음
@@ -913,7 +913,7 @@ public class Program {
 - 코사라주 알고리듬의 올바른 시간 복잡도는 무엇인가요?
     - O(N + E)
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week11/images/img_113.png)
 
 - 위 그래프에서 강한 결합 요소는 총 몇 개인가요?
     - 코사라주 알고리듬 적용하기

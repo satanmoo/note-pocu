@@ -779,12 +779,12 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 그리드 만들기
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week12/images/img_103.png)
 
 - 행렬에서 보기 편하라고 0-based로 보여줌
     - 원래 플로이드 워셜은 1-based
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week12/images/img_104.png)
 
 - k == -1:
     - 플로이드 워셜로 치면 0번 노드
@@ -796,71 +796,71 @@ public final class Candidate implements Comparable<Candidate> {
 
 - 행렬의 의미는 현재까지 알려진 최단 거리
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week12/images/img_105.png)
 
 - 2중 for문으로 공식에 따라 업데이트 해보장
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week12/images/img_106.png)
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week12/images/img_107.png)
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week12/images/img_108.png)
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week12/images/img_109.png)
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week12/images/img_110.png)
 
 - from 0 to 0
 - from 0 to 3
 - edge가 없어서 바뀌는게 없네
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week12/images/img_111.png)
 
 - 0을 경유햇는데, 최단 경로가 아니라서 업데이트 안 됨
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week12/images/img_112.png)
 
 - k = 0 에서 업데이트한 행렬을 사용한다
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week12/images/img_113.png)
 
 - 와 업데이트
 - 1을 경유하면 빠르죠
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP3500/week12/images/img_114.png)
 
 - 길이 없네
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP3500/week12/images/img_115.png)
 
 - 업데이트
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP3500/week12/images/img_116.png)
 
 - 2를 경유하면 최단 경로 업데이트
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP3500/week12/images/img_117.png)
 
 - 무한이 사라지고 있어
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP3500/week12/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP3500/week12/images/img_119.png)
 
 - 시험에서 표 그리고 dp 연습해야함
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP3500/week12/images/img_120.png)
 
 - 모든 쌍의 최단 거리를 구했다!
 
 ### 플로이드 워셜의 복잡도
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP3500/week12/images/img_121.png)
 
 - k: 최대값이 N
     - 0부터 N - 1까지 불판 갈면서 진행
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP3500/week12/images/img_122.png)
 
 - 2D 배열만 업데이트하면 되서 공간복잡도는 O(N^2)
 
@@ -869,7 +869,7 @@ public final class Candidate implements Comparable<Candidate> {
 - 플로이드 워셜 알고리듬을 사용하여 위 그래프의 모든 쌍의 최단 경로를 찾으려고 합니다. k = 1일 때 최단 거리를 계산 한 후 i = 3, j = 0에 해당하는 요소의 값은 무엇인가요? k는 -1부터 시작한다고
   가정해도 좋습니다.
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP3500/week12/images/img_123.png)
 
 - k == -1 초기화
 

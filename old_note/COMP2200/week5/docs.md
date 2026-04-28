@@ -698,7 +698,7 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 버퍼 오버플로 문제 없이 문자열 읽기
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week5/img_103.png)
 
 - fgets로 한 줄을 읽을 때 LENGTH - 1 만큼 읽어서 버퍼 오버플로우를 방지합니다.
     - stdin으로 부터 읽어서, line에 쓴다.
@@ -708,7 +708,7 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## clearerr()은 뭔가요
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP2200/week5/img_104.png)
 
 - EOF를 만나면, 스트림의 EOF 표시자가 세팅된다.
     - EOF 표시자가 1이면 EOF를 만났다는 뜻
@@ -725,69 +725,69 @@ while (fgets(line, 10, stdin) != NULL) {
 
 ## 한 데이터씩 읽는 방법이 유용한 경우
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week5/img_105.png)
 
 - 텍스트를 다른 자료형으로 곧바로 읽어오는 가장 간단한 방법!!!
 
 ## 코드보기: 게임 전적 쓰고 읽기
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week5/img_106.png)
 
 - NUM_CHAMPS로 수를 미리 메크로로 선언해두면, 실수 방지 굿
 
-![img_107.png](img_107.png)
-![img_108.png](img_108.png)
+![img_107.png](old_note/COMP2200/week5/img_107.png)
+![img_108.png](old_note/COMP2200/week5/img_108.png)
 
 - 챔피언 수에 맞게, 승수, 패수를 배열에 저장해야겠죠
 - KDA도 ㅇㅇ
 
-![img_109.png](img_109.png)
-![img_110.png](img_110.png)
+![img_109.png](old_note/COMP2200/week5/img_109.png)
+![img_110.png](old_note/COMP2200/week5/img_110.png)
 
 - 버퍼는 충분히 크게
 - 버퍼에 모든 전적을 예쁘게 저장할거임
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP2200/week5/img_111.png)
 
 - BUFFER_LLENGTH도 함수 인자로 전달해 주서 이 함수가 버퍼 범위를 넘어서 쓰는 경우를 방지
 - 함수 내부에서 사용하려고
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP2200/week5/img_112.png)
 
 - 버퍼에 저장된 전적을 출력
 
-![img_113.png](img_113.png)
+![img_113.png](old_note/COMP2200/week5/img_113.png)
 
 - _s가 달린 함수를 쓰라는 경고를 끄는 거임
 
-![img_114.png](img_114.png)
+![img_114.png](old_note/COMP2200/week5/img_114.png)
 
 - 실제로 업계에서도 끄는 경우가 많음
 
-![img_115.png](img_115.png)
-![img_116.png](img_116.png)
-![img_117.png](img_117.png)
+![img_115.png](old_note/COMP2200/week5/img_115.png)
+![img_116.png](old_note/COMP2200/week5/img_116.png)
+![img_117.png](old_note/COMP2200/week5/img_117.png)
 
 - 제일 마지막 매개변수는 챔피언 수, 즉 kills, wins... 이런 배열의 길이죵
 - C에서 배열과 배열의 길이를 같이 전달하는 경우가 필수잖아요 ㅇㅅㅇ;
 
-![img_118.png](img_118.png)
-![img_119.png](img_119.png)
-![img_120.png](img_120.png)
+![img_118.png](old_note/COMP2200/week5/img_118.png)
+![img_119.png](old_note/COMP2200/week5/img_119.png)
+![img_120.png](old_note/COMP2200/week5/img_120.png)
 
 - remaining_buffer_size: 버퍼에서 얼마나 공간이 남아있느냐?
     - 아직 남아있는 쓸 글자
 
-![img_121.png](img_121.png)
+![img_121.png](old_note/COMP2200/week5/img_121.png)
 
 - 초기화는 버퍼 크기 -1
     - 마지막은 널문자 넣어야하니깐
 
-![img_122.png](img_122.png)
+![img_122.png](old_note/COMP2200/week5/img_122.png)
 
 - C에서 빈 문자열을 정의하는 방법
 
-![img_123.png](img_123.png)
+![img_123.png](old_note/COMP2200/week5/img_123.png)
 
 - line을 이미 크게 여유롭게 잡아놨음
 - line에 출력할 때 아무리 길어봤자.
@@ -797,11 +797,11 @@ while (fgets(line, 10, stdin) != NULL) {
     - 설마 4096까지 가겠습니까?
 - 제일 마지막에 줄바꿈은 한 줄씩 작성하니까, 줄바꿈!
 
-![img_124.png](img_124.png)
+![img_124.png](old_note/COMP2200/week5/img_124.png)
 
 - 한 줄의 예시
 
-![img_125.png](img_125.png)
+![img_125.png](old_note/COMP2200/week5/img_125.png)
 
 - line마다 길이가 변할 수 있으니, strlen으로 변수에 저장
 - [질문] sprintf의 return값을 사용해도 되나요? https://en.cppreference.com/w/cpp/io/c/fprintf 레퍼런스: Number of characters written if

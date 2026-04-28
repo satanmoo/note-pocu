@@ -478,87 +478,87 @@
 
 - 합리적인 사고는 확률에 기반함
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP1000/week11/img_103.png)
 
 ### 몬티 홀 문제
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP1000/week11/img_104.png)
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP1000/week11/img_105.png)
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP1000/week11/img_106.png)
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP1000/week11/img_107.png)
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP1000/week11/img_108.png)
 
 - 그룹은 2개로 나눌 수 있음
 - 고른 문/고르지 않은 문
 
-![img_109.png](img_109.png)
+![img_109.png](old_note/COMP1000/week11/img_109.png)
 
 - 골랐을 때 맞을 확률 1/3
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP1000/week11/img_110.png)
 
 - 게임 규칙에 따라 내가 고르지 않은 문 2개 중 1개를 염
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP1000/week11/img_111.png)
 
 - 선택을 바꾸면 문 2개를 고른 것과 같음
 
 ### 현질도 경제적으로 할 수 있다?!
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP1000/week11/img_112.png)
 
-![img_113.png](img_113.png)
+![img_113.png](old_note/COMP1000/week11/img_113.png)
 
-![img_114.png](img_114.png)
+![img_114.png](old_note/COMP1000/week11/img_114.png)
 
 ## 조건부 확률
 
-![img_115.png](img_115.png)
+![img_115.png](old_note/COMP1000/week11/img_115.png)
 
 - 표본 공간의 개념으로 이해
 
 ### 조건부 확률의 예: 동전 연속으로 던지기
 
-![img_116.png](img_116.png)
+![img_116.png](old_note/COMP1000/week11/img_116.png)
 
 - 우선 F,E를 정의하기
 
-![img_117.png](img_117.png)
+![img_117.png](old_note/COMP1000/week11/img_117.png)
 
 - F: 처음 던저셔 앞면이 나옴
 - E: 2번 더 던져서 앞면이 나온 총횟수가 홀수
 
-![img_118.png](img_118.png)
+![img_118.png](old_note/COMP1000/week11/img_118.png)
 
 - E 와 F의 교집합을 찾아보자
 
-![img_119.png](img_119.png)
+![img_119.png](old_note/COMP1000/week11/img_119.png)
 
 - 표본 집합을 구할 때 모든 경우의 수로 계산
 
-![img_120.png](img_120.png)
+![img_120.png](old_note/COMP1000/week11/img_120.png)
 
 - 교집합으로 계산한 확률의 표본 공간은 전체
 
-![img_121.png](img_121.png)
+![img_121.png](old_note/COMP1000/week11/img_121.png)
 
 - 표본 공간을 줄여보자
 
-![img_122.png](img_122.png)
+![img_122.png](old_note/COMP1000/week11/img_122.png)
 
-![img_123.png](img_123.png)
+![img_123.png](old_note/COMP1000/week11/img_123.png)
 
 - 곱의 법칙을 역산으로 적용한다고 생각해도 됨
 
-![img_124.png](img_124.png)
+![img_124.png](old_note/COMP1000/week11/img_124.png)
 
 - 여기서 공식 유도 가능
 
-![img_125.png](img_125.png)
+![img_125.png](old_note/COMP1000/week11/img_125.png)
 
 ### 조건부 확률 예: 자녀 성비 예측하기
 

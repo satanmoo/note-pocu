@@ -369,33 +369,33 @@
 
 - GPU도 있다
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP1000/week9/images/img_103.png)
 
 - 픽셀을 독립적으로 그리기 위해서 코어가 매우 많음
 
 ## 병렬 알고리듬: 평균 조도 구하기
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP1000/week9/images/img_104.png)
 
 - 각 픽셀마다 조도를 구하고 평균을 구하는 개념
 - 몇 백만 픽셀을 하나하나 돌리기에는 느리기 때문에 2*2 크기로 병렬처리
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP1000/week9/images/img_105.png)
 
 - 64개 코어로 계산하는 예
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP1000/week9/images/img_106.png)
 
 - 평균을 계산해서 스크린샷에 4분할 사각형에서 4분할 경계가 사라짐
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP1000/week9/images/img_107.png)
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP1000/week9/images/img_108.png)
 
 - 재귀적으로 계산
 - 쿼드 트리 비슷하게
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP1000/week9/images/img_109.png)
 
 - 각 코어가 독립적으로 일을 담당
 - 최종적으로 취합
@@ -403,43 +403,43 @@
 
 ## 분산 시스템
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP1000/week9/images/img_110.png)
 
 - 메모리가 부족하면?
 - 데이터가 너무 크다면?
 - 연산 속도가 문제가 아니라 I/O가 문제
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP1000/week9/images/img_111.png)
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP1000/week9/images/img_112.png)
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP1000/week9/images/img_113.png)
 
 - 여러 컴퓨터끼리 연결하기 위해 네트워크가 필요함
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP1000/week9/images/img_114.png)
 
 - 각각 컴퓨터의 CPU, 메모리를 사용
 - 네트워크 지연은 물리적 이슈
     - 거리가 멀면 지연이 생김
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP1000/week9/images/img_115.png)
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP1000/week9/images/img_116.png)
 
 ### 수억 개의 문서에서 "hello" 찾기: 맵/리듀스 모델
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP1000/week9/images/img_117.png)
 
 - 검색만
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP1000/week9/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP1000/week9/images/img_119.png)
 
 - 다른 레이어에서는 검색 바탕으로 취합(더하기)만 함
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP1000/week9/images/img_120.png)
 
 - map:
     - 데이터 대응

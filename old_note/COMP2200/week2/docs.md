@@ -727,65 +727,65 @@ arr2 = { 0, }; /* 불가능 */
 
 ## 빌드 과정: 어셈블 단계
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week2/img_103.png)
 
 - 어셈블리어 코드를 조립해서 오브젝트 코드로 만든다.
 - 어셈블러라는 프로그램이 담당
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP2200/week2/img_104.png)
 
 - 이렇게 어셈블러 코드를 받아서
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week2/img_105.png)
 
 - 기계어로 바꿔줌
 - 이게 오브젝트 코드
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week2/img_106.png)
 
 ## 오브젝트 코드 보는 방법
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week2/img_107.png)
 
 - 컴파일 플래그 -c를 사용하면 오브젝트 코드가 생성됨
     - .o 파일
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP2200/week2/img_108.png)
 
 - 이제부터 이진파일
 
-![img_109.png](img_109.png)
+![img_109.png](old_note/COMP2200/week2/img_109.png)
 
 - hex에디터로 확인해봄.
 - 레이블(구멍) 확인할 수 있죠.
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP2200/week2/img_110.png)
 
 - _add는 아스키코드로 볼 수 있죠?
 
 ## 빌드 과정: 링크 단계
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP2200/week2/img_111.png)
 
 - 링커라는 프로그램이 담당
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP2200/week2/img_112.png)
 
 - 입력은 여태까지 컴파일 한 모든 오브젝트 코드
 
-![img_113.png](img_113.png)
+![img_113.png](old_note/COMP2200/week2/img_113.png)
 
 - 오브젝트 코드의 구멍을 매꿔준다.
 
 ### 링커는 어떻게 구멍을 매꿀까?
 
-![img_114.png](img_114.png)
-![img_115.png](img_115.png)
+![img_114.png](old_note/COMP2200/week2/img_114.png)
+![img_115.png](old_note/COMP2200/week2/img_115.png)
 
 - 함수의 메모리 주소를 기억하고
 - 함수를 호출하는 코드를 만나면 그 주소로 점프하는 코드를 넣어준다.
 
-![img_116.png](img_116.png)
+![img_116.png](old_note/COMP2200/week2/img_116.png)
 
 - 구멍에 매꿔야하는데, 없어서 구멍을 못매꾸면 링커 오류 발생
 - 컴파일 오류임!
@@ -793,27 +793,27 @@ arr2 = { 0, }; /* 불가능 */
 - 함수 원형에서 오타나면 링커 오류 발생
 - 함수 구현을 빼먹었거나.
 
-![img_117.png](img_117.png)
+![img_117.png](old_note/COMP2200/week2/img_117.png)
 
 - 최종 결과는 실행파일!!
 
 ## 왜 링크 단계를 분리할까?
 
-![img_118.png](img_118.png)
-![img_119.png](img_119.png)
+![img_118.png](old_note/COMP2200/week2/img_118.png)
+![img_119.png](old_note/COMP2200/week2/img_119.png)
 
 - .c 파일(몸체)의 변경이 자주 발생한다면?
     - .c 파일만 컴파일하면 되고, 링크는 안해도 됨
 - 함수 중복 문제
     - .c 파일로 분리하면 함수 하나만 작성해고 공통으로 쓸 수 있죠. 관리가 쉽쥬
 
-![img_120.png](img_120.png)
+![img_120.png](old_note/COMP2200/week2/img_120.png)
 
 - -c 플래그로 만들어진 오브젝트 코드들을 명시하면 exe파일 만들 수 있다.
 
 ## 라이브러리
 
-![img_121.png](img_121.png)
+![img_121.png](old_note/COMP2200/week2/img_121.png)
 
 - 실행은 곧바로 안 되는 파일이 결과물임
 - main 함수 필요없죠?
@@ -821,7 +821,7 @@ arr2 = { 0, }; /* 불가능 */
 
 ### 정적 라이브러리와 링크
 
-![img_122.png](img_122.png)
+![img_122.png](old_note/COMP2200/week2/img_122.png)
 
 - 실행 파일 크기가 커짐
 - 메모리도 더 잡아 먹음
@@ -830,14 +830,14 @@ arr2 = { 0, }; /* 불가능 */
 
 ### 동적 라이브러리와 링크
 
-![img_123.png](img_123.png)
-![img_124.png](img_124.png)
+![img_123.png](old_note/COMP2200/week2/img_123.png)
+![img_124.png](old_note/COMP2200/week2/img_124.png)
 
 - 실행 파일을 실행할 때 링크함
     - 링킹은 실행 중 운영체제가 해줌
 - dll 알죠?
 
-![img_125.png](img_125.png)
+![img_125.png](old_note/COMP2200/week2/img_125.png)
 
 - 장점은 실행 파일 크기가 작아지고, 공통의 동적 라이브러리를 실행 중 불러오면 됨
 - 여러 프로그램을 메모리에 띄우더라도 한번만 메모리에 올라가면 됨

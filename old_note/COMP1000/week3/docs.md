@@ -328,7 +328,7 @@
 
 ## 지수와 지수비트
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP1000/week3/images/img_116.png)
 
 - 지수를 구하려면?
     - 지수 비트에 저장된 비트 패턴을 부호없는 정수로 10진수 변환
@@ -339,7 +339,7 @@
     - 먼저 정규화해서 지수를 구함
     - '지수 + 127' 10진수 결과를 비트 패턴으로 변경해서 8비트에 저장
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP1000/week3/images/img_117.png)
 
 - 표현 가능한 지수 범위가 부족함
     - 모두 0인 경우 (0 - 127)
@@ -347,16 +347,16 @@
 
 ### 지수값 -127(지수비트 0x00)
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP1000/week3/images/img_118.png)
 
 - 현재 공식에서 어떻게 0을 표현할 것인가?
 - 위 값에서 어떤 값을 부호비트, 지수비트, 가수비트에 넣어봤자 0을 구할 수 없음
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP1000/week3/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP1000/week3/images/img_120.png)
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP1000/week3/images/img_121.png)
 
 - 지수비트가 모두 0인 경우 예외적으로 새로운 공식을 적용
     - 지수 비트값 대신 고정 상수
@@ -376,7 +376,7 @@
 
 ### 지수비트 0x00: 비정규화 수
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP1000/week3/images/img_122.png)
 
 - 비정상 값
     - 지수비트0 + 가수비트 0아님 => 비정규화 수
@@ -401,7 +401,7 @@
 
 ### 지수 비트 정리
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP1000/week3/images/img_123.png)
 
 ## IEEE 754 Single Example
 
@@ -458,7 +458,7 @@
     - 소수: 가수자리가 24개가 될 때까지 표현(2진수로 표현할 때 한계)
         - 정보가 유실됨
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP1000/week3/images/img_124.png)
 
 - 정규화:
     - 11.0010....(2)
@@ -741,42 +741,42 @@
 
 - 두 부동 소수점이 같은지 다른지 판단
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP1000/week3/images/img_103.png)
 
 - 두 수의 값을 비교하려면 유효 숫자가 몇 개까지 읽어서 비교할까?
 - 이 때 10진수로 비교
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP1000/week3/images/img_104.png)
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP1000/week3/images/img_105.png)
 
 - 귀납적으로 유효 숫자를 늘려보자..
     - 유효숫자 범위를 딱 벗어난 바로 아래 자리에서 반올림을 하는게 규칙
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP1000/week3/images/img_106.png)
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP1000/week3/images/img_107.png)
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP1000/week3/images/img_108.png)
 
 - 유효숫자를 벗어난 9자리에서 반올림하면 같음
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP1000/week3/images/img_109.png)
 
 - 다르다는 것을 알 수 있음!
 - 이 숫자들의 경우 유효 숫자를 8개까지 보면 됨
     - 9자리에서 반올림하기
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP1000/week3/images/img_110.png)
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP1000/week3/images/img_111.png)
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP1000/week3/images/img_112.png)
 
 - 이 숫자들의 경우 유효 숫자를 9개까지 보면 됨
     - 10자리에서 반올림
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP1000/week3/images/img_113.png)
 
 - 정밀도 9:
     - 어떤(모든) 두 숫자를 9자리까지 읽으면(10진수로 변환해서 읽기, 10번째 자리에서 반올림) 두 숫자가 같고 다름을 확인할 수 있음
@@ -798,7 +798,7 @@
 
 ### 정밀도 9 최종 정리
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP1000/week3/images/img_114.png)
 
 - IEEE 754 Single 비트패턴 2개가 다름
 - 이를 10진수로 변환한 뒤 최대 9번째 유효숫자까지 확인해야 두 수가 같은지 확인할 수 있음
@@ -807,7 +807,7 @@
 
 - 그리고 이 9개의 유효 숫자만 다시 32비트 부동 소수점으로 변환하면 원래 수의 32비트 부동 소수점이 그대로
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP1000/week3/images/img_115.png)
 
 - 참고 자료를 잘 보자
 
@@ -831,7 +831,7 @@ float b = 16777217;  // 표현 불가 → 가장 가까운 짝수인 16777216으
 
 ## 부동 소수점 비교하기
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP1000/week3/images/img_125.png)
 
 - 부동 소수점끼리 비교할 때 동치 연산자를 사용하면 안 됨
 - 앱실론으로 비교

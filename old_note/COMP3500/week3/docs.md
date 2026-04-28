@@ -466,45 +466,45 @@ public static void insertionSort(final int[] nums) {
 
 ![img_102.png](old_note/COMP3500/week3/images/img_102.png)
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week3/images/img_103.png)
 
 - 좌(인덱스), 우(인덱스) 같은 위치라 바로 끝
 - 셀프 교환
 - 9 위치 고정
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week3/images/img_104.png)
 
 - 기준값보다 큼
 - 그대로 둠
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week3/images/img_105.png)
 
 - 좌보다 왼쪽은 기준값보다 작고, 같거나 큰쪽은 큼
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week3/images/img_106.png)
 
 - 좌,우 값 바꾸고
 - 기준값 위치 고정
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week3/images/img_107.png)
 
 - 좌,우 같은 위치라 바로 끝
 - 셀프 교환
 - 기준값 위치 고정
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week3/images/img_108.png)
 
 - 좌,우 같은 위치라 바로 끝
 - 셀프 교환
 - 기준값 위치 고정
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week3/images/img_109.png)
 
 - 끝
 
 ### 코드: 재귀
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week3/images/img_110.png)
 
 - 매개변수:
     - 정렬할 대상
@@ -512,47 +512,47 @@ public static void insertionSort(final int[] nums) {
     - 우 인덱스
         - 범위를 지정하기 위함
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week3/images/img_111.png)
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week3/images/img_112.png)
 
 - 좌, 우 같은 위치면 바로 끝
     - 셀프 교환, 기준값 위치 고정 생략
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week3/images/img_113.png)
 
 - 기준값의 위치를 고정하는 함수
     - 각 회차의 정렬을 실행한 결과 기준값의 위치가 결정됨
     - partition 함수 따로 만듬
         - 기준값의 위치를 반환하도록
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP3500/week3/images/img_114.png)
 
 - 재귀 호출
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP3500/week3/images/img_115.png)
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP3500/week3/images/img_116.png)
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP3500/week3/images/img_117.png)
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP3500/week3/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP3500/week3/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP3500/week3/images/img_120.png)
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP3500/week3/images/img_121.png)
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP3500/week3/images/img_122.png)
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP3500/week3/images/img_123.png)
 
 - 바로 끝!
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP3500/week3/images/img_124.png)
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP3500/week3/images/img_125.png)
 
 ![img_126.png](images/img_126.png)
 

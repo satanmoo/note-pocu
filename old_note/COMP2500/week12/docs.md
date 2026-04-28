@@ -415,22 +415,22 @@
     - 저장장치에서 읽어와야 함
         - 병목점 걸림
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP2500/week12/images/img_103.png)
 
 - 프록시 패턴을 사용하지 않은 예
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP2500/week12/images/img_104.png)
 
 - 위에서 말한 값 비싼 리소스를 다룰 때 생기는 문제 발생
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP2500/week12/images/img_105.png)
 
 - 그리고 과연 모든 이미지를 사용할까?
     - 괜히 필요없는데 다 로딩하는게 아닐까?
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP2500/week12/images/img_106.png)
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP2500/week12/images/img_117.png)
 
 - 이런 방식을 지연 로딩
     - lazy loading
@@ -439,7 +439,7 @@
 
 ### 로딩 방식 비교
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP2500/week12/images/img_107.png)
 
 - 즉시 로딩은 처음 실행할 때 로딩하기 때문에 그 이후 이미지 데이터가 바뀌면 최신 데이터가 아니게 됨
 - 캐시를 사용해도 캐시 리프래시를 하지 않는 이상 최신 데이터가 아닐 수 있음!!
@@ -447,7 +447,7 @@
 
 ### 요즘 프록시 패턴
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP2500/week12/images/img_108.png)
 
 - 요즘 컴퓨터는 메모리 큼
 - 디스크 로딩도 예전보다 빠름
@@ -455,26 +455,26 @@
 - 인터넷으로 이미지를 로딩하면 당연히 하드디스크보다 느림
     - 이미지 많은 웹 사이트 접속해보면 알 수 있음
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP2500/week12/images/img_109.png)
 
 - 프록시 패턴의 문제는 내부를 알기 어려움
     - 병목점
     - 메모리 사용량
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP2500/week12/images/img_110.png)
 
 - 캡슐화에 따르면 사용하면 로딩 방법 3가지 등 어떤 구현인지 클라이언트는 알 필요가 없음
 - 근데 이게 꼭 좋은건가?
     - 사용자의 편의성을 생각해보자
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP2500/week12/images/img_111.png)
 
 - 요즘은 내부 동작을 보여주는 방식이 더 많이 사용됨
 - 거의 이렇죠?
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP2500/week12/images/img_112.png)
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP2500/week12/images/img_113.png)
 
 - Image 클래스
     - 로딩 상태를 보여주는 매서드 추가
@@ -488,13 +488,13 @@
     - `draw()` 매서드는 모두 로딩됬다는 가정하에 호출
         - 이전에는 `draw()` 매서드 호출 시 지연 로딩 했음
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP2500/week12/images/img_114.png)
 
 - 새로 추가한 멤버 함수는 클라이언트를 위함
 - 클라이언트는 로딩 상태를 확인하고, 로딩도 직접 제어할 수 있음
     - 이런 방식을 상태에 따라 개체를 사용하는 방식을 상태머신이라고 부름
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP2500/week12/images/img_115.png)
 
 ```java
 public class LoadingScreen extends Screen {
@@ -526,7 +526,7 @@ public class LoadingScreen extends Screen {
     - 필요한 이미지를 모두 로딩했으면 상태관리자(스택 기반)에서 이 로딩 스크린 개체를 제거
     - 이미지를 로딩할 때 마다 requiredImages 에서 0번 인덱스 제거
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP2500/week12/images/img_116.png)
 
 - 반드시 캡슐화가 좋은건 아닌 사례
 - 외부에서 명확히 알 수 있도록 하는게 좋을 수도 있음
@@ -536,37 +536,37 @@ public class LoadingScreen extends Screen {
 - 많이 사용되지는 않음
 - 잘못된 설명이 웹에 많이 돌아다닌다고 하심
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP2500/week12/images/img_118.png)
 
 - 위키피디아 예시
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP2500/week12/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP2500/week12/images/img_120.png)
 
 - Logger 클래스는 추상 클래스로 일반화됨
 - 멤버변수로 Logger 타입의 next
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP2500/week12/images/img_121.png)
 
 - severity 매개변수로 출력 할 로그레벨을 확인함
     - logLevels 멤버 변수에 포함되면 출력
 - 멤버 변수로 가지고 있는 다음 Logger 개체의 message 함수 그대로 연쇄 호출
 - message 함수 내부에서 호출되는 log 함수는 추상 매서드로 자식 클래스들이 구현
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP2500/week12/images/img_122.png)
 
 - 콘솔 창에 출력하는 자식 클래스
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP2500/week12/images/img_123.png)
 
 - 이메일
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP2500/week12/images/img_124.png)
 
 - 파일
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP2500/week12/images/img_125.png)
 
 - enum 코드에서 values() 라는 함수 호출하면 enum의 멤버를 배열로 반환함
 

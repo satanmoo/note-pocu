@@ -1105,7 +1105,7 @@ int main() {
         - 비효율적임
     - strncpy_s()는 널 문자 뒤 쓰레기값이 들어올 수 있음
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week13/img_103.png)
 
 - 오류 감지
     - count가 0이거나 RSIZE_MAX보다 클 때 조건이 추가됨
@@ -1118,7 +1118,7 @@ int main() {
 
 ### _s 함수를 과연 써야 할까?
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP2200/week13/img_104.png)
 
 - 과연 이걸 쓴다고 실수를 막을 수 있을까?
 - 함수 스펙이 너무 복잡한데요..?
@@ -1129,22 +1129,22 @@ int main() {
     - 일이 많아짐
     - 함수의 역할이 늘어나죠? 함수는 한 가지 일을 하는 것이 좋음
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week13/img_105.png)
 
 - 좋은 습관을 들이자!
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week13/img_106.png)
 
 - 오히려 C99의 방향성과 상반됨
     - restrict는 성능 최적화 방향인데?
 - C11은 왜 안전임?
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week13/img_107.png)
 
 - 뭐 이런 컴파일러도 있음
 - optional 기능을 추천하다니... 문제가 있음
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP2200/week13/img_108.png)
 
 - 컴파일 옵션으로 끄는 경우가 많음
 - 교훈: 컴파일러가 항상 옳은건 아니다!

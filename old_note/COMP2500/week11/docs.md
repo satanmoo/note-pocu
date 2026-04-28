@@ -670,20 +670,20 @@ public class B {
 - 애초에 모든 비즈니스 상황을 예상하고 설계할 수 없음
     - 설계는 변함
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP2500/week11/images/img_103.png)
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP2500/week11/images/img_104.png)
 
 - 특히 이런 방식은 오래전부터 인터페이스를 사용한 고객이 아니라 뉴비한태 어려
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP2500/week11/images/img_105.png)
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP2500/week11/images/img_106.png)
 
 - 이렇게 확실하게 구분해서 빡세게(?) 설계하는 프로젝트는 흔치 않음
     - 하지만 비용의 문제
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP2500/week11/images/img_107.png)
 
 - 이클립스 API 의 시도는 의의는 있음
     - 내가 많은 사람이 사용하는 라이브러리 만든다면 생각해볼만 함
@@ -692,65 +692,65 @@ public class B {
 
 ## 중요한 건 클라이언트와의 약속
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP2500/week11/images/img_108.png)
 
 - 코어팀은 회사에서 사용하는 라이브러리를 만듬
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP2500/week11/images/img_109.png)
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP2500/week11/images/img_110.png)
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP2500/week11/images/img_111.png)
 
 - 이런 경우 인터페이스에 의존하면 좋긴함
     - 물론 매서드 시그니처가 안 바뀐다는 전제
 - 여기서 팩트는 자식 클래스가 많은 일반적인 추상 클래스일수록 일반화되어있고 바뀔 가능성이 낮음
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP2500/week11/images/img_112.png)
 
 - 중요한건 클라이언트
     - 코어팀 입장에서 다른 팀들
 - 요즘은 어떤 방식을 사용할까?
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP2500/week11/images/img_113.png)
 
 - 대 인터넷 시대
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP2500/week11/images/img_114.png)
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP2500/week11/images/img_115.png)
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP2500/week11/images/img_116.png)
 
 - 요즘은 기존 버전, 새로운 버전을 동시에 제공하고
     - 기존 버전의 지원 기간을 제한함
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP2500/week11/images/img_117.png)
 
 - LTS 개념도 여기서 나온거죠
 - 버전 바뀔 때 마이그레이션 가이드도 제공하구
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP2500/week11/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP2500/week11/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP2500/week11/images/img_120.png)
 
 - 정리
 
 ## 실용적인 인터페이스 사용법 (원칙)
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP2500/week11/images/img_121.png)
 
 - 위에서 부터 순서대로 원칙을 적용하자!!!
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP2500/week11/images/img_122.png)
 
 - 변화에 대한 대비는 이렇게 판단하자
     - == 내가 쉽게 바꿀 수 없는 경우
 - 위의 3가지 사례에서는 변화에 크게 대비할 필요없음
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP2500/week11/images/img_123.png)
 
 - 쉽게 바꿀 수 없는 경우 변화에 대비하여 인터페이스
 - 여튼 이런건 다 짬밥이다~

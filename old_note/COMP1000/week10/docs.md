@@ -458,84 +458,84 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ![img_102.png](old_note/COMP1000/week10/images/img_102.png)
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP1000/week10/images/img_103.png)
 
 - 각 성분끼리 곱하고 더하는 방정식
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP1000/week10/images/img_104.png)
 
 - 방정식에서 계수만 따와서 가중치 벡터로 표현하고
 - 미지수 벡터와 내적하는 개념
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP1000/week10/images/img_105.png)
 
 - 모든 부서의 기존(가중치 벡터)를 모아보자
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP1000/week10/images/img_106.png)
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP1000/week10/images/img_107.png)
 
 - 가중치 벡터를 모으면 2차원 배열
 - 행렬
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP1000/week10/images/img_108.png)
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP1000/week10/images/img_109.png)
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP1000/week10/images/img_110.png)
 
 - 행렬과 벡터의 곱
 - 행렬에서 각 행을 행 벡터로 보고
 - 행 백터와 열 벡터의 내적을 반복
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP1000/week10/images/img_111.png)
 
 - 왜 "열 벡터" 모양을 사용했을까?
 
 ### 행렬곱의 규칙
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP1000/week10/images/img_112.png)
 
 ## 벡터 행렬 곱
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP1000/week10/images/img_113.png)
 
 - 음..
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP1000/week10/images/img_114.png)
 
 - 순서를 바꿔서
 - 행 벡터와 행렬을 곱함
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP1000/week10/images/img_115.png)
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP1000/week10/images/img_116.png)
 
 - 곱하기 불가능
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP1000/week10/images/img_117.png)
 
 - 전치 행렬을 사용하자
 - 핼렬 곱하기 열벡터
 - 행벡터 곱하기 전치행렬
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP1000/week10/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP1000/week10/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP1000/week10/images/img_120.png)
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP1000/week10/images/img_121.png)
 
 - 머신러닝의 피쳐 벡터를 사용하는 방법
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP1000/week10/images/img_122.png)
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP1000/week10/images/img_123.png)
 
 - 취향 차이
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP1000/week10/images/img_124.png)
 
 - 이 과목에서는 오른쪽
 - 행 벡터 곱하기 전치 행렬
@@ -543,7 +543,7 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ### 벡터의 성분 수와 행렬의 행 수가 동일해야함
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP1000/week10/images/img_125.png)
 
 ## 행렬 벡터 곱에서 벡터의 값을 그대로: 단위 행렬
 

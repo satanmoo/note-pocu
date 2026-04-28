@@ -841,11 +841,11 @@ public class Node {
 
 - 이것저것 해보면서 감 잡고
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week6/images/img_103.png)
 
 - 이해하려고 노력하는 과정에서 배우는게 있음
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week6/images/img_104.png)
 
 - BST 삽입의 성질 때문에 언제나 삽입되는 노드는 리프 노드
 - 추가적으로 이 리프 노드의 색은 레드
@@ -853,85 +853,85 @@ public class Node {
 
 ### 삽입 case 1
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week6/images/img_105.png)
 
 - 처음으로 삽입
 - 언제나 추가하는 노드는 레드!
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week6/images/img_106.png)
 
 - 리프 노드긴 하지만 실제로는 널 노드까지 보여주는게 레드-블랙 트리에서 보기 좋음
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week6/images/img_107.png)
 
 - 지금 레드-블랙 트리의 성질을 만족하지 못함
     - 루트 노드가 레드임!
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week6/images/img_108.png)
 
 - 색을 바꾸면 성질 만족
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week6/images/img_109.png)
 
 - N(새로 추가한 노드)가 루트인 경우 색바꾸면 끝!!
 
 ### 삽입 case 2
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week6/images/img_110.png)
 
 - BST 삽입 성질에 따라 왼쪽으로 삽입
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week6/images/img_111.png)
 
 - 레드-블랙 트리 성질을 만족하는데?
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week6/images/img_112.png)
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week6/images/img_113.png)
 
 - 이 case를 일반화:
     - N(새로 추가한 노드)의 부모(P)가 블랙일 때
     - 아직 확정은 아님
     - 귀납적으로 여러 사례를 확인해보자
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP3500/week6/images/img_114.png)
 
 - 이런 사례는요?
 - 부모(P)가 블랙이고, sibling이 블랙
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP3500/week6/images/img_115.png)
 
 - 이런 레드-블랙 트리가 존재할 수 있냐?
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP3500/week6/images/img_116.png)
 
 - 루트의 블랙 높이가 서로 다른데?
 - 따라서 논할 가치가 없음
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP3500/week6/images/img_117.png)
 
 - 이런 경우는?
 - 레드-블랙 트리 만족하네용
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP3500/week6/images/img_118.png)
 
 - 추가해봅시다!
 - BST 성질에 따라 15 노드 왼쪽에 삽입
 - 새로 삽입하는 노드는 레드로!
 - 삽입 후 레드-블랙 트리의 성질을 만족함
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP3500/week6/images/img_119.png)
 
 - P가 블랙인 경우 일반화 가능
     - P의 자식이 없는 경우
     - P의 자식(N의 형제)가 레드인 경우
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP3500/week6/images/img_120.png)
 
 - 잠깐만!
 - P의 자식(N의 형제)가 레드인 경우에서 자식이 존재하는 경우는요?
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP3500/week6/images/img_121.png)
 
 - 존재할 수 없음
 - 만약 레드 자식이 존재한다고 가정하면, 레드-블랙 트리의 조건을 만족하지 못함
@@ -939,15 +939,15 @@ public class Node {
 - 블랙 자식이 존재한다고 가정해도, 레드-블랙 트리의 조건을 만족하지 못함
     - 루트 노드로 부터 블랙 높이가 달라집니다
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP3500/week6/images/img_122.png)
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP3500/week6/images/img_123.png)
 
 ### 번외 테크닉: 두 자식이 같은 색!
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP3500/week6/images/img_124.png)
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP3500/week6/images/img_125.png)
 
 - 두 자식이 같은 색
 

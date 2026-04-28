@@ -699,11 +699,11 @@ typedef struct {
 
 - 프로그래머가 임의로 데이터의 크기를 조절한 자료형을 만들어볼까?
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week6/img_103.png)
 
 ### 비트 플래그 예시
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP2200/week6/img_104.png)
 
 ```csharp
 byte ToBitFlags(bool[] flags)
@@ -731,17 +731,17 @@ byte ToBitFlags(bool[] flags)
 
 ### C에서 구조체를 이용한 비트 플래그 / : 연산자
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week6/img_105.png)
 
 - `콜론`을 찍으면 1비트만 쓰겠다!
 - 1비트 8개가 들어가서, sizeof(구조체)는 1바이트
 - 콜론없이 했으면 8바이트 나왔겠쥬
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week6/img_106.png)
 
 - {0, };로 모두 0으로 초기화
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week6/img_107.png)
 
 - 메모리에 8비트를 쓰니까, 이 flags 구조체의 값이 변하면 붉은색으로 마스킹된 1바이트 값만 변함
 - 4번째 비트를 1로 바꾸면, 비트 패턴이 00001000이 됨
@@ -749,19 +749,19 @@ byte ToBitFlags(bool[] flags)
 
 ## 불편한점: 플래그 전체 한 번에 체크가 어려움
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP2200/week6/img_108.png)
 
 - 구조체의 멤버를 한 번에 동시에 체크하는 방법이 없음
 
 ## 하지만 포인터로 할 수 있음!!! [연습]
 
-![img_109.png](img_109.png)
+![img_109.png](old_note/COMP2200/week6/img_109.png)
 
 - flag의 주소를 char*로 캐스팅하면
 - 이 포인터 변수에서 1바이트를 통채로 읽어올 수 있다.
     - 그리고 역참조를 통해 *val의 값을 읽을 수 있어, 이를 정수값과 비교함
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP2200/week6/img_110.png)
 
 - 하지만 이 기능을 권하지는 않습니다.
 - 공용체가 똑같은 일을 할 수 있어요!!
@@ -770,14 +770,14 @@ byte ToBitFlags(bool[] flags)
 
 - 어떤 메모리를 어떻게 읽을 것인가?
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP2200/week6/img_111.png)
 
 - 구조체와 비슷하게 만들고, 선언함
 - 공용체의 목적은, 똑같은 메모리를 다른 변수로 접근하는 방법이다.
 - 즉 읽는 방법을 바꿔서, 다르게 해석하고 싶어유
 - 포인터 캐스팅이랑 비슷한 개념임 ㅇㅇ;
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP2200/week6/img_112.png)
 
 - union이라고 예약어가 있음
 - val, bits 둘다 같은 메모리 주소를 가리키는게 공용체의 특징
@@ -786,51 +786,51 @@ byte ToBitFlags(bool[] flags)
 - 공용체의 크기는 `가장 큰 멤버 변수의 크기`로 결정됨
 - 이 예에서는 둘다 8비트로 동일해서 1바이트
 
-![img_113.png](img_113.png)
+![img_113.png](old_note/COMP2200/week6/img_113.png)
 
 - 코드로 보자
 - 우선 0으로 초기화
     - 초기화 코드 기억하기
 
-![img_114.png](img_114.png)
+![img_114.png](old_note/COMP2200/week6/img_114.png)
 
 - 비트패턴 변경
 - val의 값이 바뀌는것 주목
 
-![img_115.png](img_115.png)
+![img_115.png](old_note/COMP2200/week6/img_115.png)
 
 - .으로 접근할 때 문법은 depth가 생김
 
-![img_116.png](img_116.png)
+![img_116.png](old_note/COMP2200/week6/img_116.png)
 
 - char로 읽음
 
-![img_117.png](img_117.png)
+![img_117.png](old_note/COMP2200/week6/img_117.png)
 
 - 동일한 메모리 주소에서 어떻게 읽냐?
 
 ## 코드보기: 색상 표현하기 [연습]
 
-![img_118.png](img_118.png)
+![img_118.png](old_note/COMP2200/week6/img_118.png)
 
 - RGB
 - 컴퓨터의 3원색
 - 각각 16진수 값이 있음
 
-![img_119.png](img_119.png)
+![img_119.png](old_note/COMP2200/week6/img_119.png)
 
 - 8비트 3개라서 2의 24승만큼 색을 나타낼 수 이씀
 
-![img_120.png](img_120.png)
+![img_120.png](old_note/COMP2200/week6/img_120.png)
 
 - a채널: 투명도
     - 255개의 스팩트럼?
 
-![img_121.png](img_121.png)
+![img_121.png](old_note/COMP2200/week6/img_121.png)
 
 - red.val로 `모든 비트 패턴`을 초기화 하는거죠?
 
-![img_122.png](img_122.png)
+![img_122.png](old_note/COMP2200/week6/img_122.png)
 
 - 공용체의 대입
 - 값을 복사함, 초기화
@@ -844,7 +844,7 @@ byte ToBitFlags(bool[] flags)
 - 그냥 같은 메모리 공간을 공유하는게 주목적으로 공용체를 사용할 수 있음
     - 멤버끼리 연관이 없음, 독립적임
 
-![img_123.png](img_123.png)
+![img_123.png](old_note/COMP2200/week6/img_123.png)
 
 - ivalue, dvalue가 서로 의미가 없음
 - 상관관계도 없음, 정수, 실수형이라 비트패턴 해석에서 뭔가 겹칠 일도 없음
@@ -852,13 +852,13 @@ byte ToBitFlags(bool[] flags)
 - 이 공용체의 크기는 8바이트
     - 가장 큰 멤버의 크기가 double로 8바이트기 때문
 
-![img_124.png](img_124.png)
+![img_124.png](old_note/COMP2200/week6/img_124.png)
 
 - 열거형 op_t로, 정수를 연산할지, double을 연산할지 결정함
 
 ### 메모리 보면...
 
-![img_125.png](img_125.png)
+![img_125.png](old_note/COMP2200/week6/img_125.png)
 ![img_126.png](img_126.png)
 
 - ivalue로 업데이트하면, 4바이트만 업데이트됨

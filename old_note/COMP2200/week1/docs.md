@@ -692,34 +692,34 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### 함수 오버로딩 안 됨
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week1/img_103.png)
 
 - 함수 오버로딩 없음
     - 함수명을 다르게 만들어야...
 
 ### C89 컴파일러 가정
 
-![img_104.png](img_104.png)
-![img_105.png](img_105.png)
+![img_104.png](old_note/COMP2200/week1/img_104.png)
+![img_105.png](old_note/COMP2200/week1/img_105.png)
 
 - 함수 정의(definition) 과 선언을 구분하자
 - 가정: 반환형은 int, 매개변수는 아무거나 즉 공백
 
 ## 해결법
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week1/img_106.png)
 
 - 함수 정의를 위에 해주면 됨!
 
 ## 너무 불편하다.
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week1/img_107.png)
 
 - 위 아래 왔다 갔다...
 
 ## 함수 선언(declaration)
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP2200/week1/img_108.png)
 
 - 함수 원형(prototype)만 선언
     - 구현체 X
@@ -727,11 +727,11 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### 정의와 선언
 
-![img_109.png](img_109.png)
+![img_109.png](old_note/COMP2200/week1/img_109.png)
 
 ## 함수 선언 위치
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP2200/week1/img_110.png)
 
 - 함수를 사용하기 전에 선언하면 되나, 보통 제일 위에 선언하는 것이 국룰
     - forward declaration
@@ -740,10 +740,10 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## 전방 선언(forward declaration)의 원리
 
-![img_111.png](img_111.png)
-![img_112.png](img_112.png)
-![img_113.png](img_113.png)
-![img_114.png](img_114.png)
+![img_111.png](old_note/COMP2200/week1/img_111.png)
+![img_112.png](old_note/COMP2200/week1/img_112.png)
+![img_113.png](old_note/COMP2200/week1/img_113.png)
+![img_114.png](old_note/COMP2200/week1/img_114.png)
 
 - 컴파일러는 실제 어디로 가서 코드를 찾아야하는지(메모리 주소)를 구멍으로 남김
 - 이 구멍의 값(메모리 주소)로 jump해서 실제 함수를 찾아서 호출하는 방식
@@ -753,15 +753,15 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## 코딩 표준
 
-![img_115.png](img_115.png)
+![img_115.png](old_note/COMP2200/week1/img_115.png)
 
 - 함수 선언 반드시하자!
 
 ## 함수의 평가 순서
 
-![img_116.png](img_116.png)
-![img_117.png](img_117.png)
-![img_118.png](img_118.png)
+![img_116.png](old_note/COMP2200/week1/img_116.png)
+![img_117.png](old_note/COMP2200/week1/img_117.png)
+![img_118.png](old_note/COMP2200/week1/img_118.png)
 
 - unspecified
     - 표준에서 명시하지 않음. 대신 경우의 수를 줌
@@ -769,12 +769,12 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ### 순서가 ㄹㅇ 상관없음
 
-![img_119.png](img_119.png)
+![img_119.png](old_note/COMP2200/week1/img_119.png)
 
 ## 문제가 되는 경우
 
-![img_120.png](img_120.png)
-![img_121.png](img_121.png)
+![img_120.png](old_note/COMP2200/week1/img_120.png)
+![img_121.png](old_note/COMP2200/week1/img_121.png)
 
 - 해법은 순서가 보장 안 되면... 따로 따로 두 줄에 나눠적자!
 - sequence point라는 개념. 순서를 보장하는 지점
@@ -782,13 +782,13 @@ unsigned/signed를 정할 때 제약이 생긴다.
 
 ## undefined behavior: 결과가 정의되지 않음
 
-![img_122.png](img_122.png)
-![img_123.png](img_123.png)
+![img_122.png](old_note/COMP2200/week1/img_122.png)
+![img_123.png](old_note/COMP2200/week1/img_123.png)
 
 ## 기본적으로 한 줄에서 동일한 변수를 여러 번 바꾸면 위험하다!
 
-![img_124.png](img_124.png)
-![img_125.png](img_125.png)
+![img_124.png](old_note/COMP2200/week1/img_124.png)
+![img_125.png](old_note/COMP2200/week1/img_125.png)
 
 - 이런 코드 작성 ㄴㄴ해
 -

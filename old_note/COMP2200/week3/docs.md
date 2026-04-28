@@ -542,15 +542,15 @@ printf("%d, %d, %d\n", nums[0], ptr[1], *(ptr + 2));
 
 ## 두 주소간의 사칙연산
 
-![img_103.png](img_103.png)
+![img_103.png](old_note/COMP2200/week3/img_103.png)
 
 - 주소에는 정수만 더하거나 뺄 수 있다.
 - 만약에 int형의 절반(2바이트)만큼 주소를 이동하고 싶다?
   - char형으로 포인터 캐스팅하고 2를 더하자...
   - char형 캐스팅으로 가장 작은 주소의 단위인 바이트를 이동할 수 있다.
 
-![img_104.png](img_104.png)
-![img_105.png](img_105.png)
+![img_104.png](old_note/COMP2200/week3/img_104.png)
+![img_105.png](old_note/COMP2200/week3/img_105.png)
 
 - 두 주소간의 뺄셈만 가능함
 - 뺄셈만 의미가 있음. 나머지는 이상하죠?
@@ -559,27 +559,27 @@ printf("%d, %d, %d\n", nums[0], ptr[1], *(ptr + 2));
 
 ## 자바와 C#은 모든 것이 포인터
 
-![img_106.png](img_106.png)
-![img_107.png](img_107.png)
-![img_108.png](img_108.png)
-![img_109.png](img_109.png)
+![img_106.png](old_note/COMP2200/week3/img_106.png)
+![img_107.png](old_note/COMP2200/week3/img_107.png)
+![img_108.png](old_note/COMP2200/week3/img_108.png)
+![img_109.png](old_note/COMP2200/week3/img_109.png)
 
 - 안전하지 않아서 허용하지 않음
 
 ## 안전하지 않은 코드
 
-![img_110.png](img_110.png)
-![img_111.png](img_111.png)
+![img_110.png](old_note/COMP2200/week3/img_110.png)
+![img_111.png](old_note/COMP2200/week3/img_111.png)
 
 - 배열 외의 데이터에 접근할 수 있음
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP2200/week3/img_112.png)
 
 ## 포인터와 배열의 차이
 
 1. sizeof 연산자
 
-![img_113.png](img_113.png)
+![img_113.png](old_note/COMP2200/week3/img_113.png)
 
 - 포인터에 사용하면 포인터의 크기를 반환
   - 포인터의 크기는 워드 단위, 플랫폼에 따라 달라짐(32bit, 64bit)
@@ -587,11 +587,11 @@ printf("%d, %d, %d\n", nums[0], ptr[1], *(ptr + 2));
 
 2. 문자열 초기화
 
-![img_114.png](img_114.png)
+![img_114.png](old_note/COMP2200/week3/img_114.png)
 
 - c 스타일 문자열: char 배열, 끝에 널문자('\0')가 있음
 
-![img_115.png](img_115.png)
+![img_115.png](old_note/COMP2200/week3/img_115.png)
 
 - C 스타일 문자열 초기화하는 방법1
 - char 배열로 변수를 선언하고 우변에 "문자열"을 대입
@@ -599,7 +599,7 @@ printf("%d, %d, %d\n", nums[0], ptr[1], *(ptr + 2));
 - 일반 배열과 똑같음, 다만 마지막에 널문자를 넣어줌
 - 문자열을 수정해도 괜찮다.
 
-![img_116.png](img_116.png)
+![img_116.png](old_note/COMP2200/week3/img_116.png)
 
 - C 스타일 문자열 초기화하는 방법2
 - char* 변수를 서언하고 우변에 "문자열"을 대입
@@ -608,28 +608,28 @@ printf("%d, %d, %d\n", nums[0], ptr[1], *(ptr + 2));
 - char* 변수의 값은 데이터 섹션의 주소
 - 문자열을 수정하면 안된다. 읽기 전용
 
-![img_117.png](img_117.png)
+![img_117.png](old_note/COMP2200/week3/img_117.png)
 
 3. 대입
 
-![img_118.png](img_118.png)
-![img_119.png](img_119.png)
+![img_118.png](old_note/COMP2200/week3/img_118.png)
+![img_119.png](old_note/COMP2200/week3/img_119.png)
 
 - 포인터 변수 값을 대입할 수 있음
 - 배열 변수에는 값을 대입할 수 없음
 
 4. 포인터 산술 연산
  
-![img_120.png](img_120.png)
-![img_121.png](img_121.png)
+![img_120.png](old_note/COMP2200/week3/img_120.png)
+![img_121.png](old_note/COMP2200/week3/img_121.png)
 
 - 배열 변수는 상수 주소라고 생각하면 된다.
 - 읽기/역참조만 가능
 
 ## 다시 만나는 연산자 결합 법칙
 
-![img_122.png](img_122.png)
-![img_123.png](img_123.png)
+![img_122.png](old_note/COMP2200/week3/img_122.png)
+![img_123.png](old_note/COMP2200/week3/img_123.png)
 
 ```c++
 int nums[] = { 123, 456, 789 };
@@ -638,8 +638,8 @@ int* p = nums;
 
 ### *p++
 
-![img_124.png](img_124.png)
-![img_125.png](img_125.png)
+![img_124.png](old_note/COMP2200/week3/img_124.png)
+![img_125.png](old_note/COMP2200/week3/img_125.png)
 ![img_126.png](img_126.png)
 ![img_127.png](img_127.png)
 ![img_128.png](img_128.png)

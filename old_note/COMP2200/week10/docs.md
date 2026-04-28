@@ -1048,51 +1048,51 @@ void remove(node_t** phead, int n)
 - 바로 삭제하면, 첫번째 노드의 next값을 알 수 없음, 즉 다음 다음 노드의 주소를 알 수 없음
 - 따라서 나중에 삭제하기 위해 임시 저장
 
-![img_103.png](img_103.png)
-![img_113.png](img_113.png)
+![img_103.png](old_note/COMP2200/week10/img_103.png)
+![img_113.png](old_note/COMP2200/week10/img_113.png)
 
 - 헤더 노드(현재 노드)의 next값을 다음 다음 노드의 주소로 변경
 
-![img_104.png](img_104.png)
+![img_104.png](old_note/COMP2200/week10/img_104.png)
 
 - 삭제
 - 동적 메모리 할당 해제
 
 [연결 리스트에서 마지막 노드 삭제하기]
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week10/img_105.png)
 
 - 헤더 노드(현재 노드)의 값 == *pp
   - 헤더 노드에 next라는 멤버가 존재한다고 생각하면, 다음 노드의 주소를 의미함
   - 다음 노드의 주소에서 value 값에 참조해서 비교했더니, 삭제할 노드가 아님
 - pp에 다음 노드의 next의 주소를 저장
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week10/img_106.png)
 
 - 3을 가지는 노드(현재 노드)에서 next로(다음 노드)의 값을 비교했더니, 삭제 대상임
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week10/img_107.png)
 
 - 임시로 저장
 
-![img_108.png](img_108.png)
+![img_108.png](old_note/COMP2200/week10/img_108.png)
 
 - 다음 노드의 next값은 NULL
   - NULL 값을 pp에 저장
   - 3을 가진 노드의 next값을 NULL로 변경
 
-![img_109.png](img_109.png)
+![img_109.png](old_note/COMP2200/week10/img_109.png)
 
 - 지우고 메모리 할당 해제
 
 ## 연결 리스트의 용도
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP2200/week10/img_110.png)
 
 - 배열의 한계를 극복
 - 필요할 때마다 노드를 추가하고,삭제 즉 길이에서 자유로움
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP2200/week10/img_111.png)
 
 - CPU의 캐시 메모리는 연속된 메모리에 있는 데이터를 빠르게 읽음
 - 배열이 굉장히 캐시 메모리에서 유리함
@@ -1104,7 +1104,7 @@ void remove(node_t** phead, int n)
 
 ## 이중 연결 리스트
 
-![img_112.png](img_112.png)
+![img_112.png](old_note/COMP2200/week10/img_112.png)
 
 - 앞, 뒤로 검색 가능
 - 노드 크기가 커지는 단점이 있음

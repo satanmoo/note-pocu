@@ -740,11 +740,11 @@ public final class Kruskal {
 
 ## 최대 유량 문제
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week13/images/img_103.png)
 
 - 흘러서 빠져나갈 수 있는 최대 양을 결정하는 문제
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week13/images/img_104.png)
 
 - 병렬 연결 가능함
 - 다른 도시를 거쳐도 괜찮음
@@ -752,15 +752,15 @@ public final class Kruskal {
 
 ### 유량의 상한
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week13/images/img_105.png)
 
 - 간단하게 유량의 상한은 구할 수 있음
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week13/images/img_106.png)
 
 - Min(from에서 나가는 유량의 최대, to로 들어오는 유량의 최대)
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week13/images/img_107.png)
 
 - 병목점
 
@@ -768,13 +768,13 @@ public final class Kruskal {
 
 - 수요와 유통 문제
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week13/images/img_108.png)
 
 - from 포프리 to 돈돈시
 
 ## 최대 유량 알고리듬
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week13/images/img_109.png)
 
 - BFS는 주먹구구식임
 
@@ -782,50 +782,50 @@ public final class Kruskal {
 
 ### 에드몬드-카프 알고리듬의 기본 개념
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week13/images/img_110.png)
 
 ### 에드몬드-카프 시뮬레이션
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week13/images/img_111.png)
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week13/images/img_112.png)
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week13/images/img_113.png)
 
 - 최단거리는 BFS로 찾기
     - 가중치가 1인 다익스트라
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP3500/week13/images/img_114.png)
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP3500/week13/images/img_115.png)
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP3500/week13/images/img_116.png)
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP3500/week13/images/img_117.png)
 
 - 유량이 용량에 도달한 변들은 다음 BFS에서 고려하지 않음
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP3500/week13/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP3500/week13/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP3500/week13/images/img_120.png)
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP3500/week13/images/img_121.png)
 
 - 다음 BFS에서 from C to D 고려 안 함
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP3500/week13/images/img_122.png)
 
 - 이제 최단 경로가 없음
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP3500/week13/images/img_123.png)
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP3500/week13/images/img_124.png)
 
 - 도착지에 들어오는 유량을 구하면 3
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP3500/week13/images/img_125.png)
 
 - 최적은 이거임
 

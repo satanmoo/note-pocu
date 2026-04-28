@@ -1045,8 +1045,8 @@ void string_tolower(char* str)
 ### 서식 지정자(format specifier)
 
 ![img_102.png](old_note/COMP2200/week4/img_102.png)
-![img_103.png](img_103.png)
-![img_104.png](img_104.png)
+![img_103.png](old_note/COMP2200/week4/img_103.png)
+![img_104.png](old_note/COMP2200/week4/img_104.png)
 
 - %를 출력하려면 %%로 두번 쓰면 된다.
 - 바로 문자열을 넣어도 되는데 %s로 써주자. 경고를 주는 컴파일러도 있음
@@ -1058,32 +1058,32 @@ void string_tolower(char* str)
 
 ### 너비
 
-![img_105.png](img_105.png)
+![img_105.png](old_note/COMP2200/week4/img_105.png)
 
 - 기본적으로 오른쪽 정렬
 
 ### 플래그 1
 
-![img_106.png](img_106.png)
+![img_106.png](old_note/COMP2200/week4/img_106.png)
 
 - 공백과 +를 같이넣으면 +가 우선순위다. 즉 공백을 부호로 채웁니다.
 - -를 넣으면 왼쪽 정렬이라 0으로 채울 수 없어서, 0 무시
 
-![img_107.png](img_107.png)
+![img_107.png](old_note/COMP2200/week4/img_107.png)
 
 - +만 넣으면 너비없이 부호만 붙음
     - printf("%+d\n", 10); // +10
 
 ### 플래그2
 
-![img_108.png](img_108.png)
-![img_109.png](img_109.png)
+![img_108.png](old_note/COMP2200/week4/img_108.png)
+![img_109.png](old_note/COMP2200/week4/img_109.png)
 
 - 플래그2의 친구들은 모두 `부호 없는 정수`
 
 ### 정밀도
 
-![img_110.png](img_110.png)
+![img_110.png](old_note/COMP2200/week4/img_110.png)
 
 - "%3.3f"면 최소 너비가 3이다. 소수점 아랫자리 수(정밀도)가 3을 보장한다.
 - 3.140까지 보장되었다.이미 여기서 최소 너비3을 넘은 5의 너비를 가지게 된다.
@@ -1094,12 +1094,12 @@ void string_tolower(char* str)
 
 ### 정밀도2
 
-![img_111.png](img_111.png)
+![img_111.png](old_note/COMP2200/week4/img_111.png)
 
 ### 길이 수정자
 
-![img_112.png](img_112.png)
-![img_113.png](img_113.png)
+![img_112.png](old_note/COMP2200/week4/img_112.png)
+![img_113.png](old_note/COMP2200/week4/img_113.png)
 
 - ld, lf
 - 요즘 플랫폼에서 int == long, double == long double이라서 볼 일이 별로..?
@@ -1172,20 +1172,20 @@ void print_ascii_table(void)
 
 ## 서식 문자열이 필요한 이유
 
-![img_114.png](img_114.png)
+![img_114.png](old_note/COMP2200/week4/img_114.png)
 
 - 일단 오버로딩 없음
 - 임시 문자열 자동으로 생성을 안 해준다.
     - C에서는 기본적으로 메모리를 추가하지 않음..
 - C에서 문자열 + 연산은 없다!!!!
 
-![img_115.png](img_115.png)
+![img_115.png](old_note/COMP2200/week4/img_115.png)
 
 - 기본적으로 추가 할당 없이 문자들을 출력한다!
 
 ## fprintf()도 동일하다
 
-![img_116.png](img_116.png)
+![img_116.png](old_note/COMP2200/week4/img_116.png)
 
 - stdout
 - stdin
@@ -1196,7 +1196,7 @@ void print_ascii_table(void)
 
 ## stdout
 
-![img_117.png](img_117.png)
+![img_117.png](old_note/COMP2200/week4/img_117.png)
 
 - 라인 버퍼링을 사용한다!
 - 버퍼링
@@ -1209,11 +1209,11 @@ void print_ascii_table(void)
 
 ## 버퍼링의 종류
 
-![img_118.png](img_118.png)
+![img_118.png](old_note/COMP2200/week4/img_118.png)
 
 ## fprintf에서 stdout, stderr
 
-![img_119.png](img_119.png)
+![img_119.png](old_note/COMP2200/week4/img_119.png)
 
 - 지금은 콘솔에 똑같이 나오는데요?
 - 다음 주에 배워요
@@ -1221,38 +1221,38 @@ void print_ascii_table(void)
 
 ## 다른 스트림은 뭐가 있을까?
 
-![img_120.png](img_120.png)
+![img_120.png](old_note/COMP2200/week4/img_120.png)
 
 - 파일 스트림
 - C#의 buffered writer같은 문자열 스트림은 없음
 
 ## sprinf
 
-![img_121.png](img_121.png)
+![img_121.png](old_note/COMP2200/week4/img_121.png)
 
 - 매우 많이 사용하는 함수
 - char* buffer은 매우 넉넉하게 잡아야한다!!!
 
 ### sprinf의 예시
 
-![img_122.png](img_122.png)
+![img_122.png](old_note/COMP2200/week4/img_122.png)
 
 0 buffer의 12번 오프셋 부터 쓰레기값 확인
 
 ## sprintf의 위험성
 
-![img_123.png](img_123.png)
+![img_123.png](old_note/COMP2200/week4/img_123.png)
 
 - 버퍼를 작게 잡으면, 소유하지 않은 메모리에 접근해서... 정의되지 않는 결과가 발생한다.
 
-![img_124.png](img_124.png)
+![img_124.png](old_note/COMP2200/week4/img_124.png)
 
 - 그래서 C99에 들어옵니다.
 - C89 시절에는 컴파일러마다 다르게 작동되는 표준이 아닌 함수를 사용하곤 했었음..
 
 ## 기타 출력 함수
 
-![img_125.png](img_125.png)
+![img_125.png](old_note/COMP2200/week4/img_125.png)
 
 - 거의 printf로 퉁치는 분위기
 - puts는 마지막에 줄 바꿈 문자 추가해줌

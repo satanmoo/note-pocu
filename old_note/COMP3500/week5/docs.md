@@ -674,91 +674,91 @@ public class Program {
 
 ![img_102.png](old_note/COMP3500/week5/images/img_102.png)
 
-![img_103.png](images/img_103.png)
+![img_103.png](old_note/COMP3500/week5/images/img_103.png)
 
 - 부등식을 만족하고 카마이클 수와 서로소인 e 찾기
 - e의 값은 여러 개가 될 수 있는데 그 중 아무거나 뽑으면 됨
 
 ### 4. e와 특수한 관계인 d를 찾음
 
-![img_104.png](images/img_104.png)
+![img_104.png](old_note/COMP3500/week5/images/img_104.png)
 
 - e 와 카마이클 수가 서로소기 때문에 반드시 d가 존재함
     - 증명된 사실
 
-![img_105.png](images/img_105.png)
+![img_105.png](old_note/COMP3500/week5/images/img_105.png)
 
-![img_106.png](images/img_106.png)
+![img_106.png](old_note/COMP3500/week5/images/img_106.png)
 
 ## RSA 암호화/복호화
 
 ### 암호화
 
-![img_107.png](images/img_107.png)
+![img_107.png](old_note/COMP3500/week5/images/img_107.png)
 
 - 패딩 등의 방법은 복호화에서도 똑같이 적용
     - 공개된 방식임
 
-![img_108.png](images/img_108.png)
+![img_108.png](old_note/COMP3500/week5/images/img_108.png)
 
 ### 복호화
 
-![img_109.png](images/img_109.png)
+![img_109.png](old_note/COMP3500/week5/images/img_109.png)
 
-![img_110.png](images/img_110.png)
+![img_110.png](old_note/COMP3500/week5/images/img_110.png)
 
-![img_111.png](images/img_111.png)
+![img_111.png](old_note/COMP3500/week5/images/img_111.png)
 
 ## RSA 증명 by 정수론
 
-![img_112.png](images/img_112.png)
+![img_112.png](old_note/COMP3500/week5/images/img_112.png)
 
 - c 는 % n 의 결과기 때문에 n 보다 작은 수
     - [0, n-1]
     - c % n == c 성립
 
-![img_113.png](images/img_113.png)
+![img_113.png](old_note/COMP3500/week5/images/img_113.png)
 
 - 합동식의 성질로 d 거듭제곱 해도 성립함
 
-![img_114.png](images/img_114.png)
+![img_114.png](old_note/COMP3500/week5/images/img_114.png)
 
 - 목표는 복호화 공식이 m을 출력함을 증명
 
-![img_115.png](images/img_115.png)
+![img_115.png](old_note/COMP3500/week5/images/img_115.png)
 
 - 복호화 공식을 합동식으로!
 - 암호화 하기 전 패딩 등을 통해서 m < n이 만족하게끔 되어있음
     - m == m % n
 
-![img_116.png](images/img_116.png)
+![img_116.png](old_note/COMP3500/week5/images/img_116.png)
 
 - 합동식의 성질 이용
 
-![img_117.png](images/img_117.png)
+![img_117.png](old_note/COMP3500/week5/images/img_117.png)
 
 - 증명할 관계식이 결정됨
 
-![img_118.png](images/img_118.png)
+![img_118.png](old_note/COMP3500/week5/images/img_118.png)
 
-![img_119.png](images/img_119.png)
+![img_119.png](old_note/COMP3500/week5/images/img_119.png)
 
-![img_120.png](images/img_120.png)
+![img_120.png](old_note/COMP3500/week5/images/img_120.png)
 
-![img_121.png](images/img_121.png)
+![img_121.png](old_note/COMP3500/week5/images/img_121.png)
 
-![img_122.png](images/img_122.png)
+![img_122.png](old_note/COMP3500/week5/images/img_122.png)
 
-![img_123.png](images/img_123.png)
+![img_123.png](old_note/COMP3500/week5/images/img_123.png)
 
 - 관계식 이용해서 식 변형
 - ed - 1은 lcm(p-1, q-1)의 배수
 
-![img_124.png](images/img_124.png)
+![img_124.png](old_note/COMP3500/week5/images/img_124.png)
 
 - 최소 공배수의 성질을 이용
 
-![img_125.png](images/img_125.png)
+![img_125.png](old_note/COMP3500/week5/images/img_125.png)
 
 - 중국인의 나머지 정리 활용
 - 두 개의 식으로 나눠서 증명
