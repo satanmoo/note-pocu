@@ -807,21 +807,21 @@ while (fgets(line, 10, stdin) != NULL) {
 - [질문] sprintf의 return값을 사용해도 되나요? https://en.cppreference.com/w/cpp/io/c/fprintf 레퍼런스: Number of characters written if
   successful (not including the terminating null character)
 
-![img_126.png](img_126.png)
+![img_126.png](old_note/COMP2200/week5/img_126.png)
 
 - 남은 버퍼 공간이 충분한지 확인
 - 충분하지 않으면, 반복문 그만둠, 이번 챔피언뿐만 아니라 다음 챔피언도 못넣쥬 ㅠㅠ
 
-![img_127.png](img_127.png)
+![img_127.png](old_note/COMP2200/week5/img_127.png)
 
 - 공간 충분하면, 버퍼에 한 줄 카피하죵
 - 엇 근데 strcat해야 할것 같은데.. 덮어쓰지 않나용
 
-![img_128.png](img_128.png)
+![img_128.png](old_note/COMP2200/week5/img_128.png)
 
 - 포인터를 옴겨줍니다.
 
-![img_129.png](img_129.png)
+![img_129.png](old_note/COMP2200/week5/img_129.png)
 
 - strcat을 쓸거면, 포인터(char* buffer) 옮길 필요 없음
 - 근데 개미 눈꼽만큼 비효율적인게, strncat은 포인터에서 처음부터 쭉 확인하면서 널문자 찾고, 널문자부터 덮어쓰죠?
@@ -829,46 +829,46 @@ while (fgets(line, 10, stdin) != NULL) {
 - 반면에 지금 구현처럼 strcpy하고, 포인터 옮겨놓으면 처음부터 확인할 필요없으니
 - 4주차에서 배운 strlen을 직접 구현할 때 개미 눈꼽만큼 비효율적인 방법 생각나시죠 ㅎㅎ
 
-![img_130.png](img_130.png)
+![img_130.png](old_note/COMP2200/week5/img_130.png)
 
 - 버퍼의 남은 공간을 기억하는 변수를 줄여주자.
 
-![img_131.png](img_131.png)
+![img_131.png](old_note/COMP2200/week5/img_131.png)
 
 - 버퍼를 읽는다
 - const char*가 아닙니다. 우왕
 
-![img_132.png](img_132.png)
+![img_132.png](old_note/COMP2200/week5/img_132.png)
 
 - DELIM으로 토큰화 하자
 
-![img_133.png](img_133.png)
-![img_134.png](img_134.png)
+![img_133.png](old_note/COMP2200/week5/img_133.png)
+![img_134.png](old_note/COMP2200/week5/img_134.png)
 
 - 파일에서 읽으면, 한 줄씩 읽는 방법이 있는데, 나중에 배웁니다.
 
-![img_135.png](img_135.png)
+![img_135.png](old_note/COMP2200/week5/img_135.png)
 
 - 제목 출력
 
-![img_136.png](img_136.png)
-![img_137.png](img_137.png)
+![img_136.png](old_note/COMP2200/week5/img_136.png)
+![img_137.png](old_note/COMP2200/week5/img_137.png)
 
 - strtok 사용법 기억하죠
 - 반복할 때는 NULL을 첫번째 매개변수(토큰화 할 대상)으로 넘겨야죠
 
-![img_138.png](img_138.png)
+![img_138.png](old_note/COMP2200/week5/img_138.png)
 
 - 지금은 괜찮은데, 누군가 여기 버퍼에 접근해서 버퍼 속에 굉장히 많은 값으로 이름을 바꿀 수 있긴 있어서 ㅠㅠ
     - 거의 뭐 트롤, 해킹이죠
 
-![img_139.png](img_139.png)
+![img_139.png](old_note/COMP2200/week5/img_139.png)
 
 - name이 안전하다고 가정해서 %s
 - continue는 이번 챔피언 읽는데 실패했으면, 다음 챔피언 읽는거임 ㅇㅇ;
 - break 해버리면, 버퍼에 남아있는 챔피언들 못 읽는거지
 
-![img_140.png](img_140.png)
+![img_140.png](old_note/COMP2200/week5/img_140.png)
 
 - sscanf로 tokenizer(한 줄, 챔피언 정보) 읽어서
 - 챔피언 정보를 변수에 저장하고, 조작해서 printf로 출력해따
@@ -903,12 +903,12 @@ int main(void)
 - 블록이 뭘까? 뭉텅이?
 - `이진 파일을 읽을 때 이 방법밖에 없다고 생각하면 됩니다.
 
-![img_141.png](img_141.png)
+![img_141.png](old_note/COMP2200/week5/img_141.png)
 
 ## fread() 함수, fwrite() 함수
 
 ### [fread 함수]
-![img_142.png](img_142.png)
+![img_142.png](old_note/COMP2200/week5/img_142.png)
 
 - 퀵 소트 함수랑 엄청 비슷하네요.
 
@@ -920,7 +920,7 @@ int main(void)
 - 반환값: 읽은 데이터의 개수 반환
 - stream에서 size만큼 바이트로 count개 만큼 읽어서 버퍼에 저장한다.
 
-![img_143.png](img_143.png)
+![img_143.png](old_note/COMP2200/week5/img_143.png)
 
 - EOF만나면 멈춘다.
 - EOF를 먼저 만난다면 count보다 적은 수를 읽을 수 있다.
@@ -934,13 +934,13 @@ int main(void)
 
 ## 이진 데이터를 읽어서 어디에 쓰지?
 
-![img_144.png](img_144.png)
-![img_145.png](img_145.png)
+![img_144.png](old_note/COMP2200/week5/img_144.png)
+![img_145.png](old_note/COMP2200/week5/img_145.png)
 
 - 프로그래밍 입문 과목에서 이진 파일에 썼었죠
 - 동일하게 파일에 쓰고 읽음.
 
-![img_146.png](img_146.png)
+![img_146.png](old_note/COMP2200/week5/img_146.png)
 
 - fstream은 파일을 열고, 닫고, 쓰는 법에서 배웁니다.
 - fread 해석
@@ -950,21 +950,21 @@ int main(void)
 
 ## 한 블록씩 읽는 방법이 유용한 경우
 
-![img_147.png](img_147.png)
+![img_147.png](old_note/COMP2200/week5/img_147.png)
 
 - 이진 데이터 읽으려면 거의 이 방법만 쓴다고 봐야함
 - 이진 데이터를 블록씩(덩어리)로 읽는게 성능에 유리하죠
 
 ## 주의할 점
 
-![img_148.png](img_148.png)
+![img_148.png](old_note/COMP2200/week5/img_148.png)
 
 - 플랫폼마다 자료형의 크기가 다를 수 있음...
 
 ## 파일 입출력
 
-![img_149.png](img_149.png)
-![img_150.png](img_150.png)
+![img_149.png](old_note/COMP2200/week5/img_149.png)
+![img_150.png](old_note/COMP2200/week5/img_150.png)
 
 - 규칙
     - 파일을 연다.
@@ -973,7 +973,7 @@ int main(void)
 
 ## 파일 열기
 
-![img_151.png](img_151.png)
+![img_151.png](old_note/COMP2200/week5/img_151.png)
 
 - fopen: 파일을 열어서 파일 스트림을 반환
     - 이 때 자료형은 FILE*
@@ -985,7 +985,7 @@ int main(void)
     - 읽고나면, 버퍼에 널문자를 넣어줌
     - 반환값: 성공하면 인자로 받은 버퍼(char *)를 반환, 실패하면 NULL 반환
 
-![img_152.png](img_152.png)
+![img_152.png](old_note/COMP2200/week5/img_152.png)
 
 - fopen() 함수
     - 첫번째 매개변수: 파일 이름
@@ -1000,7 +1000,7 @@ int main(void)
 
 ### 파일 열기 모드
 
-![img_153.png](img_153.png)
+![img_153.png](old_note/COMP2200/week5/img_153.png)
 
 - 파일이 이미 있다면, 없다면 구분
 - 헷갈리는 부분: r+ vs w+
@@ -1009,13 +1009,13 @@ int main(void)
 
 ### 이진모드는 텍스트 모드와 무엇이 다른가요?
 
-![img_154.png](img_154.png)
+![img_154.png](old_note/COMP2200/week5/img_154.png)
 
 - b붙이면, 이진모드
 - 유닉스 계열에는 텍스트 모드와 이진모드가 아무 차이 없음
 - 윈도우에서는 \n을 \r\n 뉴 라인 캐릭터 처리하는 것만 달라진다.
 
-![img_155.png](img_155.png)
+![img_155.png](old_note/COMP2200/week5/img_155.png)
 
 - 참고만 합시다...!
 - 파일 읽기용 모드(r, r+, rb, r+b)로 텍스트 파일을 열어서 확인해보자.
@@ -1024,7 +1024,7 @@ int main(void)
 - 텍스트 모드로 읽으면 \r\n을 \n으로 바꿔서 파일 스트림 버퍼에 저장한다.
 - 이진 모드로 읽으면 파일 스트림의\r\n 그대로 읽음
 
-![img_156.png](img_156.png)
+![img_156.png](old_note/COMP2200/week5/img_156.png)
 
 - 텍스트 모드에서 버퍼의 \n을 파일의 \r\n으로 바꿔줌
 - 이진 모드에서는 버퍼의 \n을 파일의 \n으로 그대로 씀
@@ -1032,7 +1032,7 @@ int main(void)
 
 ## 파일 쓰기
 
-![img_157.png](img_157.png)
+![img_157.png](old_note/COMP2200/week5/img_157.png)
 
 - 파일 쓰기의 예시
 - 한 블록 읽기의 fwrite()가 등장했다.
@@ -1048,15 +1048,15 @@ int main(void)
 - write_file은 커스텀 함수 이름
     - wirte_file의 내용이 위의 코드들임
 
-![img_158.png](img_158.png)
+![img_158.png](old_note/COMP2200/week5/img_158.png)
 
 - 이진 파일에 저장된 결과
 - 16진수 64는 100이죠, 리틀 엔디안
 
 ## 파일에 바로 써지지 않음: 라인 버퍼링
 
-![img_159.png](img_159.png)
-![img_160.png](img_160.png)
+![img_159.png](old_note/COMP2200/week5/img_159.png)
+![img_160.png](old_note/COMP2200/week5/img_160.png)
 
 - 새로 썼는데, 바로 파일에 써지지 않았음...
 - 띠용? 호출했는데 바로 안 써지네
@@ -1066,7 +1066,7 @@ int main(void)
 
 ## fwrite에서 '\n'을 어떻게 인식하나요? 못 합니다 ㅋㅋ;
 
-![img_161.png](img_161.png)
+![img_161.png](old_note/COMP2200/week5/img_161.png)
 
 - 첫번째 매개변수가 void*이기 때문에 fwrite()는 char로 인식할 수 없음
     - fwrite 입장에서는 비트 패턴이 줄줄이 들어오는 것임!
@@ -1074,8 +1074,8 @@ int main(void)
 
 ## 라인 버퍼를 비우는 유일한 방법: fflush()
 
-![img_162.png](img_162.png)
-![img_163.png](img_163.png)
+![img_162.png](old_note/COMP2200/week5/img_162.png)
+![img_163.png](old_note/COMP2200/week5/img_163.png)
 
 - 그래서 바로 쓰려면 fflush()를 호출하는데,
     - 무엇을 flush하냐?
@@ -1084,7 +1084,7 @@ int main(void)
 
 ## 파일 읽기
 
-![img_164.png](img_164.png)
+![img_164.png](old_note/COMP2200/week5/img_164.png)
 
 ```c++
 #include <stdio.h>
@@ -1114,7 +1114,7 @@ void read_file(const char* filename)
 - fget는 LEGNTH - 1개 읽고, 마지막에 널문자 넣어준다.
     - 어디에? 버퍼(data)에
 
-![img_165.png](img_165.png)
+![img_165.png](old_note/COMP2200/week5/img_165.png)
 
 - 이 코드의 목적은 5글자씩 읽어서 한줄씩 출력하는 것이다.
 - 파일 스트림에서 "Hello"(5글자)를 읽어서 버퍼(변수명 data)에 저장한다. 그리고 버퍼에 있는 내용을 출력한다. 파일 위치 표시자는 "공백"을 가리킨다.
@@ -1125,35 +1125,35 @@ void read_file(const char* filename)
 
 ## 파일 위치 표시자의 위치
 
-![img_166.png](img_166.png)
+![img_166.png](old_note/COMP2200/week5/img_166.png)
 
 - 여기서 의문점이, fgets가 파일 스트림으로 부터 한 줄씩 읽는데, 어떻게 파일 스트림의 마지막 위치를 기억하지?
     - "Hello"를 읽고, 바로 " POCU"를 읽는게 신기하네요
 - 이게 `파일 위치 표시자`라는 개념이다.
 - 파일을 "r", "r+"모드로 열 경우 파일 위치 표시자는 파일의 처음을 가리킨다.
 
-![img_167.png](img_167.png)
+![img_167.png](old_note/COMP2200/week5/img_167.png)
 
 - n번째 바이트까지 읽으면, 파일 위치 표시자는 n+1번째 바이트를 가리킨다.
 - "Hello"를 읽으면, 다음 바이트는 공백문자임
 
-![img_168.png](img_168.png)
+![img_168.png](old_note/COMP2200/week5/img_168.png)
 
 - 파일 스트림을 읽을 때마다, 표시자 위치가 바뀝니다.
 
-![img_169.png](img_169.png)
+![img_169.png](old_note/COMP2200/week5/img_169.png)
 
 - 파일을 r, r+로 열 경우 파일 위치 표시자는 파일의 처음을 가리킨다.
 
-![img_170.png](img_170.png)
+![img_170.png](old_note/COMP2200/week5/img_170.png)
 
 - 5글자를 읽어서 파일 위치 표시자는 공백문자를 가리킨다.
 
-![img_171.png](img_171.png)
+![img_171.png](old_note/COMP2200/week5/img_171.png)
 
 - 파일 위치 표시자가 가리키는 다음 위치는 !
 
-![img_172.png](img_172.png)
+![img_172.png](old_note/COMP2200/week5/img_172.png)
 
 - 마지막으로 파일 위치 표시자는 EOF를 가리키게 된다.
 - fgets는 EOF를 만나면 NULL을 반환한다.
@@ -1161,7 +1161,7 @@ void read_file(const char* filename)
 
 ## 파일에 붙여쓰기
 
-![img_173.png](img_173.png)
+![img_173.png](old_note/COMP2200/week5/img_173.png)
 
 ```c++
 #include <stdio.h>
@@ -1184,7 +1184,7 @@ void append_file(const char* filename)
 append_file("test.txt");
 ```
 
-![img_174.png](img_174.png)
+![img_174.png](old_note/COMP2200/week5/img_174.png)
 
 - 우선 이 코드를 작성할 때 상황을 생각해야하는게, 이미 hello.txt 파일에 Hello POCU!라고 텍스트가 저장된 상태다.
 - ab 모드로 열면, 파일 끝에 붙여쓰기가 가능하다.
@@ -1202,13 +1202,13 @@ append_file("test.txt");
 
 ## 파일 닫기
 
-![img_175.png](img_175.png)
+![img_175.png](old_note/COMP2200/week5/img_175.png)
 
 - 파일을 열였으면 반드시 닫아야한다.
 
 ## fclose
 
-![img_176.png](img_176.png)
+![img_176.png](old_note/COMP2200/week5/img_176.png)
 
 - 성공하면 0
 - 실패하면 EOF
@@ -1219,7 +1219,7 @@ append_file("test.txt");
 
 ## 통제 못하는 환경을 C에서 어떻게 처리할 수 있을까?
 
-![img_177.png](img_177.png)
+![img_177.png](old_note/COMP2200/week5/img_177.png)
 
 - 파일을 열고자 하는데, 파일이 없음
     - 누가 중간에 지웠을 수도...
@@ -1227,15 +1227,15 @@ append_file("test.txt");
 
 ### [fopen이 실패하면? 오류는 어떻게 처리?] 
 
-![img_178.png](img_178.png)
+![img_178.png](old_note/COMP2200/week5/img_178.png)
 
 - fopen은 실패하면 NULL을 반환한다. 
   - 생각하는 방법: fopen의 반환값이 FILE* 이잖아요..? 즉 포인터죠? 포인터에서 아무 것도 없음을 나타내는 방법은 NULL
 
 ### [fopen, fclose, fprintf의 오류 시 처리 방식이 각각 다름]
 
-![img_179.png](img_179.png)
-![img_180.png](img_180.png)
+![img_179.png](old_note/COMP2200/week5/img_179.png)
+![img_180.png](old_note/COMP2200/week5/img_180.png)
 
 - fopen에서는 실패하는 경우 NULL
 - flose에서는 실패하는 경우 EOF
@@ -1243,7 +1243,7 @@ append_file("test.txt");
 
 ## stderr
 
-![img_181.png](img_181.png)
+![img_181.png](old_note/COMP2200/week5/img_181.png)
 
 - stderr는 표준 에러 출력 스트림
 - stdout과 비슷함
@@ -1252,63 +1252,63 @@ append_file("test.txt");
     - 바로 출력(오류는 바로 바로 보여줘야 하니까)
 - 콘솔창에서 실행하면, stderr, stdout 섞여 나온다.
 
-![img_182.png](img_182.png)
+![img_182.png](old_note/COMP2200/week5/img_182.png)
 
 - 파일 열기 실패 예시
 
 ## 실패한 이유를 알 고 싶음: errno
 
-![img_183.png](img_183.png)
+![img_183.png](old_note/COMP2200/week5/img_183.png)
 
 - 실패하면 오류 코드를 어딘가에 저장해둠(전역변수 라던가..)
 - errno라는 메크로를 출력해보면, 이유를 알 수 있음
 
-![img_184.png](img_184.png)
+![img_184.png](old_note/COMP2200/week5/img_184.png)
 
 - 2번 오류 코드?
 
-![img_185.png](img_185.png)
+![img_185.png](old_note/COMP2200/week5/img_185.png)
 
 - 플랫폼마다 다르다.
 
 ## 오류 코드를 말로 설명해주는 함수: char* strerror(int errnum)
 
-![img_186.png](img_186.png)
-![img_187.png](img_187.png)
+![img_186.png](old_note/COMP2200/week5/img_186.png)
+![img_187.png](old_note/COMP2200/week5/img_187.png)
 
 ## void perror(const char* s)
 
-![img_188.png](img_188.png)
-![img_189.png](img_189.png)
+![img_188.png](old_note/COMP2200/week5/img_188.png)
+![img_189.png](old_note/COMP2200/week5/img_189.png)
 
 - perror에서 자기가 알아서 콜론찍고, 에러코드 해석해서, 문자열로 예쁘게 stderr에 출력한다.
 - errno 해석, strerror(errno)를 호출을 추가해줌
 
 ## C에서의 오류 처리는 보통 이런식 [후기 강조]
 
-![img_190.png](img_190.png)
+![img_190.png](old_note/COMP2200/week5/img_190.png)
 
 - 함수가 곧바로 오류코드 반환
 - 이 오류코드를 전역변수로 들고있다가. errno, strerror, perror에서 사용함.
 
 ## 코드보기: 파일 복사하기
 
-![img_191.png](img_191.png)
+![img_191.png](old_note/COMP2200/week5/img_191.png)
 
 - 파일을 복사하는 함수
 - const char*니까 `파일 이름`이죠?, src를 dst로 복사한다.
 
-![img_192.png](img_192.png)
+![img_192.png](old_note/COMP2200/week5/img_192.png)
 
 - 일단 파일 포인터 2개 선언하죠?
 - c는 원본에서 읽은 문자 하나를 저장하는 곳
 
-![img_193.png](img_193.png)
+![img_193.png](old_note/COMP2200/week5/img_193.png)
 
 - 실패할 수 있음
 - 반환값 FILE*은 NULL이 된다.
 
-![img_194.png](img_194.png)
+![img_194.png](old_note/COMP2200/week5/img_194.png)
 
 - src는 열기 성공
 - dst가 실패하면?
@@ -1316,35 +1316,35 @@ append_file("test.txt");
 - src를 닫아줘야겠죠?
     - goto문으로 해결하자!
 
-![img_195.png](img_195.png)
+![img_195.png](old_note/COMP2200/week5/img_195.png)
 
 - 원본 파일을 닫는다.
 - 닫는데 실패하면 EOF 반환하니, 에러 메세지 출력한다. 성공하면 0 알지?
 
-![img_196.png](img_196.png)
+![img_196.png](old_note/COMP2200/week5/img_196.png)
 
 - 여기서 중요한 점은, 이 close_source: 레이블이 함수의 가장 아래에 위치한다는 점이다.
 - 즉 어떤 경로를 통해 오더라도, 이 명령문에 도달해서 src파일을 닫아주게 된다.
 
-![img_197.png](img_197.png)
+![img_197.png](old_note/COMP2200/week5/img_197.png)
 
 - 원위치로 돌아가서
 - fgetc: src_file에서 한 글자씩 읽고
     - 한 글자씩 읽다가 EOF를 만나면 종료
 - fputc: dst_file에 한글자씩 쓴다.
 
-![img_198.png](img_198.png)
+![img_198.png](old_note/COMP2200/week5/img_198.png)
 
 - 복사가 끝났으니 복사본 파일을 닫음
 - fclose는 실패하면 EOF 반환하니, 에러 메세지 출력한다. 성공하면 0 알지?
 
-![img_199.png](img_199.png)
+![img_199.png](old_note/COMP2200/week5/img_199.png)
 
 - 파일 이름을 하드코드 하는게 좀 아쉽긴함 ㅇㅇ;
 
 ## 파일 탐색
 
-![img_200.png](img_200.png)
+![img_200.png](old_note/COMP2200/week5/img_200.png)
 
 - 탐색의 개념은 스트림에서 쓸 위치, 읽을 위치를 이동하는 것
 - 탐색이 가능한 스트림이 있고, 아닌 스트림도 있다.
@@ -1353,7 +1353,7 @@ append_file("test.txt");
 
 ## 파일 위치 표시자
 
-![img_201.png](img_201.png)
+![img_201.png](old_note/COMP2200/week5/img_201.png)
 
 - file position indicator
 - 스트림 안에서 현재 위치를 나타냄
@@ -1362,20 +1362,20 @@ append_file("test.txt");
 
 ## 파일에서 3개의 표시자 정리
 
-![img_202.png](img_202.png)
+![img_202.png](old_note/COMP2200/week5/img_202.png)
 
 - clearerror()로 EOF, 오류 표시자를 지울 수 있다.
 
 ## void rewind(FILE* stream): 처음 위치로 되돌리기
 
-![img_203.png](img_203.png)
+![img_203.png](old_note/COMP2200/week5/img_203.png)
 
 - 파일의 처음 위치로 되돌린다.
 
 ### rewind로 파일 두 번 읽기
 
-![img_204.png](img_204.png)
-![img_205.png](img_205.png)
+![img_204.png](old_note/COMP2200/week5/img_204.png)
+![img_205.png](old_note/COMP2200/week5/img_205.png)
 
 - 참고로 scores.bin에서 리틀엔디안으로 저장된거 확인할 수 있다.
   - 00 00 00 14 => 20
@@ -1383,7 +1383,7 @@ append_file("test.txt");
 
 ## int fseek(FILE* stream, long offset, int origin): 임의의 위치로 이동
 
-![img_206.png](img_206.png)
+![img_206.png](old_note/COMP2200/week5/img_206.png)
 
 - 파일 위치 표시자를 origin으로부터, offset만큼 이동한다.
 - origin의 세종류
@@ -1401,27 +1401,27 @@ append_file("test.txt");
 
 ## fseek로 파일의 다음으로 이동하기
 
-![img_207.png](img_207.png)
-![img_208.png](img_208.png)
+![img_207.png](old_note/COMP2200/week5/img_207.png)
+![img_208.png](old_note/COMP2200/week5/img_208.png)
 
 - 일단 파일을 연다.
 - 파일 위치 표시자는 시작위치 14를 가리킨다. ab모드 아니고 rb모드라서
 
-![img_209.png](img_209.png)
+![img_209.png](old_note/COMP2200/week5/img_209.png)
 
 - fseek으로 int하나 만큼 뒤로 옮겼음
 
-![img_210.png](img_210.png)
+![img_210.png](old_note/COMP2200/week5/img_210.png)
 
 - 읽으면, 파일 위치 표시자는 끝을 가리킴
 
-![img_211.png](img_211.png)
+![img_211.png](old_note/COMP2200/week5/img_211.png)
 
 - 출력하면 첫번째 원소 제외하고 4개만 나오쥬
 
 ## offset이 음수라면 시작 위치 쪽으로 돌아감
 
-![img_212.png](img_212.png)
+![img_212.png](old_note/COMP2200/week5/img_212.png)
 
 - 처음 위치에서 3 * 4 바이트 만큼 이동함
   - 따라서 파일 위치 표시자는 49를 가리킴
@@ -1432,7 +1432,7 @@ append_file("test.txt");
 
 ## fseek이 실패하는 경우(파일 위치 표시자 이동 실패)
 
-![img_213.png](img_213.png)
+![img_213.png](old_note/COMP2200/week5/img_213.png)
 
 - rb로 열자마자, SEEK_CUR은 현재 위치니까 파일 스트림 버퍼에서 가장 처음 위치
 - 음수 offset을 사용하면 가장 처음보다 먼저 위치는 없기 때문에 이동에 실패함
@@ -1442,7 +1442,7 @@ append_file("test.txt");
 
 ## 스트림의 끝(SEEK_END)에서 양수 바이트 만큼 이동 가능
 
-![img_214.png](img_214.png)
+![img_214.png](old_note/COMP2200/week5/img_214.png)
 
 - 하지만 이상한 곳을 접근함
 - 결론: 
@@ -1453,13 +1453,13 @@ append_file("test.txt");
 
 ## long ftell(FILE* stream): 파일 스트림의 위치 표시자를 알려주는 함수
 
-![img_215.png](img_215.png)
+![img_215.png](old_note/COMP2200/week5/img_215.png)
 
 - long ftell(FILE* stream)
 - 파일 스트림의 위치 표시자를 알려주는 함수
 - 실패하면 -1 반환하는데, 잘 발생하지 않음
 
-![img_216.png](img_216.png)
+![img_216.png](old_note/COMP2200/week5/img_216.png)
 
 - 반환값은 바이너리 모드로 열었을 때와 텍스트 모드로 열었을 때가 다르다.
 - 바이너리 모드로 열었을 때는, 파일 스트림의 시작지점에서 정확하게 몇 바이트 떨어져있는지 알려준다.
@@ -1468,31 +1468,31 @@ append_file("test.txt");
 
 ## 코드보기: 도돌이표
 
-![img_217.png](img_217.png)
+![img_217.png](old_note/COMP2200/week5/img_217.png)
 
 - :로 감싸진 부분을 반복한다.
 - :는 절대 출력하지 않는다.
 
-![img_218.png](img_218.png)
+![img_218.png](old_note/COMP2200/week5/img_218.png)
 
 - 도돌이표가 시작하는 위치를 기억하는 변수 pos
 - 처음에는 기억할 위치가 없기 때문에 -1로 초기화
 
-![img_219.png](img_219.png)
+![img_219.png](old_note/COMP2200/week5/img_219.png)
 
 - 도돌이표라고 무한정 반복이 아니라, 딱 2번 반복하기 때문에
 - 이번이 두번째 방문인지 저장하는 변수
 
-![img_220.png](img_220.png)
+![img_220.png](old_note/COMP2200/week5/img_220.png)
 
 - 파일 열고 한 글자씩 읽음
 - 읽은 문자가 도돌이표가 아니면, 출력하고 다음 문자로 건너
 
-![img_221.png](img_221.png)
+![img_221.png](old_note/COMP2200/week5/img_221.png)
 
 - goto 레이블은 while 블록 끝나기 바로 전에 있음
 
-![img_222.png](img_222.png)
+![img_222.png](old_note/COMP2200/week5/img_222.png)
 
 - 알고리즘
   - 도돌이표를 만난 경우
@@ -1506,30 +1506,30 @@ append_file("test.txt");
 - 여기서 pos를 확인하는데
     - 만약 pos가 -1(즉 초기화 상태면) 여는 도돌이표를 처음 만난 것
 
-![img_223.png](img_223.png)
+![img_223.png](old_note/COMP2200/week5/img_223.png)
 
 - 파일 스트림에서 파일 위치 표시자는 도돌이표 다음을 가리키는 중 (이미 도돌이표는 읽었기 때문)
 - fgetc로 읽으면, 파일 위치 표시자는 읽은 뒤 문자를 가리킴 
 
-![img_224.png](img_224.png)
+![img_224.png](old_note/COMP2200/week5/img_224.png)
 
 - ftell이 위치를 찾아오는데 실패하면, 그냥 함수 실행을 관둔다.
 
-![img_225.png](img_225.png)
+![img_225.png](old_note/COMP2200/week5/img_225.png)
 
 - pos가 양수라면, 이미 여는 도돌이표를 만나서 pos에 파일 위치 표시자를 저장한 것임
 - 즉 닫는 도돌이표를 만난거임
 
-![img_226.png](img_226.png)
+![img_226.png](old_note/COMP2200/week5/img_226.png)
 
 - 닫는 도돌이표니까, 기억하고 있는 pos로 fseek
 - reapting을 true로 두번째 방문임을 표시
 
-![img_227.png](img_227.png)
+![img_227.png](old_note/COMP2200/week5/img_227.png)
 
 - 다음 문자로 이동
 
-![img_228.png](img_228.png)
+![img_228.png](old_note/COMP2200/week5/img_228.png)
 
 - reapting이 true이고, 다시 :를 만난 경우 닫는 도돌이표를 두번째로 만난거임
   - 여는 도돌이표는 두번 만날 수 없음
@@ -1538,23 +1538,23 @@ append_file("test.txt");
 
 ## 입출력 리디렉션
 
-![img_229.png](img_229.png)
-![img_230.png](img_230.png)
-![img_231.png](img_231.png)
+![img_229.png](old_note/COMP2200/week5/img_229.png)
+![img_230.png](old_note/COMP2200/week5/img_230.png)
+![img_231.png](old_note/COMP2200/week5/img_231.png)
 
 - 입력의 들어오는 방향, 출력의 나가는 방향을 다른 곳으로
 - 키보드로 부터 입력이 들어오는게 아니라 파일로 부터 입력이 들어오게 해줘!
 - stderr, stdout으로 화면에 출력하는게 아니라 파일에 출력해줘!
 - 코드 변경 없이 원래 stdin, stdout, stderr을 파일로 바꾸는 것 뿐임!!
 
-![img_232.png](img_232.png)
+![img_232.png](old_note/COMP2200/week5/img_232.png)
 
 - shell의 기능
 - 코드 변경이 없다는 점에서 쉘의 기능임을 알 수 있음
 
 ### 리디렉션 사용방법
 
-![img_233.png](img_233.png)
+![img_233.png](old_note/COMP2200/week5/img_233.png)
 
 - a.exe의 입력을 stdin 대신 input.txt에서 읽어라!
 - a.exe의 출력을 stout 대신 output.txt에 출력하라!
@@ -1562,21 +1562,21 @@ append_file("test.txt");
 - 세개 중 골라서 사용할 수 있음
     - 세개 모두를 써도되고, 하나만 써도 되고, 두개만 써도 되고
 
-![img_234.png](img_234.png)
+![img_234.png](old_note/COMP2200/week5/img_234.png)
 
 - 파일에서 읽으면, 키보드 입력처럼! 와 편하다!!!
 - 출력, 오류 메시지를 별도의 파일에 구분 가능
 
 ### 파일의 끝이 있다. EOF 자동추가!
 
-![img_235.png](img_235.png)
+![img_235.png](old_note/COMP2200/week5/img_235.png)
 
 - 키보드(stdin)에서 입력할 때는 EOF + \n을 입력해서 다음 코드에서 읽을 때 버퍼에 남은 \n을 읽을 수 있음
 - 파일은 끝이 정해져있어서, EOF가 자동으로 입력되죠~ 엔터를 칠 필요가 없다!
 
 ## 리디렉션 예시: 빈 input.txt를 읽을 때
 
-![img_236.png](img_236.png)
+![img_236.png](old_note/COMP2200/week5/img_236.png)
 
 - stdin대신 input.txt으로 읽고, stdout은 output.txt, stderr은 error.txt로 출력
 - input.txt가 비어있으면, EOF만 있음
@@ -1587,7 +1587,7 @@ append_file("test.txt");
 
 ## 리디렉션 예시: input.txt의 숫자를 출력하기
 
-![img_237.png](img_237.png)
+![img_237.png](old_note/COMP2200/week5/img_237.png)
 
 - scanf의 반환값은 몇 개 읽었는지 반환, 서식문자열이 "%d"라서 하나씩 읽습니다.
     - Number of receiving arguments successfully assigned (which may be zero in case a matching failure occurred before
@@ -1601,21 +1601,21 @@ append_file("test.txt");
 
 ## 콘솔창에는 아무것도 없다!
 
-![img_238.png](img_238.png)
+![img_238.png](old_note/COMP2200/week5/img_238.png)
 
 - 코드도 fscanf()로 입력받는 코드도 없는데, 입력이 되었네요?
 - scanf로 stdin에서 받아야하는데, 리디렉션으로 input.txt에서 받았네요?
 
 ## 주의: fopen()하고 다름...
 
-![img_239.png](img_239.png)
-![img_240.png](img_240.png)
+![img_239.png](old_note/COMP2200/week5/img_239.png)
+![img_240.png](old_note/COMP2200/week5/img_240.png)
 
 - 리디렉션으로 디버깅하자!!!
 
 ## 커맨드 라인 인자
 
-![img_241.png](img_241.png)
+![img_241.png](old_note/COMP2200/week5/img_241.png)
 
 - main 함수의 매개변수
 - argc: 인자의 개수
@@ -1624,14 +1624,14 @@ append_file("test.txt");
 
 ### argc
 
-![img_242.png](img_242.png)
+![img_242.png](old_note/COMP2200/week5/img_242.png)
 
 - 들어온 인자의 수
 - 실행한 파일 이름까지 포함(C의 특성)
 
 ### argv
 
-![img_243.png](img_243.png)
+![img_243.png](old_note/COMP2200/week5/img_243.png)
 
 - argv의 크기는 argc + 1
 - argv[0]은 실행한 파일 이름
@@ -1640,7 +1640,7 @@ append_file("test.txt");
 - 반복문 돌릴 때 1부터 argc - 1까지 돌리면 됨
   - [1, argc - 1)
 
-![img_244.png](img_244.png)
+![img_244.png](old_note/COMP2200/week5/img_244.png)
 
 - 포인터의 배열
 - 각 포인터는 C 스타일 문자열
@@ -1648,11 +1648,11 @@ append_file("test.txt");
 - 이때 커맨드 라인에 들어온 값은 띄어쓰기로 구분!
 - 이 주소를 argv배열에 넘겨준다.
 
-![img_245.png](img_245.png)
+![img_245.png](old_note/COMP2200/week5/img_245.png)
 
 - 프로그램 실행할 때 메모리 어디에 저장되있는지는 모르지만, 운영체제가 알아서 이 주소를 argv의 원소로 넣어줌
 
-![img_246.png](img_246.png)
+![img_246.png](old_note/COMP2200/week5/img_246.png)
 
 - 똑같이 c 스타일 문자열 처럼 사용가능
 - 띄어쓰기로 구분했으니 argv[1]은 "a.txt"이다.
@@ -1675,53 +1675,53 @@ append_file("test.txt");
 
 ### 커맨들 라인 인자 통채로 복사
 
-![img_247.png](img_247.png)
+![img_247.png](old_note/COMP2200/week5/img_247.png)
 
 - 커맨드 라인에 있는 `모든 것`을 그대로 메모리에 복사함
 - 통채로 한 줄로 복사한다는 의미죠?
 
-![img_248.png](img_248.png)
+![img_248.png](old_note/COMP2200/week5/img_248.png)
 
 - 그리고 각 인자가 시작하는 곳의 주소들을 넘겨준 것인가용?
 
-![img_249.png](img_249.png)
+![img_249.png](old_note/COMP2200/week5/img_249.png)
 
 - 이러면 공백 문자가 메모리에 남아있어야함.
     - 왜? 싸그리 한 번에 복사했으니깐 공백으로 구분 해야함
 
-![img_250.png](img_250.png)
+![img_250.png](old_note/COMP2200/week5/img_250.png)
 
 - 만약 공백이 많이 들어오면, 싸그리 복사할 때 공백 문자가 많이 들어가게 됨
 
 ### 커맨드 라인 인자 하나씩 복사
 
-![img_251.png](img_251.png)
-![img_252.png](img_252.png)
+![img_251.png](old_note/COMP2200/week5/img_251.png)
+![img_252.png](old_note/COMP2200/week5/img_252.png)
 
 - 커맨드 라인 인자를 공백을 만나기 전까지 읽고, 메모리에 복사
 
-![img_253.png](img_253.png)
+![img_253.png](old_note/COMP2200/week5/img_253.png)
 
 - 공백은 무시하고, 다음 커맨드 라인 인자도 메모리에 복사
 
-![img_254.png](img_254.png)
+![img_254.png](old_note/COMP2200/week5/img_254.png)
 
 - 이렇게 하면 읽을 때 부터 공백을 무시하면서 읽게 됨
 
 ## 과연 실제로 어떻게 저장될까용?
 
-![img_255.png](img_255.png)
+![img_255.png](old_note/COMP2200/week5/img_255.png)
 
 - 메모리를 확인해보니 공백 없이 촘촘히 저장됨 
 
-![img_256.png](img_256.png)
-![img_257.png](img_257.png)
+![img_256.png](old_note/COMP2200/week5/img_256.png)
+![img_257.png](old_note/COMP2200/week5/img_257.png)
 
 - 앞으로 궁금하면 메모리를 보자!!!
 
 ## 입출력 리디렉션과 커맨드 라인 인자는 다름
 
-![img_258.png](img_258.png)
+![img_258.png](old_note/COMP2200/week5/img_258.png)
 
 - 실제로 출력해보면, 파일 이름 a.exe 밖에 없으니까 argc는 1이다.
   - argv[0]은 a.exe이다.
@@ -1731,7 +1731,7 @@ append_file("test.txt");
 
 ## 코드보기: 제대로 된 파일복사
 
-![img_259.png](img_259.png)
+![img_259.png](old_note/COMP2200/week5/img_259.png)
 
 - main함수에서 커맨드 라인 인자를 받음
 - 커맨드 라인 인자로 src, dest를 받는거네용
@@ -1745,7 +1745,7 @@ append_file("test.txt");
   - --help
 - 커맨드 라인에서 사용자가 실수한 경우를 stderr에 출력
 
-![img_260.png](img_260.png)
+![img_260.png](old_note/COMP2200/week5/img_260.png)
 
 - 프로그램 비정상 종료면, 0이아닌 수 반환
 

@@ -813,7 +813,7 @@
 
 ## 자료형 변환
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP1000/week3/images/img_126.png)
 
 - from 정수 to 32비트 부동 소수점
     - 정밀도 손실
@@ -839,7 +839,7 @@ float b = 16777217;  // 표현 불가 → 가장 가까운 짝수인 16777216으
 
 ## 64비트 부동 소수점
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP1000/week3/images/img_127.png)
 
 - 규칙은 동일함
 - 지수 비트, 가수 비트만 늘어남
@@ -850,7 +850,7 @@ float b = 16777217;  // 표현 불가 → 가장 가까운 짝수인 16777216으
 
 ## 16비트 부동 소수점
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP1000/week3/images/img_128.png)
 
 - IEEE 754 Half
 - 규칙 동일함
@@ -858,13 +858,13 @@ float b = 16777217;  // 표현 불가 → 가장 가까운 짝수인 16777216으
 - 정밀도 3
     - Single에서 정밀도 6과 대응
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP1000/week3/images/img_129.png)
 
 - 색상 값을 그래픽 카드에 넣을 때 정규화
 - 255.0f 로 나눠서 정규화
     - 이 수가 16비트 부동소수점
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP1000/week3/images/img_130.png)
 
 - GPU에서 쉐이더 작성할 때
 - 정밀도 3이 보장되면
@@ -873,11 +873,11 @@ float b = 16777217;  // 표현 불가 → 가장 가까운 짝수인 16777216으
     - 두 색의 정도(채도, 단계)가 다름을 확인할 수 있음
 - 16비트 부동 소수점 GPU 하드웨어 연산을 지원해서 빠름
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP1000/week3/images/img_131.png)
 
 ## Single vs Double
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP1000/week3/images/img_132.png)
 
 - CPU가 계산할 때 한 번에 계산할 수 있는 총양의 공간이 정해져있음
 - 이 공간에 몇 개의 매개변수를 넣을 수 있냐로 연산 속도가 달라짐
@@ -893,61 +893,61 @@ float b = 16777217;  // 표현 불가 → 가장 가까운 짝수인 16777216으
 
 ### 덧셈
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP1000/week3/images/img_133.png)
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP1000/week3/images/img_134.png)
 
 - 지수가 작은쪽의 수를 큰 쪽 지수와 동일하게
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP1000/week3/images/img_135.png)
 
 - 가수끼리 덧셈
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP1000/week3/images/img_136.png)
 
 - 정규화된 과학적 표기
 - 그리고 비트패턴으로 변환하면 됨
 
 ### 뺄셈
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP1000/week3/images/img_137.png)
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP1000/week3/images/img_138.png)
 
 - 지수 통일
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP1000/week3/images/img_139.png)
 
 - 가수끼리 뺄셈
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP1000/week3/images/img_140.png)
 
 - 정규화된 과학적 표기
 
 ### 곱셈
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP1000/week3/images/img_141.png)
 
-![img_142.png](images/img_142.png)
+![img_142.png](old_note/COMP1000/week3/images/img_142.png)
 
 - 가수끼리 곱함
 
-![img_143.png](images/img_143.png)
+![img_143.png](old_note/COMP1000/week3/images/img_143.png)
 
 - 지수끼리 더함
 
-![img_144.png](images/img_144.png)
+![img_144.png](old_note/COMP1000/week3/images/img_144.png)
 
 - 이번 케이스는 이미 정규화
 
 ### 나눗셈
 
-![img_145.png](images/img_145.png)
+![img_145.png](old_note/COMP1000/week3/images/img_145.png)
 
 - 곱셈이랑 비슷
 
-![img_146.png](images/img_146.png)
+![img_146.png](old_note/COMP1000/week3/images/img_146.png)
 
-![img_147.png](images/img_147.png)
+![img_147.png](old_note/COMP1000/week3/images/img_147.png)
 
-![img_148.png](images/img_148.png)
+![img_148.png](old_note/COMP1000/week3/images/img_148.png)

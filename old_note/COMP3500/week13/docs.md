@@ -831,31 +831,31 @@ public final class Kruskal {
 
 - 왜 최적이 안 나왔을 까?
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP3500/week13/images/img_126.png)
 
 - BFS에서 순서를 정할 수 없음
 - 먼저 찾은 경로가 최적의 선택지를 지워버림
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP3500/week13/images/img_127.png)
 
 - 가상의 변
     - back edge
 
 ### 가상의 변과 에드몬드-카프
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP3500/week13/images/img_128.png)
 
 - 원래 없는 선이라 용량은 0
 - 대신 유량이 음수일 수 있음
     - 대칭성 개념
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP3500/week13/images/img_129.png)
 
 - back edge 추가하고
     - 용량 0
     - 유량도 0으로 초기화
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP3500/week13/images/img_130.png)
 
 - 원래 변에는 최대 용량을 더하고
 - back edge에는 뺌
@@ -863,55 +863,55 @@ public final class Kruskal {
 - 음수 유량이 적용되어 -2/0
     - back edge는 용량보다 유량이 적어 다음 BFS에서 고려할 수 있음
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP3500/week13/images/img_131.png)
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP3500/week13/images/img_132.png)
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP3500/week13/images/img_133.png)
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP3500/week13/images/img_134.png)
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP3500/week13/images/img_135.png)
 
 - back edge 때문에 경로가 생김
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP3500/week13/images/img_136.png)
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP3500/week13/images/img_137.png)
 
 - 최대 용량은 2
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP3500/week13/images/img_139.png)
 
 - 유량을 흐르게 함
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP3500/week13/images/img_138.png)
 
 - 유량의 대칭성 때문에 from B to C 변이 살아남
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP3500/week13/images/img_140.png)
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP3500/week13/images/img_141.png)
 
 - BFS 하면 더 이상 경로가 없음
 
-![img_142.png](images/img_142.png)
+![img_142.png](old_note/COMP3500/week13/images/img_142.png)
 
 - 마지막으로 최대 유량 구할 때는 back edge는 빼고 계산
 
 ### 에드몬드-카프 정리
 
-![img_143.png](images/img_143.png)
+![img_143.png](old_note/COMP3500/week13/images/img_143.png)
 
 ### 최대 유량 문제의 예
 
-![img_144.png](images/img_144.png)
+![img_144.png](old_note/COMP3500/week13/images/img_144.png)
 
 - 참고
 
 ## 기타 그래프 문제들
 
-![img_145.png](images/img_145.png)
+![img_145.png](old_note/COMP3500/week13/images/img_145.png)
 
 - 여기 문제들 모두 NPC
   - 이를 활용해서 증명해서 알고리듬 문제 품

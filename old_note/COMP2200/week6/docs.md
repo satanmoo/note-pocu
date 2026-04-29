@@ -859,26 +859,26 @@ byte ToBitFlags(bool[] flags)
 ### 메모리 보면...
 
 ![img_125.png](old_note/COMP2200/week6/img_125.png)
-![img_126.png](img_126.png)
+![img_126.png](old_note/COMP2200/week6/img_126.png)
 
 - ivalue로 업데이트하면, 4바이트만 업데이트됨
 
-![img_127.png](img_127.png)
+![img_127.png](old_note/COMP2200/week6/img_127.png)
 
 - result를 구할 때 4바이트까지 읽어서 값을 구함
 
-![img_128.png](img_128.png)
+![img_128.png](old_note/COMP2200/week6/img_128.png)
 
 - 부동소수점 IEEE754
 - 8바이트로 표현됨
 
-![img_129.png](img_129.png)
+![img_129.png](old_note/COMP2200/week6/img_129.png)
 
 - result도 8바이트로 읽어서 출력하면 double값으로 정상 작동
 
 ## 메모리 공유만 위한 공용체의 사용
 
-![img_130.png](img_130.png)
+![img_130.png](old_note/COMP2200/week6/img_130.png)
 
 - 사실 실수하기 좋은 코딩 방식임
 - 차라리 함수로 다른 매개변수(int, double)를 받는게 좋음
@@ -887,36 +887,36 @@ byte ToBitFlags(bool[] flags)
 
 ### switch 문을 이용한 사칙연산 프로그램
 
-![img_131.png](img_131.png)
+![img_131.png](old_note/COMP2200/week6/img_131.png)
 
 - 함수 선언을 할 때, 매개변수의 이름을 생략할 수 있음
 - 컴파일할 때 필요한 것은 함수의 이름, 매개변수의 자료형이 무엇인가, 매개변수의 목록이 몇 개인가?
 - 근데 매개변수명 써주는 것이 좋음
 
-![img_132.png](img_132.png)
+![img_132.png](old_note/COMP2200/week6/img_132.png)
 
 - 사용자의 입력을 받아서 switch문으로 함수를 호출하는 코드
 
 ### switch문 말고 다른 방법이 없을까?
 
-![img_133.png](img_133.png)
+![img_133.png](old_note/COMP2200/week6/img_133.png)
 
 - 함수 선언에서 공통점을 찾아보자
 - 사칙연산은 모두 피연산자가 2개다.
 - 유일하게 다른 점은 함수 이름이다.
 
-![img_134.png](img_134.png)
+![img_134.png](old_note/COMP2200/week6/img_134.png)
 
 - 변하는 피연산자는 `매개변수`로 값을 바꿔서 함수를 호출할 수 있다.
 
-![img_135.png](img_135.png)
+![img_135.png](old_note/COMP2200/week6/img_135.png)
 
 - 함수도 어디에 저장해 둔 뒤 매개변수로 전달하기 가능?
 - 함수를 변수에 저장할 때, 무엇을 저장해야 함수라고 인식할까?
 
 ### 함수 호출 과정에서 함수의 시작 주소는 언제 결정될까?
 
-![img_136.png](img_136.png)
+![img_136.png](old_note/COMP2200/week6/img_136.png)
 
 - 함수 호출 코드에서 직접 함수명을 사용함
 - 함수 호출 코드를 어셈블리어로 변환하면 그 함수의 시작 주소로 점프하는 명령어임
@@ -929,13 +929,13 @@ byte ToBitFlags(bool[] flags)
 
 ### 함수가 종료되고 return할 때 돌아가는 호출자의 주소는 언제 결정될까?
 
-![img_137.png](img_137.png)
+![img_137.png](old_note/COMP2200/week6/img_137.png)
 
 - 실행 도중에 메모리 주소가 바뀌는 경우가 있음
 - 호출된 함수를 반환하고 돌아갈 때 호출자의 주소는 실행 중 변할 수 있음
     - 어떤 함수를 여러 곳에서 호출할 수 있잖아.
 
-![img_138.png](img_138.png)
+![img_138.png](old_note/COMP2200/week6/img_138.png)
 
 - call 이라는 어셈블리어가 실행되면, (리시버)0E21040h로 점프하고, 돌아갈 코드 주소인 00E211AB를 `스택 메모리`에 저장
 - 돌아갈 코드의 주소 값은 실행 도중에 바뀔 수 있다.
@@ -943,7 +943,7 @@ byte ToBitFlags(bool[] flags)
 
 ## 모든 것이 다 메모리 주소
 
-![img_139.png](img_139.png)
+![img_139.png](old_note/COMP2200/week6/img_139.png)
 
 - 모든 어셈블리어 명령어는 그 명령어의 주소가 저장되어있음
 - 함수도 마찬가지로, 함수의 시작 주소가 저장되어있음
@@ -959,25 +959,25 @@ byte ToBitFlags(bool[] flags)
 
 ## 함수를 매개변수로 전달할 때 필요한 것들, 함수 포인터 선언
 
-![img_140.png](img_140.png)
+![img_140.png](old_note/COMP2200/week6/img_140.png)
 
 - 그러면 함수를 매개변수로 전달하려면, 함수 코드의 시작 주소를 넣으면 된다.
 - 이 주소를 저장하는 자료형이 함수 포인터
 
-![img_141.png](img_141.png)
+![img_141.png](old_note/COMP2200/week6/img_141.png)
 
 - 매개변수로 함수의 주소를 넣는거죠
 
 ### 함수의 자료형은 뭐임?
 
-![img_142.png](img_142.png)
-![img_143.png](img_143.png)
-![img_144.png](img_144.png)
+![img_142.png](old_note/COMP2200/week6/img_142.png)
+![img_143.png](old_note/COMP2200/week6/img_143.png)
+![img_144.png](old_note/COMP2200/week6/img_144.png)
 
 - 함수의 자료형이 말이 안 된다.
 - 매개변수 목록, 반환형, 함수의 이름이 다양한데 이를 공통의 통일된 자료형으로 묶기 쉽지않음
 
-![img_145.png](img_145.png)
+![img_145.png](old_note/COMP2200/week6/img_145.png)
 
 - 다시 함수가 어떻게 실행되는지 떠올려보자.
 - 우선 caculate 함수를 호출하면, double 형 2개를 스택에 복사하게된다.
@@ -988,7 +988,7 @@ byte ToBitFlags(bool[] flags)
     - `매개변수로 전달된 함수`의 반환값도 알 수 없다. (반환값을 알아야 resister에 반환값을 자료형에 따라 저장함)
 - 즉 호출자인 calculate와 리시버인 `매개변수로 전달된 함수`사이에 어떤 규약이 필요하다.
 
-![img_146.png](img_146.png)
+![img_146.png](old_note/COMP2200/week6/img_146.png)
 
 - func라는 `매개변수로 전달된 함수`는 컴파일러 입장에서 생뚱맞은 상황
 - 단지 이 `매개변수로 전달된 함수`의 시작 주소만 알고 있음
@@ -999,47 +999,47 @@ byte ToBitFlags(bool[] flags)
     - 컴파일러 입장에서는 "double r = func(op1, op2);" 에서 검사를 할 때 func의 반환값의 자료형을 알아야 검사할 수 있음. double이 아니면 어쩔건데?
     - 내부적으로 반환값이 중요한 이유는, void일 때는 레지스터에 반환값을 저장하지 않아도 되고, int일 때는 레지스터에 반환값을 저장해야함.
 
-![img_147.png](img_147.png)
+![img_147.png](old_note/COMP2200/week6/img_147.png)
 
 - 결론은 함수 포인터에 매개변수 목록, 반환형이 필요하다는 것이다.
 
 ### 올바른 함수 포인터의 선언
 
-![img_148.png](img_148.png)
+![img_148.png](old_note/COMP2200/week6/img_148.png)
 
 - func는 함수 포인터 변수 이름
 - func에 대입할 때 add함수를 대입가능, ()가 없어야함
 - ()가 있는 순간 호출하려는 것
 - 함수 포인터 변수를 매개변수로 사용하면 마찬가지로 괄호 없이 대입
 
-![img_149.png](img_149.png)
+![img_149.png](old_note/COMP2200/week6/img_149.png)
 
 - 함수 포인터 변수의 선언
 - 함수의 시작 주소를 저정하는 변수
 
 ## 함수 포인터 읽는 방법, 오른쪽-왼쪽 규칙(Right-Left Rule)
 
-![img_150.png](img_150.png)
-![img_151.png](img_151.png)
-![img_152.png](img_152.png)
-![img_153.png](img_153.png)
-![img_154.png](img_154.png)
-![img_155.png](img_155.png)
-![img_156.png](img_156.png)
-![img_157.png](img_157.png)
-![img_158.png](img_158.png)
+![img_150.png](old_note/COMP2200/week6/img_150.png)
+![img_151.png](old_note/COMP2200/week6/img_151.png)
+![img_152.png](old_note/COMP2200/week6/img_152.png)
+![img_153.png](old_note/COMP2200/week6/img_153.png)
+![img_154.png](old_note/COMP2200/week6/img_154.png)
+![img_155.png](old_note/COMP2200/week6/img_155.png)
+![img_156.png](old_note/COMP2200/week6/img_156.png)
+![img_157.png](old_note/COMP2200/week6/img_157.png)
+![img_158.png](old_note/COMP2200/week6/img_158.png)
 
 ### 함수 포인터 읽는 방법 예시
 
-![img_159.png](img_159.png)
+![img_159.png](old_note/COMP2200/week6/img_159.png)
 
 ### 이제 함수의 매개변수로 함수를 사용할 수 있다!!
 
-![img_160.png](img_160.png)
+![img_160.png](old_note/COMP2200/week6/img_160.png)
 
 ## 함수 포인터를 배열에 담아보자
 
-![img_161.png](img_161.png)
+![img_161.png](old_note/COMP2200/week6/img_161.png)
 
 - ops는 배열인데
     - 오른쪽 벽에서 부딪힘
@@ -1055,20 +1055,20 @@ byte ToBitFlags(bool[] flags)
 
 ## 함수 포인터 쉽게 읽기
 
-![img_162.png](img_162.png)
-![img_163.png](img_163.png)
+![img_162.png](old_note/COMP2200/week6/img_162.png)
+![img_163.png](old_note/COMP2200/week6/img_163.png)
 
 ### 코드를 분해 하자
 
-![img_164.png](img_164.png)
-![img_165.png](img_165.png)
+![img_164.png](old_note/COMP2200/week6/img_164.png)
+![img_165.png](old_note/COMP2200/week6/img_165.png)
 
 - 반환형은 저런식으로 적지 않음. 분해가 필요함
 
-![img_166.png](img_166.png)
-![img_167.png](img_167.png)
-![img_169.png](img_169.png)
-![img_168.png](img_168.png)
+![img_166.png](old_note/COMP2200/week6/img_166.png)
+![img_167.png](old_note/COMP2200/week6/img_167.png)
+![img_169.png](old_note/COMP2200/week6/img_169.png)
+![img_168.png](old_note/COMP2200/week6/img_168.png)
 
 - bsd_signal은 (int, ?)를 매개변수로 받습니다.
     - 오른쪽으로 갈 때 ( 괄호는 벽이 아님
@@ -1136,59 +1136,59 @@ void default_error_handler(const char* msg)
 }
 ```
 
-![img_170.png](img_170.png)
+![img_170.png](old_note/COMP2200/week6/img_170.png)
 
 - 다른 회사의 라이브러리를 사용하다보면 그 안에서 발생하는 오류를 받아야함. 왜?
 - 라이브러리를 잘 못 사용하는 경우 알려줘야하는게 파는쪽 입장이죠
 
-![img_171.png](img_171.png)
+![img_171.png](old_note/COMP2200/week6/img_171.png)
 
 - 이럴 때 콜백 함수를 사용함
 - 사용자가 라이브러리를 사용하다가 문제가 생기면, 사용자가 함수 포인터로 등록한 콜백 함수를 호출해 에러메시지를 전달함
 - 위 코드가 라이브러리의 일부분이라고 가정하자
 
-![img_172.png](img_172.png)
+![img_172.png](old_note/COMP2200/week6/img_172.png)
 
 - 콜백 함수의 결과를 보고 수정할 수 있음
 
-![img_173.png](img_173.png)
+![img_173.png](old_note/COMP2200/week6/img_173.png)
 
 - 지역변수 handler라는 함수 포인터는, c 스타일 문자열을 매개변수로 받고, 아무런 반환값이 없다.
 - 문제가 생기면 이 함수 포인터 변수값의 콜백함수를 호출해준다.
 
-![img_174.png](img_174.png)
+![img_174.png](old_note/COMP2200/week6/img_174.png)
 
 - log_error은 문제 상황이 발생하면 호출된다.
 - log_error 내부에서 함수 포인터로 넘긴 콜백함수를 호출해줌
 
-![img_175.png](img_175.png)
+![img_175.png](old_note/COMP2200/week6/img_175.png)
 
 - default는 라이브러리 자체에서 제공한 콜백함수
 
-![img_176.png](img_176.png)
+![img_176.png](old_note/COMP2200/week6/img_176.png)
 
 - 라이브러리와 같이 딸려오는 기능
 
-![img_177.png](img_177.png)
+![img_177.png](old_note/COMP2200/week6/img_177.png)
 
 - 콜백함수를 static으로 등록함
 - 등록된 시점과, 콜백함수를 호출함수를 호출하는 시점이 다르기 때문에, 저장해두어야함
 
-![img_178.png](img_178.png)
+![img_178.png](old_note/COMP2200/week6/img_178.png)
 
 - 등록 함수는 간단하죠
 
-![img_179.png](img_179.png)
-![img_180.png](img_180.png)
+![img_179.png](old_note/COMP2200/week6/img_179.png)
+![img_180.png](old_note/COMP2200/week6/img_180.png)
 
 - 콜백함수 등록을 확인하고
 - 콜백함수를 호출함
 
-![img_181.png](img_181.png)
+![img_181.png](old_note/COMP2200/week6/img_181.png)
 
 - 로깅할 때 시, 분, 초 구조체
 
-![img_182.png](img_182.png)
+![img_182.png](old_note/COMP2200/week6/img_182.png)
 
 - 로깅할 때 함수 포인터로 문자열만 전달하는 것은 유용하지 않음
 - 제대로된 오류 처리기는 열거형 변수에 따라서 대응, 오류 메시지의 중요도 구분 등을 해야함
@@ -1265,11 +1265,11 @@ void simple_stderr_print(const char* msg)
 
 ## 배열의 포인터, 퀵 정렬, void 포인터
 
-![img_183.png](img_183.png)
+![img_183.png](old_note/COMP2200/week6/img_183.png)
 
 - 오른쪽/왼쪽 법칙의 적용
 
-![img_184.png](img_184.png)
+![img_184.png](old_note/COMP2200/week6/img_184.png)
 
 - 배열 전체를 모두 가리키는 포인터도 있음
 - pointer to array
@@ -1277,16 +1277,16 @@ void simple_stderr_print(const char* msg)
 
 ### 배열의 포인터
 
-![img_185.png](img_185.png)
-![img_186.png](img_186.png)
-![img_187.png](img_187.png)
+![img_185.png](old_note/COMP2200/week6/img_185.png)
+![img_186.png](old_note/COMP2200/week6/img_186.png)
+![img_187.png](old_note/COMP2200/week6/img_187.png)
 
 - matrix 지역변수는 포인터인데 int 10개 배열을 가리킴
 - *(matrix + 1)의 결과 int 10개 배열
 
 ## 함수 포인터의 예: 퀵 정렬
 
-![img_188.png](img_188.png)
+![img_188.png](old_note/COMP2200/week6/img_188.png)
 
 - O(NlogN)의 시간복잡도를 가지는 정렬 알고리즘
 - 어떤 데이터(구조체 포함)도 정렬할 수 있음
@@ -1294,7 +1294,7 @@ void simple_stderr_print(const char* msg)
 
 ## void 포인터
 
-![img_189.png](img_189.png)
+![img_189.png](old_note/COMP2200/week6/img_189.png)
 
 - 범용적이다.
 - 대입용도
@@ -1305,12 +1305,12 @@ void simple_stderr_print(const char* msg)
 
 ## void*의 예
 
-![img_190.png](img_190.png)
+![img_190.png](old_note/COMP2200/week6/img_190.png)
 
 ## 다른 언어에도 함수 포인터가 있음
 
-![img_191.png](img_191.png)
-![img_192.png](img_192.png)
+![img_191.png](old_note/COMP2200/week6/img_191.png)
+![img_192.png](old_note/COMP2200/week6/img_192.png)
 
 ## 코드보기: 구조체를 사용한 퀵 정렬
 
@@ -1363,7 +1363,7 @@ int compare_age_desc_sex(const void* p0, const void* p1)
 }
 ```
 
-![img_193.png](img_193.png)
+![img_193.png](old_note/COMP2200/week6/img_193.png)
 
 - void*를 매개변수로 받음
 - 퀵 소트를 호출할 때 userdata_t의 크기를 알기 때문에, void*를 사용함
@@ -1375,7 +1375,7 @@ int compare_age_desc_sex(const void* p0, const void* p1)
     - 비교함수는 프로그래머가 만들어서, 4번째 매개변수로 전달
     - 그러면 비교함수에서 void*에서 형변화을 통해서 비교하는 것임!!!
 
-![img_194.png](img_194.png)
+![img_194.png](old_note/COMP2200/week6/img_194.png)
 
 - 형 변환
 - p0, p1에 반드시 userdata_t의 주소가 들어온다는 가정
@@ -1383,12 +1383,12 @@ int compare_age_desc_sex(const void* p0, const void* p1)
   - 애초에 qsort를 호출할 때 void*로 어떤 주소를 넘기는데, 이 주소의 데이터가 user_date_t인지 확신할 수 없음
   - 호출자가 잘 호출해야함!!!
 
-![img_195.png](img_195.png)
-![img_196.png](img_196.png)
+![img_195.png](old_note/COMP2200/week6/img_195.png)
+![img_196.png](old_note/COMP2200/week6/img_196.png)
 
 - i를 변수로 값을 누적했기 때문에, assert에 활용할 수 있다.
 
-![img_197.png](img_197.png)
+![img_197.png](old_note/COMP2200/week6/img_197.png)
 
 - qsort의 매개변수로 요소의 개수, 요소의 데이터 크기를 넘겨야함
 
@@ -1576,34 +1576,34 @@ int compare_uint(const void* p0, const void* p1)
 
 - 비교 속도를 굉장히 빠르게 만드는 정렬
 
-![img_198.png](img_198.png)
+![img_198.png](old_note/COMP2200/week6/img_198.png)
 
 - 추가적으로 sort_key가 필요함
 
-![img_199.png](img_199.png)
+![img_199.png](old_note/COMP2200/week6/img_199.png)
 
 - 비교 함수 하나로 2개의 역할을 할 수 있음
 
-![img_200.png](img_200.png)
+![img_200.png](old_note/COMP2200/week6/img_200.png)
 
 - 간단한데?
 
-![img_201.png](img_201.png)
+![img_201.png](old_note/COMP2200/week6/img_201.png)
 
 - sort_key를 초기화했음
 
-![img_202.png](img_202.png)
-![img_203.png](img_203.png)
+![img_202.png](old_note/COMP2200/week6/img_202.png)
+![img_203.png](old_note/COMP2200/week6/img_203.png)
 
 - 비트 쉬프트해서 or 연산으로 합친다.
 - 상위 16비트는 나이, 하위 16비트는 id
 - 32비트인 unsigned int에 16비트 2개를 넣은거죠
 
-![img_204.png](img_204.png)
+![img_204.png](old_note/COMP2200/week6/img_204.png)
 
 - sort_key의 값에 따라 순서 결정
 
-![img_205.png](img_205.png)
+![img_205.png](old_note/COMP2200/week6/img_205.png)
 
 - 비교하는 함수가 compare_uint임
 - 퀵 소트는 각 요소(radix_user_t)의 시작 메모리 주소에서 처음 나오는 데이터가 unsigned int임
@@ -1616,11 +1616,11 @@ typedef struct {
 } radix_userdata_t;
 ```
 
-![img_206.png](img_206.png)
+![img_206.png](old_note/COMP2200/week6/img_206.png)
 
 - 나이를 뒤집으면 내림차순으로 정렬하는 것과 마찬가지
 
-![img_207.png](img_207.png)
+![img_207.png](old_note/COMP2200/week6/img_207.png)
 
 - sex_t는 2비트만 필요함
 - 열거형 원소가 3개뿐이라서 그럼
@@ -1636,13 +1636,13 @@ typedef enum {
 } sex_t;
 ```
 
-![img_208.png](img_208.png)
+![img_208.png](old_note/COMP2200/week6/img_208.png)
 
 - 성별이 추가되면 어떻게 하나요?
 
-![img_209.png](img_209.png)
+![img_209.png](old_note/COMP2200/week6/img_209.png)
 
 - SEX_UNKNOWN이 enum의 마지막 멤버로 enum의 수를 알 수 있어야함.
 - set_t가 2비트만 필요하다는 가정을 보장
 
-![img_210.png](img_210.png)
+![img_210.png](old_note/COMP2200/week6/img_210.png)

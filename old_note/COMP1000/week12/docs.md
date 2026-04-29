@@ -303,63 +303,63 @@
 
 ## 통계
 
-![img_194.png](img_194.png)
+![img_194.png](old_note/COMP1000/week12/img_194.png)
 
 - 통계학이 컴퓨터 발전에 영향을 받아 함께 발전
 
 ### 통계학
 
-![img_195.png](img_195.png)
+![img_195.png](old_note/COMP1000/week12/img_195.png)
 
 ## 평균
 
-![img_196.png](img_196.png)
+![img_196.png](old_note/COMP1000/week12/img_196.png)
 
 ## 중앙값 (median)
 
-![img_197.png](img_197.png)
+![img_197.png](old_note/COMP1000/week12/img_197.png)
 
 - 나열하는 원소의 개수가 짝수/홀수 여부에 따라 계산이 달라짐
 
 ## 벨 커브(bell curve)
 
-![img_198.png](img_198.png)
+![img_198.png](old_note/COMP1000/week12/img_198.png)
 
 - 종 모양의 연속 확률 분포
 
-![img_199.png](img_199.png)
+![img_199.png](old_note/COMP1000/week12/img_199.png)
 
 ### 벨커브의 용도
 
-![img_200.png](img_200.png)
+![img_200.png](old_note/COMP1000/week12/img_200.png)
 
-![img_201.png](img_201.png)
+![img_201.png](old_note/COMP1000/week12/img_201.png)
 
 - 작동 원리를 이해하기는 어려움
 
 ### 벨 커브의 발견
 
-![img_202.png](img_202.png)
+![img_202.png](old_note/COMP1000/week12/img_202.png)
 
 - 확률을 쉽게 계산하기 위한 도구에서 시작
 
-![img_203.png](img_203.png)
+![img_203.png](old_note/COMP1000/week12/img_203.png)
 
-![img_204.png](img_204.png)
+![img_204.png](old_note/COMP1000/week12/img_204.png)
 
 - 이항 분포에서 시행 횟수(n)이 너무 증가해서 계산이 어려워짐
 
-![img_205.png](img_205.png)
+![img_205.png](old_note/COMP1000/week12/img_205.png)
 
 - 확률변수 x를 입력하면 결과로 확률을 도출하는 "근사 그래프 공식"이 도출됨
 
-![img_206.png](img_206.png)
+![img_206.png](old_note/COMP1000/week12/img_206.png)
 
-![img_207.png](img_207.png)
+![img_207.png](old_note/COMP1000/week12/img_207.png)
 
 - 아직까지 정규 분포와 연관성은..?
 
-![img_208.png](img_208.png)
+![img_208.png](old_note/COMP1000/week12/img_208.png)
 
 - 특정 조건을 만족할 때 정규 분포에 가까워짐
     - p가 0.5
@@ -367,148 +367,148 @@
 
 ### 천문학의 문제
 
-![img_209.png](img_209.png)
+![img_209.png](old_note/COMP1000/week12/img_209.png)
 
 - 측정 결과의 객관성이 필요했음
 
-![img_210.png](img_210.png)
+![img_210.png](old_note/COMP1000/week12/img_210.png)
 
 - 정규 분포가 생기면서 측정 결과의 객관성이 확보됨
 
-![img_211.png](img_211.png)
+![img_211.png](old_note/COMP1000/week12/img_211.png)
 
 - "측정 오차"가 문제임
 
-![img_212.png](img_212.png)
+![img_212.png](old_note/COMP1000/week12/img_212.png)
 
-![img_213.png](img_213.png)
+![img_213.png](old_note/COMP1000/week12/img_213.png)
 
 - 중구난방으로 싸웠다는 이야기
 
 ### 관측 오차를 포함하는 하나의 기준
 
-![img_214.png](img_214.png)
+![img_214.png](old_note/COMP1000/week12/img_214.png)
 
 - 관측 오차를 고려한 기준이 필요함
 
-![img_215.png](img_215.png)
+![img_215.png](old_note/COMP1000/week12/img_215.png)
 
 - 실제 값과 관측값의 차이를 어느정도 허용할 것인가?
 
 ### 오차 곡선
 
-![img_216.png](img_216.png)
+![img_216.png](old_note/COMP1000/week12/img_216.png)
 
 - 왜 "오차 곡선"인가?
 
-![img_217.png](img_217.png)
+![img_217.png](old_note/COMP1000/week12/img_217.png)
 
 - 직선이 아니라 곡선임
 - 수학자들의 증명
 
-![img_218.png](img_218.png)
+![img_218.png](old_note/COMP1000/week12/img_218.png)
 
 - 갈릴레오 형님의 직관
 
-![img_219.png](img_219.png)
+![img_219.png](old_note/COMP1000/week12/img_219.png)
 
 - 그러면 실제 참값은 어떻게 찾음?
 
-![img_220.png](img_220.png)
+![img_220.png](old_note/COMP1000/week12/img_220.png)
 
 - 갈릴레오는 "중앙값"을 참값이라고 추측함
 
-![img_221.png](img_221.png)
+![img_221.png](old_note/COMP1000/week12/img_221.png)
 
-![img_222.png](img_222.png)
+![img_222.png](old_note/COMP1000/week12/img_222.png)
 
 ### 오차 곡선을 찾기 위한 노력들
 
-![img_223.png](img_223.png)
+![img_223.png](old_note/COMP1000/week12/img_223.png)
 
 - 심슨의 오차 곡선
 
-![img_224.png](img_224.png)
+![img_224.png](old_note/COMP1000/week12/img_224.png)
 
 - 곡선이 아니라 당연히 잘못됨
 - 하나의 간단한 시도였음
 
-![img_225.png](img_225.png)
+![img_225.png](old_note/COMP1000/week12/img_225.png)
 
-![img_226.png](img_226.png)
+![img_226.png](old_note/COMP1000/week12/img_226.png)
 
-![img_227.png](img_227.png)
+![img_227.png](old_note/COMP1000/week12/img_227.png)
 
 - 라플라스 오차 곡선
 
-![img_228.png](img_228.png)
+![img_228.png](old_note/COMP1000/week12/img_228.png)
 
 - 미분 불가능해서 욕먹음
 - 참값 주변에서 변화율이 갑자기 확 바뀜
 
-![img_229.png](img_229.png)
+![img_229.png](old_note/COMP1000/week12/img_229.png)
 
 - 이를 보완했지만
 - 연속 곡선이 아니라서 비판 받음
 
-![img_230.png](img_230.png)
+![img_230.png](old_note/COMP1000/week12/img_230.png)
 
-![img_231.png](img_231.png)
+![img_231.png](old_note/COMP1000/week12/img_231.png)
 
-![img_232.png](img_232.png)
+![img_232.png](old_note/COMP1000/week12/img_232.png)
 
-![img_233.png](img_233.png)
+![img_233.png](old_note/COMP1000/week12/img_233.png)
 
-![img_234.png](img_234.png)
+![img_234.png](old_note/COMP1000/week12/img_234.png)
 
-![img_235.png](img_235.png)
+![img_235.png](old_note/COMP1000/week12/img_235.png)
 
-![img_236.png](img_236.png)
+![img_236.png](old_note/COMP1000/week12/img_236.png)
 
 ### 정규 분포의 발견
 
-![img_237.png](img_237.png)
+![img_237.png](old_note/COMP1000/week12/img_237.png)
 
 - 가우스의 최소제곱법
 
-![img_238.png](img_238.png)
+![img_238.png](old_note/COMP1000/week12/img_238.png)
 
-![img_239.png](img_239.png)
+![img_239.png](old_note/COMP1000/week12/img_239.png)
 
 - h(정밀도)값에 따라 곡선의 모양을 바꿀 수 있음
 - x는 확률변수
 
-![img_240.png](img_240.png)
+![img_240.png](old_note/COMP1000/week12/img_240.png)
 
 - 가우스가 사용한 h
     - 시그마를 활용
 
-![img_241.png](img_241.png)
+![img_241.png](old_note/COMP1000/week12/img_241.png)
 
 - 가우스는 참값은 평균에 있다고 못 박음
 - 참값(평균)을 0으로 만들도록 이동시키게 치환함
 
-![img_242.png](img_242.png)
+![img_242.png](old_note/COMP1000/week12/img_242.png)
 
 ### 사회에서 발견한 정규 분포
 
-![img_243.png](img_243.png)
+![img_243.png](old_note/COMP1000/week12/img_243.png)
 
 - BMI를 만든 사람
 
-![img_244.png](img_244.png)
+![img_244.png](old_note/COMP1000/week12/img_244.png)
 
-![img_245.png](img_245.png)
+![img_245.png](old_note/COMP1000/week12/img_245.png)
 
-![img_246.png](img_246.png)
+![img_246.png](old_note/COMP1000/week12/img_246.png)
 
 - "평균인"이라는 개념도 만듬
 - 하지만 자연현상에 어떻게 정규분포가 적용되는지 비판을 받음
     - 수학적 이론인데? 말이 되나?
 
-![img_247.png](img_247.png)
+![img_247.png](old_note/COMP1000/week12/img_247.png)
 
-![img_248.png](img_248.png)
+![img_248.png](old_note/COMP1000/week12/img_248.png)
 
 - 정리하자면
 - "천문학에서 개별적인 관측 오차", "동일 집단에 속한 대상들 간의 차이"는 성질이 비슷함
@@ -520,375 +520,375 @@
     - 즉 동일한 관측 결과라도 평균에서 멀어지는 요인의 구성은 다를 수 있으나, 확실한 것은 평균에서 멀어지는 요인이 많을 수록 평균에서 멀어진다는 것임
 - 이런 내용을 수학적으로 체계화한게 "중심 극한 정리"
 
-![img_249.png](img_249.png)
+![img_249.png](old_note/COMP1000/week12/img_249.png)
 
-![img_250.png](img_250.png)
+![img_250.png](old_note/COMP1000/week12/img_250.png)
 
 - 우연히 좋은 방법(정규 분포)를 찾음
 - 근사치라 결정론적이지는 않음
 
-![img_251.png](img_251.png)
+![img_251.png](old_note/COMP1000/week12/img_251.png)
 
 - "신뢰의 도약"으로 이를 기반으로 사회과학에 적용
 - 거의 대부분(99.99%) 잘 맞음
 
 ## 정규 분포
 
-![img_252.png](img_252.png)
+![img_252.png](old_note/COMP1000/week12/img_252.png)
 
 - "이상적인 그래프"
 - 정규분포에 가까울 수록 이상적임
 
 ### 기댓값
 
-![img_253.png](img_253.png)
+![img_253.png](old_note/COMP1000/week12/img_253.png)
 
 - 평균개념
 
 ## 대표값
 
-![img_254.png](img_254.png)
+![img_254.png](old_note/COMP1000/week12/img_254.png)
 
 - 기댓값 외에도 대표값에 다른 것을 사용할 수 있음
 
-![img_255.png](img_255.png)
+![img_255.png](old_note/COMP1000/week12/img_255.png)
 
-![img_256.png](img_256.png)
+![img_256.png](old_note/COMP1000/week12/img_256.png)
 
 - 정규분포의 너비
 - 평균에서 떨어진 오차가 얼마나 많은가?
 
-![img_257.png](img_257.png)
+![img_257.png](old_note/COMP1000/week12/img_257.png)
 
 - 평균에서 떨어진 값이 얼마나 많은가?
 
-![img_258.png](img_258.png)
+![img_258.png](old_note/COMP1000/week12/img_258.png)
 
 - 시그마의 값에 따라 h값이 결정되고
 - h값에 따라 너비가 결정됨
 
 ## 분산
 
-![img_259.png](img_259.png)
+![img_259.png](old_note/COMP1000/week12/img_259.png)
 
 - 시그마의 제곱
 - 평균에서 떨어진 값이 얼마나 있는가?
 
-![img_260.png](img_260.png)
+![img_260.png](old_note/COMP1000/week12/img_260.png)
 
-![img_261.png](img_261.png)
+![img_261.png](old_note/COMP1000/week12/img_261.png)
 
 - 분산에 띠라 그래프의 모양(너비)가 달라짐
 
 ## 평균만 다른 정규 분포 그래프
 
-![img_262.png](img_262.png)
+![img_262.png](old_note/COMP1000/week12/img_262.png)
 
 - 그래프 좌/우로 평행이동
 
-![img_264.png](img_264.png)
+![img_264.png](old_note/COMP1000/week12/img_264.png)
 
-![img_263.png](img_263.png)
+![img_263.png](old_note/COMP1000/week12/img_263.png)
 
 ## 분산을 계산하기
 
-![img_265.png](img_265.png)
+![img_265.png](old_note/COMP1000/week12/img_265.png)
 
 - 정규 분포 그래프의 모양을 결정하는 것:
     - 평균
     - 분산
 
-![img_266.png](img_266.png)
+![img_266.png](old_note/COMP1000/week12/img_266.png)
 
 - 편차:
     - 관측값과 평균의 차
 
-![img_267.png](img_267.png)
+![img_267.png](old_note/COMP1000/week12/img_267.png)
 
 - 관측값마다 편차가 다름
 - 편차들를 평균내는 개념이 분산임
 
-![img_268.png](img_268.png)
+![img_268.png](old_note/COMP1000/week12/img_268.png)
 
-![img_269.png](img_269.png)
+![img_269.png](old_note/COMP1000/week12/img_269.png)
 
-![img_270.png](img_270.png)
+![img_270.png](old_note/COMP1000/week12/img_270.png)
 
 - 편차의 합은 항상 0임
 - 편차는 음수가 나올 수 있음
 - 따라서 편차의 제곱을 평균으로!
 
-![img_271.png](img_271.png)
+![img_271.png](old_note/COMP1000/week12/img_271.png)
 
-![img_272.png](img_272.png)
+![img_272.png](old_note/COMP1000/week12/img_272.png)
 
 - "평균 제곱 오차"라고 표현하기도 함
 
-![img_273.png](img_273.png)
+![img_273.png](old_note/COMP1000/week12/img_273.png)
 
 ## 분산과 제곱
 
-![img_274.png](img_274.png)
+![img_274.png](old_note/COMP1000/week12/img_274.png)
 
 - 분산값은 너무 큼
 - 계산할 때 제곱을 사용했기 때문
 
 ## 표준 편차
 
-![img_275.png](img_275.png)
+![img_275.png](old_note/COMP1000/week12/img_275.png)
 
 - 분산값에 루트를 씌워서 원래의 차원(단위)로 돌아옴
 - 관측값의 단위랑 가까워짐
 
-![img_276.png](img_276.png)
+![img_276.png](old_note/COMP1000/week12/img_276.png)
 
 - 표준 편차가 "시그마" 정규 분포의 상수값(h)에 사용
 
-![img_277.png](img_277.png)
+![img_277.png](old_note/COMP1000/week12/img_277.png)
 
 ## 정규분포의 상수값에 시그마 제곱으로 계산하는 이유?
 
-![img_278.png](img_278.png)
+![img_278.png](old_note/COMP1000/week12/img_278.png)
 
 - 음수를 없애려면 절대값으로 계산하면 안 되나요?
 
-![img_279.png](img_279.png)
+![img_279.png](old_note/COMP1000/week12/img_279.png)
 
-![img_280.png](img_280.png)
+![img_280.png](old_note/COMP1000/week12/img_280.png)
 
 - 평균에서 멀수록 오차(편차)의 값이 커지게 하기 위해 제곱
 - 직관적으로 생각하면 곡선을 만들기 위함
 
 ## 정규 분포의 확률 밀도 함수
 
-![img_281.png](img_281.png)
+![img_281.png](old_note/COMP1000/week12/img_281.png)
 
-![img_282.png](img_282.png)
+![img_282.png](old_note/COMP1000/week12/img_282.png)
 
-![img_283.png](img_283.png)
+![img_283.png](old_note/COMP1000/week12/img_283.png)
 
-![img_284.png](img_284.png)
+![img_284.png](old_note/COMP1000/week12/img_284.png)
 
 - 정규 분포로 그리면 다른 자료와 비교 분석이 용이함
 
-![img_285.png](img_285.png)
+![img_285.png](old_note/COMP1000/week12/img_285.png)
 
-![img_286.png](img_286.png)
+![img_286.png](old_note/COMP1000/week12/img_286.png)
 
 - 사실 거의 모든 데이터가 정규 분포를 따른다고 가정함
 
-![img_287.png](img_287.png)
+![img_287.png](old_note/COMP1000/week12/img_287.png)
 
 - 원치 않은 이혼 여부를 알 수 있음
 
-![img_288.png](img_288.png)
+![img_288.png](old_note/COMP1000/week12/img_288.png)
 
 - 아웃 라이어가 표현상 감춰짐
 
-![img_289.png](img_289.png)
+![img_289.png](old_note/COMP1000/week12/img_289.png)
 
 - 즉 데이터의 "노이즈"를 제거하기 탁월함!!!
 
-![img_290.png](img_290.png)
+![img_290.png](old_note/COMP1000/week12/img_290.png)
 
 - 대표적인 적용 예가 수능
     - 상대평가
 
 - 참고로 북미에서는 한동안 상대평가가 비인간적이라고 절대평가가 유행했음
 
-![img_291.png](img_291.png)
+![img_291.png](old_note/COMP1000/week12/img_291.png)
 
-![img_292.png](img_292.png)
+![img_292.png](old_note/COMP1000/week12/img_292.png)
 
-![img_293.png](img_293.png)
+![img_293.png](old_note/COMP1000/week12/img_293.png)
 
-![img_294.png](img_294.png)
+![img_294.png](old_note/COMP1000/week12/img_294.png)
 
 - 상위 몇 프로인지 구하기 위해 적분한다는 내용
 
-![img_295.png](img_295.png)
+![img_295.png](old_note/COMP1000/week12/img_295.png)
 
-![img_296.png](img_296.png)
+![img_296.png](old_note/COMP1000/week12/img_296.png)
 
-![img_297.png](img_297.png)
+![img_297.png](old_note/COMP1000/week12/img_297.png)
 
 - 적분 계산이 매번 귀찮음
 
-![img_298.png](img_298.png)
+![img_298.png](old_note/COMP1000/week12/img_298.png)
 
 - "표준 정규 분포"로 쉽게 계산
 
 ## 표준 정규 분포
 
-![img_299.png](img_299.png)
+![img_299.png](old_note/COMP1000/week12/img_299.png)
 
 - 정규 분포의 모양은 평균과 표준편차에 따라 결정된다는 아이디어에서 출발
 
-![img_300.png](img_300.png)
+![img_300.png](old_note/COMP1000/week12/img_300.png)
 
 - 평균과 표준편차의 값에 상관없이 그래프를 정규화하자!
 
-![img_301.png](img_301.png)
+![img_301.png](old_note/COMP1000/week12/img_301.png)
 
-![img_302.png](img_302.png)
+![img_302.png](old_note/COMP1000/week12/img_302.png)
 
 - 정규화 결과 표준 편차를1, 평균을 0으로 만듬!
 
-![img_303.png](img_303.png)
+![img_303.png](old_note/COMP1000/week12/img_303.png)
 
 - 모든 개별값에 표준화 공식을 적용하면 됨
 - 그러면 새로운 정규 분포(표준화된 정규 분포)의 평균은 0, 표준 편차는 1
 
-![img_304.png](img_304.png)
+![img_304.png](old_note/COMP1000/week12/img_304.png)
 
-![img_305.png](img_305.png)
+![img_305.png](old_note/COMP1000/week12/img_305.png)
 
-![img_306.png](img_306.png)
+![img_306.png](old_note/COMP1000/week12/img_306.png)
 
-![img_307.png](img_307.png)
+![img_307.png](old_note/COMP1000/week12/img_307.png)
 
 ## Z-score
 
-![img_308.png](img_308.png)
+![img_308.png](old_note/COMP1000/week12/img_308.png)
 
 - 표준화된 개별값
 - 평균에서 몇 표준편차(몇 시그마)만큼 떨어져 있는지 표현
 
-![img_309.png](img_309.png)
+![img_309.png](old_note/COMP1000/week12/img_309.png)
 
 ## 표준 정규 분포의 의미
 
-![img_310.png](img_310.png)
+![img_310.png](old_note/COMP1000/week12/img_310.png)
 
 - 상위/하위 비율을 구하기 매우 쉬워짐
 
-![img_311.png](img_311.png)
+![img_311.png](old_note/COMP1000/week12/img_311.png)
 
 - 실제 값(x)가 달라도 z값은 유사할 수 있음
 - 집단의 분포를 알기 쉬워짐
 
-![img_312.png](img_312.png)
+![img_312.png](old_note/COMP1000/week12/img_312.png)
 
 ## 68-95-99.7 Rule
 
 ### 68%
 
-![img_313.png](img_313.png)
+![img_313.png](old_note/COMP1000/week12/img_313.png)
 
 - 1 시그마 안의 데이터
 
 ### 95%
 
-![img_314.png](img_314.png)
+![img_314.png](old_note/COMP1000/week12/img_314.png)
 
 - 2 시그마 안의 데이터
 
 ### 99.7%
 
-![img_315.png](img_315.png)
+![img_315.png](old_note/COMP1000/week12/img_315.png)
 
-![img_316.png](img_316.png)
+![img_316.png](old_note/COMP1000/week12/img_316.png)
 
 - 3 시그마 밖의 데이터(개별 걊)은 뭔가 이상한 자료임
 - 어 관측이 잘못됬나?
 
-![img_317.png](img_317.png)
+![img_317.png](old_note/COMP1000/week12/img_317.png)
 
 - 상위 n%를 구할 때 z가 중요함
 
 ## 표준 정규 테이블(z-table)
 
-![img_318.png](img_318.png)
+![img_318.png](old_note/COMP1000/week12/img_318.png)
 
-![img_319.png](img_319.png)
+![img_319.png](old_note/COMP1000/week12/img_319.png)
 
 - 보통 z의 왼쪽 영역 넓이를 계산해줌
 
-![img_320.png](img_320.png)
+![img_320.png](old_note/COMP1000/week12/img_320.png)
 
-![img_321.png](img_321.png)
+![img_321.png](old_note/COMP1000/week12/img_321.png)
 
-![img_322.png](img_322.png)
+![img_322.png](old_note/COMP1000/week12/img_322.png)
 
 - 이런식으로 읽음
 
-![img_323.png](img_323.png)
+![img_323.png](old_note/COMP1000/week12/img_323.png)
 
-![img_324.png](img_324.png)
+![img_324.png](old_note/COMP1000/week12/img_324.png)
 
-![img_325.png](img_325.png)
+![img_325.png](old_note/COMP1000/week12/img_325.png)
 
 ### z = 1 일 때 너비
 
-![img_326.png](img_326.png)
+![img_326.png](old_note/COMP1000/week12/img_326.png)
 
-![img_327.png](img_327.png)
+![img_327.png](old_note/COMP1000/week12/img_327.png)
 
-![img_328.png](img_328.png)
+![img_328.png](old_note/COMP1000/week12/img_328.png)
 
 - 우리가 구하고 싶은 영역은 1시그마 영역
 
-![img_329.png](img_329.png)
+![img_329.png](old_note/COMP1000/week12/img_329.png)
 
-![img_330.png](img_330.png)
+![img_330.png](old_note/COMP1000/week12/img_330.png)
 
 - 대칭을 이용해서 계산
 
-![img_331.png](img_331.png)
+![img_331.png](old_note/COMP1000/week12/img_331.png)
 
-![img_332.png](img_332.png)
+![img_332.png](old_note/COMP1000/week12/img_332.png)
 
 - 이것이 표준 정규 분포와 z-table
 
 ## 대단위 통계
 
-![img_333.png](img_333.png)
+![img_333.png](old_note/COMP1000/week12/img_333.png)
 
 - 표본 수가 적으면 구하기 쉬움
 
-![img_334.png](img_334.png)
+![img_334.png](old_note/COMP1000/week12/img_334.png)
 
 - 근데 대학생 전체의 평균을 구하려면?
 - 비용이 엄청나다
 
 ### 샘플링
 
-![img_335.png](img_335.png)
+![img_335.png](old_note/COMP1000/week12/img_335.png)
 
 - 일부로 평균을 구해서
 - 전체 평균을 추정해보자
 
-![img_336.png](img_336.png)
+![img_336.png](old_note/COMP1000/week12/img_336.png)
 
 - 비가역적인 성질이 있는 경우도 표본 조사(샘플링)해야함
 - 뭔가 몬테카를로 알고리듬이랑 비슷함
 
-![img_337.png](img_337.png)
+![img_337.png](old_note/COMP1000/week12/img_337.png)
 
 - 일부만 조사한 뒤 결과를 토대로 전체를 조사
 - 대표적으로 여론조사가 이런식
 
 ## 모집답/표본집단
 
-![img_338.png](img_338.png)
+![img_338.png](old_note/COMP1000/week12/img_338.png)
 
 - 모/표본
 
 ## 표본 집단을 조사할 때 고려할 점
 
-![img_339.png](img_339.png)
+![img_339.png](old_note/COMP1000/week12/img_339.png)
 
 - 공정한 표본 추출 방법의 대표가 "무작위 표본 추출"
 
-![img_340.png](img_340.png)
+![img_340.png](old_note/COMP1000/week12/img_340.png)
 
 - 모평균과 표본평균은 다름
 
-![img_341.png](img_341.png)
+![img_341.png](old_note/COMP1000/week12/img_341.png)
 
 - 너무 당연하죠?
 
-![img_342.png](img_342.png)
+![img_342.png](old_note/COMP1000/week12/img_342.png)
 
 - 표본 수가 크면 모집단의 통계값과 거의 유사해짐
 - 이거 증명은 생략하고 직관적으로 당연함

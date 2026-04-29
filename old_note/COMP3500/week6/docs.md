@@ -951,17 +951,17 @@ public class Node {
 
 - 두 자식이 같은 색
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP3500/week6/images/img_126.png)
 
 - 루트에서 모든 블랙 높이는 동일
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP3500/week6/images/img_127.png)
 
 - 두 자식이 모두 같은 색이라서 각 자식의 블랙 높이는 모두 동일함
     - 10에서 블랙 높이 == 20에서 블랙 높이
     - 두 자식이 같은 색이니까! 당연하죠?
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP3500/week6/images/img_128.png)
 
 - 두 자식이 같은 색이기 때문에 두 자식의 하위 트리의 블랙 높이도 같음
 - 하위 트리의 블랙 높이가 같아야지
@@ -970,89 +970,89 @@ public class Node {
 
 ### 삽입 case 3
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP3500/week6/images/img_129.png)
 
 - P(부모) 레드, U(부모의 형제) 레드
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP3500/week6/images/img_130.png)
 
 - BST 성질에 따라 삽입
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP3500/week6/images/img_131.png)
 
 - 레드 노드의 자식은 모두 블랙이어야 하지만 만족하지 못함!
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP3500/week6/images/img_132.png)
 
 - 삽입한 녀석을 블랙으로 바꿔보았다
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP3500/week6/images/img_133.png)
 
 - 블랙 높이가 동일해야하는데 만족하지 못함
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP3500/week6/images/img_134.png)
 
 - P를 블랙으로 바꿔보았다
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP3500/week6/images/img_135.png)
 
 - 다시 블랙 높이 성질을 만족하지 못함 ㅠㅠ
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP3500/week6/images/img_136.png)
 
 - 왜 이렇게 고치는 방향이 문제가 있을까?
 - 루트 노드 기준으로 왼쪽 하위 트리에 블랙 노드가 추가될 수 밖에 없기 때문임
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP3500/week6/images/img_137.png)
 
 - 그렇다면 N,P 를 블랙으로 바꾸고 추가적으로 루트 노드 기준 오른쪽 하위 노드에도 블랙 노드를 추가해볼까?
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP3500/week6/images/img_138.png)
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP3500/week6/images/img_139.png)
 
 - 우선 U 를 블랙으로!
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP3500/week6/images/img_140.png)
 
 - 그리고 N 을 블랙으로 바꿨는데, 만족 못함
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP3500/week6/images/img_141.png)
 
 - P를 블랙으로 바꾸면 되네?!
 
-![img_142.png](images/img_142.png)
+![img_142.png](old_note/COMP3500/week6/images/img_142.png)
 
 ### 삽입 case 3 더 일반화!
 
-![img_143.png](images/img_143.png)
+![img_143.png](old_note/COMP3500/week6/images/img_143.png)
 
-![img_144.png](images/img_144.png)
+![img_144.png](old_note/COMP3500/week6/images/img_144.png)
 
 - 재귀적으로 같은 해법을 사용해보죠
 
-![img_145.png](images/img_145.png)
+![img_145.png](old_note/COMP3500/week6/images/img_145.png)
 
 - 새로운 루트(25)기준으로 왼쪽 서브트리의 블랙 높이가 늘어났음
 - 만족 못함 ㅠㅠ
 
-![img_146.png](images/img_146.png)
+![img_146.png](old_note/COMP3500/week6/images/img_146.png)
 
 - N(새로 추가한 노드) 기준 GP(조부모, 15)를 레드로!
 
-![img_147.png](images/img_147.png)
+![img_147.png](old_note/COMP3500/week6/images/img_147.png)
 
 - 이렇게 조부모의 색을 바꾸는 방식이 더 일반화된 방식
 
-![img_148.png](images/img_148.png)
+![img_148.png](old_note/COMP3500/week6/images/img_148.png)
 
 - 이렇게 바꾸면
 
-![img_149.png](images/img_149.png)
+![img_149.png](old_note/COMP3500/week6/images/img_149.png)
 
 - 루트 노드가 레드인데?
 
-![img_150.png](images/img_150.png)
+![img_150.png](old_note/COMP3500/week6/images/img_150.png)
 
 - 이건 삽입 case 1 처럼 해결!
 - 이 케이스를 P == RED, U == RED 로 정리할 수 있음
@@ -1062,26 +1062,26 @@ public class Node {
 
 ### 삽입 case 4
 
-![img_151.png](images/img_151.png)
+![img_151.png](old_note/COMP3500/week6/images/img_151.png)
 
 - 여기서 만약 루트가 레드라면?
 
-![img_152.png](images/img_152.png)
+![img_152.png](old_note/COMP3500/week6/images/img_152.png)
 
 - 루트가 레드가 되면 레드-블랙 트리가 아니죠
 
-![img_153.png](images/img_153.png)
+![img_153.png](old_note/COMP3500/week6/images/img_153.png)
 
 - 그래서 루트를 또 추가했음
 
-![img_154.png](images/img_154.png)
+![img_154.png](old_note/COMP3500/week6/images/img_154.png)
 
 - 레드 노드의 자식이 모두 블랙이라는 조건을 만족하지 못함..
 
 - 여기서 고칠 때 위로 올라가면서 고쳐보자
 - 아래 서브 트리만 봤을 때 이미 레드-블랙 트리의 조건을 만족하잖어
 
-![img_155.png](images/img_155.png)
+![img_155.png](old_note/COMP3500/week6/images/img_155.png)
 
 - 노드 15를 기준으로 위로 재귀적으로 풀어보자
     - 25 P
@@ -1090,152 +1090,152 @@ public class Node {
 - 근데 nil이니까 블랙 노드 아무거나 넣어서 풀어보죠
     - 넣을 때 BST 성질은 만족하게 40정도 값
 
-![img_156.png](images/img_156.png)
+![img_156.png](old_note/COMP3500/week6/images/img_156.png)
 
 - 이 case 일반화하면 P == RED, U == BLACK
 
-![img_157.png](images/img_157.png)
+![img_157.png](old_note/COMP3500/week6/images/img_157.png)
 
 - P를 블랙으로?
 - 안 되죠
 
-![img_158.png](images/img_158.png)
+![img_158.png](old_note/COMP3500/week6/images/img_158.png)
 
-![img_159.png](images/img_159.png)
+![img_159.png](old_note/COMP3500/week6/images/img_159.png)
 
-![img_160.png](images/img_160.png)
+![img_160.png](old_note/COMP3500/week6/images/img_160.png)
 
 - GP 내려가고
 
-![img_161.png](images/img_161.png)
+![img_161.png](old_note/COMP3500/week6/images/img_161.png)
 
 - P 올라가고
 - P 의 오른쪽 서브트리는 BST의 성질에 따라 GP의 왼쪽 서브트리가 됨
 
-![img_162.png](images/img_162.png)
+![img_162.png](old_note/COMP3500/week6/images/img_162.png)
 
-![img_163.png](images/img_163.png)
+![img_163.png](old_note/COMP3500/week6/images/img_163.png)
 
 - 규칙이 많이 깨졌는데요?
 
-![img_164.png](images/img_164.png)
+![img_164.png](old_note/COMP3500/week6/images/img_164.png)
 
 - GP, P 의 색을 서로 교환하면?
 - 와!
 
-![img_165.png](images/img_165.png)
+![img_165.png](old_note/COMP3500/week6/images/img_165.png)
 
 ### 삽입 case 5
 
-![img_166.png](images/img_166.png)
+![img_166.png](old_note/COMP3500/week6/images/img_166.png)
 
 - case 4에서 루트를 레드로 바꾸고, GP를 추가한건 동일함
 - 이번에는 루트 오른쪽에 서브트리에 노드들이 존재함
 
-![img_167.png](images/img_167.png)
+![img_167.png](old_note/COMP3500/week6/images/img_167.png)
 
 - 비슷해 보이니까 회전 기기
 
-![img_168.png](images/img_168.png)
+![img_168.png](old_note/COMP3500/week6/images/img_168.png)
 
-![img_169.png](images/img_169.png)
+![img_169.png](old_note/COMP3500/week6/images/img_169.png)
 
 - 밸런스가 맞기 어려워보이는데?
 
-![img_170.png](images/img_170.png)
+![img_170.png](old_note/COMP3500/week6/images/img_170.png)
 
 - 이거를 트리 안쪽에 있다고 표현함
 - case 4는 트리 바깥쪽에 있다고 표현함
 - 그래서 안쪽 -> 바깥쪽으로 수정
 
-![img_171.png](images/img_171.png)
+![img_171.png](old_note/COMP3500/week6/images/img_171.png)
 
 - 참고로 회전해도 신기하게 BST의 속성은 안 깨짐
     - 당연하죠? BST가 정렬되어있는데, 밀기만 한다고 정렬 순서가 바뀌지는 않으니..
 
-![img_172.png](images/img_172.png)
+![img_172.png](old_note/COMP3500/week6/images/img_172.png)
 
 - 왼쪽으로 회전해서 안쪽 -> 바깥쪽으로 수정
 
-![img_173.png](images/img_173.png)
+![img_173.png](old_note/COMP3500/week6/images/img_173.png)
 
 - 회전할 서브트리가 바깥쪽에 있게 됨
 
-![img_174.png](images/img_174.png)
+![img_174.png](old_note/COMP3500/week6/images/img_174.png)
 
 - 이제 case4 처럼 오른쪽 회전해서 풀면
 
-![img_175.png](images/img_175.png)
+![img_175.png](old_note/COMP3500/week6/images/img_175.png)
 
 - P, GP 교환까지 하면 끝!
 
 ## 레드-블랙 트리의 삽입 전략 정리
 
-![img_176.png](images/img_176.png)
+![img_176.png](old_note/COMP3500/week6/images/img_176.png)
 
 - 레드-블랙 트리의 특성을 고치는 과정에서 재귀적으로 위로 올라가면서 색상 바꾸고, 회전
     - O(logn)
 
-![img_177.png](images/img_177.png)
+![img_177.png](old_note/COMP3500/week6/images/img_177.png)
 
 - 새 노드가 오른쪽에 추가되도 비슷한데, 트리 회전 방향만 달라짐!
 
-![img_178.png](images/img_178.png)
+![img_178.png](old_note/COMP3500/week6/images/img_178.png)
 
-![img_179.png](images/img_179.png)
+![img_179.png](old_note/COMP3500/week6/images/img_179.png)
 
-![img_180.png](images/img_180.png)
+![img_180.png](old_note/COMP3500/week6/images/img_180.png)
 
 - G 부터 다시 재귀적으로
 
-![img_181.png](images/img_181.png)
+![img_181.png](old_note/COMP3500/week6/images/img_181.png)
 
 - N이 안쪽에 있는 경우 왼쪽으로 회전하기
 - 참고로 P, N 하위에 검정색 점은 다른 서브트리(세모)보다 블랙 높이가 1 높다는 걸 의미함
 
-![img_182.png](images/img_182.png)
+![img_182.png](old_note/COMP3500/week6/images/img_182.png)
 
 - N이 바깥쪽에 있으면, 오른쪽으로 회전하고
 - P, GP 색 바꾸기!
 
 ## 레드-블랙 트리 삭제
 
-![img_183.png](images/img_183.png)
+![img_183.png](old_note/COMP3500/week6/images/img_183.png)
 
 - 케이스 6개 + 전처리
 
-![img_184.png](images/img_184.png)
+![img_184.png](old_note/COMP3500/week6/images/img_184.png)
 
 - 교훈만 얻자
 
-![img_185.png](images/img_185.png)
+![img_185.png](old_note/COMP3500/week6/images/img_185.png)
 
-![img_186.png](images/img_186.png)
+![img_186.png](old_note/COMP3500/week6/images/img_186.png)
 
 - 지우려는 값을 찾기
 
-![img_187.png](images/img_187.png)
+![img_187.png](old_note/COMP3500/week6/images/img_187.png)
 
 - 값만 복사
 - 색은 그대로
 
-![img_188.png](images/img_188.png)
+![img_188.png](old_note/COMP3500/week6/images/img_188.png)
 
 - 지울 대상 지우기
 
-![img_189.png](images/img_189.png)
+![img_189.png](old_note/COMP3500/week6/images/img_189.png)
 
 - 자식을 처리해야함
 
-![img_190.png](images/img_190.png)
+![img_190.png](old_note/COMP3500/week6/images/img_190.png)
 
 - 자식을 지운 대상 위치로
 
-![img_191.png](images/img_191.png)
+![img_191.png](old_note/COMP3500/week6/images/img_191.png)
 
 - 레드-블랙 트리의 특성을 유지하기 위한 매커니즘을 공부
 
-![img_192.png](images/img_192.png)
+![img_192.png](old_note/COMP3500/week6/images/img_192.png)
 
 - 값을 복사하고, M을 지우는 시점을 생각
 - BST 에서 노드를 지우는 방법
@@ -1247,7 +1247,7 @@ public class Node {
     - M은 이미 서브 트리의 최소값이거든
     - 왼쪽 자식에는 더 작은 값이 들어가야함
 
-![img_193.png](images/img_193.png)
+![img_193.png](old_note/COMP3500/week6/images/img_193.png)
 
 - M에 위치에 들어갈 노드는
     - 자식이 모두 NIL
@@ -1256,269 +1256,269 @@ public class Node {
 
 ### 삭제 case 1
 
-![img_194.png](images/img_194.png)
+![img_194.png](old_note/COMP3500/week6/images/img_194.png)
 
-![img_195.png](images/img_195.png)
+![img_195.png](old_note/COMP3500/week6/images/img_195.png)
 
 - 지울 노드를 M으로 표기
 
-![img_196.png](images/img_196.png)
+![img_196.png](old_note/COMP3500/week6/images/img_196.png)
 
 - 자식 둘 중 아무거나 C
 
-![img_197.png](images/img_197.png)
+![img_197.png](old_note/COMP3500/week6/images/img_197.png)
 
 - C를 올려서 교체하면 N
 
-![img_198.png](images/img_198.png)
+![img_198.png](old_note/COMP3500/week6/images/img_198.png)
 
 - 레드 + 자식노드가 없는 노드를 지우면 레드-블랙 트리 그대로 유지
 
 ### 삭제 case 2
 
-![img_199.png](images/img_199.png)
+![img_199.png](old_note/COMP3500/week6/images/img_199.png)
 
 - 4랑 8 값 교체
 - 색은 그대로
 
-![img_200.png](images/img_200.png)
+![img_200.png](old_note/COMP3500/week6/images/img_200.png)
 
 - M 노드 지우고
 
-![img_201.png](images/img_201.png)
+![img_201.png](old_note/COMP3500/week6/images/img_201.png)
 
 - C 올라가고, N이 됬음
 
-![img_202.png](images/img_202.png)
+![img_202.png](old_note/COMP3500/week6/images/img_202.png)
 
 - 레드-블랙 트리 성질이 유지됨
 
 ### 삭제 case 3
 
-![img_203.png](images/img_203.png)
+![img_203.png](old_note/COMP3500/week6/images/img_203.png)
 
-![img_204.png](images/img_204.png)
+![img_204.png](old_note/COMP3500/week6/images/img_204.png)
 
-![img_205.png](images/img_205.png)
+![img_205.png](old_note/COMP3500/week6/images/img_205.png)
 
-![img_206.png](images/img_206.png)
+![img_206.png](old_note/COMP3500/week6/images/img_206.png)
 
 - 레드-블랙 트리 성질이 유지됨
 
 ### 이게 왜 괜찮지?
 
-![img_207.png](images/img_207.png)
+![img_207.png](old_note/COMP3500/week6/images/img_207.png)
 
 - 레드를 지워도 아무 문제가 없음
 - 레드 노드의 자식은 유무는 아무 상관이 없음
 
-![img_208.png](images/img_208.png)
+![img_208.png](old_note/COMP3500/week6/images/img_208.png)
 
 - 40 레드 노드를 지우면?
 
-![img_209.png](images/img_209.png)
+![img_209.png](old_note/COMP3500/week6/images/img_209.png)
 
 - 블랙 높이가 바뀔까?
 
-![img_210.png](images/img_210.png)
+![img_210.png](old_note/COMP3500/week6/images/img_210.png)
 
 - 안 바뀌죠
 
 ### MC THE BLACK
 
-![img_211.png](images/img_211.png)
+![img_211.png](old_note/COMP3500/week6/images/img_211.png)
 
-![img_212.png](images/img_212.png)
+![img_212.png](old_note/COMP3500/week6/images/img_212.png)
 
 - M,C 모두 레드일 수는 없죠
     - RBT 규칙
 
-![img_213.png](images/img_213.png)
+![img_213.png](old_note/COMP3500/week6/images/img_213.png)
 
 - M이 블랙, C가 레드인 경우
 
-![img_214.png](images/img_214.png)
+![img_214.png](old_note/COMP3500/week6/images/img_214.png)
 
 - in-order successor 때문에 C의 왼쪽은 NIL
     - C가 최소값이어야함!
 - 그래서 C의 왼쪽 경로 높이는 1
 
-![img_215.png](images/img_215.png)
+![img_215.png](old_note/COMP3500/week6/images/img_215.png)
 
 - 레드 노드의 자식은 모두 블랙이기 때문에
 - 오른쪽(60) 경로는 높이가 2
 
-![img_216.png](images/img_216.png)
+![img_216.png](old_note/COMP3500/week6/images/img_216.png)
 
 - 근데 이럴 수 있나?
 - RBT 규칙에 따라 블랙 높이는 동일해야하는데?
 
-![img_217.png](images/img_217.png)
+![img_217.png](old_note/COMP3500/week6/images/img_217.png)
 
 - C의 자식이 없다는 결론에 도달한다
 - 그래서 M이 블랙, C가 레드인 경우 간단하게 해결 가능
 
-![img_218.png](images/img_218.png)
+![img_218.png](old_note/COMP3500/week6/images/img_218.png)
 
 - C가 M 자리에 올라가고 N이 됨
 
 ### case 4
 
-![img_219.png](images/img_219.png)
+![img_219.png](old_note/COMP3500/week6/images/img_219.png)
 
-![img_220.png](images/img_220.png)
+![img_220.png](old_note/COMP3500/week6/images/img_220.png)
 
 - 교환
 
-![img_221.png](images/img_221.png)
+![img_221.png](old_note/COMP3500/week6/images/img_221.png)
 
 - M 지우기
 
-![img_222.png](images/img_222.png)
+![img_222.png](old_note/COMP3500/week6/images/img_222.png)
 
 - C 를 M으로
 - 이제 N이 됨
 - 45를 블랙으로 바꾸면?
 
-![img_223.png](images/img_223.png)
+![img_223.png](old_note/COMP3500/week6/images/img_223.png)
 
 - 성질 만족함!
 
-![img_224.png](images/img_224.png)
+![img_224.png](old_note/COMP3500/week6/images/img_224.png)
 
 ### case 5
 
-![img_225.png](images/img_225.png)
+![img_225.png](old_note/COMP3500/week6/images/img_225.png)
 
-![img_226.png](images/img_226.png)
+![img_226.png](old_note/COMP3500/week6/images/img_226.png)
 
 - M C THE BLACK
 
-![img_227.png](images/img_227.png)
+![img_227.png](old_note/COMP3500/week6/images/img_227.png)
 
-![img_228.png](images/img_228.png)
+![img_228.png](old_note/COMP3500/week6/images/img_228.png)
 
-![img_229.png](images/img_229.png)
+![img_229.png](old_note/COMP3500/week6/images/img_229.png)
 
-![img_230.png](images/img_230.png)
+![img_230.png](old_note/COMP3500/week6/images/img_230.png)
 
 - 15 노드를 블랙으로 바꿔도 레드-블랙 트리 성립 안 함
 
-![img_231.png](images/img_231.png)
+![img_231.png](old_note/COMP3500/week6/images/img_231.png)
 
 - RBT 성립함
 
-![img_232.png](images/img_232.png)
+![img_232.png](old_note/COMP3500/week6/images/img_232.png)
 
 ### case 6
 
-![img_233.png](images/img_233.png)
+![img_233.png](old_note/COMP3500/week6/images/img_233.png)
 
-![img_234.png](images/img_234.png)
+![img_234.png](old_note/COMP3500/week6/images/img_234.png)
 
-![img_235.png](images/img_235.png)
+![img_235.png](old_note/COMP3500/week6/images/img_235.png)
 
-![img_236.png](images/img_236.png)
+![img_236.png](old_note/COMP3500/week6/images/img_236.png)
 
-![img_237.png](images/img_237.png)
+![img_237.png](old_note/COMP3500/week6/images/img_237.png)
 
 - 오른쪽 블랙 높이가 +1 되버림
 
-![img_238.png](images/img_238.png)
+![img_238.png](old_note/COMP3500/week6/images/img_238.png)
 
 - RBT 성질 만족 못함
 
-![img_239.png](images/img_239.png)
+![img_239.png](old_note/COMP3500/week6/images/img_239.png)
 
-![img_240.png](images/img_240.png)
+![img_240.png](old_note/COMP3500/week6/images/img_240.png)
 
 - 왼쪽이 블랙 높이가 낮으니까 왼쪽으로 회전해보자
 
-![img_241.png](images/img_241.png)
+![img_241.png](old_note/COMP3500/week6/images/img_241.png)
 
 - RBT 성질 만족 못함
 
-![img_242.png](images/img_242.png)
+![img_242.png](old_note/COMP3500/week6/images/img_242.png)
 
 - 색깔 바꾸면 RBT 성질 만족
 
-![img_243.png](images/img_243.png)
+![img_243.png](old_note/COMP3500/week6/images/img_243.png)
 
 ### case 7
 
-![img_244.png](images/img_244.png)
+![img_244.png](old_note/COMP3500/week6/images/img_244.png)
 
-![img_245.png](images/img_245.png)
+![img_245.png](old_note/COMP3500/week6/images/img_245.png)
 
-![img_246.png](images/img_246.png)
+![img_246.png](old_note/COMP3500/week6/images/img_246.png)
 
-![img_247.png](images/img_247.png)
+![img_247.png](old_note/COMP3500/week6/images/img_247.png)
 
 - 오른쪽 높이가 낮으니까 회전을 해보자
 
-![img_248.png](images/img_248.png)
+![img_248.png](old_note/COMP3500/week6/images/img_248.png)
 
 - 방법이 없음
 
-![img_249.png](images/img_249.png)
+![img_249.png](old_note/COMP3500/week6/images/img_249.png)
 
 - 원복
 - 안쪽 모양이 문제
 
-![img_250.png](images/img_250.png)
+![img_250.png](old_note/COMP3500/week6/images/img_250.png)
 
 - 왼쪽으로 회전해보자
 
-![img_251.png](images/img_251.png)
+![img_251.png](old_note/COMP3500/week6/images/img_251.png)
 
-![img_252.png](images/img_252.png)
+![img_252.png](old_note/COMP3500/week6/images/img_252.png)
 
 - 색상을 바꾸고
 
-![img_253.png](images/img_253.png)
+![img_253.png](old_note/COMP3500/week6/images/img_253.png)
 
 - 오른쪽 회전
 
-![img_254.png](images/img_254.png)
+![img_254.png](old_note/COMP3500/week6/images/img_254.png)
 
-![img_255.png](images/img_255.png)
+![img_255.png](old_note/COMP3500/week6/images/img_255.png)
 
 - 색 뒤집어도 OK
 
-![img_256.png](images/img_256.png)
+![img_256.png](old_note/COMP3500/week6/images/img_256.png)
 
 ### case 8
 
-![img_257.png](images/img_257.png)
+![img_257.png](old_note/COMP3500/week6/images/img_257.png)
 
-![img_258.png](images/img_258.png)
+![img_258.png](old_note/COMP3500/week6/images/img_258.png)
 
 ### case 9
 
-![img_259.png](images/img_259.png)
+![img_259.png](old_note/COMP3500/week6/images/img_259.png)
 
 - 루트 삭제
 
-![img_260.png](images/img_260.png)
+![img_260.png](old_note/COMP3500/week6/images/img_260.png)
 
 - 오른쪽 회전이 필요해보임
 
-![img_261.png](images/img_261.png)
+![img_261.png](old_note/COMP3500/week6/images/img_261.png)
 
 - (-1)은 루트노드가 블랙이 아닌 상태
 
-![img_262.png](images/img_262.png)
+![img_262.png](old_note/COMP3500/week6/images/img_262.png)
 
 - 우선 색 바꾸기는 쉬우니깐
 - 15 노드만 잘 조지면?
 
-![img_263.png](images/img_263.png)
+![img_263.png](old_note/COMP3500/week6/images/img_263.png)
 
 - RBT 성립!!
 
-![img_264.png](images/img_264.png)
+![img_264.png](old_note/COMP3500/week6/images/img_264.png)
 
-![img_265.png](images/img_265.png)
+![img_265.png](old_note/COMP3500/week6/images/img_265.png)
 
 - 우리는 뭘 느껴야하는가?
 - 언제 회전하고, 언제 색을 바꾸는지 감을 잡기
@@ -1528,54 +1528,54 @@ public class Node {
 - M,C 모두 블랙이고
 - M 삭제 후, C가 M 위치로 가면서 N이 될 때 동작 시작
 
-![img_266.png](images/img_266.png)
+![img_266.png](old_note/COMP3500/week6/images/img_266.png)
 
 - 재귀적으로 동작
 
-![img_267.png](images/img_267.png)
+![img_267.png](old_note/COMP3500/week6/images/img_267.png)
 
-![img_268.png](images/img_268.png)
+![img_268.png](old_note/COMP3500/week6/images/img_268.png)
 
-![img_269.png](images/img_269.png)
+![img_269.png](old_note/COMP3500/week6/images/img_269.png)
 
-![img_270.png](images/img_270.png)
+![img_270.png](old_note/COMP3500/week6/images/img_270.png)
 
 - 다음 단계인 case3 에서는 SL이 S로
     - 새로운 단계에서는 N 기준으로 다시 명명
 
-![img_271.png](images/img_271.png)
+![img_271.png](old_note/COMP3500/week6/images/img_271.png)
 
 - N이 NIL 인 경우 이런 트리가 생길 수 있음
 - 원래 N자리에 M을 지우고 NIL 이 올라온 경우
 
-![img_272.png](images/img_272.png)
+![img_272.png](old_note/COMP3500/week6/images/img_272.png)
 
-![img_273.png](images/img_273.png)
+![img_273.png](old_note/COMP3500/week6/images/img_273.png)
 
-![img_274.png](images/img_274.png)
+![img_274.png](old_note/COMP3500/week6/images/img_274.png)
 
-![img_275.png](images/img_275.png)
+![img_275.png](old_note/COMP3500/week6/images/img_275.png)
 
-![img_276.png](images/img_276.png)
+![img_276.png](old_note/COMP3500/week6/images/img_276.png)
 
-![img_277.png](images/img_277.png)
+![img_277.png](old_note/COMP3500/week6/images/img_277.png)
 
 - 가상으로 S의 부모의 왼쪽 자식이 N
 
-![img_278.png](images/img_278.png)
+![img_278.png](old_note/COMP3500/week6/images/img_278.png)
 
 - case 6으로 넘어갈 때 SL이 S로 바뀜
 
-![img_279.png](images/img_279.png)
+![img_279.png](old_note/COMP3500/week6/images/img_279.png)
 
-![img_280.png](images/img_280.png)
+![img_280.png](old_note/COMP3500/week6/images/img_280.png)
 
-![img_281.png](images/img_281.png)
+![img_281.png](old_note/COMP3500/week6/images/img_281.png)
 
-![img_282.png](images/img_282.png)
+![img_282.png](old_note/COMP3500/week6/images/img_282.png)
 
 ## 레드-블랙 트리 삭제의 시간 복잡도
 
-![img_283.png](images/img_283.png)
+![img_283.png](old_note/COMP3500/week6/images/img_283.png)
 
 - 재귀적으로 고쳐서 O(logn)

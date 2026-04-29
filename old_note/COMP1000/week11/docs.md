@@ -562,82 +562,82 @@
 
 ### 조건부 확률 예: 자녀 성비 예측하기
 
-![img_126.png](img_126.png)
+![img_126.png](old_note/COMP1000/week11/img_126.png)
 
-![img_127.png](img_127.png)
+![img_127.png](old_note/COMP1000/week11/img_127.png)
 
 - 표본 공간을 제한
 
-![img_128.png](img_128.png)
+![img_128.png](old_note/COMP1000/week11/img_128.png)
 
-![img_129.png](img_129.png)
+![img_129.png](old_note/COMP1000/week11/img_129.png)
 
 - 말장난 같지만 교집합 확률은 1/4
 
-![img_130.png](img_130.png)
+![img_130.png](old_note/COMP1000/week11/img_130.png)
 
 - 최소 한 명은 딸일 확률은 3/4
     - 여사건 이용
 
 ## 독립 사건
 
-![img_131.png](img_131.png)
+![img_131.png](old_note/COMP1000/week11/img_131.png)
 
 - 두 사건이 서로 영향을 주지 않는 경우
 
 ### 독립 사건의 예
 
-![img_132.png](img_132.png)
+![img_132.png](old_note/COMP1000/week11/img_132.png)
 
-![img_133.png](img_133.png)
+![img_133.png](old_note/COMP1000/week11/img_133.png)
 
 - 최상위 비트와 무관하게 홀수는 최하위 비트가 결정
 
-![img_134.png](img_134.png)
+![img_134.png](old_note/COMP1000/week11/img_134.png)
 
-![img_135.png](img_135.png)
+![img_135.png](old_note/COMP1000/week11/img_135.png)
 
 ### 조건부 확률 공식 써보기
 
-![img_136.png](img_136.png)
+![img_136.png](old_note/COMP1000/week11/img_136.png)
 
 - 조건부 확률 공식에서 두 사건이 독립인지 아닌지 판단 가능
 
-![img_137.png](img_137.png)
+![img_137.png](old_note/COMP1000/week11/img_137.png)
 
 - 수식으로 접근해보면
 
 ### 조건부 확률 공식으로 독립 판단하기 예
 
-![img_138.png](img_138.png)
+![img_138.png](old_note/COMP1000/week11/img_138.png)
 
 - 독립사건이 아님을 알 수 있음
 
 ### 독립 판단의 의의
 
-![img_139.png](img_139.png)
+![img_139.png](old_note/COMP1000/week11/img_139.png)
 
 - 연산 최적화 가능
 
 ## 기대값
 
-![img_140.png](img_140.png)
+![img_140.png](old_note/COMP1000/week11/img_140.png)
 
 - 반복적으로 시행할 때 평균적으로 "기대"가능
 
-![img_141.png](img_141.png)
+![img_141.png](old_note/COMP1000/week11/img_141.png)
 
 - 무한히 반복적으로 시행하는 가정
 
-![img_142.png](img_142.png)
+![img_142.png](old_note/COMP1000/week11/img_142.png)
 
 - 값과 확률을 곱하는 개념
 
-![img_143.png](img_143.png)
+![img_143.png](old_note/COMP1000/week11/img_143.png)
 
 - 주사위 2번 던지면 각 사건(쌍)마다 확률이 다름
 
-![img_144.png](img_144.png)
+![img_144.png](old_note/COMP1000/week11/img_144.png)
 
 - 가중 평균
 - 가중 평균을 계산할 때 벡터를 이용해서 계산함
@@ -645,11 +645,11 @@
 
 ### 애매한 경우
 
-![img_145.png](img_145.png)
+![img_145.png](old_note/COMP1000/week11/img_145.png)
 
 - "값"을 어떻게 정의해야하지?
 
-![img_146.png](img_146.png)
+![img_146.png](old_note/COMP1000/week11/img_146.png)
 
 - 이런 것을 도와주는 함수가 있음
 
@@ -657,62 +657,62 @@
 
 - 확률에 사용하는 변수
 
-![img_147.png](img_147.png)
+![img_147.png](old_note/COMP1000/week11/img_147.png)
 
 - 표본 공간에서 실행한 실험의 결과를 실수로 수치화해주는 함수
     - "무작위 실험의 결과를 수치화해주는 함수"
 - 기호 "X"를 많이 사용함
 
-![img_148.png](img_148.png)
+![img_148.png](old_note/COMP1000/week11/img_148.png)
 
 - 앞면이 나오는 횟수를 확룰 변수로 정의
 
-![img_149.png](img_149.png)
+![img_149.png](old_note/COMP1000/week11/img_149.png)
 
-![img_150.png](img_150.png)
+![img_150.png](old_note/COMP1000/week11/img_150.png)
 
 ### 확률 변수의 예: 두 개의 동전 던지기
 
-![img_151.png](img_151.png)
+![img_151.png](old_note/COMP1000/week11/img_151.png)
 
 ## 기댓값 공식
 
-![img_152.png](img_152.png)
+![img_152.png](old_note/COMP1000/week11/img_152.png)
 
 - 그냥 가중 평균 공식
 
-![img_153.png](img_153.png)
+![img_153.png](old_note/COMP1000/week11/img_153.png)
 
 ## 확률 분포
 
-![img_154.png](img_154.png)
+![img_154.png](old_note/COMP1000/week11/img_154.png)
 
 - 각 사건이 일어날 확률은 어떻게 "분포"되어 있는가?
 
-![img_155.png](img_155.png)
+![img_155.png](old_note/COMP1000/week11/img_155.png)
 
 - "분포"라는 단어는 중요함
 
 ### 확률 분포 종류
 
-![img_156.png](img_156.png)
+![img_156.png](old_note/COMP1000/week11/img_156.png)
 
 ## 이산 확률 분포
 
-![img_157.png](img_157.png)
+![img_157.png](old_note/COMP1000/week11/img_157.png)
 
 - 확률 변수가 취할 있는 값이 유한개
     - 쉽게 생각하며 확률 변수가 유한개
 
 ### 이산 확률 분포의 에
 
-![img_158.png](img_158.png)
+![img_158.png](old_note/COMP1000/week11/img_158.png)
 
-![img_159.png](img_159.png)
+![img_159.png](old_note/COMP1000/week11/img_159.png)
 
-![img_160.png](img_160.png)
+![img_160.png](old_note/COMP1000/week11/img_160.png)
 
-![img_161.png](img_161.png)
+![img_161.png](old_note/COMP1000/week11/img_161.png)
 
 - 우왕 분포가 평행하다
 
@@ -720,11 +720,11 @@
 
 - 평평한 분포는 특별한 이름이 있음
 
-![img_162.png](img_162.png)
+![img_162.png](old_note/COMP1000/week11/img_162.png)
 
 - 은근히 중요한 개념
 
-![img_163.png](img_163.png)
+![img_163.png](old_note/COMP1000/week11/img_163.png)
 
 - 이 조건을 만족해야만 하는 개념이 있음
 - 대표적으로 "난수"
@@ -732,40 +732,40 @@
 
 ## 확률 질량 함수
 
-![img_164.png](img_164.png)
+![img_164.png](old_note/COMP1000/week11/img_164.png)
 
 - 확률 변수에 대응하는 확률값을 정의하는 함수
 
-![img_165.png](img_165.png)
+![img_165.png](old_note/COMP1000/week11/img_165.png)
 
 - 논문에서 "pmf"라고 줄여서 표현하면 확률 질량 함수 생각합시다
 
 ### 이산 확률 분포의 기댓값
 
-![img_166.png](img_166.png)
+![img_166.png](old_note/COMP1000/week11/img_166.png)
 
 - 똑같이 가중평균
 - 확률 변수 * 확률 질량 함수의 결과값을 모두 더하자
 
 ## 연속 확률 분포
 
-![img_167.png](img_167.png)
+![img_167.png](old_note/COMP1000/week11/img_167.png)
 
 - 확률 변수가 구간 안의 모든 실수값을 취하는 경우
 
-![img_168.png](img_168.png)
+![img_168.png](old_note/COMP1000/week11/img_168.png)
 
 - 이산 확률 분포처럼 가중 평균의 합으로 구할 수 없음
 
 ### 연속 확률 분포의 모든 확률의 합은 1
 
-![img_169.png](img_169.png)
+![img_169.png](old_note/COMP1000/week11/img_169.png)
 
 - 이 개념은 전체 사건(표본 공간)과 확률의 정의에 따라 당연함
 
 ### 연속 확률 분포의 기댓값
 
-![img_170.png](img_170.png)
+![img_170.png](old_note/COMP1000/week11/img_170.png)
 
 - 적분으로 확률의 합을 구할 수 있음
 - "확률 밀도 함수"라는 표현을 씀
@@ -775,25 +775,25 @@
 
 - pmf/pdf 이산/연속
 
-![img_171.png](img_171.png)
+![img_171.png](old_note/COMP1000/week11/img_171.png)
 
 - "확률 변수 * 확률 밀도 함수"해서 적분
 
 ## 컴퓨터 공학에서 사용하는 확률 분포: 이산 확률 분포
 
-![img_172.png](img_172.png)
+![img_172.png](old_note/COMP1000/week11/img_172.png)
 
 - 기본적으로 이산적임
 
 ## 베르누이 시행
 
-![img_173.png](img_173.png)
+![img_173.png](old_note/COMP1000/week11/img_173.png)
 
 - 우선 "베르누이 분포"를 이해하자
 
 ### 베르누이 분포
 
-![img_174.png](img_174.png)
+![img_174.png](old_note/COMP1000/week11/img_174.png)
 
 - 결과가 오직 bool
     - 이런 시행을 "베르누이 시행"이라고 표현
@@ -803,28 +803,28 @@
 
 ### 베르누이 분포의 확률 변수
 
-![img_175.png](img_175.png)
+![img_175.png](old_note/COMP1000/week11/img_175.png)
 
 - 확률 변수로 표현할 때 1 or 0 값으로 정의하면 직관적임
 - 확률도 표현하기 쉬움(p, 1-p)
 
-![img_176.png](img_176.png)
+![img_176.png](old_note/COMP1000/week11/img_176.png)
 
 ### 베르누이 분포의 예
 
-![img_177.png](img_177.png)
+![img_177.png](old_note/COMP1000/week11/img_177.png)
 
 - 7이면 1, 아니면 0
 
-![img_178.png](img_178.png)
+![img_178.png](old_note/COMP1000/week11/img_178.png)
 
 ### 베르누이 분포 그래프의 예
 
-![img_179.png](img_179.png)
+![img_179.png](old_note/COMP1000/week11/img_179.png)
 
 ## 이항 분포
 
-![img_180.png](img_180.png)
+![img_180.png](old_note/COMP1000/week11/img_180.png)
 
 - 베르누이의 시행을 여러 번 실행하면 "이항 분포"
     - 여기서 몇 번 성공에 대한 확률 분포
@@ -832,50 +832,50 @@
 
 ### 이항 확률 분포의 예
 
-![img_181.png](img_181.png)
+![img_181.png](old_note/COMP1000/week11/img_181.png)
 
 - 몇 번 성공하는지를 확률 변수로 표현
 
-![img_182.png](img_182.png)
+![img_182.png](old_note/COMP1000/week11/img_182.png)
 
 - "이항 확률 변수"
 
-![img_183.png](img_183.png)
+![img_183.png](old_note/COMP1000/week11/img_183.png)
 
 - 1번은 7일 확률을 따르고, 나머지는 아닐 확률을 따르면 됨
 - 근데 순서도 고려해야죠?
 
-![img_184.png](img_184.png)
+![img_184.png](old_note/COMP1000/week11/img_184.png)
 
 - ...
 
-![img_185.png](img_185.png)
+![img_185.png](old_note/COMP1000/week11/img_185.png)
 
 ## 이항 분포의 확률 질량 함수
 
 - 위에서 예를 통해 귀납적으로 확률 질량 함수(확률을 도출하는 함수)를 구해보자
 
-![img_186.png](img_186.png)
+![img_186.png](old_note/COMP1000/week11/img_186.png)
 
 ## 이항 분포의 기댓값
 
-![img_187.png](img_187.png)
+![img_187.png](old_note/COMP1000/week11/img_187.png)
 
 - 확률 변수는 (n번 시도 중 k번 성공)
 - 확률 변수의 확률은 "이항 분포의 확률 질량 함수"로 구함
 
-![img_188.png](img_188.png)
+![img_188.png](old_note/COMP1000/week11/img_188.png)
 
 - 전개해서 쭉 계산해보면 "np"와 동일함
 - 시행횟수 * 베르누이 시행 성공확률
 
 ## 시행 횟수에 따른 이항 분포 그래프 모형
 
-![img_189.png](img_189.png)
+![img_189.png](old_note/COMP1000/week11/img_189.png)
 
 - "n == 10" 만족할 때 이항 분포 그래프
 
-![img_190.png](img_190.png)
+![img_190.png](old_note/COMP1000/week11/img_190.png)
 
 - 어어 그래프 모양이?
     - 뭔가 대칭같음
@@ -885,18 +885,18 @@
 
 ### p 값이 0.5일 때 이항 분포 그래프
 
-![img_191.png](img_191.png)
+![img_191.png](old_note/COMP1000/week11/img_191.png)
 
 ### p 값이 0.9일 때 이항 분포 그래프
 
-![img_192.png](img_192.png)
+![img_192.png](old_note/COMP1000/week11/img_192.png)
 
 - 실험 수
 - 베르누이 시행의 성공 확률
 - 이 2가지가 그래프 모형에 영향을 주지만
 - 결정적인 것은 실험(시행)수
 
-![img_193.png](img_193.png)
+![img_193.png](old_note/COMP1000/week11/img_193.png)
 
 - 점점 연속 확률 분포에 가까워 짐
 

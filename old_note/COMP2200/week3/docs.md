@@ -640,11 +640,11 @@ int* p = nums;
 
 ![img_124.png](old_note/COMP2200/week3/img_124.png)
 ![img_125.png](old_note/COMP2200/week3/img_125.png)
-![img_126.png](img_126.png)
-![img_127.png](img_127.png)
-![img_128.png](img_128.png)
-![img_129.png](img_129.png)
-![img_130.png](img_130.png)
+![img_126.png](old_note/COMP2200/week3/img_126.png)
+![img_127.png](old_note/COMP2200/week3/img_127.png)
+![img_128.png](old_note/COMP2200/week3/img_128.png)
+![img_129.png](old_note/COMP2200/week3/img_129.png)
+![img_130.png](old_note/COMP2200/week3/img_130.png)
 
 - *p++에서 ++이 *보다 연산자 우선순위가 높다.
 - 평가와 증감 실행은 다르다는 것을 기억하자
@@ -655,11 +655,11 @@ int* p = nums;
 
 ### *++p
 
-![img_131.png](img_131.png)
-![img_132.png](img_132.png)
-![img_133.png](img_133.png)
-![img_134.png](img_134.png)
-![img_135.png](img_135.png)
+![img_131.png](old_note/COMP2200/week3/img_131.png)
+![img_132.png](old_note/COMP2200/week3/img_132.png)
+![img_133.png](old_note/COMP2200/week3/img_133.png)
+![img_134.png](old_note/COMP2200/week3/img_134.png)
+![img_135.png](old_note/COMP2200/week3/img_135.png)
 
 - 연산자 우선순위가 동일해서 오른쪽에서 왼쪽으로 결합법칙 적용
 - 그리고 어차피 왼쪽에서 오른쪽으로 결합법칙 적용해보면 말이 안 되는 것을 알 수 있음
@@ -673,11 +673,11 @@ int* p = nums;
 
 ### ++*p
 
-![img_136.png](img_136.png)
-![img_137.png](img_137.png)
-![img_138.png](img_138.png)
-![img_139.png](img_139.png)
-![img_140.png](img_140.png)
+![img_136.png](old_note/COMP2200/week3/img_136.png)
+![img_137.png](old_note/COMP2200/week3/img_137.png)
+![img_138.png](old_note/COMP2200/week3/img_138.png)
+![img_139.png](old_note/COMP2200/week3/img_139.png)
+![img_140.png](old_note/COMP2200/week3/img_140.png)
 
 - 연산자 우선순위가 동일하다. 따라서 오른쪽에서 왼쪽으로 결합법칙 적용
 - ++(*p)와 동일하다.
@@ -689,11 +689,11 @@ int* p = nums;
 
 ### (*p)++
 
-![img_141.png](img_141.png)
-![img_142.png](img_142.png)
-![img_143.png](img_143.png)
-![img_144.png](img_144.png)
-![img_145.png](img_145.png)
+![img_141.png](old_note/COMP2200/week3/img_141.png)
+![img_142.png](old_note/COMP2200/week3/img_142.png)
+![img_143.png](old_note/COMP2200/week3/img_143.png)
+![img_144.png](old_note/COMP2200/week3/img_144.png)
+![img_145.png](old_note/COMP2200/week3/img_145.png)
 
 - 괄호가 있으니 명백하다. 만세!
 - 우선 역참조로 0x104의 134에 접근한다.
@@ -704,49 +704,49 @@ int* p = nums;
 
 ## 동일한 우선순위를 갖는 연산자들
 
-![img_146.png](img_146.png)
+![img_146.png](old_note/COMP2200/week3/img_146.png)
 
 - 동일한 우선순위를 가지는 연사자들이 여려개 있다.
   - 이 때 어떤 것들은 오른쪽 -> 왼쪽 결합/ 어떤 것들은 왼쪽 -> 오른쪽 결합..?
 - 말이 안 되죠..?
 
-![img_147.png](img_147.png)
+![img_147.png](old_note/COMP2200/week3/img_147.png)
 
 - 결론은 괄호를 쓰자!
 
 ## 조금 더 빠른 배열의 요소 더하기 함수
 
-![img_148.png](img_148.png)
+![img_148.png](old_note/COMP2200/week3/img_148.png)
 
 - int* p에 매개변수로 받은 주소값(배열의 첫번째 주소)을 대입하면 장점이 뭘까?
   - 함수의 지역변수 p에 주소값을 이것 저것 바꿀 수 있다.
   - nums이라는 배열 변수는 상수니까 못 바꾸죠?
 
-![img_149.png](img_149.png)
+![img_149.png](old_note/COMP2200/week3/img_149.png)
 
 - 배열은 첫주소 + 요소 위치까지 오프셋을 계산해서 접근함
 - 포인터는 이미 다음 요소 주소까지 가있어서 그대로 참조!
 
 ## 왜 *p++이 더 빠르죠?
 
-![img_150.png](img_150.png)
-![img_151.png](img_151.png)
+![img_150.png](old_note/COMP2200/week3/img_150.png)
+![img_151.png](old_note/COMP2200/week3/img_151.png)
 
 - 배열 변수는 쓰는 경우
 
-![img_152.png](img_152.png)
+![img_152.png](old_note/COMP2200/week3/img_152.png)
 
 - 포인터를 쓰는 경우
 
-![img_153.png](img_153.png)
+![img_153.png](old_note/COMP2200/week3/img_153.png)
 
 ## 포인터의 const
 
-![img_154.png](img_154.png)
-![img_155.png](img_155.png)
-![img_156.png](img_156.png)
-![img_157.png](img_157.png)
-![img_158.png](img_158.png)
+![img_154.png](old_note/COMP2200/week3/img_154.png)
+![img_155.png](old_note/COMP2200/week3/img_155.png)
+![img_156.png](old_note/COMP2200/week3/img_156.png)
+![img_157.png](old_note/COMP2200/week3/img_157.png)
+![img_158.png](old_note/COMP2200/week3/img_158.png)
 
 - 지역변수 포인터의 값을 바꿔도 문제가 없다.
 - 하지만 포인터를 역참조해서 원본인 id값을 바꾸는 것은 문제가 매우매우 많다.
@@ -755,21 +755,21 @@ int* p = nums;
 
 ## 주소를 보호하는 const
 
-![img_159.png](img_159.png)
-![img_160.png](img_160.png)
+![img_159.png](old_note/COMP2200/week3/img_159.png)
+![img_160.png](old_note/COMP2200/week3/img_160.png)
 
 - 포인터 변수에 const를 붙이면 포인터 변수의 메모리 주소값을 바꿀 수 없다.
 
-![img_161.png](img_161.png)
-![img_162.png](img_162.png)
+![img_161.png](old_note/COMP2200/week3/img_161.png)
+![img_162.png](old_note/COMP2200/week3/img_162.png)
 
-![img_163.png](img_163.png)
-![img_164.png](img_164.png)
+![img_163.png](old_note/COMP2200/week3/img_163.png)
+![img_164.png](old_note/COMP2200/week3/img_164.png)
 
 - 포인터 변수는 오른쪽에서 왼쪽으로 읽는다.
 - p is a const pointer to int
 
-![img_165.png](img_165.png)
+![img_165.png](old_note/COMP2200/week3/img_165.png)
 
 - const라서 생성과 동시에 초기화 해야한다.
 - 초기화 이후 다른 값으로 변경할 수 없다.
@@ -780,9 +780,9 @@ int* p = nums;
 
 ## 값을 보호하는 const를 가리키는 포인터
 
-![img_166.png](img_166.png)
-![img_167.png](img_167.png)
-![img_168.png](img_168.png)
+![img_166.png](old_note/COMP2200/week3/img_166.png)
+![img_167.png](old_note/COMP2200/week3/img_167.png)
+![img_168.png](old_note/COMP2200/week3/img_168.png)
 
 - 방법이 2가지임!
 - const int* p
@@ -791,8 +791,8 @@ int* p = nums;
 
 ## 두 const의 정리와 예
 
-![img_169.png](img_169.png)
-![img_170.png](img_170.png)
+![img_169.png](old_note/COMP2200/week3/img_169.png)
+![img_170.png](old_note/COMP2200/week3/img_170.png)
 
 - char* const p는 p라는 char 포인터 변수 값(주소)를 바꿀 수 없다.
   - 하지만 p가 가리키는 값은 바꿀 수 있다.
@@ -801,23 +801,23 @@ int* p = nums;
 
 ## 주소와 값 모두 지키는 const
 
-![img_171.png](img_171.png)
+![img_171.png](old_note/COMP2200/week3/img_171.png)
 
 - 초기화 된 후 절대 바뀌지 않는 변수에 유용하다.
   - 전역변수, 구조체 멤버 변수
 
 ## const 포인터 읽는 방법 정리
 
-![img_172.png](img_172.png)
+![img_172.png](old_note/COMP2200/week3/img_172.png)
 
 - 오른쪽에서 왼쪽으로 읽자
 - 정말 꾸르팁
 
 ## const는 절대 제거하지 말자
 
-![img_173.png](img_173.png)
-![img_174.png](img_174.png)
-![img_175.png](img_175.png)
+![img_173.png](old_note/COMP2200/week3/img_173.png)
+![img_174.png](old_note/COMP2200/week3/img_174.png)
+![img_175.png](old_note/COMP2200/week3/img_175.png)
 
 - 만행을 저지르지 말자
 - 최대한 const는 붙이자.
@@ -825,43 +825,43 @@ int* p = nums;
 
 ## 포인터의 용도
 
-![img_176.png](img_176.png)
+![img_176.png](old_note/COMP2200/week3/img_176.png)
 
 - 큰 데이터를 함수의 매개변수로 전달할 때
 
-![img_177.png](img_177.png)
+![img_177.png](old_note/COMP2200/week3/img_177.png)
 
 - 반환 값이 둘 이상일 때
 
-![img_178.png](img_178.png)
+![img_178.png](old_note/COMP2200/week3/img_178.png)
 
 - 동적 메모리 할당
   - 데이터 크기를 컴파일 도중에 알 수 없다.
   - 프로그램 실행 수명보다 짧은 시간 동안만 사용
 
-![img_179.png](img_179.png)
+![img_179.png](old_note/COMP2200/week3/img_179.png)
 
 - 데이터 구조를 구현할 때
 - 하드웨어의 메모리에 직접 접근
 
 ## 포인터의 배열
 
-![img_180.png](img_180.png)
+![img_180.png](old_note/COMP2200/week3/img_180.png)
 
 - 포인터도 변수니까, 배열에 저장할 수 있다.
 - 근데 배열 선언 방법이?
 
-![img_181.png](img_181.png)
+![img_181.png](old_note/COMP2200/week3/img_181.png)
 
 - 배열의 배열
 
-![img_182.png](img_182.png)
+![img_182.png](old_note/COMP2200/week3/img_182.png)
 
 - 바깥쪽 배열이 행, 안쪽이 열
 - 각 행마다 열의 길이가 달라질 수 있다.
 
-![img_183.png](img_183.png)
-![img_184.png](img_184.png)
+![img_183.png](old_note/COMP2200/week3/img_183.png)
+![img_184.png](old_note/COMP2200/week3/img_184.png)
 
 - 원소마다 포인터가 저장되어 있음. 이 포인터가 각각의 배열을 가리킨다.
 - 한 덩어리 아님
@@ -870,14 +870,14 @@ int* p = nums;
 
 ### 배열의 배열을 함수에서 사용하기 
 
-![img_185.png](img_185.png)
+![img_185.png](old_note/COMP2200/week3/img_185.png)
 
 - 함수 내부에서 접근하려면, 각 내부 배열의 길이를 알려주는 size_t 배열이 필요하다.
 
 ### 2차원 배열을 함수에서 사용하기
 
-![img_186.png](img_186.png)
-![img_187.png](img_187.png)
+![img_186.png](old_note/COMP2200/week3/img_186.png)
+![img_187.png](old_note/COMP2200/week3/img_187.png)
 
 - 오류가 난다.
 - 2차원 배열은 모두 한 덩어리임(1차원 배열과 동일함) 그래서 매개변수에 전달할 때 1행 1열의 주소를 넘긴다.
@@ -889,8 +889,8 @@ int* p = nums;
   - 컴파일러에게 열의 길이를 알려줘서 1행을 건너뛸 때 (열의 길이 * 자료형 크기) 계산으로 행을 건너뛸 수 있다.
 
 
-![img_188.png](img_188.png)
-![img_189.png](img_189.png)
+![img_188.png](old_note/COMP2200/week3/img_188.png)
+![img_189.png](old_note/COMP2200/week3/img_189.png)
 
 - 매개변수로 전달할 때 행 수는 전달해줘야한다. 컴파일러는 열의 길이만 알 수 있다.
   - 열의 길이로 1행을 넘어갈 때 몇 offset씩 건너뛰어야 하는지 계산할 수 있을 뿐, 총 행이 몇 개인지는 모른다.

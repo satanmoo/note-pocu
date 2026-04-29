@@ -763,57 +763,57 @@ public class Program {
 - 중국인의 나머지 정리 활용
 - 두 개의 식으로 나눠서 증명
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP3500/week5/images/img_126.png)
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP3500/week5/images/img_127.png)
 
 - 첫번째 식 부터 증명
 - 이 식도 두가지 케이스로 나눠서 증명
 - 두 케이스 모두 참임을 증명
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP3500/week5/images/img_128.png)
 
 - 첫번째 식의 첫번째 케이스
 - 합동식의 성질 + m이 p의 배수임을 활용
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP3500/week5/images/img_129.png)
 
 - 첫번째 식의 두번째 케이스
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP3500/week5/images/img_130.png)
 
 - 치환
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP3500/week5/images/img_131.png)
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP3500/week5/images/img_132.png)
 
 - 페르마의 소정리
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP3500/week5/images/img_133.png)
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP3500/week5/images/img_134.png)
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP3500/week5/images/img_135.png)
 
 - ed - 1 = h(p - 1)
 - 만족하게 뽑았기 때문
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP3500/week5/images/img_136.png)
 
 - 두번째 식의 첫번째 케이스
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP3500/week5/images/img_137.png)
 
 - 두번째 식의 두번째 케이스
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP3500/week5/images/img_138.png)
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP3500/week5/images/img_139.png)
 
 ## 증명에서 배울 것
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP3500/week5/images/img_140.png)
 
 - 소수의 힘
     - 정수론
@@ -822,7 +822,7 @@ public class Program {
 
 ## 대칭 키 vs 비대칭 키 암호화의 속도
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP3500/week5/images/img_141.png)
 
 - 매우 큰 소수를 쓰기 때문에 long long 타입 이런걸로 안 됨 ㅋㅋ
 - 성능 때문에 용도가 다름

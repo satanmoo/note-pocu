@@ -975,29 +975,29 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 
 - 2D 배열처럼 많이 씀
 
-![img_126.png](img_126.png)
+![img_126.png](old_note/COMP2200/week9/img_126.png)
 
 - 2차원 배열이 이중 포인터와 비슷함
 
 ## char** argv
 
-![img_127.png](img_127.png)
+![img_127.png](old_note/COMP2200/week9/img_127.png)
 
 - 명령줄 인자도 이중 포인터로 되있음
 - 문자열의 배열
 
 ## 포인터 변수 교체하기 swap
 
-![img_128.png](img_128.png)
+![img_128.png](old_note/COMP2200/week9/img_128.png)
 
 - 지역변수 n1, n2에 p, q의 주소값 복사
 
-![img_129.png](img_129.png)
+![img_129.png](old_note/COMP2200/week9/img_129.png)
 
 - 포인터 변수 tmp에 n1이 가리키는 주소에 있는 값 대입
 - n1은 0x108 주소값을 가짐, 0x108 주소에 있는 값은 0x100
 
-![img_130.png](img_130.png)
+![img_130.png](old_note/COMP2200/week9/img_130.png)
 
 - n1이 가리키는 주소에 n2가 가리키는 주소에 있는 값을 대입
 - n1은 0x108 주소값을 가짐, 0x108 주소에 있는 값은 0x104
@@ -1005,7 +1005,7 @@ free(lines);    // realloc으로 할당했기 때문에 free 필요함
 - n2는 0x10C 주소값을 가짐, 0x10C 주소에 있는 값은 0x104
 - 0x108 주소에 0x104를 저장
 
-![img_131.png](img_131.png)
+![img_131.png](old_note/COMP2200/week9/img_131.png)
 
 - n2가 가리키는 주소에 tmp가 가리키는 주소에 있는 값을 대입
 - n2는 q의 주소, 0x10c 값을 가짐,

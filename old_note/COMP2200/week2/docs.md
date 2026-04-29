@@ -121,7 +121,7 @@
 
 ### 기본 자료형 변수는 스택 메모리를 차지한다.
 
-![img_179.png](img_179.png)
+![img_179.png](old_note/COMP2200/week2/img_179.png)
 
 - new 없이 할당: 스택메모리
     - 컴파일러는 함수 내부의 지역 변수를 몇 개, 타입은 뭔지 정보를 모두 알기 때문에 함수를 호출할 때 몇 바이트가 필요한지 안다.
@@ -191,7 +191,7 @@
 
 #### [00011021 ~ 00011024]
 
-![img_180.png](img_180.png)
+![img_180.png](old_note/COMP2200/week2/img_180.png)
 
 - dword ptr [esp],ecx
     - ecx에 들어있는 값 1을 esp 주소에 넣음
@@ -301,7 +301,7 @@
 
 #### [00011064] ret
 
-![img_181.png](img_181.png)
+![img_181.png](old_note/COMP2200/week2/img_181.png)
 
 - return을 하면 스택 프레임에서 pop을 하고, 저장된 명령어 주소로 점프하고 실행한다.
     - esp에 저장된 주소(0001102D)로 점프
@@ -400,7 +400,7 @@
 - sizeof(배열)에서 배열의 크기를 반환하려면, 배열의 모든 요소가 스택 메모리에 복사되어 전달되야한다.
 - 그리고 호출되는 함수가 스택에 복사된 모든 `배열의 원소의 크기`(자료형으로 알 수 있음)를 정확히 알아야함
 
-![img_182.png](img_182.png)
+![img_182.png](old_note/COMP2200/week2/img_182.png)
 
 - 근데 이러면 말이 안 되는게... 같은 함수가 매개변수에 따라서 사용하는 스택의 크기가 다름
     - 다를 수 없음!!
@@ -850,61 +850,61 @@ arr2 = { 0, }; /* 불가능 */
 
 ### 분할 컴파일: 여러 개 파일과 C 빌드
 
-![img_126.png](img_126.png)
-![img_127.png](img_127.png)
+![img_126.png](old_note/COMP2200/week2/img_126.png)
+![img_127.png](old_note/COMP2200/week2/img_127.png)
 
 - .c파일은 `개별적으로` 컴파일(전처리 ,컴파일, 어셈블) 된다.
 - 오브젝트 파일을 한 번에 링킹한다.
 
 ## 다른 파일에 있는 전역 변수 사용 시 문제점
 
-![img_128.png](img_128.png)
+![img_128.png](old_note/COMP2200/week2/img_128.png)
 
 - 전역 변수가 선언되지 않았다고, 컴파일 에러 발생
 
-![img_129.png](img_129.png)
+![img_129.png](old_note/COMP2200/week2/img_129.png)
 
 - 컴파일 단계에서 .c 파일을 개별적으로 컴파일하기 때문에, 다른 .c파일의 전역변수는 모릅니다.
 
-![img_183.png](img_183.png)
+![img_183.png](old_note/COMP2200/week2/img_183.png)
 
 - 이렇게 전역 변수를 각각 파일에 모두 적어주면...?
 
-![img_131.png](img_131.png)
-![img_132.png](img_132.png)
+![img_131.png](old_note/COMP2200/week2/img_131.png)
+![img_132.png](old_note/COMP2200/week2/img_132.png)
 
 - 컴파일은 되는데, 링커가 오류 발생
 - 전역 변수가 중복되어서
 
-![img_133.png](img_133.png)
+![img_133.png](old_note/COMP2200/week2/img_133.png)
 
 - 구멍을 남겨야한다.
 
 ## extern 키워드: 구멍 남길태니 컴파일 가능
 
-![img_134.png](img_134.png)
+![img_134.png](old_note/COMP2200/week2/img_134.png)
 
 - 어쨋던 monster_repo.c에 있는 g_mob_count를 사용한다는 의미
 - monster_repo.h, main.c는 외부 파일인데 여기서 사용할 수 있죠?
 
-![img_135.png](img_135.png)
+![img_135.png](old_note/COMP2200/week2/img_135.png)
 
 - extern 키워드는 오히려 사용하는 곳에서 키워드 쓰고 사용한다.
 - 컴파일러에게 알려주는 거임!!! 이 변수는 다른 파일에 있어요 라고
 
 ### 아니 그러면 어떤 변수가 있는지 extern 붙은 변수 찾으려고 다 뒤져야함?
 
-![img_136.png](img_136.png)
-![img_137.png](img_137.png)
-![img_138.png](img_138.png)
+![img_136.png](old_note/COMP2200/week2/img_136.png)
+![img_137.png](old_note/COMP2200/week2/img_137.png)
+![img_138.png](old_note/COMP2200/week2/img_138.png)
 
 - 그래도 되긴하는데 굳이...?
 - 헤더파일에 넣으면, 헤더파일로 다른 모든 곳에서 사용할 수 있게 하는 거임
 - c파일에 넣는건 그 파일 안에서만 쓰게 하는 것
     - 위의 예에서는 monster_repo.c에 썼는데, 다른 곳에서 다썼음
 
-![img_139.png](img_139.png)
-![img_140.png](img_140.png)
+![img_139.png](old_note/COMP2200/week2/img_139.png)
+![img_140.png](old_note/COMP2200/week2/img_140.png)
 
 - 이렇게 헤더에 extern 키워드 안 붙이고 변수 선언 + 대입하면?
 - 전처리 단계에서 복붙하잖아
@@ -912,7 +912,7 @@ arr2 = { 0, }; /* 불가능 */
 - 근데 링커 오류 발생
 - 전역변수가 중복되잖음
 
-![img_141.png](img_141.png)
+![img_141.png](old_note/COMP2200/week2/img_141.png)
 
 - 함수는 자동으로 extern
 - { 안 열고 ;로 끝나쥬
@@ -921,18 +921,18 @@ arr2 = { 0, }; /* 불가능 */
 
 ## 전역 변수의 문제, static 키워드
 
-![img_142.png](img_142.png)
+![img_142.png](old_note/COMP2200/week2/img_142.png)
 
 - 전역 변수는 파일 안에 포함되는 것이라서, 프로그래밍이 실행되는 동안 계속 메모리에 살아있음
 - 내 파일에서만 쓰려면 static
 
-![img_143.png](img_143.png)
+![img_143.png](old_note/COMP2200/week2/img_143.png)
 
 - static 키워드를 붙이면, extern해도 링킹할 때 오류가 발생함
 - 컴파일은 됩니다. (extern은 컴파일러에게 이 변수는 다른 파일에 있어요 라고 알려주는 것)
 - 결국 extern 키워드가 붙은 변수를 사용하려고 해도, static 키워드가 붙은 변수는 링커가 찾지 못함
 
-![img_144.png](img_144.png)
+![img_144.png](old_note/COMP2200/week2/img_144.png)
 
 - 전역 변수에 접근하지 못하게 하는 법
 - 실행 동안 메모리에 있음
@@ -940,16 +940,16 @@ arr2 = { 0, }; /* 불가능 */
 
 ### static 키워드의 또다른 예: 지역변수에 static 키워드?
 
-![img_145.png](img_145.png)
-![img_146.png](img_146.png)
-![img_147.png](img_147.png)
+![img_145.png](old_note/COMP2200/week2/img_145.png)
+![img_146.png](old_note/COMP2200/week2/img_146.png)
+![img_147.png](old_note/COMP2200/week2/img_147.png)
 
 - add_moster()을 세번 호출했다
 - 지역변수는 함수가 끝나면 사라지는데, static 키워드를 붙이면 사라지지 않음
 - 그래서 3으로 값이 변경되었음
 - 엥 초기화도 여러번 하니까 1아닌가?
 
-![img_148.png](img_148.png)
+![img_148.png](old_note/COMP2200/week2/img_148.png)
 
 - 전역 변수처럼 데이터 섹션에 생성됨(스택 X)
 - 하지만 범위가 함수 안으로 제한됨
@@ -958,7 +958,7 @@ arr2 = { 0, }; /* 불가능 */
 
 ### 함수에서 static 키워드
 
-![img_149.png](img_149.png)
+![img_149.png](old_note/COMP2200/week2/img_149.png)
 
 - 함수도 static 키워드를 붙일 수 있음
 - 당연히 static 함수의 원형은 다른 곳에서 사용할 의도가 아니니까 헤더 파일에 들어가지 않죠?
@@ -966,7 +966,7 @@ arr2 = { 0, }; /* 불가능 */
 
 ## .c와 .h 파일 정리, 순환 헤더 인클루드와 해결법
 
-![img_150.png](img_150.png)
+![img_150.png](old_note/COMP2200/week2/img_150.png)
 
 - 헤더 파일에는 선언만 넣자
     - 전역 변수 extern 선언
@@ -979,9 +979,9 @@ arr2 = { 0, }; /* 불가능 */
 
 ### 순환 헤더 include
 
-![img_151.png](img_151.png)
-![img_152.png](img_152.png)
-![img_153.png](img_153.png)
+![img_151.png](old_note/COMP2200/week2/img_151.png)
+![img_152.png](old_note/COMP2200/week2/img_152.png)
+![img_153.png](old_note/COMP2200/week2/img_153.png)
 
 - 순환 복붙으로 계속 복붙...ㅋㅋㅋ
 - 컴파일러가 보다 못해 멈춰 줌
@@ -989,17 +989,17 @@ arr2 = { 0, }; /* 불가능 */
 
 ### 순환 헤더 해결법
 
-![img_154.png](img_154.png)
-![img_155.png](img_155.png)
-![img_156.png](img_156.png)
+![img_154.png](old_note/COMP2200/week2/img_154.png)
+![img_155.png](old_note/COMP2200/week2/img_155.png)
+![img_156.png](old_note/COMP2200/week2/img_156.png)
 
 - 업계 표준
 - 다양한 전처리기 지시문을 활용해보자
 
 ## 인클루드 가드 작동법
 
-![img_157.png](img_157.png)
-![img_158.png](img_158.png)
+![img_157.png](old_note/COMP2200/week2/img_157.png)
+![img_158.png](old_note/COMP2200/week2/img_158.png)
 
 - 전처리기 지시문은 코드를 컴파일하기 전에 전처리기가 처리함
 - 전처리기가 어떤 상수를 넣어서 컴파일러가 컴파일할 때 이 상수로 판단을 함
@@ -1007,72 +1007,72 @@ arr2 = { 0, }; /* 불가능 */
 
 ## 인클루드 가드 예제
 
-![img_159.png](img_159.png)
-![img_160.png](img_160.png)
-![img_161.png](img_161.png)
-![img_162.png](img_162.png)
+![img_159.png](old_note/COMP2200/week2/img_159.png)
+![img_160.png](old_note/COMP2200/week2/img_160.png)
+![img_161.png](old_note/COMP2200/week2/img_161.png)
+![img_162.png](old_note/COMP2200/week2/img_162.png)
 
 - ifndef, endif 때고 그 사이의 코드를 넣어줌
 
-![img_163.png](img_163.png)
+![img_163.png](old_note/COMP2200/week2/img_163.png)
 
 - #define A_H는 a.h를 인클루드 했다는 것을 나타냄
 - 다음 줄(#include "b.h")을 전처리기가 읽죠.
 
-![img_164.png](img_164.png)
+![img_164.png](old_note/COMP2200/week2/img_164.png)
 
 - 또 고대로 b.h에서 복붙, #include "b.h"은 지워지죵
 
-![img_165.png](img_165.png)
+![img_165.png](old_note/COMP2200/week2/img_165.png)
 
 - 다시 한 줄씩 읽는당.
 
-![img_166.png](img_166.png)
+![img_166.png](old_note/COMP2200/week2/img_166.png)
 
 - 가드 안(#ifndef~#endif) 코드 복붙
 
-![img_167.png](img_167.png)
+![img_167.png](old_note/COMP2200/week2/img_167.png)
 
 - #define B_H는 b.h를 인클루드 했다는 것을 나타냄
 - 다음 줄은 #include "a.h"를 읽는다.
 
-![img_168.png](img_168.png)
+![img_168.png](old_note/COMP2200/week2/img_168.png)
 
 - a.h 인클루드함 복붙!
 
-![img_169.png](img_169.png)
-![img_170.png](img_170.png)
+![img_169.png](old_note/COMP2200/week2/img_169.png)
+![img_170.png](old_note/COMP2200/week2/img_170.png)
 
 - #define A_H는 이미 정의되어 있으니까, 가드 안(#ifndef A_H~#endif) 코드는 복붙하지 않음
 
-![img_171.png](img_171.png)
+![img_171.png](old_note/COMP2200/week2/img_171.png)
 
 - 걍 싹 날림
 - #ifndef A_H, #endif는 원래 지우고, 그 안의 내용을 복붙하냐마냐의 문제죠?
 
-![img_172.png](img_172.png)
+![img_172.png](old_note/COMP2200/week2/img_172.png)
 
 - 와 끝!
 
-![img_173.png](img_173.png)
+![img_173.png](old_note/COMP2200/week2/img_173.png)
 
 - 그리고 컴파일
 
-![img_174.png](img_174.png)
+![img_174.png](old_note/COMP2200/week2/img_174.png)
 
 - 일단 무지성으로 인클루드 가드 ㄱㄱ
 
 ### #pragma once?
 
-![img_175.png](img_175.png)
+![img_175.png](old_note/COMP2200/week2/img_175.png)
 
 - C 표준 아니라서 일단 ㄴㄴ C++에서 ㄱㄱ
 
 ## C 컴파일러의 종류와 특징
 
-![img_176.png](img_176.png)
-![img_177.png](img_177.png)
-![img_178.png](img_178.png)
+![img_176.png](old_note/COMP2200/week2/img_176.png)
+![img_177.png](old_note/COMP2200/week2/img_177.png)
+![img_178.png](old_note/COMP2200/week2/img_178.png)
 
 
 

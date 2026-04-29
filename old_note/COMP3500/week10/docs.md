@@ -654,38 +654,38 @@ public class Item {
 
 ![img_125.png](old_note/COMP3500/week10/images/img_125.png)
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP3500/week10/images/img_126.png)
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP3500/week10/images/img_127.png)
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP3500/week10/images/img_128.png)
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP3500/week10/images/img_129.png)
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP3500/week10/images/img_130.png)
 
 - 왜?
 
 ### 인터벌 스케쥴링 증명
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP3500/week10/images/img_131.png)
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP3500/week10/images/img_132.png)
 
 - 그리디 알고리듬의 정의에 따라서 종료 시간이 빠른 것을 선택함
     - 따라서 o(k+1)보다 먼저 끝나는 g(k+1)이 존재함
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP3500/week10/images/img_133.png)
 
 - 남은 공간 때문에 g(k+1)이 최적일 수 밖에 없음
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP3500/week10/images/img_134.png)
 
 - 그리디가 최적이 아니라고 한 가정이 모순
 
 ### 인터벌 스케쥴링 의사 코드
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP3500/week10/images/img_135.png)
 
 ```java
 import java.time.LocalTime;
@@ -752,14 +752,14 @@ public class Program {
 
 ## 그리디 접근법으로 풀 수 있는 문제
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP3500/week10/images/img_136.png)
 
 ## 허프만 코딩 개론
 
 - 허프만 코딩은 거의 매일 사용함
 - zip 파일을 다운로드 받을 때 마다
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP3500/week10/images/img_137.png)
 
 - 웹 사이트를 방문할 때 마다 알아서 zip 파일을 받음
     - 웹 서버에서 컨텐츠를 gzip(압축 포맷)으로 압축해 전송하고 브라우저는 이를 압축 해제해서 보여줌
@@ -772,7 +772,7 @@ public class Program {
 
 ## 데이터 압축
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP3500/week10/images/img_138.png)
 
 - 정의:
     - 원본 데이터보다 적은 비트 수로 데이터를 표현하는 방법
@@ -794,13 +794,13 @@ public class Program {
 
 ### 압축 알고리듬 종류
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP3500/week10/images/img_139.png)
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP3500/week10/images/img_140.png)
 
 - 이들을 분류할 수 있는데, 어떤 속성으로 분류하면 좋을까?
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP3500/week10/images/img_141.png)
 
 - 손실/무손실
 
@@ -808,11 +808,11 @@ public class Program {
     - 음질이 좀 떨어져도, 화질이 좀 떨어져도 사람이 느끼기에 별 차이 없으면 괜찮지?
     - 인간에 대한 이해가 중요한 알고리듬
 
-![img_142.png](images/img_142.png)
+![img_142.png](old_note/COMP3500/week10/images/img_142.png)
 
 ## 양자화(quantization)
 
-![img_143.png](images/img_143.png)
+![img_143.png](old_note/COMP3500/week10/images/img_143.png)
 
 - 원본 데이터는 아날로그
     - 연속적인 데이터라 컴퓨터로 표현할 수 없음
@@ -825,7 +825,7 @@ public class Program {
             - 높이 0부터 가로 라인의 개수 == 표현하는 개수
         - 음원 파일로 치면 고음질에서 저음질 포맷으로 변환
 
-![img_144.png](images/img_144.png)
+![img_144.png](old_note/COMP3500/week10/images/img_144.png)
 
 - 24비트 색상:
     - R,G,B 각각 8비트
@@ -840,7 +840,7 @@ public class Program {
         - 따라서 픽셀 하나당 16개 경우를 나타내면 된다.
         - 4비트가 필요함
 
-![img_145.png](images/img_145.png)
+![img_145.png](old_note/COMP3500/week10/images/img_145.png)
 
 - 위의 고양이 사진보다 화질 차이가 덜 느껴지는 이유:
     - 고양이 사진은 비슷한 색상을 기준으로 압축
@@ -854,7 +854,7 @@ public class Program {
         - 이런 알고리듬을 DCT(Discrete Cosine Transform)
             - 궁금하면 찾아보기
 
-![img_146.png](images/img_146.png)
+![img_146.png](old_note/COMP3500/week10/images/img_146.png)
 
 - DXT1 기법 궁금하면 찾아보세요
     - 참고로 그래픽 카드에서 자체적으로 지원함
@@ -885,73 +885,73 @@ public class Program {
 
 ## 문자열 전송하기
 
-![img_147.png](images/img_147.png)
+![img_147.png](old_note/COMP3500/week10/images/img_147.png)
 
 - 어떻게 문자열을 이진수로 표현하지?
 
-![img_148.png](images/img_148.png)
+![img_148.png](old_note/COMP3500/week10/images/img_148.png)
 
 - 인코딩이 필요합니다
 
 - 그렇다면 아스키로 인코딩한다고 가정하에 이 데이터를 전송하기 위해서는 몇 비트 필요할까?
     - 아스키 말고도 UTF-8 등 다른 방식이 있음
 
-![img_149.png](images/img_149.png)
+![img_149.png](old_note/COMP3500/week10/images/img_149.png)
 
 - 아스키 인코딩이면 문자 하나에 1바이트(8비트)가 필요함
 
-![img_150.png](images/img_150.png)
+![img_150.png](old_note/COMP3500/week10/images/img_150.png)
 
 - 네트워크 전송 속도는 느리기 때문에 비트 수를 줄여보자
 
 ### 팔레트를 사용한 압축
 
-![img_151.png](images/img_151.png)
+![img_151.png](old_note/COMP3500/week10/images/img_151.png)
 
-![img_152.png](images/img_152.png)
+![img_152.png](old_note/COMP3500/week10/images/img_152.png)
 
 - 사용하는 문자를 팔레트로 등록해보자
 - 총 4개만 사용하네? 2비트면 충분
 
-![img_153.png](images/img_153.png)
+![img_153.png](old_note/COMP3500/week10/images/img_153.png)
 
 - 팔레트 만들고
 
-![img_154.png](images/img_154.png)
+![img_154.png](old_note/COMP3500/week10/images/img_154.png)
 
 - lookup table을 참고해 값으로 치환하면 됨
 
-![img_155.png](images/img_155.png)
+![img_155.png](old_note/COMP3500/week10/images/img_155.png)
 
 - 총 20비트로 1/4로 줄어들었음
 
 - 이제 여기서 좀 더 줄여보자
 
-![img_156.png](images/img_156.png)
+![img_156.png](old_note/COMP3500/week10/images/img_156.png)
 
-![img_157.png](images/img_157.png)
+![img_157.png](old_note/COMP3500/week10/images/img_157.png)
 
 - leading zero를 제거해보자
 
-![img_158.png](images/img_158.png)
+![img_158.png](old_note/COMP3500/week10/images/img_158.png)
 
-![img_159.png](images/img_159.png)
+![img_159.png](old_note/COMP3500/week10/images/img_159.png)
 
 - leading zero를 모두 제거했을 때 디코딩
 
-![img_160.png](images/img_160.png)
+![img_160.png](old_note/COMP3500/week10/images/img_160.png)
 
-![img_161.png](images/img_161.png)
+![img_161.png](old_note/COMP3500/week10/images/img_161.png)
 
 - 디코딩이 불가능함
 
-![img_162.png](images/img_162.png)
+![img_162.png](old_note/COMP3500/week10/images/img_162.png)
 
 - 이런 문제를 허프만 코딩으로 해결할 수 있음!
 
 ## 허프만 코딩
 
-![img_163.png](images/img_163.png)
+![img_163.png](old_note/COMP3500/week10/images/img_163.png)
 
 - 정의:
     - 입력 문자들에 적합한 가변 부호(code)를 선택하는 알고리듬
@@ -963,22 +963,22 @@ public class Program {
             - 문자에 대해서 서로 다른 접두어 코드
         - 참고로 위에서 leading zero를 제거하는 방식은 접두어가 겹쳤음
 
-![img_164.png](images/img_164.png)
+![img_164.png](old_note/COMP3500/week10/images/img_164.png)
 
 - 최적의 의미는?
 
-![img_165.png](images/img_165.png)
+![img_165.png](old_note/COMP3500/week10/images/img_165.png)
 
 - 그리디의 최적!
 
-![img_166.png](images/img_166.png)
+![img_166.png](old_note/COMP3500/week10/images/img_166.png)
 
 - 자주 등장하는 문자의 코드의 비트 수를 적게 할당해 전체 비트 수를 줄이는 목적을 달성
     - 참고로 많은 압축 알고리듬이 이런 매커니즘(개념)을 사용함
 
 ### 허프만 트리
 
-![img_167.png](images/img_167.png)
+![img_167.png](old_note/COMP3500/week10/images/img_167.png)
 
 - 이진 트리의 일종
     - 이진 탐색 트리는 아님
@@ -987,60 +987,60 @@ public class Program {
 - 문자는 리프 노드에 위치
 - 빈도가 높은 문자일수록 루트에 가까움
 
-![img_168.png](images/img_168.png)
+![img_168.png](old_note/COMP3500/week10/images/img_168.png)
 
 - 빈도의 오름차순으로 정렬한 표를 통해 허프만 트리를 만들어 보자
 
 #### 1. 빈도가 가장 낮은 두 행(문자-빈도)를 선택
 
-![img_169.png](images/img_169.png)
+![img_169.png](old_note/COMP3500/week10/images/img_169.png)
 
 #### 2. 두 문자가 리프가 되도록 트리를 만듦
 
-![img_170.png](images/img_170.png)
+![img_170.png](old_note/COMP3500/week10/images/img_170.png)
 
 - 문자는 리프에 위치하게 하고
 - 부모 노드에는 두 문자의 빈도를 합한 값을 적음
 
 #### 3. 만든 트리를 다시 표에 넣고 재정렬
 
-![img_171.png](images/img_171.png)
+![img_171.png](old_note/COMP3500/week10/images/img_171.png)
 
 #### 4. 모두 트리로 합쳐질 때 까지 반복
 
-![img_172.png](images/img_172.png)
+![img_172.png](old_note/COMP3500/week10/images/img_172.png)
 
-![img_173.png](images/img_173.png)
+![img_173.png](old_note/COMP3500/week10/images/img_173.png)
 
-![img_174.png](images/img_174.png)
+![img_174.png](old_note/COMP3500/week10/images/img_174.png)
 
-![img_175.png](images/img_175.png)
+![img_175.png](old_note/COMP3500/week10/images/img_175.png)
 
 - 참고로 원래 표에 넣을 때 이미 정렬된 배열에 넣는 개념이라서 시간 복잡도 O(N)
     - 개념적으로 우선 순위 큐랑 동일함
 
-![img_176.png](images/img_176.png)
+![img_176.png](old_note/COMP3500/week10/images/img_176.png)
 
-![img_177.png](images/img_177.png)
+![img_177.png](old_note/COMP3500/week10/images/img_177.png)
 
-![img_178.png](images/img_178.png)
+![img_178.png](old_note/COMP3500/week10/images/img_178.png)
 
 - 비트 패턴을 위해 규칙을 적용하자
     - 0, 1
 
-![img_179.png](images/img_179.png)
+![img_179.png](old_note/COMP3500/week10/images/img_179.png)
 
 #### 허프만 트리에서 인코딩 하기
 
-![img_180.png](images/img_180.png)
+![img_180.png](old_note/COMP3500/week10/images/img_180.png)
 
-![img_181.png](images/img_181.png)
+![img_181.png](old_note/COMP3500/week10/images/img_181.png)
 
-![img_182.png](images/img_182.png)
+![img_182.png](old_note/COMP3500/week10/images/img_182.png)
 
-![img_183.png](images/img_183.png)
+![img_183.png](old_note/COMP3500/week10/images/img_183.png)
 
-![img_184.png](images/img_184.png)
+![img_184.png](old_note/COMP3500/week10/images/img_184.png)
 
 - 어떤 문자열의 비트도 다른 문자열의 prefix가 되지 않음!
 
@@ -1127,7 +1127,7 @@ m: 5
 
 ### 허프만 디코딩
 
-![img_185.png](images/img_185.png)
+![img_185.png](old_note/COMP3500/week10/images/img_185.png)
 
 - 인코딩 된 메시지는 비트로 구성됨
     - 복습 퀴즈의 예시로 치면:
@@ -1140,19 +1140,19 @@ m: 5
 - 디코딩 하기 위한 전제조건:
     - 인코딩에 사용한 허프만 트리를 알고 있어야함!
 
-![img_186.png](images/img_186.png)
+![img_186.png](old_note/COMP3500/week10/images/img_186.png)
 
-![img_187.png](images/img_187.png)
+![img_187.png](old_note/COMP3500/week10/images/img_187.png)
 
-![img_188.png](images/img_188.png)
+![img_188.png](old_note/COMP3500/week10/images/img_188.png)
 
-![img_189.png](images/img_189.png)
+![img_189.png](old_note/COMP3500/week10/images/img_189.png)
 
 #### 허프만 트리는 어떻게 전달하나?
 
-![img_190.png](images/img_190.png)
+![img_190.png](old_note/COMP3500/week10/images/img_190.png)
 
-![img_191.png](images/img_191.png)
+![img_191.png](old_note/COMP3500/week10/images/img_191.png)
 
 - 왼쪽이 0인지 오른쪽이 0인지 규칙은 공유해야함
 
@@ -1165,13 +1165,13 @@ m: 5
 > 수 있습니다.
 
 
-![img_192.png](images/img_192.png)
+![img_192.png](old_note/COMP3500/week10/images/img_192.png)
 
 - zip 파일이 확실하게 용량을 줄이지 않고, 거의 못 줄일 때 도 있는게 그리디 알고리듬이라서 global 최적이 아닐 수 있음을 보여준다.
 
 ### 허프만 디코딩 복습 퀴즈
 
-![img_193.png](images/img_193.png)
+![img_193.png](old_note/COMP3500/week10/images/img_193.png)
 
 - 위에 제시된 허프만 트리를 사용해 '00011010001010011110101011101111'를 디코딩하면 어떤 메시지가 되나요?
 

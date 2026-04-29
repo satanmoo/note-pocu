@@ -793,24 +793,24 @@ unsigned/signed를 정할 때 제약이 생긴다.
 - 이런 코드 작성 ㄴㄴ해
 -
 
-![img_126.png](img_126.png)
-![img_127.png](img_127.png)
+![img_126.png](old_note/COMP2200/week1/img_126.png)
+![img_127.png](old_note/COMP2200/week1/img_127.png)
 
 - = 연산자도 마찬가지임!
 
 ## 연산자 우선 순위와 평가 순서
 
-![img_128.png](img_128.png)
+![img_128.png](old_note/COMP2200/week1/img_128.png)
 
 - 평가 순서와 연산자 우선 순위는 아무런 상관이 없다
     - 각 함수는 sequence point가 아니다!
 
-![img_129.png](img_129.png)
-![img_130.png](img_130.png)
+![img_129.png](old_note/COMP2200/week1/img_129.png)
+![img_130.png](old_note/COMP2200/week1/img_130.png)
 
 - unspecified behavior
 
-![img_131.png](img_131.png)
+![img_131.png](old_note/COMP2200/week1/img_131.png)
 
 ## 평가 순서를 강제하는 연산자
 
@@ -819,20 +819,20 @@ unsigned/signed를 정할 때 제약이 생긴다.
 - 평가와 실행은 다른 개념이다.
     - 전위 연산자는 실행 후 평가된다.
 
-![img_132.png](img_132.png)
-![img_133.png](img_133.png)
-![img_134.png](img_134.png)
-![img_135.png](img_135.png)
+![img_132.png](old_note/COMP2200/week1/img_132.png)
+![img_133.png](old_note/COMP2200/week1/img_133.png)
+![img_134.png](old_note/COMP2200/week1/img_134.png)
+![img_135.png](old_note/COMP2200/week1/img_135.png)
 
 ## 다른 예시
 
-![img_136.png](img_136.png)
+![img_136.png](old_note/COMP2200/week1/img_136.png)
 
 - 후위 연산자는 평가 후 실행된다.
     - 따라서 i는 0으로 평가된 후 후위 연산자가 실행되 i값은 1로 바뀐다.
 - ||의 왼쪽이 거짓이기 때문에 ||의 오른쪽도 평가 및 실행한다.
 
-![img_137.png](img_137.png)
+![img_137.png](old_note/COMP2200/week1/img_137.png)
 
 - &&도 sequence point다
 - 왼쪽 식부터 평가 및 실행한다.
@@ -840,27 +840,27 @@ unsigned/signed를 정할 때 제약이 생긴다.
 - &&의 왼쪽이 참이기 때문에 &&의 오른쪽도 평가 및 실행한다.
 - 전위 연산자는 실행 후 평가된다. 따라서 k값이 1이 된 후 평가가 된다.
 
-![img_138.png](img_138.png)
+![img_138.png](old_note/COMP2200/week1/img_138.png)
 
 ## short-circuit
 
-![img_139.png](img_139.png)
+![img_139.png](old_note/COMP2200/week1/img_139.png)
 
 ## 정리
 
-![img_140.png](img_140.png)
+![img_140.png](old_note/COMP2200/week1/img_140.png)
 
 - 한 줄에 있는 피연산자들의 평가 순서는 기본적으로 보장되지 않는다!
 
 ## 범위(scope) 개요
 
-![img_156.png](img_156.png)
+![img_156.png](old_note/COMP2200/week1/img_156.png)
 
 - 4가지 범위
 
 ## 블록 범위
 
-![img_157.png](img_157.png)
+![img_157.png](old_note/COMP2200/week1/img_157.png)
 
 - for문 내부의 변수가 바깥의 변수에 접근할 수 있음
     - 반대는 불가능
@@ -881,7 +881,7 @@ int main(void)
 }
 ```
 
-![img_143.png](img_143.png)
+![img_143.png](old_note/COMP2200/week1/img_143.png)
 
 - 블록 범위는 중괄호로 둘러싸인 범위를 말한다.
 - 변수 선언은 블록 범위의 처음에만 할 수 있다.
@@ -889,25 +889,25 @@ int main(void)
 
 ### 블록 범위와 변수 선언 위치
 
-![img_144.png](img_144.png)
+![img_144.png](old_note/COMP2200/week1/img_144.png)
 
 - 원칙 상 사용하기 직전에 변수 선언하는 것이 좋은 방식이라서..
     - 근데 블록을 사용하면 들여쓰기가 되서 가독성이 안 좋아진다.
 
 ### 변수 가리기 금지(variable shadowing)
 
-![img_145.png](img_145.png)
+![img_145.png](old_note/COMP2200/week1/img_145.png)
 
 ## 파일 범위
 
-![img_146.png](img_146.png)
+![img_146.png](old_note/COMP2200/week1/img_146.png)
 
 - 엄밀히 말하면 translation unit 범위
     - translation unit이 파일과 범위가 같을 수 있다.
 
 ### 파일 범위의 변수는 메모리 어디에 위치할까?
 
-![img_147.png](img_147.png)
+![img_147.png](old_note/COMP2200/week1/img_147.png)
 
 - 지역 변수를 생각해보자. 지역 변수는 함수가 실행되고 나서 사라진다.(스택 메모리)
 - 그렇다면 파일 범위 변수는?
@@ -918,7 +918,7 @@ int main(void)
 
 ## 함수 범위
 
-![img_148.png](img_148.png)
+![img_148.png](old_note/COMP2200/week1/img_148.png)
 
 - 유일한 예가 함수의 label이다.
     - goto와 같이 사용된다.
@@ -928,13 +928,13 @@ int main(void)
 
 ## 함수 선언 범위
 
-![img_149.png](img_149.png)
+![img_149.png](old_note/COMP2200/week1/img_149.png)
 
 - 함수 선언의 매개변수 목록에 있는 매개변수들은 서로서로 접근할 수 있다.
 
 ## const 키워드 개요
 
-![img_150.png](img_150.png)
+![img_150.png](old_note/COMP2200/week1/img_150.png)
 
 - 매직 넘버 보다는 상수
 
@@ -942,29 +942,29 @@ int main(void)
 
 ### 예시 1
 
-![img_151.png](img_151.png)
+![img_151.png](old_note/COMP2200/week1/img_151.png)
 
 - 수정하면 안 되는 변수를 수정해도, 컴파일러는 잡을 수 없음
 
-![img_152.png](img_152.png)
+![img_152.png](old_note/COMP2200/week1/img_152.png)
 
 - C에서 const 키워드로 수정을 막을 수 있다.
     - const 키워드가 매개변수에 붙어있으면 함수 범위 안에서 수정할 수 없다.
 
 ### 예시 2
 
-![img_153.png](img_153.png)
+![img_153.png](old_note/COMP2200/week1/img_153.png)
 
 - data 배열의 최대 색인을 벗어날 수 있다.
 
-![img_154.png](img_154.png)
+![img_154.png](old_note/COMP2200/week1/img_154.png)
 
 - C에서는 지역변수를 const로 만들면 컴파일 도중에 결정되는 값이 아니더라도, 실행 중 결과값이 결정되고 그 결과값을 바꿀 수 없다는 것을 컴파일러에게 알려준다.
 - C#에서는 애초에 const로 선언하면 컴파일 도중에 결정되는 상수 값만 넣을 수 있다.
 
 ### const 베스트 프렉티스
 
-![img_155.png](img_155.png)
+![img_155.png](old_note/COMP2200/week1/img_155.png)
 
 - 기본으로 모든 변수에 const 붙이자
     - Rust let, Kotlin val

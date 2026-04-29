@@ -547,30 +547,30 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ## 행렬 벡터 곱에서 벡터의 값을 그대로: 단위 행렬
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP1000/week10/images/img_126.png)
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP1000/week10/images/img_127.png)
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP1000/week10/images/img_128.png)
 
 - 이 행렬로 불가능
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP1000/week10/images/img_129.png)
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP1000/week10/images/img_130.png)
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP1000/week10/images/img_131.png)
 
 - 단위 행렬은 반드시 정사각 행렬
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP1000/week10/images/img_132.png)
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP1000/week10/images/img_133.png)
 
 - 단위 행렬의 기호:
     - "I"
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP1000/week10/images/img_134.png)
 
 - 좌항의 한 행(행 벡터)와 우항의 한 열 사이의 내적을 구해 결과 행 벡터의 성분에 차례대로 저장
 
@@ -578,182 +578,182 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ### 벡터의 회전
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP1000/week10/images/img_135.png)
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP1000/week10/images/img_136.png)
 
 - 공식이 있음
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP1000/week10/images/img_137.png)
 
 - 공간 변환 행렬
     - 벡터의 방향이나 길이를 변환시키기 위해 곱해주는 행렬
 - 회전도 공간 변환에 포함됨
 - 회전 행렬
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP1000/week10/images/img_138.png)
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP1000/week10/images/img_139.png)
 
 - 회전이 2번이라 행렬이 2개 필요함
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP1000/week10/images/img_140.png)
 
 - 교환법칙이 적용되지 않을까
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP1000/week10/images/img_141.png)
 
-![img_142.png](images/img_142.png)
+![img_142.png](old_note/COMP1000/week10/images/img_142.png)
 
-![img_143.png](images/img_143.png)
+![img_143.png](old_note/COMP1000/week10/images/img_143.png)
 
 - 벡터와 행렬 곱을 여러번
 - 이번 예시는 "from 좌 to 우"로 읽었을 때 "행 벡터 곱하기 행렬" 2번
 
-![img_144.png](images/img_144.png)
+![img_144.png](old_note/COMP1000/week10/images/img_144.png)
 
-![img_145.png](images/img_145.png)
+![img_145.png](old_note/COMP1000/week10/images/img_145.png)
 
-![img_146.png](images/img_146.png)
+![img_146.png](old_note/COMP1000/week10/images/img_146.png)
 
-![img_147.png](images/img_147.png)
+![img_147.png](old_note/COMP1000/week10/images/img_147.png)
 
-![img_148.png](images/img_148.png)
+![img_148.png](old_note/COMP1000/week10/images/img_148.png)
 
-![img_149.png](images/img_149.png)
+![img_149.png](old_note/COMP1000/week10/images/img_149.png)
 
 - 2번째 방법이 공간을 다루는 프로그래밍에서 엄청난 성능 향상을!!!
 
-![img_150.png](images/img_150.png)
+![img_150.png](old_note/COMP1000/week10/images/img_150.png)
 
 - 연산수를 비교해보자
 
-![img_151.png](images/img_151.png)
+![img_151.png](old_note/COMP1000/week10/images/img_151.png)
 
-![img_152.png](images/img_152.png)
+![img_152.png](old_note/COMP1000/week10/images/img_152.png)
 
 - 연산 수 두번째 방법이 많아 보이는데?
 
-![img_153.png](images/img_153.png)
+![img_153.png](old_note/COMP1000/week10/images/img_153.png)
 
 - 벡터 수가 많다면?
 
-![img_154.png](images/img_154.png)
+![img_154.png](old_note/COMP1000/week10/images/img_154.png)
 
 ## 행렬의 변환
 
-![img_155.png](images/img_155.png)
+![img_155.png](old_note/COMP1000/week10/images/img_155.png)
 
 - 당연히 가능
 
-![img_156.png](images/img_156.png)
+![img_156.png](old_note/COMP1000/week10/images/img_156.png)
 
 - 벡터가 반드시 방향과 길이를 표현하는 것은 아니다
 
-![img_157.png](images/img_157.png)
+![img_157.png](old_note/COMP1000/week10/images/img_157.png)
 
 - 벡터가 좌표 평면의 한 점을 표현
 
-![img_158.png](images/img_158.png)
+![img_158.png](old_note/COMP1000/week10/images/img_158.png)
 
 - 단지 2개의 성분을 표현
 
-![img_159.png](images/img_159.png)
+![img_159.png](old_note/COMP1000/week10/images/img_159.png)
 
 - 도형의 확대
 
-![img_160.png](images/img_160.png)
+![img_160.png](old_note/COMP1000/week10/images/img_160.png)
 
 - 도형의 변환
 
-![img_161.png](images/img_161.png)
+![img_161.png](old_note/COMP1000/week10/images/img_161.png)
 
 - 영어로 "Scale Matrix"
 
 ### Scale Matrix 예시
 
-![img_162.png](images/img_162.png)
+![img_162.png](old_note/COMP1000/week10/images/img_162.png)
 
-![img_163.png](images/img_163.png)
+![img_163.png](old_note/COMP1000/week10/images/img_163.png)
 
-![img_164.png](images/img_164.png)
+![img_164.png](old_note/COMP1000/week10/images/img_164.png)
 
 - 각 벡터에 회전 변환 해주면 사각형이 회전함
 
-![img_165.png](images/img_165.png)
+![img_165.png](old_note/COMP1000/week10/images/img_165.png)
 
 - 확대와 회전을 동시에
 
-![img_166.png](images/img_166.png)
+![img_166.png](old_note/COMP1000/week10/images/img_166.png)
 
 - 행렬 곱을 이용해도 됨
 
-![img_167.png](images/img_167.png)
+![img_167.png](old_note/COMP1000/week10/images/img_167.png)
 
 - 너무 당연함
 
-![img_168.png](images/img_168.png)
+![img_168.png](old_note/COMP1000/week10/images/img_168.png)
 
-![img_169.png](images/img_169.png)
+![img_169.png](old_note/COMP1000/week10/images/img_169.png)
 
 - 행렬 곱을 먼저하는 연산이 보통 빠름
 - 사실 인풋이 3개만 되도 방법2가 역전
 
-![img_170.png](images/img_170.png)
+![img_170.png](old_note/COMP1000/week10/images/img_170.png)
 
-![img_171.png](images/img_171.png)
+![img_171.png](old_note/COMP1000/week10/images/img_171.png)
 
 - 우왕 결론
 
 ## 변환을 원래 상태로 되돌리기
 
-![img_172.png](images/img_172.png)
+![img_172.png](old_note/COMP1000/week10/images/img_172.png)
 
 - 개념적으로 생각해보면
 - 반대 연산
 
-![img_173.png](images/img_173.png)
+![img_173.png](old_note/COMP1000/week10/images/img_173.png)
 
-![img_174.png](images/img_174.png)
+![img_174.png](old_note/COMP1000/week10/images/img_174.png)
 
 - 원래 벡터를 유지한는 "단위 행렬"
 
-![img_175.png](images/img_175.png)
+![img_175.png](old_note/COMP1000/week10/images/img_175.png)
 
 ## 역행렬
 
-![img_176.png](images/img_176.png)
+![img_176.png](old_note/COMP1000/week10/images/img_176.png)
 
-![img_177.png](images/img_177.png)
+![img_177.png](old_note/COMP1000/week10/images/img_177.png)
 
 - 곱해서 단위 행렬이 나오면?
 
-![img_178.png](images/img_178.png)
+![img_178.png](old_note/COMP1000/week10/images/img_178.png)
 
 - 역행렬의 정의
 
 ### 2 * 2 역행렬 공식
 
-![img_179.png](images/img_179.png)
+![img_179.png](old_note/COMP1000/week10/images/img_179.png)
 
-![img_180.png](images/img_180.png)
+![img_180.png](old_note/COMP1000/week10/images/img_180.png)
 
 - 구한 역행렬이 맞는지 확인하려면 곱해서 단위 행렬 나오는지 확인해보면 됨
 
-![img_181.png](images/img_181.png)
+![img_181.png](old_note/COMP1000/week10/images/img_181.png)
 
 ## 역행렬이 존재하지 않는 행렬
 
-![img_182.png](images/img_182.png)
+![img_182.png](old_note/COMP1000/week10/images/img_182.png)
 
 - 분모가 0이 되면?
     - 행렬식 ad-bc == 0
 
-![img_183.png](images/img_183.png)
+![img_183.png](old_note/COMP1000/week10/images/img_183.png)
 
 ## 다양한 공간 변환 행렬
 
-![img_184.png](images/img_184.png)
+![img_184.png](old_note/COMP1000/week10/images/img_184.png)
 
 - "직교 행렬":
   - 전치 행렬이 역행렬
@@ -761,7 +761,7 @@ List<int> scores = new List<int>() { 100, 80, 58 };
 
 ## 행렬의 용도
 
-![img_185.png](images/img_185.png)
+![img_185.png](old_note/COMP1000/week10/images/img_185.png)
 
 - 인접 행렬
 

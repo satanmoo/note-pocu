@@ -1,7 +1,7 @@
 # COMP1500
 
 - [week1](./docs/week1.md)
-- [week2](week2/docs)
+- [week2](old_note/COMP1500/week2/docs.md)
 - [week3](./docs/week3.md)
 - [week4](./docs/week4.md)
 - [week5](./docs/week5.md)

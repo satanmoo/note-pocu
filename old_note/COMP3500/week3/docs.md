@@ -554,66 +554,66 @@ public static void insertionSort(final int[] nums) {
 
 ![img_125.png](old_note/COMP3500/week3/images/img_125.png)
 
-![img_126.png](images/img_126.png)
+![img_126.png](old_note/COMP3500/week3/images/img_126.png)
 
 - 바로 끝!
     - 2 위치 고정
 
-![img_127.png](images/img_127.png)
+![img_127.png](old_note/COMP3500/week3/images/img_127.png)
 
-![img_128.png](images/img_128.png)
+![img_128.png](old_note/COMP3500/week3/images/img_128.png)
 
-![img_129.png](images/img_129.png)
+![img_129.png](old_note/COMP3500/week3/images/img_129.png)
 
-![img_130.png](images/img_130.png)
+![img_130.png](old_note/COMP3500/week3/images/img_130.png)
 
-![img_131.png](images/img_131.png)
+![img_131.png](old_note/COMP3500/week3/images/img_131.png)
 
-![img_132.png](images/img_132.png)
+![img_132.png](old_note/COMP3500/week3/images/img_132.png)
 
-![img_133.png](images/img_133.png)
+![img_133.png](old_note/COMP3500/week3/images/img_133.png)
 
-![img_134.png](images/img_134.png)
+![img_134.png](old_note/COMP3500/week3/images/img_134.png)
 
-![img_135.png](images/img_135.png)
+![img_135.png](old_note/COMP3500/week3/images/img_135.png)
 
-![img_136.png](images/img_136.png)
+![img_136.png](old_note/COMP3500/week3/images/img_136.png)
 
-![img_137.png](images/img_137.png)
+![img_137.png](old_note/COMP3500/week3/images/img_137.png)
 
-![img_138.png](images/img_138.png)
+![img_138.png](old_note/COMP3500/week3/images/img_138.png)
 
-![img_139.png](images/img_139.png)
+![img_139.png](old_note/COMP3500/week3/images/img_139.png)
 
-![img_140.png](images/img_140.png)
+![img_140.png](old_note/COMP3500/week3/images/img_140.png)
 
-![img_141.png](images/img_141.png)
+![img_141.png](old_note/COMP3500/week3/images/img_141.png)
 
-![img_142.png](images/img_142.png)
+![img_142.png](old_note/COMP3500/week3/images/img_142.png)
 
-![img_143.png](images/img_143.png)
+![img_143.png](old_note/COMP3500/week3/images/img_143.png)
 
-![img_144.png](images/img_144.png)
+![img_144.png](old_note/COMP3500/week3/images/img_144.png)
 
-![img_145.png](images/img_145.png)
+![img_145.png](old_note/COMP3500/week3/images/img_145.png)
 
-![img_146.png](images/img_146.png)
+![img_146.png](old_note/COMP3500/week3/images/img_146.png)
 
-![img_147.png](images/img_147.png)
+![img_147.png](old_note/COMP3500/week3/images/img_147.png)
 
-![img_148.png](images/img_148.png)
+![img_148.png](old_note/COMP3500/week3/images/img_148.png)
 
-![img_149.png](images/img_149.png)
+![img_149.png](old_note/COMP3500/week3/images/img_149.png)
 
 - 끝
 
 ### 코드: 분할(partition)
 
-![img_150.png](images/img_150.png)
+![img_150.png](old_note/COMP3500/week3/images/img_150.png)
 
 - pivot: 오른쪽 인덱스의 값
 
-![img_151.png](images/img_151.png)
+![img_151.png](old_note/COMP3500/week3/images/img_151.png)
 
 - 오른쪽 바로 전까지 방문
 
@@ -647,22 +647,22 @@ public static void insertionSort(final int[] nums) {
 - 구현할 때 좌(인덱스) 오른쪽으로 밀고, 교환
 - 이렇게 해야지 좌(인덱스)를 포함한 왼쪽 구간이 기준값 미만으로 구성됨
 
-![img_152.png](images/img_152.png)
+![img_152.png](old_note/COMP3500/week3/images/img_152.png)
 
-![img_153.png](images/img_153.png)
+![img_153.png](old_note/COMP3500/week3/images/img_153.png)
 
 - 기준값 미만 값은 i(좌) 이하
 - 기준값 초과 값은 i(좌) 다음
 
-![img_154.png](images/img_154.png)
+![img_154.png](old_note/COMP3500/week3/images/img_154.png)
 
 - 기준값의 위치 == i + 1
 
-![img_155.png](images/img_155.png)
+![img_155.png](old_note/COMP3500/week3/images/img_155.png)
 
-![img_156.png](images/img_156.png)
+![img_156.png](old_note/COMP3500/week3/images/img_156.png)
 
-![img_157.png](images/img_157.png)
+![img_157.png](old_note/COMP3500/week3/images/img_157.png)
 
 - swap이 한 번도 안 일어나는 경우를 대비해서 테크닉
     - 이 경우 left를 포함한 오른쪽 구간이 모두 pivot 이상의 값으로 구성 됨
@@ -694,33 +694,33 @@ function partition(arr, low, high):
 
 ### 퀵 정렬의 복잡도
 
-![img_158.png](images/img_158.png)
+![img_158.png](old_note/COMP3500/week3/images/img_158.png)
 
 - 파티션이 균등하게 나뉘냐에 따라 시간복잡도 결정
 
-![img_159.png](images/img_159.png)
+![img_159.png](old_note/COMP3500/week3/images/img_159.png)
 
-![img_160.png](images/img_160.png)
+![img_160.png](old_note/COMP3500/week3/images/img_160.png)
 
 - 기준값 위치를 어떻게 결정하냐에 따라 파티션 나뉘는게 달라지긴 하지만
 - 근본적인 해결책은 없음
 
-![img_161.png](images/img_161.png)
+![img_161.png](old_note/COMP3500/week3/images/img_161.png)
 
 - 최악의 상황을 줄이는 방법은 랜덤으로 기준값 뽑기
 - 정말 최악의 상황을 피하고 싶으면?
     - 힙 소트
     - 머지 소트
 
-![img_162.png](images/img_162.png)
+![img_162.png](old_note/COMP3500/week3/images/img_162.png)
 
 - 기준값 뽑는 기준을 바꾸면 원래 코드 정상동작 X
 
-![img_163.png](images/img_163.png)
+![img_163.png](old_note/COMP3500/week3/images/img_163.png)
 
 - 분할법은 다양함
 
-![img_164.png](images/img_164.png)
+![img_164.png](old_note/COMP3500/week3/images/img_164.png)
 
 - 실습 해보기
 - "Hoare partition"
@@ -992,7 +992,7 @@ public static int hoarePartition(int nums[], int left, int right) {
 - j == 0
 - break
 
-![img_165.png](images/img_165.png)
+![img_165.png](old_note/COMP3500/week3/images/img_165.png)
 
 - 퀵 정렬은 재귀호출 기반
     - 스택 메모리 사용
@@ -1160,9 +1160,9 @@ public class Program {
 
 ### 이미 정렬된 두 배열 합치기
 
-![img_166.png](images/img_166.png)
+![img_166.png](old_note/COMP3500/week3/images/img_166.png)
 
-![img_167.png](images/img_167.png)
+![img_167.png](old_note/COMP3500/week3/images/img_167.png)
 
 ```java
 public static int[] mergeArray(int[] arr1, int[] arr2) {
@@ -1191,43 +1191,43 @@ public static int[] mergeArray(int[] arr1, int[] arr2) {
 }
 ```
 
-![img_168.png](images/img_168.png)
+![img_168.png](old_note/COMP3500/week3/images/img_168.png)
 
 - 이게 병합 정렬(merge sort)과 관련있음
 
 ### 병합 정렬에 적용
 
-![img_169.png](images/img_169.png)
+![img_169.png](old_note/COMP3500/week3/images/img_169.png)
 
-![img_170.png](images/img_170.png)
+![img_170.png](old_note/COMP3500/week3/images/img_170.png)
 
-![img_171.png](images/img_171.png)
+![img_171.png](old_note/COMP3500/week3/images/img_171.png)
 
-![img_172.png](images/img_172.png)
+![img_172.png](old_note/COMP3500/week3/images/img_172.png)
 
 - 재귀적으로 모두 나누면?
 
-![img_173.png](images/img_173.png)
+![img_173.png](old_note/COMP3500/week3/images/img_173.png)
 
 - 와 정렬됬다!
 - 그리고 merge
 
-![img_174.png](images/img_174.png)
+![img_174.png](old_note/COMP3500/week3/images/img_174.png)
 
 - 무조건 O(N logN)에 끝나는 알고리듬
     - 최악 같은거 없음
 
-![img_175.png](images/img_175.png)
+![img_175.png](old_note/COMP3500/week3/images/img_175.png)
 
-![img_176.png](images/img_176.png)
+![img_176.png](old_note/COMP3500/week3/images/img_176.png)
 
-![img_177.png](images/img_177.png)
+![img_177.png](old_note/COMP3500/week3/images/img_177.png)
 
-![img_178.png](images/img_178.png)
+![img_178.png](old_note/COMP3500/week3/images/img_178.png)
 
-![img_179.png](images/img_179.png)
+![img_179.png](old_note/COMP3500/week3/images/img_179.png)
 
-![img_180.png](images/img_180.png)
+![img_180.png](old_note/COMP3500/week3/images/img_180.png)
 
 ```java
 public static int[] mergeSort(int[] arr) {
@@ -1314,7 +1314,7 @@ private static void merge(int left, int right, int mid, int[] array, int[] temp)
 
 ## 힙 정렬
 
-![img_181.png](images/img_181.png)
+![img_181.png](old_note/COMP3500/week3/images/img_181.png)
 
 ### Heap
 
@@ -1323,96 +1323,96 @@ private static void merge(int left, int right, int mid, int[] array, int[] temp)
 
 ### Heap에 던지면 자동 정렬
 
-![img_182.png](images/img_182.png)
+![img_182.png](old_note/COMP3500/week3/images/img_182.png)
 
 - 배열 순회하면서 첫번째 원소부터 삽입
 
-![img_183.png](images/img_183.png)
+![img_183.png](old_note/COMP3500/week3/images/img_183.png)
 
-![img_184.png](images/img_184.png)
+![img_184.png](old_note/COMP3500/week3/images/img_184.png)
 
 - 힙 규칙에 따라 부모의 Key가 자식의 Key 이상으로 유지됨
 
-![img_185.png](images/img_185.png)
+![img_185.png](old_note/COMP3500/week3/images/img_185.png)
 
 - 다음 레벨
 
-![img_186.png](images/img_186.png)
+![img_186.png](old_note/COMP3500/week3/images/img_186.png)
 
 - 규칙에 맞지 않음
 
-![img_187.png](images/img_187.png)
+![img_187.png](old_note/COMP3500/week3/images/img_187.png)
 
 - 규칙에 맞게 교환
 - 원래 2 > 1 로 2가 1의 부모였음
 - 3 > 2 로 더 큰 값이 부모가 되도 논리적으로 문제 없음
     - 3 > 1
 
-![img_188.png](images/img_188.png)
+![img_188.png](old_note/COMP3500/week3/images/img_188.png)
 
 - 위의 레벨과 비교
 - 규칙에 맞기 때문에 끝
 
-![img_189.png](images/img_189.png)
+![img_189.png](old_note/COMP3500/week3/images/img_189.png)
 
 - 규칙에 맞지 않음
 
-![img_190.png](images/img_190.png)
+![img_190.png](old_note/COMP3500/week3/images/img_190.png)
 
 - 교환
 
-![img_191.png](images/img_191.png)
+![img_191.png](old_note/COMP3500/week3/images/img_191.png)
 
 - 규칙에 맞기 때문에 끝
 
-![img_192.png](images/img_192.png)
+![img_192.png](old_note/COMP3500/week3/images/img_192.png)
 
 - 규칙에 맞음
 
-![img_193.png](images/img_193.png)
+![img_193.png](old_note/COMP3500/week3/images/img_193.png)
 
-![img_194.png](images/img_194.png)
+![img_194.png](old_note/COMP3500/week3/images/img_194.png)
 
-![img_195.png](images/img_195.png)
+![img_195.png](old_note/COMP3500/week3/images/img_195.png)
 
-![img_196.png](images/img_196.png)
+![img_196.png](old_note/COMP3500/week3/images/img_196.png)
 
-![img_197.png](images/img_197.png)
+![img_197.png](old_note/COMP3500/week3/images/img_197.png)
 
-![img_198.png](images/img_198.png)
+![img_198.png](old_note/COMP3500/week3/images/img_198.png)
 
 - 힙의 규칙대로 트리에 들어가있음
 - 여기서 힙의 규칙대로 순서대로 제거하면 정렬된 원소들을 얻을 수 있음
 
-![img_199.png](images/img_199.png)
+![img_199.png](old_note/COMP3500/week3/images/img_199.png)
 
 - 제거는 반드시 가장 낮은 레벨의 부모
 
-![img_200.png](images/img_200.png)
+![img_200.png](old_note/COMP3500/week3/images/img_200.png)
 
 - 빈 자리는 제일 마지막에 있는 값으로 채움
 
-![img_201.png](images/img_201.png)
+![img_201.png](old_note/COMP3500/week3/images/img_201.png)
 
 - 힙의 규칙에 맞지 않음
 
-![img_202.png](images/img_202.png)
+![img_202.png](old_note/COMP3500/week3/images/img_202.png)
 
-![img_203.png](images/img_203.png)
+![img_203.png](old_note/COMP3500/week3/images/img_203.png)
 
 - 같은 레벨에서 가장 큰 값을 올려야함
 
-![img_204.png](images/img_204.png)
+![img_204.png](old_note/COMP3500/week3/images/img_204.png)
 
 - 같은 값이라 왼쪽을 택함
 
-![img_205.png](images/img_205.png)
+![img_205.png](old_note/COMP3500/week3/images/img_205.png)
 
-![img_206.png](images/img_206.png)
+![img_206.png](old_note/COMP3500/week3/images/img_206.png)
 
 - 2와 6중에는 6이 큼
 
-![img_207.png](images/img_207.png)
+![img_207.png](old_note/COMP3500/week3/images/img_207.png)
 
 - 이제 규칙을 지킴
 
@@ -1477,4 +1477,4 @@ public class Program {
     - 너무 직관적이죠?
     - 정렬된 상태에서 굳이 먼 요소랑 비교할 필요가 없지..
 
-![img_208.png](images/img_208.png)
+![img_208.png](old_note/COMP3500/week3/images/img_208.png)
