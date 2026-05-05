@@ -1,7 +1,7 @@
 ---
 tags:
   - COMP2500
-  - week0
+  - week1
 aliases:
   - 메인 함수
 ---
