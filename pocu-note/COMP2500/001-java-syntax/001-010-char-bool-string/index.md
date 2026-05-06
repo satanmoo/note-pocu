@@ -40,6 +40,8 @@ char이 유니코드의 코드 포인트를 그대로 표현하는지 여부가 
 
 ![img_66.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_66.png)
 
+### `String` immutable
+
 ![img_67.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_67.png)
 
 String 한 번 할당하면 변경 불가
