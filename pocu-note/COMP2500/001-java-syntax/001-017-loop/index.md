@@ -80,3 +80,24 @@ public static void test() {
 ![img_128.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_128.png)
 
 `for` 키워드 그대로 활용
+
+## 함수
+
+![img_129.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_129.png)
+
+OOP 개념에서 클래스의 멤버 함수를 **메소드**라고 부름
+
+## 영상 퀴즈
+
+![img_130.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_130.png)
+
+### 1. add() 함수 호출 후 v1의 값은?
+
+add 함수의 매개변수로 v1의 주소값이 복사됨
+- 참조형
+- 주소에 위치한 데이터가 바뀜
+
+v1.x = 1 + 6547.0f
+
+답: v1.x = 6548.0f / v1.y = 3
+
