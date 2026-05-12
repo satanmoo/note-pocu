@@ -8,9 +8,9 @@ aliases:
 # 2진수->8진수 변환
 ## 8진수에서 2진수로 변환
 
-![img_71.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-011-oct-to-bin/images/img_71.png)
+![img_71.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-011-oct-to-bin/images/oct-to-bin-1.png)
 
-![img_72.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-011-oct-to-bin/images/img_72.png)
+![img_72.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-011-oct-to-bin/images/oct-to-bin-2.png)
 
 2와 8의 관계
 - 2^3 = 8

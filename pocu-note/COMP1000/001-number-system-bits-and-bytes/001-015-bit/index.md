@@ -8,23 +8,23 @@ aliases:
 ---
 # 비트
 
-![img_79.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/img_79.png)
+![img_79.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/bit-1.png)
 
 컴퓨터에서 가장 작은 단위
 - 2진법과 어울림
 
-![img_80.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/img_80.png)
+![img_80.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/bit-2.png)
 
 여러 비트를 사용해 큰 값을 표현할 수 있음
 
-![img_81.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/img_81.png)
+![img_81.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/bit-3.png)
 
 사실 상 [[pocu-note/COMP1000/001-number-system-bits-and-bytes/001-008-bin-to-dec/index|2진수를 10진수로 변환]]
 ## 비트의 순서
 
-![img_82.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/img_82.png)
+![img_82.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/bit-4.png)
 
-![img_83.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/img_83.png)
+![img_83.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-015-bit/images/bit-5.png)
 
 이 과목에서는 제일 낮은 비트가 오른쪽, 제일 높은 비트가 왼쪽
 - 0번째 비트는 가장 오른쪽

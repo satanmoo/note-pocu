@@ -9,22 +9,22 @@ aliases:
 
 ## 데이터 추상화
 
-![img_48.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_48.png)
-![img_49.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_49.png)
+![img_48.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-1.png)
+![img_49.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-2.png)
 
 ## 연관
 
-![img_50.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_50.png)
-![img_51.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_51.png)
+![img_50.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-3.png)
+![img_51.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-4.png)
 
 ## 컴포지션
 
-![img_52.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_52.png)
-![img_53.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_53.png)
+![img_52.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-5.png)
+![img_53.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-6.png)
 
 ## 집합
 
-![img_54.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/img_54.png)
+![img_54.png](pocu-note/COMP2500/002-necessity-of-oop/002-008-oop-characteristic-3/images/oop-characteristic-3-7.png)
 
 ## 복습 퀴즈
 

@@ -8,17 +8,17 @@ aliases:
 # 조건문
 ## if 문
 
-![img_118.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/img_118.png)
+![img_118.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/conditional-statement-1.png)
 
 ## switch/case 문
 
-![img_119.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/img_119.png)
-![img_120.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/img_120.png)
+![img_119.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/conditional-statement-2.png)
+![img_120.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/conditional-statement-3.png)
 
 > [!NOTE] `String` 그리고 `enum`이 case에 사용될 수 있음
 
-![img_121.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/img_121.png)
-![img_122.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/img_122.png)
+![img_121.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/conditional-statement-4.png)
+![img_122.png](pocu-note/COMP2500/001-java-syntax/001-016-conditional-statement/images/conditional-statement-5.png)
 
 fall-through를 컴파일 타임에 막아주진 않음
 - C# 은 막아줌

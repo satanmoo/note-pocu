@@ -9,14 +9,14 @@ tags:
 
 ## UTF-8의 장점 2
 
-![img_115.png](pocu-note/COMP1000/002-data-representation/002-022-pros-and-cons-of-utf-8/images/img_115.png)
+![img_115.png](pocu-note/COMP1000/002-data-representation/002-022-pros-and-cons-of-utf-8/images/pros-and-cons-of-utf-8-1.png)
 
 CJK를 제외한 거의 모든 문자에 1바이트 또는 2바이트 사용
 - UTF-8로 인코딩 하면 한국어는 대부분 3바이트 사용
 
 ## UTF-8의 장점 3
 
-![img_116.png](pocu-note/COMP1000/002-data-representation/002-022-pros-and-cons-of-utf-8/images/img_116.png)
+![img_116.png](pocu-note/COMP1000/002-data-representation/002-022-pros-and-cons-of-utf-8/images/pros-and-cons-of-utf-8-2.png)
 
 문자가 몇 바이트인지를 표기하는 비트를 사용
 

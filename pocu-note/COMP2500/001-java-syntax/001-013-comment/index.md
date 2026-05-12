@@ -8,23 +8,23 @@ aliases:
 # 주석, 연산자 우선순위, 산술 연산자
 ## 주석
 
-![img_83.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_83.png)
+![img_83.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-1.png)
 
 ## Javadoc 주석
 
-![img_84.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_84.png)
-![img_85.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_85.png)
-![img_86.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_86.png)
-![img_87.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_87.png)
-![img_88.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_88.png)
+![img_84.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-2.png)
+![img_85.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-3.png)
+![img_86.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-4.png)
+![img_87.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-5.png)
+![img_88.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-6.png)
 ## 연산자
 
-![img_89.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_89.png)
-![img_90.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_90.png)
+![img_89.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-7.png)
+![img_90.png](pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-8.png)
 
 ## 산술 연산자
 
-![[pocu-note/COMP2500/001-java-syntax/001-013-comment/images/img_91.png]]
+![[pocu-note/COMP2500/001-java-syntax/001-013-comment/images/comment-9.png]]
 
 C와 다르게 boolean 타입이 정수가 아님
 - 산술 연산자 사용 불가능

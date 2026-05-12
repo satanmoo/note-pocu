@@ -9,7 +9,7 @@ aliases:
 
 ## 클래스
 
-![img.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/img.png)
+![img.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/main-function-1.png)
 
 Java는 항상 클래스가 필요함
 - 문법으로 `class` 사용을 강제함
@@ -18,13 +18,13 @@ Java는 항상 클래스가 필요함
 
 ## 최고 레벨의 `public class`는 오직 하나만
 
-![img_1.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/img_1.png)
+![img_1.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/main-function-2.png)
 
 컴파일 에러
 
 ## 내포 클래스
 
-![img_2.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/img_2.png)
+![img_2.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/main-function-3.png)
 
 내포 클래스는 `public`이어도 상관 없음
 - 최고 레벨 클래스는 `public` 하나만 존재해야 한다는 점과 비교해서 기억
@@ -32,11 +32,11 @@ Java는 항상 클래스가 필요함
 
 ## main 함수
 
-![img_3.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/img_3.png)
+![img_3.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/main-function-4.png)
 
 런타임 오류 발생
 - 컴파일 시점에 못 잡는게 아쉬움
 
 ## 커맨드 라인 인자
 
-![img_4.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/img_4.png)
+![img_4.png](pocu-note/COMP2500/001-java-syntax/001-001-main-function/images/main-function-5.png)

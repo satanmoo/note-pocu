@@ -9,25 +9,25 @@ aliases:
 
 ## 8진법
 
-![img_12.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/img_12.png)
+![img_12.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/oct-32-64-1.png)
 
 8진수를 표현하려면 3비트 필요
 - 1바이트는 8비트인데 3비트로 나눠떨어지지 않아서 불편함
 
-![img_13.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/img_13.png)
+![img_13.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/oct-32-64-2.png)
 
 데이터 저장 및 접근 단위가 1바이트라서 8진법은 잘 사용하지 않음
 
 ## base32, base64
 
-![img_14.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/img_14.png)
+![img_14.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/oct-32-64-3.png)
 
 1바이트(8비트)를 만들기 어렵기 때문에 잘 사용하지 않음
 - 5, 6 모두 8의 약수가 아님
 
 ### base32, base64 사용례 1
 
-![img_15.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/img_15.png)
+![img_15.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/oct-32-64-4.png)
 
 허용되지 않는 문자(예를 들어 `/`)를 URL에 포함할 때
 - 왜 허용되지 않은 문자일까?
@@ -42,7 +42,7 @@ aliases:
 
 ### base32, base64 사용례 2
 
-![img_16.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/img_16.png)
+![img_16.png](pocu-note/COMP1000/002-data-representation/002-003-oct-32-64/images/oct-32-64-5.png)
 
 HTML문서에 PNG 형식의 이미지를 포함할 때 2가지 방법을 소개함
 1. 경로를 명시하는 방법

@@ -9,7 +9,7 @@ aliases:
 
 ## 2진수에서 8진수로 변환
 
-![img_70.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-010-bin-to-oct/images/img_70.png)
+![img_70.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-010-bin-to-oct/images/bin-to-oct-1.png)
 
 2진수의 특수한 성질을 활용
 - 8 = 2^**3**

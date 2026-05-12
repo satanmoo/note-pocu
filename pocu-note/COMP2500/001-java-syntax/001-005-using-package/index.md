@@ -8,7 +8,7 @@ aliases:
 # 패키지 사용하기
 ## 외부 패키지 안에 속한 클래스 사용하기
 
-![img_39.png](pocu-note/COMP2500/001-java-syntax/001-005-using-package/images/img_39.png)
+![img_39.png](pocu-note/COMP2500/001-java-syntax/001-005-using-package/images/using-package-1.png)
 
 `import java.util.Random`
 - `java/util/` 에 속한 `Random`이라는 클래스를 사용하는 문법
@@ -16,11 +16,11 @@ aliases:
 
 ## import
 
-![img_40.png](pocu-note/COMP2500/001-java-syntax/001-005-using-package/images/img_40.png)
+![img_40.png](pocu-note/COMP2500/001-java-syntax/001-005-using-package/images/using-package-2.png)
 
 ## java.lang
 
-![img_41.png](pocu-note/COMP2500/001-java-syntax/001-005-using-package/images/img_41.png)
+![img_41.png](pocu-note/COMP2500/001-java-syntax/001-005-using-package/images/using-package-3.png)
 
 컴파일러가 `import java.lang.*`을 자동으로 포함
 

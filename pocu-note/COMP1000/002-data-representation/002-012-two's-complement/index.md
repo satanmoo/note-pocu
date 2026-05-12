@@ -10,7 +10,7 @@ tags:
 방법1: [[pocu-note/COMP1000/002-data-representation/002-006-signed-int/index#부호를 제외한 7비트 표현법1 부호 절대값 표기법|부호 절대값 표기법]]
 방법2: [[pocu-note/COMP1000/002-data-representation/002-010-one's-complement/index|1의 보수]]
 
-![img_59.png](pocu-note/COMP1000/002-data-representation/002-012-two's-complement/images/img_59.png)
+![img_59.png](pocu-note/COMP1000/002-data-representation/002-012-two's-complement/images/two's-complement-1.png)
 
 현재 부호 있는 정수를 표현하는 가장 흔한 방법은 2의 보수
 
@@ -23,7 +23,7 @@ tags:
 - diminished radix complement(1의 보수)를 구한 다음 1을 더하면 됨
     - 비트 다 뒤집고 + 1
 
-![img_60.png](pocu-note/COMP1000/002-data-representation/002-012-two's-complement/images/img_60.png)
+![img_60.png](pocu-note/COMP1000/002-data-representation/002-012-two's-complement/images/two's-complement-2.png)
 
 `0000 0000`의 radix complement = 0
 - 방법 1, 방법 2와 다르게 0이 1개

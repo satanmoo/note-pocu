@@ -9,27 +9,27 @@ aliases:
 
 ## 대입 연산자
 
-![img_92.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_92.png)
+![img_92.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-1.png)
 
 ## 값형과 대입 연산자 `=`
 
-![img_93.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_93.png)
-![img_94.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_94.png)
+![img_93.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-2.png)
+![img_94.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-3.png)
 
 값형(value type)은 자신만의 저장 공간을 가짐
 - 레지스터, 스택 메모리
 
 값형의 저장 공간에 값이 비트 패턴으로 그대로 저장됨
 
-![img_95.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_95.png)
+![img_95.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-4.png)
 
 score2 변수가 차지하는 자신만의 저장 공간에 값이 바뀜
 
 ## 참조형과 대입 연산자
 
-![img_96.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_96.png)
-![img_97.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_97.png)
-![img_98.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_98.png)
+![img_96.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-5.png)
+![img_97.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-6.png)
+![img_98.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-7.png)
 
 얕은 복사 개념
 
@@ -37,16 +37,16 @@ score2 변수가 차지하는 자신만의 저장 공간에 값이 바뀜
 
 ## `String`과 대입 연산자
 
-![img_99.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_99.png)
-![img_100.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_100.png)
-![img_101.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_101.png)
+![img_99.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-8.png)
+![img_100.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-9.png)
+![img_101.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-10.png)
 
 `String`은 immutable 하기 때문에 새로운 "Nana" 문자열이 생성됨
 - [[pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/index#`String` immutable|String immutable]] 참고 
 
 ## 캐스팅
 
-![img_102.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_102.png)
+![img_102.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-11.png)
 
 크기가 큰 기본 자료형으로 변환은 암시적으로 가능
 
@@ -54,11 +54,11 @@ score2 변수가 차지하는 자신만의 저장 공간에 값이 바뀜
 
 ## 논리 연산자
 
-![img_103.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_103.png)
+![img_103.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-12.png)
 
 ## `==` 연산자와 문자열
 
-![img_104.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/img_104.png)
+![img_104.png](pocu-note/COMP2500/001-java-syntax/001-014-assign-operator/images/assign-operator-13.png)
 
 ## 영상 퀴즈
 

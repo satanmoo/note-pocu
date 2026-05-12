@@ -9,12 +9,12 @@ aliases:
 
 ## 16진법의 정의
 
-![img_56.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/img_56.png)
+![img_56.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/hex-system-1.png)
 
 한 자리에 쓸 수 있는 숫자가 16개
 ## 16진법의 셈
 
-![img_57.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/img_57.png)
+![img_57.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/hex-system-2.png)
 
 [[pocu-note/COMP1000/001-number-system-bits-and-bytes/001-002-decimal-system/index#carry-over|carry-over]] 적용
 - 16^0의 자리는 최소값 0으로 돌아감
@@ -22,7 +22,7 @@ aliases:
 
 ## 16진법 덧셈
 
-![img_59.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/img_59.png)
+![img_59.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/hex-system-3.png)
 
 carry-over 연쇄:
 - 16^0의 자리는 다음과 같이 계산: C + 7 - 16 = 3
@@ -32,7 +32,7 @@ carry-over 연쇄:
 
 ## 16진법 뺄셈
 
-![img_61.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/img_61.png)
+![img_61.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-005-hex-system/images/hex-system-4.png)
 
 borrowing 연쇄:
 - 16^0의 자리는 다음과 같이 계산: 16 - 7 = 9

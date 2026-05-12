@@ -9,21 +9,21 @@ aliases:
 
 ## 개체의 멤버 함수 호출하기
 
-![img_88.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_88.png)
+![img_88.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-1.png)
 
 멤버 변수와 동일하게 `.` 연산자 사용
 
-![[pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_89.png]]
+![[pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-2.png]]
 
-![img_90.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_90.png)
+![img_90.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-3.png)
 
 - [[pocu-note/COMP2500/002-necessity-of-oop/002-001-limits-of-structure/index|구조체의 한계]] 참고
 ## Garbage Collection 
 
-![img_91.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_91.png)
-![img_92.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_92.png)
-![img_93.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_93.png)
-![img_94.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/img_94.png)
+![img_91.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-4.png)
+![img_92.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-5.png)
+![img_93.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-6.png)
+![img_94.png](pocu-note/COMP2500/002-necessity-of-oop/002-014-member-function/images/member-function-7.png)
 
 ## 복습 퀴즈
 

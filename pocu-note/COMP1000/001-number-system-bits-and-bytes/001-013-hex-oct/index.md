@@ -7,7 +7,7 @@ aliases:
 ---
 # 8진수/16진수 변환
 
-![img_75.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-013-hex-oct/images/img_75.png)
+![img_75.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-013-hex-oct/images/hex-oct-1.png)
 
 바로 변환이 쉽지 않음
 - 2^3 과 2^4에서 지수의 최소 공배수를 찾으면 12

@@ -9,7 +9,7 @@ tags:
 
 ## UTF-8의 예
 
-![img_117.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_117.png)
+![img_117.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-1.png)
 
 'A'
 - 유니코드 코드 포인트는 `U+0041`
@@ -35,13 +35,13 @@ tags:
 
 ## UTF-8과 URL
 
-![img_118.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_118.png)
+![img_118.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-2.png)
 
-![img_119.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_119.png)
+![img_119.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-3.png)
 
 '%'는 hex 표시
 
-![img_120.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_120.png)
+![img_120.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-4.png)
 
 "유니코드"
 - UTF-8로 인코딩된 한국어 문자는 대부분 3바이트인 것을 기억하자 
@@ -49,15 +49,15 @@ tags:
 - 마지막 글자 '드' 확인
 	- 오른쪽에서 부터 3바이트 확인
 
-![img_121.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_121.png)
+![img_121.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-5.png)
 
-![img_122.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_122.png)
+![img_122.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-6.png)
 
-![img_123.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_123.png)
+![img_123.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-7.png)
 
 ## UTF-16
 
-![img_124.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_124.png)
+![img_124.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-8.png)
 
 [[pocu-note/COMP1000/002-data-representation/002-021-ansi/index#USC-2|UCS-2]]의 확장
 - 최소 2바이트, 최대 4바이트 사용
@@ -70,7 +70,7 @@ tags:
 
 ## UTF-32
 
-![img_125.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/img_125.png)
+![img_125.png](pocu-note/COMP1000/002-data-representation/002-023-utf-8-example/images/utf-8-example-9.png)
 
 *Unicode code point와 1:1로 대응*
 - 변환 규칙 없이 Unicode code point 값을 4바이트에 비트패턴으로 그대로 저장

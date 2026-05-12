@@ -9,11 +9,11 @@ aliases:
 
 ## 음수 배열 색인과 음수 나이
 
-![img_57.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/img_57.png)
+![img_57.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/no-unsigned-problem-1.png)
 
-![img_58.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/img_58.png)
+![img_58.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/no-unsigned-problem-2.png)
 
-![img_59.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/img_59.png)
+![img_59.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/no-unsigned-problem-3.png)
 
 8비트인 unsigned byte로 컴퓨터에서 보통 색을 표현함
 - Java는 불가능
@@ -25,7 +25,7 @@ aliases:
 
 ## `Integer` 클래스
 
-![img_60.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/img_60.png)
+![img_60.png](pocu-note/COMP2500/001-java-syntax/001-009-no-unsigned-problem/images/no-unsigned-problem-4.png)
 
 4294967295는 int 범위를 벗어나 컴파일 오류 발생
 - 자료형 크기 정도는 잡아줌

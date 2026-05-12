@@ -9,25 +9,25 @@ aliases:
 
 ## Java의 상수형 변수: final 키워드
 
-![img_73.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_73.png)
-![img_74.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_74.png)
+![img_73.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-1.png)
+![img_74.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-2.png)
 ## final 멤버 변수
 
-![img_75.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_75.png)
-![img_76.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_76.png)
+![img_75.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-3.png)
+![img_76.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-4.png)
 
 ## final 메소드 매개변수
 
-![img_77.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_77.png)
-![img_78.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_78.png)
+![img_77.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-5.png)
+![img_78.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-6.png)
 
 ## final 변수의 초기화
 
-![img_79.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_79.png)
+![img_79.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-7.png)
 
 기본적으로 선언과 동시에 초기화
 
-![img_80.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_80.png)
+![img_80.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-8.png)
 
 final 지역 변수의 경우 사용하기 전에만 초기화 하면 됨
 - 초기화 하지 않고 final 지역 변수를 사용하면 컴파일 에러
@@ -41,11 +41,11 @@ public int fun() {
 }
 ```
 
-![img_81.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_81.png)
+![img_81.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-9.png)
 
 final 클래스 멤버 변수의 경우 **생성자에서** 초기화 가능
 
-![img_82.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/img_82.png)
+![img_82.png](pocu-note/COMP2500/001-java-syntax/001-012-final/images/final-10.png)
 
 ```java
 public class StudentManager {

@@ -9,7 +9,7 @@ aliases:
 
 ## 비트 수와 오디오 포맷
 
-![img_84.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_84.png)
+![img_84.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-1.png)
 
 오디오 품질은 비트 수에 따라 결정
 
@@ -19,7 +19,7 @@ aliases:
 
 ## 비트 뎁스
 
-![img_85.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_85.png)
+![img_85.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-2.png)
 
 양자화 개념
 - 음파의 높이를 몇 단계로 나눠서, 음파의 높낮이를 얼마나 세세히 표현할 것인지?
@@ -28,7 +28,7 @@ aliases:
 
 ## 샘플링 레이트
 
-![img_86.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_86.png)
+![img_86.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-3.png)
 
 1초에 막대 몇 개 넣을거냐?
 - 초마다 샘플 몇 개를 챕쳐하냐?
@@ -39,7 +39,7 @@ aliases:
 
 ## 오디오 파일의 크기 계산하기
 
-![img_87.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_87.png)
+![img_87.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-4.png)
 
 참고로 wave 파일은 압축하지 않음
 
@@ -52,7 +52,7 @@ aliases:
 	- 음파가 2개
 	- 채널이 2개
 
-![img_88.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_88.png)
+![img_88.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-5.png)
 
 계산 결과는 2,822,400 비트
 실제로 344KB
@@ -63,11 +63,11 @@ aliases:
 
 ## 데이터를 저장할 때 단위
 
-![img_89.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_89.png)
+![img_89.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-6.png)
 
-![img_90.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_90.png)
+![img_90.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-7.png)
 
-![img_91.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/img_91.png)
+![img_91.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-016-bit-count-audio-format/images/bit-count-audio-format-8.png)
 
 컴퓨터 관련에서 어딘가 저장할 때 최소 단위는 **바이트**
 - 하드 디스크

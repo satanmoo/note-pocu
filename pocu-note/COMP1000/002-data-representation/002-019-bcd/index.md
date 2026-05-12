@@ -9,18 +9,18 @@ aliases:
 
 ## 보편적인 2진수의 곱셈
 
-![img_84.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_84.png)
+![img_84.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-1.png)
 
 10진수랑 똑같은 방식으로 곱셈
 - 10진수로 변환해서 곱하고 2진수로 변환하는게 빠를걸?
 
-![img_85.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_85.png)
+![img_85.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-2.png)
 
 10진수로 변환해서 부호 고려해서 곱하고, 2진수로 변환
 
 ## 2진수의 나눗셈
 
-![img_86.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_86.png)
+![img_86.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-3.png)
 
 $2^n$으로 나누는 것은 right shift
 
@@ -28,11 +28,11 @@ $2^n$으로 나누는 것은 right shift
 
 ## BCD(binary-coded decimal)
 
-![img_87.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_87.png)
+![img_87.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-4.png)
 
 바이너리로 인코딩한 십진수
 
-![img_88.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_88.png)
+![img_88.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-5.png)
 
 10진수의 각 자리(0~9)를 4비트를 이용해 비트 패턴으로 표현
 - $2^4$ 중에 10개만 사용
@@ -46,13 +46,13 @@ packed:
 
 ## BCD 음수
 
-![img_89.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_89.png)
+![img_89.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-6.png)
 
 packed BCD를 가정
 - 가장 오른쪽 비트 포함 4비트를 부호를 위해 사용
 	- 위 예에서는 `1100`이 양수, `1101`이 음수라고 미리 약속
 
-![img_90.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_90.png)
+![img_90.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-7.png)
 
 비트 낭비
 
@@ -62,7 +62,7 @@ packed BCD를 가정
 
 ## 정수의 정확도
 
-![img_91.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/img_91.png)
+![img_91.png](pocu-note/COMP1000/002-data-representation/002-019-bcd/images/bcd-8.png)
 
 정수는 100% 정확도
 - 표현할 수 있는 범위 안의 정수는 오차 없이 정확

@@ -13,20 +13,20 @@ aliases:
 	- 정수, 문자 등등
 ## 정수
 
-![img_17.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/img_17.png)
+![img_17.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/unsigned-int-1.png)
 
 양의 정수, 음의 정수를 표현할 때 부호의 개념이  추가
 
-![img_18.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/img_18.png)
+![img_18.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/unsigned-int-2.png)
 
 unsigned, signed는 표현 가능(허용 가능)한 수의 범위가 다름
 
 ## 부호 없는 정수
 
-![img_19.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/img_19.png)
+![img_19.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/unsigned-int-3.png)
 
 0부터 카운팅
 
-![img_20.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/img_20.png)
+![img_20.png](pocu-note/COMP1000/002-data-representation/002-004-unsigned-int/images/unsigned-int-4.png)
 
 비트를 n개 사용하면 2^n 개의 수를 표현할 수 있음

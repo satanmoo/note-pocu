@@ -7,7 +7,7 @@ aliases:
 ---
 # 부호있는 정수의 뺄셈
 
-![img_73.png](pocu-note/COMP1000/002-data-representation/002-015-minus-of-signed-int/images/img_73.png)
+![img_73.png](pocu-note/COMP1000/002-data-representation/002-015-minus-of-signed-int/images/minus-of-signed-int-1.png)
 
 모두 더하기로 연산 가능
 

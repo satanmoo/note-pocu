@@ -9,15 +9,15 @@ aliases:
 
 ## continue, break, goto
 
-![img_123.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_123.png)
+![img_123.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-1.png)
 ## break 라벨 이름
 
-![img_124.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_124.png)
-![img_125.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_125.png)
+![img_124.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-2.png)
+![img_125.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-3.png)
 
 라벨이 달린 코드 블록(반복문)을 탈출
 
-![img_126.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_126.png)
+![img_126.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-4.png)
 
 `break`를 감싸고 있는 블록을 탈출하는 개념
 - 점프하는 개념이 아님
@@ -28,7 +28,7 @@ aliases:
 
 ## continue 라벨 이름
 
-![img_127.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_127.png)
+![img_127.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-5.png)
 
 라벨이 달린 코드 블록의 다음 iteration 진행
 
@@ -77,19 +77,19 @@ public static void test() {
 
 ## foreach 스타일
 
-![img_128.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_128.png)
+![img_128.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-6.png)
 
 `for` 키워드 그대로 활용
 
 ## 함수
 
-![img_129.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_129.png)
+![img_129.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-7.png)
 
 OOP 개념에서 클래스의 멤버 함수를 **메소드**라고 부름
 
 ## 영상 퀴즈
 
-![img_130.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/img_130.png)
+![img_130.png](pocu-note/COMP2500/001-java-syntax/001-017-loop/images/loop-8.png)
 
 ### 1. add() 함수 호출 후 v1의 값은?
 

@@ -9,14 +9,14 @@ aliases:
 
 ## 1의 보수
 
-![img_54.png](pocu-note/COMP1000/002-data-representation/002-010-one's-complement/images/img_54.png)
+![img_54.png](pocu-note/COMP1000/002-data-representation/002-010-one's-complement/images/one's-complement-1.png)
 
 2진법에서 1의 보수는 모든 자리의 수가 1
 - 1011(2)의 1의 보수 = 0100(2)
 
 ### 1의 보수를 구하는 방법
 
-![img_55.png](pocu-note/COMP1000/002-data-representation/002-010-one's-complement/images/img_55.png)
+![img_55.png](pocu-note/COMP1000/002-data-representation/002-010-one's-complement/images/one's-complement-2.png)
 
 각 자리의 비트를 뒤집기
 - 왜 뒤집으면 될까?
@@ -25,7 +25,7 @@ aliases:
 
 ## 부호있는 정수에서 1의 보수를 사용할 때 표현 범위
 
-![img_56.png](pocu-note/COMP1000/002-data-representation/002-010-one's-complement/images/img_56.png)
+![img_56.png](pocu-note/COMP1000/002-data-representation/002-010-one's-complement/images/one's-complement-3.png)
 
 가장 왼쪽 비트가 0이고 나머지 7개 비트로 어떤 수를 구하면 양수
 

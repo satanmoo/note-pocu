@@ -9,34 +9,34 @@ aliases:
 
 ## 오버플로우
 
-![img_21.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_21.png)
+![img_21.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-1.png)
 
 자료형은 비트 수가 정해져있기 때문에 비트가 초과되어 잘리는 현상이 발생
 - 비트 수가 넉넉하게 많다면 문제 없음
 - 표현할 수 있는 수의 범위가 정해짐
 
-![img_22.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_22.png)
+![img_22.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-2.png)
 
-![img_23.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_23.png)
+![img_23.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-3.png)
 
 연산 결과가 표현할 수 있는 최댓값보다 커질 때 오버플로 발생
 - 표현할 수 있는 수의 범위가 정해져있음
 
-![img_24.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_24.png)
+![img_24.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-4.png)
 
-![img_25.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_25.png)
+![img_25.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-5.png)
 
-![img_26.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_26.png)
+![img_26.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-6.png)
 
 - 도돌이표
 
-![img_27.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_27.png)
+![img_27.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-7.png)
 
 1, 9를 따로 더하는게 아니라 10으로 한 번에 더하면?
 - 교환법칙
 - 결과 동일
 
-![img_28.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/img_28.png)
+![img_28.png](pocu-note/COMP1000/002-data-representation/002-005-overflow/images/overflow-8.png)
 
 시계처럼 도는 이미지로 기억
 

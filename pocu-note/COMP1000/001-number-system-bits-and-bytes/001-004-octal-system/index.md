@@ -9,17 +9,17 @@ aliases:
 
 ## 8진법의 정의
 
-![img_51.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/img_51.png)
+![img_51.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/octal-system-1.png)
 
 한 자리에 쓸 수 있는 숫자가 8개
 ## 8진법의 자릿값
 
-![img_52.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/img_52.png)
+![img_52.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/octal-system-2.png)
 
 8진수 보고 10진수로 변환할 줄 알면 이해 완료
 ## 8진법의 셈
 
-![img_53.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/img_53.png)
+![img_53.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/octal-system-3.png)
 
 [[pocu-note/COMP1000/001-number-system-bits-and-bytes/001-002-decimal-system/index#carry-over|carry-over]] 적용
 - 8^0의 자리는 최소값 0으로 돌아감
@@ -27,7 +27,7 @@ aliases:
   
 ## 8진법의 덧셈
 
-![img_54.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/img_54.png)
+![img_54.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/octal-system-4.png)
 
 carry-over 연쇄
 - 8^0의 자리(기존 자리)는 다음과 같이 계산 3 + 7 - 8 == 2
@@ -37,7 +37,7 @@ carry-over 연쇄
 
 ## 8진법의 뺄셈
 
-![img_55.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/img_55.png)
+![img_55.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-004-octal-system/images/octal-system-5.png)
 
 borrowing 연쇄
 - 8^0의 자리는 다음과 같이 계산 8^1의 자리에서 8을 빌려와서 8 - 7 = 1

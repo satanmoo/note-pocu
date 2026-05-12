@@ -9,31 +9,31 @@ aliases:
 
 ## ANSI
 
-![img_98.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_98.png)
+![img_98.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-1.png)
 
 영어만 표현하려면 아스키로 충분하다
 
-![img_99.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_99.png)
+![img_99.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-2.png)
 
 다른 언어를 표현하기 위해 아스키를 확장함
 
-![img_100.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_100.png)
+![img_100.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-3.png)
 
 8비트를 사용해서 추가적으로 128개의 라틴문자 표시
 
 ## 그 밖의 다른 문자 인코딩
 
-![img_101.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_101.png)
+![img_101.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-4.png)
 
 ## 멀티바이트
 
-![img_102.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_102.png)
+![img_102.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-5.png)
 
-![img_103.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_103.png)
+![img_103.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-6.png)
 
 더 추가하고 싶어도 1바이트에서는 추가할 수 없음
 
-![img_104.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_104.png)
+![img_104.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-7.png)
 
 2바이트 내에서 표현하지만 가변 너비 인코딩
 
@@ -44,7 +44,7 @@ aliases:
 
 ## EUC
 
-![img_105.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_105.png)
+![img_105.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-8.png)
 
 한국어, 일본어, 중국어를 위한 **멀티바이트** 문자 인코딩
 
@@ -55,18 +55,18 @@ aliases:
 
 ## EUC-KR
 
-![img_106.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_106.png)
+![img_106.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-9.png)
 
 ## 멀티바이트의 한계
 
-![img_107.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_107.png)
+![img_107.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-10.png)
 
 한 번에 여러 나라의 문자를 동시에 표현할 수 없음
 - 코드 페이지는 하나만 사용 가능
 
 ## 유니코드(Unicode)
 
-![img_108.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_108.png)
+![img_108.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-11.png)
 
 글자에 대응되는 정수를 **유니코드 코드 포인트**라고 부름
 - `U+D3EC`와 같은 값
@@ -79,7 +79,7 @@ aliases:
 
 ## 유니코드 인코딩의 종류
 
-![img_109.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_109.png)
+![img_109.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-12.png)
 
 현재 유니코드의 모든 문자를 표현하기 위해서 17~18 비트가 필요함
 
@@ -88,7 +88,7 @@ aliases:
 - 모든 인코딩 방법이 최대 4바이트를 사용한다는 것은 공통점
 ## UCS-2
 
-![img_110.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_110.png)
+![img_110.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-13.png)
 
 최초의 유니코드 인코딩
 - UTF-16의 전신
@@ -102,15 +102,15 @@ aliases:
 
 ## UCS-2에서 시작된 삽질의 역사
 
-![img_111.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_111.png)
+![img_111.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-14.png)
 
 플랫폼(윈도우즈, 리눅스)에 따라 인코딩하면 바이트 크기가 다른 삽질
 ## UTF-8
 
-![img_112.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_112.png)
+![img_112.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-15.png)
 ## UTF-8의 장점
 
-![img_113.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_113.png)
+![img_113.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-16.png)
 
 아스키 코드하고 100% 호환
 - 어떤 아스키 코드 범위에 해당하는 문자를 UTF-8로 인코딩해 저장한 비트 패턴으로 아스키 코드를 구해 아스키 테이블에 매핑하면 원래의 문자가 그대로 복원됨
@@ -124,7 +124,7 @@ aliases:
 - 1바이트를 초과하는 데이터를 저장할 때 바이트의 저장 순서를 의미함
 - A.K.A 바이트 정렬
 
-![img_114.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/img_114.png)
+![img_114.png](pocu-note/COMP1000/002-data-representation/002-021-ansi/images/ansi-17.png)
 
 **리틀 엔디언**
 - 데이터가 끝나는 마지막 단위 = 작은 자리의 숫자

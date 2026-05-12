@@ -7,12 +7,12 @@ tags:
 ---
 # 2진수의 곱셈
 
-![img_82.png](pocu-note/COMP1000/002-data-representation/002-018-multiplication-of-bin/images/img_82.png)
+![img_82.png](pocu-note/COMP1000/002-data-representation/002-018-multiplication-of-bin/images/multiplication-of-bin-1.png)
 
 2진수의 가장 쉬운 곱셈은 2의 거듭제곱
 - 자리수만 늘어남
 
-![img_83.png](pocu-note/COMP1000/002-data-representation/002-018-multiplication-of-bin/images/img_83.png)
+![img_83.png](pocu-note/COMP1000/002-data-representation/002-018-multiplication-of-bin/images/multiplication-of-bin-2.png)
 
 **bit shift** 연산과 동일
 - left shift

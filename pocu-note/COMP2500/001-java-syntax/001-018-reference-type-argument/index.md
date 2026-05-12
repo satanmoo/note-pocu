@@ -9,11 +9,11 @@ aliases:
 
 ## 함수 호출과 참조형 인자
 
-![img_131.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_131.png)
+![img_131.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-1.png)
 ## 참조형 인자에 final 키워드 붙이기
 
-![img_132.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_132.png)
-![img_133.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_133.png)
+![img_132.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-2.png)
+![img_133.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-3.png)
 
 `v1`, `v2`의 값의 수정을 금지하는 개념
 - 참조형이라 이 값이 주소
@@ -31,12 +31,12 @@ ptr = &y;    // 오류: ptr이 다른 주소를 가리킬 수 없음
 
 ## 1차원 배열
 
-![img_134.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_134.png)
+![img_134.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-4.png)
 
 ## 다차원 배열
 
-![img_135.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_135.png)
-![img_136.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_136.png)
+![img_135.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-5.png)
+![img_136.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-6.png)
 
 자바의 다차원 배열은 **jagged array** 개념
 - 안쪽 배열의 길이가 다 다를 수 있음
@@ -44,27 +44,27 @@ ptr = &y;    // 오류: ptr이 다른 주소를 가리킬 수 없음
 
 ## enum
 
-![img_137.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_137.png)
+![img_137.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-7.png)
 
 ## Java의 열거형에서 못 하는 것
 
-![img_138.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_138.png)
+![img_138.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-8.png)
 
 열거형의 원소에 임의의 값을 대입하는 것 불가능
 
 ## Java의 열거형은 클래스형
 
-![img_140.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_140.png)
-![img_139.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_139.png)
+![img_140.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-9.png)
+![img_139.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-10.png)
 
 ## 열거형과 생성자
 
-![img_141.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_141.png)
+![img_141.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-11.png)
 
 열거형이 클래스기 때문에 생성자 추가 가능
 - 생성자는 암시적으로 `private`
 
-![img_142.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_142.png)
+![img_142.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-12.png)
 
 열거형 개체를 생성할 때 `new` 사용 불가능
 - 컴파일 에러
@@ -73,12 +73,12 @@ ptr = &y;    // 오류: ptr이 다른 주소를 가리킬 수 없음
 
 ## var
 
-![img_143.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_143.png)
+![img_143.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-13.png)
 
 컴파일러가 추론할 수 있게 선언과 대입을 동시에
 - 대입이 없으면 추론할 수 없어서 컴파일 에러
 
-![img_144.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/img_144.png)
+![img_144.png](pocu-note/COMP2500/001-java-syntax/001-018-reference-type-argument/images/reference-type-argument-14.png)
 
 `var[]` 같은 문법은 없음
 - 컴파일 에러

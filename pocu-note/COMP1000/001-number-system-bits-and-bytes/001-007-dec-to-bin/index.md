@@ -7,20 +7,20 @@ aliases:
 ---
 # 10진수->2진수 변환
 
-![img_63.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/img_63.png)
+![img_63.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/dec-to-bin-1.png)
 
 2로 나누는 동작을 반복하면서 나머지를 오른쪽에 적어 나가기
 
-![img_64.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/img_64.png)
+![img_64.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/dec-to-bin-2.png)
 
 몫이 1이 나오면 2를 나누는 동작을 종료
 
-![img_64.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/img_64.png)
+![img_64.png](pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/dec-to-bin-2.png)
 
 십진수를 'Decimal'로 불러서 *DEC* 라는 표현을 사용
 
 ## 빠른 방법
-![[pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/img_65.png]]
+![[pocu-note/COMP1000/001-number-system-bits-and-bytes/001-007-dec-to-bin/images/dec-to-bin-3.png]]
 32 채우고
 - 2^5
 - 100000

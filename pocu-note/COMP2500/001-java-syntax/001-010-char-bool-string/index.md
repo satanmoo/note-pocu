@@ -8,13 +8,13 @@ aliases:
 # char, bool, String
 ## 유니코드지만 16비트인 char
 
-![img_61.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_61.png)
+![img_61.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-1.png)
 
 char로 모든 유니코드를 표현할 수 없음
 - 여기서 말하는 유니코드는 코드 포인트 값
 	- U+10FFFF
 
-![img_62.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_62.png)
+![img_62.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-2.png)
 
 char이 유니코드의 코드 포인트를 그대로 표현하는지 여부가 왜 중요한가?
 - 원래 Java 탄생 시점에 유니코드의 코드 포인트를 그대로 표현하려는 의도로 char을 설계함
@@ -24,11 +24,11 @@ char이 유니코드의 코드 포인트를 그대로 표현하는지 여부가 
 - 대신 UTF-16 로 인코딩한 결과를 String에 저장
 ## boolean
 
-![img_63.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_63.png)
+![img_63.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-3.png)
 
 ## 기본 자료형은 모두 '값형'임을 잊지 말자
 
-![img_64.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_64.png)
+![img_64.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-4.png)
 
 값형
 - CPU에서 직접 연산이 가능함 
@@ -36,13 +36,13 @@ char이 유니코드의 코드 포인트를 그대로 표현하는지 여부가 
 
 ## String
 
-![img_65.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_65.png)
+![img_65.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-5.png)
 
-![img_66.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_66.png)
+![img_66.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-6.png)
 
 ### `String` immutable
 
-![img_67.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/img_67.png)
+![img_67.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-7.png)
 
 String 한 번 할당하면 변경 불가
 - immutable
