@@ -35,7 +35,6 @@ public ArrayList<Passenger> passengers;
 
 `<>` 은 제너릭
 
-
 ```java
 public Vehicle(VehicleType type, ArrayList<Passenger> passengers) {
 	this(type, passengers, 0.0);
