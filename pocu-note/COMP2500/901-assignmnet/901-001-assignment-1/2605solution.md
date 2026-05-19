@@ -6,25 +6,29 @@ tags:
 ## 고민
 
 유저의 종류를 구분해 유저 클래스의 상태로 가지는 것이 필요한가?
-- 필요없음
-- 현재 스펙에서 유저를 식별하면 끝
-	- 방문자인지 블로그 주인인지 글 작성자인지 등등 모두 식별자를 구분하는 것으로 끝
+- 즉 `Enum UserType` 같은 것을 만들어야 하는가?
+	- 필요없음
+- 유저를 식별할 수 있으면 됨
+	- 방문자인지 블로그 주인인지 글 작성자인지 등등 구별은 식별자로 수행 가능
 	- [[#Hint 1]] 참고
-
 
 블로그에 상태로 유저를 기록함
 - 블로그 주인을 상태로 가지기 위함
 	- 블로그 주인을 상태로 가져서 무엇을 할 것인가?
 		- ~~블로그 주인만 글을 써야함~~
 		- 블로그 주인 여부도 중요하지 않음, 블로그 주인 외에 여러 사람이 글을 작성할 수 있음
+- 블로그 주인을 상태로 가질 필요가 없음
 
 
 유저의 고유 식별자
-- long 타입 사용하고 0부터 auto-increment
-	- 유틸리티 클래스를 만들 수 없어서 힘듬
-	- id generator 클래스를 등록할 방법이 없음
-- UUID
+- ~~long 타입 사용하고 0부터 auto-increment~~
+	- ~~유틸리티 클래스를 만들 수 없어서 힘듬~~
+	- ~~id generator 클래스를 등록할 방법이 없음~~
+- ~~UUID~~
 - Email
+	- 이 고민이 의미가 없었음
+	- 결국 유저를 매번 생성해도 똑같은 유저임을 유지해야 함
+		- 외부에서 유저에 대한 식별자를 받아오도록 구현
 
 이미 작성한 블로그의 글의 상태를 바꾸는 기능
 - 본문 고치기
@@ -41,32 +45,26 @@ tags:
 - UUID 를 주는 방식은 OO적 상호작용과 거리가 먼가?
 - 개체 협력은 개체 참조로
 	- [[pocu-note/COMP2500/003-object-modeling-1/003-010-modeling-6/index|모델링 6: OO적 상호작용]] 참고
-
 블로그가 글을 보관하고, 그 글을 찾기 위해 매개변수로 글의 식별자를 보내는 방법
 - 개체간 상호작용이 부족함
 - 글의 식별자는 밖에서 누가 가지고 있는거?
 - `public void modifyTitle(final UUID postId, final User user, final String title)`
-
 블로그가 글을 보관하고 글이 이미 존재한다는 가정에 설계
 - 여기서 중요한 것은 글의 참조를 블로그 외부에서 알 고 있음
 	- 글이 이미 존재하기 때문에 글의 참조를 블로그 외부에서 알고 전달할 수 있는 개념
-
 방법 1:
 `public void modifyTitle(final UUID postId, final User user, final String title` 처럼 `postId`를 넘기고 블로그는 내부의 해시셋에서 포스트를 찾아오는 동작을 수행하는 구현
-
 방법 2: 
 블로그에 `public void modifyTitle(final Post post, final User user, final String title)` 그리고 Post의 메서드(`void setTitle(final String title)`)
 - 블로그 외부에서 Post를 알고 있으니 가능한 방법
 - 블로그와 포스트 동일한 패키지에 두고 Post의 메서드는 디폴트 접근 제어자 사용
 - 근데 이러면 블로그에서 굳이 찾을 이유가 없음
-
 방법 3:
 - 블로그에 `public void modifyPost(final Post post)`
 - 애초에 수정된 Post 개체를 받음
 	- 수정 방안으로는 Post에서 setter 유사한 메서드 제공하거나
 	- 복사 생성자 제공
 - 블로그는 자신의 HashSet에 속한 개체인지 확인하고 교체만 함
-
 방법 4:
 - 블로그의 역할을 글 읽어오는 놈으로 축소
 - 글 수정은 Post가 담당함
@@ -90,7 +88,6 @@ tags:
 결론적으로 방법 4가 옳음
 - 이게 제일 OOP
 - 블로그에서 글을 찾는 방식은 외부에 데이터가 저장되어 있다는 가정에서 나온 생각
-
 댓글을 읽어오는 기능은 포스트에 두는게 맞음
 - 블로그가 포스트를 읽어오는 기능을 가지고 있는 것과 유사함
 - 포스트에 댓글이 속하는 개념
@@ -109,7 +106,7 @@ tags:
 
 글의 작성자가 글의 상태를 변화시낄 때 modifiedAt 값이 갱신되야함
 - 태그 다는 것도???
-> [!TODO]  빌드봇: 작성자가 태그 달 때 modifiedAt 값 갱신되는지 여부
+> [!TODO]  ~~빌드봇: 작성자가 태그 달 때 modifiedAt 값 갱신되는지 여부~~
 
 메소드 등록 섹션 보니까
 - 태그 필터를 설정하는 메서드 등록
@@ -118,6 +115,7 @@ tags:
 - 작성자 필터, 정렬 방법  모두 상태로 가지고 있네..?
 - 이게 더 OOP적으로 맞구나
 - 원래 방식이 쿼리에 가깝구나
+
 정렬 방법의 기본값은?
 - 작성 일시 내림차순으로 하면되겠지
 	- 이게 젤 위에 있으니까?
@@ -125,6 +123,7 @@ tags:
 	- 정렬이 적용되지 않는다는 개념은 없으니
 	- ENUM 5개 중에 반드시 하나는 있어야 하는 상황에서 기본값을 무엇으로 할 것인가 문제
 	- [[spec#3.3 블로그 글 목록 가져오기]]에서도 추론할 수 있음
+
 태그 필터를 재설정할 때 기존은 지우고 새로 대입하는게 맞겟지?
 - 보통 그렇잖아? 
 - 경험상
@@ -135,12 +134,14 @@ tags:
 
 [[spec#2.1 전반적인 규칙]]에서 "8. 여러분이 작성하는 클래스들은 반드시 `academy.pocu.comp2500.assignment1` 패키지 안에 속해야 합니다." >> 주의
 
-태그는 tagId가 필요없음
-- tagId가 존재하는게 더 부자연 스러운
-- VO(Vlaue Object) 처럼 사용
+~~태그는 tagId가 필요없음~~
+- ~~tagId가 존재하는게 더 부자연 스러운~~
+- ~~VO(Vlaue Object) 처럼 사용~~
+	- 이것도 의미가 없는 고민
 
 태그 필터링
 - 글의 태그 중 하나라도 태그 필터 목록에 포함되면 글을 불러올 때 포함되어야 하나?
+- yes
 
 > [!TODO] ~~빌드봇: 태그 필터의 태그를 모두 포함하는 글 만 살아남는지? 아니면 태그 필터의 태그 중 하나라도 포함하면 살아남는지?~~
 
@@ -159,6 +160,65 @@ tags:
 태그 필터에서 태그를 하나라도 포함하면 글을 불러와야함
 
 자기 댓글 추천 가능
+
+## 빌드봇 돌리면서 스펙 보충
+
+### 올바른 Tag의 타입
+
+`A02_NoRestrictionsViolated override not allowed: Tag.equals(1 param)`
+`E01_AddTag param type nonsensical: tags`
+- 스펙 상 equals/hashcode 오버라이드 금지
+- Tag를 String을 Wrapping하는 값 객체처럼 사용 못 함
+- Tag는 String으로
+	- String으로 두면 equals에서 내용 비교하니까
+
+다른 클래스의 equals, hashcode 오버라이드 지우기
+- 기본 동작인 Object의 참조 동등 비교
+
+Blog, Comment, Post 에서 UUID 필드 제거
+- 이전에 equals & hashcode에서 사용했었기 때문에 필요없어짐
+유저는 어떻게?
+- [[#Hint 1]] 에 따라서 고유 식별자 둬야함
+- ~~`HashSet<User>` 대신 `HashSet<UUID>`로 변경하기~~
+	- ~~voter~~
+	- ~~authorfilter~~
+
+유저의 식별자로 이메일을 사용할 수 밖에 없음
+- 다른 무언가를 사용하기에 애매함
+- 아무튼 String이면 되네
+[[#Hint 1]]에서 **같은 유저인데 실행할 때마다 식별자가 바뀌면 안 됩니다.**
+내부에서 UUID 랜덤 생성을 하면 `new User()` 두 번 호출 시 같은 사람을 의도해도 달라짐
+
+### 매개변수 subcomment
+
+`D10_SubcommentAdderPatternSensical param nonsensical: subcomment`
+`D11_AddSubcomment param nonsensical: subcomment`
+`H00_BlogSystemTest1 param nonsensical: subcomment`
+
+매개변수 이름을 subcomment 대신 comment로 변경 (재귀 구조)
+- [lab3](obsidian://open?vault=note-pocu&file=pocu-note%2FCOMP2500%2F902-lab%2F902-002-lab3%2Fspec) 참고
+
+### 글에 태그 탈기
+
+`E01_AddTag` 테스트 케이스 등에서 태그 다는 것은 단수로 다는게 맞아 보임??
+- 태그 필터는 복수로 걸고
+- 이름부터 AddTag
+각종 테스트 코드도 그렇게 되어있음
+
+태그달 때는 수정시간 변경 X
+- modifiedAt
+
+### 리액션 관련
+
+한 유저가 여러 리액션 달 수 있음
+한 유저가 리액션을 제거할 수 잇음
+
+### 요약
+
+- equals/hashCode 오버라이드 제거
+- Tag 클래스 제거, String으로 대체
+- addPostTag 단일 태그화 + modifiedAt 갱신 제거
+- User 식별자를 외부 주입 email 기반으로 전환
 
 ## Hint 1
 

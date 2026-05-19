@@ -22,7 +22,12 @@ aliases:
 
 ![img_20.png](pocu-note/COMP2500/002-necessity-of-oop/002-019-private-method/images/private-method-9.png)
 ![img_21.png](pocu-note/COMP2500/002-necessity-of-oop/002-019-private-method/images/private-method-10.png)
+
+## 접근 제어자의 내부는 클래스 내부
+
 ![img_22.png](pocu-note/COMP2500/002-necessity-of-oop/002-019-private-method/images/private-method-11.png)
 
 private 에서 말하는 내부는 **클래스** 내부를 말함
 - 개체 내부가 아님
+
+접근 제어자는 클래스 레벨

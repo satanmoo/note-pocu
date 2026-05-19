@@ -1,152 +1,11 @@
 # Week4
 
-## Java and global variable
 
-![img.png](pocu-note/COMP2500/week4/image/img.png)
-![img_1.png](pocu-note/COMP2500/week4/image/img_1.png)
-![img_2.png](pocu-note/COMP2500/week4/image/img_2.png)
 
-## The inconvenience of everything being an object
-
-![img_3.png](pocu-note/COMP2500/week4/image/img_3.png)
-
-전역적이라는 것은 프로그램이 실행 중 globally 하나만 존재함을 의미  
-모든 것이 개체일 때는 전역적이라는 개념이 없고 2가지 불편함이 존재
-
-1. 개체를 만들 필요가 없을 때
-2. 클래스 단위에서 행동
-
-## 첫번째 불편함 해결: Static member function
-
-![img_4.png](pocu-note/COMP2500/week4/image/img_4.png)
-![img_5.png](pocu-note/COMP2500/week4/image/img_5.png)
-![img_6.png](pocu-note/COMP2500/week4/image/img_6.png)
-
-정적 멤버 변수는 개체가 아니라 클래스 소속  
-new로 개체를 만들지 않고 호출할 수 있음  
-개체를 만들고 정적 멤버 변수를 호출할 수 있으나 권장하지는 않음
-
-```java
-public class Pig {
-    static public int boom() {
-        return 0;
-    }
-}
-```
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        Pig pig = new Pig();
-        Pig.boom(); // 개체를 생성하지 않고 정적 멤버 함수 호출
-        pig.boom(); // 권장 X
-    }
-}
-```
-
-![img_7.png](pocu-note/COMP2500/week4/image/img_7.png)
-
-클래스 다이어그램에서 멤버 함수에 밑줄이 있으면 정적
-
-### private 생성자로 개체 생성 금지하기
-
-![img_8.png](pocu-note/COMP2500/week4/image/img_8.png)
-![img_9.png](pocu-note/COMP2500/week4/image/img_9.png)
-![img_10.png](pocu-note/COMP2500/week4/image/img_10.png)
-
-기본 생성자를 클래스 다이어그램에 포함하기  
-기본 생성자가 public이라서 외부에서 생성자를 호출해 개체를 생성할 수 있음
-
-![img_11.png](pocu-note/COMP2500/week4/image/img_11.png)
-![img_12.png](pocu-note/COMP2500/week4/image/img_12.png)
-![img_13.png](pocu-note/COMP2500/week4/image/img_13.png)
-
-정적 멤버 변수를 개체에서 호출할 수 있는 이유는 클래스는 **단 하나만** 존재하기 때문
-
-![img_14.png](pocu-note/COMP2500/week4/image/img_14.png)
-![img_15.png](pocu-note/COMP2500/week4/image/img_15.png)
-![img_16.png](pocu-note/COMP2500/week4/image/img_16.png)
-![img_17.png](pocu-note/COMP2500/week4/image/img_17.png)
-![img_18.png](pocu-note/COMP2500/week4/image/img_18.png)
-![img_19.png](pocu-note/COMP2500/week4/image/img_19.png)
-
-private 생성자를 사용하는 방법은 hack  
-static class를 지원하는 언어는 hack을 사용하지 않아도 됨
-
-![img_20.png](pocu-note/COMP2500/week4/image/img_20.png)
-
-## 두번째 불편함 해결: static member variable
-
-![img_21.png](pocu-note/COMP2500/week4/image/img_21.png)
-![img_22.png](pocu-note/COMP2500/week4/image/img_22.png)
-
-개체의 개수를 알고 싶을 때 개체보다 상위 개념인 클래스 단위의 작업이 필요함
-
-![img_23.png](pocu-note/COMP2500/week4/image/img_23.png)
-![img_24.png](pocu-note/COMP2500/week4/image/img_24.png)
-![img_25.png](pocu-note/COMP2500/week4/image/img_25.png)
-
-개체의 멤버 변수는 다른 개체의 정보를 반영할 수 없음
-
-![img_26.png](pocu-note/COMP2500/week4/image/img_26.png)
-![img_27.png](pocu-note/COMP2500/week4/image/img_27.png)
-![img_28.png](pocu-note/COMP2500/week4/image/img_28.png)
-![img_29.png](pocu-note/COMP2500/week4/image/img_29.png)
-![img_30.png](pocu-note/COMP2500/week4/image/img_30.png)
-
-개체를 생성할 때 호출되는 함수는 생성자  
-생성자를 호출할 때 정적 변수에 값을 더하면 개체의 개수를 셀 수 있음
-
-- 참고로 생성자 블록에서 numCreated 지역 변수가 없기 때문에 상위 블록으로 올라감
-- 상위 블록에서 numCreated 변수를 찾고 값을 증가
-- this, 클래스 명으로 모두 접근할 수 있는 이유는 개체는 클래스를 알 수 있기 때문, 즉 개체 입장에서 클래스는 하나임
-- 변수 선언은 클래스 레벨에서 하기 때문에 static 멤버 변수와 그냥 멤버 변수의 이름이 같으면 **컴파일 에러**
-
-```java
-public class Pig {
-
-    private int x;
-    static private int x;   // COMPILE ERROR
-
-    static public int boom() {
-        return 0;
-    }
-}
-```
-
-### 정적 멤버 변수에 접근하는 정적 멤버 함수
-
-![img_31.png](pocu-note/COMP2500/week4/image/img_31.png)
-![img_32.png](pocu-note/COMP2500/week4/image/img_32.png)
-![img_33.png](pocu-note/COMP2500/week4/image/img_33.png)
-
-정적 멤버 함수에서 정적이 아닌 그냥 멤버 변수에 접근할 수 없음
-
-![img_34.png](pocu-note/COMP2500/week4/image/img_34.png)
-![img_35.png](pocu-note/COMP2500/week4/image/img_35.png)
-![img_36.png](pocu-note/COMP2500/week4/image/img_36.png)
-![img_37.png](pocu-note/COMP2500/week4/image/img_37.png)
-
-클래스 레벨에서 개체를 특정할 수 없음
-
-## static 요약 정리
-
-![img_38.png](pocu-note/COMP2500/week4/image/img_38.png)
-![img_39.png](pocu-note/COMP2500/week4/image/img_39.png)
-![img_40.png](pocu-note/COMP2500/week4/image/img_40.png)
-
-static은 global에 비해서 장점이 존재함
-
-1. 접근 제어자를 추가할 수 있음
-2. 네임 스페이스처럼 활용할 수 있음
 
 ## 코드보기: 정적 Logger
 
-- 다른 사람에게 프로그램을 배포하는 상황을 가정
-- 로그를 화면에 출력할 경우 다른 사람 컴퓨터를 직접 볼 수 없기 때문에 파일에 로그를 씀.
-    - 로그가 필요하면 사용자에게 로그 파일을 요청
-- 참고로 최근에는 클라우드 저장소에 로그를 바로 남겨서 사용자에게 로그 파일을 보내달라고 부탁하지 않아도 됨
-    - 그래서 웹 사이트 돌아다니다보면 사용자의 정보를 수집하는 동의하는지 물어보기도 함
+
 
 ```java
 package academy.pocu.comp2500samples.w04.staticlogger;
@@ -283,33 +142,7 @@ public class Logger {
 - 정적 멤버 변수 logLevel 값보다 높은 레벨의 로그만 파일에 기록함
 - 생성자에 private을 붙여서 외부에서 개체 생성할 수 없음
 
-```java
-package academy.pocu.comp2500samples.w04.staticlogger;
 
-public enum LogLevel {
-    DEBUG(0),
-    INFORMATION(1),
-    WARNING(2),
-    ERROR(3),
-    CRITICAL(4);
-
-    private int level;
-
-    public int getLogLevel() {
-        return this.level;
-    }
-
-    private LogLevel(int level) {
-        this.level = level;
-    }
-}
-```
-
-- 열거형에서 주의할 점
-    1. 멤버 변수와 메서드를 가질 경우 마지막 상수 끝에 `;`를 붙여야함
-    2. 생성자는 암묵적으로 private
-        - public, protected 불가능
-    3. 생성자에서 멤버 변수를 초기화할 수 있고 상수에 함수 호출처럼 ()로 값을 넣으면 됨
 
 ## QUIZ
 
@@ -368,48 +201,48 @@ public class StudentManager {
 
 ## static에 대한 비판
 
-![img_41.png](pocu-note/COMP2500/week4/image/img_41.png)
-![img_42.png](pocu-note/COMP2500/week4/image/img_42.png)
-![img_43.png](pocu-note/COMP2500/week4/image/img_43.png)
-![img_44.png](pocu-note/COMP2500/week4/image/img_44.png)
+![img_41.png](pocu-note/COMP2500/004-static/image/img_41.png)
+![img_42.png](pocu-note/COMP2500/004-static/image/img_42.png)
+![img_43.png](pocu-note/COMP2500/004-static/image/img_43.png)
+![img_44.png](pocu-note/COMP2500/004-static/image/img_44.png)
 
 ## 디자인 패턴
 
-![img_45.png](pocu-note/COMP2500/week4/image/img_45.png)
-![img_46.png](pocu-note/COMP2500/week4/image/img_46.png)
-![img_47.png](pocu-note/COMP2500/week4/image/img_47.png)
-![img_48.png](pocu-note/COMP2500/week4/image/img_48.png)
-![img_49.png](pocu-note/COMP2500/week4/image/img_49.png)
+![img_45.png](pocu-note/COMP2500/004-static/image/img_45.png)
+![img_46.png](pocu-note/COMP2500/004-static/image/img_46.png)
+![img_47.png](pocu-note/COMP2500/004-static/image/img_47.png)
+![img_48.png](pocu-note/COMP2500/004-static/image/img_48.png)
+![img_49.png](pocu-note/COMP2500/004-static/image/img_49.png)
 
 반복되는 패턴을 정형화하고 추상화한 것이 디자인 패턴
 
-![img_50.png](pocu-note/COMP2500/week4/image/img_50.png)
+![img_50.png](pocu-note/COMP2500/004-static/image/img_50.png)
 
 ### 디자인 패턴의 장점
 
-![img_51.png](pocu-note/COMP2500/week4/image/img_51.png)
-![img_52.png](pocu-note/COMP2500/week4/image/img_52.png)
+![img_51.png](pocu-note/COMP2500/004-static/image/img_51.png)
+![img_52.png](pocu-note/COMP2500/004-static/image/img_52.png)
 
 ### 디자인 패턴의 단점
 
-![img_53.png](pocu-note/COMP2500/week4/image/img_53.png)
-![img_54.png](pocu-note/COMP2500/week4/image/img_54.png)
+![img_53.png](pocu-note/COMP2500/004-static/image/img_53.png)
+![img_54.png](pocu-note/COMP2500/004-static/image/img_54.png)
 
 추상적, 범용적 코드는 중복될 수 있고, 성능에 문제가 생길 수 있음
 
 ### 디자인 패턴의 목적
 
-![img_55.png](pocu-note/COMP2500/week4/image/img_55.png)
-![img_56.png](pocu-note/COMP2500/week4/image/img_56.png)
-![img_57.png](pocu-note/COMP2500/week4/image/img_57.png)
+![img_55.png](pocu-note/COMP2500/004-static/image/img_55.png)
+![img_56.png](pocu-note/COMP2500/004-static/image/img_56.png)
+![img_57.png](pocu-note/COMP2500/004-static/image/img_57.png)
 
 재활용성과 유연성이 높은 설계 방법이 품질과 직결되지 않음
 
 ### 디자인 패턴이 비판받는 이유
 
-![img_58.png](pocu-note/COMP2500/week4/image/img_58.png)
-![img_59.png](pocu-note/COMP2500/week4/image/img_59.png)
-![img_60.png](pocu-note/COMP2500/week4/image/img_60.png)
+![img_58.png](pocu-note/COMP2500/004-static/image/img_58.png)
+![img_59.png](pocu-note/COMP2500/004-static/image/img_59.png)
+![img_60.png](pocu-note/COMP2500/004-static/image/img_60.png)
 
 ### 디자인 패턴 공부법
 
@@ -417,13 +250,13 @@ public class StudentManager {
 
 ## 싱글턴 패턴
 
-![img_61.png](pocu-note/COMP2500/week4/image/img_61.png)
+![img_61.png](pocu-note/COMP2500/004-static/image/img_61.png)
 
 static, global과 유사한 개념
 
-![img_62.png](pocu-note/COMP2500/week4/image/img_62.png)
-![img_63.png](pocu-note/COMP2500/week4/image/img_63.png)
-![img_64.png](pocu-note/COMP2500/week4/image/img_64.png)
+![img_62.png](pocu-note/COMP2500/004-static/image/img_62.png)
+![img_63.png](pocu-note/COMP2500/004-static/image/img_63.png)
+![img_64.png](pocu-note/COMP2500/004-static/image/img_64.png)
 
 - 정적 멤버 변수 `instance`는 클래스 로딩될 때 null로 초기화
     - 정적 멤버 변수라서 비정적 멤버 변수와 다르게 클래스 로딩 시 초기화됨
@@ -431,65 +264,65 @@ static, global과 유사한 개념
 
 ### 싱글턴 패턴의 예
 
-![img_65.png](pocu-note/COMP2500/week4/image/img_65.png)
-![img_66.png](pocu-note/COMP2500/week4/image/img_66.png)
-![img_67.png](pocu-note/COMP2500/week4/image/img_67.png)
+![img_65.png](pocu-note/COMP2500/004-static/image/img_65.png)
+![img_66.png](pocu-note/COMP2500/004-static/image/img_66.png)
+![img_67.png](pocu-note/COMP2500/004-static/image/img_67.png)
 
 싱글턴을 만드는데 필요한 것(멤버 변수, 메서드)만 static으로 선언  
 나머지 메서드는 비정적으로 선언  
 사실 이 예는 정적 클래스로 선언하는게 더 좋음, 메서드만 있기 때문
 
-![img_68.png](pocu-note/COMP2500/week4/image/img_68.png)
-![img_69.png](pocu-note/COMP2500/week4/image/img_69.png)
-![img_70.png](pocu-note/COMP2500/week4/image/img_70.png)
-![img_71.png](pocu-note/COMP2500/week4/image/img_71.png)
-![img_72.png](pocu-note/COMP2500/week4/image/img_72.png)
+![img_68.png](pocu-note/COMP2500/004-static/image/img_68.png)
+![img_69.png](pocu-note/COMP2500/004-static/image/img_69.png)
+![img_70.png](pocu-note/COMP2500/004-static/image/img_70.png)
+![img_71.png](pocu-note/COMP2500/004-static/image/img_71.png)
+![img_72.png](pocu-note/COMP2500/004-static/image/img_72.png)
 
 ### static vs 싱글턴
 
-![img_73.png](pocu-note/COMP2500/week4/image/img_73.png)
+![img_73.png](pocu-note/COMP2500/004-static/image/img_73.png)
 
 멀티턴 패턴도 싱글턴 패턴처럼 최대 개체 개수가 고정
 
-![img_74.png](pocu-note/COMP2500/week4/image/img_74.png)
-![img_75.png](pocu-note/COMP2500/week4/image/img_75.png)
+![img_74.png](pocu-note/COMP2500/004-static/image/img_74.png)
+![img_75.png](pocu-note/COMP2500/004-static/image/img_75.png)
 
 싱글턴 개체는 처음으로 getInstance() 매서드가 호출될 때 생성됨
 getInstance() 매서드를 다양한 개체에서 호출하면 개체의 생성 시점을 제어하기 어려움
 
 #### 싱글턴 개체 초기화 순서를 보장하는 방법
 
-![img_76.png](pocu-note/COMP2500/week4/image/img_76.png)
+![img_76.png](pocu-note/COMP2500/004-static/image/img_76.png)
 
 개체 초기화 순서를 보장하기 위해 프로그램 시작 시 정해진 순서대로 getInstance()를 호출하는 방법이 있음
 
 ### 싱글턴 패턴의 응용
 
-![img_77.png](pocu-note/COMP2500/week4/image/img_77.png)
+![img_77.png](pocu-note/COMP2500/004-static/image/img_77.png)
 
 싱글턴 개체 생성 시 인자가 필요한 경우가 있음  
 처음 getInstance()를 호출할 때는 초기화 때문에 인자가 필요함  
 그 이후 호출할 때는 이미 개체를 초기화했기 때문에 필요 없음  
 여기서 문제는 getInstance() 함수 하나에서 초기화와 개체 반환을 모두 수행하는 것
 
-![img_78.png](pocu-note/COMP2500/week4/image/img_78.png)
-![img_79.png](pocu-note/COMP2500/week4/image/img_79.png)
-![img_80.png](pocu-note/COMP2500/week4/image/img_80.png)
-![img_81.png](pocu-note/COMP2500/week4/image/img_81.png)
+![img_78.png](pocu-note/COMP2500/004-static/image/img_78.png)
+![img_79.png](pocu-note/COMP2500/004-static/image/img_79.png)
+![img_80.png](pocu-note/COMP2500/004-static/image/img_80.png)
+![img_81.png](pocu-note/COMP2500/004-static/image/img_81.png)
 문제를 해결하기 위해 개체 생성, 개체 삭제, 개체 얻기 동작을 따로 매서드로 구현
 
-![img_82.png](pocu-note/COMP2500/week4/image/img_82.png)
+![img_82.png](pocu-note/COMP2500/004-static/image/img_82.png)
 getInstance()를 호출하기 전 createInstance()를 호출하지 않았다면, 개체가 유효한 상태가 아님(초기화 되지 않음) 따라서 OOP 정신에 어긋남
 
-![img_83.png](pocu-note/COMP2500/week4/image/img_83.png)
+![img_83.png](pocu-note/COMP2500/004-static/image/img_83.png)
 클래스 자체만 보면 OOP 정신에 어긋나지만 사용만 잘 하면 괜찮음  
 즉 안전수칙을 잘 지키면 됨  
 OOP 정신은 안전수칙도 필요없는 완벽한 도구를 만들어주자
 
 ## 안티패턴
 
-![img_84.png](pocu-note/COMP2500/week4/image/img_84.png)
-![img_85.png](pocu-note/COMP2500/week4/image/img_85.png)
+![img_84.png](pocu-note/COMP2500/004-static/image/img_84.png)
+![img_85.png](pocu-note/COMP2500/004-static/image/img_85.png)
 
 ## 코드보기: 싱글턴 Logger
 
@@ -645,14 +478,14 @@ public class Logger {
 
 ## 내포 클래스
 
-![img_86.png](pocu-note/COMP2500/week4/image/img_86.png)
-![img_87.png](pocu-note/COMP2500/week4/image/img_87.png)
+![img_86.png](pocu-note/COMP2500/004-static/image/img_86.png)
+![img_87.png](pocu-note/COMP2500/004-static/image/img_87.png)
 
 - 보통 다른 언어는 정적 내포 클래스만 존재함
 
 ### 내포 클래스의 용도
 
-![img_88.png](pocu-note/COMP2500/week4/image/img_88.png)
+![img_88.png](pocu-note/COMP2500/004-static/image/img_88.png)
 
 1. 그룹화
 
@@ -664,34 +497,34 @@ public class Logger {
 
 ### 내포 클래스를 사용하지 않고 Record, RecordReader 구현
 
-![img_89.png](pocu-note/COMP2500/week4/image/img_89.png)
-![img_90.png](pocu-note/COMP2500/week4/image/img_90.png)
+![img_89.png](pocu-note/COMP2500/004-static/image/img_89.png)
+![img_90.png](pocu-note/COMP2500/004-static/image/img_90.png)
 
 - Record는 데이터, Reader로 읽기만 할 예정
 
-![img_91.png](pocu-note/COMP2500/week4/image/img_91.png)
-![img_92.png](pocu-note/COMP2500/week4/image/img_92.png)
-![img_93.png](pocu-note/COMP2500/week4/image/img_93.png)
+![img_91.png](pocu-note/COMP2500/004-static/image/img_91.png)
+![img_92.png](pocu-note/COMP2500/004-static/image/img_92.png)
+![img_93.png](pocu-note/COMP2500/004-static/image/img_93.png)
 
 - Record는 immutable
     - rawData는 초기화할 때 읽을 뒤 변하지 않음
 - readByte(), readSignature()과 같은 매서드를 Record 내부에 만들면 다음에 읽을 위치를 다양하게 구현할 수 없음
     - 따라서 RecordReader 클래스를 따로 만들어서 다음에 읽을 위치를 관리
 
-![img_94.png](pocu-note/COMP2500/week4/image/img_94.png)
-![img_95.png](pocu-note/COMP2500/week4/image/img_95.png)
-![img_96.png](pocu-note/COMP2500/week4/image/img_96.png)
-![img_97.png](pocu-note/COMP2500/week4/image/img_97.png)
+![img_94.png](pocu-note/COMP2500/004-static/image/img_94.png)
+![img_95.png](pocu-note/COMP2500/004-static/image/img_95.png)
+![img_96.png](pocu-note/COMP2500/004-static/image/img_96.png)
+![img_97.png](pocu-note/COMP2500/004-static/image/img_97.png)
 
 has-a 관계는 집합을 말함
 
-![img_98.png](pocu-note/COMP2500/week4/image/img_98.png)
+![img_98.png](pocu-note/COMP2500/004-static/image/img_98.png)
 
 - `canRead()` 매서드에서 `this.record.rawData.length` 로 접근할 수 있는 이유는 `Record` 클래스의 멤버 `rawData`의 접근제어자가 패키지 접근제어자이기 때문
 - `readByte()` 매서드에서 `this.record.rawData[thid.position++]`로 접근할 수 있는 이유도 마찬가지
     - 이 매서드의 기능은 한 바이트 읽고 위치 다음에 읽을 위치를 수정
 
-![img_99.png](pocu-note/COMP2500/week4/image/img_99.png)
+![img_99.png](pocu-note/COMP2500/004-static/image/img_99.png)
 
 - `reader0`, `reader1` 모두 fileData의 처음부터 읽음
     - `reader0`은 `readByte()` 매서드를 호출해 한 바이트 읽음
@@ -766,8 +599,8 @@ public class RecordReader {
 
 ### 내포 클래스를 사용해 Record, RecordReader 구현
 
-![img_100.png](pocu-note/COMP2500/week4/image/img_100.png)
-![img_101.png](pocu-note/COMP2500/week4/image/img_101.png)
+![img_100.png](pocu-note/COMP2500/004-static/image/img_100.png)
+![img_101.png](pocu-note/COMP2500/004-static/image/img_101.png)
 
 - inner class(non-static nested class)에서 outer class의 멤버에 접근할 수 있음
     - 접근 제어자가 private여도 접근할 수 있음
@@ -775,7 +608,7 @@ public class RecordReader {
 - 이전 구현에서 `RecordReader`은 생성자로 `Record` 개체를 입력 받았으나, 이제는 그럴 필요가 없음
     - `Record` 내부에 `RecordReader`을 구현함으로써 더 긴밀한 연관관계 형성
 
-![img_102.png](pocu-note/COMP2500/week4/image/img_102.png)
+![img_102.png](pocu-note/COMP2500/004-static/image/img_102.png)
 
 - `<외부 클래스 개체명>.new` 로 생성자 호출
     - 외부 클래스를 개체로 만들지 않으면 비정적 내포 클래스의 개체를 생성할 수 없음
@@ -785,12 +618,12 @@ public class RecordReader {
         - 비정적 내포 클래스 `Reader`의 접근제어자가 private면 외부에서 생성자를 호출할 수 없음
 - 타입은 `<외부 클래스명>.<비정적 내포 클래스명>`
 
-![img_104.png](pocu-note/COMP2500/week4/image/img_104.png)
-![img_103.png](pocu-note/COMP2500/week4/image/img_103.png)
+![img_104.png](pocu-note/COMP2500/004-static/image/img_104.png)
+![img_103.png](pocu-note/COMP2500/004-static/image/img_103.png)
 
 ### 정적 내포 클래스를 사용해 Record, RecordReader 구현
 
-![img_105.png](pocu-note/COMP2500/week4/image/img_105.png)
+![img_105.png](pocu-note/COMP2500/004-static/image/img_105.png)
 
 - 내포 클래스에 static 키워드 추가
 - 생성자로 `Record` 개체를 받아야함
@@ -798,20 +631,20 @@ public class RecordReader {
     - 외부 클래스의 멤버가 static이면 바로 접근할 수 있음
 - 외부 클래스의 private 멤버에 접근 가능
 
-![img_106.png](pocu-note/COMP2500/week4/image/img_106.png)
-![img_107.png](pocu-note/COMP2500/week4/image/img_107.png)
+![img_106.png](pocu-note/COMP2500/004-static/image/img_106.png)
+![img_107.png](pocu-note/COMP2500/004-static/image/img_107.png)
 
 - static을 붙이는 것은 outer class의 레퍼런스가 없다는 의미
     - 반대로 non-static nested class는 이를 자동으로 해줌
 - 외부에서 입력받은 outer class의 개체를 통해서만 outer class의 non-static 멤버에 접근할 수 있음
 
-![img_108.png](pocu-note/COMP2500/week4/image/img_108.png)
+![img_108.png](pocu-note/COMP2500/004-static/image/img_108.png)
 
 - PPT 이미지에서 "rawData가 다시 private", "내포 클래스 안 쓸 때와 똑같아 짐"
   - 비정적 내포 클래스를 사용할 때 멤버변수 rawData의 접근제어자를 private로 설정했다는 것과 동일해짐
 
-![img_109.png](pocu-note/COMP2500/week4/image/img_109.png)
+![img_109.png](pocu-note/COMP2500/004-static/image/img_109.png)
 
 - outer class의 static 멤버는 outer class의 개체를 통하지 않고 바로 멤버에 접근할 수 있음
 
-![img_110.png](pocu-note/COMP2500/week4/image/img_110.png)
+![img_110.png](pocu-note/COMP2500/004-static/image/img_110.png)
