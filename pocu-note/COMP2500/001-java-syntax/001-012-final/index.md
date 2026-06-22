@@ -5,7 +5,7 @@ tags:
 aliases:
   - final 키워드
 ---
-# final 키워드
+화# final 키워드
 
 ## Java의 상수형 변수: final 키워드
 

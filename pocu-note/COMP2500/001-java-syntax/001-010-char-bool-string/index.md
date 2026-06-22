@@ -13,6 +13,7 @@ aliases:
 char로 모든 유니코드를 표현할 수 없음
 - 여기서 말하는 유니코드는 코드 포인트 값
 	- U+10FFFF
+	- 최소 21비트 필요
 
 ![img_62.png](pocu-note/COMP2500/001-java-syntax/001-010-char-bool-string/images/char-bool-string-2.png)
 

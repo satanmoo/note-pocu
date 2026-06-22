@@ -36,6 +36,9 @@ aliases:
 
 ![img_27.png](pocu-note/COMP2500/001-java-syntax/001-004-build-and-run/images/build-and-run-7.png)
 
+main 함수를 찾지 못하는 경우
+- [[pocu-note/COMP2500/001-java-syntax/001-001-main-function/index#main 함수|메인 함수 시그니처 오류]] 참고
+
 ## java 명령어의 `-classpath`옵션
 
 ![img_28.png](pocu-note/COMP2500/001-java-syntax/001-004-build-and-run/images/build-and-run-8.png)

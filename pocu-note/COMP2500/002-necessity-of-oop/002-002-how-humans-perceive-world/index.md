@@ -7,7 +7,6 @@ aliases:
 ---
 # 사람이 세상을 인지하는 법
 
-
 ## 실세계에서 사람의 생각과 행동
 
 ![img_9.png](pocu-note/COMP2500/002-necessity-of-oop/002-002-how-humans-perceive-world/images/how-humans-perceive-world-1.png)

@@ -11,47 +11,53 @@ aliases:
 
 ![img_147.png](pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-1.png)
 
-패키지 하위에 패키지가 들어가는 구조
-- 폴더 하위에 폴더
-
+`academy` 폴더 상위에 `src` 폴더가 있다고 가정
+	
 ## 기존 패키지 시스템의 한계 1
 
 ![img_148.png](pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-2.png)
 
-Java 에서는 실행 중에 사용하는 클래스를 찾는 방법이 없음
+Java 에서는 애플리케이션 실행 중에 사용하는 클래스를 찾는 방법이 없음
 - 언어의 한계
-- 애플리케이션이 어떤 라이브러리를 사용하는지 실행 시작할 때 알 수 없음
-- 컴파일 타임에도 알 수 없음
-- 실행 도중에 라이브러리를 추가 안 해서 실행 중 오류가 발생해서 크래시 남
+- 패키지 시스템이라면 컴파일 타임에도 알 수 없음
+- 라이브러리를 추가했다고 착각해서 실행 중 오류가 발생해 크래시 날 수 있음
 
-이 때문에 패키지 배포할 때 모든 클래스를 같이 배포함
-- 필요한 클래스만 골라서 사용할 수 없었음
+내 프로그램이 자바 built-in 패키지 중에서 뭘 사용하는지 알 방법이 없기 때문에 built-in 패키지를 모두 포함해 같이 배포함
+- built-in 패키지의 용량이 Java 버전이 증가하면서 점점 커져서 배포 용량이 커지는 문제 발생
 
 ![img_149.png](pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-3.png)
 
-일부 클래스만 노출하면서 배포하는 방법이 없음
+패키지의 일부 클래스만 노출하면서 배포하는 방법이 없음
 
 ## 모듈
 
 ![[pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-4.png]]
 
-초록색이 모듈
+모듈
 - 패키지를 묶는 개념을 만든 것
 - `module-info.java`로 모듈에 대한 정보를 파일에 기록
 
+초록색이 모듈 폴더
+- 모듈 폴더 상위에 `src` 폴더가 있다고 가정
+
+
 ![[pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-5.png]]
 
-module-info 파일 덕분에 장점 생김
+`module-info.java` 파일 덕분에 위 장점 생김
 
 ## 모듈의 이름
 
 ![[pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-6.png]]
 
-모듈에 따라 별도로 폴더가 생기는 것은 아님
+모듈의 이름은 `academy.pocu.core`처럼 최상위 패키지명과 동일하게 짓는게 베스트 프랙티스
+- 패키지처럼 `.`으로 구분된 단어 별로 폴더가 생기는 것은 아님
 
 ## `module-info.java`
 
 ![[pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-7.png]]
+
+모듈을 정의하기 위해서 필요한 파일
+- 컴파일 후 `.class` 파일로 변환됨
 
 ![img_154.png](pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-8.png)
 ![[pocu-note/COMP2500/001-java-syntax/001-020-module/images/module-9.png]]
