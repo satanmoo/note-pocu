@@ -33,6 +33,33 @@ aliases:
 `this()`로 다른 생성자를 호출할 수 있음
 - 생성자 오버로딩으로 여러 생성자를 선언했을 경우
 
+아래 예시처럼 생성자 내부에서 다른 생성자를 호출하기 전 어떤 코드를 작성하면 컴파일 오류
+
+```java
+public class User {
+	private String name;
+	private int age;
+
+	public User(String name) {
+			this.name = name;  // 컴파일 오류
+		this(name, 0);
+	}
+
+	public User(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public int getAge() {
+		return this.age;
+	}
+}
+```
+
 ## 기본 생성자
 
 ![img_102.png](pocu-note/COMP2500/002-necessity-of-oop/002-015-constructor/images/constructor-8.png)
