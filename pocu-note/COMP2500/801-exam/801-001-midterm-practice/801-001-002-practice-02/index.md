@@ -354,7 +354,18 @@ public class Player {
 // Program.java
 package academy.pocu.comp2500;
 
-음음
+public class Program {
+
+	public static void main(String[] args) {
+		Player p1 = new Player();
+		Player p2 = new Player();
+		Player p3 = new Player();
+
+		System.out.println(p1.getId());
+		System.out.println(p3.getId());
+		System.out.println(Player.getPlayerCount());
+	}
+}
 ```
 
 ## 8
