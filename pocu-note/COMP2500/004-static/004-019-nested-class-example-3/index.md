@@ -16,7 +16,7 @@ aliases:
 
 생성자로 `Record` 개체를 받아야함
 - 그렇지 않으면 외부 클래스의 멤버에 바로 접근할 수 없음
-- 외부 클래스의 참조만 있다면 외부 클래스의 private 멤버에 접근 가능
+- 외부 클래스의 참조만 ==있다면== 외부 클래스의 private 멤버에 접근 가능
 	- 접근제어자는 클래스 레벨 개념, 개체 레벨 개념이 아님
 
 ![nested-class-example-3-2.png](pocu-note/COMP2500/004-static/004-019-nested-class-example-3/images/nested-class-example-3-2.png)
@@ -32,13 +32,14 @@ static을 붙이는 것은 outer class의 레퍼런스가 없다는 의미
 
 ![nested-class-example-3-5.png](pocu-note/COMP2500/004-static/004-019-nested-class-example-3/images/nested-class-example-3-5.png)
 
-outer class의 static 멤버는 outer class의 개체를 통하지 않고 바로 멤버에 접근할 수 있음
+outer class의 static 멤버는 inner class가 가지고 있는 outer class의 개체에 대한 참조를 통하지 않고 바로 접근할 수 있음
 - 클래스 레벨에서 하나만 있으니
-- 예시에서도 outer class에 대한 참조 없이 바로 정적 멤버에 접근
+- 예시에서도 outer class에 대한 참조를 통하지 않고 바로 정적 멤버에 접근
 - `Record.SOME_HACK` 처럼 클래스명을 붙이지 않아도 됨
 	- 클래스명 붙여도 컴파일 오류는 나지 않음
 
-인스턴스 멤버 변수 `ANOTHER_HACK`의 경우 outer class 인스턴스의 참조가 필요한데, 위 예시에서는 참조를 생성자로 받지도 않음
+인스턴스 멤버 변수 `ANOTHER_HACK`의 경우 outer class 인스턴스의 참조가 필요
+- `record.ANOTHER_HACK` 과 같이 참조 변수를 통해 접근
 
 ![nested-class-example-3-6.png](pocu-note/COMP2500/004-static/004-019-nested-class-example-3/images/nested-class-example-3-6.png)
 

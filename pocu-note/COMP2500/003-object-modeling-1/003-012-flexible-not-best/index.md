@@ -24,6 +24,8 @@ tags:
 ![img_209.png](pocu-note/COMP2500/003-object-modeling-1/003-012-flexible-not-best/images/flexible-not-best-11.png)
 ![img_210.png](pocu-note/COMP2500/003-object-modeling-1/003-012-flexible-not-best/images/flexible-not-best-12.png)
 
+유연성이 높을 수록 일반적인 상황에 맞게 구현, 특화된 상황에 맞게 최적화된 코드보다 성능이 떨어짐
+
 ## 복습 퀴즈
 
 ### 1. 다음 중 유연성 및 재사용성에 대한 설명 중 올바른 것을 고르세요.

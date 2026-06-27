@@ -5,7 +5,7 @@ tags:
 aliases:
   - 구조체의 한계
 ---
-# 구조체의 한계
+서# 구조체의 한계
 ## 절차적 언어의 한계
 
 ![img.png](pocu-note/COMP2500/002-necessity-of-oop/002-001-limits-of-structure/images/limits-of-structure-1.png)

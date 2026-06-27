@@ -5,7 +5,7 @@ tags:
 aliases:
   - unsigned가 없어서 생기는 문제
 ---
-# unsigned가 없어서 생기는 문제
+ㄷ# unsigned가 없어서 생기는 문제
 
 ## 음수 배열 색인과 음수 나이
 

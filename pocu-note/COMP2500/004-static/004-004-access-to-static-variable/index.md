@@ -42,4 +42,3 @@ aliases:
 ![img_40.png](pocu-note/COMP2500/004-static/004-004-access-to-static-variable/images/access-to-static-variable-10.png)
 
 클래스를 네임 스페이스처럼 활용할 수 있음
-
