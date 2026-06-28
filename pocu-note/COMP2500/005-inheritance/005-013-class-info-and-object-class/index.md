@@ -37,6 +37,3 @@ RTTI는 성능에 별로 좋지 않아유
 컴파일러는 `extends Object`를 암시적으로 붙임
 
 equals(), toString()도 Object 클래스에서 제공함
-
-
-

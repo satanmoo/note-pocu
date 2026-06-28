@@ -21,4 +21,3 @@ tags:
 ![](pocu-note/COMP2500/007-inheritance-vs-composition/007-012-code-example/images/code-example-3.png)
 
 텍스트 파일 읽어서 `Component` 개체로 역직렬화
-

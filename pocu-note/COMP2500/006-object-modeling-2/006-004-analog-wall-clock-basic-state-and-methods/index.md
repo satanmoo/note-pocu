@@ -23,5 +23,3 @@ getter/setter 추가
 
 ![](pocu-note/COMP2500/006-object-modeling-2/006-004-analog-wall-clock-basic-state-and-methods/images/analog-wall-clock-basic-state-and-methods-8.png)
 ![](pocu-note/COMP2500/006-object-modeling-2/006-004-analog-wall-clock-basic-state-and-methods/images/analog-wall-clock-basic-state-and-methods-9.png)
-
-

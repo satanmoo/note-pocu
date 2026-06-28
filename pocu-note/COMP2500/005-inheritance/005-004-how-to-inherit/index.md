@@ -2,7 +2,6 @@
 aliases:
   - 상속하기
 tags:
-  - COMP2500
   - week5
 ---
 # 상속하기
