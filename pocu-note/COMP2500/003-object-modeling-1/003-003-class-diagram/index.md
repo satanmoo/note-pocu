@@ -12,7 +12,7 @@ aliases:
 ![img_70.png](pocu-note/COMP2500/003-object-modeling-1/003-003-class-diagram/images/class-diagram-3.png)
 
 UML자체가 구현을 표현하지 않기 때문에 예시 코드도 구현을 생략했음
-- "(구현 생략)" 회색 보이죠?
+- "(구현 생략)" 회색 보이죠? ^uml-omits-impl
 
 ## 클래스 이름
 
