@@ -130,7 +130,52 @@ public class Tank extends Unit {
 
 ## 공격하는 함수
 
-공격하는 함수는 인터페이스로 분리하는게 좋겠지?
-- [[pocu-note/COMP2500/901-assignmnet/901-003-assignment-3/spec#2.1 전반적인 규칙|2.1 전반적인 규칙]] 참고
-	- "Thinkable" 을 따로 등록하니까
-		- 생각을 해서 "공격, 이동, 아무것도 안 함"을 결정
+공격하는 함수 전 공격이라는 동작을 결정하는 "생각"이라는 기능이 필요함
+- [[pocu-note/COMP2500/901-assignmnet/901-003-assignment-3/spec#2.10 SimulationManager 클래스를 구현한다|2.10 SimulationManager 클래스를 구현한다]] 에서 `update`함수의 동작 참고
+	- 마린은 생각할 수 있는 유닛 같아
+		- 공격/이동을 결정하니까
+
+"생각"(행동 결정)과 "실행"은 분리되어 있음
+- [[pocu-note/COMP2500/901-assignmnet/901-003-assignment-3/spec#A.2 시뮬레이션 규칙|A.2 시뮬레이션 규칙]] 참고
+	- 각 유닛의 이동 순서가 달라져도 시뮬레이션 결과는 동일함
+	- 각 유닛의 공격 순서가 달려저도 시뮬레이션 결과는 동일함
+- 분리해야 각 유닛이 동일한 상황(스냅샷)을 보고 실행할 동작이 결정나니까, 실행 간의 순서가 바뀌어도 문제가 없음
+- 만약 분리되지 않아서 먼저 실행한 유닛에 따라 상황(스냅샷)이 바뀌진 않음
+
+따라서 생각하는 함수 기능을 먼저 구현해
+
+### 생각하는 함수
+
+[[pocu-note/COMP2500/901-assignmnet/901-003-assignment-3/spec#2.10 SimulationManager 클래스를 구현한다|2.10 SimulationManager 클래스를 구현한다]] 를 보면 `registerThinkable` 함수가 있음
+- 일단 접미사가 "~able" 이니 인터페이스로 구현해볼까?
+	- 어떤 유닛은 생각, 어떤 유닛은 움직일 수 있고, 등등
+		- 다중 상속 관점
+			- [[pocu-note/COMP2500/006-object-modeling-2/006-016-add-wristwatch-and-multiple-inheritance/index|006-016-add-wristwatch-and-multiple-inheritance]]
+			- 유닛의 능력이 상속 트리로 표현하기 어려움
+	- `registerThinkable` 함수의 매개변수 타입을 `IThinkable` 로
+
+`IThinkable` 에 생각하는 함수의 시그니처를 작성해보자
+
+반환값은 enum으로 하면 되겠지?
+- `SimulationManager.update` 내부에서 사용하기 편하잖아?
+
+매개변수로는 유닛 목록을 받으면 판단할 수 있잖아?
+- 시뮬레이터가 유닛 목록을 관리하니 넣어주면 되고
+
+#### 마린의 생각하는 함수
+
+==마린==의 생각하는 함수에 어떤 식으로 구현할까?
+- [[pocu-note/COMP2500/901-assignmnet/901-003-assignment-3/spec#A.2 시뮬레이션 규칙|A.2 시뮬레이션 규칙]]
+	- A.2.9 에서 공격을 먼저 판단해야 함을 알 수있음
+- 공격 먼저
+	- 시야에서 발견한 적을 공격
+	- 공격 위치 정해서 상태로 기록
+		- [[pocu-note/COMP2500/901-assignmnet/901-003-assignment-3/spec#A.2 시뮬레이션 규칙|A.2 시뮬레이션 규칙]]의 A.2.13 참고
+			- 교전/이동 규칙의 각 단계를 실행한 후에도 적이 한 명으로 특정되지 않고 여럿이 남아있다면 남은 적들에 대해 다음 단계들을 실행
+- 이동 먼저
+	- 시야에서 발견했지만, 공격 구역이 아닐 때
+	- 이동 위치 정해서 상태로 기록
+		- A.2.13 규칙 그대로 적용
+- 아무 행동 X
+	- 시야에 적이 없는 경우
+
