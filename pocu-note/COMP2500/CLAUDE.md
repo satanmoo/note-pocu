@@ -17,6 +17,7 @@ COMP2500/
 - 섹션/레슨 폴더 이름: `kebab-case` 영문
 - 각 레슨은 자체 `images/` 폴더를 가짐 (섹션 공용 `image/` 폴더는 **구식**)
 - 이미지 이름은 `{lesson-slug}-N.png` 형태로 의미를 담음
+- 제목이 "코드보기: ..."인 레슨은 폴더명을 항상 `{NNN}-{MMM}-code-example`로 통일 (구체 주제는 H1에만 표기, 이미지는 `code-example-N.png`). 같은 섹션에 여러 개면 레슨 번호로 구분
 
 ## index.md frontmatter
 
@@ -43,7 +44,12 @@ tags:
   ![](pocu-note/COMP2500/{section}/{lesson}/images/{name}.png)
   ```
 - 코드 블록은 ` ```java ` 사용
-- 본문에서 클래스명·메서드명·키워드 등 코드 식별자를 언급할 때는 backtick으로 감쌈 (예: `equals()`, `HashSet`, `final`)
+- 본문·H2 제목에서 클래스명·메서드명·키워드 등 코드 식별자를 언급할 때는 backtick으로 감쌈 (예: `equals()`, `HashSet`, `final`)
+- 코드 식별자를 언급할 때 종류를 함께 명시: 메서드는 `calculateDamage()` 메서드, 변수는 `hp` 변수, 상수는 `MAX_HP` 상수, 클래스는 `Monster` 클래스, 키워드는 `final` 키워드
+- 다른 노트로 링크할 때는 전체 경로 + 표시 텍스트 형식 사용 (alias만 쓴 `[[제목]]` 형식 금지):
+  ```
+  [[pocu-note/COMP2500/{section}/{lesson}/index|표시 제목]]
+  ```
 - 설명은 짧은 불릿 위주, 보조 설명은 `- ` 들여쓰기로 한 단계 더
 - 종결어미는 `~함`, `~좋음`, `~음` 같은 명사형/축약형 사용
 
