@@ -1,303 +1,44 @@
-# Week12
-
-
-## 복습퀴즈: 디자인 패턴
-
-- 어떤 개체의 상태가 변할 때 다른 개체들의 상태도 연쇄적으로 바뀌게 하려면 사용하기 적합한 패턴은?
-    - 옵저버 패턴
-    - 책임 연쇄 패턴이랑 착각하지 마쇼. 책임 연쇄 패턴은 한 개체가 책임을 지면 그 뒤로 기회를 받지 못함
-- 개체 생성이 값비싼 연산을 수반할 때 그 연산을 최대한 늦추는 패턴은?
-    - 프록시 패턴
-- 우선순위에 따라 여러 개체에게 일을 처리할 기회를 주려고 할 때 적합한 패턴은?
-    - 책임 연쇄 패턴
-
-## 예외
-
-- 개체지향과 비슷한 시점에 나왔음
-
-![img_163.png](pocu-note/COMP2500/week12/images/img_163.png)
-
-- try 블록 위에서 부터 순서대로 실행
-- 예외 발생하면 예외 종류에 따라 분기해서 catch
-    - 언어 자체에서 제공하는 예외
-    - 사용하는 함수에서 자체적으로 제공하는 예외
-- 예외 발생 여부와 관계없이 finally 블록 실행
-    - catch 에서 return 문이 있더라도 finally 블록 실행
-
-![img_164.png](pocu-note/COMP2500/week12/images/img_164.png)
-
-- Exception 클래스는 최상위 예외 부모
-- catch 문에 부모 클래스 넣으면 자식 클래스 예외가 발생하면 캐치함
-
-![img_165.png](pocu-note/COMP2500/week12/images/img_165.png)
-
-- 부모 예외 클래스 catch 블락이 자식 예외 클래스 catch 블락보다 위에 나오면 안 됨
-    - catch 문에 부모 클래스 넣으면 자식 클래스 예외가 발생하면 캐치하기 때문
-    - 왼쪽의 예에서는 `FileNotFoundException` 예외가 발생할 수 없음
-- specific to general 로 작성하자~
-
-### 예외 예시 사용법
-
-![img_166.png](pocu-note/COMP2500/week12/images/img_166.png)
-
-![img_167.png](pocu-note/COMP2500/week12/images/img_167.png)
-
-![img_168.png](pocu-note/COMP2500/week12/images/img_168.png)
-
-- 최종 파일 경로를 구하는 코드
-
-![img_169.png](pocu-note/COMP2500/week12/images/img_169.png)
-
-- 파일의 모든 줄을 읽는 코드
-
-![img_170.png](pocu-note/COMP2500/week12/images/img_170.png)
-
-- 몇 줄 읽었다고 출력
-
-![img_171.png](pocu-note/COMP2500/week12/images/img_171.png)
-
-- 예외 발생하지 않아서 catch 블록에 걸리지 않고 한 줄 씩 출력
-
-![img_172.png](pocu-note/COMP2500/week12/images/img_172.png)
-
-- 이제 catch 에서 예외 잡는 사례
-
-![img_173.png](pocu-note/COMP2500/week12/images/img_173.png)
-
-- path 값에 해당하는 경로에 파일이 없기 때문에 예외 발생
-
-![img_174.png](pocu-note/COMP2500/week12/images/img_174.png)
-
-- 예외가 발생하는 순간 다음은 실행 안 됨
-  - `Files.readAllLines(path)`에서 예외 발생하고, `System.out.format...` 은 건너뜀
-
-![img_175.png](pocu-note/COMP2500/week12/images/img_175.png)
-
-![img_176.png](pocu-note/COMP2500/week12/images/img_176.png)
-
-![img_177.png](pocu-note/COMP2500/week12/images/img_177.png)
-
-- stack trace 출력
-
-![img_178.png](pocu-note/COMP2500/week12/images/img_178.png)
-
-![img_179.png](pocu-note/COMP2500/week12/images/img_179.png)
-
-![img_180.png](pocu-note/COMP2500/week12/images/img_180.png)
-
-- IOException catch 블록에서 return 문으로 함수 빠져나감
-- 만약 return 문이 없다면?
-    - 아래 for (String line: lines) 로 건너뛰어 실행함
-
-### Exception 클래스가 가지고 있는 출력 매소드
-
-![img_181.png](pocu-note/COMP2500/week12/images/img_181.png)
-
-- printStackTrace()
-- getMessage()
-
-### finally 사용 예
-
-![img_182.png](pocu-note/COMP2500/week12/images/img_182.png)
-
-- 파일에 Byte 타입으로 쓰는 함수 2번 호출
-
-![img_183.png](pocu-note/COMP2500/week12/images/img_183.png)
-
-- WriteByte 함수 블록의 구현에서 파일을 염
-- 첫번째 WriteByte 함수 호출 뒤 파일을 닫지 않고, 두번째 WriteByte 함수를 호출했기에 예외 발생
-
-![img_184.png](pocu-note/COMP2500/week12/images/img_184.png)
-
-- 파일을 닫는 코드를 추가해도 문제가 있음
-- fs.WriteByte() 에서 문제가 생기면, 즉 파일을 작성하는 동안 문제가 생겨서 예외가 생기면
-    - fs.Close() 구문이 실행되지 않음
-- 이 예외를 잡기 위해 catch IOException 블록을 추가해서 fs.Close() 를 넣을 수 있음
-    - 근데 또 다른 예외가 발생하면, 또 catch 블록 추가하고..
-        - 이게 귀찮음
-        - 모든 예외가 발생하는 케이스 + 예외가 발생하지 않는 케이스 모두 fs.Close() 를 호출하게 하고싶음
-
-![img_185.png](pocu-note/COMP2500/week12/images/img_185.png)
-
-- finally 블록에서 if (fs != null) 조건으로 파일 열렸는지 확인
-- catch 블록에서 return 문으로 함수를 리턴할 때 finally 블록은 실행하고 리턴함
-  - 컴파일러 과정에서 반드시 finally 블록을 실행하도록 블록 실행 루틴을 삽입한다고 생각하면 됨
-
-![img_186.png](pocu-note/COMP2500/week12/images/img_186.png)
-
-- 정상적으로 도는 것 처럼 보이는 코드
-
-![img_187.png](pocu-note/COMP2500/week12/images/img_187.png)
-
-- FileOutputStream 클래스 개체를 GC가 닫아줌
-    - 내부적으로 finalize(), close() 호출
-- 일반적으로 한 프로그램이 열 수 있는 파일의 수를 제한함
-    - OS의 역할로 리소스 제한
-
-![img_188.png](pocu-note/COMP2500/week12/images/img_188.png)
-
-- GC의 finalize()에 의존하는 것을 피하자!!
-
-![img_189.png](pocu-note/COMP2500/week12/images/img_189.png)
-
-- close() 직접 호출
-- try-with-resources 문
-
-![img_190.png](pocu-note/COMP2500/week12/images/img_190.png)
-
-- out != null 조건
-    - out = new FileOutputStream(...) 생성자를 호출할 때 정상적으로 파일 스트림을 열였으면, null이 아니게 됨
-- finally 블록 안에서 out.close() 를 호출할 때 try, catch 문으로 넣어야함
-    - 안 그러면 컴파일 오류
-    - 자바에서 chekced exception에 강제하는 규칙
-- https://docs.oracle.com/javase/8/docs/api/?java/io/FileOutputStream.html
-
-## 예외 다시 던지기 (rethrow)
-
-![img_191.png](pocu-note/COMP2500/week12/images/img_191.png)
-
-- 예외 발생 시 진행 순서 정리
-
-![img_192.png](pocu-note/COMP2500/week12/images/img_192.png)
-
-- 로그만 남기고 절반 해결하고, 위에서 해결하기
-- 호출 스택을 유지하면서 위로 던져야함~~
-
-![img_193.png](pocu-note/COMP2500/week12/images/img_193.png)
-
-- C# 에서 실수하기 쉬움
-    - throw 만 넣어야함
-    - throw e 하면 안 됨
-
-![img_194.png](pocu-note/COMP2500/week12/images/img_194.png)
-
-- 자바에서는 그냥 throw e(변수) 하면 호출 스택 유지됨
-
-![img_195.png](pocu-note/COMP2500/week12/images/img_195.png)
-
-- rethrow 무지성으로 남발하지 말자
-
-## 나만의 예외 만들기
-
-![img_196.png](pocu-note/COMP2500/week12/images/img_196.png)
-
-- 상속을 이용하자
-    - 당연히 클래스 선언해야겠쥬
-    - super 로 부모 클래스 초기화하고
-
-![img_197.png](pocu-note/COMP2500/week12/images/img_197.png)
-
-- RuntimeException 클래스의 생성자에 명시된 생성자 매서드 시그니처대로 잘 쓰면 됨
-
-![img_198.png](pocu-note/COMP2500/week12/images/img_198.png)
-
-- 유저 이름으로 비교하고 못 찾으면 예외 던짐
-
-### C# vs Java 예외
-
-![img_199.png](pocu-note/COMP2500/week12/images/img_199.png)
-
-![img_200.png](pocu-note/COMP2500/week12/images/img_200.png)
-
-- Java 에서 RuntimeException 을 사용하는 예가 많음
-
-![img_201.png](pocu-note/COMP2500/week12/images/img_201.png)
-
-- 물론 자바에서도 Exception 클래스를 상속해도 됨
-- 옛날에는 Exception 클래스를 많이 사용했음
-
-![img_202.png](pocu-note/COMP2500/week12/images/img_202.png)
-
-- C# Exception == Java RuntimeException
-- 그럼 Java Exception 클래스는 뭐가 다른가?
-
 ## Java Exception
-
-![img_203.png](pocu-note/COMP2500/week12/images/img_203.png)
-
-- 배경을 알아보자
-
-![img_204.png](pocu-note/COMP2500/week12/images/img_204.png)
-
-- 예외 catch를 전혀 안 했다고 가정해보자
-
-![img_205.png](pocu-note/COMP2500/week12/images/img_205.png)
-
-- main() 함수에서도 catch 하지 않음
-- main() 함수에서 위로 던지면 JVM 에서 처리
-    - JVM 은 오류메시지를 보여주고 프로그램을 종료시킴
-
-![img_206.png](pocu-note/COMP2500/week12/images/img_206.png)
-
-- JVM이 OS 대신 책임져줌
-
-![img_207.png](pocu-note/COMP2500/week12/images/img_207.png)
-
-- 그러면 가상머신이 없는 예전은 어떨까?
-
-### 옛날 이야기
-
-![img_208.png](pocu-note/COMP2500/week12/images/img_208.png)
-
-- 프로그램이 예외로 뻗으면 크래시(하드웨어가 뻗음)
-    - 그냥 멈춘 상태
-    - 해결법은 재부팅
-
-![img_209.png](pocu-note/COMP2500/week12/images/img_209.png)
-
-- 누군가 재부팅할 사람이 없는 구조라면?
-- 웹서버 켜놓고 자다가 재부팅해야해?
-
-### 요즘 이야기
-
-![img_210.png](pocu-note/COMP2500/week12/images/img_210.png)
-
-- 가상 메모리
-- 프로그램마다 독자적인 메모리 공간
-
-![img_211.png](pocu-note/COMP2500/week12/images/img_211.png)
-
-- 크래시가 발생해도 OS가 프로그램 종료, 가상 메모리 해제
-- 즉 프로그램을 껐다 키면 해결이 됨
-    - 옛날에는 하드웨어 자체를 껐다 켰죠?
-
-- 그래서 결론:
-    - 요즘은 예전보다 예외 처리의 실익이 줄어듬
-        - 컴퓨터 재부팅 vs 프로그램 재부팅
-
-## 잘못된 예외 처리 방식
 
 ![img_212.png](pocu-note/COMP2500/week12/images/img_212.png)
 
-- 요즘은 예외를 덜 사용하면 프로그램의 품질이 더 좋아짐
+요즘은 예외를 덜 사용하면 프로그램의 품질이 더 좋아짐
 
 ![img_213.png](pocu-note/COMP2500/week12/images/img_213.png)
-
 ![img_214.png](pocu-note/COMP2500/week12/images/img_214.png)
 
-- 오류 상황을 반환하는걸 포프샘은 권함
+오류 상황을 반환하는걸 포프샘은 권함
 
 ![img_215.png](pocu-note/COMP2500/week12/images/img_215.png)
 
-- 예외를 던지는 방식은 사람이 사용하기 쉽지 않음
+예외를 던지는 방식은 사람이 사용하기 쉽지 않음
 - 왜?
 
 ![img_216.png](pocu-note/COMP2500/week12/images/img_216.png)
 
-- 예외를 던지면 함수의 명백함이 사라짐
-    - 함수를 작성할 때 함수가 올바르게 작성하지 않는다는 것을 가정하고 작성해야함
-- 함수 시그니처가 함수 호출자와 함수 제작자의 규약
-    - 이 규약을 가지고 통신할 수 있게 만드는게 좋음
-- 합수 호출 깊이가 깊어지면 정말 예외를 처리하기 힘들어짐
+예외를 던지면 함수의 블랙박스 개념을 훼손함
+
+함수의 블랙박스 개념에서는 함수 시그니처가 함수 호출자와 함수 제작자의 규약
+- 이 규약을 가지고 통신할 수 있게 만드는게 좋음
+- 함수는 올바르게 동작한다는 가정에 규약이 유효함
+
+
+하지만 예외를 사용하면 함수를 작성할 때 함수가 올바르게 작성하지 않는다는 것을 가정하고 작성해야함
+
+예외는 콜스택 위로 타고 올라감
+- 합수 호출 깊이가 깊어지면 어떤 함수에서 예외가 발생했는지 추적하기 힘듦
 
 ![img_217.png](pocu-note/COMP2500/week12/images/img_217.png)
 
-- 예외 때문에 모든 함수를 다 까보는 것은 캡슐화에 위배됨
+예외 때문에 모든 함수를 다 까보는 것은 캡슐화에 위배됨
+- 앞에서 봤듯이 다시 예외는 OOP와 무관하다는 주장을 보충
+
+함수를 믿고 블랙박스 처럼 사용하는 게 올바른 추상화
 
 ![img_218.png](pocu-note/COMP2500/week12/images/img_218.png)
 
-- 함수 위에 어떤 예외를 던지는지 주석으로 표기
-- 하지만 사람들은 잘 안 읽죠?
+함수 위에 어떤 예외를 던지는지 주석으로 표기
+- 하지만 일반적인 사람들은 주석을 잘 읽지 않음
 
 ![img_219.png](pocu-note/COMP2500/week12/images/img_219.png)
 
