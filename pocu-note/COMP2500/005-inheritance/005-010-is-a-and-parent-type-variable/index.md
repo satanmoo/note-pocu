@@ -12,7 +12,7 @@ tags:
 ![](pocu-note/COMP2500/005-inheritance/005-010-is-a-and-parent-type-variable/images/is-a-and-parent-type-variable-1.png)
 ![](pocu-note/COMP2500/005-inheritance/005-010-is-a-and-parent-type-variable/images/is-a-and-parent-type-variable-2.png)
 
-자식 클래스 개체를 부모 클래스 변수에 대입해도 컴파일 오류는 발생하지 않음
+자식 클래스 개체를 부모 클래스 변수에 대입해도 컴파일 오류는 발생하지 않음 ^assign-child-to-parent
 
 ![](pocu-note/COMP2500/005-inheritance/005-010-is-a-and-parent-type-variable/images/is-a-and-parent-type-variable-3.png)
 

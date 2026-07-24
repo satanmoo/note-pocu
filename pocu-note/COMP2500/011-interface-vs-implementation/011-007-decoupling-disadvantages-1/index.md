@@ -17,7 +17,7 @@ tags:
 
 ![](pocu-note/COMP2500/011-interface-vs-implementation/011-007-decoupling-disadvantages-1/images/decoupling-disadvantages-1-2.png)
 
-직관적이지 못함
+직관적이지 못함 ^not-intuitive
 - 구체적이지 않기 때문
 - 추상화의 단점
 

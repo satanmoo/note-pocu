@@ -36,7 +36,7 @@ tags:
 
 ![img_46.png](pocu-note/COMP2500/002-necessity-of-oop/002-022-setter-best-practice/images/setter-best-practice-7.png)
 
-개체 상태 수정은 개체 스스로 수행하는 것이 이상적임
+개체 상태 수정은 개체 스스로 수행하는 것이 이상적임 ^avoid-setters
 
 ![img_47.png](pocu-note/COMP2500/002-necessity-of-oop/002-022-setter-best-practice/images/setter-best-practice-8.png)
 
