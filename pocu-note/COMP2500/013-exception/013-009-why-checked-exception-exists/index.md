@@ -46,7 +46,7 @@ API 제작자 입장에서 생각
 ![](pocu-note/COMP2500/013-exception/013-009-why-checked-exception-exists/images/why-checked-exception-exists-11.png)
 
 `catch` 블록에서 위 슬라이드처럼 간단하게 처리(출력)
-- 이렇게 간단하게 처리하는 것을 영어로 swallow라고 표현함
+- 이렇게 간단하게 처리하는 것을 영어로 swallow라고 표현함 ^swallow
 	- 꿀꺽 삼킴
 
 ![](pocu-note/COMP2500/013-exception/013-009-why-checked-exception-exists/images/why-checked-exception-exists-12.png)

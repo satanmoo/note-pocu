@@ -45,6 +45,6 @@ tags:
 ![](pocu-note/COMP2500/013-exception/013-007-why-exception-handling-fails/images/why-exception-handling-fails-7.png)
 
 함수 위에 어떤 예외를 던지는지 주석으로 표기
-- 하지만 일반적인 사람들은 주석을 잘 읽지 않음
+- 하지만 일반적인 사람들은 주석을 잘 읽지 않음 ^people-dont-read-comments
 
 ![](pocu-note/COMP2500/013-exception/013-007-why-exception-handling-fails/images/why-exception-handling-fails-8.png)

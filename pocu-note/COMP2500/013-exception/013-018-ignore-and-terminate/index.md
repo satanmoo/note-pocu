@@ -11,7 +11,7 @@ tags:
 
 ![](pocu-note/COMP2500/013-exception/013-018-ignore-and-terminate/images/ignore-and-terminate-1.png)
 
-오류 상황 발생 시 슬라이드에서 3가지 중에 하나 발생
+오류 상황 발생 시 슬라이드에서 3가지 중에 하나 발생 ^ignore-outcomes
 - 예를 들어 외부에서 들어오는 데이터를 검증하는 상황
 
 ![](pocu-note/COMP2500/013-exception/013-018-ignore-and-terminate/images/ignore-and-terminate-2.png)
@@ -39,4 +39,4 @@ tags:
 ![](pocu-note/COMP2500/013-exception/013-018-ignore-and-terminate/images/ignore-and-terminate-6.png)
 
 크래시에 비해 장점이 있음
-- 정리(graceful shut-down)
+- 정리(graceful shut-down) ^graceful-shutdown
