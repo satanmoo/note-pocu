@@ -21,27 +21,30 @@ tags:
 예측한 상황이고 고치기 쉬우면 고쳐야 함
 - 안전하게 고칠 수 있어야 한다는 조건
 
-[[pocu-note/COMP2500/013-exception/013-019-fix-and-exception/index#방법 4: 예외|예외]]는 던지고 잡아서 처리하는 개념
-- 예외 후 수정
-- 던지고 직접 처리하기 때문에 광의의 [[pocu-note/COMP2500/013-exception/013-019-fix-and-exception/index#방법 3: 수정|수정]]이라고 볼 수 있음
-- 경계에서 던지되 처리는 내 시스템 안에서 수행함
-	- 앞에서 본 내가 아는 공간에서는 오류를 최대한 없애는 개념 ([[pocu-note/COMP2500/013-exception/013-017-avoiding-errors-is-best/index|오류 상황을 피하는 게 최고]] 참고)
-	- 예외를 외부에 던지면 어떻게 될지 모르기 때문에 내 시스템에서 처리(수정)함
-		- 예외를 잡아서 오류 코드를 반환하는 것도 하나의 방법
-- 경계에서는 예외를 던질 수 밖에 없음
-	- [[pocu-note/COMP2500/013-exception/013-017-avoiding-errors-is-best/index|오류 상황을 피하는 게 최고]] 참고
+중요한 것은 고치고 계속 프로그램이 진행되어야 함
 
-예외 후 수정과 수정의 차이점
+[[pocu-note/COMP2500/013-exception/013-019-fix-and-exception/index#방법 4: 예외|예외]]는 던지고 잡아서 처리하는 개념
+- "예외 후 수정"을 포프샘은 선호함
+	- 던지고 직접 처리하기 때문에 광의의 [[pocu-note/COMP2500/013-exception/013-019-fix-and-exception/index#방법 3: 수정|수정]]이라고 볼 수 있음
+	- 예외를 외부에 던지면 어떻게 될지 모르기 때문에 내 시스템에서 처리(수정)함
+		- 예외를 통해 남에게 알리는 대신 예외를 처리 후 오류 코드를 통해 남에게 알림
+- "예외 후 수정"이 불가능해 예외를 던질 수 밖에 없는 상황도 있음
+
+"예외 후 수정"과 수정의 차이점
 - 수정은 미리 오류 상황을 검사해서 바꾸는 것
 - 예외는 오류 상황이 발생하고 사후적으로 대응하는 것
 
-예외 + 수정 or 수정
+예외 + 수정 or 수정 or 예외후
 
 ## 고치기 어려운 경우 (예외 + 종료)
 
 ![](pocu-note/COMP2500/013-exception/013-024-handling-predictable-situations/images/handling-predictable-situations-4.png)
 
 고치기 어려우니 못 고침
+- 고치면 더 프로그램이 망가질 것 같은 상황
+- 고치기 불가능한 경우
+
+고치기 어렵고 쉬운 정도는 주관적임
 
 로그는 반드시 남기는 것이 좋음
 
@@ -56,7 +59,7 @@ tags:
 		- 예외를 `main()` 함수까지 중간에 잡지 않고 던지고 로그 남기고 GUI로 팝업 보여주고 종료
 - GUI가 없으면 예외를 `main()` 함수까지 던지고 파일로 로그 남기고 종료
 
-예외 + [[pocu-note/COMP2500/013-exception/013-018-ignore-and-terminate/index#방법 2: 종료|종료]]
+예외 or [[pocu-note/COMP2500/013-exception/013-018-ignore-and-terminate/index#방법 2: 종료|종료]]
 
 ![](pocu-note/COMP2500/013-exception/013-024-handling-predictable-situations/images/handling-predictable-situations-5.png)
 

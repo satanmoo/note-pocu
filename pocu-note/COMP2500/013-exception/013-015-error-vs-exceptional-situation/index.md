@@ -26,6 +26,6 @@ happy path를 벗어나는 상황을 이 강의에서는 "오류 상황"이라�
 
 ![](pocu-note/COMP2500/013-exception/013-015-error-vs-exceptional-situation/images/error-vs-exceptional-situation-4.png)
 
-예측 못한 오류 상황은 버그
+예측 못한 오류 상황은 버그 ^unpredicted-error-is-bug
 - 예측을 못했기 때문에 미리 코드로 대응하지 못함
 - 버그는 고치고 다시 빌드해야 함
