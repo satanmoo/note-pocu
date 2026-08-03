@@ -112,7 +112,7 @@ for (int i = 0; i < expectedIsOn.length; ++i) {
 컴파일러가 Sprinkler 타입의 변수 sprinkler에서 onTick 호출이 가능하려면 onTick의 위치 후보는 다음과 같다.
 - Sprinkler 클래스 내부
 - Sprinkler 가 상속하는 부모 클래스 SmartDevice 내부
-	- 부모에 있어도 호출 가능한 근거: [[008-polymorphism/008-002-simple-polymorphism-example/index|간단한 다형성 예 코드로 옮기기]] — 컴파일러는 상속 관계를 통해 부모 클래스의 시그니처 존재를 알 수 있음
+	- 부모에 있어도 호출 가능한 근거: [[pocu-note/COMP2500/008-polymorphism/008-002-simple-polymorphism-example/index|간단한 다형성 예 코드로 옮기기]] — 컴파일러는 상속 관계를 통해 부모 클래스의 시그니처 존재를 알 수 있음
 
 두 후보에 대한 가능성을 열어두고 Sprinkler의 onTick 동작을 도출해보자.
 
