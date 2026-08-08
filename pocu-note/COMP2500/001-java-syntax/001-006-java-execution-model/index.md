@@ -3,7 +3,6 @@ tags:
   - COMP2500
   - week1
 aliases:
-  - "\b"
   - Java의 실행 모델
 ---
 # Java의 실행 모델
