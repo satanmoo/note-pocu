@@ -1,4 +1,5 @@
 ---
+title: static에 대한 비판
 tags:
   - COMP2500
   - week4

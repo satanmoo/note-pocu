@@ -1,4 +1,5 @@
 ---
+title: 모델링할 대상 소개
 aliases:
   - 모델링할 대상 소개
 tags:

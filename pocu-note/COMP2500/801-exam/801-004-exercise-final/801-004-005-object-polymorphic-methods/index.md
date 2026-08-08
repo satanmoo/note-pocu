@@ -1,3 +1,6 @@
+---
+title: 'Object의 다형적 메서드: toString·equals·hashCode (008-013~015)'
+---
 # Object의 다형적 메서드: toString·equals·hashCode (008-013~015)
 
 ## 다음 코드의 출력은? (`==` vs `equals()`)

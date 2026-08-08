@@ -1,4 +1,5 @@
 ---
+title: 정수 자료형
 tags:
   - COMP2500
   - week1

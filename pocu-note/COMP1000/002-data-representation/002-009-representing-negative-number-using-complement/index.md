@@ -1,4 +1,5 @@
 ---
+title: 보수를 이용한 음수 표현
 tags:
   - COMP1000
   - week2

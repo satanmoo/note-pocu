@@ -1,4 +1,5 @@
 ---
+title: 디자인 패턴 소개
 tags:
   - COMP2500
   - week4

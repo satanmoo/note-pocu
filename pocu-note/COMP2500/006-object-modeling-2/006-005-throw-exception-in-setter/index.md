@@ -1,4 +1,5 @@
 ---
+title: setter에서 예외 던지기
 aliases:
   - setter에서 예외 던지기
 tags:

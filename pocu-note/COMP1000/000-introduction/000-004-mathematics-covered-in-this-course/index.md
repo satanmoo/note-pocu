@@ -1,4 +1,5 @@
 ---
+title: 이 과목에서 다루는 수학
 tags:
   - COMP1000
   - week0

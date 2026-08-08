@@ -1,4 +1,5 @@
 ---
+title: 2진수->8진수 변환
 tags:
   - COMP1000
   - week1

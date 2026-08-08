@@ -1,4 +1,5 @@
 ---
+title: 생성자
 tags:
   - COMP2500
   - week2

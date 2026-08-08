@@ -1,4 +1,5 @@
 ---
+title: char, bool, String
 tags:
   - COMP2500
   - week1

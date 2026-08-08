@@ -1,3 +1,6 @@
+---
+title: final 판정 (008-010)
+---
 # final 판정 (008-010)
 
 > 서술형은 ANKI로 분리: 다형성의 장점 https://pocu-site.pages.dev/pocu-note/COMP2500/anki/05-polymorphism-advantages/ · 바인딩 정의·성능 https://pocu-site.pages.dev/pocu-note/COMP2500/anki/06-binding-and-final/

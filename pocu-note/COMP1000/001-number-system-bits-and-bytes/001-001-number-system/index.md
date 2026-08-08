@@ -1,4 +1,5 @@
 ---
+title: 숫자 체계
 tags:
   - COMP1000
   - week1

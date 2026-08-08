@@ -1,4 +1,5 @@
 ---
+title: Java의 checked 예외
 aliases:
   - Java의 checked 예외
 tags:

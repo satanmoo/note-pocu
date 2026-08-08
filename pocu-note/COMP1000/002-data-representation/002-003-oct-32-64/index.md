@@ -1,4 +1,5 @@
 ---
+title: 8진법, 32진법, 64진법
 tags:
   - COMP1000
   - week2

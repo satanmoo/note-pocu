@@ -1,3 +1,6 @@
+---
+title: 클래스 정보와 Object 클래스
+---
 # 클래스 정보와 Object 클래스
 
 ## 다음 코드의 출력은? (getClass().getName())

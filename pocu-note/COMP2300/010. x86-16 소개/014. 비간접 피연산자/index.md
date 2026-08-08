@@ -1,4 +1,5 @@
 ---
+title: 010-014. 비간접 피연산자
 tags:
   - COMP2300
   - COMP2300_week_9

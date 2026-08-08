@@ -1,4 +1,5 @@
 ---
+title: 단일 책임
 aliases:
   - 단일 책임
 tags:

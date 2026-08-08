@@ -1,4 +1,5 @@
 ---
+title: C 함수 포인터와의 비교
 aliases:
   - C 함수 포인터와의 비교
 tags:

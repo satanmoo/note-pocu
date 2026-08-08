@@ -1,4 +1,5 @@
 ---
+title: 다형성, polymorphism의 단어 뜻
 aliases:
   - 다형성, polymorphism의 단어 뜻
 tags:

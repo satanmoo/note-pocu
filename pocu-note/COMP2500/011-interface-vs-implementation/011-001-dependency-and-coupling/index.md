@@ -1,4 +1,5 @@
 ---
+title: 의존성과 결합도
 aliases:
   - 의존성과 결합도
 tags:

@@ -1,4 +1,5 @@
 ---
+title: x86-16 개발환경 설정 방법
 references:
   - https://winworldpc.com/product/macro-assembler/6x
   - https://docs.google.com/document/d/11rd1zTBbWTccohJhiX95u3CZy6BzVp3wIbeJqNhRRnw/edit?pli=1&tab=t.0

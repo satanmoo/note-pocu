@@ -1,4 +1,5 @@
 ---
+title: 팩토리 메서드 패턴
 aliases:
   - 팩토리 메서드 패턴
 tags:

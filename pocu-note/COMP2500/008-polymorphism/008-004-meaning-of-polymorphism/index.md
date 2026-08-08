@@ -1,4 +1,5 @@
 ---
+title: 다형성의 의미 풀이
 aliases:
   - 다형성의 의미 풀이
 tags:

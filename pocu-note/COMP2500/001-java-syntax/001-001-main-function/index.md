@@ -1,4 +1,5 @@
 ---
+title: 메인 함수
 tags:
   - COMP2500
   - week1

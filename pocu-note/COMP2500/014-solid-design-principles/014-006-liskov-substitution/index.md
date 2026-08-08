@@ -1,4 +1,5 @@
 ---
+title: 리스코프 치환
 aliases:
   - 리스코프 치환
 tags:

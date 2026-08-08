@@ -1,4 +1,5 @@
 ---
+title: 다양한 진법간의 관계
 tags:
   - COMP1000
   - week2

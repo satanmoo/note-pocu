@@ -1,4 +1,5 @@
 ---
+title: 클래스 다이어그램
 tags:
   - COMP2500
   - week3

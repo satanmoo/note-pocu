@@ -1,4 +1,5 @@
 ---
+title: 패키지 접근 제어자
 aliases:
   - 패키지 접근 제어자
 tags:

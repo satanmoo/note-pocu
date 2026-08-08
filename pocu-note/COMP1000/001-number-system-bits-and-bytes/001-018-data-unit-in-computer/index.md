@@ -1,4 +1,5 @@
 ---
+title: 컴퓨터의 데이터 단위
 tags:
   - COMP1000
   - week1

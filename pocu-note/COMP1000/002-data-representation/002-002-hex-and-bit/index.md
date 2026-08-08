@@ -1,4 +1,5 @@
 ---
+title: 16진수와 비트
 tags:
   - COMP1000
   - week1

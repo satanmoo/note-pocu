@@ -1,4 +1,5 @@
 ---
+title: getter, setter
 tags:
   - COMP2500
   - week3

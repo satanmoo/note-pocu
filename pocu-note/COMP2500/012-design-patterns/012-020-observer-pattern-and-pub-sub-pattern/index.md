@@ -1,4 +1,5 @@
 ---
+title: 옵저버 패턴과 pub-sub 패턴
 aliases:
   - 옵저버 패턴과 pub-sub 패턴
 tags:

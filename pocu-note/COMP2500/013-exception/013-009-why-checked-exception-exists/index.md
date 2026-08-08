@@ -1,4 +1,5 @@
 ---
+title: checked 예외의 존재의의
 aliases:
   - checked 예외의 존재의의
 tags:

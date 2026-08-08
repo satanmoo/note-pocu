@@ -1,4 +1,5 @@
 ---
+title: 부호있는 정수 표현의 문제
 tags:
   - COMP1000
   - week2

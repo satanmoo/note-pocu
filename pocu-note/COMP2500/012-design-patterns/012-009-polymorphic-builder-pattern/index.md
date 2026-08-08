@@ -1,4 +1,5 @@
 ---
+title: 다형적인 빌더 패턴
 aliases:
   - 다형적인 빌더 패턴
 tags:

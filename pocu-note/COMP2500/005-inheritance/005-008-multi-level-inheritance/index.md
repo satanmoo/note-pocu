@@ -1,4 +1,5 @@
 ---
+title: 상속의 상속
 aliases:
   - 상속의 상속
 tags:

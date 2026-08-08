@@ -1,4 +1,5 @@
 ---
+title: SOLID로 이룰 수 있는 것 한 가지
 aliases:
   - SOLID로 이룰 수 있는 것 한 가지
 tags:

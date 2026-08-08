@@ -1,4 +1,5 @@
 ---
+title: '모델링 2: 분무기 동작'
 tags:
   - week2
   - COMP2500

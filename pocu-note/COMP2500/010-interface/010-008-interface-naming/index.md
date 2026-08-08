@@ -1,4 +1,5 @@
 ---
+title: 인터페이스의 이름
 aliases:
   - 인터페이스의 이름
 tags:

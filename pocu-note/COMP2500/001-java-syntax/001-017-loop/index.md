@@ -1,4 +1,5 @@
 ---
+title: 반복문
 tags:
   - COMP2500
   - week1

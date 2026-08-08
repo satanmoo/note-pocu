@@ -1,4 +1,5 @@
 ---
+title: '모델링 6: OO적 상호작용'
 tags:
   - COMP2500
   - week3

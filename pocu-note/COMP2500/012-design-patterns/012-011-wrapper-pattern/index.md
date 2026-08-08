@@ -1,4 +1,5 @@
 ---
+title: 래퍼 패턴
 aliases:
   - 래퍼 패턴
 tags:

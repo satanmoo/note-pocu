@@ -1,4 +1,5 @@
 ---
+title: 011-008. 산술 연산 니모닉
 tags:
   - COMP2300
   - COMP2300_week_9

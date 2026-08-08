@@ -1,3 +1,6 @@
+---
+title: 기말 연습 문제
+---
 # 기말 연습 문제
 
 시험 안내·범위는 [[pocu-note/COMP2500/801-exam/final-exam-info|기말고사 정보]] 참고

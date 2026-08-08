@@ -1,4 +1,5 @@
 ---
+title: 정적 클래스와 생성자
 tags:
   - COMP2500
   - week4

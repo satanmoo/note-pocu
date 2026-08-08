@@ -1,4 +1,5 @@
 ---
+title: 모델링할 문제 소개
 tags:
   - week3
   - COMP2500

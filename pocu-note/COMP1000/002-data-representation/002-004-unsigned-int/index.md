@@ -1,4 +1,5 @@
 ---
+title: 정수, 부호없는 정수
 tags:
   - COMP1000
   - week2

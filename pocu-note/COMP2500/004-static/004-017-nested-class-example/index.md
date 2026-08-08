@@ -1,4 +1,5 @@
 ---
+title: 내포 클래스를 사용 안 할 경우
 tags:
   - COMP2500
   - week4

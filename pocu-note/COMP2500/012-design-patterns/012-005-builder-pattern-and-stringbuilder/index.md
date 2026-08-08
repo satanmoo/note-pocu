@@ -1,4 +1,5 @@
 ---
+title: 빌더 패턴과 StringBuilder
 aliases:
   - 빌더 패턴과 StringBuilder
 tags:

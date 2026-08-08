@@ -1,4 +1,5 @@
 ---
+title: 정적 메서드
 tags:
   - COMP2500
   - week4

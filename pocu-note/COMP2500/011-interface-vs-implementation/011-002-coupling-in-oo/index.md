@@ -1,4 +1,5 @@
 ---
+title: OO에서 논하는 결합도
 aliases:
   - OO에서 논하는 결합도
 tags:

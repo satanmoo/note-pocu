@@ -23,6 +23,7 @@ COMP2500/
 
 ```yaml
 ---
+title: {H1과 동일한 한글 제목}
 aliases:
   - {H1과 동일한 한글 제목}
 tags:
@@ -31,8 +32,10 @@ tags:
 ---
 ```
 
-- `aliases`는 H1과 **반드시 일치**
+- `title`은 H1과 **반드시 일치** — 파일명이 `index`라 이게 없으면 배포 사이트 제목이 "index"로 나옴 (Quartz는 `title` 없으면 파일명 사용, H1은 제목으로 안 씀)
+- `aliases`도 H1과 **반드시 일치**
 - `tags`의 `weekN`은 강의 주차
+- `title`에 콜론(`:`)·따옴표 등이 있으면 YAML 인용 필요 (예: `title: '코드보기: 개체 비교'`)
 
 ## 본문 구조
 
@@ -57,6 +60,7 @@ tags:
 
 ```markdown
 ---
+title: 상속, 부모/자식 클래스 소개
 aliases:
   - 상속, 부모/자식 클래스 소개
 tags:

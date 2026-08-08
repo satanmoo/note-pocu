@@ -1,4 +1,5 @@
 ---
+title: '상속 vs 컴포지션: 다형성'
 aliases:
   - "상속 vs 컴포지션: 다형성"
 tags:

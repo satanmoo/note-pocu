@@ -1,4 +1,5 @@
 ---
+title: '코드보기: 추상 BaseEntity'
 aliases:
   - "코드보기: 추상 BaseEntity"
 tags:

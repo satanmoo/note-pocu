@@ -1,4 +1,5 @@
 ---
+title: 출력문과 가변 인자
 tags:
   - COMP2500
   - week1

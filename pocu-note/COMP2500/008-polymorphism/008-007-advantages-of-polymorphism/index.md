@@ -1,4 +1,5 @@
 ---
+title: 다형성의 장점
 aliases:
   - 다형성의 장점
 tags:

@@ -1,4 +1,5 @@
 ---
+title: setter 베스트 프랙티스
 aliases:
   - setter 베스트 프랙티스
 tags:

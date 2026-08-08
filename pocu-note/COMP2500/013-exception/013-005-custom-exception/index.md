@@ -1,4 +1,5 @@
 ---
+title: 나만의 예외 만들기
 aliases:
   - 나만의 예외 만들기
 tags:

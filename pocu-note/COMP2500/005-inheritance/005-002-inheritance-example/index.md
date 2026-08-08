@@ -1,4 +1,5 @@
 ---
+title: 상속의 예
 aliases:
   - 상속의 예
 tags:

@@ -1,4 +1,5 @@
 ---
+title: '모델링 1: 분무기 상태'
 tags:
   - week3
   - COMP2500

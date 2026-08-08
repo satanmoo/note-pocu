@@ -1,4 +1,5 @@
 ---
+title: 개체 만들기와 메모리
 tags:
   - COMP2500
   - week2

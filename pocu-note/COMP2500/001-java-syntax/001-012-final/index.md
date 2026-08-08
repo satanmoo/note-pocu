@@ -1,4 +1,5 @@
 ---
+title: final 키워드
 tags:
   - COMP2500
   - week1

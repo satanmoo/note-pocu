@@ -1,4 +1,5 @@
 ---
+title: 의존성 주입(DI)
 aliases:
   - 의존성 주입(DI)
 tags:

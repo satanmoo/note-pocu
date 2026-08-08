@@ -1,4 +1,5 @@
 ---
+title: 개체의 메서드 호출하기
 tags:
   - COMP2500
   - week2

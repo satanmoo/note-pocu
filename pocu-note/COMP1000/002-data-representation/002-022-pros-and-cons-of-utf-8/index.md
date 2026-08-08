@@ -1,4 +1,5 @@
 ---
+title: UTF-8의 장점과 단점
 aliases:
   - UTF-8의 장점과 단점
 tags:

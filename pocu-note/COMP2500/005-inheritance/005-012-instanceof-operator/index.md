@@ -1,4 +1,5 @@
 ---
+title: instanceof 연산자
 aliases:
   - instanceof 연산자
 tags:

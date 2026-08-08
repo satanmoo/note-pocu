@@ -1,4 +1,5 @@
 ---
+title: is-a, has-a 관계
 aliases:
   - is-a, has-a 관계
 tags:

@@ -1,4 +1,5 @@
 ---
+title: '코드보기: 위젯(Widget)'
 aliases:
   - "코드보기: 위젯(Widget)"
 tags:

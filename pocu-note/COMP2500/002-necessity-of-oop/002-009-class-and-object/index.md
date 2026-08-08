@@ -1,4 +1,5 @@
 ---
+title: 클래스와 개체
 tags:
   - COMP2500
   - week2

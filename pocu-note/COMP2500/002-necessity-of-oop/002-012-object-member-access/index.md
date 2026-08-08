@@ -1,4 +1,5 @@
 ---
+title: 개체 멤버에 접근하기, 참조형
 tags:
   - COMP2500
   - week2

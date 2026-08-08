@@ -1,4 +1,5 @@
 ---
+title: 참조형 인자, 열거형
 tags:
   - COMP2500
   - week1

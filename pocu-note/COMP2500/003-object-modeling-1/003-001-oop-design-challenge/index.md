@@ -1,4 +1,5 @@
 ---
+title: OO 설계에서 처음 만나는 난관
 tags:
   - COMP2500
   - week3

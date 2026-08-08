@@ -1,4 +1,5 @@
 ---
+title: 결합도 판정
 aliases:
   - 결합도 판정
 tags:

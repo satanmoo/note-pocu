@@ -1,4 +1,5 @@
 ---
+title: SOLID 소개
 aliases:
   - SOLID 소개
 tags:

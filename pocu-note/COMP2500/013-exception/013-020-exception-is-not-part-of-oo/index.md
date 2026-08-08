@@ -1,4 +1,5 @@
 ---
+title: 예외는 OO의 일부가 아니다
 aliases:
   - 예외는 OO의 일부가 아니다
 tags:

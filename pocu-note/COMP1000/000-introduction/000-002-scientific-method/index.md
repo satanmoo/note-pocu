@@ -1,4 +1,5 @@
 ---
+title: 과학적 사고방법에 대해
 tags:
   - COMP1000
   - week0

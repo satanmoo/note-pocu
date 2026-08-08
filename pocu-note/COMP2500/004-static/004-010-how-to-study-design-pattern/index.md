@@ -1,4 +1,5 @@
 ---
+title: 디자인 패턴 공부법
 tags:
   - COMP2500
   - week4

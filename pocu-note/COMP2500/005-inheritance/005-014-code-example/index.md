@@ -1,4 +1,5 @@
 ---
+title: '코드보기: Base Entity'
 aliases:
   - "코드보기: Base Entity"
 tags:

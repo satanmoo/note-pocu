@@ -1,4 +1,5 @@
 ---
+title: 문자, 아스키(ASCII)
 tags:
   - COMP1000
   - week2

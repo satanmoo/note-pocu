@@ -1,4 +1,5 @@
 ---
+title: 문자열 비교
 tags:
   - COMP2500
   - week1

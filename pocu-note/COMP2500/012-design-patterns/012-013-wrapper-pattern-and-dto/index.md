@@ -1,4 +1,5 @@
 ---
+title: 래퍼 패턴과 DTO
 aliases:
   - 래퍼 패턴과 DTO
 tags:

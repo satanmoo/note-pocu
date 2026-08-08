@@ -1,4 +1,5 @@
 ---
+title: 1의 보수의 장점과 한계
 tags:
   - COMP1000
   - week2

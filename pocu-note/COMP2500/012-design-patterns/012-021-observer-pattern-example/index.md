@@ -1,4 +1,5 @@
 ---
+title: 옵저버 패턴 예
 aliases:
   - 옵저버 패턴 예
 tags:

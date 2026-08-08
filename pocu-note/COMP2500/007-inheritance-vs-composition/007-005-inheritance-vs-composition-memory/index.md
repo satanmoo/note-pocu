@@ -1,4 +1,5 @@
 ---
+title: '상속 vs 컴포지션: 메모리'
 aliases:
   - "상속 vs 컴포지션: 메모리"
 tags:

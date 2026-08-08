@@ -1,4 +1,5 @@
 ---
+title: 현재 구조의 문제점
 aliases:
   - 현재 구조의 문제점
 tags:

@@ -1,4 +1,5 @@
 ---
+title: 시퀀스 다이어그램
 aliases:
   - 시퀀스 다이어그램
 tags:

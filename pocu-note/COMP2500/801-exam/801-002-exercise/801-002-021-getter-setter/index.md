@@ -1,3 +1,6 @@
+---
+title: getter, setter
+---
 # getter, setter
 
 ## 멤버 변수를 public으로 두는 대신 함수(getter/setter)로 접근할 때의 장점 3가지는?

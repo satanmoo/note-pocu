@@ -1,4 +1,5 @@
 ---
+title: 래퍼 패턴과 그래픽 API
 aliases:
   - 래퍼 패턴과 그래픽 API
 tags:

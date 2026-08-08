@@ -1,4 +1,5 @@
 ---
+title: 8진수/16진수 변환
 tags:
   - COMP1000
   - week1

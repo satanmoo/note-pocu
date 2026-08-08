@@ -1,4 +1,5 @@
 ---
+title: 상속하기
 aliases:
   - 상속하기
 tags:

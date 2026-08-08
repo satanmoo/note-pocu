@@ -1,4 +1,5 @@
 ---
+title: Java 어노테이션
 aliases:
   - Java 어노테이션
 tags:

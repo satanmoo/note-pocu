@@ -1,4 +1,5 @@
 ---
+title: 2의 보수의 장점
 aliases:
   - 2의 보수의 장점
 tags:

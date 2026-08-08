@@ -1,4 +1,5 @@
 ---
+title: 비트 수와 오디오 포맷
 tags:
   - COMP1000
   - week1

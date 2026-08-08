@@ -1,3 +1,6 @@
+---
+title: unsigned가 없어서 생기는 문제
+---
 # unsigned가 없어서 생기는 문제
 
 ## unsigned 가 없어서 생기는 문제?

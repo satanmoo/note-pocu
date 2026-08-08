@@ -1,4 +1,5 @@
 ---
+title: 예외 다시 던지기(rethrow)
 aliases:
   - 예외 다시 던지기(rethrow)
 tags:

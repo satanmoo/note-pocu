@@ -1,4 +1,5 @@
 ---
+title: 캡슐화, 추상화
 aliases:
   - 캡슐화, 추상화
 tags:

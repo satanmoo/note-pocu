@@ -1,4 +1,5 @@
 ---
+title: 다형적인 Monster 클래스 구현
 aliases:
   - 다형적인 Monster 클래스 구현
 tags:

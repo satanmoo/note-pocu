@@ -1,4 +1,5 @@
 ---
+title: OOP는 주관적
 tags:
   - COMP2500
   - week2

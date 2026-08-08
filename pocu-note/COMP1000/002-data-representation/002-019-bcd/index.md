@@ -1,4 +1,5 @@
 ---
+title: 보편적인 2진수의 곱셈, 2진수의 나눗셈, BCD(Binary-Coded Decimal)
 tags:
   - COMP1000
   - week2

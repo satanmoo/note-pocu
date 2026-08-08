@@ -1,4 +1,5 @@
 ---
+title: Object.clone()
 aliases:
   - Object.clone()
 tags:

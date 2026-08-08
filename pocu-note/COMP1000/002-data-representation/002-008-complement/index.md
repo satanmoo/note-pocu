@@ -1,4 +1,5 @@
 ---
+title: 보수
 tags:
   - COMP1000
   - week1

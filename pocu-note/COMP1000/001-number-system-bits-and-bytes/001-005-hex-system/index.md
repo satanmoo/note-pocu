@@ -1,4 +1,5 @@
 ---
+title: 16진법
 tags:
   - COMP1000
   - week1

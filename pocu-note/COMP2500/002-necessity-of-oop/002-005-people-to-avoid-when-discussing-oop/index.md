@@ -1,4 +1,5 @@
 ---
+title: OOP 토론 시 피해야 할 사람
 tags:
   - COMP2500
   - week2

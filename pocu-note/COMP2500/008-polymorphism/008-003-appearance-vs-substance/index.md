@@ -1,4 +1,5 @@
 ---
+title: 무늬 vs 실체
 aliases:
   - 무늬 vs 실체
 tags:

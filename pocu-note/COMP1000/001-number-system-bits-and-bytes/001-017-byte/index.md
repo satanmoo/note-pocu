@@ -1,4 +1,5 @@
 ---
+title: 바이트
 tags:
   - COMP1000
   - week1

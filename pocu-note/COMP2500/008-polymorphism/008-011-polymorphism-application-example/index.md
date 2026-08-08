@@ -1,4 +1,5 @@
 ---
+title: 다형성 적용 예
 aliases:
   - 다형성 적용 예
 tags:

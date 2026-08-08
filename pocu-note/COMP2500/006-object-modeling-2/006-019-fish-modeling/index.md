@@ -1,4 +1,5 @@
 ---
+title: 어류 모델링
 aliases:
   - 어류 모델링
 tags:

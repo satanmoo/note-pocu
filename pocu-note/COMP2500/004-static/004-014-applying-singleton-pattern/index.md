@@ -1,4 +1,5 @@
 ---
+title: 싱글턴 패턴의 응용
 tags:
   - COMP2500
   - week4

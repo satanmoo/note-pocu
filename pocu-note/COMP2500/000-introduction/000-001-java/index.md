@@ -1,4 +1,5 @@
 ---
+title: Java 소개
 tags:
   - COMP2500
   - week0

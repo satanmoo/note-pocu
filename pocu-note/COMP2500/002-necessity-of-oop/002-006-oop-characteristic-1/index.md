@@ -1,4 +1,5 @@
 ---
+title: OOP의 특성 1
 tags:
   - COMP2500
   - week2

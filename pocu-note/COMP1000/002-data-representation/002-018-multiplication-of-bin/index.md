@@ -1,4 +1,5 @@
 ---
+title: 2진수의 곱셈
 aliases:
   - 2진수의 곱셈
 tags:

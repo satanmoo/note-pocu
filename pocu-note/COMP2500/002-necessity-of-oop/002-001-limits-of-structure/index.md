@@ -1,4 +1,5 @@
 ---
+title: 구조체의 한계
 tags:
   - COMP2500
   - week2

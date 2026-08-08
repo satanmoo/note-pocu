@@ -1,4 +1,5 @@
 ---
+title: 기본기의 중요성
 aliases:
   - 기본기의 중요성
 tags:

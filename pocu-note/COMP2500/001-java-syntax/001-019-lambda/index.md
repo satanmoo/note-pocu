@@ -1,4 +1,5 @@
 ---
+title: 람다
 tags:
   - COMP2500
   - week1

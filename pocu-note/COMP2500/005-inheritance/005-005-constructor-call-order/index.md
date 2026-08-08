@@ -1,4 +1,5 @@
 ---
+title: 생성자 호출 순서
 aliases:
   - 생성자 호출 순서
 tags:

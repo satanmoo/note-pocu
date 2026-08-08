@@ -1,4 +1,5 @@
 ---
+title: 싱글턴 패턴 예
 tags:
   - COMP2500
   - week4

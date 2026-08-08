@@ -1,4 +1,5 @@
 ---
+title: 구체 클래스 vs 추상 클래스
 aliases:
   - 구체 클래스 vs 추상 클래스
 tags:

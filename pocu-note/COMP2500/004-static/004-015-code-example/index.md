@@ -1,4 +1,5 @@
 ---
+title: '코드보기: 싱글턴 Logger 클래스'
 tags:
   - COMP2500
   - week4

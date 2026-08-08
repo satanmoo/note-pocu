@@ -1,3 +1,6 @@
+---
+title: 싱글턴 패턴 vs static
+---
 # 싱글턴 패턴 vs static
 
 ## static과 싱글턴의 핵심 차이는?

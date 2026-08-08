@@ -1,4 +1,5 @@
 ---
+title: 클래스 정보와 Object 클래스
 aliases:
   - 클래스 정보와 Object 클래스
 tags:

@@ -1,4 +1,5 @@
 ---
+title: 수학이란 무엇일까요?
 tags:
   - COMP1000
   - week0

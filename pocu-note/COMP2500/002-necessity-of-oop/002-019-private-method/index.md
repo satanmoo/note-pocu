@@ -1,4 +1,5 @@
 ---
+title: 일반적인 접근 제어자, private 메서드의 용도
 aliases:
   - 일반적인 접근 제어자, private 메서드의 용도
 ---

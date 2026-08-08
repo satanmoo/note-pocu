@@ -1,4 +1,5 @@
 ---
+title: 내포 클래스 소개
 tags:
   - COMP2500
   - week4

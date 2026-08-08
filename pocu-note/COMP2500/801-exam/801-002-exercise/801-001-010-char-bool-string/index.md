@@ -1,3 +1,6 @@
+---
+title: char, bool, String
+---
 # char, bool, String
 
 ## Java에서 char 자료형의 크기는?

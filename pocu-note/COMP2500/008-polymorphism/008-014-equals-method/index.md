@@ -1,4 +1,5 @@
 ---
+title: equals() 메서드
 aliases:
   - equals() 메서드
 tags:

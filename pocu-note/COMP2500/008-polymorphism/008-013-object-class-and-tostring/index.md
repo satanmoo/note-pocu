@@ -1,4 +1,5 @@
 ---
+title: Object 클래스와 toString()
 aliases:
   - Object 클래스와 toString()
 tags:

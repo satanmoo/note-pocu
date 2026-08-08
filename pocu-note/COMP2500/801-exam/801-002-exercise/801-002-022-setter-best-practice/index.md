@@ -1,3 +1,6 @@
+---
+title: setter 베스트 프랙티스
+---
 # setter 베스트 프랙티스
 
 ## setter 베스트 프랙티스 4가지는?

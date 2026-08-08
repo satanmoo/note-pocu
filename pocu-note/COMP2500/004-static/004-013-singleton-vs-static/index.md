@@ -1,4 +1,5 @@
 ---
+title: 싱글턴 패턴 vs static
 tags:
   - COMP2500
   - week4

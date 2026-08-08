@@ -1,4 +1,5 @@
 ---
+title: is-a 관계와 부모형 변수
 aliases:
   - is-a 관계와 부모형 변수
 tags:

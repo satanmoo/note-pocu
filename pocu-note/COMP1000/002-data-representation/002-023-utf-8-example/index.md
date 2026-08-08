@@ -1,4 +1,5 @@
 ---
+title: UTF-8의 예, UTF-16, UTF-32
 aliases:
   - UTF-8의 예, UTF-16, UTF-32
 tags:

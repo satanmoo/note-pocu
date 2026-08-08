@@ -1,4 +1,5 @@
 ---
+title: try/catch/finally
 aliases:
   - try/catch/finally
 tags:

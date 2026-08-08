@@ -1,4 +1,5 @@
 ---
+title: 정적 멤버 변수
 tags:
   - COMP2500
   - week4

@@ -1,4 +1,5 @@
 ---
+title: 디자인 패턴의 장단점
 tags:
   - COMP2500
   - week4

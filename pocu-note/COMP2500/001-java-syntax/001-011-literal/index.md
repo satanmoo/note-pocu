@@ -1,4 +1,5 @@
 ---
+title: 리터럴
 tags:
   - COMP2500
   - week1

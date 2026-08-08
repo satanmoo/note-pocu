@@ -1,4 +1,5 @@
 ---
+title: 개방-폐쇄
 aliases:
   - 개방-폐쇄
 tags:

@@ -1,4 +1,5 @@
 ---
+title: 프로그래밍 방식의 변화
 tags:
   - COMP1000
   - week0

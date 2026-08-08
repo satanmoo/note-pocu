@@ -1,4 +1,5 @@
 ---
+title: 디커플링의 단점 2
 aliases:
   - 디커플링의 단점 2
 tags:

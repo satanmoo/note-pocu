@@ -1,4 +1,5 @@
 ---
+title: OO 모델링 실력 높이는 법
 aliases:
   - OO 모델링 실력 높이는 법
 tags:

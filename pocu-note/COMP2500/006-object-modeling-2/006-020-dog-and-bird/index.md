@@ -1,4 +1,5 @@
 ---
+title: 개, 새
 aliases:
   - 개, 새
 tags:

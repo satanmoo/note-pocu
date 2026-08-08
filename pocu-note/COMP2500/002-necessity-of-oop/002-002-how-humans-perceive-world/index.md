@@ -1,4 +1,5 @@
 ---
+title: 사람이 세상을 인지하는 법
 tags:
   - COMP2500
   - week2

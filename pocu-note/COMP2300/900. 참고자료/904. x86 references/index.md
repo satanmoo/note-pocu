@@ -1,3 +1,6 @@
+---
+title: 904. x86 references
+---
 ## DOS INT 21h 레퍼런스 다운로드
 
 [여기](https://web.archive.org/web/20240113235754/http://www2.ift.ulaval.ca/~marchand/ift17583/dosints.pdf)에서 PDF를 다운로드 받으면 된다.

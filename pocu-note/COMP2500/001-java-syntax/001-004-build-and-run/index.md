@@ -1,4 +1,5 @@
 ---
+title: 빌드 및 실행
 tags:
   - COMP2500
   - week1

@@ -1,4 +1,5 @@
 ---
+title: try/catch 사용 예
 aliases:
   - try/catch 사용 예
 tags:

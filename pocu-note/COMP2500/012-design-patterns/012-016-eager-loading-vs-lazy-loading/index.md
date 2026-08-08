@@ -1,4 +1,5 @@
 ---
+title: 즉시로딩 vs 지연로딩
 aliases:
   - 즉시로딩 vs 지연로딩
 tags:

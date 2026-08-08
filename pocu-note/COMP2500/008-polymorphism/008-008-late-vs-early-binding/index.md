@@ -1,4 +1,5 @@
 ---
+title: 늦은 바인딩 vs 이른 바인딩
 aliases:
   - 늦은 바인딩 vs 이른 바인딩
 tags:

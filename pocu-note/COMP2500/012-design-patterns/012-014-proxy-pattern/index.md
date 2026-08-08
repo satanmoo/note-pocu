@@ -1,4 +1,5 @@
 ---
+title: 프록시 패턴
 aliases:
   - 프록시 패턴
 tags:

@@ -1,4 +1,5 @@
 ---
+title: 멤버 변수의 초깃값, . 연산자
 tags:
   - COMP2500
   - week2

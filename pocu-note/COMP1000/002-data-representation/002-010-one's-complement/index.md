@@ -1,4 +1,5 @@
 ---
+title: 1의 보수
 tags:
   - COMP1000
   - week2

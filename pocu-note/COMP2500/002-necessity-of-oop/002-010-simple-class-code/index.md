@@ -1,4 +1,5 @@
 ---
+title: 간단한 클래스 코드
 tags:
   - COMP2500
   - week2
