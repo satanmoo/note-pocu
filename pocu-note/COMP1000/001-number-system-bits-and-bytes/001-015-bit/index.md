@@ -2,7 +2,7 @@
 tags:
   - COMP1000
   - week1
-title:
+title: 비트
 aliases:
   - 비트
 ---
