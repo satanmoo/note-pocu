@@ -23,6 +23,7 @@ C 언어의 함수 선언과 유사하게
 
 클래스도 `abstract` 키워드를 붙여야 함 또는 `Monster` 클래스에서 추상 메서드를 오버라이딩하라는 말인데?
 - 결론은 구체 클래스에는 추상 메서드가 존재하면 안 됨
+- 추상 메서드를 가지는 클래스는 반드시 추상 클래스임
 
 ![](pocu-note/COMP2500/009-abstract-method-class/009-005-fix-with-abstract-method-class/images/fix-with-abstract-method-class-6.png)
 ![](pocu-note/COMP2500/009-abstract-method-class/009-005-fix-with-abstract-method-class/images/fix-with-abstract-method-class-7.png)
@@ -41,8 +42,8 @@ C 언어의 함수 선언과 유사하게
 	- 그래서 "추상 클래스가 아니다"는 "구체 클래스다"로 바꿔 말할 수 있음
 
 **명제 쌍 1**
-- 원명제: 추상 클래스이면 추상 메서드를 가질 수 있음
-- 대우: 추상 메서드를 가질 수 없으면 구체 클래스임
+- 원명제: 추상 메서드를 가지는 클래스는 반드시 추상 클래스임
+- 대우: 구체 클래스는 추상 메서드를 가지지 않음
 
 **명제 쌍 2**
 - 원명제: 추상 클래스이면 개체를 만들 수 없음

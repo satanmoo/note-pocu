@@ -12,7 +12,6 @@ tags:
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-2.png)
 
 왜 이런 문제가 발생했을까?
-
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-3.png)
 
 다형성이 필요한 부분을 너무 넓게 봄
@@ -25,7 +24,7 @@ tags:
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-5.png)
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-6.png)
 
-`attack()` 메서드는 그대로, `inflictDamage()` 메서드만 교체
+`attack()` 메서드는 그대로, `takeDamage()` 메서드만 교체
 
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-7.png)
 
@@ -41,8 +40,9 @@ tags:
 
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-8.png)
 
-데미지를 계산하는 로직은 `public` 해도 상관없음
-- 데미지를 주는 `inflictDamage()` 메서드 처럼 상태를 바꾸지 않음
+데미지를 계산하는 로직(`calculateDamage()`)은 `public` 해도 상관없음
+- 값을 계산해 반환할 뿐 개체의 상태를 바꾸지 않기 때문
+	- 상태를 바꾸는 `takeDamage()`가 `protected`인 것과 대비됨
 
 ![](pocu-note/COMP2500/009-abstract-method-class/009-003-disobedient-child-class/images/disobedient-child-class-9.png)
 
