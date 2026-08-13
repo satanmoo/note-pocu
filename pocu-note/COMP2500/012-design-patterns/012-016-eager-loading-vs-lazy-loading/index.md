@@ -28,7 +28,9 @@ tags:
 
 ![](pocu-note/COMP2500/012-design-patterns/012-016-eager-loading-vs-lazy-loading/images/eager-loading-vs-lazy-loading-3.png)
 
-프록시 패턴의 문제는 내부를 알기 어려움
+캡슐화의 문제는 내부를 알기 어려움 따라서 어떤 로딩 방식을 사용하는지 알 수 없음
+
+아래와 같은 정보를 알기 어려움
 - 병목점
 - 메모리 사용량
 
@@ -44,3 +46,6 @@ tags:
 - 거의 이렇죠?
 
 ![](pocu-note/COMP2500/012-design-patterns/012-016-eager-loading-vs-lazy-loading/images/eager-loading-vs-lazy-loading-6.png)
+
+"남몰래" 프록시 패턴
+- 캡슐화를 의미함
