@@ -29,5 +29,8 @@ tags:
 부모 예외 클래스 `catch` 블록이 자식 예외 클래스 `catch` 블록보다 위에 나오면 안 됨
 - `catch` 문에 부모 클래스 넣으면 자식 클래스 예외가 발생하면 캐치하기 때문
 - 왼쪽의 예에서는 `FileNotFoundException` 예외가 발생할 수 없음
+- 슬라이드는 "첫 번째 `catch` 블록이 실행됨"이라는 개념으로 설명하지만, Java에서는 이 경우 아예 ==컴파일 오류== — 자식 `catch` 블록이 도달 불가능하기 때문
+	- 오류 메시지: "exception FileNotFoundException has already been caught" (Java 11 javac 검증)
+	- 이 규칙은 checked/unchecked와 무관 — `catch` 절 사이의 상속 관계(도달 가능성)만 봄. `catch (RuntimeException e)` 뒤에 `catch (IllegalArgumentException e)`를 둬도 동일한 오류
 
 specific to general 로 작성하자!

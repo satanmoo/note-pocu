@@ -137,3 +137,8 @@ public static void main(String[] args) throws UserNotFoundException {
 ![](pocu-note/COMP2500/013-exception/013-008-java-checked-exception/images/java-checked-exception-14.png)
 
 `RuntimeException` 클래스는 `Exception` 클래스를 상속받아 checked exception으로 컴파일러가 확인하는 기능을 무시함
+
+## 이미 만난 checked exception 실례
+
+- `Object` 클래스의 `clone()` 메서드가 던지는 `CloneNotSupportedException` — [[pocu-note/COMP2500/010-interface/010-012-object-clone/index|Object.clone()]] 참고
+	- 예외 발생(`Cloneable` 미구현 검사)은 런타임이지만, 처리-또는-선언 의무는 컴파일 타임에 호출 사슬(`Object.clone()` → 오버라이딩한 `clone()` → main)을 따라 전파됨
