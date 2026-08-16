@@ -104,3 +104,45 @@ public class Teacher {
 
 - 핵심 절차: ① `extends` 제거 ② 부모를 ==멤버 변수==로 보유 ③ `super(...)` → 생성자에서 부품 개체 생성 ④ 외부에 필요한 부모 메서드는 ==연쇄(포워딩) 호출==로 다시 노출
 - 컴포지션의 비용: 공통 메서드를 하나하나 포워딩해야 함 (007-007 관리의 효율성에서 본 단점)
+
+## 아래 상속 코드를 컴포지션으로 재작성하세요 (공식 1번 오답 변형 — 포워딩 전수 확인)
+
+```java
+public class Printer {
+	public void printLine(String msg) {
+		System.out.println(msg);
+	}
+
+	public void printError(String msg) {
+		System.out.println("ERROR: " + msg);
+	}
+}
+
+public class DecoratedPrinter extends Printer {
+	@Override
+	public void printLine(String msg) {
+		super.printLine("== " + msg + " ==");
+	}
+}
+```
+
+정답
+
+```java
+public class DecoratedPrinter {
+	private Printer printer = new Printer();
+
+	public void printLine(String msg) {
+		this.printer.printLine("== " + msg + " ==");
+	}
+
+	public void printError(String msg) {
+		this.printer.printError(msg);
+	}
+}
+```
+
+- 체크 순서: 부모의 ==public 메서드 목록==(`printLine`, `printError`)부터 세고, 각각 "재작성 후에도 클라이언트가 호출 가능한가?" 확인
+	- `printLine()` — 오버라이딩하던 메서드: 장식을 유지한 채 내부 개체로 포워딩 (`super.` → `this.printer.`)
+	- `printError()` — ==건드리지 않았어도== 상속으로 노출되던 public API이므로 그대로 포워딩해서 재노출 (누락하면 기존 클라이언트 코드가 컴파일 오류)
+- 상속은 부모의 public API 전체를 자동 승계하고, 컴포지션은 하나하나 수동 복원해야 함 — 답안 분량은 오버라이딩 개수가 아니라 ==부모 public 메서드 개수==가 결정

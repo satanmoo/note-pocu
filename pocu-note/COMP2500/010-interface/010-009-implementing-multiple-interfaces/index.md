@@ -43,7 +43,7 @@ tags:
 - 여기서 시그니처는 메서드 이름, 매개변수 목록
 - 문맥마다 "시그니처"의 구성이 다르니 구분할 것:
 	- Java 컴파일러의 중복 정의·오버로딩 판정 기준: ==메서드 이름·매개변수 목록== (반환형 제외 — 그래서 아래처럼 반환형만 달라도 중복 정의 오류)
-	- `@Override` 어노테이션의 판정 기준: 메서드 이름·매개변수 목록·==반환형== — [[pocu-note/COMP2500/010-interface/010-006-java-annotation/index|Java 어노테이션]] 참고
+	- `@Override` 어노테이션의 매칭 기준도 동일하게 ==메서드 이름·매개변수 목록==(메서드의 정체) — 반환형은 매칭된 뒤의 사후 검사(무늬의 약속, 호환 안 되면 어노테이션 무관하게 컴파일 오류) — [[pocu-note/COMP2500/010-interface/010-006-java-annotation/index|Java 어노테이션]]의 원리 도출 참고
 	- C 함수 포인터의 시그니처: ==반환형·매개변수 목록== (함수 이름 무관 — 모양만 맞으면 어떤 함수든 대입해서 전달 가능) — [[pocu-note/COMP2500/010-interface/010-002-interface-and-function-pointer/index|인터페이스와 함수 포인터]]의 "시그니처만 필요함"이 이 의미
 
 ![](pocu-note/COMP2500/010-interface/010-009-implementing-multiple-interfaces/images/implementing-multiple-interfaces-7.png)

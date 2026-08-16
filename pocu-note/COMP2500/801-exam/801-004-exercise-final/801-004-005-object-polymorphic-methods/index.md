@@ -102,3 +102,74 @@ public boolean equals(Object obj) {
 
 - 매개변수 자료형이 `Point`가 아니라 ==`Object`==인 것에 주의 — 아니면 오버라이딩이 아니라 오버로딩이 됨
 - IntelliJ 자동 구현도 이 템플릿 (참조 → null → 클래스 정보(RTTI) → 필드)
+
+## 다음 코드의 출력은? (공식 5·6번 오답 변형 — equals 존재 확인 + 표시 메서드 dispatch)
+
+```java
+// Member.java
+package academy.pocu.comp2500;
+
+public class Member {
+	private String name;
+
+	public Member(String name) {
+		this.name = name;
+	}
+
+	public String getLabel() {
+		return this.name;
+	}
+
+	@Override
+	public int hashCode() {
+		return this.name.hashCode();
+	}
+
+	@Override
+	public String toString() {
+		return getLabel();
+	}
+}
+
+// VipMember.java
+package academy.pocu.comp2500;
+
+public class VipMember extends Member {
+	public VipMember(String name) {
+		super(name);
+	}
+
+	@Override
+	public String getLabel() {
+		return "VIP " + super.getLabel();
+	}
+}
+
+// Program.java
+package academy.pocu.comp2500;
+
+import java.util.HashSet;
+
+public class Program {
+	public static void main(String[] args) {
+		HashSet<Member> members = new HashSet<>();
+
+		members.add(new Member("pope"));
+		members.add(new Member("pope"));
+		members.add(new VipMember("pope"));
+
+		System.out.println(members.size());
+
+		Member member = new VipMember("kim");
+		System.out.println(member.getLabel());
+	}
+}
+```
+
+```
+3
+VIP kim
+```
+
+- 함정 1 (공식 6번 유형): `hashCode()`·`toString()`은 정성껏 오버라이딩돼 있지만 ==`equals()`가 없음== → `Object`의 참조 비교 → 이름이 같아도 셋 다 다른 개체, 중복 제거 안 됨 — `equals`의 존재는 가정이 아니라 ==눈으로 확인==할 것
+- 함정 2 (공식 5번 유형): 무늬는 `Member`지만 실체가 `VipMember` → `getLabel()`은 실체에서 위로 탐색 → 오버라이딩 실행 — ==출력 직전의 쉬워 보이는 호출도 예외 없이 대조== (공식 5번의 "Sir " 함정과 동일 구조)

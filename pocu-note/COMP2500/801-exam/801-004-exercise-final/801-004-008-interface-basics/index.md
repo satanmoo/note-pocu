@@ -156,9 +156,57 @@ public class Cat extends Animal {
 컴파일 오류
 
 - `@Override` 어노테이션이 붙었는데 부모에 같은 시그니처의 메서드가 없음 → 컴파일 오류
-	- 여기서 시그니처는 ==함수 이름·매개변수 목록·반환형==
+	- 매칭 기준은 메서드의 정체(==이름·매개변수 목록==) — 호출부가 반환형을 지정할 방법이 없기 때문. 반환형은 매칭된 뒤 무늬의 약속으로 사후 검사(호환 안 되면 어노테이션 무관하게 컴파일 오류) — [[pocu-note/COMP2500/010-interface/010-006-java-annotation/index|Java 어노테이션]]의 원리 도출 참고
 - `@Override`가 없었다면? 컴파일·실행 다 되지만 `shuot()` 메서드는 오버라이딩이 아니라 ==새 메서드로 추가==됨 → 다형적 호출 시 부모의 `shout()` 메서드가 실행되는 조용한 버그
 - 미구현·오타 실수를 막는 두 도구: 인터페이스/추상 클래스(구현을 컴파일 타임에 강제) 또는 `@Override` 어노테이션(오버라이딩 의도를 명시)
+
+## 다음 코드의 컴파일 오류를 모두 찾아 고치세요 (공식 2-b번 오답 변형 — `@Override` 전수 스캔)
+
+```java
+// Shape.java
+package academy.pocu.comp2500;
+
+public class Shape {
+	public void draw() {
+		System.out.println("shape");
+	}
+
+	public double getArea(int scale) {
+		return 0.0;
+	}
+}
+
+// Circle.java
+package academy.pocu.comp2500;
+
+public class Circle extends Shape {
+	@Override
+	public void draw() {
+		System.out.println("circle");
+	}
+
+	@Override
+	public double getArea(double scale) {
+		return 3.14 * scale;
+	}
+
+	@Override
+	public String toString() {
+		return "Circle";
+	}
+}
+```
+
+컴파일 오류 1건 — `getArea(double scale)`
+
+전) `public double getArea(double scale) {`
+후) `public double getArea(int scale) {`
+
+- 프로토콜: ==`@Override`가 붙은 모든 메서드==에 대해 부모 사슬에서 같은 시그니처(이름·매개변수 목록)를 찾는다 — 하나 찾았다고 멈추지 않기
+	- `draw()` — `Shape`에 있음 ✓
+	- `getArea(double)` — `Shape`에는 `getArea(int)`뿐, 매개변수가 다름 ✗ ("method does not override or implement a method from a supertype")
+	- `toString()` — `Shape`에는 없지만 ==`Object` 클래스에 있음== ✓ — 사슬 대조는 `Object`까지 거슬러 올라감 (부모에 안 보인다고 오류로 속단하는 함정)
+- 어노테이션을 제거해도 컴파일은 되지만, 그러면 `getArea(double)`이 조용한 오버로드가 되어 의도와 다르게 동작 — 시그니처를 부모에 맞추는 것이 올바른 수정
 
 ## 다음 각 명제의 O/X는?
 
